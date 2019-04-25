@@ -16,6 +16,8 @@ If the local copy looks good:
 - type in a commit message, click on the Commit button
 2. Push the changes to GitHub
 - click on Push (top right) - saves a copy on GitHub
+3. Check the [website](https://PLAY-behaviorome.github.io/PLAY-project.org)
+
 
 ## Deploying the site
 
