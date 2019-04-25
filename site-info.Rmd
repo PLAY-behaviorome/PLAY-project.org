@@ -1,0 +1,13 @@
+---
+title: "About the site"
+---
+
+<img src="img/PLAY-logo.png" height=100px/>
+
+This site is hosted in [GitHub](http://github.com/PLAY-behaviorome/) and is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com), version `r rstudioapi::versionInfo()$version`.
+
+For information about using R Markdown to generate websites, see <http://rmarkdown.rstudio.com/rmarkdown_websites.html>.
+For formatting information, see <http://rmarkdown.rstudio.com/html_document_format.html>.
+
+```{r, child="_sessioninfo.Rmd"}
+```

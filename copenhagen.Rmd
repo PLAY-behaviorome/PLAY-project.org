@@ -1,0 +1,35 @@
+---
+title: ""
+---
+
+## [Copenhagen Infant Mental Health Screening (CIMHS)](http://dx.doi.org/10.1186/s12887-016-0744-1)
+
+| Domain | Item | Description                                | Answer |
+|--------|------|--------------------------------------------|--------|
+| Sleep regulation | Stable sleeping pattern | The child has established a steady pattern for sleeping and being awake | Yes No |
+|| Falling asleep time | The child falls asleep within one hour | Yes no |
+|| Interrupted sleep | The child is able to sleep at least three consecutive hours | Yes no |
+| Eating | Appetite regulation | The child indicates clearly when it is hungry or full | Yes no |
+|| Eats too little | The child has to be pressured to eat enough | Yes no |
+|| Refusal to eat | The child refuses food even though it has not eaten for a long time | Yes no |
+|| Vomiting without otherwise being ill | The child vomits more than once a week | Yes no |
+| Expression of emotions | Generally happy and satisfied | The child is happy and satisfied more than 80% of its waking time | Yes no |
+|| Often irritable, fussy, dissatisfied | The child has at least two episodes every day where it is irritable, fussy, dissatisfied | Yes no |
+|| Cries often | The child cries more than one hour every day | Yes no |
+|| Emotionally blunted | The child shows no happiness, has limited facial expression and seems sad more than 50% of its waking time | Yes no |
+| Curiosity and interest | Curiosity, exploring | The child shows interest in its surroundings, examines its toys | Yes no |
+|| Attention | Is able to focus The child watch something or listen for more than one minute | Yes no |
+|| Maintain concentration | The child is able to examine toys for more than two minutes | Yes no |
+|| Easily distracted | The child is distracted by sounds, lights, movements, even while playing and does not return to its original activity | Yes no |
+| Motor activity | Generally increased level of activity | The child is characterized by a high level of activity restlessness | Yes no |
+|| Generally reduced level of activity | The child has a passive motoric, is mainly inactive | Yes no |
+|| Impulsiveness | The child is unpredictably active, throws things suddenly | Yes no |
+| Social communication and interaction | Eye contact | The child is able to establish eye contact. The Visiting Nurse is not in doubt that the child sees her eyes | Yes no |
+|| Contact smile | The child smiles to the Visiting Nurse when eye contact is made | Yes no |
+|| Proximity seeking | The child seeks contact with smiling, chattering, touching or reaching out after its parents | Yes no |
+|| Mutual communication | The child uses gestures, smiles and chatter with its parents for more than two communication loops (answer > <reply) | Yes no |
+|| Joint attention | The child pays attention to parents’ indications, checks and looks again | Yes no |
+|| Bodily contact | The child shows interest in bodily contact by expression and gesture | Yes no |
+|| Selectivity | The child clearly prefers the familiar care-personnel | Yes no |
+| Language | Language understanding | The child reacts to gestures/and some words | Yes no |
+|| Verbal expression | The child expresses itself with facial expressions, gestures, pointing, chatter in syllables | Yes no |

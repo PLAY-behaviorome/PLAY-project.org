@@ -1,0 +1,147 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+## LANGUAGES SPOKEN TO CHILD
+
+**L1. What language(s) do you speak at home?**
+
+**L2. What language(s) do you speak to your child?**
+
+(NOTE: END screener if language is spoken to target child is not English or Spanish to target child.)
+
+## CHILD INFORMATION
+
+**A1. What is [CHILD]’s birth date?**
+
+Month ______   Day _________   Year_______
+
+**A2. What was his/her due date?**
+
+Month ______   Day _________   Year_______	
+
+(NOTE: END screener if child was born preterm, 36 weeks or under. Term is 40 weeks.)
+
+**A3. How much did your baby weigh at birth?**
+
+Pounds: ______              Ounces: ______ 	
+
+**A4. Were there any birth or newborn complications?**
+
+YES ______            NO ______
+
+If yes, please specify:
+
+**A5. Has your child had any major illnesses or injury or medical or behavioral diagnoses (e.g., asthma, ADHD)?**
+
+YES  ______            NO ______
+
+If yes, please specify:
+
+**A7. At what time does your child typically:**
+
+- **A7a. Fall asleep at night?**  	
+
+- **A7b. Wake up in the morning?**
+
+## CHILD CARE ARRANGEMENTS
+
+**B1. Does anyone other than you take care of the child on regular basis?**
+
+- Someone (nanny, babysitter, relative, etc) 
+- Childcare center
+- Both
+- None
+
+**B2. How many hours per week does {CHILD} spend in the care of someone else?**
+
+Hours/week: __________
+
+## MOTHER INFORMATION
+
+**C1. What is your birth date?**
+
+Month ______   Day _________   Year_______
+
+(NOTE: END screener if mother was younger than 21-yo when {CHILD} was born.)
+
+**C2. What is your race and ethnicity? “Would you describe your race/ethnicity as…”**
+
+Race:
+
+1. American Indian or Alaskan Native
+2. Asian
+3. Native Hawaiian or Other Pacific Islander
+4. Black or African American
+5. White
+6. More than one
+7. Other
+8. REFUSED
+
+Ethnicity:
+
+- Hispanic or Latino
+- Not Hispanic or Latino 
+
+## PARTNER INFORMATION [WIFE / HUSBAND]
+
+[EXPERIMENTER] Say to mom: *“Does [CHILD]’s father live in the home with you?”*
+
+If yes: continue…
+If no: SKIP AND MOVE ONTO PART E.
+
+**D1. What is [HIS / HER] birth date?**
+
+Month ______   Day _________   Year_______
+
+REFUSED          DON'T KNOW
+
+(NOTE: END screener if father was younger than 21-yo when {CHILD} was born.)
+
+**D2. What is their race and ethnicity? “Would you describe their race/ethnicity as…”**
+
+Race:
+
+1. American Indian or Alaskan Native
+2. Asian
+3. Native Hawaiian or Other Pacific Islander
+4. Black or African American
+5. White
+6. More than one
+7. Other
+8. REFUSED
+
+Ethnicity:
+
+- Hispanic or Latino
+- Not Hispanic or Latino 
+
+## FAMILY STRUCTURE
+
+**E1. In addition to you and [CHILD]’s father (if dad lives with mom/child), please tell me who else lives with you permanently?**
+
+Categories are listed by relation to [CHILD]. Put in the number living with you and [CHILD] permanently for each category.
+
+- Sister ______
+- Brother ______
+- Partner/ Husband/ Boyfriend of child's parent or guardian ______
+- Grandmother Grandfather Aunt ______
+- Uncle ______
+- Cousin ______
+- Other relative ______
+- Other non-relative ______
+
+**E2. IF [CHILD]’s siblings live with you, what are their birthdates?**
+
+Month ______   Day _________   Year_______
+
+Month ______   Day _________   Year_______
+
+Month ______   Day _________   Year_______
+
+Month ______   Day _________   Year_______

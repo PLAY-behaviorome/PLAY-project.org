@@ -1,0 +1,120 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+# [Transcribing](transcription.html)
+
+## `transcribe`
+
+`<source_m-b>`, `<content>`.
+
+### General Orientation
+
+The transcribe column is used to tag the onset of each utterance/vocalization by the mom and baby in a single pass. 
+Then based on the `<source>` of the utterance/vocalization, the momspeech and babyvoc columns are automatically populated by a script.
+
+Utterance = a unit of speech separated by silence/pause, which can be a natural “period” as in end of a complete thought or sentence or a long pause (i.e., taking a breath). 
+Utterances are coded as events (cells) separated by gray where no utterances are spoken. 
+These are coded as events, where there is only one time that is tagged (onset), which is any time during the utterance. 
+We do not code strict onsets and offset for the event; a single time during the utterance is the time coded.
+
+Transcribe all of mothers' utterances even if they are not baby-directed. 
+But only transcribe communicative utterances; that is, there is no need to tag and transcribe non-speech, non-communicative sounds by the mother (e.g., making whistling noises, muttering to herself indistinguishably).
+
+Paralinguistic utterances/vocalizations (e.g., laughing, crying, sighing, screaming) by the mom should be typed out (e.g., “ah”). 
+Non-linguistic vocalizations by the baby are coded as “c” (a catch all for crying, laughing, screaming, grunting). 
+Linguistic babbling, vowels, consonants, and combinations of the above by the baby that are not words are coded as “b”.
+
+### Value List
+
+`<source_m-b>`
+
+`m` = mom
+
+`b` = baby
+
+`<content>`
+
+If the content of the utterance can be heard clearly by the coder, then type transcript of each utterance in the cell.
+
+`b` = babbling, or vowel/consonant sound by the baby
+
+`c` = crying, screaming, grunting, laughing sound by the baby
+
+### Operational Definitions
+
+`<source_m-b>`
+
+`<m>`: Code 'm' if the mom is the source of the utterance. This code will be filled in automatically using quick keys.
+
+`<b>`: Code 'b' if the baby is the source of the utterance. This code will be filled in automatically using quick keys.
+
+`<content>`
+
+transcribe utterance
+
+Type the complete utterance. Type everything in lower case, except for proper names (e.g., Mommy, I, Cheerios, Anna). Use apostrophes correctly for contractions and possessives (e.g., don't, where's, Daddy's, Lily's). Do not use “,” commas. <a href=""> (Inset video) </a> Put a question mark "?" at the end of any utterance that is a question. <a href=""> (Inset video)  </a>
+
+Individual letters (e.g., mom spells out zoo as “z” “o” “o”) need to be marked with an @ (at symbol) so that they're not confused with actual words, for example z@ o@ o@. Use existing rules for utterances to decide if each letter is it's own utterance.
+
+Any utterance that is unintelligible or hard to decipher, code as “xxx”. This could be the full utterance: for example, the mom says multiple words but they are all unintelligible, so the entire code is “xxx”. Or part of the utterance is intelligible, but part is not: for example, the mom says “give me” and what she says to give is unintelligible, so code “give me xxx”. <a href=""> (Inset video)  </a>
+
+In case of language-functioning sounds by the mom or baby, these are typed out as words phonetically as specified below: Ahem (ready to speak), Ay (surprise), Huhuh (no), Hmm (thinking or questioning), Mmhm (yes), Sh (shush), Uhhuh (yes), Uhoh (blunder), uhuh (no), Yeah (yes), Whee (excitement), Whoah (surprise), Whoops (mistake)
+
+If you encounter a mouth sound that the mom makes, which is communicative but **cannot be transcribed phonetically** (e.g., lip sucking/kissing sound to call the baby over), write out the sound of the vocalization in brackets (e.g. [lip sucking/kissing]). <a href=""> (Inset video)  </a>
+Only write out communicative sounds: for instance, if the mom whistles to get the baby's attention write out [whistles], but if the mom is just whistling to herself as she cooks then do not tag as an utterance. 
+
+`<b>` : Code 'b' if the baby is not saying a full language phrase or sentence. Could be babbling, by saying one or more consonant-vowel pairs. Or could be just a vowel <a href=""> (Inset video)  </a>. If you are unsure if it was a language phrase that you can transcribe or was just a babble, then mark as unintelligible “xxx” and make a comment. Either relisten or come back after getting more context later in the video. <a href=""> (Inset video)  </a>
+
+
+`<c>` : Code 'c' if the baby is making a non-language-like vocalization. For instance, crying, screaming, laughing, grunting. Any vocalization that is not a consonant-vowel babble or vowel alone. These should be easy to distinguish from babbling, because they serve a different communicative function. <a href=""> (Inset video)  </a>
+
+
+### How to Transcribe
+
+Set “Jump back by” on the Controller to **2 seconds**.
+
+Transcribing is done in two iterative passes through a small section of the video (roughly 1-2 minutes). The first part is **tagging utterances** for about 1-2 minutes (until a good break in activity is reached) and the second part is looping back over that same portion of the video to **transcribe utterances**.
+
+#### Tagging Utterances
+
+**Turn on Quick Keys** mode by hitting Shift-Cmnd-K (or selecting Spreadsheet>Enable Quick Keys from the menu bar). You will see *QUICK KEY MODE* in the spreadsheet window header. This will enable a function that every time an alphanumeric key is pressed, a new point cell (onset=offset) is inserted at the current time in the data controller, and the alphanumeric key pressed will be inserted as the code of the first argument.
+
+Place your left index finger on the “m” key and your left ring finger on the “b” key. The right fingers should be on pause and shuttle forward and back. Play the video at **1/2 speed** (or 1/4 speed if a fast exchange of utterances is happening). Press the “m” or “b” key every time the **mom** or **baby** has an utterance, while you play the video back. Insert cells **as soon as** you hear something. Be as alert and attentive as possible.
+
+If you think you hear an utterance, tag it. It's much better to be fast and insert extra cells, rather than judge yourself and have to go back later to fix the time or insert a cell for an utterance you missed. You can easily delete cells using shortcut keys. You can also fix the *source* code later if you hit the wrong key. Note, offsets are not coded. Onsets are as close to the utterance onset as you possibly can get. So optimize your attention and coding for speed of tagging.
+
+The best strategy is to have an unbroken playback session of 1-2 mins where you are just tagging utterances without stopping. Stop playback once you've tagged 30-40 cells, 1-2 mins have elapsed, or you hit a good breaking point in an activity (e.g. baby moves onto playing with a new toy). Try to stop a tagging utterances past as soon as you tag a new utterance, rather than playing further into silence of the video; that way you can jump to and pick up right where you left off at an utterance for the next tagging pass, instead of potentially re-playing the same part of the video.
+
+Now, **turn off Quick Keys** (Shift-Cmnd-K). Run the **addtime_transcribe.rb script**. This will add 500 ms to the offset, which will help in highlighting in the next step.
+
+#### Transcribe Utterances
+
+**Turn on Highlight and Focus Mode** by hitting Shift-Cmnd-F (or selecting Spreadsheet>Enable Highlight and Focus Mode from the menu bar). This will highlight each cell as you loop back through the 1-2 mins you just tagged utterances in and put the focus of data entry (cursor) into the first uncoded argument in that cell (which will be *content*).
+
+SCROLL or ARROW up to the first cell from the most recent utterance tagging done. Jump to that first cell (+ key) and then JUMP-BACK-BY 2 s (- key). Playback the video at **1x speed**. Listen to each utterance within the context of the ongoing stream of speech. JUMP-BACK and re-listen as many times as needed until you are sure of the utterance. Once you are sure of the utterance, stop playback and transcribe the utterance or insert the appropriate code (for the baby).
+
+If you go past an utterance and missed transcribing it, hit the jump back key until you are right before it. If you get lost in the transcription, JUMP BACK 2-3 cells (by arrowing or jump back key) before where you lost track of transcribing. It's much better to use the keyboard to navigate and loop back (jump back or arrow up or down) rather than mousing. (Note: you may need to mouse into the argument of the first cell in a section after tagging utterances). If you mouse and jump around, you will get lost; stay in “looping” mode throughout transcription even if it means listening multiple times to a single section.
+
+If you find a cell for an utterance that was tagged by mistake (you thought there was an utterance but there wasn't) then delete that cell. JUMP-BACK-BY 2 s before the cell you deleted and confirm there was no utterance and that the next utterance is tagged at the correct time. (Note: you may need to mouse into a cell after deleting).
+
+If you need to change the onset of an utterance, ARROW into it (or let auto focus move you into it) and hit the 7 key to set onset to the current time. Do not worry about setting or fixing the offset.
+
+If you missed tagging an utterance in the first part, find the time of the utterance onset while you are transcribing. Hit ENTER and set the offset (same time as onset) using the 9 key. Code “m” or “b” for *source*, then tab into *content* and transcribe.
+
+**Turn off Highlight and Focus Mode**. Save the file. Now **turn back on Quick Keys**, jump to the onset of the last cell transcribed, and revert back to the coding strategy for tagging utterances.
+
+
+#### Splitting Mom and Baby Utterances
+
+It's easier and faster to tag and transcribe mom and baby together in one pass. But for later coding, we want mom speech and baby vocalizations to be in two separate columns.
+
+**Run the split*mombaby*transcribe.rb script** to pull mom and baby utterances into their appropriate columns.
+
+At this step, you can also **run the create*mombaby*utterancetype.rb script** to insert the momutterancetype and babyutterancetype columns and insert cells for every tagged utterance.
+

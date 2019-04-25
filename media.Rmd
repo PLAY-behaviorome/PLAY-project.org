@@ -1,0 +1,66 @@
+---
+title: ''
+---
+
+## MEDIA TIME/USE
+
+**C1. Do you have any of the following?**
+
+- TV (1)
+- DVD player (3)
+- Personal computer (4)
+- Regular mobile phone (6)
+-  Smart phone (7)
+- iPad or other tablet (8)
+- MP3 player (iPod or similar) (9)
+- Educ game (Leapster) (10)
+- Video game console (xbox) (11)
+
+**C1b. Has your child ever used this device/ service (probe for how)? If yes, how?**
+
+- TV (1)
+- DVD player (3)
+- Personal computer (4)
+- Regular mobile phone (6)
+- Smart phone (7)
+- iPad or other tablet (8)
+- MP3 player (iPod or similar) (9)
+- Educ game (Leapster) (10)
+- Video game console (xbox) (11)
+
+
+**C2. When someone is at home in your household, how often is the TV on, even if no one is actually watching it?**
+
+- Never
+- Hardly ever 
+- Some of the time 
+- Most of the time 
+- Always
+
+**C3. How often, if ever, do you put shows or movies on when in transit (i.e., car or public transit) with your child?**
+
+- Not applicable (i.e., don't have portable media devices) 
+- Never (i.e., don't use media when in transit)
+- Hardly ever 
+- Sometimes 
+- Often
+
+**C4. There are often times when parents have to use their smartphone or tablet when spending time with their child. How likely are you to use your phone or other device (e.g., to make calls, text, check email, watch a video) [ORANGE SCALE]**
+
+| I never do this (1) | Not very likely (2) | Neutral (3) | Likely (4) |
+Very likely (5) |
+
+- During meals (1)
+- Getting your child ready for school (2)
+- During playtime (3)
+- During bedtime routine (4)
+- While driving them to or from activities, or when riding on public - transportation. (5)
+
+**C5. How often do you... [GREEN SCALE]**
+
+| Never (1) | Rarely (2) | Sometimes (3) | Often (4) |
+
+- Watch together? (1)
+- Try to help the child understand what s/he sees on TV? (2)
+- Set specific viewing hours for the child? (3)
+- Remain in the room with your child when media is being used. (4)?

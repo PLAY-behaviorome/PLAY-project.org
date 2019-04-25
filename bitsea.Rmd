@@ -1,0 +1,63 @@
+---
+title: ''
+---
+
+## Brief Infant Toddler Social Emotional Assessment (BITSEA
+
+Instructions: Many statements describe normal feelings and behaviors, but some describe feelings and behaviors that may be problems. Please do your best to respond to every item. Please circle the ONE response that best describes your child’s behavior in the LAST MONTH.
+
+| Behavior               | Not true/rarely | Somewhat true/Sometimes | Very true/Often |
+|------------------------|-------|-------|-------|
+| 1. Shows pleasure when he or she succeeds (for example, claps for self). | 0 | 1 | 2 |
+| 2. Gets hurt so often that you can’t take your eyes off him or her. | 0 | 1 | 2 |
+| 3. Seems nervous, tense, or fearful. | 0 | 1 | 2 |
+| 4. Is restless and can’t sit still. | 0 | 1 | 2 |
+| 5. Follows rules. | 0 | 1 | 2 |
+| 6. Wakes up at night and needs help to fall asleep again. | 0 | 1 | 2 |
+| 7. Cries or has a tantrum until he or she is exhausted. | 0 | 1 | 2 |
+| 8. Is afraid of certain places, animals or things. 
+What is he or she afraid of? \_______ | 0 | 1 | 2 |
+| 9. Has less fun than other children. | 0 | 1 | 2 |
+| 10. Looks for you (or other parent) when upset. | 0 | 1 | 2 |
+| 11. Cries or hangs onto you when you try to leave. | 0 | 1 | 2 |
+| 12. Worries a lot or is very serious. | 0 | 1 | 2 |
+| 13. Looks right at you when you say his or her name. | 0 | 1 | 2 |
+| 14. Does not react when hurt. | 0 | 1 | 2 |
+| 15. Is affectionate with loved ones. | 0 | 1 | 2 |
+| 16. Won’t touch some objects because of how they feel. | 0 | 1 | 2 |
+| 17. Has trouble falling asleep or staying asleep. | 0 | 1 | 2 |
+| 18. Runs away in public places. | 0 | 1 | 2 |
+| 19. Plays well with other children (not including brother/sister). N if there is no contact with other children | 0 | 1 | 2 |
+| 20. Can pay attention for a long time (other than when watching TV) | 0 | 1 | 2 |
+| 21. Has trouble adjusting to changes. | 0 | 1 | 2 |
+| 22. Tries to help when someone is hurt (for example, gives a toy). | 0 | 1 | 2 |
+| 23. Often gets upset. | 0 | 1 | 2 |
+| 24. Gags or chokes on food. | 0 | 1 | 2 |
+| 25. Imitates playful sounds when you ask him or her to. | 0 | 1 | 2 |
+| 26. Refuses to eat. | 0 | 1 | 2 |
+| 27. Hits, shoves, kicks, or bites children (not including brother/sister). N if there is no contact with other children. | 0 | 1 | 2 |
+| 28. Is destructive. Breaks or ruins things on purpose. | 0 | 1 | 2 |
+| 29. Points to show you something far away. | 0 | 1 | 2 |
+| 30. Hits, bites, or kicks you (or other parent). | 0 | 1 | 2 |
+| 31. Hugs or feeds dolls or stuffed animals. | 0 | 1 | 2 |
+| 32. Seems very unhappy, sad, depressed, or withdrawn. | 0 | 1 | 2 |
+| 33. Purposely tries to hurt you (or other parent). | 0 | 1 | 2 |
+| 34. When upset, gets very still, freezes or doesn't move. | 0 | 1 | 2 |
+
+The following statements describe feelings and behaviors that can be problems for young children. Some of the descriptions may be a bit hard to understand, especially if you have not seen the behavior in your child. Please do your best to respond to all statements. Please circle the ONE response that best describes your child’s behavior in the LAST MONTH.
+
+| Behavior               | Not true/rarely | Somewhat true/Sometimes | Very true/Often |
+|------------------------|-------|-------|-------|
+| 35. Puts things in a special order over and over and gets upset if he or she is interrupted. | 0 | 1 | 2 |
+| 36. Repeats the same action or phrase over and over without enjoyment. Please give an example: \_____ | 0 | 1 | 2 |
+| 37. Repeats a particular movement over and over (like rocking, spinning). Please give an example: \_____ | 0 | 1 | 2 |
+| 38. Spaces out. Is totally unaware of what’s happening around him or her. |
+| 39. Does not make eye contact. | 0 | 1 | 2 |
+| 40. Avoids physical contact. | 0 | 1 | 2 |
+| 41. Hurts self on purpose (for example, bangs his or her head). Please describe: \_____. | 0 | 1 | 2 |
+| 42. Hurts self on purpose (for example, bangs his or her head). Please describe: Eats or drinks things that are not edible (like paper or paint). Please describe: \______. | 0 | 1 | 2 |
+
+| Question | Not at all worried | A little worried | Worried | Very worried |
+|----------|--------------------|------------------|---------|--------------|
+| A. How worried are you about your child’s behavior, emotions, or relationships? | 1 | 2 | 3 | 4 |
+| B. How worried are you about your child’s language development? | 1 | 2 | 3 | 4 |

@@ -1,0 +1,31 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+<img src="img/PLAY-logo.png" width="400" />
+
+```{r child = 'coding_setup.Rmd'}
+```
+
+```{r child = 'coding_transcription.Rmd'}
+```
+
+```{r child = 'coding_communication.Rmd'}
+```
+
+```{r child = 'coding_gesture.Rmd'}
+```
+
+```{r child = 'coding_locomotion.Rmd'}
+```
+
+```{r child = 'coding_objects.Rmd'}
+```
+
+```{r child = 'coding_emotion.Rmd'}
+```

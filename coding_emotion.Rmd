@@ -1,0 +1,232 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+# Coding [emotion](emotion.html)
+
+## `babyemotion`
+
+`<emotion_p-n>`
+
+### General Orientation
+
+This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions. 
+Times when the baby is in neutral emotion are not marked. 
+Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear. 
+Coders also mark times as “missing” when the baby's face could not possibly be coded for emotion (e.g., face completely turned away from camera, baby's head out of the video). 
+When the baby's face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., baby is screaming and crying).
+
+Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. 
+To determine emotion, coders are watching the baby's face, not vocal affect. 
+To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.
+
+### Value List
+
+`p` = positive emotion
+
+`n` = negative emotion
+
+`.` = baby's face is completely not visible
+
+### Operational Definitions
+
+`<p>`
+
+Code 'p' when the baby is clearly displaying positive emotion (e.g., 
+smiling). 
+Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. 
+If there is any doubt that the baby is showing positive emotion, then do not begin the code.
+
+Positive emotion cannot be coded based on the voice alone. 
+So positive emotion could not be scored when the baby's face is absolutely not visible (i.e. missing).
+
+`<n>`
+
+Code 'n' when the baby is clearly displaying negative emotion (e.g., frowning, wincing). 
+Code based off of the face and not off of the voice. Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow. 
+If there is any doubt that the baby is showing negative emotion, then do not begin the code.
+
+Do not defer to the voice to code negative emotion when the face is visible. 
+If the baby's face is clearly not visible (i.e. missing), then 'n' can be coded if the baby is displaying clear negative emotion through their voice. 
+The baby could be screaming, crying, or yelling. 
+If there is any doubt whether the voice is negative, then do not begin the code.
+
+#### Onset
+
+Onset of an emotion event is the first frame the baby is clearly displaying positive/negative emotion through the face. 
+The onset does not need to be completely frame accurate, since emotion could begin in any part of the face. 
+The coder is looking to identify when any lay person would absolutely agree the baby is showing positive/negative emotion based on the face.
+
+There is no criterion for how long an emotion event should be. 
+It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later. 
+Events that are later deemed “too brief” could be removed via scripting.
+
+When coding 'n' from voice during missing time, set the onset when the negative voice starts and end the 'n' code when the voice ends. 
+The onset/offset do not need to be frame accurate.
+For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion. 
+Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of 'missing'. 
+We want to preserve the 1ms difference between 'missing' and the emotion code so we can know that that 'missing' event was ended because of the onset of an emotion code.
+
+#### Offset
+
+Offset of a positive/negative emotion is the first frame the baby is clearly back to a neutral emotion through the face. 
+The offset does not need to completely frame accurate, since emotion could end in any part of the face. 
+The coder is looking to identify when any lay person would absolutely agree the baby is no longer showing any positive/negative emotion based on the face.
+
+If the baby's face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the 'p' or 'n' code. 
+The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.
+
+For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset. 
+Code the offset as the first frame the face completely is not visible (see 'missing' code below). 
+Use “0” key to set the offset of emotion and simultaneously code the onset of 'missing'. 
+We want to preserve the 1ms difference between the emotion code and 'missing' so we can know that that 'missing' event caused the offset of that emotion event.
+
+`<.>`
+
+Code '.' for missing when the baby's face is completely not visible. 
+The baby's full face could turned away from the camera, baby's head is completely off camera, or the baby is out of frame entirely. 
+If the coder could see the emotion the baby is expressing in their face from a side or oblique angle, then do not code missing.
+
+If the face is not visible but the baby is displaying clear negative emotion in the voice (e.g., baby crying or screaming) then the missing code is ended and 'n' is coded (see 'n' code). Positive emotion cannot be coded by voice.
+
+Onset is the first frame in which the coder clearly cannot see the face. 
+Offset is the first frame in which the coder can clearly see the face again. 
+The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.
+
+If the baby's face was 'missing' and then reappeared for less than 5 frames, don’t stop the '.' code to mark those few frames.
+
+### How to Code
+
+Set “JUMP-BACK-BY” key to 1 s.
+
+Play with #8-PLAY in real time (1x speed) until the baby changes to clear positive or clear negative emotion or the face is clearly not visible. 
+Focus on the baby's face and do not be distracted by what the baby is saying or doing.
+
+Pause with #5-STOP once you have identified a clear change in emotion or that the baby's face is no longer visible at all. 
+Shuttle back with #4-SHUTTLEBACK at 1/8-1/4x speed to identify the onset. Use the mouth and eyes as the guide to onset. 
+Press ENTER to set the onset as the frame where any lay person would say that baby is happy or sad. 
+The coder may even feel happy or sad watching the baby's face; use this as a guide for onset.
+
+Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view. 
+For missing, if it seems like there may be a long stretch of missing (e.g. baby has completely wandered out of the room) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice. 
+Pause when you identify the offset.
+
+Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the baby's face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.
+
+Then return to real time (1x speed) with #8-PLAY to watch for the next event.
+
+## `momemotion`
+
+`<emotion_p-n>`
+
+### General Orientation
+
+This code captures the times that the mom is clearly displaying positive or negative emotion through facial expressions. 
+Times when the mom is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the mom is neutral or emotion is unclear. 
+Coders also mark times as “missing” when the mom's face could not possibly be coded for emotion (e.g., face completely turned away from camera, mom's head out of the video). 
+When the mom's face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., mom is yelling).
+
+Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. 
+To determine emotion, coders are watching the mom's face, not vocal affect. 
+To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.
+
+### Value List
+
+`p` = positive emotion
+
+`n` = negative emotion
+
+`.` = mom's face is completely not visible
+
+### Operational Definitions
+
+`<p>`
+
+Code 'p' when the mom is clearly displaying positive emotion (e.g., smiling). 
+Code based off of the face and not off of the voice. 
+Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. 
+If there is any doubt that the mom is showing positive emotion, then do not begin the code.
+
+Positive emotion cannot be coded based on the voice alone. 
+So positive emotion could not be scored when the mom's face is absolutely not visible (i.e. missing).
+
+`<n>`
+
+Code 'n' when the mom is clearly displaying negative emotion (e.g., frowning, wincing). 
+Code based off of the face and not off of the voice. 
+Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow. 
+If there is any doubt that the mom is showing negative emotion, then do not begin the code.
+
+Do not defer to the voice to code negative emotion when the face is visible. 
+If the mom's face is clearly not visible (i.e. missing), then 'n' can be coded if the mom is displaying clear negative emotion through their voice. 
+The mom could be screaming or upset. 
+If there is any doubt whether the voice is negative, then do not begin the code.
+
+#### Onset
+
+Onset of an emotion event is the first frame the mom is clearly displaying positive/negative emotion through the face. 
+The onset does not need to be completely frame accurate, since emotion could begin in any part of the face. 
+The coder is looking to identify when any lay person would absolutely agree the mom is showing positive/negative emotion based on the face.
+
+There is no criterion for how long an emotion event should be. 
+It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later. 
+Events that are later deemed “too brief” could be removed via scripting.
+
+When coding 'n' from voice during missing time, set the onset when the negative voice starts and end the 'n' code when the voice ends. 
+The onset/offset do not need to be frame accurate.
+For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion. 
+Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of 'missing'.
+We want to preserve the 1ms difference between 'missing' and the emotion code so we can know that that 'missing' event was ended because of the onset of an emotion code.
+
+#### Offset
+
+Offset of a positive/negative emotion is the first frame the mom is clearly back to a neutral emotion through the face. 
+The offset does not need to completely frame accurate, since emotion could end in any part of the face. 
+The coder is looking to identify when any lay person would absolutely agree the mom is no longer showing any positive/negative emotion based on the face.
+
+If the mom's face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the 'p' or 'n' code. 
+The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.
+
+For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset. 
+Code the offset as the first frame the face completely is not visible (see 'missing' code below). 
+Use “0” key to set the offset of emotion and simultaneously code the onset of 'missing'. 
+We want to preserve the 1ms difference between the emotion code and 'missing' so we can know that that 'missing' event caused the offset of that emotion event.
+
+`<.>`
+
+Code '.' for missing when the mom's face is completely not visible. 
+The mom's full face could turned away from the camera, mom's head is completely off camera, or the mom is out of frame entirely. 
+If the coder could see the emotion the mom is expressing in their face from a side or oblique angle, then do not code missing.
+
+If the face is not visible but the mom is displaying clear negative emotion in the voice (e.g., mom yelling) then the missing code is ended and 'n' is coded (see 'n' code). Positive emotion cannot be coded by voice.
+
+Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again. 
+The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.
+
+If the mom's face was 'missing' and then reappeared for less than 5 frames, don’t stop the '.' code to mark those few frames.
+
+### How to Code
+
+Set “JUMP-BACK-BY” key to 1 s.
+
+Play with #8-PLAY in real time (1x speed) until the mom changes to clear positive or clear negative emotion or the face is clearly not visible. 
+Focus on the mom's face and do not be distracted by what the mom is saying or doing.
+
+Pause with #5-STOP once you have identified a clear change in emotion or that the mom's face is no longer visible at all. 
+Shuttle back with #4-SHUTTLEBACK at 1/8-1/4x speed to identify the onset. 
+Use the mouth and eyes as the guide to onset. 
+Press ENTER to set the onset as the frame where any lay person would say that mom is happy or sad. 
+The coder may even feel happy or sad watching the mom's face; use this as a guide for onset.
+
+Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view. 
+For missing, if it seems like there may be a long stretch of missing (e.g. mom is on a different side of the room from the baby) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice. 
+Pause when you identify the offset.
+
+Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the mom's face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.
+
+Then return to real time (1x speed) with #8-PLAY to watch for the next event.

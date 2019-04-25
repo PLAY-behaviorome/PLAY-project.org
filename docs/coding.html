@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="recruitment.html">recruitment</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="news.html">news</a>
+</li>
+<li>
+  <a href="site-info.html">site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><img src="img/PLAY-logo.png" width="400" /></p>
+<div id="set-up-for-transcribing-coding-1-hour-natural-play" class="section level1">
+<h1>Set Up for Transcribing &amp; Coding 1-Hour Natural Play</h1>
+<div id="getting-started" class="section level2">
+<h2>Getting Started</h2>
+<ol style="list-style-type: decimal">
+<li><strong>Download</strong> the <a href="http://datavyu.org/download.html">development version of Datavyu</a>.</li>
+<li><strong>Download</strong> the <em>PLAY_CodingTemplate.opf</em> file from the <a href="https://nyu.databrary.org/volume/254/slot/14924/-?asset=73892">PLAY Databrary Volume</a>. Name this file with the PLAY naming convention (e.g., <em>PLAY_NYU001, … PLAY_NYU010, … PLAY_NYU030</em>).
+<ul>
+<li>This template contains all of the primary variables that will be coded by each site: communication, gesture, object interaction, locomotion, and emotion.</li>
+</ul></li>
+<li><strong>Download</strong> Ruby scripts for each coding variable as needed from the <a href="https://github.com/databrary/PLAY-Project-Datavyu-scripts">PLAY Github repository</a>.</li>
+</ol>
+</div>
+<div id="get-to-know-datavyu" class="section level2">
+<h2>Get to Know Datavyu</h2>
+<ol style="list-style-type: decimal">
+<li>Familiarize yourself with Datavyu before you begin coding (resources on Datavyu.org, videos from past workshops, etc.).
+<ul>
+<li>Refer to the <a href="http://www.datavyu.org/user-guide/index.html">Datavyu User Guide</a>.</li>
+<li>Take a look at our <a href="http://www.datavyu.org/user-guide/best-practices.html">Best Practices for Coding Behavioral Data From Video</a> on the Datavyu site.</li>
+</ul></li>
+</ol>
+</div>
+<div id="coding-in-passes" class="section level2">
+<h2>Coding in Passes</h2>
+<ul>
+<li>The coding manual describes the transcription process and codes for 5 content areas: communication, gesture, object interaction, locomotion, and emotion.</li>
+<li>Each content area includes two passes: one pass for the infant and one pass for the mother. For gesture, the baby and mom are coded together in a single pass.</li>
+<li>A pass entails scoring the relevant codes for 1-hour of video.</li>
+</ul>
+<p>Please visit our <a href="https://github.com/databrary/PLAY-Project-Datavyu-scripts">GitHub Repository</a> for all of the scripts mentioned in this wiki.</p>
+</div>
+<div id="workflow-for-coding-communication-passes" class="section level2">
+<h2>Workflow for Coding Communication Passes</h2>
+<ol style="list-style-type: decimal">
+<li>After the file has been transcribed according to procedure in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription">Transcription</a>, run two additional scripts that will prepare new <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication</a> columns for further coding.</li>
+<li><strong>Run</strong> <em>splitmombaby_transcribe.rb</em>. This script pulls out mom and baby language from the <em><em>transcribe</em></em> column into two new columns: (1) <em><em>momspeech</em></em> and (2) <em><em>babyvoc</em></em> . Each column is automatically populated with cells from the respectively tagged utterances from the <em><em>transcribe</em></em> column (e.g., the script ports all utterances coded as ‘m’ to the <em><em>momspeech</em></em> column and ‘b’ to the <em><em>babyvoc</em></em> column). Each new cell in <em><em>momspeech</em></em> and <em><em>babyvoc</em></em> is a point cell created at the onset of each cell from the transcription.</li>
+<li><strong>Run</strong> <em>create_mombaby_utterancetype.rb</em>. This script also creates two new columns: (1) <em><em>momutterancetype</em></em> and (2) <em><em>babyutterancetype</em></em> . For each cell in <em><em>momspeech</em></em> and <em><em>babyvoc</em></em> , a new cell is created in <em><em>momutterancetype</em></em> and <em><em>babyutterancetype</em></em> , respectively. The codes for these cells are blank, and the coder now scores mom and baby communication according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication Codes</a>.</li>
+</ol>
+</div>
+<div id="workflow-for-coding-gesture-pass" class="section level2">
+<h2>Workflow for Coding Gesture Pass</h2>
+<ol style="list-style-type: decimal">
+<li>Score baby and mom gesture together in a single pass according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/gesture">Gesture Codes</a>.</li>
+<li>After the <em><em>gesture</em></em> coding pass (for both mom and baby) has been done, run a script that will separate mom and baby gestures into two columns.</li>
+<li><strong>Run</strong> <em>Split-MomBabyGesture.rb</em>. This script pulls out mom and baby gestures from the <em><em>gesture</em></em> column into two new columns: (1) <em><em>babygesture</em></em> and (2) <em><em>momgesture</em></em>. Each column is automatically populated with cells from the respectively tagged events from the <em><em>gesture</em></em> column (e.g., the script ports all gestures coded as ‘m’ to the <em><em>momgesture</em></em> column and ‘b’ to the <em><em>babygesture</em></em> column). Each new cell in babygesture and momgesture is a point cell created at the onset of each cell in the <em><em>gesture</em></em> column.</li>
+</ol>
+</div>
+<div id="workflow-for-coding-object-locomotion-and-emotion-passes" class="section level2">
+<h2>Workflow for coding Object, Locomotion, and Emotion Passes</h2>
+<ol style="list-style-type: decimal">
+<li>Choose whether to code baby or mom first within each pass for object, locomotion, or emotion.</li>
+<li>Score each pass according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual3">Object Codes</a>, <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual4">Locomotion Codes</a>, or <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/emotion">Emotion Codes</a>.</li>
+</ol>
+</div>
+<div id="workflow-for-inter-observer-reliability-on-communication-gesture-object-locomotion-and-emotion-passes" class="section level2">
+<h2>Workflow for Inter-Observer Reliability on Communication, Gesture, Object, Locomotion, and Emotion Passes</h2>
+<ol style="list-style-type: decimal">
+<li>After the primary coder finishes a pass: <em><em>babyutterancetype</em></em>, <em><em>momutterancetype</em></em>, <em><em>gesture</em></em> (split into <em><em>babygesture</em></em>, <em><em>momgesture</em></em>), <em><em>babyobject</em></em>, <em><em>momobject</em></em>, <em><em>babyloc</em></em>, <em><em>momloc</em></em>, <em><em>babyemotion</em></em>, or <em><em>momemotion</em></em> run two scripts to set up the Datavyu spreadsheet for coding reliability.</li>
+<li>First, <strong>run</strong> a script called <em>insert-RelBlocks.rb</em>.
+<ul>
+<li>This script randomly generates 3, 5-minute chunks within the first, second, and third 20-minute sections of the 1-hour video of free play. By quasi-randomly inserting reliability blocks from areas of the primary coder’s pass, this will ensure that the reliability coder sees each portion of the video for each child’s session. Thus, the idiosyncrasies of each child, fluctuations over the 1-hour session, and drift in the coder are spread over the session.</li>
+<li>Reliability on each coding pass is done on the same 3, 5-minute blocks for each pass.</li>
+<li>The scripting window in Datavyu will prompt when everything has been successfully completed. You should now have a brand new column in your spreadsheet named <em><em>reliability_blocks</em></em>.</li>
+<li>This script should only be run <strong>once</strong> so that reliability coding can be done within the same time frame for each coding domain for each session.</li>
+</ul></li>
+<li>Now, <strong>run</strong> another script appropriate for the pass reliability needs to be coded on: <em>CreateReliability-BabyUtterancetype.rb</em> or <em>CreateReliability-MomUtterancetype.rb</em> or <em>CreateReliability-Gesture.rb</em> or <em>CreateReliability-MomBaby-Loc.rb</em> or <em>CreateReliability-MomBaby-Object.rb</em> OR <em>CreateReliability-MomBaby-Emotion.rb</em>
+<ul>
+<li>This script inserts new coding columns where your reliability coder will score the video while they are locked into the script-generated, 5-minute chunks in the <em><em>reliability_blocks</em></em> column.</li>
+</ul></li>
+</ol>
+</div>
+</div>
+<div id="transcribing" class="section level1">
+<h1><a href="transcription.html">Transcribing</a></h1>
+<div id="transcribe" class="section level2">
+<h2><code>transcribe</code></h2>
+<p><code>&lt;source_m-b&gt;</code>, <code>&lt;content&gt;</code>.</p>
+<div id="general-orientation" class="section level3">
+<h3>General Orientation</h3>
+<p>The transcribe column is used to tag the onset of each utterance/vocalization by the mom and baby in a single pass. Then based on the <code>&lt;source&gt;</code> of the utterance/vocalization, the momspeech and babyvoc columns are automatically populated by a script.</p>
+<p>Utterance = a unit of speech separated by silence/pause, which can be a natural “period” as in end of a complete thought or sentence or a long pause (i.e., taking a breath). Utterances are coded as events (cells) separated by gray where no utterances are spoken. These are coded as events, where there is only one time that is tagged (onset), which is any time during the utterance. We do not code strict onsets and offset for the event; a single time during the utterance is the time coded.</p>
+<p>Transcribe all of mothers’ utterances even if they are not baby-directed. But only transcribe communicative utterances; that is, there is no need to tag and transcribe non-speech, non-communicative sounds by the mother (e.g., making whistling noises, muttering to herself indistinguishably).</p>
+<p>Paralinguistic utterances/vocalizations (e.g., laughing, crying, sighing, screaming) by the mom should be typed out (e.g., “ah”). Non-linguistic vocalizations by the baby are coded as “c” (a catch all for crying, laughing, screaming, grunting). Linguistic babbling, vowels, consonants, and combinations of the above by the baby that are not words are coded as “b”.</p>
+</div>
+<div id="value-list" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;source_m-b&gt;</code></p>
+<p><code>m</code> = mom</p>
+<p><code>b</code> = baby</p>
+<p><code>&lt;content&gt;</code></p>
+<p>If the content of the utterance can be heard clearly by the coder, then type transcript of each utterance in the cell.</p>
+<p><code>b</code> = babbling, or vowel/consonant sound by the baby</p>
+<p><code>c</code> = crying, screaming, grunting, laughing sound by the baby</p>
+</div>
+<div id="operational-definitions" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;source_m-b&gt;</code></p>
+<p><code>&lt;m&gt;</code>: Code ‘m’ if the mom is the source of the utterance. This code will be filled in automatically using quick keys.</p>
+<p><code>&lt;b&gt;</code>: Code ‘b’ if the baby is the source of the utterance. This code will be filled in automatically using quick keys.</p>
+<p><code>&lt;content&gt;</code></p>
+<p>transcribe utterance</p>
+<p>Type the complete utterance. Type everything in lower case, except for proper names (e.g., Mommy, I, Cheerios, Anna). Use apostrophes correctly for contractions and possessives (e.g., don’t, where’s, Daddy’s, Lily’s). Do not use “,” commas. <a href=""> (Inset video) </a> Put a question mark “?” at the end of any utterance that is a question. <a href=""> (Inset video) </a></p>
+<p>Individual letters (e.g., mom spells out zoo as “z” “o” “o”) need to be marked with an @ (at symbol) so that they’re not confused with actual words, for example z@ o@ o@. Use existing rules for utterances to decide if each letter is it’s own utterance.</p>
+<p>Any utterance that is unintelligible or hard to decipher, code as “xxx”. This could be the full utterance: for example, the mom says multiple words but they are all unintelligible, so the entire code is “xxx”. Or part of the utterance is intelligible, but part is not: for example, the mom says “give me” and what she says to give is unintelligible, so code “give me xxx”. <a href=""> (Inset video) </a></p>
+<p>In case of language-functioning sounds by the mom or baby, these are typed out as words phonetically as specified below: Ahem (ready to speak), Ay (surprise), Huhuh (no), Hmm (thinking or questioning), Mmhm (yes), Sh (shush), Uhhuh (yes), Uhoh (blunder), uhuh (no), Yeah (yes), Whee (excitement), Whoah (surprise), Whoops (mistake)</p>
+<p>If you encounter a mouth sound that the mom makes, which is communicative but <strong>cannot be transcribed phonetically</strong> (e.g., lip sucking/kissing sound to call the baby over), write out the sound of the vocalization in brackets (e.g. [lip sucking/kissing]). <a href=""> (Inset video) </a> Only write out communicative sounds: for instance, if the mom whistles to get the baby’s attention write out [whistles], but if the mom is just whistling to herself as she cooks then do not tag as an utterance.</p>
+<p><code>&lt;b&gt;</code> : Code ‘b’ if the baby is not saying a full language phrase or sentence. Could be babbling, by saying one or more consonant-vowel pairs. Or could be just a vowel <a href=""> (Inset video) </a>. If you are unsure if it was a language phrase that you can transcribe or was just a babble, then mark as unintelligible “xxx” and make a comment. Either relisten or come back after getting more context later in the video. <a href=""> (Inset video) </a></p>
+<p><code>&lt;c&gt;</code> : Code ‘c’ if the baby is making a non-language-like vocalization. For instance, crying, screaming, laughing, grunting. Any vocalization that is not a consonant-vowel babble or vowel alone. These should be easy to distinguish from babbling, because they serve a different communicative function. <a href=""> (Inset video) </a></p>
+</div>
+<div id="how-to-transcribe" class="section level3">
+<h3>How to Transcribe</h3>
+<p>Set “Jump back by” on the Controller to <strong>2 seconds</strong>.</p>
+<p>Transcribing is done in two iterative passes through a small section of the video (roughly 1-2 minutes). The first part is <strong>tagging utterances</strong> for about 1-2 minutes (until a good break in activity is reached) and the second part is looping back over that same portion of the video to <strong>transcribe utterances</strong>.</p>
+<div id="tagging-utterances" class="section level4">
+<h4>Tagging Utterances</h4>
+<p><strong>Turn on Quick Keys</strong> mode by hitting Shift-Cmnd-K (or selecting Spreadsheet&gt;Enable Quick Keys from the menu bar). You will see <em>QUICK KEY MODE</em> in the spreadsheet window header. This will enable a function that every time an alphanumeric key is pressed, a new point cell (onset=offset) is inserted at the current time in the data controller, and the alphanumeric key pressed will be inserted as the code of the first argument.</p>
+<p>Place your left index finger on the “m” key and your left ring finger on the “b” key. The right fingers should be on pause and shuttle forward and back. Play the video at <strong>1/2 speed</strong> (or 1/4 speed if a fast exchange of utterances is happening). Press the “m” or “b” key every time the <strong>mom</strong> or <strong>baby</strong> has an utterance, while you play the video back. Insert cells <strong>as soon as</strong> you hear something. Be as alert and attentive as possible.</p>
+<p>If you think you hear an utterance, tag it. It’s much better to be fast and insert extra cells, rather than judge yourself and have to go back later to fix the time or insert a cell for an utterance you missed. You can easily delete cells using shortcut keys. You can also fix the <em>source</em> code later if you hit the wrong key. Note, offsets are not coded. Onsets are as close to the utterance onset as you possibly can get. So optimize your attention and coding for speed of tagging.</p>
+<p>The best strategy is to have an unbroken playback session of 1-2 mins where you are just tagging utterances without stopping. Stop playback once you’ve tagged 30-40 cells, 1-2 mins have elapsed, or you hit a good breaking point in an activity (e.g. baby moves onto playing with a new toy). Try to stop a tagging utterances past as soon as you tag a new utterance, rather than playing further into silence of the video; that way you can jump to and pick up right where you left off at an utterance for the next tagging pass, instead of potentially re-playing the same part of the video.</p>
+<p>Now, <strong>turn off Quick Keys</strong> (Shift-Cmnd-K). Run the <strong>addtime_transcribe.rb script</strong>. This will add 500 ms to the offset, which will help in highlighting in the next step.</p>
+</div>
+<div id="transcribe-utterances" class="section level4">
+<h4>Transcribe Utterances</h4>
+<p><strong>Turn on Highlight and Focus Mode</strong> by hitting Shift-Cmnd-F (or selecting Spreadsheet&gt;Enable Highlight and Focus Mode from the menu bar). This will highlight each cell as you loop back through the 1-2 mins you just tagged utterances in and put the focus of data entry (cursor) into the first uncoded argument in that cell (which will be <em>content</em>).</p>
+<p>SCROLL or ARROW up to the first cell from the most recent utterance tagging done. Jump to that first cell (+ key) and then JUMP-BACK-BY 2 s (- key). Playback the video at <strong>1x speed</strong>. Listen to each utterance within the context of the ongoing stream of speech. JUMP-BACK and re-listen as many times as needed until you are sure of the utterance. Once you are sure of the utterance, stop playback and transcribe the utterance or insert the appropriate code (for the baby).</p>
+<p>If you go past an utterance and missed transcribing it, hit the jump back key until you are right before it. If you get lost in the transcription, JUMP BACK 2-3 cells (by arrowing or jump back key) before where you lost track of transcribing. It’s much better to use the keyboard to navigate and loop back (jump back or arrow up or down) rather than mousing. (Note: you may need to mouse into the argument of the first cell in a section after tagging utterances). If you mouse and jump around, you will get lost; stay in “looping” mode throughout transcription even if it means listening multiple times to a single section.</p>
+<p>If you find a cell for an utterance that was tagged by mistake (you thought there was an utterance but there wasn’t) then delete that cell. JUMP-BACK-BY 2 s before the cell you deleted and confirm there was no utterance and that the next utterance is tagged at the correct time. (Note: you may need to mouse into a cell after deleting).</p>
+<p>If you need to change the onset of an utterance, ARROW into it (or let auto focus move you into it) and hit the 7 key to set onset to the current time. Do not worry about setting or fixing the offset.</p>
+<p>If you missed tagging an utterance in the first part, find the time of the utterance onset while you are transcribing. Hit ENTER and set the offset (same time as onset) using the 9 key. Code “m” or “b” for <em>source</em>, then tab into <em>content</em> and transcribe.</p>
+<p><strong>Turn off Highlight and Focus Mode</strong>. Save the file. Now <strong>turn back on Quick Keys</strong>, jump to the onset of the last cell transcribed, and revert back to the coding strategy for tagging utterances.</p>
+</div>
+<div id="splitting-mom-and-baby-utterances" class="section level4">
+<h4>Splitting Mom and Baby Utterances</h4>
+<p>It’s easier and faster to tag and transcribe mom and baby together in one pass. But for later coding, we want mom speech and baby vocalizations to be in two separate columns.</p>
+<p><strong>Run the split<em>mombaby</em>transcribe.rb script</strong> to pull mom and baby utterances into their appropriate columns.</p>
+<p>At this step, you can also <strong>run the create<em>mombaby</em>utterancetype.rb script</strong> to insert the momutterancetype and babyutterancetype columns and insert cells for every tagged utterance.</p>
+</div>
+</div>
+</div>
+</div>
+<div id="datavyu-communication-codes-for-1-hour-natural-play" class="section level1">
+<h1>Datavyu <a href="communication.html">Communication Codes</a> for 1-Hour Natural Play</h1>
+<p>Make sure you are <a href="https://nyu.databrary.org/user/login">currently logged in at Databrary</a> to view embedded video examples in this wiki.</p>
+<p>This section covers these 4 main codes: babyvoc, babyutterancetype, momspeech, and momutterancetype</p>
+<div id="babyvoc" class="section level2">
+<h2><code>1. babyvoc</code></h2>
+<p><code>&lt;content&gt;</code></p>
+<div id="general-orientation-1" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains a transcript of all of the utterances/vocalizations of the baby.</p>
+<p>This column is automatically populated after the <em>transcribe</em> pass is completed using a Ruby script. All of the utterances tagged with ‘b’ in <a href=""> <source> </a> in <em>transcribe</em> are transferred here. The onset and offset are equal, and set to the onset from the <em>transcribe</em> column, which reflects a time as close as possible to the onset of that utterance.</p>
+</div>
+</div>
+<div id="babyutterancetype" class="section level2">
+<h2><code>2. babyutterancetype</code></h2>
+<p><code>&lt;language_s-w&gt;</code> <code>&lt;langlike-b-v&gt;</code> <code>&lt;crygrunt_c-g&gt;</code> <code>&lt;unintell-x&gt;</code></p>
+<div id="general-orientation-2" class="section level3">
+<h3>General Orientation</h3>
+<p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.</p>
+<p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the baby didn’t speak in full speech, or speech-like sound, but did cry/scream, then code &lt;.,.,c,.&gt;.</p>
+<p>The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.</p>
+</div>
+<div id="value-list-1" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;language_s-w&gt;</code></p>
+<p><code>s</code> = sentence</p>
+<p><code>w</code> = word</p>
+<p><code>&lt;langlike_b-v&gt;</code></p>
+<p><code>b</code> = babble</p>
+<p><code>v</code> = vowel</p>
+<p><code>&lt;crygrunt_c-g&gt;</code></p>
+<p><code>c</code> = cry</p>
+<p><code>g</code> = grunt</p>
+<p><code>&lt;unintell-x&gt;</code></p>
+<p><code>x</code> = unintelligible</p>
+</div>
+<div id="operational-definitions-1" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;s&gt;</code></p>
+<p>Sentence = an utterance in which the speaker utters more than one word, producing a sentence or phrase (e.g., “Daddy’s shoe” or “Go to the park”). <a href=""> 3 videos (“ooh gimme that”, “i take this”, “goodbye sad face?”) </a></p>
+<p><code>&lt;w&gt;</code></p>
+<p>Word = an utterance in which the speaker utters a single word, such as “dolly” or “ball.” <a href=""> 3 videos (“car”, “basketball”, “truck”) </a></p>
+<p><code>&lt;b&gt;</code></p>
+<p>Babble = an utterance in which the speaker utters a series of repeated canonical syllables, such as ba-ba-ba, or ga-ga-ga. <a href=""> 3 videos (all “b”) </a></p>
+<p><code>&lt;v&gt;</code></p>
+<p>Vowel = an utterance in which the speaker utters a vowel sound (e.g, /a/, /i:/). <a href=""> 3 videos (all “v”) </a></p>
+<p><code>&lt;c&gt;</code></p>
+<p>Cry= an utterance in which the speaker is experiencing a period of prolonged distress. <a href=""> 3 videos (all “c”) </a></p>
+<p><code>&lt;g&gt;</code></p>
+<p>Grunt= an utterance in which the speaker produces a low, short, inarticulate, guttural sound often used to express effort or exertion. Vegetative sounds, such as coughing and sneezing, should be captured using this code. <a href=""> 2 videos (both “g”) </a></p>
+<p><code>&lt;x&gt;</code></p>
+<p>Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.</p>
+</div>
+<div id="how-to-code" class="section level3">
+<h3>How to Code</h3>
+<p>Set the “JUMP-BACK-BY” to 2 s.</p>
+<p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in babyvoc column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
+<p>Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. Then insert periods to the end of the cell.</p>
+</div>
+</div>
+<div id="momspeech" class="section level2">
+<h2><code>3. momspeech</code></h2>
+<p><code>&lt;content&gt;</code></p>
+<div id="general-orientation-3" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains a transcript of all of the utterances of the mom.</p>
+<p>This column is automatically populated after the transcribe pass is completed using a Ruby script. All of the utterances tagged with ‘m’ in <source> in transcribe are transferred here. The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.</p>
+</div>
+</div>
+<div id="momutterancetype" class="section level2">
+<h2><code>4. momutterancetype</code></h2>
+<p><code>&lt;imperative_l-a-p&gt;</code> <code>&lt;interrog-i_declar-d&gt;</code> <code>&lt;filler-f&gt;</code> <code>&lt;unintell-x&gt;</code></p>
+<div id="general-orientation-4" class="section level3">
+<h3>General Orientation</h3>
+<p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in <code>momspeech</code> column and categorize each utterance based on codes below.</p>
+<p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. For instance, if the mom didn’t do an imperative, sing/read, but did give a declarative, then code &lt;.,d,.,.&gt;.</p>
+<p>What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom’s speech.</p>
+</div>
+<div id="value-list-2" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;imperative_l-a-p&gt;</code></p>
+<p><code>l</code> = imperative look</p>
+<p><code>a</code> = imperative act</p>
+<p><code>p</code> = imperative prohibit</p>
+<p><code>&lt;interrog-i_declar-d&gt;</code></p>
+<p><code>i</code> = interrogative`</p>
+<p><code>d</code> = declarative</p>
+<p><code>&lt;filler-f&gt;</code></p>
+<p><code>f</code> = filler/affirmation</p>
+<p><code>&lt;unintell-x&gt;</code></p>
+<p><code>x</code> = unintelligible</p>
+</div>
+<div id="operational-definitions-2" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;l&gt;</code></p>
+<p>Imperative Look = an utterance in which the speaker directs a baby’s attention (e.g., “Look here”, “See?”, or calls baby’s name to alert attention). <a href=""> 2 videos (“evelyn”, “look”) </a></p>
+<p><code>&lt;a&gt;</code></p>
+<p>Imperative Act = an utterance in which the speaker directs a baby’s action, such as asking baby to do something, or to play with an object. An example would be if a mother tells her baby “let’s play with the ball”. <a href=""> 3 videos (“turn the page”, “come here please”, “go get the basketball”) </a></p>
+<p><strong>NOTE</strong>: The imperative look and imperative act can be collapsed if the breakdown takes too long to code/specify (although we don’t think it will save time).</p>
+<p><code>&lt;p&gt;</code></p>
+<p>Imperative Prohibit = an utterance in which the speaker prohibits a baby’s behavior, such as asking baby to stop what they’re doing. <a href=""> 3 videos (“dont knock it over”, “dont be so rough”, “no no tv”) </a></p>
+<p><code>&lt;i&gt;</code></p>
+<p>Interrogative = an utterance in which the speaker asks for information about objects or ongoing activities (e.g., “What is this called?”, “What color is this?). Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the baby’s behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That’s a blue truck, right?”) are not considered questions. These should be coded as declaratives. <a href=""> 2 videos (“what does the pig say?”, “what is this?”) </a></p>
+<p><code>&lt;d&gt;</code></p>
+<p>Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”. <a href=""> 2 videos (“baby’s clothes”, “that’s a lemonade”) </a></p>
+<p><code>&lt;f&gt;</code></p>
+<p>Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker’s behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the baby successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a></p>
+<p><code>&lt;x&gt;</code> Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both “xxx”) </a></p>
+</div>
+<div id="how-to-code-1" class="section level3">
+<h3>How to Code</h3>
+<p>Set the JUMP-BACK-BY key for 2 s.</p>
+<p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in <em><em>momspeech</em></em> column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
+<p>Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB between each argument/prompt inserting period ”.“ until you reach the appropriate code. Then insert periods to the end of the cell.</p>
+</div>
+</div>
+</div>
+<div id="datavyu-gesture-codes-for-1-hour-natural-play" class="section level1">
+<h1>Datavyu <a href="gesture.html">Gesture Codes</a> for 1-Hour Natural Play</h1>
+<div id="gesture" class="section level2">
+<h2><code>gesture</code></h2>
+<p><code>&lt;source_m-b&gt;</code>, <code>&lt;gesture_p-s-i-c&gt;</code></p>
+<div id="general-orientation-5" class="section level3">
+<h3>General Orientation</h3>
+<p>Gestures are segmented, durative, event-based behaviors. Watch the video paying attention to the <strong>communicative gestures</strong> used by the parent and the child. When coding for gesture, focus on the mother’s or baby’s <strong>hands</strong> and <strong>head</strong>.</p>
+<p>Code mother and baby gesture simultaneously in <strong>one pass</strong>. Then based on the <code>&lt;source&gt;</code> of the gesture, a script breaks apart mom and baby into separate <em>babygesture</em> and <em>momgesture</em> columns.</p>
+<p><em>Only onsets are coded</em> to expedite coding; offsets could be coded later if duration of gesture or overlap with specific other domains is of interest.</p>
+</div>
+<div id="value-list-3" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;source_m-b&gt;</code></p>
+<p><code>m</code> = mom</p>
+<p><code>b</code> = baby</p>
+<p><code>h</code> = mom holding baby</p>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<p><code>p</code> = point</p>
+<p><code>s</code> = show/hold up</p>
+<p><code>i</code> = iconic gesture</p>
+<p><code>c</code> = conventional gesture</p>
+</div>
+<div id="operational-definitions-3" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;source_m-b&gt;</code></p>
+<p><code>&lt;m&gt;</code>: Code ‘m’ if the mom is the source of the gesture.</p>
+<p><code>&lt;b&gt;</code>: Code ‘b’ if the baby is the source of the gesture.</p>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<p>Gesturing by either mom or baby <em>to the investigator</em> (or anyone else in the room) should not be coded. The following should <em>NOT</em> be coded as gestures: tapping baby to get his/her attention; pushing an object away; hugging and kissing; one partner moving the other’s hand (e.g., to initiate contact, like proximity seeking); jerking the head to indicate “come here.”</p>
+<p><code>&lt;p&gt;</code></p>
+<p>Code ‘<strong>p</strong>’ when the baby or mom extends their index finder to indicate reference to objects, people, events, or locations in the environment.</p>
+<p><strong>Onset</strong> is the frame when the finger is fully extended in space toward a referent, or when the point finger is extended and makes contact with the object. Repetitive points should be coded as separate gesture events.</p>
+<p><code>&lt;s&gt;</code></p>
+<p>Code ‘<strong>s</strong>’ when the baby or mom holds up an object to present it as if to say: “look at this” or “do you want this” or “I want you to take this”. Given that it’s not possible to distinguish intention, when a participant shows, offers, or gives an object (e.g., baby actually hands toy to mom, offering toy to mom but mom doesn’t take) code as ‘s’, to save decision-making time.</p>
+<p><strong>Onset</strong> is the frame when the object is fully held up or out to show it. Repetitive instances of holding up or offering an object should be coded as separate gesture events.</p>
+<p><code>&lt;i&gt;</code></p>
+<p>Code ‘<strong>i</strong>’ when the baby or mom engages in an iconic gesture. They are called iconic because they represent an object, idea, or action that can’t easily be referenced with a deictic (point/show) or conventional gesture. The movement of these gestures usually calls to mind something about the nature of the object, idea or action being referenced. For example, you could move your arms back and forth to represent running, or you could trace a square in the air with your finger, or flap your arms as if flying.</p>
+<p><strong>Onset</strong> is the frame when the baby or mom has clearly begun the iconic gesture, and the coder can clearly identify this a gesture but does fall into the conventional gesture category (see <code>&lt;c&gt;</code>). Repetitive instances of an iconic gesture should be coded as separate gesture events.</p>
+<p><code>&lt;c&gt;</code></p>
+<p>Code ‘c’ when the baby or mom engages in a conventional gesture. Conventional gestures are culturally-agreed-upon hand or head movements with a specific meaning, like nodding the head to mean “yes,” shaking the head to mean “no,” and moving the finger to lips to indicate “be quiet”. <a href=""> 2 videos (shaking head “no”; holding out hand for “give me”) </a></p>
+<p>If a gesture is conventional, you should be able to understand its meaning just by seeing it in isolation, without knowing any of the context. Some additional examples of conventional gestures include: waving, clapping, flipping arms out to side to indicate “I don’t know’ or “where is it”, come here gesture (finger motions or palms), sit down gesture (pats ground), pickup gesture (child holds up arms to be picked up), thumbs up, shrugs, naughties (wag finger), hug me (hold arms out asking for hug), etc.</p>
+<p><strong>Onset</strong> is the frame when the baby or mom has clearly begun the conventional gesture, and the coder can clearly identify this a gesture but does fall into the iconic gesture category (see <code>&lt;i&gt;</code>). Repetitive instances of a conventional gesture should be coded as separate gesture events.</p>
+</div>
+<div id="how-to-code-2" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 2 s.</p>
+<p>Gestures are best coded with the volume low or muted so that the language content does not confound the coding process.</p>
+<p>Watch in <strong>1x speed</strong> until either mom or baby gestures. Focus on the mom’s and infant’s hands and head to identify instances of gestures.</p>
+<p>Gestures are defined purely as they relate to the communicative nature of each action. The coder can establish whether something is <em>communicative</em> by looking at things like eye contact, conversational context, and the reaction of the person being spoken or gestured to. If the movement isn’t supposed to communicate anything, then it’s not a gesture. For example, a child might reach for an object and pick it up and look at it. This is an action, not a gesture. But, if the child points to the object to indicate its presence, or if the parent claps her hands to indicate “good job,” then these are gestures. (If there is significant ambiguity in whether a gesture is communicative, or how to code it, sound may be of assistance.)</p>
+<p>When the coder identifies a mom or baby gesturing, jump back <strong>2 seconds</strong> and play the video again at <strong>½ speed</strong> until the frame the gesture is clearly underway is found. Hit the = key (equal sign) to insert a point cell; so the current video frame becomes the onset and the offset.</p>
+<p>Type <strong>‘m’</strong> or <strong>‘b’</strong> to indicate whether mom of the baby was the <code>&lt;source&gt;</code> of the gesture. Hit the TAB key to advance the cursor to <code>&lt;gesture&gt;</code>, then type <strong>‘p’</strong>, <strong>‘s’</strong>, <strong>‘i’</strong>, or <strong>‘c’</strong> to indicate the type of gesture.</p>
+<div id="splitting-mom-and-baby-gestures" class="section level4">
+<h4>Splitting Mom and Baby Gestures</h4>
+<p>It’s faster to code mom and baby gesture together in one pass. But for consistency with the other coding passes, we want mom speech and baby gestures to be in two separate columns.</p>
+<p><strong>Run the Split-MomBabyGesture.rb script</strong> to pull baby and mom gestures from the the <em>gesture</em> column into <em>babygesture</em> and <em>momgesture</em> columns.</p>
+</div>
+</div>
+</div>
+<div id="babygesture" class="section level2">
+<h2><code>babygesture</code></h2>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<div id="general-orientation-6" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains gestures produced by the baby.</p>
+<p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘b’ in <code>&lt;source&gt;</code> in the <em>gesture</em> column are transferred here. The onset and offset are equal, and set to the onset from the gesture column, which reflects the time when the coder was sure the gesture had begun.</p>
+</div>
+<div id="value-list-4" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<p><code>p</code> = point</p>
+<p><code>s</code> = show/hold up</p>
+<p><code>i</code> = iconic gesture</p>
+<p><code>c</code> = conventional gesture</p>
+</div>
+</div>
+<div id="momgesture" class="section level2">
+<h2><code>momgesture</code></h2>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<div id="general-orientation-7" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains gestures produced by the mom.</p>
+<p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘m’ in <code>&lt;source&gt;</code> in the gesture column are transferred here. The onset and offset are equal, and set to the onset from the <em>gesture</em> column, which reflects the time when the coder was sure the gesture had begun.</p>
+</div>
+<div id="value-list-5" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;gesture_p-s-i-c&gt;</code></p>
+<p><code>p</code> = point</p>
+<p><code>s</code> = show/hold up</p>
+<p><code>i</code> = iconic gesture</p>
+<p><code>c</code> = conventional gesture</p>
+</div>
+</div>
+</div>
+<div id="coding-locomotion" class="section level1">
+<h1>Coding <a href="locomotion.html">locomotion</a></h1>
+<div id="babyloc" class="section level2">
+<h2><code>babyloc</code></h2>
+<p><code>&lt;loc_l-f-h-c&gt;</code></p>
+<div id="general-orientation-8" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true</a></p>
+<p>Also included in this pass are the times when locomotion cannot occur because the baby is held,</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true</a></p>
+<p>and the times baby is constrained in baby furniture (e.g., a belted chair, highchair, or stroller).</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true</a></p>
+<p>Coders score only instances of baby-generated locomotion, and instances of falling, being held, or being constrained. Coders do not score instances where baby is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the baby is stationary but not held and not constrained.</p>
+<p>Coders are watching/tagging the duration of each of these events (locomotion, falls, held, constrained) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is not locomotion.</p>
+</div>
+<div id="value-list-6" class="section level3">
+<h3>Value List</h3>
+<p><code>l</code> = locomotion</p>
+<p><code>f</code> = fall</p>
+<p><code>m</code> = mother constraining baby locomotion</p>
+<p><code>d</code> = device constraining baby locomotion (high chair, stroller, carseat, etc.)</p>
+<p><code>.</code> = when baby is off camera or the baby’s feet/knees/bum are off camera and coder cannot see or infer whether the baby is locomoting.</p>
+</div>
+<div id="operational-definitions-4" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;l&gt;</code> Code “l” when the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, climbing, cruising, supported walking, independent walking, etc.)</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true</a></p>
+<p>This code counts locomotion regardless of whether the baby maintains balance independently or the baby’s balance is supported by a parent or external object/apparatus.</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true</a></p>
+<p>Any self-generated locomotion on a moving toy or baby furniture (e.g., a bicycle or bottomless car that the baby moves with their legs) counts as locomotion.</p>
+<p>Locomotion occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the baby is taking a “step”.</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true</a></p>
+<p>A baby takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot in the air to count as moving; if not, this is stationary).</p>
+<p>Onset of a “step” is when the whole foot/knee comes up off the ground. A step can also happen if the foot doesn’t come off the ground, but the foot has to slide forward, backward or sideways. Marching in place, jumping, and hopping also count as locomotion. Offset is the frame when the baby takes the last step (with foot/knee) to pause in place (in the same posture such as walking to standing) or to transition to another stationary posture (e.g., upright walking to sitting). A pause must last at least 0.5 s.</p>
+<p>Do not include any movement with foot/knee as part of a transition to another posture (e.g., sit to upright/walk). The first walking/crawling step will be when the foot/knee moves forward in any direction. The final step in the bout has to be a real walking/crawling step (i.e., it is not the last half step or little attempt-step that looks like a transition into the sit). For example, if the baby transitions from sitting to crawling; the first step is after the transition ends and the last step is just before another transition begins.</p>
+<p>If the feet/knees/bum are outside the camera view, code the locomotion bout if you can see the body moving and/or can infer that the baby is moving. If you are unsure as to whether the baby is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this bout should be coded as missing “.”, where the offset of the previous locomotion bout (just before the video occlusion or lack or view) should be set to the last frame where you can no longer see/infer the baby’s movement.</p>
+<p><code>&lt;f&gt;</code></p>
+<p>Code ‘f’ if the baby loses control over his/her body (i.e., balance) and cannot recover on his/her own before his/her body hits the ground.</p>
+<p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion. Falls can happen while the mom is holding the baby’s hand or while the baby is holding onto furniture or another support.</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true</a></p>
+<p>Onset is frame when baby first begins to lose balance and Offset when baby’s body (as defined below) hits the floor.</p>
+<p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground; baby’s bum hitting the ground; or head hitting the ground.</p>
+<p>From a crawling position: a loss of balance results in the face, head, chest, or side of torso hitting the ground.</p>
+<p>From a sitting position: a loss of balance results in the head, chest, side of torso, or back hitting the ground.</p>
+<p>A loss of balance must occur before any of the body parts hit the ground. The baby must be out of his/her own control. Sometimes babies will actively let themselves lose control (e.g., plopping down into a sit, where they let themselves fall down into a sitting position). That is not a loss of balance but IS a loss of control and should count as a fall.</p>
+<p>If the baby loses balance, but catches him/herself before the above body parts hit the ground, do not count as a fall.</p>
+<p>Parent involved falls would only be coded as a fall if the parent catches the baby after the baby loses balance, effectively supporting the baby’s entire weight. In this scenario, the baby would have fallen if not for parent rescue (i.e., the body part would have hit the ground). Parents must catch after the baby has begun to lose balance. If the parent was already supporting the baby’s weight before a loss of balance, but baby’s body parts (e.g., hands, head, butt, etc.) do not touch the ground, then this is not a fall (it is supported walking).</p>
+<p><code>&lt;m&gt;</code></p>
+<p>Code ‘m’ when the baby is being constrained and supported by the mother. The baby’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the baby’s body by touching their torso. Do not count mother constraint when the baby is just sitting on the mother’s lap. During a mother constraint, the parent can be moving (carrying) or stationary (holding).</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
+<p>Onset of hold is the last frame before the baby’s second foot (or bum if child was sitting, torso if child was laying down, second knee if crawling or knee walking) lifts up off the current surface and up into the air in mom’s arms.</p>
+<p>Offset of hold is when both feet touch the ground (or bum if mom places child in sitting, torso if mom places child laying down, both knees if mom places child in crawling or knee walking), and the baby starts supporting own weight in any posture.</p>
+<p>When mom is putting the baby back down, the onset for the immediate subsequent locomotion bout (if it happens) is when the second foot, hand, or knee touches the floor.</p>
+<p><code>&lt;d&gt;</code></p>
+<p>Code ‘d’ if the baby is constrained in a device that restricts movement (e.g., a highchair, stroller, carseat, etc.). Device is not a couch, bed, or changing table unless there’s a strap, belt, or cord holding baby down. Device can never be household furniture not intended for children. Wooden or plastic child chair is not a device without straps.</p>
+<p>Baby walker is not a device. This would count as supported walking because that’s the whole point of a baby walker. Jolly jumper counts as a constrained device even though the baby is moving or jumping around.</p>
+<p>Mom-constraint and device-constraint are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint.</p>
+<p>Onset of constrained is when the baby’s butt first touches the restrictive device.</p>
+<p>Offset of constrained is when the butt leaves the device as the parent starts to take the baby out (usually by lifting them out).</p>
+</div>
+<div id="how-to-code-3" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+<p>Enable cell highlighting.</p>
+<p>Watch in real time for the baby’s movement.</p>
+<p>Watch baby’s feet and knees.</p>
+<p>As soon as you see baby’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this Onset.</p>
+<p>Now, watch in real time to see when the baby stops moving. The Offset is when the baby stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the baby is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position (sometimes infants stop their walking bout on their tip-toes) is the offset. The same applies to sliding steps.</p>
+<p>To set the Offset, use the same rules for mechanics as with the onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster.</p>
+</div>
+</div>
+<div id="momloc" class="section level2">
+<h2><code>momloc</code></h2>
+<p><code>&lt;loc_l-f&gt;</code></p>
+<div id="general-orientation-9" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that mom is engaged in locomotion or fell.</p>
+<p>Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary.</p>
+<p>Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts.</p>
+<p>Coders are watching for steps with the feet, the knees, or the bum.</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true</a></p>
+<p>Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion.</p>
+<p>Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving.</p>
+</div>
+<div id="value-list-7" class="section level3">
+<h3>Value List</h3>
+<p><code>l</code> = locomotion</p>
+<p><code>f</code> = fall</p>
+<p><code>.</code> = when mother is off camera and coder cannot determine whether mom is moving or stationary</p>
+</div>
+<div id="operational-definitions-5" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;l&gt;</code> Code ‘l’ when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling).</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true</a></p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
+<p>If you’re not sure whether the mom is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this is missing data and the offset of the locomotion bout should be set to the last frame where you can see mom.</p>
+<p>The subsequent cell (where you cannot see anything or make an inference about movement) should be coded as “.” until you can see mom again.</p>
+<p>However, if you can infer that mom is moving or stationary (i.e., head is bobbing, shadow of the leg moving is visible, etc.) then include it in the same bout of locomotion, following the rules for pauses above.</p>
+<p><code>&lt;f&gt;</code></p>
+<p>Code ‘f’ if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground.</p>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true</a></p>
+<p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion.</p>
+<p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground.</p>
+</div>
+<div id="how-to-code-4" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+<p>Enable cell highlighting on the controller.</p>
+<p>Watch in real time for the mom’s movement.</p>
+<p>Watch for the feet and knees.</p>
+<p>As soon as you see mom’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this Onset.</p>
+<p>Now, watch in real time to see when the mom stops moving. The Offset is when the mom stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the mom is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position is the offset. The same applies to sliding steps.</p>
+<p>To set the Offset, use the same rules for mechanics as with the Onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster.</p>
+</div>
+</div>
+</div>
+<div id="datavyu-object-codes-for-1-hour-natural-play" class="section level1">
+<h1>Datavyu <a href="objects.html">Object Codes</a> for 1-Hour Natural Play</h1>
+<p>Make sure you are <a href="https://nyu.databrary.org/user/login">currently logged in at Databrary</a> to view embedded video examples in this wiki.</p>
+<div id="babyobject" class="section level2">
+<h2><code>babyobject</code></h2>
+<p><code>&lt;obj&gt;</code></p>
+<div id="general-orientation-10" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that the baby is manually engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. <a href=""> (2 videos) </a></p>
+</div>
+<div id="value-list-8" class="section level3">
+<h3>Value List</h3>
+<p><code>o</code> = object</p>
+<p><code>.</code> = when baby is off camera and coder cannot determine whether baby has an object in hand.</p>
+</div>
+<div id="operational-definitions-6" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;obj&gt;</code></p>
+<p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as ‘o.’ <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support. <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object) <a href=""> (1 video) </a>.</p>
+<p>Riding on toys with wheels does not count as object, but this will be coded in <em>babyloc</em> pass.</p>
+<p>Code ‘<strong>o</strong>’ if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.) <a href=""> (1 video) </a></p>
+<p><strong>Onset</strong> is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). <strong>Offset</strong> is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as ‘o,’ but if infant is touching multiple objects, the offset of ‘o’ object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. <a href=""> (1 video) </a></p>
+</div>
+<div id="how-to-code-5" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 3 s.</p>
+<p>Enable cell highlighting.</p>
+<p>Watch in real time for the baby’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the baby makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the <strong>Offset</strong> when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it. Then, hit #9-SETOFFSET.</p>
+<p>Continue watching in real time for the next object bout. If the baby is holding an object while crawling or walking around, you can watch faster by SHUTTLING at 2x speed to find the end of the object engagement.</p>
+<p>To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of ‘o’. Then, hit the ‘JUMP-BACK-BY’ key and check to see if the previous cell lights up. If it does, then the two cells are &lt;3 s apart and should be combined into one bout of ‘<strong>o</strong>’.</p>
+</div>
+</div>
+<div id="momobject" class="section level2">
+<h2><code>momobject</code></h2>
+<p><code>&lt;obj&gt;</code></p>
+<div id="general-orientation-11" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that the mom is engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray space in between cells means that the mom is not engaged with an object.</p>
+</div>
+<div id="value-list-9" class="section level3">
+<h3>Value List</h3>
+<p><code>o</code> = object.</p>
+<p><code>.</code> = when mother is off camera and coder cannot determine whether she has an object in hand.</p>
+</div>
+<div id="operational-definitions-7" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;obj&gt;</code></p>
+<p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated <a href=""> (5 videos) </a>. Object can include large objects that mom may move (chairs).</p>
+<p>Code ‘<strong>o</strong>’ if mom is engaged with an object by making contact with the item with her hand(s). <strong>Onset</strong> is the frame when mom first makes contact with hands. <strong>Offset</strong> is the frame when mom is no longer in manual contact with an object for at least 3 s. If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.</p>
+<p>In cases of larger objects (i.e., a stroller, a box, a chair, a table, etc.), the object engagement begins when the object starts to move. If the large object never moves (e.g., the mom has a hand on the stroller but does not displace it), then this is not coded as ‘<strong>o</strong>’. <a href=""> (1 video) </a></p>
+<p>Your browser does not support html5 video.</p>
+<p>If the mom is not in the camera view, code this with a ‘.’ as missing data.</p>
+</div>
+<div id="how-to-code-6" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 3 s.</p>
+<p>Enable cell highlighting.</p>
+<p>Watch in real-time for the mom’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the mom moves/manipulated the object (which would make this an instance of Object). Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the mom makes manual contact with the item and moves it through space. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the Object bout in real time and set the <strong>Offset</strong> when the mom breaks manual contact or stops moving the object for at least 3 s (i.e., Object bouts that are interrupted by gray space are more than 3 s apart.</p>
+<p>There is no necessary minimum duration for object engagement during the ‘o’ bout to be coded as Object. In other words, the mom can engage with an item or as little or as much time as they would like, however, the mom must make manual contact and move it through space to count.</p>
+<p>Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the mom if no longer in manual contact with the item and/or when the mom is no longer moving it. Then, hit #9-SETOFFSET.</p>
+<p>Continue watching in real time for the next object bout. If the mom is walking or crawling with an object, watch at 2x speed.</p>
+<p>Do not agonize. If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of ‘<strong>o</strong>’. Do not mark the “.” for every few seconds she is out of frame.</p>
+<p>Code as Object event if mom’s back is to the camera, but you see her arms moving and she overtly appears to be manipulating something—even if you can’t see exactly what it is.</p>
+<p>Many times, onsets and offsets are coded when mom goes in and out of frame. In these instances, hit the <em>0</em> key to set a continuous cell, whose onset is 1-ms after the previous cell.</p>
+</div>
+</div>
+</div>
+<div id="coding-emotion" class="section level1">
+<h1>Coding <a href="emotion.html">emotion</a></h1>
+<div id="babyemotion" class="section level2">
+<h2><code>babyemotion</code></h2>
+<p><code>&lt;emotion_p-n&gt;</code></p>
+<div id="general-orientation-12" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that the baby is clearly displaying positive or negative emotion through facial expressions. Times when the baby is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the baby is neutral or emotion is unclear. Coders also mark times as “missing” when the baby’s face could not possibly be coded for emotion (e.g., face completely turned away from camera, baby’s head out of the video). When the baby’s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., baby is screaming and crying).</p>
+<p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. To determine emotion, coders are watching the baby’s face, not vocal affect. To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
+</div>
+<div id="value-list-10" class="section level3">
+<h3>Value List</h3>
+<p><code>p</code> = positive emotion</p>
+<p><code>n</code> = negative emotion</p>
+<p><code>.</code> = baby’s face is completely not visible</p>
+</div>
+<div id="operational-definitions-8" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;p&gt;</code></p>
+<p>Code ‘p’ when the baby is clearly displaying positive emotion (e.g., smiling). Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. If there is any doubt that the baby is showing positive emotion, then do not begin the code.</p>
+<p>Positive emotion cannot be coded based on the voice alone. So positive emotion could not be scored when the baby’s face is absolutely not visible (i.e. missing).</p>
+<p><code>&lt;n&gt;</code></p>
+<p>Code ‘n’ when the baby is clearly displaying negative emotion (e.g., frowning, wincing). Code based off of the face and not off of the voice. Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow. If there is any doubt that the baby is showing negative emotion, then do not begin the code.</p>
+<p>Do not defer to the voice to code negative emotion when the face is visible. If the baby’s face is clearly not visible (i.e. missing), then ‘n’ can be coded if the baby is displaying clear negative emotion through their voice. The baby could be screaming, crying, or yelling. If there is any doubt whether the voice is negative, then do not begin the code.</p>
+<div id="onset" class="section level4">
+<h4>Onset</h4>
+<p>Onset of an emotion event is the first frame the baby is clearly displaying positive/negative emotion through the face. The onset does not need to be completely frame accurate, since emotion could begin in any part of the face. The coder is looking to identify when any lay person would absolutely agree the baby is showing positive/negative emotion based on the face.</p>
+<p>There is no criterion for how long an emotion event should be. It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later. Events that are later deemed “too brief” could be removed via scripting.</p>
+<p>When coding ‘n’ from voice during missing time, set the onset when the negative voice starts and end the ‘n’ code when the voice ends. The onset/offset do not need to be frame accurate. For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion. Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of ‘missing’. We want to preserve the 1ms difference between ‘missing’ and the emotion code so we can know that that ‘missing’ event was ended because of the onset of an emotion code.</p>
+</div>
+<div id="offset" class="section level4">
+<h4>Offset</h4>
+<p>Offset of a positive/negative emotion is the first frame the baby is clearly back to a neutral emotion through the face. The offset does not need to completely frame accurate, since emotion could end in any part of the face. The coder is looking to identify when any lay person would absolutely agree the baby is no longer showing any positive/negative emotion based on the face.</p>
+<p>If the baby’s face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the ‘p’ or ‘n’ code. The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.</p>
+<p>For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset. Code the offset as the first frame the face completely is not visible (see ‘missing’ code below). Use “0” key to set the offset of emotion and simultaneously code the onset of ‘missing’. We want to preserve the 1ms difference between the emotion code and ‘missing’ so we can know that that ‘missing’ event caused the offset of that emotion event.</p>
+<p><code>&lt;.&gt;</code></p>
+<p>Code ‘.’ for missing when the baby’s face is completely not visible. The baby’s full face could turned away from the camera, baby’s head is completely off camera, or the baby is out of frame entirely. If the coder could see the emotion the baby is expressing in their face from a side or oblique angle, then do not code missing.</p>
+<p>If the face is not visible but the baby is displaying clear negative emotion in the voice (e.g., baby crying or screaming) then the missing code is ended and ‘n’ is coded (see ‘n’ code). Positive emotion cannot be coded by voice.</p>
+<p>Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again. The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
+<p>If the baby’s face was ‘missing’ and then reappeared for less than 5 frames, don’t stop the ‘.’ code to mark those few frames.</p>
+</div>
+</div>
+<div id="how-to-code-7" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+<p>Play with #8-PLAY in real time (1x speed) until the baby changes to clear positive or clear negative emotion or the face is clearly not visible. Focus on the baby’s face and do not be distracted by what the baby is saying or doing.</p>
+<p>Pause with #5-STOP once you have identified a clear change in emotion or that the baby’s face is no longer visible at all. Shuttle back with #4-SHUTTLEBACK at 1/8-1/4x speed to identify the onset. Use the mouth and eyes as the guide to onset. Press ENTER to set the onset as the frame where any lay person would say that baby is happy or sad. The coder may even feel happy or sad watching the baby’s face; use this as a guide for onset.</p>
+<p>Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view. For missing, if it seems like there may be a long stretch of missing (e.g. baby has completely wandered out of the room) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice. Pause when you identify the offset.</p>
+<p>Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the baby’s face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.</p>
+<p>Then return to real time (1x speed) with #8-PLAY to watch for the next event.</p>
+</div>
+</div>
+<div id="momemotion" class="section level2">
+<h2><code>momemotion</code></h2>
+<p><code>&lt;emotion_p-n&gt;</code></p>
+<div id="general-orientation-13" class="section level3">
+<h3>General Orientation</h3>
+<p>This code captures the times that the mom is clearly displaying positive or negative emotion through facial expressions. Times when the mom is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the mom is neutral or emotion is unclear. Coders also mark times as “missing” when the mom’s face could not possibly be coded for emotion (e.g., face completely turned away from camera, mom’s head out of the video). When the mom’s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., mom is yelling).</p>
+<p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. To determine emotion, coders are watching the mom’s face, not vocal affect. To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
+</div>
+<div id="value-list-11" class="section level3">
+<h3>Value List</h3>
+<p><code>p</code> = positive emotion</p>
+<p><code>n</code> = negative emotion</p>
+<p><code>.</code> = mom’s face is completely not visible</p>
+</div>
+<div id="operational-definitions-9" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;p&gt;</code></p>
+<p>Code ‘p’ when the mom is clearly displaying positive emotion (e.g., smiling). Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. If there is any doubt that the mom is showing positive emotion, then do not begin the code.</p>
+<p>Positive emotion cannot be coded based on the voice alone. So positive emotion could not be scored when the mom’s face is absolutely not visible (i.e. missing).</p>
+<p><code>&lt;n&gt;</code></p>
+<p>Code ‘n’ when the mom is clearly displaying negative emotion (e.g., frowning, wincing). Code based off of the face and not off of the voice. Look for lowering of the corners of the mouth, stretching and tautness of the lips, along with closing of the eyes because of furrowed brow. If there is any doubt that the mom is showing negative emotion, then do not begin the code.</p>
+<p>Do not defer to the voice to code negative emotion when the face is visible. If the mom’s face is clearly not visible (i.e. missing), then ‘n’ can be coded if the mom is displaying clear negative emotion through their voice. The mom could be screaming or upset. If there is any doubt whether the voice is negative, then do not begin the code.</p>
+<div id="onset-1" class="section level4">
+<h4>Onset</h4>
+<p>Onset of an emotion event is the first frame the mom is clearly displaying positive/negative emotion through the face. The onset does not need to be completely frame accurate, since emotion could begin in any part of the face. The coder is looking to identify when any lay person would absolutely agree the mom is showing positive/negative emotion based on the face.</p>
+<p>There is no criterion for how long an emotion event should be. It is easy for the coder to mark the first frame when they see clear positive/negative emotion, even if it ends a few frames later. Events that are later deemed “too brief” could be removed via scripting.</p>
+<p>When coding ‘n’ from voice during missing time, set the onset when the negative voice starts and end the ‘n’ code when the voice ends. The onset/offset do not need to be frame accurate. For cases when emotion code begins right out of missing: The face has not been visible and the first frame you can see the face again the infant is clearly displaying positive/negative emotion. Code the onset of the emotion code as the first frame when the face reappears. Use the “0” key to set the onset of the emotion event and simultaneously set the offset of ‘missing’. We want to preserve the 1ms difference between ‘missing’ and the emotion code so we can know that that ‘missing’ event was ended because of the onset of an emotion code.</p>
+</div>
+<div id="offset-1" class="section level4">
+<h4>Offset</h4>
+<p>Offset of a positive/negative emotion is the first frame the mom is clearly back to a neutral emotion through the face. The offset does not need to completely frame accurate, since emotion could end in any part of the face. The coder is looking to identify when any lay person would absolutely agree the mom is no longer showing any positive/negative emotion based on the face.</p>
+<p>If the mom’s face returns to neutral for less than 5 frames during one emotion code (e.g. positive, then neutral for 4 frames, then back to positive), continue the ‘p’ or ‘n’ code. The coder would have to expend unneeded effort to identify and tag those offsets and onsets time, since reliability does not need to be frame accurate.</p>
+<p>For cases when emotion code is ended by missing: The emotion event may or may not have ended but the coder can no longer see the face to code offset. Code the offset as the first frame the face completely is not visible (see ‘missing’ code below). Use “0” key to set the offset of emotion and simultaneously code the onset of ‘missing’. We want to preserve the 1ms difference between the emotion code and ‘missing’ so we can know that that ‘missing’ event caused the offset of that emotion event.</p>
+<p><code>&lt;.&gt;</code></p>
+<p>Code ‘.’ for missing when the mom’s face is completely not visible. The mom’s full face could turned away from the camera, mom’s head is completely off camera, or the mom is out of frame entirely. If the coder could see the emotion the mom is expressing in their face from a side or oblique angle, then do not code missing.</p>
+<p>If the face is not visible but the mom is displaying clear negative emotion in the voice (e.g., mom yelling) then the missing code is ended and ‘n’ is coded (see ‘n’ code). Positive emotion cannot be coded by voice.</p>
+<p>Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again. The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
+<p>If the mom’s face was ‘missing’ and then reappeared for less than 5 frames, don’t stop the ‘.’ code to mark those few frames.</p>
+</div>
+</div>
+<div id="how-to-code-8" class="section level3">
+<h3>How to Code</h3>
+<p>Set “JUMP-BACK-BY” key to 1 s.</p>
+<p>Play with #8-PLAY in real time (1x speed) until the mom changes to clear positive or clear negative emotion or the face is clearly not visible. Focus on the mom’s face and do not be distracted by what the mom is saying or doing.</p>
+<p>Pause with #5-STOP once you have identified a clear change in emotion or that the mom’s face is no longer visible at all. Shuttle back with #4-SHUTTLEBACK at 1/8-1/4x speed to identify the onset. Use the mouth and eyes as the guide to onset. Press ENTER to set the onset as the frame where any lay person would say that mom is happy or sad. The coder may even feel happy or sad watching the mom’s face; use this as a guide for onset.</p>
+<p>Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view. For missing, if it seems like there may be a long stretch of missing (e.g. mom is on a different side of the room from the baby) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice. Pause when you identify the offset.</p>
+<p>Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the mom’s face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.</p>
+<p>Then return to real time (1x speed) with #8-PLAY to watch for the next event.</p>
+</div>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

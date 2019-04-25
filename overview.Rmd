@@ -1,0 +1,55 @@
+---
+title: ""
+---
+
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-2thirds{
+  float: left;
+  width:80%;
+  text-align: left;
+}
+.column-1third{
+  float: right;
+  width: 20%;
+  text-align: left;
+}
+</style>
+
+
+<img src="img/PLAY-logo.png" alt="drawing" width="400" />
+
+<br>
+
+# An overview of the PLAY data
+
+To answer questions about infant behaviours in their natural environments, the PLAY project will collect, code, and share 900 hours of video collected in the homes of children at 12, 18, and 24 months of age drawn from 30 sites across North America. 
+
+Materials (videos, questionnaires, links to Databrary volumes) for the PLAY project are included in this site, where we document data collection protocols, workflows, coding strategies, and operational definitions.
+<br>
+<br>
+
+### Project-wide overview
+
+<div class="row">
+<div class="column-2thirds">
+<img src="img/overview-project.png">
+</div>
+<div class="column-1third">
+<br><br>
+[<img src="img/link-recruitment.png">](recruitment.html)  
+[<img src="img/link-collection.png">](collection.html)  
+[<img src="img/link-upload.png">](collection.html)  
+<br><br>
+[<img src="img/link-gesture.png">](coding.html)  
+[<img src="img/link-locomotion.png">](coding.html)  
+[<img src="img/link-emotion.png">](coding.html)  
+[<img src="img/link-object.png">](coding.html)  
+[<img src="img/link-communication.png">](coding.html)  
+</div>
+</div>
+<br>
+<br>
+
+
+

@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="recruitment.html">recruitment</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="news.html">news</a>
+</li>
+<li>
+  <a href="site-info.html">site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="datavyu-communication-codes-for-1-hour-natural-play" class="section level1">
+<h1>Datavyu <a href="communication.html">Communication Codes</a> for 1-Hour Natural Play</h1>
+<p>Make sure you are <a href="https://nyu.databrary.org/user/login">currently logged in at Databrary</a> to view embedded video examples in this wiki.</p>
+<p>This section covers these 4 main codes: babyvoc, babyutterancetype, momspeech, and momutterancetype</p>
+<div id="babyvoc" class="section level2">
+<h2><code>1. babyvoc</code></h2>
+<p><code>&lt;content&gt;</code></p>
+<div id="general-orientation" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains a transcript of all of the utterances/vocalizations of the baby.</p>
+<p>This column is automatically populated after the <em>transcribe</em> pass is completed using a Ruby script. All of the utterances tagged with ‘b’ in <a href=""> <source> </a> in <em>transcribe</em> are transferred here. The onset and offset are equal, and set to the onset from the <em>transcribe</em> column, which reflects a time as close as possible to the onset of that utterance.</p>
+</div>
+</div>
+<div id="babyutterancetype" class="section level2">
+<h2><code>2. babyutterancetype</code></h2>
+<p><code>&lt;language_s-w&gt;</code> <code>&lt;langlike-b-v&gt;</code> <code>&lt;crygrunt_c-g&gt;</code> <code>&lt;unintell-x&gt;</code></p>
+<div id="general-orientation-1" class="section level3">
+<h3>General Orientation</h3>
+<p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.</p>
+<p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the baby didn’t speak in full speech, or speech-like sound, but did cry/scream, then code &lt;.,.,c,.&gt;.</p>
+<p>The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.</p>
+</div>
+<div id="value-list" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;language_s-w&gt;</code></p>
+<p><code>s</code> = sentence</p>
+<p><code>w</code> = word</p>
+<p><code>&lt;langlike_b-v&gt;</code></p>
+<p><code>b</code> = babble</p>
+<p><code>v</code> = vowel</p>
+<p><code>&lt;crygrunt_c-g&gt;</code></p>
+<p><code>c</code> = cry</p>
+<p><code>g</code> = grunt</p>
+<p><code>&lt;unintell-x&gt;</code></p>
+<p><code>x</code> = unintelligible</p>
+</div>
+<div id="operational-definitions" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;s&gt;</code></p>
+<p>Sentence = an utterance in which the speaker utters more than one word, producing a sentence or phrase (e.g., “Daddy’s shoe” or “Go to the park”). <a href=""> 3 videos (“ooh gimme that”, “i take this”, “goodbye sad face?”) </a></p>
+<p><code>&lt;w&gt;</code></p>
+<p>Word = an utterance in which the speaker utters a single word, such as “dolly” or “ball.” <a href=""> 3 videos (“car”, “basketball”, “truck”) </a></p>
+<p><code>&lt;b&gt;</code></p>
+<p>Babble = an utterance in which the speaker utters a series of repeated canonical syllables, such as ba-ba-ba, or ga-ga-ga. <a href=""> 3 videos (all “b”) </a></p>
+<p><code>&lt;v&gt;</code></p>
+<p>Vowel = an utterance in which the speaker utters a vowel sound (e.g, /a/, /i:/). <a href=""> 3 videos (all “v”) </a></p>
+<p><code>&lt;c&gt;</code></p>
+<p>Cry= an utterance in which the speaker is experiencing a period of prolonged distress. <a href=""> 3 videos (all “c”) </a></p>
+<p><code>&lt;g&gt;</code></p>
+<p>Grunt= an utterance in which the speaker produces a low, short, inarticulate, guttural sound often used to express effort or exertion. Vegetative sounds, such as coughing and sneezing, should be captured using this code. <a href=""> 2 videos (both “g”) </a></p>
+<p><code>&lt;x&gt;</code></p>
+<p>Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.</p>
+</div>
+<div id="how-to-code" class="section level3">
+<h3>How to Code</h3>
+<p>Set the “JUMP-BACK-BY” to 2 s.</p>
+<p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in babyvoc column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
+<p>Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. Then insert periods to the end of the cell.</p>
+</div>
+</div>
+<div id="momspeech" class="section level2">
+<h2><code>3. momspeech</code></h2>
+<p><code>&lt;content&gt;</code></p>
+<div id="general-orientation-2" class="section level3">
+<h3>General Orientation</h3>
+<p>Contains a transcript of all of the utterances of the mom.</p>
+<p>This column is automatically populated after the transcribe pass is completed using a Ruby script. All of the utterances tagged with ‘m’ in <source> in transcribe are transferred here. The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.</p>
+</div>
+</div>
+<div id="momutterancetype" class="section level2">
+<h2><code>4. momutterancetype</code></h2>
+<p><code>&lt;imperative_l-a-p&gt;</code> <code>&lt;interrog-i_declar-d&gt;</code> <code>&lt;filler-f&gt;</code> <code>&lt;unintell-x&gt;</code></p>
+<div id="general-orientation-3" class="section level3">
+<h3>General Orientation</h3>
+<p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in <code>momspeech</code> column and categorize each utterance based on codes below.</p>
+<p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. For instance, if the mom didn’t do an imperative, sing/read, but did give a declarative, then code &lt;.,d,.,.&gt;.</p>
+<p>What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom’s speech.</p>
+</div>
+<div id="value-list-1" class="section level3">
+<h3>Value List</h3>
+<p><code>&lt;imperative_l-a-p&gt;</code></p>
+<p><code>l</code> = imperative look</p>
+<p><code>a</code> = imperative act</p>
+<p><code>p</code> = imperative prohibit</p>
+<p><code>&lt;interrog-i_declar-d&gt;</code></p>
+<p><code>i</code> = interrogative`</p>
+<p><code>d</code> = declarative</p>
+<p><code>&lt;filler-f&gt;</code></p>
+<p><code>f</code> = filler/affirmation</p>
+<p><code>&lt;unintell-x&gt;</code></p>
+<p><code>x</code> = unintelligible</p>
+</div>
+<div id="operational-definitions-1" class="section level3">
+<h3>Operational Definitions</h3>
+<p><code>&lt;l&gt;</code></p>
+<p>Imperative Look = an utterance in which the speaker directs a baby’s attention (e.g., “Look here”, “See?”, or calls baby’s name to alert attention). <a href=""> 2 videos (“evelyn”, “look”) </a></p>
+<p><code>&lt;a&gt;</code></p>
+<p>Imperative Act = an utterance in which the speaker directs a baby’s action, such as asking baby to do something, or to play with an object. An example would be if a mother tells her baby “let’s play with the ball”. <a href=""> 3 videos (“turn the page”, “come here please”, “go get the basketball”) </a></p>
+<p><strong>NOTE</strong>: The imperative look and imperative act can be collapsed if the breakdown takes too long to code/specify (although we don’t think it will save time).</p>
+<p><code>&lt;p&gt;</code></p>
+<p>Imperative Prohibit = an utterance in which the speaker prohibits a baby’s behavior, such as asking baby to stop what they’re doing. <a href=""> 3 videos (“dont knock it over”, “dont be so rough”, “no no tv”) </a></p>
+<p><code>&lt;i&gt;</code></p>
+<p>Interrogative = an utterance in which the speaker asks for information about objects or ongoing activities (e.g., “What is this called?”, “What color is this?). Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the baby’s behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That’s a blue truck, right?”) are not considered questions. These should be coded as declaratives. <a href=""> 2 videos (“what does the pig say?”, “what is this?”) </a></p>
+<p><code>&lt;d&gt;</code></p>
+<p>Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”. <a href=""> 2 videos (“baby’s clothes”, “that’s a lemonade”) </a></p>
+<p><code>&lt;f&gt;</code></p>
+<p>Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker’s behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the baby successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a></p>
+<p><code>&lt;x&gt;</code> Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both “xxx”) </a></p>
+</div>
+<div id="how-to-code-1" class="section level3">
+<h3>How to Code</h3>
+<p>Set the JUMP-BACK-BY key for 2 s.</p>
+<p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in <em><em>momspeech</em></em> column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
+<p>Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB between each argument/prompt inserting period ”.“ until you reach the appropriate code. Then insert periods to the end of the cell.</p>
+</div>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

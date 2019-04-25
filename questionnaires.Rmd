@@ -1,0 +1,42 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+    number_sections: true
+---
+
+<img src="img/PLAY-logo.png" height=100px/>
+
+# Pre-visit questions
+
+```{r child = 'phone_questionnaire.Rmd'}
+```
+
+# Home visit questions
+
+```{r child = 'toys_pets.Rmd'}
+```
+
+```{r child = 'media.Rmd'}
+```
+
+```{r child = 'ecbq.Rmd'}
+```
+
+```{r child = 'home.Rmd'}
+```
+
+```{r child = 'gender.Rmd'}
+```
+
+```{r child = 'locomotor_milestones.Rmd'}
+```
+
+```{r child = 'eclsb_health.Rmd'}
+```
+
+```{r child = 'typical_day.Rmd'}
+```

@@ -1,0 +1,504 @@
+---
+title: ''
+---
+
+## HEALTH (from ECLS-B)
+
+### Mother Information
+
+**A1. In what country were you born?**
+
+- (1) United States
+- (2) Puerto Rico
+- (3) Other US territory
+- (4) Other country (specify)
+
+**A2. If not born in the US, When did you come to live in the U.S.?**
+
+**A3. What is the highest grade or year of school that you have completed?**
+
+- 0 NO FORMAL SCHOOLING 
+- 1 1ST GRADE
+- 2 2ND GRADE
+- 3 3RD GRADE
+- 4 4TH GRADE
+- 5 5TH GRADE
+- 6 6TH GRADE
+- 7 7TH GRADE
+- 8 8TH GRADE
+- 9 9TH GRADE
+- 10 10TH GRADE
+- 11 11TH GRADE
+- 12 12TH GRADE BUT NO DIPLOMA 
+- 13 GED CERTIFICATE (year of entry)
+- 14 HIGH SCHOOL DIPLOMA/EQUIVALENT
+- 15 VOC/TECH PROGRAM AFTER HIGH SCHOOL BUT NO VOC/TECH DIPLOMA 
+- 16 VOC/TECH DIPLOMA AFTER HIGH SCHOOL
+- 17 SOME COLLEGE BUT NO DEGREE
+- 18 ASSOCIATE'S DEGREE
+- 19 BACHELOR'S DEGREE
+- 20 GRADUATE OR PROFESSIONAL SCHOOL BUT NO DEGREE
+- 21 MASTER'S DEGREE (MA, MS)
+- 22 DOCTORATE DEGREE (PHD, EDD)
+- 23 PROFESSIONAL DEGREE AFTER BACHELOR'S (MD; DDS; JD, LLB; ETC.) 
+- REFUSED
+
+**A4. Do you currently work for paid employment?**
+
+- Full-time 
+- Part-time 
+- NO 
+- REFUSED
+
+**A4a. If Full-time or Part-time: What is your occupation?**
+ 
+**A5. Are you currently attending or enrolled in any classes or job training program?**
+
+- YES
+- NO 
+- REFUSED
+
+### Partner Information [Wife/Husband]
+
+Experimenter: “Does [CHILD]’s father live in the home with you? If yes: continue... If no: SKIP TO C.
+
+**B1. What is the highest grade or year of school that [he/she] has completed?**
+
+- 0 NO FORMAL SCHOOLING 
+- 1 1ST GRADE
+- 2 2ND GRADE
+- 3 3RD GRADE
+- 4 4TH GRADE
+- 5 5TH GRADE
+- 6 6TH GRADE
+- 7 7TH GRADE
+- 8 8TH GRADE
+- 9 9TH GRADE
+- 10 10TH GRADE
+- 11 11TH GRADE
+- 12 12TH GRADE BUT NO DIPLOMA 
+- 13 GED CERTIFICATE (year of entry)
+- 14 HIGH SCHOOL DIPLOMA/EQUIVALENT
+- 15 VOC/TECH PROGRAM AFTER HIGH SCHOOL BUT NO VOC/TECH DIPLOMA 
+- 16 VOC/TECH DIPLOMA AFTER HIGH SCHOOL
+- 17 SOME COLLEGE BUT NO DEGREE
+- 18 ASSOCIATE'S DEGREE
+- 19 BACHELOR'S DEGREE
+- 20 GRADUATE OR PROFESSIONAL SCHOOL BUT NO DEGREE
+- 21 MASTER'S DEGREE (MA, MS)
+- 22 DOCTORATE DEGREE (PHD, EDD)
+- 23 PROFESSIONAL DEGREE AFTER BACHELOR'S (MD; DDS; JD, LLB; ETC.) 
+- REFUSED
+
+**B2. Does he currently work for paid employment?**
+
+- Full-time 
+- Part-time 
+- NO 
+- REFUSED
+
+**B2a. If Full-time or Part-time: What is his occupation?**
+
+**B3. Is he currently attending or enrolled in any classes or job training program?**
+
+- YES
+- NO 
+- REFUSED
+    
+### Childcare
+
+Experimenter: 
+**Does [CHILD] attend any childcare center or is cared for by a nanny on a regular basis?** 
+
+If yes: Continue...
+
+If no: Skip to Section D.
+
+**C1. Excluding [CHILD], how many children are usually cared for at the same time?**
+
+Number of Children: _____
+
+**C2. How old was [CHILD] in months when {he/she} first attended any child care center or nanny on a regular basis?**
+
+Number of Months: ____
+
+**C3. What language does [CHILD]'s care provider speak most when caring for [CHILD]?**
+
+### Feeding/Nutrition
+
+**D1. Did you ever breast-feed [CHILD]?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**D2. Are you still breast-feeding [CHILD] now?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**D3. For how many months did you breast-feed [CHILD]?**
+(Note: Enter ‘0’ if less than one month.) 
+
+- Number of months: ________
+- REFUSED
+- DON'T KNOW
+
+**D4. During the past 7 days, was [CHILD] breast-fed, formula-fed, or fed regular cow’s milk?** 
+
+(Note: select all that apply.)
+
+- 1 Breast-fed
+- 2 Formula-fed 
+- 3 Cow’s milk 
+- REFUSED 
+- DON'T KNOW
+
+**D5. How old was [CHILD] in months when you began feeding [him/her] formula?**
+
+(Note: If child has never been fed formula, enter ‘995’.If child was less than 1 month old when first fed formula, enter ‘0’.)
+
+- Number of months: ________ 
+- REFUSED
+- DON'T KNOW
+       
+**D6. How old was [CHILD] in months when you began feeding [him/her] cow’s milk?**
+
+(Note: If child was less than 1 month old when first fed cow’s milk, enter ‘0’.)
+
+- Number of months: ________ 
+- REFUSED
+- DON'T KNOW
+
+**D7. How old was [CHILD] in months when solid food was first introduced? Solid foods include cereal and baby food in jars, but not finger foods.**
+
+(Note: If child has not yet started eating solid food, enter ‘995’.)
+
+- Number of months: ________ 
+- REFUSED
+- DON'T KNOW
+
+**D8. How old was [CHILD] in months when [he/she] was first given finger foods, such as Cheerios, teething biscuits, crackers, bread, noodles, rice, grits, tortillas, or potatoes?**
+
+(Note: If child not given finger foods, enter ‘995’.)
+
+- Number of months: ________ 
+- REFUSED
+- DON'T KNOW
+
+**D9. Is [CHILD] able to drink from a self-held cup?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**D10. How old was [CHILD] in months when [he/she] began drinking from a self-held cup?**
+
+- Number of months: ________
+- REFUSED
+- DON'T KNOW
+
+### Sleep Hygiene
+
+**E1. How many hours of nap time does your child have during the day?**
+
+**E2. Where does [CHILD] usually sleep?**
+
+- Infant crib in a separate room 
+- Infant crib in parents’ room
+- In parents’ bed
+- Infant crib in room with sibling 
+- Other
+
+**E2a. If other, specify:**
+_______________
+
+**E3. When you put [CHILD] to bed, is [he/she] usually awake or asleep?**
+
+- AWAKE
+- ASLEEP 
+- REFUSED 
+- DON'T KNOW
+
+**E4. When [CHILD] was a newborn, in what position did you put [him/her] to sleep?**
+
+- LYING ON STOMACH WITH FACE TO SIDE
+- LYING ON STOMACH WITH FACE DOWN
+- LYING ON BACK
+- LYING ON SIDE
+- PROPPED IN A SITTING POSITION 
+- NO SPECIAL WAY
+- CHANGED POSITION/ROTATED BABY 
+- OTHER
+- REFUSED 
+- DON'T KNOW
+
+### General Health
+
+Now, I’d like to ask you about [CHILD]’s health.
+
+**F1. Would you say [CHILD]’s health is...**
+
+- 1 Excellent
+- 2 Very good
+- 3 Good,
+- 4 Fair
+- 5 Poor
+- REFUSED 
+- DON'T KNOW
+
+**F2. How old was [CHILD] on {his/her} last well-baby visit?**
+
+- Number of months: ________
+- REFUSED
+- DON'T KNOW
+
+**F3. Has [CHILD] ever needed to see a medical specialist or has your pediatrician or regular doctor ever sent [CHILD] to be seen by someone else?**
+
+(PROBE: From the time [CHILD] was born until now.)
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**F4. Has [CHILD] ever had [his/her] hearing tested?**
+
+(Note: Code all that apply.)
+(PROBE: If yes, ask: Was that in the birth hospital or after going home or both?) 
+
+- YES, IN BIRTH HOSPITAL
+- YES, AFTER GOING HOME
+- NO
+- REFUSED
+- DON'T KNOW
+  
+**F5. Has [CHILD] ever had [his/her] vision tested?**
+
+(Note: Code all that apply.)
+(PROBE: If yes, ask: Was that in the birth hospital or after going home or both?) 
+
+- YES, IN BIRTH HOSPITAL
+- YES, AFTER GOING HOME
+- NO
+- REFUSED
+- DON'T KNOW
+
+**F6. Has a doctor, nurse, or other medical professional ever told you that [CHILD] has...**
+
+- Asthma? (YES | NO | REFUSED | DON'T KNOW)
+- A respiratory illness, such as bronchitis, pneumonia, or bronchiolitis?
+(YES | NO | REFUSED | DON'T KNOW)
+- A severe gastrointestinal illness, as indicated by frequent vomiting, diarrhea, or dehydration?
+(YES | NO | REFUSED | DON'T KNOW)
+- An ear infection? (YES | NO | REFUSED | DON'T KNOW)
+
+**F7. Now, I want to ask you about any injuries [CHILD] has had. Since [CHILD] {began living with you/came home after birth}, how many times has [he/she] seen a doctor or other medical professional or visited a clinic or emergency room for an injury?**
+
+- NEVER
+- ONCE
+- TWICE
+- THREE OR MORE 
+- REFUSED
+- DON'T KNOW
+
+### Prenatal Care and Behaviors
+
+**G1. Did you ever visit a doctor or clinic for prenatal care when you were pregnant with [CHILD]?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+   
+### Smoking
+
+**H1. During your 1st trimester, how many cigarettes or packs did you smoke on an average day?**
+
+(Note: Enter ‘0’ if respondent did not smoke. Enter ‘1’ if respondent smoked less than 1 cigarette a day.)
+(PROBE: A pack has 20 cigarettes.) 
+
+- Number of cigarettes: ________ 
+- REFUSED
+- DON'T KNOW
+
+**H2. During your 2nd trimester, how many cigarettes or packs did you smoke on an average day?**
+
+(Note: Enter ‘0’ if respondent did not smoke. Enter ‘1’ if respondent smoked less than 1 cigarette a day.)
+(PROBE: A pack has 20 cigarettes.) 
+
+- Number of cigarettes: ________ 
+- REFUSED
+- DON'T KNOW
+
+**H3. During your 3rd trimester, how many cigarettes or packs did you smoke on an average day?**
+
+(Note: Enter ‘0’ if respondent did not smoke. Enter ‘1’ if respondent smoked less than 1 cigarette a day.)
+(PROBE: A pack has 20 cigarettes.) 
+
+- Number of cigarettes: ________ 
+- REFUSED
+- DON'T KNOW
+
+**H4. Do you smoke cigarettes now?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**H5. How many cigarettes or packs of cigarettes do you smoke on an average day now?**
+
+(Note: Enter ‘1’ if respondent smokes less than 1 cigarette a day.)
+
+- Number of cigarettes: ________ 
+- REFUSED
+- DON'T KNOW
+
+**H6. [Do you/Does anyone] smoke inside the house?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**H7. [Do you/Does anyone] smoke in the car?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+   
+### Drinking
+
+**I1. During your pregnancy, how many alcoholic drinks did you have in an average week?**
+
+- DIDN'T DRINK THEN
+- LESS THAN 1 DRINK 
+- 1 TO 3 DRINKS
+- 4 TO 6 DRINKS
+- 7 TO 13 DRINKS
+- 14 TO 19 DRINKS
+- 20 OR MORE DRINKS 
+- REFUSED
+- DON'T KNOW
+
+**I2. During your 1st trimester, how many alcoholic drinks did you have in an average week?**
+
+- DIDN'T DRINK THEN 
+- LESS THAN 1 DRINK 
+- 1 TO 3 DRINKS
+- 4 TO 6 DRINKS
+- 7 TO 13 DRINKS
+- 14 TO 19 DRINKS
+- 20 OR MORE DRINKS 
+- REFUSED
+- DON'T KNOW
+
+**I3. During your 2nd trimester, how many alcoholic drinks did you have in an average week?**
+
+- DIDN'T DRINK THEN 
+- LESS THAN 1 DRINK 
+- 1 TO 3 DRINKS
+- 4 TO 6 DRINKS
+- 7 TO 13 DRINKS
+- 14 TO 19 DRINKS
+- 20 OR MORE DRINKS 
+- REFUSED
+- DON'T KNOW
+
+**I4. During your 3rd trimester, how many alcoholic drinks did you have in an average week?**
+
+  - DIDN'T DRINK THEN 
+  - LESS THAN 1 DRINK 
+  - 1 TO 3 DRINKS
+  - 4 TO 6 DRINKS
+  - 7 TO 13 DRINKS
+  - 14 TO 19 DRINKS
+  - 20 OR MORE DRINKS 
+  - REFUSED
+  - DON'T KNOW
+
+### Food Sufficiency
+
+These next questions are about the food eaten in your household.
+
+**J1. Please tell me whether the following statement was often true, sometimes true, or never true for [you/your household]: In the last 12 months, that is, since last [CURRENT MONTH], [CHILD] was not eating enough because [I/we] couldn’t afford enough food. For your household in the last 12 months, was that often true, sometimes true, or never true?**
+
+- OFTEN TRUE 
+- SOMETIMES TRUE 
+- NEVER TRUE 
+- REFUSED
+- DON'T KNOW
+
+**J1A. How often did this happen? Would you say...** 
+
+- Almost every month,
+- Some months, but not every month
+- In only 1 or 2 months
+- REFUSED
+- DON'T KNOW
+
+**J2. In the last 12 months since [CURRENT MONTH] of last year, did you ever cut the size of [CHILD]’s meals because there wasn't enough money for food?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**J2A. How often did this happen? Would you say...**
+
+- Almost every month,
+- Some months, but not every month
+- In only 1 or 2 months
+- REFUSED
+- DON'T KNOW
+
+**J3. In the last 12 months, did [CHILD] ever skip a meal because there wasn't enough money for food?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**J3A. How often did this happen? Would you say...**
+
+- Almost every month
+- Some months, but not every month
+- In only 1 or 2 months
+- REFUSED
+- DON'T KNOW
+
+**J5. In the last 12 months was [CHILD] ever hungry but you just couldn't afford more food?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+ 
+**J5A. How often did this happen? Would you say...**
+
+- Almost every month,
+- Some months, but not every month
+- In only 1 or 2 months
+- REFUSED
+- DON'T KNOW
+
+**J6. In the last 12 months did [CHILD] ever not eat for a whole day because there wasn't enough money for food?**
+
+- YES
+- NO 
+- REFUSED 
+- DON'T KNOW
+
+**J6A. How often did this happen? Would you say...**
+
+- Almost every month,
+- Some months, but not every month
+- In only 1 or 2 months
+- REFUSED
+- DON'T KNOW

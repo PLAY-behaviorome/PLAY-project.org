@@ -1,0 +1,34 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+<img src="img/PLAY-logo.png" width="400" />
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("R/write_video_clip_html.R")
+```
+
+# Recruitment and Sampling
+
+
+# Participant Inclusion/Exclusion Criteria
+
+Infants' natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, SES, maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.
+
+However, to ensure a sufficient sample size and based on conversations with the launch group, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must be: 
+
+- From two-parent or single-parent households
+- The mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when only the mother and infant are present.
+- English or Spanish monolingual or bilingual (i.e., no other language exposure in the home)
+- The firstborn child (i.e., only child in the household)
+- 12, 18, or 24 months of age (+/- 1 week)
+- Born full-term (37-40 weeks) without known disabilities
+
+

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="recruitment.html">recruitment</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="news.html">news</a>
+</li>
+<li>
+  <a href="site-info.html">site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><img src="img/PLAY-logo.png" height=100px/></p>
+<div id="overview" class="section level1">
+<h1>Overview</h1>
+<p>PLAY aims to set new standards for conducting open, transparent, and reproducible behavioral science by i) publishing the protocol, and ii) making extensive use of video exemplars to demonstrate phenomena and illustrate behavioral codes. For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to <a href="http://databrary.org">Databrary</a>. To register for access, visit <a href="http://databrary.org/register" class="uri">http://databrary.org/register</a>.</p>
+</div>
+<div id="inclusionexclusion-criteria" class="section level1">
+<h1>Inclusion/Exclusion Criteria</h1>
+<p>Infants’ natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, socioeconomic status (SES), maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.</p>
+<p>However, to ensure a sufficient sample size and based on conversations with the launch group, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, families must be two-parent households. All infants must be English or Spanish monolingual or bilingual. All infants must be the firstborn child and 12, 18, or 24 months of age (plus/minus one week). All infants must be full-term (37-40 weeks) without known disabilities. The mother must act as the caregiver during visits, which will be scheduled at a time when only the mother and infant are present in the home.</p>
+</div>
+<div id="scheduling-visit" class="section level1">
+<h1>Scheduling Visit</h1>
+<div id="initial-recruiting-call" class="section level2">
+<h2>Initial recruiting call</h2>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true</a></p>
+<p><em>Hi, may I speak with [MOM]?</em></p>
+<p><em>My name is [CALLER NAME] and I’m calling from [LAB]. We have a study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. Can I tell you about it?</em></p>
+<p><em>What language(s) do you speak to [CHILD]?</em></p>
+<p>→ If not ENGLISH or SPANISH: end call</p>
+<p><em>To control for differences in communication, we are looking for families who speak mainly English or Spanish. Would it be alright if you are contacted for other studies in the future?</em></p>
+<p>→ If yes: continue</p>
+<p><em>For this study, we are interested in learning about babies’ natural, everyday experiences in their homes–such as the toys they play with and places they go.</em> <em>For this study, a researcher will visit you and [CHILD] in your home.</em> <em>You and [CHILD] will be video recorded for 1 hour as you go about your day.</em> <em>At the end of the visit we will ask questions about your family, your home, and [CHILD]’s skills and routines. We will also ask you to take us through your home as we do a video tour capturing the places [CHILD] gets to be throughout the day and things that [he/she] plays with.</em></p>
+<p><em>The study will take about 2 hours. You will receive XXX for your participation.</em> <em>We will schedule a day and time that’s convenient for you and when [CHILD] is usually awake/alert and not during a typical meal time.</em></p>
+<p><em>The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers.</em> <em>The purpose is to share the data with experts in the field so that scientists can learn more about infant development.</em></p>
+<p><em>Are you interested in participating?</em></p>
+<p>→ If yes:</p>
+<p><em>Is there a day and time that works best for you (when [CHILD] is awake/alert and not a typical meal time)?</em></p>
+<p>→ If no:</p>
+<p><em>Ok thank you. May we call you for other studies?</em></p>
+<div id="voicemail" class="section level3">
+<h3>Voicemail</h3>
+<p><em>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB].</em> <em>I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age.</em> <em>If you are interested in hearing more about the study, please give us a call back.</em> <em>Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</em></p>
+</div>
+</div>
+<div id="confirming-the-visit-2-days-before-actual-visit-email-the-day-before" class="section level2">
+<h2>Confirming the visit (2 days before actual visit, email the day before)</h2>
+<p>12-mo crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61425/download?inline=true</a></p>
+<p>12-mo walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59866/download?inline=true</a></p>
+<p>18-mo </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61070/download?inline=true</a></p>
+<p>24-mo </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61427/download?inline=true</a></p>
+<p><em>Hi, may I speak with [MOM]?</em></p>
+<p><em>My name is [NAME] and I’m calling from [LAB] to confirm our visit on [DATE].</em> <em>Before the visit, I’d like to ask you a few questions.</em> <em>It will only take 5 minutes of your time. Can we speak now?</em></p>
+<p>→ If yes:</p>
+<p><em>Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</em></p>
+<p>List of questions on the <a href="phone_questionnaire.html">Phone Questionnaire</a></p>
+<p>Please note that presentation and format will differ in the app.</p>
+<p>→ If no:</p>
+<p><em>Can I call you back today or tomorrow [before the visit]?</em></p>
+<p>Schedule call.</p>
+</div>
+</div>
+<div id="preparing-for-visit" class="section level1">
+<h1>Preparing for Visit</h1>
+<div id="prepare-paperwork" class="section level2">
+<h2>Prepare paperwork</h2>
+<p>Write Participant ID on all paperwork (consents and questionnaires). Fill out locomotor milestone worksheet.</p>
+</div>
+<div id="pack-equipment" class="section level2">
+<h2>Pack equipment</h2>
+<ul>
+<li>Camera, SD card and extra battery<br />
+</li>
+<li>Mic</li>
+<li>Laser Measure</li>
+<li>Solitary play toy</li>
+<li>Dyadic play toy</li>
+<li>Yoga mat</li>
+<li>Tablet with app for questionnaires (if mom speaks English and/or Spanish, bring both versions of MacArthur), study consent form, Databrary sharing release form, and decibel meter.</li>
+<li>Answer choice sheet with response scales</li>
+<li>Participant payment</li>
+<li>Paper copies of all questionnaires, MCDI, and consent and Databrary forms in case of tablet failure</li>
+<li>Tools for body dimensions (Height and Weight)- TBD</li>
+</ul>
+</div>
+</div>
+<div id="home-visit" class="section level1">
+<h1>Home Visit</h1>
+<div id="introduction" class="section level2">
+<h2>Introduction</h2>
+<p>Say to Mom:</p>
+<p><em>Thanks for letting us come to your home. The visit has a few parts:</em></p>
+<p><em>I’ll begin by video-recording you and [CHILD] as you go about your day. I will video-record you both for 1 hour. Then, I will ask [CHILD] to play with some toys both by him/herself and with you.</em></p>
+<p><em>Afterwards, I will ask you some general questions about your family and home, and about [CHILD]’s skills and routines.</em></p>
+<p><em>You will give me a tour of your home that I will record on video to get a sense of the places [CHILD] goes and things that he/she plays with.</em></p>
+<p><em>Do you have any questions? Let’s start with reading and signing the consent.</em></p>
+</div>
+<div id="consent-to-participate-and-permission-to-share" class="section level2">
+<h2>Consent to Participate and Permission to Share</h2>
+<p>Ask parent to review form asking for consent to participate in the study. When finished, give parent a moment to look over form and sign it.</p>
+<p>Ask parent to review form asking for permission to share videos and metadata. When finished, give parent a moment to look over the form and sign it.</p>
+<p><a href="https://www.databrary.org/resources/templates/release-template.html">Here</a> is the Databrary Release Language. <a href="https://www.databrary.org/resources/guide/investigators/release/asking/examples.html">Here</a> are videos depicting how to ask for permission to share and a sample script.</p>
+</div>
+<div id="visit-protocol" class="section level2">
+<h2>Visit Protocol</h2>
+<div id="hour-natural-play-video-shoes-noise-measurement" class="section level3">
+<h3>1: 1-Hour Natural Play Video, Shoes, &amp; Noise Measurement</h3>
+<div id="mo-crawler-and-walker" class="section level4">
+<h4>12-mo (crawler and walker)</h4>
+<p>Crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61390/download?inline=true</a></p>
+<p>Crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61397/download?inline=true</a></p>
+<p>Walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59930/download?inline=true</a></p>
+<p>Walker experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59941/download?inline=true</a></p>
+</div>
+<div id="mo" class="section level4">
+<h4>18-mo</h4>
+<p>Participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61218/download?inline=true</a></p>
+<p>Experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61220/download?inline=true</a></p>
+</div>
+<div id="mo-1" class="section level4">
+<h4>24-mo</h4>
+<p>Participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61054/download?inline=true</a></p>
+<p>Experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true" type="video/mp4"> Your browser does not support the video tag. </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61086/download?inline=true</a></p>
+<p>Instruction to mom:</p>
+<p><em>For the next hour, do anything you would typically do if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home. You can play together or not. The idea is to capture what your typical day is like.</em></p>
+<p>Procedure:</p>
+<p>Keep camera on the child at all times. Specifically, ensure that the child’s whole body is visible on camera. If mom is in frame, capture as much of her body as possible without compromising view of the child. Record in front or to the side of the child as much as possible. Do not zoom in. Remain at as far a distance as possible (~3 to 5 m, hugging the wall) so that the child is not distracted by your presence. Try not to interact with the child or make eye contact with the child. Just watch through the view finder of the camera.</p>
+</div>
+<div id="shoes" class="section level4">
+<h4>Shoes</h4>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/0,6640/asset/65148/download?inline=true</a></p>
+<p>If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views.</p>
+<p>Procedure:</p>
+<p>Zoom in with camera and comment on shoe type, heel (if any), and other observations.</p>
+</div>
+<div id="decibel-meter" class="section level4">
+<h4>Decibel Meter</h4>
+<p>Open the app on your tablet and start running it just before you begin recording the free play video portion of the visit.</p>
+<p>Procedure:</p>
+<p>Open application (the application immediately starts recording noise levels upon startup). Place device in the most central place in the home (e.g., living room)</p>
+</div>
+</div>
+<div id="solitary-play" class="section level3">
+<h3>2: Solitary Play</h3>
+<p><img src="https://nyu.databrary.org/slot/14765/-/asset/63732/download?inline=true"/></p>
+<div id="mo-crawler-walker" class="section level4">
+<h4>12-mo crawler &amp; walker</h4>
+<p>12-mo crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61352/download?inline=true</a></p>
+<p>12-mo crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true</a></p>
+<p>12-mo walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59918/download?inline=true</a></p>
+<p>12-mo walker experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true</a></p>
+</div>
+<div id="mo-2" class="section level4">
+<h4>18-mo</h4>
+<p>18-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61064/download?inline=true</a></p>
+<p>18-mo experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true</a></p>
+</div>
+<div id="mo-3" class="section level4">
+<h4>24-mo</h4>
+<p>24-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true</a></p>
+<p>24-mo experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
+<p>Interviewer:</p>
+<p>*For the next few minutes, we want to see how [CHILD] plays by him/herself. We ask you not to distract him/her or tell him/her how to play. If [CHILD] tries to get your attention or wants to play with you, you can say, “Go play. It’s perfectly fine if he/she doesn’t play with the toy. Say to child: Here [CHILD], play with this!*</p>
+<p>Camera:</p>
+<p>Record solitary toy play so that view is on baby’s body entirely and hands on object. If child moves around, follow child and keep face in frontal view. Procedure: Set yoga mat down on the floor. Un-stack cups and arrange randomly, standing upright (out of child’s view). Place child in a sitting position on yoga mat and start timing after you present the toy. Use timer on the camera (let the timer run for a bit longer than 2 min to avoid cutting the play time short. Later we code only 2 min of engagement). After 2 minutes, say: <em>“Great job!”</em></p>
+</div>
+</div>
+<div id="dyadic-mother-child-play" class="section level3">
+<h3>3: Dyadic (Mother-Child) Play</h3>
+<p><img src="https://nyu.databrary.org/slot/14765/-/asset/63731/download?inline=true"/></p>
+<div id="mo-crawler-walker-1" class="section level4">
+<h4>12-mo crawler &amp; walker</h4>
+<p>[VIDEO 12-mo crawler participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61354/download?inline=true</a></p>
+<p>12-mo crawler experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61358/download?inline=true</a></p>
+<p>12-mo walker participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59920/download?inline=true</a></p>
+<p>12-mo walker experimenter view starts at 03:40 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59928/download?inline=true</a></p>
+</div>
+<div id="mo-4" class="section level4">
+<h4>18-mo</h4>
+<p>18-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61066/download?inline=true</a></p>
+<p>18-mo experimenter view starts at 3:48 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61078/download?inline=true</a></p>
+</div>
+<div id="mo-5" class="section level4">
+<h4>24-mo</h4>
+<p>24-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true</a></p>
+<p>24-mo experimenter view starts at 03:32 </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
+<p>Instructions:</p>
+<p><em>Please sit next to [CHILD]. I’ll give you a toy. Please play with [CHILD].</em></p>
+<p>Procedure:</p>
+<p>Record so that the child and mother’s entire body and hands are captured. Use timer on camera to time engagement. After 3 minutes, say “Great job!”</p>
+</div>
+</div>
+<div id="questionnaires" class="section level3">
+<h3>4: <a href="questionnaires.html">Questionnaires</a></h3>
+<p>Please note that presentation and format will differ in the app.</p>
+<div id="mo-6" class="section level4">
+<h4>12-mo</h4>
+<p>12-mo crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61050/download?inline=true</a></p>
+<p>12-mo walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
+</div>
+<div id="mo-7" class="section level4">
+<h4>18-mo</h4>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61076/download?inline=true</a></p>
+</div>
+<div id="mo-8" class="section level4">
+<h4>24-mo</h4>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61088/download?inline=true</a></p>
+</div>
+<div id="general-questionnaires" class="section level4">
+<h4>General Questionnaires</h4>
+<p>Instructions:</p>
+<p><em>I have some questions for you…</em></p>
+<p>[Only give introduction to the sections that need introduction (i.e., ECBQ and MB-CDI)].</p>
+<p>A GoogleSheet with most of the questions in a database format can be found <a href="https://docs.google.com/spreadsheets/d/1pVOM2naRS_STCXx4nkaRDLO6_V5kGhFaduRfwsv7cnI/edit?usp=sharing">here</a>.</p>
+<p>Procedure:</p>
+<p>Set up camera to record the questionnaires. You’ll need to change the battery on the camera to ensure sufficient power. Sit next to the mom so she is able to read along.</p>
+<ul>
+<li><a href="toys_pets.html">Toys &amp; Pets</a></li>
+<li><a href="home.html">HOME</a></li>
+<li><a href="gender.html">Gender Socialization</a></li>
+<li><a href="locomotor_milestones.html">Locomotor milestones</a></li>
+<li><a href="eclsb_health.html">ECLS-B Health</a></li>
+<li><a href="typical_day.html">Typical Day</a></li>
+<li><a href="media.html">Media time &amp; use</a></li>
+</ul>
+</div>
+<div id="macarthur-bates-communicative-development-inventory-mb-cdi" class="section level4">
+<h4>MacArthur-Bates Communicative Development Inventory (MB-CDI)</h4>
+<p>MB-CDI should be administered in the primary language of the mom. Specific instructions and procedure are included in the questionnaire.</p>
+</div>
+<div id="ecbq" class="section level4">
+<h4><a href="ecbq.html">ECBQ</a></h4>
+<p>Read instructions on questionnaire. Give mom answer sheet with rating scale.</p>
+</div>
+</div>
+<div id="house-walkthrough-room-measurements" class="section level3">
+<h3>5: House Walkthrough &amp; Room Measurements</h3>
+<div id="video-house-walkthrough" class="section level4">
+<h4>Video House Walkthrough</h4>
+</div>
+<div id="mo-9" class="section level4">
+<h4>12-mo</h4>
+<p>Crawler </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true" class="uri">https://nyu.databrary.org/slot/14574/-/asset/61356/download?inline=true</a></p>
+<p>Walker </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true" class="uri">https://nyu.databrary.org/slot/14167/-/asset/59922/download?inline=true</a></p>
+</div>
+<div id="mo-10" class="section level4">
+<h4>18-mo</h4>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true" class="uri">https://nyu.databrary.org/slot/14513/-/asset/61068/download?inline=true</a></p>
+</div>
+<div id="mo-11" class="section level4">
+<h4>24-mo</h4>
+<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61048/download?inline=true</a></p>
+<p>Instructions:</p>
+<p><em>Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces.</em> <em>As we walk around, please mention the things that [CHILD] plays with in each room. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.</em></p>
+<p>Procedure (Video):</p>
+<p>Pause at the entrance of the room.</p>
+<p>Name the room by its function (e.g., “This is where [CHILD] sleeps”). First, pan the camera SLOWLY from Left to Right. Then, pan the camera to Floor, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the Ceiling. Hold the camera in one hand while you take measurements of the room. Do NOT turn off the camera when walking to next room. Walk SLOWLY.</p>
+</div>
+<div id="room-measurements-with-laser-distance-measurer" class="section level4">
+<h4>Room Measurements with Laser Distance Measurer</h4>
+<p><img src="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/lib/exe/fetch.php/image011.png?w=300&tok=74e992"/></p>
+<p>Measure all rooms in the house. Room = any space used by someone on a regular basis, including: bedrooms, kitchens, bathrooms, and basements. Do not measure laundry rooms. Rooms don’t have to have windows. A room has to have a clear demarcation (e.g., a wall or an entry). If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.</p>
+<p>Procedure:</p>
+<p>Turn measure on by pressing ON/DIST button. Make sure the laser is on. Place the base of the laser flat on the wall. Avoid moldings and door castings. Measure wall to wall, lengthwise and widthwise. If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room. Press ON/DIST again to take measurement. Repeat the above for length and width. Focus camera on laser measure and read measurements out loud.</p>
+</div>
+</div>
+<div id="body-dimensions" class="section level3">
+<h3>6: Body Dimensions</h3>
+<p>[TBD]</p>
+</div>
+<div id="visit-wrap-up" class="section level3">
+<h3>7: Visit Wrap-up</h3>
+<p>Complete home measurement, housing checklist sections of the Home Questionnaire. When you arrive back at the lab, wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse nesting cups in bleach-water. Do not submerge shape sorter in water (or it will stop making noise).</p>
+</div>
+<div id="visit-post-processing" class="section level3">
+<h3>8: Visit post-processing</h3>
+<p>Export questionnaire data from tablet. Upload videos, questionnaires, and house decibel data to Databrary.</p>
+</div>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1599 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="recruitment.html">recruitment</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="news.html">news</a>
+</li>
+<li>
+  <a href="site-info.html">site info</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-left{
+  float: left;
+  width: 40%;
+  text-align: left;
+}
+.column-right{
+  float: right;
+  width: 60%;
+  text-align: left;
+}
+</style>
+<p><img src="img/PLAY-logo.png" width="400" /></p>
+<div id="principal-investigators" class="section level2">
+<h2>Principal Investigators</h2>
+<table>
+<tr>
+<td>
+<img src="img/people-karen.png" width="150"><br><br><br>
+</td>
+<td style="padding:10px">
+<strong>Karen E. Adolph, Ph.D</strong>.</br> New York University</br> Principal Investigator
+</td>
+</tr>
+<tr>
+<td>
+<img src="img/people-cathie.png" width="150"><br><br><br>
+</td>
+<td style="padding:10px">
+<strong>Catherine Tamis-LeMonda, Ph.D.</strong></br> New York University</br> Co-Principal Investigator
+</td>
+</tr>
+<tr>
+<td>
+<img src="img/people-rick.png" width="150"><br><br><br>
+</td>
+<td style="padding:10px">
+<strong>Rick O. Gilmore, Ph.D.</strong></br> The Pennsylvania State University</br> Co-Principal Investigator
+</td>
+</tr>
+</table>
+</div>
+<div id="staff" class="section level2">
+<h2>Staff</h2>
+<div class="row">
+<div class="column-left">
+<p><img src="img/people-kasey.png" width="150"></br> <strong>Kasey Soska, Ph.D.</strong></br> Scientific Director</p>
+</div>
+<div class="column-right">
+<p><img src="img/people-swapnaa.png" width="150"></br> <strong>Swapnaa Jayaraman, Ph.D.</strong></br> Research Scientist</p>
+</div>
+</div>
+<br> <br>
+<div class="row">
+<div class="column-left">
+<p><img src="img/people-orit.png" width="150"></br> <strong>Orit Herzberg-Keller, Ph.D.</strong></br> Research Scientist</p>
+</div>
+<div class="column-right">
+<p><img src="img/people-melody.png" width="150"></br> <strong>Melody Xu, B.S.</strong></br> Program Coordinator</p>
+</div>
+</div>
+<p><br><br></p>
+</div>
+<div id="collaborating-investigators" class="section level2">
+<h2>Collaborating Investigators</h2>
+<!-- Tabling this cool script for now, in favor of new name assignments
+
+Last            First        Institution                                  Collection_role 
+--------------  -----------  -------------------------------------------  ----------------
+Adolph          Karen        New York University                          Collecting      
+Amso            Dima         Brown University                             Not collecting  
+Barr            Rachel       Georgetown University                        Collecting      
+Berenbaum       Sheri        Penn State University                        Not collecting  
+Bornstein       Marc         SRCD                                         Not collecting  
+Boudreau        Jean-Paul    Mount Alison University                      Not collecting  
+Bradley         Bob          Arizona State University                     Not collecting  
+Brandone        Amanda       Lehigh University                            Not collecting  
+Brooker         Rebecca      Texas A&M                                    Not collecting  
+Buss            Kristin      Penn State University                        Not collecting  
+Casasola        Marianella   Cornell University                           Collecting      
+Chi             Guangqing    Penn State University                        Not collecting  
+Claxton         Laura        Purdue University                            Collecting      
+Davis           Elizabeth    University of California at Riverside        Not collecting  
+de Barbaro      Kaya         University of Texas at Austin                Not collecting  
+Dusing          Stacey       Virginia Commonwealth University             Collecting      
+Evans           Gary         Cornell University                           Not collecting  
+Fausey          Caitlin      University of Oregon                         Collecting      
+Franchack       John         University of California at Riverside        Collecting      
+Frank           Mike         Stanford University                          Collecting      
+Frick           Janet        University of Georgia                        Collecting      
+Gill            Simone       Boston University                            Collecting      
+Gilmore         Rick         Penn State University                        Collecting      
+Goldin-Meadow   Susan        University of Chicago                        Not collecting  
+Goldstein       Mike         Cornell University                           Not collecting  
+Haddad          Jeff         Purdue University                            Not collecting  
+Halim           May Ling     California State University at Long Beach    Collecting      
+Hane            Amie         Williams College                             Not collecting  
+Hauck           Janet        Michigan State University                    Not collecting  
+Heathcock       Jill         Ohio State University                        Collecting      
+Henderson       Heather      University of Waterloo                       Not collecting  
+Hirsh-Pasek     Kathy        Temple University                            Not collecting  
+Iverson         Jana         University of Pittsburgh                     Collecting      
+Karasik         Lana         CUNY -- College of Staten Island             Collecting      
+Lee             Do Kyeong    California State University at Fullerton     Collecting      
+Lee             Mei-Hua      Michigan State University                    Collecting      
+Legare          Cristine     University of Texas at Austin                Collecting      
+Lew-Williams    Casey        Princeton University                         Collecting      
+Libertus        Klaus        University of Pittsburgh                     Not collecting  
+LoBue           Vanessa      Rutgers University                           Collecting      
+Lockman         Jeff         Tulane University                            Collecting      
+MacWhinney      Brian        Carnegie Mellon University                   Not collecting  
+Messinger       Dan          University of Miami                          Collecting      
+Naigles         Letitia      University of Connecticut                    Not collecting  
+Namy            Laura        Society for Research In Child Development    Not collecting  
+Needham         Amy          Vanderbilt University                        Collecting      
+Newcombe        Nora         Temple University                            Not collecting  
+Oakes           Lisa         University of California at Davis            Collecting      
+Olson           Kristina     University of Washington                     Not collecting  
+Perez-Edgar     Koraly       Penn State University                        Not collecting  
+Pomerantz       Eva          University of Illinois at Urbana-Champagne   Not collecting  
+Prosser         Laura        Children's Hospital of Philadelphia          Collecting      
+Rowe            Meredith     Harvard University                           Not collecting  
+Schmuckler      Mark         University of Toronto Scarborough            Not collecting  
+Sheya           Adam         University of Connecticut                    Not collecting  
+Soderstrom      Melanie      University of Manitoba                       Not collecting  
+Song            Lulu         Brooklyn College                             Not collecting  
+Tamis-LeMonda   Catherine    New York University                          Not collecting  
+Vishton         Peter        College of William & Mary                    Collecting      
+Walle           Eric         University of California at Merced           Not collecting  
+Wang            Su-hua       University of California at Santa Cruz       Collecting      
+Warlaumont      Anne         University of California at Los Angeles      Collecting      
+Yoshida         Hanako       University of Houston                        Collecting      
+Yu              Chen         Indiana University                           Collecting      
+Yurovsky        Dan          University of Chicago                        Collecting      
+-->
+<div id="PLAY-roster_26496" align=center x:publishsource="Excel">
+
+<table border=0 cellpadding=0 cellspacing=0 width=1222 style='border-collapse:
+ collapse;table-layout:fixed;width:916pt'>
+<col width=207 style='mso-width-source:userset;mso-width-alt:6613;width:155pt'>
+<col width=324 style='mso-width-source:userset;mso-width-alt:10368;width:243pt'>
+<col width=159 style='mso-width-source:userset;mso-width-alt:5077;width:119pt'>
+<col width=112 style='mso-width-source:userset;mso-width-alt:3584;width:84pt'>
+<col width=84 span=5 style='mso-width-source:userset;mso-width-alt:2688;
+ width:63pt'>
+<tr>
+<hr>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" class="xl65" width="207" style="height:15.0pt;width:155pt">
+<h4>
+<b> Full name </b>
+</h4>
+</td>
+<td class="xl65" width="324" style="width:243pt">
+<h4>
+<b> Institution </b>
+</h4>
+</td>
+<td class="xl65" width="159" style="width:119pt">
+<h4>
+<b> Location </b>
+</h4>
+</td>
+<td class="xl65" width="112" style="width:84pt">
+<h4>
+<b> Role </b>
+</h4>
+</td>
+<td class="xl65" width="84" style="width:63pt">
+</td>
+<td class="xl65" width="84" style="width:63pt">
+</td>
+<td class="xl65" width="84" style="width:63pt">
+</td>
+<td class="xl65" width="84" style="width:63pt">
+</td>
+<td class="xl65" width="84" style="width:63pt">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Karen Adolph
+</td>
+<td>
+New York University
+</td>
+<td>
+New York, NY
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Rebecca Brooker
+</td>
+<td>
+Texas A&amp;M
+</td>
+<td>
+College Station, TX
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Kristin Buss
+</td>
+<td>
+Penn State University
+</td>
+<td>
+State College, PA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Elizabeth Davis
+</td>
+<td>
+University of California at Riverside
+</td>
+<td>
+Riverside, CA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Kaya de Barbaro
+</td>
+<td>
+University of Texas at Austin
+</td>
+<td>
+Austin, TX
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Janet Frick
+</td>
+<td>
+University of Georgia
+</td>
+<td>
+Athens, GA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Amie Hane
+</td>
+<td>
+Williams College
+</td>
+<td>
+Williamstown, MA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Heather Henderson
+</td>
+<td>
+University of Waterloo
+</td>
+<td class="xl66">
+Waterloo, ON
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Vanessa LoBue
+</td>
+<td>
+Rutgers University
+</td>
+<td>
+Newark, NY
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Dan Messinger
+</td>
+<td>
+University of Miami
+</td>
+<td>
+Miami, FL
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Koraly Perez-Edgar
+</td>
+<td>
+Penn State University
+</td>
+<td>
+State College, PA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Lulu Song
+</td>
+<td>
+Brooklyn College
+</td>
+<td>
+Brooklyn, NY
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Eric Walle
+</td>
+<td>
+University of California at Merced
+</td>
+<td>
+Merced, CA
+</td>
+<td class="xl66">
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Marianella Casasola
+</td>
+<td>
+Cornell University
+</td>
+<td>
+Ithaca, NY
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Caitlin Fausey
+</td>
+<td>
+University of Oregon
+</td>
+<td>
+Eugene, OR
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Mike Frank
+</td>
+<td>
+Stanford University
+</td>
+<td>
+Palo Alto, CA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Susan Goldin-Meadow
+</td>
+<td>
+University of Chicago
+</td>
+<td>
+Chicago, IL
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Jana Iverson
+</td>
+<td>
+University of Pittsburgh
+</td>
+<td>
+Pittsburgh, PA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Casey Lew-Williams
+</td>
+<td>
+Princeton University
+</td>
+<td>
+Princeton, NJ
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Letitia Naigles
+</td>
+<td>
+University of Connecticut
+</td>
+<td>
+Storrs, CT
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Meredith Rowe
+</td>
+<td>
+Harvard University
+</td>
+<td>
+Cambridge, MA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Catherine Tamis-LeMonda
+</td>
+<td>
+New York University
+</td>
+<td>
+New York, NY
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Anne Warlaumont
+</td>
+<td class="xl66">
+University of California at Los Angeles
+</td>
+<td class="xl66">
+Los Angeles, CA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Hanako Yoshida
+</td>
+<td>
+University of Houston
+</td>
+<td>
+Houston, TX
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Chen Yu
+</td>
+<td>
+Indiana University
+</td>
+<td>
+Bloomington, IN
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Dan Yurovsky
+</td>
+<td>
+University of Chicago
+</td>
+<td>
+Chicago, IL
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Rachel Barr
+</td>
+<td>
+Georgetown University
+</td>
+<td>
+Washington, DC
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Jean-Paul Boudreau
+</td>
+<td class="xl66">
+Mount Allison University
+</td>
+<td class="xl66">
+Sackville, NB
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Amanda Brandone
+</td>
+<td>
+Lehigh University
+</td>
+<td>
+Lehigh, PA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Lana Karasik
+</td>
+<td>
+CUNY – College of Staten Island
+</td>
+<td>
+Staten Island, NY
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Cristine Legare
+</td>
+<td>
+University of Texas at Austin
+</td>
+<td>
+Austin, TX
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Klaus Libertus
+</td>
+<td>
+University of Pittsburgh
+</td>
+<td>
+Pittsburgh, PA
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Jeff Lockman
+</td>
+<td>
+Tulane University
+</td>
+<td>
+New Orleans, LA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Amy Needham
+</td>
+<td>
+Vanderbilt University
+</td>
+<td>
+Nashville, TN
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Lisa Oakes
+</td>
+<td>
+University of California at Davis
+</td>
+<td>
+Davis, CA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Adam Sheya
+</td>
+<td>
+University of Connecticut
+</td>
+<td>
+Storrs, CT
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Peter Vishton
+</td>
+<td>
+College of William &amp; Mary
+</td>
+<td>
+Williamsburg, VA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Su-hua Wang
+</td>
+<td>
+University of California at Santa Cruz
+</td>
+<td>
+Santa Cruz, CA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Laura Claxton
+</td>
+<td>
+Purdue University
+</td>
+<td>
+W. Lafayette, IN
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Stacey Dusing
+</td>
+<td>
+Virginia Commonwealth University
+</td>
+<td>
+Richmond, VA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+John Franchak
+</td>
+<td>
+University of California at Riverside
+</td>
+<td>
+Riverside, CA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Simone Gill
+</td>
+<td>
+Boston University
+</td>
+<td>
+Boston, MA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Rick Gilmore
+</td>
+<td>
+Penn State University
+</td>
+<td>
+State College, PA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Jeff Haddad
+</td>
+<td>
+Purdue University
+</td>
+<td>
+W. Lafayette, IN
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Janet Hauck
+</td>
+<td>
+Michigan State University
+</td>
+<td>
+East Lansing, MI
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Jill Heathcock
+</td>
+<td>
+Ohio State University
+</td>
+<td>
+Columbus, OH
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Do Kyeong Lee
+</td>
+<td>
+California State University at Fullerton
+</td>
+<td>
+Fullerton, CA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Mei-Hua Lee
+</td>
+<td>
+Michigan State University
+</td>
+<td>
+East Lansing, MI
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Laura Prosser
+</td>
+<td>
+Children’s Hospital of Philadelphia
+</td>
+<td>
+Philadelphia, PA
+</td>
+<td>
+Collecting &amp; Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Mark Schmuckler
+</td>
+<td>
+University of Toronto Scarborough
+</td>
+<td>
+Toronto, ON
+</td>
+<td class="xl66">
+Coding
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Sheri Berenbaum
+</td>
+<td>
+Penn State University
+</td>
+<td>
+State College, PA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+May Ling Halim
+</td>
+<td>
+California State University at Long Beach
+</td>
+<td>
+Long Beach, CA
+</td>
+<td>
+Collecting
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Kristina Olson
+</td>
+<td>
+University of Washington
+</td>
+<td>
+Seattle, WA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Eva Pomerantz
+</td>
+<td>
+University of Illinois at Urbana-Champagne
+</td>
+<td>
+Champaign, IL
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Dima Amso
+</td>
+<td>
+Brown University
+</td>
+<td>
+Providence, RI
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Bob Bradley
+</td>
+<td>
+Arizona State University
+</td>
+<td>
+Tempe, AZ
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Guangqing Chi
+</td>
+<td>
+Penn State University
+</td>
+<td>
+State College, PA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Gary Evans
+</td>
+<td>
+Cornell University
+</td>
+<td>
+Ithaca, NY
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Mike Goldstein
+</td>
+<td>
+Cornell University
+</td>
+<td>
+Ithaca, NY
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Brian MacWhinney
+</td>
+<td>
+Carnegie Mellon University
+</td>
+<td>
+Pittsburgh, PA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Laura Namy
+</td>
+<td>
+Society for Research In Child Development
+</td>
+<td>
+Washington, DC
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Melanie Soderstrom
+</td>
+<td>
+University of Manitoba
+</td>
+<td class="xl66">
+Winnipeg, MB
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Marc Bornstein
+</td>
+<td>
+NICHD
+</td>
+<td>
+Bethesda, MD
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Kathy Hirsh-Pasek
+</td>
+<td>
+Temple University
+</td>
+<td>
+Philadelphia, PA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="20" style="height:15.0pt">
+<td height="20" style="height:15.0pt">
+Nora Newcombe
+</td>
+<td>
+Temple University
+</td>
+<td>
+Philadelphia, PA
+</td>
+<td>
+Contributor
+</td>
+<td colspan="5" style="mso-ignore:colspan">
+</td>
+</tr>
+<tr height="0" style="display:none">
+<td width="207" style="width:155pt">
+</td>
+<td width="324" style="width:243pt">
+</td>
+<td width="159" style="width:119pt">
+</td>
+<td width="112" style="width:84pt">
+</td>
+<td width="84" style="width:63pt">
+</td>
+<td width="84" style="width:63pt">
+</td>
+<td width="84" style="width:63pt">
+</td>
+<td width="84" style="width:63pt">
+</td>
+<td width="84" style="width:63pt">
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div id="advisory-board" class="section level2">
+<h2>Advisory Board</h2>
+<p><List everyone here></p>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
