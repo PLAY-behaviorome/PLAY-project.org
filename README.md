@@ -9,6 +9,13 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 To render the website, run `rmarkdown::render_site()` in R from the project root directory.
 (If any packages need to be installed, you can do so using `install.packages("package_name")`)
 The website files are copied to `docs/` where you can view them using a web browser or file editor.
+If the local copy looks good:
+1. Commit the changes - saves a local copy of the changes
+- in R, in the Git tab, you will see the files that have been changed
+- click on commit (top right)
+- type in a commit message, click on the Commit button
+2. Push the changes to GitHub
+- click on Push (top right) - saves a copy on GitHub
 
 ## Deploying the site
 
