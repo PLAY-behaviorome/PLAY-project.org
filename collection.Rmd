@@ -14,203 +14,20 @@ knitr::opts_chunk$set(echo = FALSE)
 source("R/write_video_clip_html.R")
 ```
 
-# Overview
-
-PLAY aims to set new standards for conducting open, transparent, and reproducible behavioral science by i) publishing the protocol, and ii) making extensive use of video exemplars to demonstrate phenomena and illustrate behavioral codes.
-For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to [Databrary](http://databrary.org).
-To register for access, visit <http://databrary.org/register>.
-
-Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login)  to view embedded video examples in this wiki and gain access to phone and home questionnaires.
-
-# Scheduling Visit
-
-*To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [participant paperwork](link to questionnaires)*
-
-## Initial recruiting call
-
-<!--
-</br>
-<video width="320" height="240" controls>
-  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</br>
--->
-
-<!-- This is the code from the wiki - for now, the button doesn't seem to be collapsed-->
-<button size="xs" type="info" collapse="initialschedule">Video</button>
-<collapse id="initialschedule" collapsed="true">
-<grid>
-<col xs="12" sm="6" lg="6">
-<panel type="info">
-<html>
-<video width="100%" controls preload="none">
-<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support html5 video.
-</video>
-</html>
-</panel>
-</col>
-</grid>
-</collapse>
-
-
-Hi, may I speak with [MOM]?
-
-My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we're looking at how moms and babies interact with each other. We'd be visitng your home and you'd receive $25 at the end of the visit for your participation. Can we tell you about it?
-
-First, I have some questions to see if you and [CHILD] qualify for the study. 
-
-Does [CHILD]have any siblings?
-
-- → *If yes: **end call**.* In this study, we are currently looking for only-children. Would it be alright if we contacted you for other studies in the future?
-- → *If no: continue*
-
-What language(s) do you speak to [CHILD]?
-
-- → *If not ENGLISH or SPANISH: **end call**.* To control for differences in communication, we are looking for families who speak mainly English or Spanish. Would it be alright if we contacted you for other studies in the future?
-- → *If yes: continue*
-
-Was [CHILD] born on his/her due date? (If not: “How many weeks and days early/late was he/she?”)
-
-- → *If more than 4 weeks early: end call.* In this study, we are currently looking for children born on term. Would it be alright if we contacted you for other studies in the future?
-- → *If born on term (37-41 weeks): continue*
-
-For this study, we are interested in learning about babies’ natural, everyday experiences in their homes. A researcher will visit you and [CHILD] in your home for about 2.5 hours. You and [CHILD] will be video recorded for 1 hour as you go about your day, followed by questions on [CHILD]'s skills and routines. We will ask you to take us through your home as we record the environment. For your participation, we will compensate you with $25 at the end of the session.
-
-The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers. The purpose is to share the data with experts in the field so that scientists can learn more about infant development.
-
-Does this sound like something you would be interested in participating in with [CHILD]?
-
-→ *If no to study or to sharing video on Databrary:* Okay, thank you. May we call you for other studies?
-
-→ *If yes:* Great! Because we are interested in mother-infant routines, we'd like to find a time and date when we can observe just <span style="text-decoration:underline">**you and [CHILD]**</span> at home. It would be great if we can schedule a time that is not during a typical mealtime and when [CHILD] is usually awake. Is there a convenient time and day that works best for you that would be within these criteria?
-
-→ *If the date they are available puts baby out of age range:* For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then?
-
----
-
-- Before the study, we have a few questions that we'd like to ask. It should only take about 5 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?
-
-→ *If yes:* 
-
-Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab. 
-
-- On your tablet, open Kobo toolbox and start a new questionnaire set
-- Fill out participant information at top of new session
-- “Save as Draft” after Phone Questionnaire and home visit questionnaires
-- Only hit “Submit” after filling out clean-up notes back in lab
-
-[List of questions on the Phone Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
-*Please note that presentation and format will differ in the app.*
-
-→ *If no:* Proceed with wrapping up the call:
-
----
-
-- So I have you and [CHILD] for our study on [DATE] at [TIME]. We'll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!
-- If the date they are available puts baby out of age range: For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then? → If no to study or to sharing video on Databrary: Okay, thank you. May we call you for other studies?
-
-→ If no: Okay, thank you. May we call you for other studies?   
-
-
-### Voicemail
-
-Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon! 
-
-### Confirming the visit (1 day before actual visit, also email the day before)
-
-<insert 4 videos here>
-
-Hi, may I speak with [MOM]?
-
-My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE]. Does this time and date still work for you?
-
-→ *If yes:* 
-
----
-
-→ *If phone questionnaire was not completed during initial phone call:* Before the visit, I’d like to ask you a few questions. It will only take 5 minutes of your time. Can we speak now?
-
-→ *If yes:* 
-
-Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab. 
-
-- On your tablet, open Kobo toolbox and start a new questionnaire set
-- Fill out participant information at top of new session
-- “Save as Draft” after Phone Questionnaire and home visit questionnaires
-- Only hit “Submit” after filling out clean-up notes back in lab
-
-[List of questions on the Phone Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
-*Please note that presentation and format will differ in the app.*
-
-→ *If no:* Can I call you back today or tomorrow [before the visit]. *Schedule call.* 
-
----
-
-# Preparing for Visit
-
-## Pack
-
-<div>
-<table width="70%">
-<tr>
-<td width="25%"> Camera, SD card and extra battery </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/camera-sdcard-battery.png"> </td>
-<td width="25%"> Microphone with sponge cover  </td>
-<td width="25%"> <img src="img/mic.png"> </td>
-</tr>
-<tr>
-<td width="25%"> Fully loaded and charged tablet</td>
-<td width="25%"> <img src="img/tablet.png"> </td>
-<td width="25%"> Laser Measure  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/laser.png"> </td>
-</tr>
-<tr>
-<td width="25%"> Decibel meter mic  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/dm-mic.png"> </td>
-<td width="25%"> Tripod for camera</td>
-<td width="25%"> <img src="img/tripod.png"> </td>
-</tr>
-<tr>
-<td width="25%"> Tote bag  </td>
-<td width="25%"> <img src="img/tote.png"> </td>
-<td width="25%"> Yoga mat </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/yoga-mat.png"> </td>
-</tr>
-<tr>
-<td width="25%"> Dish set  </td>
-<td width="25%"> <img src="img/dish-sets.png"> </td>
-<td width="25%"> Toy </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/dog.png"> </td>
-</tr>
-<tr>
-<td width="25%"> Participant payment  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/payment.png"> </td>
-<td width="25%"> Paper backups of all questionnaires and forms </td>
-<td width="25%"> <img src="img/questionnaires.png"> </td>
-</tr>
-</table>
-</div>
-
-<!--
-- Camera, SD card and extra battery <img src="img/camera-sdcard-battery.png">
-- Mic <img src="img/mic.png">
-- Laser Measure <img src="img/lasermeasure.png">
-- Dish set, doll, and tote bag <img src="img/dishset-doll-tote.png">
-- Yoga mat <img src="img/yogamat.png">
-- Tablet with app for questionnaires, study consent form, Databrary sharing release form, and decibel meter mic <img src="img/tablet-with-everything.png">
-- Participant payment 
-- Paper copies of all questionnaires, MCDI, and consent and Databrary forms in case of tablet failure
--->
 
 # Home Visit
 
-## Introduction
+Now that you have set your target participant sample and have begun your recruitment process, these instructions will help you prepare for your participant home visit. Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login) to view protected content in this webpage.  
 
-**Say to Mom:**
+<i> For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to [Databrary](http://databrary.org). To register for access, visit <http://databrary.org/register>. </i>  
 
-“Thanks for letting us come to your home. The visit has a few parts:
+Before you proceed, please ensure that you have completed all the steps listed in the [recruitment](recruitment.html) webpage, and have in your posession the list of items to take with you to the participant's home.  <br><br>
+
+## 1. Arrival introduction
+
+#### Say to Mom:
+
+<i> "Thanks for letting us come to your home. The visit has a few parts:
 
 I’ll begin by video-recording you and [CHILD] as you go about your day. I will video-record you both for 1 hour. Then, I will ask [CHILD] to play with some toys both by him/herself and with you.
 
@@ -218,68 +35,69 @@ Afterwards, I will ask you some general questions about your family and home, an
 
 You will give me a tour of your home that I will record on video to get a sense of the places [CHILD] goes and things that he/she plays with.
 
-Do you have any questions? Let’s start with reading and signing the consent.“
+Do you have any questions? Let’s start with reading and signing the consent.“ </i><br><br>
 
-## Consent to Participate and Permission to Share
 
-Ask parent to review form asking for consent to participate in the study. When finished, give parent a moment to look over form and sign it.
+## 2. Consent to participate, permission to share
 
-Ask parent to review form asking for permission to share videos and metadata. When finished, give parent a moment to look over the form and sign it. Here is the [Databrary Release Language](https://databrary.org/access/policies/release-template.html). Here are [videos](https://databrary.org/access/guide/investigators/release/asking/examples.html) depicting how to ask for permission to share and a [sample script](https://databrary.org/access/guide/investigators/release/asking/script.html).
+Ask mom to review the following forms. When finished, give her a moment to look over each form and sign them.
 
-## Visit Protocol
+1. [Databrary Release Language](https://databrary.org/access/policies/release-template.html) form asking for consent to participate in the study.
+ 
+2. [Databrary form](https://www.databrary.org/policies/release-template.pdf) form asking for permission to share videos and metadata.  
 
-### 1: One-Hour Natural Play Video & Noise Measurement
-#### 1.1 One-Hour Natural Play Video
+Here are [videos](https://databrary.org/access/guide/investigators/release/asking/examples.html) that depict how to ask for permission to share and a [sample script](https://databrary.org/access/guide/investigators/release/asking/script.html). <br><br>
+
+
+## 3. One-hour natural play video & noise measurement  
+
+### 3.1 One-Hour Natural Play Video
 
 <insert 4 videos here>
 
-##### Instruction to mom:
+#### Say to Mom:
 
-“For the next hour, do anything you would typically do if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home. You can play together or not. The idea is to capture what your typical day is like.”
+<i> “For the next hour, do anything you would typically do if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home. You can play together or not. The idea is to capture what your typical day is like.” </i>
 
-##### Procedure:
+#### Procedure:
 
 - Keep camera on the child at all times. Specifically, ensure that the child’s whole body is visible on camera. If mom is in frame, capture as much of her body as possible without compromising view of the child.
 - Record in front or to the side of the child as much as possible.
 - Do not zoom in.
 - Remain at as far a distance as possible (~3 to 5 m, hugging the wall) so that the child is not distracted by your presence.
 - Try not to interact with the child or make eye contact with the child. Just watch through the view finder of the camera.
+<br><br>
 
-
-#### 1.2 Shoes:
+### 3.2 Shoes:
 
 <insert videos here>
 
-If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views.
+If child is wearing shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views. Zoom in with camera and comment on shoe type, heel (if any), and other observations.
 
-##### Procedure:
+### 3.3 Decibel Meter
 
-Zoom in with camera and comment on shoe type, heel (if any), and other observations.
-
-#### 1.3 Decibel Meter
-
-Open the app on your tablet and start running it just before you begin recording the free play video portion of the visit. This process should be recorded on the video camera.
-
-##### Procedure:
+Open the app on your tablet and start running it just before you begin recording the free play video portion of the visit. This process should be recorded on the video camera.  
 
 - Open application (the application immediately starts recording noise levels upon startup).
 - Place device in the most central place in the home (e.g., living room).
 - The microphone should be facing towards the room (e.g., away from walls) and propped up on the microphone stand so that it is **not** lying flat against the surface of the space.
+<br><br>
 
+## 4. Structured five-minute mother-child play
 
-### 2: Structured five-minute mother-child play
+Place the mat on a clearing on the floor and place the tote bag (with toys) in the middle of the mat.
 
-##### Instruction to mom:
+#### Say to Mom:
 
-“Please sit next to [CHILD]. I’ll give you a set of toys. Please play with [CHILD] however you like.”
+<i> “Please sit next to [CHILD] on this mat. I’ll give you a set of toys. Please play with [CHILD] however you like.” </i>
 
-##### Procedure:
+#### Procedure:
 
 * Record so that the child and mother’s entire body and hands are captured.
 * Use timer on camera to time engagement.
 * After 5 minutes, say “Great job!”
 
-### 3. Questionnaires
+## 5. Questionnaires
 
 * [List of Questions on 12-mo Home Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/72494)
 
@@ -293,78 +111,77 @@ Open the app on your tablet and start running it just before you begin recording
 
 <!-- Need to rewrite the following section-->
 
-#### General Questionnaire
+### 5.1  General Questionnaire
 
-##### Instructions:
+#### Say to mom:
 
-“I have some questions for you…” [Only give introduction to the sections that need introduction (i.e., ECBQ and MacArthur)].
+<i> “I have some questions for you…” [Only give introduction to the sections that need introduction (i.e., MCDI and ECBQ)]. </i>
 
-##### Procedure:
+#### Procedure:
 
-Set up camera to record the questionnaires. You'll need to change the battery on the camera to ensure sufficient power. - Sit next to the mom so she is able to read along.
+* Give mom her own copy of the MCDI and the ECBQ form along for her to follow along easily
+* Set up camera to record the questionnaires. You'll need to change the battery on the camera to ensure sufficient power.
+* Sit next to the mom so that the camera can capture both you and the mom
 
-#### MacArthur
+### 5.2  MacArthur
 
 * MacArthur should be administered in the primary language of the mom.
 * Specific instructions and procedure are included in the questionnaire.
+* Give mom her own copy to follow along
 
-#### ECBQ
+### 5.3  ECBQ
 
 * Read instructions on questionnaire.
-* Give mom answer sheet with rating scale
+* Give mom her own copy to follow along
+* Also give mom the sheet with the rating scale
+<br><br>
 
-### 4: House Walkthrough & Room Measurements
+## 6. Video House Walkthrough while measuring rooms
 
-#### Video House Walkthrough
+#### Say to mom:
 
-##### Instructions:
+<i> “Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces. As we walk around, please show me where you keep any objects — toys, books, sippy cups, anything like that — that [CHILD] might interact with regularly. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.” </i>
 
-“Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please give me a tour of your home as I follow with a camera, and take measurements of the spaces. As we walk around, please show me where you keep any objects — toys, books, sippy cups, anything like that — that [CHILD] might interact with regularly. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.”
+#### Procedure (Video):
 
-##### Procedure (Video):
+Video capture tips:
+- Watch recording through camcorder screen to ensure that the view is not blurry or shaky  
+- Move the camera slowly and walk slowly  
+- A clear and steady view, free of blurriness and shakiness, is necessary for detailed coding of the home environment
 
-1. Experimenter should watch recording through camcorder screen to ensure that the view is not blurry or shaky. Move the camera slowly and walk slowly. A clear and steady view, free of blurriness and shakiness, is necessary for detailed coding of the home environment.
-2. Ensure during the house walkthrough that the parent provides information on all of the following:
-
-- *Children's Sleeping Arrangements.* If parent does not offer information during walkthrough, say “Please show me where [CHILD] typically sleeps.”
-- *Child’s Clothes.* If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s clothes.”
-- *Child’s Books.* If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s books.”
-- *Child’s Toys.* If parent does not offer information during walkthrough, say “Please show me where you keep [CHILD]’s toys.”
-
-##### Instructions for House Walkthrough:
+About room measurements:
+- You will measure all rooms in the house while you do the video walkthrough  
+- A room is any space used by someone on a regular basis - bedrooms, kitchens, bathrooms, basements - they don't need to have windows  
+- A room has to have a clear demarcation (e.g., a wall or an entry).
+- Do not measure laundry rooms
+- If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.
 
 1. Pause at the entrance of the room.
-2. Name the room by its function (e.g., “This is where [CHILD] sleeps”).
-3. First, get as much of the ** *Entire Room* ** in frame as possible. Keep the camera zoomed out and make sure to capture the ceiling and the floor of the room.
-4. Next, pan the camera SLOWLY from ** *Left to Right* **.
-5. Then, pan the camera to ** *Floor* **, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the ** *Ceiling* **.
-6. Hold the camera in one hand while you take measurements of the room.
-7. If parent doesn’t offer information, ask parent if child spends time in each room: “Does [CHILD] spend any time in this room?”
-8. When parent doesn’t offer information, ask parent about child’s objects in the room: “Do you keep anything for [CHILD] in this room? (If yes:) Would you mind showing me?”
-9. Experimenter should film the ** *Location* ** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the ** *Contents* ** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)
-10. Do ** *NOT* ** turn off the camera when walking to next room.
+2. Audibly name the room by its function (e.g., <i>“This is where [CHILD] sleeps”</i>).
+3. First, get as much of the **Entire Room** in frame as possible. Keep the camera zoomed out and make sure to capture the ceiling and the floor of the room.
+4. Next, pan the camera SLOWLY from **Left to Right**.
+5. Then, pan the camera to **Floor**, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the **Ceiling**.
+6. Hold the camera in one hand while you take measurements of the room using the other. <br>
+    - Turn measure on by pressing ON/DIST button. Make sure the laser beam is visible. <br> 
+    - Measure wall to wall, lengthwise and widthwise. <br>
+    - If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room. <br>
+    - Place the base of the laser flat on the wall, push ON/DIST againt to send the beam across the room (avoid moldings, door castings, reflective surfaces) <br>
+    - Repeat the above for the second dimension (length or width) <br>
+    - Focus camera on laser measure for each measure and read numbers out loud with units (e.g. "eight point five feet") <br>
+7. Ask parent if child spends time in each room: <i>“Does [CHILD] spend any time in this room?”</i>
+8. Ask parent about child’s objects in the room: <i>“Do you keep anything for [CHILD] in this room? (If yes) Would you mind showing me?”</i>
+9. Ensure during the house walkthrough that the parent provides information on all of the following:
+    - *Children's Sleeping Arrangements.* <i>“Please show me where [CHILD] typically sleeps.”</i>
+    - *Child’s Clothes.* <i>“Please show me where you keep [CHILD]’s clothes.”</i>
+    - *Child’s Books.* <i>“Please show me where you keep [CHILD]’s books.”</i>
+    - *Child’s Toys.* <i>“Please show me where you keep [CHILD]’s toys.”</i>
+10. Film the **Location** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the **Contents** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)
+11. Do ** *NOT* ** turn off the camera when walking to next room.
 11. Walk SLOWLY.
-
-#### Room Measurements with Laser Distance Measurer
-
-* Room Measurements with Laser Distance Measurer
-* Measure all rooms in the house.
-* Room = any space used by someone on a regular basis, including: bedrooms, kitchens, bathrooms, and basements. Do not measure laundry rooms. Rooms don’t have to have windows.
-* A room has to have a clear demarcation (e.g., a wall or an entry).
-* If the room has a short divider (e.g., when a kitchen and a living room are divided by a counter), count as one big room and measure accordingly.
-
-##### Procedure:
-
-1. Turn measure on by pressing ON/DIST button. Make sure the laser is on.
-2. Place the base of the laser flat on the wall. Avoid moldings, door castings, and reflective surfaces.
-3. Measure wall to wall, lengthwise and widthwise.
-4. If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room.
-5. Press ON/DIST again to take measurement.
-6. Repeat the above for length and width.
-7. Focus camera on laser measure and read measurements out loud.
+<br><br>
 
 
-### 5: Visit wrap-up
+## 7. Visit wrap-up
 
 * Complete housing checklist and clean-up notes sections of the questionnaire battery.
 * When you arrive back at the lab, wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse dish set in bleach-water.
