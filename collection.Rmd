@@ -17,6 +17,8 @@ source("R/write_video_clip_html.R")
 
 # Home Visit
 
+*(Please ensure that you have read through the [recruitment](recruitment.html) page before you continue)*
+
 Now that you have set your target participant sample and have begun your recruitment process, these instructions will help you prepare for your participant home visit. Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login) to view protected content in this webpage.  
 
 <i> For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to [Databrary](http://databrary.org). To register for access, visit <http://databrary.org/register>. </i>  

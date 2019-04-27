@@ -7,25 +7,35 @@ output:
     toc_float: true
 ---
 
-# Datavyu [Object Codes](objects.html) for 1-Hour Natural Play
+
+# Object Interaction passes
+
+
+### Workflow
+
+1. Choose whether to code baby or mom first
+2. Score each pass according to definitions in [Object Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual3)
+
+
+### Datavyu [Object Codes](objects.html)
 
 Make sure you are [currently logged in at Databrary](https://nyu.databrary.org/user/login) to view embedded video examples in this wiki.
 
-## `babyobject`
+#### `babyobject`
 
 `<obj>`
 
-### General Orientation
+##### General Orientation
 
 This code captures the times that the baby is manually engaged with an object. Coders score only when object events occur, not when they don't occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. <a href=""> (2 videos) </a>
 
-### Value List
+##### Value List
 
 `o` = object
 
 `.` = when baby is off camera and coder cannot determine whether baby has an object in hand.
 
-### Operational Definitions
+##### Operational Definitions
 
 `<obj>`
 
@@ -39,7 +49,7 @@ Code '**o**' if the baby is engaged with an object by making contact with the it
 **Onset** is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). **Offset** is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as 'o,' but if infant is touching multiple objects, the offset of 'o' object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout.  <a href=""> (1 video) </a>
 
 
-### How to Code
+##### How to Code
 
 Set “JUMP-BACK-BY” key to 3 s.
 
@@ -52,7 +62,7 @@ Continue watching in real time for the next object bout. If the baby is holding 
 To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of 'o'. Then, hit the 'JUMP-BACK-BY' key and check to see if the previous cell lights up. If it does, then the two cells are <3 s apart and should be combined into one bout of '**o**'.
 
 
-## `momobject`
+#### `momobject`
 
 `<obj>`
 
@@ -62,13 +72,13 @@ This code captures the times that the mom is engaged with an object.
 Coders score only when object events occur, not when they don't occur. 
 This is an event code, where gray space in between cells means that the mom is not engaged with an object.
 
-### Value List
+##### Value List
 
 `o` = object.
 
 `.` = when mother is off camera and coder cannot determine whether she has an object in hand.
 
-### Operational Definitions
+##### Operational Definitions
 
 `<obj>`
 
@@ -84,7 +94,7 @@ If the mom is not in the camera view, code this with a '.' as missing data.
 
 
 
-### How to Code
+##### How to Code
 
 
 
@@ -107,3 +117,4 @@ Code as Object event if mom's back is to the camera, but you see her arms moving
 
 Many times, onsets and offsets are coded when mom goes in and out of frame. In these instances, hit the _0_ key to set a continuous cell, whose onset is 1-ms after the previous cell.
 
+---

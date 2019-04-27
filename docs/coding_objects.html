@@ -414,31 +414,40 @@ div.tocify {
 </div>
 
 
-<div id="datavyu-object-codes-for-1-hour-natural-play" class="section level1">
-<h1>Datavyu <a href="objects.html">Object Codes</a> for 1-Hour Natural Play</h1>
+<div id="object-interaction-passes" class="section level1">
+<h1>Object Interaction passes</h1>
+<div id="workflow" class="section level3">
+<h3>Workflow</h3>
+<ol style="list-style-type: decimal">
+<li>Choose whether to code baby or mom first</li>
+<li>Score each pass according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual3">Object Codes</a></li>
+</ol>
+</div>
+<div id="datavyu-object-codes" class="section level3">
+<h3>Datavyu <a href="objects.html">Object Codes</a></h3>
 <p>Make sure you are <a href="https://nyu.databrary.org/user/login">currently logged in at Databrary</a> to view embedded video examples in this wiki.</p>
-<div id="babyobject" class="section level2">
-<h2><code>babyobject</code></h2>
+<div id="babyobject" class="section level4">
+<h4><code>babyobject</code></h4>
 <p><code>&lt;obj&gt;</code></p>
-<div id="general-orientation" class="section level3">
-<h3>General Orientation</h3>
+<div id="general-orientation" class="section level5">
+<h5>General Orientation</h5>
 <p>This code captures the times that the baby is manually engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. <a href=""> (2 videos) </a></p>
 </div>
-<div id="value-list" class="section level3">
-<h3>Value List</h3>
+<div id="value-list" class="section level5">
+<h5>Value List</h5>
 <p><code>o</code> = object</p>
 <p><code>.</code> = when baby is off camera and coder cannot determine whether baby has an object in hand.</p>
 </div>
-<div id="operational-definitions" class="section level3">
-<h3>Operational Definitions</h3>
+<div id="operational-definitions" class="section level5">
+<h5>Operational Definitions</h5>
 <p><code>&lt;obj&gt;</code></p>
 <p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as ‘o.’ <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support. <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object) <a href=""> (1 video) </a>.</p>
 <p>Riding on toys with wheels does not count as object, but this will be coded in <em>babyloc</em> pass.</p>
 <p>Code ‘<strong>o</strong>’ if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.) <a href=""> (1 video) </a></p>
 <p><strong>Onset</strong> is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). <strong>Offset</strong> is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as ‘o,’ but if infant is touching multiple objects, the offset of ‘o’ object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. <a href=""> (1 video) </a></p>
 </div>
-<div id="how-to-code" class="section level3">
-<h3>How to Code</h3>
+<div id="how-to-code" class="section level5">
+<h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
 <p>Watch in real time for the baby’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the baby makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the <strong>Offset</strong> when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you’ve determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it. Then, hit #9-SETOFFSET.</p>
@@ -446,20 +455,21 @@ div.tocify {
 <p>To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of ‘o’. Then, hit the ‘JUMP-BACK-BY’ key and check to see if the previous cell lights up. If it does, then the two cells are &lt;3 s apart and should be combined into one bout of ‘<strong>o</strong>’.</p>
 </div>
 </div>
-<div id="momobject" class="section level2">
-<h2><code>momobject</code></h2>
+<div id="momobject" class="section level4">
+<h4><code>momobject</code></h4>
 <p><code>&lt;obj&gt;</code></p>
+</div>
+</div>
 <div id="general-orientation-1" class="section level3">
 <h3>General Orientation</h3>
 <p>This code captures the times that the mom is engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray space in between cells means that the mom is not engaged with an object.</p>
-</div>
-<div id="value-list-1" class="section level3">
-<h3>Value List</h3>
+<div id="value-list-1" class="section level5">
+<h5>Value List</h5>
 <p><code>o</code> = object.</p>
 <p><code>.</code> = when mother is off camera and coder cannot determine whether she has an object in hand.</p>
 </div>
-<div id="operational-definitions-1" class="section level3">
-<h3>Operational Definitions</h3>
+<div id="operational-definitions-1" class="section level5">
+<h5>Operational Definitions</h5>
 <p><code>&lt;obj&gt;</code></p>
 <p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated <a href=""> (5 videos) </a>. Object can include large objects that mom may move (chairs).</p>
 <p>Code ‘<strong>o</strong>’ if mom is engaged with an object by making contact with the item with her hand(s). <strong>Onset</strong> is the frame when mom first makes contact with hands. <strong>Offset</strong> is the frame when mom is no longer in manual contact with an object for at least 3 s. If the mom has multiple items in hand, the Onset of object is when a hand(s) touched the first object in the multiple-object-bout and the Offset is when the hand(s) release the last object.</p>
@@ -467,8 +477,8 @@ div.tocify {
 <p>Your browser does not support html5 video.</p>
 <p>If the mom is not in the camera view, code this with a ‘.’ as missing data.</p>
 </div>
-<div id="how-to-code-1" class="section level3">
-<h3>How to Code</h3>
+<div id="how-to-code-1" class="section level5">
+<h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
 <p>Watch in real-time for the mom’s hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the mom moves/manipulated the object (which would make this an instance of Object). Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The <strong>Onset</strong> is the first frame when the mom makes manual contact with the item and moves it through space. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the Object bout in real time and set the <strong>Offset</strong> when the mom breaks manual contact or stops moving the object for at least 3 s (i.e., Object bouts that are interrupted by gray space are more than 3 s apart.</p>
@@ -478,6 +488,7 @@ div.tocify {
 <p>Do not agonize. If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of ‘<strong>o</strong>’. Do not mark the “.” for every few seconds she is out of frame.</p>
 <p>Code as Object event if mom’s back is to the camera, but you see her arms moving and she overtly appears to be manipulating something—even if you can’t see exactly what it is.</p>
 <p>Many times, onsets and offsets are coded when mom goes in and out of frame. In these instances, hit the <em>0</em> key to set a continuous cell, whose onset is 1-ms after the previous cell.</p>
+<hr />
 </div>
 </div>
 </div>

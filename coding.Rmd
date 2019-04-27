@@ -9,23 +9,103 @@ output:
 
 <img src="img/PLAY-logo.png" width="400" />
 
-```{r child = 'coding_setup.Rmd'}
-```
+# Coding overview and setup
 
+The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **coding** role is pre-assigned to complete one or more coding functions (see in yellow below). This webpage contains detailed help for coding set up, workflow, and step-by-step procedures for each coding function. 
+
+<img src="img/overview-coding.png" width="600">
+
+<!--
+<table>
+<col width="200">
+<col width="200">
+<tr>
+<td><b>Workflows</b>
+<td><b>Codes</b>
+</tr>
+<tr>
+<td>Gesture workflow
+<td>Gesture codes
+</tr>
+<tr>
+<td>Locomotion workflow
+<td>Locomotion codes
+</tr>
+<tr>
+<td>Emotion workflow
+<td>Emotion codes
+</tr>
+<tr>
+<td>Object workflow
+<td>Object codes
+</tr>
+<tr>
+<td>Communication workflow
+<td>Communication codes
+</tr>
+</table>
+-->
+
+### Getting Started
+
+
+To code videos, you will need:
+* access to Databrary, the video repository that will contain files to be coded
+* a downloaded version of Datavyu, a video-coding application
+* coding templates and scripts
+
+1. **Download** the [development version of Datavyu](http://datavyu.org/download.html).
+2. **Download** the *PLAY_CodingTemplate.opf* file from the [PLAY Databrary Volume](https://nyu.databrary.org/volume/254/slot/14924/-?asset=73892). Name this file with the PLAY naming convention (e.g., *PLAY_NYU001, … PLAY_NYU010, … PLAY_NYU030*).
+    - This template contains all of the primary variables that will be coded by each site: communication, gesture, locomotion, object interaction, and emotion.
+3. **Download** Ruby scripts for each coding variable as needed from the [PLAY Github repository](https://github.com/databrary/PLAY-Project-Datavyu-scripts).
+4. Familiarize yourself with Datavyu before you begin coding (resources on Datavyu.org, videos from past workshops, etc.).
+    - Refer to the [Datavyu User Guide](http://www.datavyu.org/user-guide/index.html).
+    - Take a look at our [Best Practices for Coding Behavioral Data From Video](http://www.datavyu.org/user-guide/best-practices.html) on the Datavyu site.
+
+### Coding in Passes
+
+* The coding manual describes the transcription process and codes for 5 content areas: communication, gesture, locomotion, object interaction, and emotion.
+* Each content area includes two passes: one pass for the infant and one pass for the mother. *For gesture alone, the baby and mom are coded together in a single pass.*
+* A *pass* entails scoring the relevant codes for 1-hour of video.
+
+Please visit our [GitHub Repository](https://github.com/databrary/PLAY-Project-Datavyu-scripts) for all of the scripts mentioned in this wiki.
+<br><br>
+
+<!--
+## Workflow for Inter-Observer Reliability on Communication, Gesture, Object, Locomotion, and Emotion Passes
+
+1. After the primary coder finishes a pass: _*babyutterancetype*_, _*momutterancetype*_, _*gesture*_ (split into _*babygesture*_, _*momgesture*_), _*babyobject*_, _*momobject*_, _*babyloc*_, _*momloc*_, _*babyemotion*_, or _*momemotion*_ run two scripts to set up the Datavyu spreadsheet for coding reliability.
+2. First, **run** a script called *insert-RelBlocks.rb*.
+    - This script randomly generates 3, 5-minute chunks within the first, second, and third 20-minute sections of the 1-hour video of free play. By quasi-randomly inserting reliability blocks from areas of the primary coder’s pass, this will ensure that the reliability coder sees each portion of the video for each child’s session. Thus, the idiosyncrasies of each child, fluctuations over the 1-hour session, and drift in the coder are spread over the session.
+    - Reliability on each coding pass is done on the same 3, 5-minute blocks for each pass.
+    - The scripting window in Datavyu will prompt when everything has been successfully completed. You should now have a brand new column in your spreadsheet named _*reliability_blocks*_.
+    - This script should only be run **once** so that reliability coding can be done within the same time frame for each coding domain for each session.
+3. Now, **run** another script appropriate for the pass reliability needs to be coded on: *CreateReliability-BabyUtterancetype.rb* or *CreateReliability-MomUtterancetype.rb* or *CreateReliability-Gesture.rb* or *CreateReliability-MomBaby-Loc.rb* or *CreateReliability-MomBaby-Object.rb* OR *CreateReliability-MomBaby-Emotion.rb*
+    - This script inserts new coding columns where your reliability coder will score the video while they are locked into the script-generated, 5-minute chunks in the _*reliability_blocks*_ column.
+    -->
+
+<!--
 ```{r child = 'coding_transcription.Rmd'}
 ```
+---
+-->
 
 ```{r child = 'coding_communication.Rmd'}
 ```
+---
 
 ```{r child = 'coding_gesture.Rmd'}
 ```
+---
 
 ```{r child = 'coding_locomotion.Rmd'}
 ```
+---
 
 ```{r child = 'coding_objects.Rmd'}
 ```
+---
 
 ```{r child = 'coding_emotion.Rmd'}
 ```
+---

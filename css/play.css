@@ -5,3 +5,7 @@ p, li, td {
 th {
   font-size: 130%;
 }
+
+.reveal section p {
+  color: green;
+}
