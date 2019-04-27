@@ -322,7 +322,29 @@ $(document).ready(function () {
 <p>The site is generated in R Markdown. We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., &amp; Grolemund, G. (2018). <em>R Markdown: The Definitive Guide</em>. CRC Press. Retrieved from <a href="https://market.android.com/details?id=book-octmDwAAQBAJ" class="uri">https://market.android.com/details?id=book-octmDwAAQBAJ</a> and the web-based version of the book located at <a href="https://bookdown.org/yihui/rmarkdown/" class="uri">https://bookdown.org/yihui/rmarkdown/</a>.</p>
 <div id="rendering-the-site" class="section level2">
 <h2>Rendering the site</h2>
-<p>To render the website, run <code>rmarkdown::render_site()</code> in R from the project root directory. (If any packages need to be installed, you can do so using <code>install.packages(&quot;package_name&quot;)</code>) The website files are copied to <code>docs/</code> where you can view them using a web browser or file editor. If the local copy looks good: 1. Commit the changes - saves a local copy of the changes - in R, in the Git tab, you will see the files that have been changed - click on commit (top right) - type in a commit message, click on the Commit button 2. Push the changes to GitHub - click on Push (top right) - saves a copy on GitHub 3. Check the <a href="https://PLAY-behaviorome.github.io/PLAY-project.org">website</a></p>
+<ol style="list-style-type: decimal">
+<li>Make your changes</li>
+<li>Render the website: run <code>rmarkdown::render_site()</code> in R from the project root directory
+<ul>
+<li>(If any packages need to be installed, you can do so using <code>install.packages(&quot;package_name&quot;)</code>)</li>
+<li>The website files are copied to <code>docs/</code> where you can view them using a web browser or file editor.</li>
+</ul></li>
+<li>If the local copy looks good, proceed to 4</li>
+<li>Commit the changes - saves a local copy of the changes
+<ul>
+<li>in R, in the Git tab, you will see the files that have been changed</li>
+<li>click on commit (top right)</li>
+<li>type in a commit message, click on the Commit button</li>
+</ul></li>
+<li>Push the changes to GitHub - saves a copy on GitHub</li>
+</ol>
+<ul>
+<li>click on Push (top right)</li>
+</ul>
+<ol start="6" style="list-style-type: decimal">
+<li>Check the <a href="https://PLAY-behaviorome.github.io/PLAY-project.org">website</a></li>
+</ol>
+<p>(In other words: add and commit are local operations, push, pull and fetch are operations that interact with a remote. If you push without committing, nothing gets pushed. If you commit without adding, nothing gets committed. If you add without committing, nothing at all happens, git merely remembers that the changes you added should be considered for the following commit.)</p>
 </div>
 <div id="deploying-the-site" class="section level2">
 <h2>Deploying the site</h2>

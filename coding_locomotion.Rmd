@@ -7,13 +7,22 @@ output:
     toc_float: true
 ---
 
-# Coding [locomotion](locomotion.html)
 
-## `babyloc`
+# Locomotion passes
+
+### Workflow 
+
+1. Choose whether to code baby or mom first
+2. Score each pass according to definitions in [Locomotion Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual4)
+
+
+### Coding [locomotion](locomotion.html)
+
+#### `babyloc`
 
 `<loc_l-f-h-c>`
 
-### General Orientation
+##### General Orientation
 
 This code captures the times that the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.). 
 
@@ -45,7 +54,7 @@ Coders are watching/tagging the duration of each of these events (locomotion, fa
 To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. 
 Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is not locomotion.
 
-### Value List
+##### Value List
 
 `l` = locomotion
 
@@ -57,7 +66,7 @@ Any other movements that are not initiated from these three body locations are c
 
 `.` = when baby is off camera or the baby's feet/knees/bum are off camera and coder cannot see or infer whether the baby is locomoting.
 
-### Operational Definitions
+##### Operational Definitions
 
 `<l>`
 Code “l” when the baby is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, climbing, cruising, supported walking, independent walking, etc.) 
@@ -192,7 +201,7 @@ Onset of constrained is when the baby's butt first touches the restrictive devic
 
 Offset of constrained is when the butt leaves the device as the parent starts to take the baby out (usually by lifting them out).
 
-### How to Code
+##### How to Code
 
 Set “JUMP-BACK-BY” key to 1 s.
 
@@ -217,7 +226,7 @@ Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cel
 If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. 
 If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster.
 
-## `momloc`
+#### `momloc`
 
 `<loc_l-f>`
 
@@ -243,7 +252,7 @@ Any other movements that are not initiated from these three body locations is co
 
 Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving.
 
-### Value List
+##### Value List
 
 `l` = locomotion
 
@@ -251,7 +260,7 @@ Bouts that are coded as “.” means that mom is off camera or her legs are off
 
 `.` = when mother is off camera and coder cannot determine whether mom is moving or stationary
 
-### Operational Definitions
+##### Operational Definitions
 
 `<l>`
 Code 'l' when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling).
@@ -286,7 +295,7 @@ All falls count. They can happen while upright, on/off furniture or other elevat
 
 From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground.
 
-### How to Code
+##### How to Code
 
 Set “JUMP-BACK-BY” key to 1 s.
 
@@ -311,3 +320,5 @@ Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cel
 If you go too far, you can JOG backward by hitting #1-JOGBACK. 
 You will likely have to hit the JOG keys numerous times. 
 If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster.
+
+---

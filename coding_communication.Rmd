@@ -12,27 +12,38 @@ knitr::opts_chunk$set(echo = FALSE)
 source("R/write_video_clip_html.R")
 ```
 
-# Datavyu [Communication Codes](communication.html) for 1-Hour Natural Play 
+
+# Communication passes
+
+### Workflow
+
+1. You will receive video files that have been [transcribed](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription) by the PLAY team. Run two additional scripts that will prepare new [Communication](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2) columns for further coding.
+2. **Run** *splitmombaby_transcribe.rb*. This script pulls out mom and baby language from the _*transcribe*_ column into two new columns: (1) _*momspeech*_  and (2) _*babyvoc*_ . Each column is automatically populated with cells from the respectively tagged utterances from the _*transcribe*_  column (e.g., the script ports all utterances coded as ‘m’ to the _*momspeech*_  column and 'b' to the _*babyvoc*_  column). Each new cell in _*momspeech*_  and _*babyvoc*_  is a point cell created at the onset of each cell from the transcription.
+3. **Run** *create_mombaby_utterancetype.rb*. This script also creates two new columns: (1) _*momutterancetype*_ and (2) _*babyutterancetype*_ . For each cell in _*momspeech*_  and _*babyvoc*_ , a new cell is created in _*momutterancetype*_  and _*babyutterancetype*_ , respectively. The codes for these cells are blank, and the coder now scores mom and baby communication according to definitions in [Communication Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2).
+<br><br>
+
+
+### Datavyu [Communication Codes](communication.html) 
 
 Make sure you are [currently logged in at Databrary](https://nyu.databrary.org/user/login) to view embedded video examples in this wiki. 
 
 This section covers these 4 main codes: babyvoc, babyutterancetype, momspeech, and momutterancetype
 
-## `1. babyvoc`
+#### `1. babyvoc`
 
 `<content>`
   
-### General Orientation
+##### General Orientation
 
 Contains a transcript of all of the utterances/vocalizations of the baby.
 
 This column is automatically populated after the *transcribe* pass is completed using a Ruby script. All of the utterances tagged with 'b' in <a href=""> <source> </a> in *transcribe* are transferred here. The onset and offset are equal, and set to the onset from the *transcribe* column, which reflects a time as close as possible to the onset of that utterance.
 
-## `2. babyutterancetype`
+#### `2. babyutterancetype`
 
 `<language_s-w>` `<langlike-b-v>` `<crygrunt_c-g>` `<unintell-x>`
   
-### General Orientation
+##### General Orientation
 
 Utterance type = categorization of previously coded utterances as a specific type of speech form. 
 Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.
@@ -43,7 +54,7 @@ Once the proper code has been found, enter it into the prompt you are at, then c
 
 The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.
 
-### Value List
+##### Value List
 
 `<language_s-w>`
 
@@ -67,7 +78,7 @@ The transcript will expedite this process. Double check and listen again as you 
 
 `x` = unintelligible
 
-### Operational Definitions
+##### Operational Definitions
 
 `<s>`
 
@@ -99,7 +110,7 @@ Grunt= an utterance in which the speaker produces a low, short, inarticulate, gu
 Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
 
             
-### How to Code
+##### How to Code
 
 Set the “JUMP-BACK-BY” to 2 s.
             
@@ -109,11 +120,11 @@ JUMP-BACK-BY 2 s so the utterance can be viewed in context.
 Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. 
 Then insert periods to the end of the cell.
             
-## `3. momspeech`
+#### `3. momspeech`
             
 `<content>`
               
-### General Orientation
+##### General Orientation
             
 Contains a transcript of all of the utterances of the mom.
             
@@ -121,11 +132,11 @@ This column is automatically populated after the transcribe pass is completed us
 All of the utterances tagged with 'm' in <source> in transcribe are transferred here. 
 The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
             
-## `4. momutterancetype`
+#### `4. momutterancetype`
 
 `<imperative_l-a-p>` `<interrog-i_declar-d>` `<filler-f>` `<unintell-x>`
               
-### General Orientation
+##### General Orientation
             
 Utterance type = categorization of previously coded utterances as a specific type of speech form. 
 Read the utterance transcribed in `momspeech` column and categorize each utterance based on codes below.
@@ -137,7 +148,7 @@ For instance, if the mom didn't do an imperative, sing/read, but did give a decl
             
 What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom's speech.
             
-### Value List
+##### Value List
             
 `<imperative_l-a-p>`
 
@@ -162,7 +173,7 @@ What is coded is not solely based on the transcript. Listen to the audio, watch 
               
 `x` = unintelligible
             
-### Operational Definitions
+##### Operational Definitions
 
 `<l>` 
 
@@ -195,12 +206,16 @@ Affirmations/Fillers = an utterance in which the speaker is recognizing another 
 Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both "xxx") </a>
 
 
-### How to Code
+##### How to Code
+
+Set the JUMP-BACK-BY key for 2 s. 
+
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in _*momspeech*_ column. 
+
+JUMP-BACK-BY 2s so the utterance can be viewed in context. 
+
+Play in real time to code each utterance, which is coded in mutually exclusive categories. `Tab` between each argument/prompt inserting period `.` until you reach the appropriate code. Then insert periods `.` to the end of the cell.
+
+---
 
 
-
-Set the JUMP-BACK-BY key for 2 s.
-
-Hit “FIND” on the controller to go to the onset of each utterance, which was populated in _*momspeech*_ column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.
-
-Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB between each argument/prompt inserting period ”.“ until you reach the appropriate code. Then insert periods to the end of the cell.

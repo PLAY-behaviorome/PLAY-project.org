@@ -7,13 +7,23 @@ output:
     toc_float: true
 ---
 
-# Datavyu [Gesture Codes](gesture.html) for 1-Hour Natural Play
+# Gesture pass
 
-## `gesture`
+### Workflow 
+
+1. Score baby and mom gesture together in a single pass according to definitions in [Gesture Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/gesture).
+2. After the _*gesture*_ coding pass (for both mom and baby) has been done, run a script that will separate mom and baby gestures into two columns.
+3. **Run** *Split-MomBabyGesture.rb*. This script pulls out mom and baby gestures from the _*gesture*_ column into two new columns: (1) _*babygesture*_ and (2) _*momgesture*_. Each column is automatically populated with cells from the respectively tagged events from the _*gesture*_ column (e.g., the script ports all gestures coded as ‘m’ to the _*momgesture*_ column and 'b' to the _*babygesture*_ column). Each new cell in babygesture and momgesture is a point cell created at the onset of each cell in the _*gesture*_ column.
+<br><br>
+
+
+### Datavyu [Gesture Codes](gesture.html) 
+
+#### `gesture`
 
 `<source_m-b>`, `<gesture_p-s-i-c>`
 
-### General Orientation
+##### General Orientation
 
 Gestures are segmented, durative, event-based behaviors. Watch the video paying attention to the **communicative gestures** used by the parent and the child. When coding for gesture, focus on the mother’s or baby’s **hands** and **head**.
 
@@ -21,7 +31,7 @@ Code mother and baby gesture simultaneously in **one pass**. Then based on the `
 
 _Only onsets are coded_ to expedite coding; offsets could be coded later if duration of gesture or overlap with specific other domains is of interest.
 
-### Value List
+##### Value List
 
 `<source_m-b>`
 
@@ -43,7 +53,7 @@ _Only onsets are coded_ to expedite coding; offsets could be coded later if dura
 `c` = conventional gesture
 
 
-### Operational Definitions
+##### Operational Definitions
 
 `<source_m-b>`
 
@@ -87,7 +97,7 @@ Some additional examples of conventional gestures include: waving, clapping, fli
 **Onset** is the frame when the baby or mom has clearly begun the conventional gesture, and the coder can clearly identify this a gesture but does fall into the iconic gesture category (see `<i>`). 
 Repetitive instances of a conventional gesture should be coded as separate gesture events.
 
-### How to Code
+##### How to Code
 
 Set “JUMP-BACK-BY” key to 2 s.
 
@@ -106,17 +116,17 @@ It's faster to code mom and baby gesture together in one pass. But for consisten
 
 **Run the Split-MomBabyGesture.rb script** to pull baby and mom gestures from the the _gesture_ column into _babygesture_ and _momgesture_ columns.
 
-## `babygesture`
+#### `babygesture`
 
 `<gesture_p-s-i-c>`
 
-### General Orientation
+##### General Orientation
 
 Contains gestures produced by the baby.
 
 This column is automatically populated after the _gesture_ pass is completed, using a Ruby script. All of the gestures tagged with 'b' in `<source>` in the _gesture_ column are transferred here. The onset and offset are equal, and set to the onset from the gesture column, which reflects the time when the coder was sure the gesture had begun.
 
-### Value List
+##### Value List
 
 `<gesture_p-s-i-c>`
 
@@ -128,11 +138,11 @@ This column is automatically populated after the _gesture_ pass is completed, us
 
 `c` = conventional gesture
 
-## `momgesture`
+#### `momgesture`
 
 `<gesture_p-s-i-c>`
 
-### General Orientation
+##### General Orientation
 
 Contains gestures produced by the mom.
 
@@ -140,7 +150,7 @@ This column is automatically populated after the _gesture_ pass is completed, us
 All of the gestures tagged with 'm' in `<source>` in the gesture column are transferred here. 
 The onset and offset are equal, and set to the onset from the _gesture_ column, which reflects the time when the coder was sure the gesture had begun.
 
-### Value List
+##### Value List
 
 `<gesture_p-s-i-c>`
 
@@ -151,3 +161,5 @@ The onset and offset are equal, and set to the onset from the _gesture_ column, 
 `i` = iconic gesture
 
 `c` = conventional gesture
+
+---

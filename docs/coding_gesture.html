@@ -414,19 +414,29 @@ div.tocify {
 </div>
 
 
-<div id="datavyu-gesture-codes-for-1-hour-natural-play" class="section level1">
-<h1>Datavyu <a href="gesture.html">Gesture Codes</a> for 1-Hour Natural Play</h1>
-<div id="gesture" class="section level2">
-<h2><code>gesture</code></h2>
+<div id="gesture-pass" class="section level1">
+<h1>Gesture pass</h1>
+<div id="workflow" class="section level3">
+<h3>Workflow</h3>
+<ol style="list-style-type: decimal">
+<li>Score baby and mom gesture together in a single pass according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/gesture">Gesture Codes</a>.</li>
+<li>After the <em><em>gesture</em></em> coding pass (for both mom and baby) has been done, run a script that will separate mom and baby gestures into two columns.</li>
+<li><strong>Run</strong> <em>Split-MomBabyGesture.rb</em>. This script pulls out mom and baby gestures from the <em><em>gesture</em></em> column into two new columns: (1) <em><em>babygesture</em></em> and (2) <em><em>momgesture</em></em>. Each column is automatically populated with cells from the respectively tagged events from the <em><em>gesture</em></em> column (e.g., the script ports all gestures coded as ‘m’ to the <em><em>momgesture</em></em> column and ‘b’ to the <em><em>babygesture</em></em> column). Each new cell in babygesture and momgesture is a point cell created at the onset of each cell in the <em><em>gesture</em></em> column. <br><br></li>
+</ol>
+</div>
+<div id="datavyu-gesture-codes" class="section level3">
+<h3>Datavyu <a href="gesture.html">Gesture Codes</a></h3>
+<div id="gesture" class="section level4">
+<h4><code>gesture</code></h4>
 <p><code>&lt;source_m-b&gt;</code>, <code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation" class="section level3">
-<h3>General Orientation</h3>
+<div id="general-orientation" class="section level5">
+<h5>General Orientation</h5>
 <p>Gestures are segmented, durative, event-based behaviors. Watch the video paying attention to the <strong>communicative gestures</strong> used by the parent and the child. When coding for gesture, focus on the mother’s or baby’s <strong>hands</strong> and <strong>head</strong>.</p>
 <p>Code mother and baby gesture simultaneously in <strong>one pass</strong>. Then based on the <code>&lt;source&gt;</code> of the gesture, a script breaks apart mom and baby into separate <em>babygesture</em> and <em>momgesture</em> columns.</p>
 <p><em>Only onsets are coded</em> to expedite coding; offsets could be coded later if duration of gesture or overlap with specific other domains is of interest.</p>
 </div>
-<div id="value-list" class="section level3">
-<h3>Value List</h3>
+<div id="value-list" class="section level5">
+<h5>Value List</h5>
 <p><code>&lt;source_m-b&gt;</code></p>
 <p><code>m</code> = mom</p>
 <p><code>b</code> = baby</p>
@@ -437,8 +447,8 @@ div.tocify {
 <p><code>i</code> = iconic gesture</p>
 <p><code>c</code> = conventional gesture</p>
 </div>
-<div id="operational-definitions" class="section level3">
-<h3>Operational Definitions</h3>
+<div id="operational-definitions" class="section level5">
+<h5>Operational Definitions</h5>
 <p><code>&lt;source_m-b&gt;</code></p>
 <p><code>&lt;m&gt;</code>: Code ‘m’ if the mom is the source of the gesture.</p>
 <p><code>&lt;b&gt;</code>: Code ‘b’ if the baby is the source of the gesture.</p>
@@ -458,31 +468,31 @@ div.tocify {
 <p>If a gesture is conventional, you should be able to understand its meaning just by seeing it in isolation, without knowing any of the context. Some additional examples of conventional gestures include: waving, clapping, flipping arms out to side to indicate “I don’t know’ or “where is it”, come here gesture (finger motions or palms), sit down gesture (pats ground), pickup gesture (child holds up arms to be picked up), thumbs up, shrugs, naughties (wag finger), hug me (hold arms out asking for hug), etc.</p>
 <p><strong>Onset</strong> is the frame when the baby or mom has clearly begun the conventional gesture, and the coder can clearly identify this a gesture but does fall into the iconic gesture category (see <code>&lt;i&gt;</code>). Repetitive instances of a conventional gesture should be coded as separate gesture events.</p>
 </div>
-<div id="how-to-code" class="section level3">
-<h3>How to Code</h3>
+<div id="how-to-code" class="section level5">
+<h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 2 s.</p>
 <p>Gestures are best coded with the volume low or muted so that the language content does not confound the coding process.</p>
 <p>Watch in <strong>1x speed</strong> until either mom or baby gestures. Focus on the mom’s and infant’s hands and head to identify instances of gestures.</p>
 <p>Gestures are defined purely as they relate to the communicative nature of each action. The coder can establish whether something is <em>communicative</em> by looking at things like eye contact, conversational context, and the reaction of the person being spoken or gestured to. If the movement isn’t supposed to communicate anything, then it’s not a gesture. For example, a child might reach for an object and pick it up and look at it. This is an action, not a gesture. But, if the child points to the object to indicate its presence, or if the parent claps her hands to indicate “good job,” then these are gestures. (If there is significant ambiguity in whether a gesture is communicative, or how to code it, sound may be of assistance.)</p>
 <p>When the coder identifies a mom or baby gesturing, jump back <strong>2 seconds</strong> and play the video again at <strong>½ speed</strong> until the frame the gesture is clearly underway is found. Hit the = key (equal sign) to insert a point cell; so the current video frame becomes the onset and the offset.</p>
 <p>Type <strong>‘m’</strong> or <strong>‘b’</strong> to indicate whether mom of the baby was the <code>&lt;source&gt;</code> of the gesture. Hit the TAB key to advance the cursor to <code>&lt;gesture&gt;</code>, then type <strong>‘p’</strong>, <strong>‘s’</strong>, <strong>‘i’</strong>, or <strong>‘c’</strong> to indicate the type of gesture.</p>
+</div>
+</div>
 <div id="splitting-mom-and-baby-gestures" class="section level4">
 <h4>Splitting Mom and Baby Gestures</h4>
 <p>It’s faster to code mom and baby gesture together in one pass. But for consistency with the other coding passes, we want mom speech and baby gestures to be in two separate columns.</p>
 <p><strong>Run the Split-MomBabyGesture.rb script</strong> to pull baby and mom gestures from the the <em>gesture</em> column into <em>babygesture</em> and <em>momgesture</em> columns.</p>
 </div>
-</div>
-</div>
-<div id="babygesture" class="section level2">
-<h2><code>babygesture</code></h2>
+<div id="babygesture" class="section level4">
+<h4><code>babygesture</code></h4>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation-1" class="section level3">
-<h3>General Orientation</h3>
+<div id="general-orientation-1" class="section level5">
+<h5>General Orientation</h5>
 <p>Contains gestures produced by the baby.</p>
 <p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘b’ in <code>&lt;source&gt;</code> in the <em>gesture</em> column are transferred here. The onset and offset are equal, and set to the onset from the gesture column, which reflects the time when the coder was sure the gesture had begun.</p>
 </div>
-<div id="value-list-1" class="section level3">
-<h3>Value List</h3>
+<div id="value-list-1" class="section level5">
+<h5>Value List</h5>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
 <p><code>p</code> = point</p>
 <p><code>s</code> = show/hold up</p>
@@ -490,21 +500,23 @@ div.tocify {
 <p><code>c</code> = conventional gesture</p>
 </div>
 </div>
-<div id="momgesture" class="section level2">
-<h2><code>momgesture</code></h2>
+<div id="momgesture" class="section level4">
+<h4><code>momgesture</code></h4>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation-2" class="section level3">
-<h3>General Orientation</h3>
+<div id="general-orientation-2" class="section level5">
+<h5>General Orientation</h5>
 <p>Contains gestures produced by the mom.</p>
 <p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘m’ in <code>&lt;source&gt;</code> in the gesture column are transferred here. The onset and offset are equal, and set to the onset from the <em>gesture</em> column, which reflects the time when the coder was sure the gesture had begun.</p>
 </div>
-<div id="value-list-2" class="section level3">
-<h3>Value List</h3>
+<div id="value-list-2" class="section level5">
+<h5>Value List</h5>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
 <p><code>p</code> = point</p>
 <p><code>s</code> = show/hold up</p>
 <p><code>i</code> = iconic gesture</p>
 <p><code>c</code> = conventional gesture</p>
+<hr />
+</div>
 </div>
 </div>
 </div>
