@@ -29,7 +29,7 @@ Materials (videos, questionnaires, links to Databrary volumes) for the PLAY proj
 <br>
 <br>
 
-### Project-wide overview
+### Project-wide workflow
 
 <div class="row">
 <div class="column-2thirds">
