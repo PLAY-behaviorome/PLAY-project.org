@@ -1,5 +1,10 @@
 ---
 title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
 ---
 
 <style>
@@ -20,6 +25,7 @@ title: ""
 <img src="img/PLAY-logo.png" width="400" />
 
 ## Principal Investigators
+
 
 <table>
 <tr>
@@ -53,7 +59,6 @@ Co-Principal Investigator
 
 ## Staff
 
-
 <div class="row">
 <div class="column-left">
 <img src="img/people-kasey.png" width="150"></br>
@@ -82,6 +87,7 @@ Program Coordinator
 </div>
 <br><br>
 
+
 ## Collaborating Investigators
 
 
@@ -95,499 +101,76 @@ roster <- roster_df %>%
 knitr::kable(roster)
 ```
 -->
+<!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
 
+| Full name               | Institution                                | Location            | Role                |
+|-------------------------|--------------------------------------------|---------------------|---------------------|
+| Karen Adolph            | New York University                        | New York, NY        | Collecting & Coding |
+| Rebecca Brooker         | Texas A&M                                  | College Station, TX | Coding              |
+| Kristin Buss            | Penn State University                      | State College, PA   | Coding              |
+| Elizabeth Davis         | University of California at Riverside      | Riverside, CA       | Coding              |
+| Kaya de Barbaro         | University of Texas at Austin              | Austin, TX          | Coding              |
+| Janet Frick             | University of Georgia                      | Athens, GA          | Collecting & Coding |
+| Amie Hane               | Williams College                           | Williamstown, MA    | Coding              |
+| Heather Henderson       | University of Waterloo                     | Waterloo, ON        | Coding              |
+| Vanessa LoBue           | Rutgers University                         | Newark, NY          | Collecting & Coding |
+| Dan Messinger           | University of Miami                        | Miami, FL           | Collecting & Coding |
+| Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
+| Lulu Song               | Brooklyn College                           | Brooklyn, NY        | Coding              |
+| Eric Walle              | University of California at Merced         | Merced, CA          | Collecting & Coding |
+| Marianella Casasola     | Cornell University                         | Ithaca, NY          | Collecting & Coding |
+| Caitlin Fausey          | University of Oregon                       | Eugene, OR          | Collecting & Coding |
+| Mike Frank              | Stanford University                        | Palo Alto, CA       | Collecting & Coding |
+| Susan Goldin-Meadow     | University of Chicago                      | Chicago, IL         | Coding              |
+| Jana Iverson            | University of Pittsburgh                   | Pittsburgh, PA      | Collecting & Coding |
+| Casey Lew-Williams      | Princeton University                       | Princeton, NJ       | Collecting & Coding |
+| Letitia Naigles         | University of Connecticut                  | Storrs, CT          | Coding              |
+| Meredith Rowe           | Harvard University                         | Cambridge, MA       | Coding              |
+| Catherine Tamis-LeMonda | New York University                        | New York, NY        | Coding              |
+| Anne Warlaumont         | University of California at Los Angeles    | Los Angeles, CA     | Coding              |
+| Hanako Yoshida          | University of Houston                      | Houston, TX         | Collecting & Coding |
+| Chen Yu                 | Indiana University                         | Bloomington, IN     | Collecting & Coding |
+| Dan Yurovsky            | University of Chicago                      | Chicago, IL         | Collecting & Coding |
+| Rachel Barr             | Georgetown University                      | Washington, DC      | Collecting & Coding |
+| Jean-Paul Boudreau      | Mount Allison University                   | Sackville, NB       | Coding              |
+| Amanda Brandone         | Lehigh University                          | Lehigh, PA          | Coding              |
+| Lana Karasik            | CUNY -- College of Staten Island           | Staten Island, NY   | Collecting & Coding |
+| Cristine Legare         | University of Texas at Austin              | Austin, TX          | Collecting & Coding |
+| Klaus Libertus          | University of Pittsburgh                   | Pittsburgh, PA      | Coding              |
+| Jeff Lockman            | Tulane University                          | New Orleans, LA     | Collecting & Coding |
+| Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
+| Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
+| Adam Sheya              | University of Connecticut                  | Storrs, CT          | Coding              |
+| Peter Vishton           | College of William & Mary                  | Williamsburg, VA    | Collecting & Coding |
+| Su-hua Wang             | University of California at Santa Cruz     | Santa Cruz, CA      | Collecting & Coding |
+| Laura Claxton           | Purdue University                          | W. Lafayette, IN    | Collecting & Coding |
+| Stacey Dusing           | Virginia Commonwealth University           | Richmond, VA        | Collecting & Coding |
+| John Franchak           | University of California at Riverside      | Riverside, CA       | Collecting & Coding |
+| Simone Gill             | Boston University                          | Boston, MA          | Collecting & Coding |
+| Rick Gilmore            | Penn State University                      | State College, PA   | Collecting & Coding |
+| Jeff Haddad             | Purdue University                          | W. Lafayette, IN    | Coding              |
+| Janet Hauck             | Michigan State University                  | East Lansing, MI    | Coding              |
+| Jill Heathcock          | Ohio State University                      | Columbus, OH        | Collecting & Coding |
+| Do Kyeong Lee           | California State University at Fullerton   | Fullerton, CA       | Collecting & Coding |
+| Mei-Hua Lee             | Michigan State University                  | East Lansing, MI    | Collecting & Coding |
+| Laura Prosser           | Children's Hospital of Philadelphia        | Philadelphia, PA    | Collecting & Coding |
+| Mark Schmuckler         | University of Toronto Scarborough          | Toronto, ON         | Coding              |
+| Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
+| May Ling Halim          | California State University at Long Beach  | Long Beach, CA      | Collecting          |
+| Kristina Olson          | University of Washington                   | Seattle, WA         | Contributor         |
+| Eva Pomerantz           | University of Illinois at Urbana-Champagne | Champaign, IL       | Contributor         |
+| Dima Amso               | Brown University                           | Providence, RI      | Contributor         |
+| Bob Bradley             | Arizona State University                   | Tempe, AZ           | Contributor         |
+| Guangqing Chi           | Penn State University                      | State College, PA   | Contributor         |
+| Gary Evans              | Cornell University                         | Ithaca, NY          | Contributor         |
+| Mike Goldstein          | Cornell University                         | Ithaca, NY          | Contributor         |
+| Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
+| Laura Namy              | Society for Research In Child Development  | Washington, DC      | Contributor         |
+| Melanie Soderstrom      | University of Manitoba                     | Winnipeg, MB        | Contributor         |
+| Marc Bornstein          | NICHD                                      | Bethesda, MD        | Contributor         |
+| Kathy Hirsh-Pasek       | Temple University                          | Philadelphia, PA    | Contributor         |
+| Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
 
-<div id="PLAY-roster_26496" align=center x:publishsource="Excel">
-
-<table border=0 cellpadding=0 cellspacing=0 width=1222 style='border-collapse:
- collapse;table-layout:fixed;width:916pt'>
- <col width=207 style='mso-width-source:userset;mso-width-alt:6613;width:155pt'>
- <col width=324 style='mso-width-source:userset;mso-width-alt:10368;width:243pt'>
- <col width=159 style='mso-width-source:userset;mso-width-alt:5077;width:119pt'>
- <col width=112 style='mso-width-source:userset;mso-width-alt:3584;width:84pt'>
- <col width=84 span=5 style='mso-width-source:userset;mso-width-alt:2688;
- width:63pt'>
-<tr> <hr> </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 class=xl65 width=207 style='height:15.0pt;width:155pt'><h4><b> Full name </b></h4></td>
-  <td class=xl65 width=324 style='width:243pt'><h4><b> Institution </b></h4></td>
-  <td class=xl65 width=159 style='width:119pt'><h4><b> Location </b></h4></td>
-  <td class=xl65 width=112 style='width:84pt'><h4><b> Role </b></h4></td>
-  <td class=xl65 width=84 style='width:63pt'></td>
-  <td class=xl65 width=84 style='width:63pt'></td>
-  <td class=xl65 width=84 style='width:63pt'></td>
-  <td class=xl65 width=84 style='width:63pt'></td>
-  <td class=xl65 width=84 style='width:63pt'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Karen Adolph</td>
-  <td>New York University</td>
-  <td>New York, NY</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Rebecca Brooker</td>
-  <td>Texas A&amp;M</td>
-  <td>College Station, TX</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Kristin Buss</td>
-  <td>Penn State University</td>
-  <td>State College, PA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Elizabeth Davis</td>
-  <td>University of California at Riverside</td>
-  <td>Riverside, CA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Kaya de Barbaro</td>
-  <td>University of Texas at Austin</td>
-  <td>Austin, TX</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Janet Frick</td>
-  <td>University of Georgia</td>
-  <td>Athens, GA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Amie Hane</td>
-  <td>Williams College</td>
-  <td>Williamstown, MA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Heather Henderson</td>
-  <td>University of Waterloo</td>
-  <td class=xl66>Waterloo, ON</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Vanessa LoBue</td>
-  <td>Rutgers University</td>
-  <td>Newark, NY</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Dan Messinger</td>
-  <td>University of Miami</td>
-  <td>Miami, FL</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Koraly Perez-Edgar</td>
-  <td>Penn State University</td>
-  <td>State College, PA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Lulu Song</td>
-  <td>Brooklyn College</td>
-  <td>Brooklyn, NY</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Eric Walle</td>
-  <td>University of California at Merced</td>
-  <td>Merced, CA</td>
-  <td class=xl66>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Marianella Casasola</td>
-  <td>Cornell University</td>
-  <td>Ithaca, NY</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Caitlin Fausey</td>
-  <td>University of Oregon</td>
-  <td>Eugene, OR</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Mike Frank</td>
-  <td>Stanford University</td>
-  <td>Palo Alto, CA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Susan Goldin-Meadow</td>
-  <td>University of Chicago</td>
-  <td>Chicago, IL</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Jana Iverson</td>
-  <td>University of Pittsburgh</td>
-  <td>Pittsburgh, PA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Casey Lew-Williams</td>
-  <td>Princeton University</td>
-  <td>Princeton, NJ</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Letitia Naigles</td>
-  <td>University of Connecticut</td>
-  <td>Storrs, CT</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Meredith Rowe</td>
-  <td>Harvard University</td>
-  <td>Cambridge, MA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Catherine Tamis-LeMonda</td>
-  <td>New York University</td>
-  <td>New York, NY</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Anne Warlaumont</td>
-  <td class=xl66>University of California at Los Angeles</td>
-  <td class=xl66>Los Angeles, CA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Hanako Yoshida</td>
-  <td>University of Houston</td>
-  <td>Houston, TX</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Chen Yu</td>
-  <td>Indiana University</td>
-  <td>Bloomington, IN</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Dan Yurovsky</td>
-  <td>University of Chicago</td>
-  <td>Chicago, IL</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Rachel Barr</td>
-  <td>Georgetown University</td>
-  <td>Washington, DC</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Jean-Paul Boudreau</td>
-  <td class=xl66>Mount Allison University</td>
-  <td class=xl66>Sackville, NB</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Amanda Brandone</td>
-  <td>Lehigh University</td>
-  <td>Lehigh, PA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Lana Karasik</td>
-  <td>CUNY -- College of Staten Island</td>
-  <td>Staten Island, NY</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Cristine Legare</td>
-  <td>University of Texas at Austin</td>
-  <td>Austin, TX</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Klaus Libertus</td>
-  <td>University of Pittsburgh</td>
-  <td>Pittsburgh, PA</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Jeff Lockman</td>
-  <td>Tulane University</td>
-  <td>New Orleans, LA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Amy Needham</td>
-  <td>Vanderbilt University</td>
-  <td>Nashville, TN</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Lisa Oakes</td>
-  <td>University of California at Davis</td>
-  <td>Davis, CA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Adam Sheya</td>
-  <td>University of Connecticut</td>
-  <td>Storrs, CT</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Peter Vishton</td>
-  <td>College of William &amp; Mary</td>
-  <td>Williamsburg, VA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Su-hua Wang</td>
-  <td>University of California at Santa Cruz</td>
-  <td>Santa Cruz, CA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Laura Claxton</td>
-  <td>Purdue University</td>
-  <td>W. Lafayette, IN</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Stacey Dusing</td>
-  <td>Virginia Commonwealth University</td>
-  <td>Richmond, VA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>John Franchak</td>
-  <td>University of California at Riverside</td>
-  <td>Riverside, CA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Simone Gill</td>
-  <td>Boston University</td>
-  <td>Boston, MA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Rick Gilmore</td>
-  <td>Penn State University</td>
-  <td>State College, PA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Jeff Haddad</td>
-  <td>Purdue University</td>
-  <td>W. Lafayette, IN</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Janet Hauck</td>
-  <td>Michigan State University</td>
-  <td>East Lansing, MI</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Jill Heathcock</td>
-  <td>Ohio State University</td>
-  <td>Columbus, OH</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Do Kyeong Lee</td>
-  <td>California State University at Fullerton</td>
-  <td>Fullerton, CA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Mei-Hua Lee</td>
-  <td>Michigan State University</td>
-  <td>East Lansing, MI</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Laura Prosser</td>
-  <td>Children's Hospital of Philadelphia</td>
-  <td>Philadelphia, PA</td>
-  <td>Collecting & Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Mark Schmuckler</td>
-  <td>University of Toronto Scarborough</td>
-  <td>Toronto, ON</td>
-  <td class=xl66>Coding</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Sheri Berenbaum</td>
-  <td>Penn State University</td>
-  <td>State College, PA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>May Ling Halim</td>
-  <td>California State University at Long Beach</td>
-  <td>Long Beach, CA</td>
-  <td>Collecting </td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Kristina Olson</td>
-  <td>University of Washington</td>
-  <td>Seattle, WA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Eva Pomerantz</td>
-  <td>University of Illinois at Urbana-Champagne</td>
-  <td>Champaign, IL</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Dima Amso</td>
-  <td>Brown University</td>
-  <td>Providence, RI</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Bob Bradley</td>
-  <td>Arizona State University</td>
-  <td>Tempe, AZ</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Guangqing Chi</td>
-  <td>Penn State University</td>
-  <td>State College, PA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Gary Evans</td>
-  <td>Cornell University</td>
-  <td>Ithaca, NY</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Mike Goldstein</td>
-  <td>Cornell University</td>
-  <td>Ithaca, NY</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Brian MacWhinney</td>
-  <td>Carnegie Mellon University</td>
-  <td>Pittsburgh, PA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Laura Namy</td>
-  <td>Society for Research In Child Development</td>
-  <td>Washington, DC</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Melanie Soderstrom</td>
-  <td>University of Manitoba</td>
-  <td class=xl66>Winnipeg, MB</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Marc Bornstein</td>
-  <td>NICHD</td>
-  <td>Bethesda, MD</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Kathy Hirsh-Pasek</td>
-  <td>Temple University</td>
-  <td>Philadelphia, PA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=20 style='height:15.0pt'>
-  <td height=20 style='height:15.0pt'>Nora Newcombe</td>
-  <td>Temple University</td>
-  <td>Philadelphia, PA</td>
-  <td>Contributor</td>
-  <td colspan=5 style='mso-ignore:colspan'></td>
- </tr>
- <tr height=0 style='display:none'>
-  <td width=207 style='width:155pt'></td>
-  <td width=324 style='width:243pt'></td>
-  <td width=159 style='width:119pt'></td>
-  <td width=112 style='width:84pt'></td>
-  <td width=84 style='width:63pt'></td>
-  <td width=84 style='width:63pt'></td>
-  <td width=84 style='width:63pt'></td>
-  <td width=84 style='width:63pt'></td>
-  <td width=84 style='width:63pt'></td>
- </tr>
-</table>
-
-</div>
 
 ## Advisory Board
 

@@ -1,11 +1,21 @@
-p, li, td {
+p, td {
   font-size: 110%;
 }
 
+a {
+  color: #669966;
+}
+
 th {
-  font-size: 130%;
+  font-size: 110%;
 }
 
 .reveal section p {
   color: green;
 }
+
+.list-group-item.active, .list-group-item.active:focus, .list-group-item.active:hover {
+    background-color: #669966;
+  
+}
+
