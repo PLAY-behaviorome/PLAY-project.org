@@ -3,7 +3,7 @@ title: ""
 output:
   html_document:
     toc: true
-    toc_depth: 3
+    toc_depth: 2
     toc_float: true
 ---
 
@@ -15,7 +15,7 @@ source("R/write_video_clip_html.R")
 
 <img src="img/PLAY-logo.png" width="400" />
 
-# Sampling and Recruitment
+# Participants overview
 
 The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This webpage contains detailed help for the recruitment process. Click here for information about the actual [data collection](collection.html) and [data upload](upload.html).
 
@@ -26,11 +26,11 @@ PLAY aims to set new standards for conducting open, transparent, and reproducibl
 
 Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login) to view embedded video examples in this webpage and gain access to phone and home questionnaires.
 
-# 1. Participant Sampling
+# Participant Sampling
 
 PLAY will produce a widely varied and rich set of data, most of which will be openly shared with the research community at the end of the five-year NIH grant period in late 2023. Infants' natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, SES, maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.  
 
-## 1.1 Participant Inclusion/Exclusion Criteria
+## Inclusion/Exclusion Criteria
 
 Although PLAY endeavours to sample as much of the rich variations that the collection sites present, based on conversations with the launch group, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must be: 
 
@@ -44,7 +44,7 @@ Additionally, the mother must act as the caregiver during the one-hour natural i
 
 
 
-## 1.2 Collection sites {.tabset}
+## Collection sites {.tabset}
 
 Data will come from 30 geographically diverse sites across the US representing rural, suburban, and urban communities with different races, ethnicities, and socio-economic status, including English- and Spanish-speaking households.  
 
@@ -71,7 +71,7 @@ The aim is to collect data that approximate county-level demographic characteris
 
 <img src="img/spanish-speaking-plot-1.png"/>
 
-## 1.3 Video
+## Video
 
 All data collections will be recorded on video.
 Parents will be asked for their permission to share the video recordings and other data with the research community.
@@ -81,7 +81,7 @@ When that permission is granted the videos and related data will be shared with 
 - Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 23, 2018 from https://nyu.databrary.org/volume/444.
 - Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2018). Play & Learning Across a Year (PLAY) Project Summit (2018-06-29 Philadelphia). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.724
 
-## 1.4 Parent-report (questionnaire) data
+## Parent-report (questionnaire) data
 
 PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data.
 
@@ -92,14 +92,14 @@ We expect to migrate to successors to this package.
 
 <br><br>
 
-# 2. Participant Recruitment
+# Participant Recruitment
 
 
-## 2.1 Scheduling Visit
+## 1. Scheduling Visit
 
 *To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [participant paperwork](link to questionnaires)*
 
-### Initial recruiting call
+### 1.1 Initial recruiting call
 
 <!--
 </br>
@@ -191,7 +191,7 @@ Just as a reminder, the data we collect from you now and during the visit, will 
 
 Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon! 
 
-#### Confirming the visit (1 day before actual visit, also email the day before)
+### 1.2 Confirming the visit (1 day before actual visit, also email the day before)
 
 <insert 4 videos here>
 
@@ -221,9 +221,9 @@ Just as a reminder, the data we collect from you now and during the visit, will 
 
 ---
 
-## 2.2 Preparing for Visit
+## 2. Preparing for Visit
 
-### Pack
+### 2.1 Pack
 
 <div>
 <table width="70%">
