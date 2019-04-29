@@ -12,8 +12,8 @@ navbar:
       href: collection.html
     - text: "coding"
       href: coding.html
-    - text: "news"
-      href: news.html
+#    - text: "news"
+#      href: news.html
     - text: "site info"
       href: site-info.html
 output_dir: "docs"
