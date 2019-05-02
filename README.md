@@ -6,6 +6,7 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 
 ## Rendering the site
 
+0. Always pull from the repo before making any changes.
 1. Make your changes
 2. Render the website: run `rmarkdown::render_site()` in R from the project root directory
     - (If any packages need to be installed, you can do so using `install.packages("package_name")`)
@@ -18,6 +19,7 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 5. Push the changes to GitHub - saves a copy on GitHub
 - click on Push (top right)
 6. Check the [website](https://PLAY-behaviorome.github.io/PLAY-project.org)
+
 
 (In other words: add and commit are local operations, push, pull and fetch are operations that interact with a remote. If you push without committing, nothing gets pushed. If you commit without adding, nothing gets committed. If you add without committing, nothing at all happens, git merely remembers that the changes you added should be considered for the following commit.)
 
