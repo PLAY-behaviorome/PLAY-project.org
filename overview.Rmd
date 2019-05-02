@@ -39,9 +39,6 @@ Below is the project-wide workflow. The PLAY team will provide training, quality
 <a href="recruitment.html#participant_recruitment"> <img src="img/link-recruitment.png"> </a>  
 <a href="collection.html#home_visit"> <img src="img/link-collection.png"> </a>  
 <a href="collection.html#clean_up_and_upload"> <img src="img/link-upload.png"> </a>  
-[<img src="img/link-recruitment.png">](recruitment.html)  
-[<img src="img/link-collection.png">](collection.html)  
-[<img src="img/link-upload.png">](collection.html)  
 <br><br>
 <a href="coding.html#gesture_pass"> <img src="img/link-gesture.png"> </a>  
 <a href="coding.html#locomotion_passes"> <img src="img/link-locomotion.png"> </a>  
