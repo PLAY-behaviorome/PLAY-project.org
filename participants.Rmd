@@ -17,7 +17,7 @@ source("R/write_video_clip_html.R")
 
 # Participants overview
 
-The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This webpage contains detailed help for the recruitment process. Click here for information about the actual [data collection](collection.html) and [data upload](upload.html).
+The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This page contains detailed help for the recruitment of participants. Click here for information about the <a href="collection.html"><font color="#5B9BD5"><b> data collection </b></font></a> and <a href="collection.html#clean_up_and_upload"><font color="#5B9BD5"><b> data upload </b></font></a> processes.
 
 <img src="img/overview-collecting.png" width="600">
 

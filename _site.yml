@@ -6,8 +6,8 @@ navbar:
       href: overview.html
     - text: "people"
       href: people.html
-    - text: "recruitment"
-      href: recruitment.html
+    - text: "participants"
+      href: participants.html
     - text: "collection"
       href: collection.html
     - text: "coding"

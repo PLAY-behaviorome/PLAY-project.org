@@ -16,36 +16,35 @@ title: ""
 }
 </style>
 
-
-<img src="img/PLAY-logo.png" alt="drawing" width="400" />
-
 <br>
 
 # An overview of the PLAY data
 
-To answer questions about infant behaviours in their natural environments, the PLAY project will collect, code, and share 900 hours of video collected in the homes of children at 12, 18, and 24 months of age drawn from 30 sites across North America. 
+To answer questions about infant behaviours in their natural environments, the PLAY project will collect, code, and share 900 hours of video collected in the homes of children at 12, 18, and 24 months of age drawn from 30 sites across North America.  
 
-Materials (videos, questionnaires, links to Databrary volumes) for the PLAY project are included in this site, where we document data collection protocols, workflows, coding strategies, and operational definitions.
+Materials (videos, questionnaires, links to Databrary volumes) for the PLAY project are included in this site, where we document data collection protocols, workflows, coding strategies, and operational definitions.  
+
+Below is the project-wide workflow. The PLAY team will provide training, quality assurance, transcription, reliability coding, and collating data for the final PLAY database. The collaborating sites will perform data collection and various levels of data coding.
 <br>
 <br>
-
-### Project-wide workflow
 
 <div class="row">
 <div class="column-2thirds">
-<img src="img/overview-project.png">
+<img src="img/overview-project.png" width="600" />
 </div>
 <div class="column-1third">
+<br>
+<h4> &nbsp;&nbsp; <u>Direct Links</u> </h3>
+<br>
+<a href="participants.html#participant_recruitment"> <img src="img/link-recruitment.png"> </a>  
+<a href="collection.html#home_visit"> <img src="img/link-collection.png"> </a>  
+<a href="collection.html#clean_up_and_upload"> <img src="img/link-upload.png"> </a>  
 <br><br>
-[<img src="img/link-recruitment.png">](recruitment.html)  
-[<img src="img/link-collection.png">](collection.html)  
-[<img src="img/link-upload.png">](collection.html)  
-<br><br>
-[<img src="img/link-gesture.png">](coding.html)  
-[<img src="img/link-locomotion.png">](coding.html)  
-[<img src="img/link-emotion.png">](coding.html)  
-[<img src="img/link-object.png">](coding.html)  
-[<img src="img/link-communication.png">](coding.html)  
+<a href="coding.html#gesture_pass"> <img src="img/link-gesture.png"> </a>  
+<a href="coding.html#locomotion_passes"> <img src="img/link-locomotion.png"> </a>  
+<a href="coding.html#emotion_passes"> <img src="img/link-emotion.png"> </a>  
+<a href="coding.html#object_interaction_passes"> <img src="img/link-object.png"> </a>  
+<a href="coding.html#communication_passes"> <img src="img/link-communication.png"> </a>  
 </div>
 </div>
 <br>
