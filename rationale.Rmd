@@ -1,0 +1,47 @@
+---
+title: ""
+---
+
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-2thirds{
+  float: left;
+  width:80%;
+  text-align: left;
+}
+.column-1third{
+  float: right;
+  width: 20%;
+  text-align: left;
+}
+</style>
+
+<br>
+
+# Why we did X
+
+Content  
+
+Content  
+
+Content  
+
+
+# Why we did Y
+
+Content  
+
+Content  
+
+Content  
+
+
+# Why we did Z
+
+Content  
+
+Content  
+
+Content  
+
+

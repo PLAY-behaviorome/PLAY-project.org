@@ -2,20 +2,24 @@ name: "PLAY Project"
 navbar:
   title: "PLAY"
   left:
-    - text: "overview"
-      href: overview.html
     - text: "people"
       href: people.html
-    - text: "participants"
-      href: participants.html
+    - text: "overview"
+      href: overview.html
+    - text: "recruitment"
+      href: recruitment.html
     - text: "collection"
       href: collection.html
     - text: "coding"
       href: coding.html
+    - text: "rationale"
+      href: rationale.html
+    - text: "faq"
+      href: faq.html
 #    - text: "news"
 #      href: news.html
-    - text: "site info"
-      href: site-info.html
+    - text: "website info"
+      href: website-info.html
 output_dir: "docs"
 output:
   html_document:

@@ -1,0 +1,47 @@
+---
+title: ""
+---
+
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-2thirds{
+  float: left;
+  width:80%;
+  text-align: left;
+}
+.column-1third{
+  float: right;
+  width: 20%;
+  text-align: left;
+}
+</style>
+
+<br>
+
+# FAQ about participant recruitment and scheduling
+
+Content  
+
+Content  
+
+Content  
+
+
+# FAQ about data collection
+
+Content  
+
+Content  
+
+Content  
+
+
+# FAQ about coding data
+
+Content  
+
+Content  
+
+Content  
+
+
