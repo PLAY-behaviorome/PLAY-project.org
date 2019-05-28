@@ -18,8 +18,8 @@ source("R/write_video_clip_html.R")
 ### Workflow
 
 1. You will receive video files that have been [transcribed](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription) by the PLAY team. Run two additional scripts that will prepare new [Communication](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2) columns for further coding.
-2. **Run** *splitmombaby_transcribe.rb*. This script pulls out mom and baby language from the _*transcribe*_ column into two new columns: (1) _*momspeech*_  and (2) _*babyvoc*_ . Each column is automatically populated with cells from the respectively tagged utterances from the _*transcribe*_  column (e.g., the script ports all utterances coded as ‘m’ to the _*momspeech*_  column and 'b' to the _*babyvoc*_  column). Each new cell in _*momspeech*_  and _*babyvoc*_  is a point cell created at the onset of each cell from the transcription.
-3. **Run** *create_mombaby_utterancetype.rb*. This script also creates two new columns: (1) _*momutterancetype*_ and (2) _*babyutterancetype*_ . For each cell in _*momspeech*_  and _*babyvoc*_ , a new cell is created in _*momutterancetype*_  and _*babyutterancetype*_ , respectively. The codes for these cells are blank, and the coder now scores mom and baby communication according to definitions in [Communication Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2).
+2. **Run** *splitmomchild_transcribe.rb*. This script pulls out mom and child language from the _*transcribe*_ column into two new columns: (1) _*momspeech*_  and (2) _*childvoc*_ . Each column is automatically populated with cells from the respectively tagged utterances from the _*transcribe*_  column (e.g., the script ports all utterances coded as ‘m’ to the _*momspeech*_  column and 'b' to the _*childvoc*_  column). Each new cell in _*momspeech*_  and _*childvoc*_  is a point cell created at the onset of each cell from the transcription.
+3. **Run** *create_momchild_utterancetype.rb*. This script also creates two new columns: (1) _*momutterancetype*_ and (2) _*childutterancetype*_ . For each cell in _*momspeech*_  and _*childvoc*_ , a new cell is created in _*momutterancetype*_  and _*childutterancetype*_ , respectively. The codes for these cells are blank, and the coder now scores mom and child communication according to definitions in [Communication Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2).
 <br><br>
 
 
@@ -27,30 +27,30 @@ source("R/write_video_clip_html.R")
 
 Make sure you are [currently logged in at Databrary](https://nyu.databrary.org/user/login) to view embedded video examples in this wiki. 
 
-This section covers these 4 main codes: babyvoc, babyutterancetype, momspeech, and momutterancetype
+This section covers these 4 main codes: childvoc, childutterancetype, momspeech, and momutterancetype
 
-#### `1. babyvoc`
+#### `1. childvoc`
 
 `<content>`
   
 ##### General Orientation
 
-Contains a transcript of all of the utterances/vocalizations of the baby.
+Contains a transcript of all of the utterances/vocalizations of the child.
 
 This column is automatically populated after the *transcribe* pass is completed using a Ruby script. All of the utterances tagged with 'b' in <a href=""> <source> </a> in *transcribe* are transferred here. The onset and offset are equal, and set to the onset from the *transcribe* column, which reflects a time as close as possible to the onset of that utterance.
 
-#### `2. babyutterancetype`
+#### `2. childutterancetype`
 
 `<language_s-w>` `<langlike-b-v>` `<crygrunt_c-g>` `<unintell-x>`
   
 ##### General Orientation
 
 Utterance type = categorization of previously coded utterances as a specific type of speech form. 
-Read the utterance transcribed in babyvoc column and categorize each utterance based on codes below.
+Read the utterance transcribed in childvoc column and categorize each utterance based on codes below.
 
 Codes are mutually exclusive. 
 The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. 
-Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the baby didn't speak in full speech, or speech-like sound, but did cry/scream, then code <.,.,c,.>.
+Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the child didn't speak in full speech, or speech-like sound, but did cry/scream, then code <.,.,c,.>.
 
 The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.
 
@@ -107,14 +107,14 @@ Grunt= an utterance in which the speaker produces a low, short, inarticulate, gu
 
 `<x>`
 
-Unintelligible = either what the baby said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
+Unintelligible = either what the child said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
 
             
 ##### How to Code
 
 Set the “JUMP-BACK-BY” to 2 s.
             
-Hit “FIND” on the controller to go to the onset of each utterance, which was populated in babyvoc column. 
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in childvoc column. 
 JUMP-BACK-BY 2 s so the utterance can be viewed in context.
             
 Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. 
@@ -177,30 +177,30 @@ What is coded is not solely based on the transcript. Listen to the audio, watch 
 
 `<l>` 
 
-Imperative Look = an utterance in which the speaker directs a baby's attention (e.g., “Look here”, “See?”, or calls baby's name to alert attention). <a href=""> 2 videos ("evelyn", "look") </a>
+Imperative Look = an utterance in which the speaker directs a child's attention (e.g., “Look here”, “See?”, or calls child's name to alert attention). <a href=""> 2 videos ("evelyn", "look") </a>
 
 `<a>`
 
-Imperative Act = an utterance in which the speaker directs a baby's action, such as asking baby to do something, or to play with an object. An example would be if a mother tells her baby “let's play with the ball”. <a href=""> 3 videos ("turn the page", "come here please", "go get the basketball") </a>
+Imperative Act = an utterance in which the speaker directs a child's action, such as asking child to do something, or to play with an object. An example would be if a mother tells her child “let's play with the ball”. <a href=""> 3 videos ("turn the page", "come here please", "go get the basketball") </a>
 
 **NOTE**: The imperative look and imperative act can be collapsed if the breakdown takes too long to code/specify (although we don't think it will save time).
 
 `<p>`
 
-Imperative Prohibit = an utterance in which the speaker prohibits a baby's behavior, such as asking baby to stop what they're doing. <a href=""> 3 videos (“dont knock it over”, “dont be so rough”, “no no tv”) </a>
+Imperative Prohibit = an utterance in which the speaker prohibits a child's behavior, such as asking child to stop what they're doing. <a href=""> 3 videos (“dont knock it over”, “dont be so rough”, “no no tv”) </a>
 
 `<i>`
 
 Interrogative = an utterance in which the speaker asks for information about objects or ongoing activities (e.g., “What is this called?”, “What color is this?).
-                                                                    Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the baby's behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That's a blue truck, right?”) are not considered questions. These should be coded as declaratives. <a href=""> 2 videos (“what does the pig say?”, “what is this?”) </a>
+                                                                    Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the child's behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That's a blue truck, right?”) are not considered questions. These should be coded as declaratives. <a href=""> 2 videos (“what does the pig say?”, “what is this?”) </a>
 
 `<d>`
 
-Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”. <a href=""> 2 videos (“baby's clothes”, “that's a lemonade”) </a>
+Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”. <a href=""> 2 videos (“child's clothes”, “that's a lemonade”) </a>
 
 `<f>`
 
-Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker's behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the baby successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a>
+Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker's behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the child successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a>
 
 `<x>`
 Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both "xxx") </a>

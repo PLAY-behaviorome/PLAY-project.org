@@ -13,7 +13,7 @@ output:
 
 ### Workflow
 
-1. Choose whether to code baby or mom first
+1. Choose whether to code child or mom first
 2. Score each pass according to definitions in [Object Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual3)
 
 
@@ -21,32 +21,32 @@ output:
 
 Make sure you are [currently logged in at Databrary](https://nyu.databrary.org/user/login) to view embedded video examples in this wiki.
 
-#### `babyobject`
+#### `childobject`
 
 `<obj>`
 
 ##### General Orientation
 
-This code captures the times that the baby is manually engaged with an object. Coders score only when object events occur, not when they don't occur. This is an event code, where gray spaces between cells mean that the baby is not engaged with an object. <a href=""> (2 videos) </a>
+This code captures the times that the child is manually engaged with an object. Coders score only when object events occur, not when they don't occur. This is an event code, where gray spaces between cells mean that the child is not engaged with an object. <a href=""> (2 videos) </a>
 
 ##### Value List
 
 `o` = object
 
-`.` = when baby is off camera and coder cannot determine whether baby has an object in hand.
+`.` = when child is off camera and coder cannot determine whether child has an object in hand.
 
 ##### Operational Definitions
 
 `<obj>`
 
-**Object** = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when baby moves them, thus, manually engaging with them. If the object never moves (e.g., the baby has a hand on the stroller but does not displace it), then this is not coded as 'o.' <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where baby is exploring a surface or resting hands on a surface for support.  <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., baby is carrying object)  <a href=""> (1 video) </a>.
+**Object** = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when child moves them, thus, manually engaging with them. If the object never moves (e.g., the child has a hand on the stroller but does not displace it), then this is not coded as 'o.' <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where child is exploring a surface or resting hands on a surface for support.  <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., child is carrying object)  <a href=""> (1 video) </a>.
 
 
-Riding on toys with wheels does not count as object, but this will be coded in _babyloc_ pass.
+Riding on toys with wheels does not count as object, but this will be coded in _childloc_ pass.
 
-Code '**o**' if the baby is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.)  <a href=""> (1 video) </a>
+Code '**o**' if the child is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.)  <a href=""> (1 video) </a>
 
-**Onset** is the frame when baby first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). **Offset** is the frame when baby is no longer in manual contact with an object for at least 3 s. OR when the baby is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for baby to touch an object to be scored as 'o,' but if infant is touching multiple objects, the offset of 'o' object cell is when baby is no longer in manual contact with the last object contacted for 3+ s. If the baby is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout.  <a href=""> (1 video) </a>
+**Onset** is the frame when child first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). **Offset** is the frame when child is no longer in manual contact with an object for at least 3 s. OR when the child is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for child to touch an object to be scored as 'o,' but if infant is touching multiple objects, the offset of 'o' object cell is when child is no longer in manual contact with the last object contacted for 3+ s. If the child is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout.  <a href=""> (1 video) </a>
 
 
 ##### How to Code
@@ -55,9 +55,9 @@ Set “JUMP-BACK-BY” key to 3 s.
 
 Enable cell highlighting.
 
-Watch in real time for the baby's hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the baby moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The **Onset** is the first frame when the baby makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the **Offset** when the baby breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you've determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the baby is no longer in manual contact with the item and/or when the baby is no longer moving it. Then, hit #9-SETOFFSET.
+Watch in real time for the child's hand(s). As soon as you see the hand(s) touch an object (as defined above), continue watching for a couple of seconds to see if the child moves/manipulates the object. Then, hit #4-SHUTTLEBACK to get to the onset of the cell. The **Onset** is the first frame when the child makes manual contact with the item. Set this onset by hitting ENTER to set a new cell with that onset time. Now, continue watching the object bout in real time and set the **Offset** when the child breaks manual contact or stops moving object (e.g., stroller) for at least 3 s. Once you've determined that the bout has ended, set the offset by hitting #5-STOP and then #4-SHUTTLEFORWARD or #6-SHUTTLEBACK to the last frame where the child is no longer in manual contact with the item and/or when the child is no longer moving it. Then, hit #9-SETOFFSET.
 
-Continue watching in real time for the next object bout. If the baby is holding an object while crawling or walking around, you can watch faster by SHUTTLING at 2x speed to find the end of the object engagement.
+Continue watching in real time for the next object bout. If the child is holding an object while crawling or walking around, you can watch faster by SHUTTLING at 2x speed to find the end of the object engagement.
 
 To check whether a 3-s pause has occurred between object engagements, go to the offset of the previous object cell and watch until you reach the next instance of 'o'. Then, hit the 'JUMP-BACK-BY' key and check to see if the previous cell lights up. If it does, then the two cells are <3 s apart and should be combined into one bout of '**o**'.
 
