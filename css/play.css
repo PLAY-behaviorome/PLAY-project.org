@@ -10,6 +10,19 @@ th {
   font-size: 110%;
 }
 
+h5 {
+  font-weight:bold;
+}
+
+say {
+  font-size: 90%;
+  font-style: italic;
+  color:#669966;
+  quotes: "“" "”" "‘" "’";
+}
+say:before { content: open-quote; }
+say:after  { content: close-quote; }
+
 .reveal section p {
   color: green;
 }

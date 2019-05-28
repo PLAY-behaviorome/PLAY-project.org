@@ -1,47 +1,25 @@
 ---
 title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
 ---
 
-<style>
-.row:after { content: ""; display: table; clear: both; }
-.column-2thirds{
-  float: left;
-  width:80%;
-  text-align: left;
-}
-.column-1third{
-  float: right;
-  width: 20%;
-  text-align: left;
-}
-</style>
-
-<br>
-
-# FAQ about participant recruitment and scheduling
-
-Content  
-
-Content  
-
-Content  
+<img src="img/PLAY-logo.png" width="400" />
 
 
-# FAQ about data collection
+```{r child = 'faq-recruitment.Rmd'}
+```
+---
 
-Content  
+```{r child = 'faq-collection.Rmd'}
+```
+---
 
-Content  
-
-Content  
-
-
-# FAQ about coding data
-
-Content  
-
-Content  
-
-Content  
+```{r child = 'faq-coding.Rmd'}
+```
+---
 
 

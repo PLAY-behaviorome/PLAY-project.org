@@ -1,0 +1,38 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+## FAQ about scheduling and recruitment
+
+##### If mom asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
+<say>For the first 90 minutes of this study, we are interested in how mothers and children interact. It should only be you and your child during the first half of our visit. If father/aunt/nanny/etc isn’t able to stay out of the home for the full time that we’re there, they can come back for the last hour.</say> 
+
+
+##### If mom specifically says that the father/anyone works at home and that it’s inconvenient for them to leave
+
+<say>We really want just mom and child in the house during the first half of the visit. If there is a separate room with a door that the child never goes into (and that the father/person wouldn’t leave anytime during the first half of the visit), then it’s ok. But, if it’s only a corner of the room of if the child.</say> 
+
+
+##### What if phone questionnaire was not done before home visit?
+
+* Ideally this should be completed before the visit, over the phone, because some of these questions will ensure eligibility of the family to participate  
+* Complete it right before the other questionnaires but _do not record this portion_
+
+##### Mom says she needs to ask child’s father about participating
+<say>Sure, we will send you an email about what the study is about and include the permission forms that we will have you sign. Would it be alright if we called you back in 2-3 days?</say>   
+
+* Setup time to call back.
+
+##### Parent unsure about sharing videos
+<say>Video data like this is incredibly valuable for us and other developmental researchers around the country.  
+To participate in this study, we would ask to be able to share the video with other developmental researchers, like the professor who runs our lab. The goal is to make what we learn from you and your baby available to other scientists. We won’t share anything publicly unless you agree to it. On our permission forms, there are two levels of permission and you can indicate whatever you are comfortable with. If you want, we can send you an email with a copy of the form for you to look over. Can I give you a call back in 2-3 days to see if you would be interested in participating?</say>   
+
+* If parent still does not want to share video, _**do not schedule them**_.
+
+
+---

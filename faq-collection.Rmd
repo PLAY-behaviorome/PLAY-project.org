@@ -1,0 +1,150 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+## FAQ about data collection
+
+
+### Home Visit
+
+##### What if father/aunt/nanny/etc. is there when experimenter gets there?  
+- Usually mom says <person> is going to leave.  
+- If mom doesn’t appear to send <person> out, then say: <say>We just want to double check that you’re ok with being alone with the child for the first 90 minutes of this visit. As we mentioned earlier, we just want you and your child at home. If <person> needs more time to leave, we could start with questionnaires. </say>
+
+##### At any point during the visit, what if a major protocol violation occurs? E.g.,
+-	Second person is there during the natural interaction
+-	Mom interacts with the experimenter repeatedly during the recording
+-	You learn something about child’s or mom’s health that excludes them from the study
+-	Mom or child engages in some other behavior that would invalidate the visit  
+
+Conduct the study as usual, complete all steps in procedure. The participant won’t count toward the 30 good participants but parts of the video and questionnaires will be usable to someone.
+
+
+##### What if the mom feeds the child during the one-hour natural play?  
+* That’s fine, just continue recording. 
+* No need to add time, i.e., record more than one hour. 
+
+
+##### What if child is sleeping when I get there?
+* Do the questionnaire first. 
+* Start one-hour natural play recording as soon as child wakes. 
+* It is alright to stop questionnaire and then resume later after recording interactions.
+
+##### What if mom asks where she can go during recording?
+Say <say>You can go anywhere inside your home. We just ask that you not go outside, to the backyard, porch, balcony, or building hallways. Not every family will have an outside space and we want to try to keep it consistent for everyone.</say>
+
+##### What if mom is breastfeeding during the recording or child gets naked?
+-	If mom is comfortable, just continue recording.  
+-	If she is uncomfortable, ask if she is okay with you turning your camera away to look at something else but continue recording to capture the language.  
+
+##### What if mom is concerned about parts of video when signing the Databrary release form? Like breastfeeding or child is naked?
+- Remind her: <say>Your video will only be shared with other scientists if you mark Authorized Investigators. It won’t be shown to anyone other than those researchers.</say>
+-	If mom insists, then make notes in clean up sheet and assure mom that PLAY staff will obscure those parts of video. Include in your notes the approximate time of recording.
+
+##### What if mom offers you food or drink or anything else?
+-	Always decline. 
+- Bring your own water.
+
+##### What if I need to go to the bathroom during the visit? 
+-	Do not. Plan your bathroom breaks around the visit (it will be approx 2.5 hrs long).
+-	If it is an emergency, ask very politely to go in between the different portions of the visit. 
+
+##### What if mom asks you to stay with her child to get the mail, go outside, bathroom, etc.?
+-	Say <say>No worries. In that case, we can stop recording and you can take him/her with you. We can resume the recording whenever you’re ready.</say>
+-	If mom insists it’s okay, say: <say>Because of legal reasons, I cannot assume responsible for care of your child.</say>
+
+##### What if mom ends the session early and you didn’t finish everything?
+-	Try to finish what you can. Do your best to record the house walkthrough if you can (especially main living space and child’s room or sleeping area, clothes, toys, etc.)
+-	If you are unable to complete the questionnaires, you must set up a time to call mom to do so on the phone. 
+
+
+
+### Natural Interaction (1 Hour)
+
+##### What if the mom wants to go outside?
+Say <say>As a reminder, we ask that you stay inside during our visit. If you have to go outside, we can stop the recording and resume whenever you’re ready.</say>
+
+##### What if child falls asleep in middle of hour of recording?
+
+-	If child is noticeably sleepy: <say>It’s okay if he/she needs to take a nap. We can just complete the questionnaires now and see if he wakes up afterwards to do the one-hour natural recording. If not, can we reschedule our visit?”</say>
+-	You will need a full, uninterrupted one-hour recording of natural play.
+
+##### What if mom want to interact with you?
+-	Respond with very short but polite sentences. Quickly and quietly remind mom that you want them to go about day as if you’re not there.
+
+##### What if mom is talking about or to me?
+-	Ignore it at first. If it continues for too long, quickly and quietly remind mom that you want them to go about day as if you’re not there.
+
+##### What if the baby keeps trying to interact with me?
+-	Don’t look directly at the child. If you need to look at the child, look at them through video recording screen.
+-	Children will usually try to do this during the first 5-10 mins of your visit. Do not interact with them. 
+-	If child tries to hand you something, take a step back. If child is looking at you, do not move and look away. Try to move back and put space between you and child. If necessary, move behind furniture or record from another room.
+-	If child persists in interacting with you, keep recording. Be sure to make notes in Clean Up.
+
+##### What if doorbell rings for the dog walker, delivery, etc.? Can mom go answer it? Dog walker coming over? Delivery?
+-	Do not record the person coming. Try to still record baby and mom from discrete angle. If unable to do so without also capturing other person, record the floor during that time so we can account for that time.
+-	If mom asks to stop recording, then stop and add extra time.
+
+##### What if mom goes to the bathroom?
+-	The mom will usually take child in with her. Keep the camera recording from the outside. Record the closed door, or the floor (if the door isn’t completely closed). It is important to keep the camera running so we know how long they were in there.
+-	If mom asks you to watch child: <say>We are not allowed to watch him/her for you but can take him/her into the bathroom with you.</say>
+
+##### What if the mom breastfeeds?
+-	If mom just starts doing it: Record from a discrete angle (from the mom’s back) so you know where the child and mom are and roughly what they are doing.
+-	If mom asks “Is it okay to breastfeed [CHILD]?”, say <say>Sure, is it ok that I keep recording from behind you?</say>
+
+##### What if mom changes the baby?
+-	If mom just starts: Record as clearly as possible but try to get face and hands rather than genitalia. 
+-	If mom asks “Is it ok if I change [CHILD]?”, say <say>Is it ok if record from behind you just to get their face?</say>
+
+##### At any point, if mom asks “Do you mind not recording this?”
+- Say <say>Is it ok that I point camera somewhere else and continue recording?</say>  
+- Make sure mom sees you are doing this. That way we can account for the amount of time and language is being recorded.
+- If mom says no, then turn off camera. Record extra time to still reach 60 minutes. 
+
+
+### Structured Play
+
+##### What if child doesn’t want to play but stays on the mat?
+-	Continue recording for 5 minutes.
+
+##### What if child wants to play with the toys but moves off the mat?
+-	Follow the child and record for 5 minutes.
+
+##### What if child doesn’t want to play with the toys _and_ moves off the mat?
+-	Let mom try to engage with child for 1 min or so. If child is clearly unhappy or uninterested after the minute, stop recording. 
+
+##### What if mom doesn’t want child to play with these toys? 
+-	Reassure mom that we wash and sanitize the toys before each visit. If mom is still uncomfortable with child playing with the toys, move onto next part of study.
+
+
+### Questionnaires
+
+##### What if mom wants to skip section of questionnaire?
+-	Move onto next part of questionnaire. 
+
+##### What if mom says that she doesn’t have enough time to go over questionnaires?
+-	You must set up a time to call them to do so on the phone. 
+
+### House Map
+
+##### The laser isn't working
+- The laser won’t work against mirror or glass. Try again from a different angle.
+
+##### The room is oddly shaped, i.e. not a rectangle
+- Measure the longest dimension for length and breadth
+
+##### What if there is a room that the mom or child never entered during recording?  
+-	Ask to record and take measurements of every room in the house (including that room) anyway. 
+-	Ask if child have access to and goes into the room.
+
+##### What if they refuse to let you in a specific room?  
+-	Ask if child have access to and goes into the room.
+-	Make notes in Clean Up.
+
+---
