@@ -15,6 +15,10 @@ The collaborating sites in PLAY perform a variety of roles (see [people](people.
 
 <img src="img/overview-coding.png" width="600">
 
+### Quality Assurance
+
+All videos that are coded with go through a quality assurance process in which the PLAY team will ensure that the coded videos are eligible to be included in the final sample. Videos that pass QA will be checked for reliability, merged, and added to the final PLAY dataset. Coded videos that don't pass QA will be sent back to the coding site for recoding. In some cases, the coding site might be provided additional training.
+
 <!--
 <table>
 <col width="200">
@@ -47,7 +51,6 @@ The collaborating sites in PLAY perform a variety of roles (see [people](people.
 -->
 
 ### Getting Started
-
 
 To code videos, you will need:
 * access to Databrary, the video repository that will contain files to be coded

@@ -12,6 +12,8 @@ navbar:
       href: collection.html
     - text: "coding"
       href: coding.html
+    - text: "qa"
+      href: qa.html
     - text: "rationale"
       href: rationale.html
     - text: "faq"

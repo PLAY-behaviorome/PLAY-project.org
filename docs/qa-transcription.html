@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -265,6 +268,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -322,339 +420,18 @@ $(document).ready(function () {
 </div>
 
 
-<div id="brief-infant-toddler-social-emotional-assessment-bitsea" class="section level2">
-<h2>Brief Infant Toddler Social Emotional Assessment (BITSEA</h2>
-<p>Instructions: Many statements describe normal feelings and behaviors, but some describe feelings and behaviors that may be problems. Please do your best to respond to every item. Please circle the ONE response that best describes your child’s behavior in the LAST MONTH.</p>
-<table style="width:68%;">
-<colgroup>
-<col width="34%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Behavior</th>
-<th>Not true/rarely</th>
-<th>Somewhat true/Sometimes</th>
-<th>Very true/Often</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>1. Shows pleasure when he or she succeeds (for example, claps for self).</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>2. Gets hurt so often that you can’t take your eyes off him or her.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>3. Seems nervous, tense, or fearful.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>4. Is restless and can’t sit still.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>5. Follows rules.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>6. Wakes up at night and needs help to fall asleep again.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>7. Cries or has a tantrum until he or she is exhausted.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>8. Is afraid of certain places, animals or things.</td>
-</tr>
-<tr class="odd">
-<td>What is he or she afraid of? _______</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>9. Has less fun than other children.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>10. Looks for you (or other parent) when upset.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>11. Cries or hangs onto you when you try to leave.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>12. Worries a lot or is very serious.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>13. Looks right at you when you say his or her name.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>14. Does not react when hurt.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>15. Is affectionate with loved ones.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>16. Won’t touch some objects because of how they feel.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>17. Has trouble falling asleep or staying asleep.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>18. Runs away in public places.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>19. Plays well with other children (not including brother/sister). N if there is no contact with other children</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>20. Can pay attention for a long time (other than when watching TV)</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>21. Has trouble adjusting to changes.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>22. Tries to help when someone is hurt (for example, gives a toy).</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>23. Often gets upset.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>24. Gags or chokes on food.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>25. Imitates playful sounds when you ask him or her to.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>26. Refuses to eat.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>27. Hits, shoves, kicks, or bites children (not including brother/sister). N if there is no contact with other children.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>28. Is destructive. Breaks or ruins things on purpose.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>29. Points to show you something far away.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>30. Hits, bites, or kicks you (or other parent).</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>31. Hugs or feeds dolls or stuffed animals.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>32. Seems very unhappy, sad, depressed, or withdrawn.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>33. Purposely tries to hurt you (or other parent).</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>34. When upset, gets very still, freezes or doesn’t move.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<p>The following statements describe feelings and behaviors that can be problems for young children. Some of the descriptions may be a bit hard to understand, especially if you have not seen the behavior in your child. Please do your best to respond to all statements. Please circle the ONE response that best describes your child’s behavior in the LAST MONTH.</p>
-<table style="width:68%;">
-<colgroup>
-<col width="34%" />
-<col width="11%" />
-<col width="11%" />
-<col width="11%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Behavior</th>
-<th>Not true/rarely</th>
-<th>Somewhat true/Sometimes</th>
-<th>Very true/Often</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>35. Puts things in a special order over and over and gets upset if he or she is interrupted.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>36. Repeats the same action or phrase over and over without enjoyment. Please give an example: _____</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>37. Repeats a particular movement over and over (like rocking, spinning). Please give an example: _____</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>38. Spaces out. Is totally unaware of what’s happening around him or her.</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>39. Does not make eye contact.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>40. Avoids physical contact.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="odd">
-<td>41. Hurts self on purpose (for example, bangs his or her head). Please describe: _____.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-<tr class="even">
-<td>42. Hurts self on purpose (for example, bangs his or her head). Please describe: Eats or drinks things that are not edible (like paper or paint). Please describe: ______.</td>
-<td>0</td>
-<td>1</td>
-<td>2</td>
-</tr>
-</tbody>
-</table>
-<table>
-<colgroup>
-<col width="14%" />
-<col width="27%" />
-<col width="25%" />
-<col width="13%" />
-<col width="19%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>Question</th>
-<th>Not at all worried</th>
-<th>A little worried</th>
-<th>Worried</th>
-<th>Very worried</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>A. How worried are you about your child’s behavior, emotions, or relationships?</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-<tr class="even">
-<td>B. How worried are you about your child’s language development?</td>
-<td>1</td>
-<td>2</td>
-<td>3</td>
-<td>4</td>
-</tr>
-</tbody>
-</table>
+<div id="quality-assurance---transcription" class="section level2">
+<h2>Quality Assurance - Transcription</h2>
+<p><em>Coming soon!</em></p>
+<hr />
 </div>
 
 <hr>
 <p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
 
 
+</div>
+</div>
 
 </div>
 

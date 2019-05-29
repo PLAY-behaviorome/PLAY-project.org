@@ -21,6 +21,11 @@ The collaborating sites in PLAY perform a variety of roles (see [people](people.
 
 <img src="img/overview-collecting.png" width="600">
 
+
+### Quality Assurance
+
+All videos that are collected with go through a quality assurance process in which the PLAY team will ensure that the videos are eligible to be included in the final sample. Videos that pass QA will then be passed on for coding. Videos that don't pass QA will be (depending on why they didn't) reused for other purposes or will be sent back to the collection site for modification. In some cases, the collection site might be provided additional training.
+
 # Home Visit
 
 
