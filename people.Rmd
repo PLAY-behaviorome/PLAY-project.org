@@ -22,8 +22,6 @@ output:
 </style>
 
 
-<img src="img/PLAY-logo.png" width="400" />
-
 ## Principal Investigators
 
 

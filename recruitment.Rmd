@@ -101,31 +101,34 @@ We expect to migrate to successors to this package.
 
 ### 1.1 Initial recruiting call
 
-<!--
-</br>
-<video width="320" height="240" controls>
-  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support the video tag.
-</video>
-</br>
--->
+1. 12m crawler
+<div>
+  <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mc">
+    Video
+  </button>
+</div>
+<div class="collapse" id="collection-scheduling-confirmingvisit-12mc">
+    <video width="100%" controls preload="none">
+      <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+      Your browser does not support html5 video.
+    </video>
+</div>
 
-<!-- This is the code from the wiki - for now, the button doesn't seem to be collapsed-->
-<button size="xs" type="info" collapse="initialschedule">Video</button>
-<collapse id="initialschedule" collapsed="true">
-<grid>
-<col xs="12" sm="6" lg="6">
-<panel type="info">
-<html>
-<video width="100%" controls preload="none">
-<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support html5 video.
-</video>
-</html>
-</panel>
-</col>
-</grid>
-</collapse>
+2. 12m walker
+<div>
+  <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mw">
+    Video
+  </button>
+</div>
+<div class="collapse" id="collection-scheduling-confirmingvisit-12mw">
+    <video width="100%" controls preload="none">
+    <source src="https://nyu.databrary.org/volume/876/slot/35422/441064,822568/asset/174039" type="video/mp4">
+      Your browser does not support html5 video.
+    </video>
+</div>
+
+
+
 
 <say>Hi, may I speak with [MOM]?
 My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we're looking at how moms and babies interact with each other. We'd be visitng your home and you'd receive $25 at the end of the visit for your participation. Can we tell you about it?
@@ -185,6 +188,24 @@ Does this sound like something you would be interested in participating in with 
 ### 1.3 Confirming the visit (1 day before visit)
 
 [insert 4 videos here]
+
+
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/volume/876/slot/35422/asset/174038" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+
+</br>
+<video width="320" height="240" controls>
+  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</br>
+
+https://nyu.databrary.org/volume/876/slot/35422/-?asset=174038
+https://nyu.databrary.org/volume/876/slot/35422/-?asset=174038
 
 <say>Hi, may I speak with [MOM]? My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE].</say>
 

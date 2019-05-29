@@ -1,0 +1,29 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
+---
+
+<img src="img/PLAY-logo.png" width="400" />
+
+
+Coming soon!
+
+<!--
+
+```{r child = 'qa-data.Rmd'}
+```
+---
+
+```{r child = 'qa-transcription.Rmd'}
+```
+---
+
+```{r child = 'qa-final.Rmd'}
+```
+---
+
+-->
