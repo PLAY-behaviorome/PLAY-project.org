@@ -172,5 +172,5 @@ knitr::kable(roster)
 
 ## Advisory Board
 
-<List everyone here>
+Coming soon!
 
