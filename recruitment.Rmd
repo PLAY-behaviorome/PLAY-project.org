@@ -99,36 +99,29 @@ We expect to migrate to successors to this package.
 
 *To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [participant paperwork](link to questionnaires)*
 
+<!--
+List of videos in volume (protocol materials):
+https://nyu.databrary.org/volume/876/slot/35422/-
+-->
+
 ### 1.1 Initial recruiting call
 
-1. 12m crawler
-<div>
-  <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mc">
-    Video
-  </button>
-</div>
-<div class="collapse" id="collection-scheduling-confirmingvisit-12mc">
-    <video width="100%" controls preload="none">
-      <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-      Your browser does not support html5 video.
-    </video>
-</div>
+<!-- Indenting this code will mess up the output - markdown seems to want to read indented code as textboxes -->
+<!-- When knitting, make sure to "open in browswer" to see video - need to be logged into DB!! -->
 
-2. 12m walker
-<div>
-  <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mw">
-    Video
-  </button>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall">
+Video
+</button>
 </div>
-<div class="collapse" id="collection-scheduling-confirmingvisit-12mw">
-    <video width="100%" controls preload="none">
-    <source src="https://nyu.databrary.org/volume/876/slot/35422/441064,822568/asset/174039" type="video/mp4">
-      Your browser does not support html5 video.
-    </video>
+<div id="collection-scheduling-initialrecruitingcall" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
 </div>
 
-
-
+<br>
 
 <say>Hi, may I speak with [MOM]?
 My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we're looking at how moms and babies interact with each other. We'd be visitng your home and you'd receive $25 at the end of the visit for your participation. Can we tell you about it?
@@ -187,25 +180,53 @@ Does this sound like something you would be interested in participating in with 
 
 ### 1.3 Confirming the visit (1 day before visit)
 
-[insert 4 videos here]
-
-
-</br>
-<video width="320" height="240" controls>
-  <source src="https://nyu.databrary.org/volume/876/slot/35422/asset/174038" type="video/mp4">
-Your browser does not support the video tag.
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mc">
+12m crawler
+</button>
+</div>
+<div id="collection-scheduling-confirmingvisit-12mc" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/0,440000/asset/174038/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
 </video>
-</br>
+</div>
 
-</br>
-<video width="320" height="240" controls>
-  <source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support the video tag.
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mw">
+12m walker
+</button>
+</div>
+<div id="collection-scheduling-confirmingvisit-12mw" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/0,381000/asset/174038/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
 </video>
-</br>
+</div>
 
-https://nyu.databrary.org/volume/876/slot/35422/-?asset=174038
-https://nyu.databrary.org/volume/876/slot/35422/-?asset=174038
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-18m">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</button>
+</div>
+<div id="collection-scheduling-confirmingvisit-18m" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/asset/174040/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-24m">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</button>
+</div>
+<div id="collection-scheduling-confirmingvisit-24m" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
 
 <say>Hi, may I speak with [MOM]? My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE].</say>
 

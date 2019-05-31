@@ -14,6 +14,11 @@ knitr::opts_chunk$set(echo = FALSE)
 source("R/write_video_clip_html.R")
 ```
 
+<!-- Todo:
+Embed videos from here: https://nyu.databrary.org/volume/876/slot/35422/-?asset=174039
+In this format: 
+https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true
+-->
 
 # Collection overview
 
