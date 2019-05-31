@@ -79,7 +79,7 @@ Research Scientist
 </div>
 <div class="column-right">
 <img src="img/people-melody.png" width="150"></br>
-**Melody Xu, B.S.**</br>
+**Melody Xu, B.A.**</br>
 Program Coordinator
 </div>
 </div>
