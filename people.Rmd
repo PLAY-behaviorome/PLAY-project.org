@@ -74,7 +74,7 @@ Research Scientist
 <div class="row">
 <div class="column-left">
 <img src="img/people-orit.png" width="150"></br>
-**Orit Herzberg-Keller, Ph.D.**</br>
+**Orit Herzberg-Keller, D.P.T.**</br>
 Research Scientist
 </div>
 <div class="column-right">
