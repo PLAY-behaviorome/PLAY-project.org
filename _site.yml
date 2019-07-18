@@ -22,6 +22,8 @@ navbar:
 #      href: news.html
     - text: "website info"
       href: website-info.html
+    - text: "newsletters"
+      href: newsletters.html
     - text: "databrary"
       href: https://www.databrary.org
     - text: "datavyu"

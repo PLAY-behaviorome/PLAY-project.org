@@ -32,6 +32,7 @@ output:
 **Karen E. Adolph, Ph.D**.</br>
 New York University</br>
 Principal Investigator
+<br><a href="mailto:karen.adolph@nyu.edu">email</a>
 </td>
 </tr>
 
@@ -41,6 +42,7 @@ Principal Investigator
 **Catherine Tamis-LeMonda, Ph.D.**</br>
 New York University</br>
 Co-Principal Investigator
+<br><a href="mailto:catherine.tamis-lemonda@nyu.edu">email</a>
 </td>
 </tr>
 
@@ -50,38 +52,51 @@ Co-Principal Investigator
 **Rick O. Gilmore, Ph.D.**</br>
 The Pennsylvania State University</br>
 Co-Principal Investigator
+<br><a href="mailto:rog1@psu.edu">email</a>
 </td>
 </tr>
 </table>
 
 
-## Staff
+## Team
 
 <div class="row">
-<div class="column-left">
-<img src="img/people-kasey.png" width="150"></br>
-**Kasey Soska, Ph.D.**</br>
-Scientific Director
+  <div class="column-left">
+  <img src="img/people-kasey.png" width="150"></br>
+  **Kasey Soska, Ph.D.**</br>
+  Scientific Director
+  <br><a href="mailto:kasey.soska@databrary.org">email</a>
+  </div>
+  <div class="column-right">
+  <img src="img/people-swapnaa.png" width="150"></br>
+  **Swapnaa Jayaraman, Ph.D.**</br>
+  Research Scientist
+  <br><a href="mailto:swapnaa@databrary.org">email</a>
+  </div>
 </div>
-<div class="column-right">
-<img src="img/people-swapnaa.png" width="150"></br>
-**Swapnaa Jayaraman, Ph.D.**</br>
-Research Scientist
-</div>
-</div>
-<br>
-<br>
+<br><br>
 <div class="row">
-<div class="column-left">
-<img src="img/people-orit.png" width="150"></br>
-**Orit Herzberg-Keller, D.P.T.**</br>
-Research Scientist
+  <div class="column-left">
+  <img src="img/people-orit.jpg" width="150"></br>
+  **Orit Herzberg-Keller, D.P.T.**</br>
+  Research Scientist
+  <br><a href="mailto:ohk2@nyu.edu">email</a>
+  </div>
+  <div class="column-right">
+  <img src="img/people-sandy.png" width="150"></br>
+  **Sandy Gonzalez, A.B.D**</br>
+  Research Scientist
+  <br><a href="mailto:sgonz219@fiu.edu">email</a>
+  </div>
 </div>
-<div class="column-right">
-<img src="img/people-melody.png" width="150"></br>
-**Melody Xu, B.A.**</br>
-Program Coordinator
-</div>
+<br><br>
+<div class="row">
+  <div class="column-left">
+  <img src="img/people-melody.png" width="150"></br>
+  **Melody Xu, B.A.**</br>
+  Program Coordinator
+  <br><a href="mailto:melodyxu@nyu.edu">email</a>
+  </div>
 </div>
 <br><br>
 
@@ -171,5 +186,37 @@ knitr::kable(roster)
 
 
 ## Advisory Board
-Coming soon!
+
+Rachel Barr
+: Georgetown University  
+<br>
+
+Hellen Egger
+: New York University  
+<br>
+
+Kathy Hirsch-Pasek
+: Temple University  
+<br>
+
+David Hunter
+: Penn State University  
+<br>
+
+Jeff Lockman
+: Tulane University  
+<br>
+
+Laura Prosser
+: Children’s Hospital of Philadelphia  
+<br>
+
+Meredith Rowe
+: Harvard University  
+<br>
+
+Dan Yurovsky
+: Carnegie Mellon University  
+
+
 
