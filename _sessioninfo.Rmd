@@ -1,5 +1,10 @@
-Information about this R session:
+<details>
+<summary>Information about this R session (click here)</summary>
+<p>
 
 ```{r}
 sessionInfo()
 ```
+
+</p>
+</details>

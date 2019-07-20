@@ -20,8 +20,8 @@ navbar:
       href: faq.html
 #    - text: "news"
 #      href: news.html
-    - text: "website info"
-      href: website-info.html
+#    - text: "website info"
+#      href: website-info.html
     - text: "newsletters"
       href: newsletters.html
     - text: "databrary"
