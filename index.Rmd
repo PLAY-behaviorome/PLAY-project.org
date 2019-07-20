@@ -21,3 +21,15 @@ The aim of the project is to develop a new approach to developmental science tha
 ## Support
 
 PLAY is supported by grants from the Office of the Director, National Institutes of Health, (OD), Eunice Kennedy Shriver National Institute for Child Health and Human Development (NICHD), the National Institute of Mental Health (NIMH), and the National Institute on Drug Abuse (NIDA) under R01HD094830-01, the LEGO Foundation, and the Alfred P. Sloan Foundation.
+
+
+## Website info
+
+This site is hosted in [GitHub](http://github.com/PLAY-behaviorome/) and is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com), version `r rstudioapi::versionInfo()$version`.
+
+For information about using R Markdown to generate websites, see <http://rmarkdown.rstudio.com/rmarkdown_websites.html>.
+For formatting information, see <http://rmarkdown.rstudio.com/html_document_format.html>.
+
+```{r, child="_sessioninfo.Rmd"}
+```
+
