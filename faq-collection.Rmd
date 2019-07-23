@@ -131,7 +131,7 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 ##### What if mom says that she doesn’t have enough time to go over questionnaires?
 -	You must set up a time to call them to do so on the phone. 
 
-### House Map
+### House Walkthrough
 
 ##### The laser isn't working
 - The laser won’t work against mirror or glass. Try again from a different angle.
