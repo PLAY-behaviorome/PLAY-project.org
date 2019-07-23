@@ -187,36 +187,57 @@ knitr::kable(roster)
 
 ## Advisory Board
 
-Rachel Barr
-: Georgetown University  
 <br>
 
-Hellen Egger
-: New York University  
+<div>
+<table width="100%">
+<tr>
+<td valign="top" width="45%">
+<b> Internal advisors </b>
+
+Rachel Barr
+: Georgetown University  
 <br>
 
 Kathy Hirsch-Pasek
 : Temple University  
 <br>
 
-David Hunter
-: Penn State University  
-<br>
-
 Jeff Lockman
-: Tulane University  
+: Tulane  
 <br>
 
 Laura Prosser
-: Children’s Hospital of Philadelphia  
+: Children’s Hospital of Philadelphia   
 <br>
 
 Meredith Rowe
-: Harvard University  
+: Harvard   
 <br>
 
 Dan Yurovsky
-: Carnegie Mellon University  
+: CMU
+<br>
 
+</td>
+<td width="10%">
+</td>
+<td valign="top" width="45%">
+<b> External advisors </b>
+
+Helen Egger
+: NYU  
+<br>
+_Helen Egger is the Chair of NYU’s Department of Child and Adolescent Psychiatry and has expertise in social-emotional development, naturalistic home studies, and apps for collecting parent report and live data.  _
+<br><br>
+
+David Hunter
+: Penn State  
+<br>
+_David Hunter is Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/).  _
+</td>
+</tr>
+</table>
+</div>
 
 
