@@ -30,6 +30,18 @@ This site is hosted in [GitHub](http://github.com/PLAY-behaviorome/) and is gene
 For information about using R Markdown to generate websites, see <http://rmarkdown.rstudio.com/rmarkdown_websites.html>.
 For formatting information, see <http://rmarkdown.rstudio.com/html_document_format.html>.
 
-```{r, child="_sessioninfo.Rmd"}
+<!-- ```{r child='_sessioninfo.Rmd'}``` -->
+
+<details>
+<summary>Information about this R session (click here)</summary>
+<p>
+
+```{r}
+sessionInfo()
 ```
+
+</p>
+</details>
+
+
 
