@@ -2,6 +2,11 @@ p, td {
   font-size: 110%;
 }
 
+p-small {
+  font-size: 100%;
+  line-height: 150%;
+}
+
 a {
   color: #669966;
 }
@@ -23,6 +28,19 @@ say {
 say:before { content: open-quote; }
 say:after  { content: close-quote; }
 
+.bluebg { 
+  background-color:#e6f0ff; 
+  border-radius: 5px; 
+  padding: 10px;
+}
+
+.play-table td { 
+		vertical-align: middle; 
+		padding: 5pt 5pt 5pt 5pt; 
+		border: solid #cccccc 1pt; 
+		font-size: 10pt; 
+		font-family: Arial; 
+	}
 
 .videobuttons {
   display: inline-block;
