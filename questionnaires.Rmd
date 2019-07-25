@@ -1,42 +1,142 @@
----
-title: ""
-output:
-  html_document:
-    toc: true
-    toc_depth: 2
-    toc_float: true
-    number_sections: true
----
 
-<img src="img/PLAY-logo.png" height=100px/>
+#### Before Home Visit (Over the phone with mom)
 
-# Pre-visit questions
+<table cellspacing="0" cellpadding="0" class="play-table">
+<col width="145">
+<col width="77">
+<col width="200">
+<tr>
+<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
+<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
+<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Preliminary</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+</table>
 
-```{r child = 'phone_questionnaire.Rmd'}
-```
+<br><br>
 
-# Home visit questions
+#### During Home Visit (In person with mom)
 
-```{r child = 'toys_pets.Rmd'}
-```
+<table cellspacing="0" cellpadding="0" class="play-table">
+<col width="145">
+<col width="77">
+<col width="200">
+<tr>
+<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
+<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
+<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" rowspan="6" width="145">Language<br>
+(MCDI) </td>
+<td style="border: solid #cccccc 1pt;" rowspan="3" width="77">12mo</td>
+<td style="border: solid #cccccc 1pt;" rowspan="3" width="225">
+<p-small><span style="color: #4a86e8; ">English only</span></p-small><br>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small><br>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small><br>
+</td>
+</tr>
+<tr> </tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" rowspan="3">18 &amp; 24mo</td>
+<td style="border: solid #cccccc 1pt;" rowspan="3" width="225">
+<p-small><span style="color: #4a86e8; ">English only</span></p-small><br>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small><br>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small><br>
+</td>
+</tr>
+<tr> </tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Health&nbsp;</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Temperament<br>(Rothbart)</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Locomotor Milestones</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Media Use</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Pets</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Division of labor</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
+</td>
+</tr>
+<tr> </tr>
+</table>
 
-```{r child = 'media.Rmd'}
-```
+<br><br>
 
-```{r child = 'ecbq.Rmd'}
-```
 
-```{r child = 'home.Rmd'}
-```
+#### After Home Visit (Experimenter alone)
 
-```{r child = 'gender.Rmd'}
-```
+<table cellspacing="0" cellpadding="0" class="play-table">
+<col width="145">
+<col width="77">
+<col width="200">
+<tr>
+<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
+<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
+<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
+</tr>
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Lists</td>
+<td style="border: solid #cccccc 1pt;" >All ages</td>
+<td style="border: solid #cccccc 1pt;" width="225">
+<p-small>Clean-up notes</p-small><br>
+<p-small>Housing checklist</p-small>
+</td>
+</tr>
+<tr> </tr>
+</table>
 
-```{r child = 'locomotor_milestones.Rmd'}
-```
-
-```{r child = 'eclsb_health.Rmd'}
-```
-
-```{r child = 'typical_day.Rmd'}
-```
