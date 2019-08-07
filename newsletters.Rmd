@@ -27,9 +27,11 @@ output:
 
 <table>
 <tr>
-<td><img src="img/newsletter01.png" width="150"><br><br><br></td>
+<td>
+<!-- <img src="img/newsletter01.png" width="150"><br><br><br> -->
+</td>
 <td style="padding:10px">
-**2019 July**</br>
+[Issue 1, 2019 July](newsletters/newsletter_201907_1.pdf) </br>
 </td>
 </tr>
 
