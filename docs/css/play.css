@@ -28,6 +28,10 @@ say {
 say:before { content: open-quote; }
 say:after  { content: close-quote; }
 
+indent {
+  padding-left:2em;
+}
+
 .bluebg { 
   background-color:#e6f0ff; 
   border-radius: 5px; 

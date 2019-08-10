@@ -64,7 +64,6 @@ You will give me a walk-through of your home that I will record on video to get 
 Do you have any questions? Let’s start with reading and signing the consent.</say>
 <br><br>
 
-
 ## 2. Consent to participate, permission to share
 
 Ask mom to review the following forms. When finished, give her a moment to look over each form and sign them.
@@ -219,6 +218,7 @@ All questionnaires should be administered in the primary language of the mom.
 
 ```{r child = 'questionnaires.Rmd'}
 ```
+<br><br>
 
 ## 7. Visit wrap-up
 
@@ -230,8 +230,6 @@ All questionnaires should be administered in the primary language of the mom.
 
 
 # Clean up and Upload 
-
-<we need detailed instructions for these>
 
 When you arrive back at the lab:
 
