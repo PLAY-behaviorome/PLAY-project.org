@@ -197,24 +197,6 @@ Say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys.
 
 <!-- * [List of Questions on 24-mo Home Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/72493) -->
 
-**Please note that presentation and format will differ in the app.**
-
-<insert 4 videos here>
-
-<!-- Need to rewrite the following section-->
-
-### 6.1  General Questionnaire
-
-Say: <say>I have some questions for you…” [Only give introduction to the sections that need introduction (i.e., MCDI and ECBQ)].</say>
-
-<div class = "bluebg">
-All questionnaires should be administered in the primary language of the mom.
-</div>
-
-
-* Give mom her own copy of the MCDI and the ECBQ form along for her to follow along easily
-* Set up camera to record the questionnaires. You'll need to change the battery on the camera to ensure sufficient power.
-* Sit next to the mom so that the camera can capture both you and the mom
 
 ```{r child = 'questionnaires.Rmd'}
 ```

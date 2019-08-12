@@ -1,4 +1,105 @@
 
+<insert 4 videos here>
+
+<div class = "bluebg">
+All questionnaires should be administered in the primary language of the mom.
+</div>
+
+<br>
+
+You will fill out all questionnaires on your computer or your tablet using the Kobotoolbox app. Here are the 8 questionnaires you will use, in the following order:
+
+<table cellspacing="0" cellpadding="0" class="play-table" width="50%">
+<tr>
+<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
+<td style="border: solid #cccccc 1pt;" ><p-small><span style="color: #bbbbbb;"><b>When to use</b></span></p-small></td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Demographics</td>
+<td style="border: solid #cccccc 1pt;" ><p-small><span style="color: #bbbbbb; ">Before Home Visit <br>(Over the phone with mom)</span></p-small></td>
+</td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Language (MCDI) <br>
+Health  <br>
+Temperament (Rothbart)  <br>
+Locomotor Milestones  <br>
+Media Use  <br>
+Pets  <br>
+Division of labor  
+</td>
+<td style="border: solid #cccccc 1pt;"><span style="color: #bbbbbb;">During Home Visit <br> (In person with mom)</span></p-small></td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;"> Checklist (not a questionnaire) </td>
+<td style="border: solid #cccccc 1pt;"> <span style="color: #bbbbbb;"> After Home Visit <br> (Experimenter alone)</span></p-small></td>
+</tr>
+<tr> </tr>
+</table>
+
+<br>
+
+In case of technical issues (and to have a paper copy of all questionnaires during home visits), please download and use the questionnaires from below. For printing, each of the above forms are bundled into sets for different age and language combinations. (Please note that presentation and format will differ from the Kobotoolbox app.) 
+
+<table cellspacing="0" cellpadding="0" class="play-table" width="50%">
+<tr>
+<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
+<td style="border: solid #cccccc 1pt;" ><b>Language</b></td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >12 months</td>
+<td style="border: solid #cccccc 1pt;">
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189909"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a>
+<br>
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189908"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
+<br>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a>
+<br>
+</td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >18 months</td>
+<td style="border: solid #cccccc 1pt;">
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189911"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189910"><p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a><br>
+</td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >24 months</td>
+<td style="border: solid #cccccc 1pt;">
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189912"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189913"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a><br>
+</td>
+</tr>
+<tr> </tr>
+</table>
+
+<br>
+
+When you administer the questionnaires during home visit:
+
+* Give mom her own copy of the MCDI and the ECBQ form along for her to follow along easily
+* Set up camera to record the questionnaires. You'll need to change the battery on the camera to ensure sufficient power.
+* Sit next to the mom so that the camera can capture both you and the mom
+
+
+<!--
+
 #### Before Home Visit (Over the phone with mom)
 
 <table cellspacing="0" cellpadding="0" class="play-table">
@@ -139,4 +240,4 @@
 </tr>
 <tr> </tr>
 </table>
-
+-->
