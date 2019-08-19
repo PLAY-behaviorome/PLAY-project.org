@@ -1,5 +1,11 @@
 
-<insert 4 videos here>
+### 6.1 Setting up for Questionnaires 
+* Position yourself in front of mom, with the paperwork between you.  
+* Set up the tripod to capture both you and mom. You will need to change the battery on the camera to ensure sufficient power.
+* Give mom a copy of the colored answer scales.  
+* Give mom a copy of MCDI and Rothbart so that she can follow along when needed.  
+
+### 6.2 Questionnaires
 
 <div class = "bluebg">
 All questionnaires should be administered in the primary language of the mom.
@@ -51,7 +57,7 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 <table cellspacing="0" cellpadding="0" class="play-table" width="50%">
 <tr>
 <td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
-<td style="border: solid #cccccc 1pt;" ><b>Language</b></td>
+<td style="border: solid #cccccc 1pt;" >&emsp; <b>Language</b></td>
 </tr>
 
 <tr> </tr>
@@ -91,12 +97,63 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 
 <br>
 
-When you administer the questionnaires during home visit:
 
-* Give mom her own copy of the MCDI and the ECBQ form along for her to follow along easily
-* Set up camera to record the questionnaires. You'll need to change the battery on the camera to ensure sufficient power.
-* Sit next to the mom so that the camera can capture both you and the mom
+### 6.3 Permission to share - signing Databrary form  
+* Be sure to continue video recording while sigining the Databrary form.
+* Explain about Databrary and the Databrary Release Language form asking for consent to participate in the study.
+* When finished, give mom a moment to look over each form and sign them.
+* Databrary form asking for permission to share videos and metadata.
+* Here are videos that depict how to ask for permission to share and a sample script. 
+* Make sure to get mom’s signature on the appropriate fields of the Databrary release form
 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12mc">
+Video - 12m crawler
+</button>
+</div>
+<div id="collection-homevisit-questionnaire-12mc" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/1861741,4402904/asset/174777/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12mw">
+Video - 12m walker
+</button>
+</div>
+<div id="collection-homevisit-questionnaire-12mw" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/1861741,4402904/asset/174777/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-18m">
+Video - 18 month old
+</button>
+</div>
+<div id="collection-homevisit-questionnaire-18m" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/6586017,8124556/asset/174854/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-24m">
+Video - 24 month old
+</button>
+</div>
+<div id="collection-homevisit-questionnaire-24m" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/8125556,11138420/asset/174884/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
 
 <!--
 

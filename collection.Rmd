@@ -118,6 +118,8 @@ With camera in hand (and still recording), walk over to where the tablet was pla
 
 Say: <say>Now, we would like to see the space that [CHILD] gets to explore throughout the day. Please walk me through your home as I follow with a camera, and take measurements of the spaces. As we walk around, please show me where you keep any objects — toys, books, sippy cups, anything like that — that [CHILD] might interact with regularly. Please show me where you keep his/her clothes to give us an idea of the kinds of things he/she wears.</say>
 
+Ensure that all of experimenter's personal items, recording equipment, yoga mat and toys for structured play are stored out of sight.  
+
 Video capture tips:  
 
 - Watch recording through camcorder screen to ensure that the view is not blurry or shaky  
@@ -184,7 +186,8 @@ Say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys.
 
 * If the child is playing with a different toy before the recording, ask mom if she can put the toy away.
 * Hand tote bag with toys to mom.
-* Record so that the child and mother’s entire body and hands are captured.
+* Record so that the child and mother’s entire bodies - faces, eyes, and hands - are captured. If child stands up, make sure to capture the feet. If you are in a position from which you cannot capture the full face and both eyes, position yourself to capture a profile view.
+* If child and mom are separated at any point, focus camera on child.
 * Use timer on camera to time engagement.
 * After 5 minutes, say “Great job! We can now move on to the questionnaires.”
 * If the child is still playing with the toys after 5 minutes, let the child play and continue on to the questionnaires.
@@ -205,11 +208,9 @@ Say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys.
 ## 7. Visit wrap-up
 
 * Give mom the payment
-* Get mom's signature on the Databrary release form
-* Ensure that mom has copies of the consent forms
+* Ensure that mom has copies of the consent and Databrary forms
 * Collect and pack all equipment and paperwork from the house
 * Thank mom for letting us come to her home!
-
 
 # Clean up and Upload 
 
@@ -220,3 +221,10 @@ When you arrive back at the lab:
 * Upload videos and decibel data to Databrary.
 * Wash all toys and equipment thoroughly. Wipe down yoga mat. Rinse dish set in bleach-water.
 
+
+
+* Clean up
+    * When you arrive back at the lab, wash all toys and equipment thoroughly. 
+    * Wipe down yoga mat. Rinse dish set in bleach-water. 
+    * Check over all questionnaire responses and hit Submit.
+  * Upload
