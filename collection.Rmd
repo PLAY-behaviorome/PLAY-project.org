@@ -223,7 +223,17 @@ Clean up:
   * Wipe down yoga mat. 
   * Rinse dish set in bleach-water.
 
+<<<<<<< HEAD
 Upload:
 * Complete housing checklist and clean-up notes sections of the questionnaire battery.
 * Check through all questionnaire responses and hit Submit.
 * Upload videos and decibel data to Databrary. (Uploading manual coming soon)
+=======
+
+
+* Clean up
+    * When you arrive back at the lab, wash all toys and equipment thoroughly. 
+    * Wipe down yoga mat. Rinse dish set in bleach-water. 
+    * Check over all questionnaire responses and hit Submit.
+  * Upload
+>>>>>>> 119ff3a8dc330a404f426aedc2a024f67593f32d
