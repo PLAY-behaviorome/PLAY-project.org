@@ -50,5 +50,75 @@ Below is the project-wide workflow. The PLAY team will provide training, quality
 <br>
 <br>
 
+# Participants overview
 
+The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This page contains detailed help for the recruitment of participants. Click here for information about the <a href="collection.html"><font color="#5B9BD5"><b> data collection </b></font></a> and <a href="collection.html#clean_up_and_upload"><font color="#5B9BD5"><b> data upload </b></font></a> processes.
+
+PLAY aims to set new standards for conducting open, transparent, and reproducible behavioral science by i) publishing the protocol, and ii) making extensive use of video exemplars to demonstrate phenomena and illustrate behavioral codes. For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to [Databrary](http://databrary.org). To register for access, visit <http://databrary.org/register>.
+
+Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login) to view embedded video examples in this webpage and gain access to phone and home questionnaires.  
+
+<br>
+
+# Participant Sampling
+
+PLAY will produce a widely varied and rich set of data, most of which will be openly shared with the research community at the end of the five-year NIH grant period in late 2023. Infants' natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, SES, maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.  
+
+## Inclusion/Exclusion Criteria
+
+Although PLAY endeavours to sample as much of the rich variations that the collection sites present, based on conversations with the launch group and to ensure a sufficient sample size, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must: 
+
+- be 12, 18, or 24 months of age (+/- 1 week)
+- be a single child (i.e., no living siblings)
+- come from English or Spanish monolingual or bilingual homes (i.e., no other language exposure in the home)
+- be born full-term (37-43 weeks) without known disabilities
+- come from two-parent or single-parent households
+
+Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and infant are present.
+
+## Collection sites {.tabset}
+
+Data will come from 30 geographically diverse sites across the US representing rural, suburban, and urban communities with different races, ethnicities, and socio-economic status, including English- and Spanish-speaking households.  
+
+The aim is to collect data that approximate county-level demographic characteristics as reflected in U.S. Census data.
+
+
+### Map
+
+<img src="img/PLAY-site-map-1.png"/>
+
+### Racial composition
+
+<img src="img/race-by-county-all-regions-plot-1.png"/>
+
+### Socio-economic status
+
+<img src="img/per-capita-income-plot-1.png"/>
+
+### Education
+
+<img src="img/ed-attain-bars-plot-1.png"/>
+
+### Languages spoken
+
+<img src="img/spanish-speaking-plot-1.png"/>
+
+## Video
+
+All data collections will be recorded on video.
+Parents will be asked for their permission to share the video recordings and other data with the research community.
+When that permission is granted the videos and related data will be shared with the research community via [Databrary](http://databrary.org):
+
+- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2016). PLAY Project: NICHD Workshop (2016-12-16). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.254.
+- Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 23, 2018 from https://nyu.databrary.org/volume/444.
+- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2018). Play & Learning Across a Year (PLAY) Project Summit (2018-06-29 Philadelphia). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.724
+
+## Parent-report (questionnaire) data
+
+PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data.
+
+The full set of self-report questions can be found [here](questionnaires.html).
+A database/code book of the questionnaire items useful for item-level queries can be found in a Googlesheet [here](https://docs.google.com/spreadsheets/d/1pVOM2naRS_STCXx4nkaRDLO6_V5kGhFaduRfwsv7cnI/edit?usp=sharing).
+The [`googlesheets`](https://github.com/jennybc/googlesheets) R package makes it easy to interact with data in this format.
+We expect to migrate to successors to this package.  
 

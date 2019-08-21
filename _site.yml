@@ -6,13 +6,13 @@ navbar:
       href: people.html
     - text: "overview"
       href: overview.html
-    - text: "recruitment"
-      href: recruitment.html
+#    - text: "recruitment"
+#      href: recruitment.html
     - text: "collection"
       href: collection.html
     - text: "coding"
       href: coding.html
-    - text: "qa"
+    - text: "quality"
       href: qa.html
     - text: "rationale"
       href: rationale.html
