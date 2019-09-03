@@ -13,7 +13,7 @@ navbar:
     - text: "coding"
       href: coding.html
     - text: "quality"
-      href: qa.html
+      href: quality.html
     - text: "rationale"
       href: rationale.html
     - text: "faq"
