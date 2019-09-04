@@ -1,5 +1,10 @@
 ---
 title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 2
+    toc_float: true
 ---
 
 <style>
@@ -18,6 +23,6 @@ title: ""
 
 <br>
 
+<img src="img/PLAY-logo.png" width="400" />
 
-Coming soon! 
-
+Coming soon!

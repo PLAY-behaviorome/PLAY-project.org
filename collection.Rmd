@@ -7,8 +7,6 @@ output:
     toc_float: true
 ---
 
-<img src="img/PLAY-logo.png" width="400" />
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 source("R/write_video_clip_html.R")
