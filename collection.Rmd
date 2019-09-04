@@ -18,6 +18,8 @@ In this format:
 https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true
 -->
 
+<br>
+
 # Collection overview
 
 The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This page contains detailed help for the data collection and upload process. Click here for information about <a href="participants.html"><font color="#5B9BD5"><b> participant recruitment </b></font></a> .

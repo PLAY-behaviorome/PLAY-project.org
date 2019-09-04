@@ -7,7 +7,7 @@ output:
     toc_float: true
 ---
 
-<img src="img/PLAY-logo.png" width="400" />
+<br>
 
 
 ```{r child = 'faq-recruitment.Rmd'}
