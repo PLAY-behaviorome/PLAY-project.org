@@ -68,7 +68,7 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 <br>
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189908"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
 <br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a>
 <br>
 </td>
 </tr>
@@ -79,7 +79,7 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189911"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189910"><p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a><br>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
 </td>
 </tr>
 
@@ -89,7 +89,7 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189912"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189913"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small></a><br>
+&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
 </td>
 </tr>
 <tr> </tr>
