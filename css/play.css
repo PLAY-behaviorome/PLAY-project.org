@@ -22,11 +22,20 @@ h5 {
 say {
   font-size: 90%;
   font-style: italic;
-  color:#669966;
+  color:#4a86e8;
   quotes: "“" "”" "‘" "’";
 }
 say:before { content: open-quote; }
 say:after  { content: close-quote; }
+
+say-es {
+  font-size: 90%;
+  font-style: italic;
+  color:#ff7f40;
+  quotes: "“" "”" "‘" "’";
+}
+say-es:before { content: open-quote; }
+say-es:after  { content: close-quote; }
 
 indent {
   padding-left:2em;
