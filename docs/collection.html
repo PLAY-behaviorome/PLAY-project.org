@@ -438,6 +438,34 @@ https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true
 </div>
 <div id="participant-recruitment" class="section level1">
 <h1>Participant Recruitment</h1>
+<!-- Indenting this code will mess up the output - markdown seems to want to read indented code as textboxes -->
+<!-- When knitting, make sure to "open in browswer" to see video - need to be logged into DB!! -->
+<!-- 
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-english">
+English instructions
+</button> 
+</div> 
+THE FOLLOWING WILL SHOW/HIDE WHEN THE ABOVE BUTTON IS CLICKED
+<div id="collection-scheduling-initialrecruitingvm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+PLACE TEXT HERE
+
+VIDEO COMES NEXT:
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+</div>
+-->
 <div id="scheduling-visit" class="section level2">
 <h2>1. Scheduling visit</h2>
 <p><em>To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the <a href="link%20to%20questionnaires">participant paperwork</a></em></p>
@@ -447,19 +475,14 @@ https://nyu.databrary.org/volume/876/slot/35422/-
 -->
 <div id="initial-recruiting-phone-call-option-13" class="section level3">
 <h3>1.1 Initial recruiting phone call (option 1/3)</h3>
-<!-- Indenting this code will mess up the output - markdown seems to want to read indented code as textboxes -->
-<!-- When knitting, make sure to "open in browswer" to see video - need to be logged into DB!! -->
+<!-- Start English instructions -->
 <div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall">
-Video
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-english">
+English instructions
 </button>
 </div>
-<div id="collection-scheduling-initialrecruitingcall" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
-Your browser does not support html5 video. </video>
-</div>
+<div id="collection-scheduling-initialrecruitingcall-english" class="collapse" aria-expanded="false" style="height: 0px;">
+<p>(See video at the end of the script)</p>
 <p><say>Hi, may I speak with [MOM]? My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we’re looking at how moms and children interact with each other. We’d be visitng your home and you’d receive $25 at the end of the visit for your participation. Can we tell you about it? First, I have some questions to see if you and [CHILD] qualify for the study.</p>
 <p><say> Does [CHILD]have any siblings?</say></p>
 <ul>
@@ -509,14 +532,27 @@ Your browser does not support html5 video. </video>
 </ul></li>
 </ul>
 <p><say>So I have you and [CHILD] for our study on [DATE] at [TIME]. We’ll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</say></p>
-<p><br></p>
 <div class="videobuttons">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-spanish">
-Español
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-evid">
+Video
 </button>
 </div>
-<a> You can toggle this button to show/hide instructions in Spanish. </a>
+<div id="collection-scheduling-initialrecruitingcall-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<!-- End English instructions -->
+<!-- Start Spanish instructions -->
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-spanish">
+Spanish instructions
+</button>
+</div>
 <div id="collection-scheduling-initialrecruitingcall-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+<p>(Ver video al final del guión)</p>
 <p><say-es>Hola, ¿puedo hablar con [MAMÁ]? Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB] por un estudio en el cual estamos observando como madres e hijos interactúan en el hogar. Lo visitaríamos en su hogar y usted recibiría $25 por su participación. ¿Puedo contarle sobre el estudio? Primero tengo unas preguntas para ver si usted y [NIÑO] califican para participar en este estudio.</say-es></p>
 <p><say-es>¿[NIÑO] tiene hermanos? </say-es></p>
 <ul>
@@ -567,25 +603,74 @@ Español
 </ul></li>
 </ul>
 <p><say-es> Entonces tenemos agendada la visita para el día [FECHA] a las [HORA]. La llamaremos el día anterior /el viernes anterior (si la visita es un lunes) para confirmar que aun están disponibles para a la visita. Excelente, que tenga un buen día!</say-es></p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-svid">
+Video
+</button>
 </div>
+<div id="collection-scheduling-initialrecruitingcall-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43822519/asset/193913/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<!-- End Spanish instructions -->
+<p><br></p>
 </div>
 <div id="initial-recruiting-voicemail-option-23" class="section level3">
 <h3>1.2 Initial recruiting voicemail (Option 2/3)</h3>
 <p>If you reach the family’s voicemail, please leave the following message:</p>
-<p><say>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</say></p>
 <div class="videobuttons">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvoicemail-spanish">
-Español
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-english">
+English script
 </button>
 </div>
-<a> You can toggle this button to show/hide instructions in Spanish. </a>
-<div id="collection-scheduling-initialrecruitingvoicemail-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+<div id="collection-scheduling-initialrecruitingvm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+<p><say>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</say></p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-spanish">
+Spanish script
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
 <p><say-es>Hola, este mensaje es para [MAMÁ]. Mi nombre es [NOMBRE] y estoy llamando de [LAB]. Estoy llamando porque tenemos un estudio para niños de [12 / 18 / 24]- meses y [NIÑO] tiene la edad perfecta. Usted recibiría $[AMOUNT] por participar en este estudio y si usted esta interesado en saber más sobre este estudio, por favor llámenos de vuelta. Nuestro número de teléfono es [XXX-XXX-XXXX]. ¡Gracias y esperamos su llamada!</say-es></p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-svid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
 </div>
 </div>
 <div id="initial-recruiting-email-option-33" class="section level3">
 <h3>1.3 Initial recruiting email (Option 3/3)</h3>
 <p>If you will be contacting the family over email, you may use the following template:</p>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingemail-english">
+English template
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingemail-english" class="collapse" aria-expanded="false" style="height: 0px;">
 <pre><code>Dear [MOM],
   
 I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
@@ -595,6 +680,24 @@ If you are interested in participating, would like more information, or have any
 
 Thank you, 
 [LAB]</code></pre>
+</div>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingemail-spanish">
+Spanish template
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingemail-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+<pre><code>Dear [MOM],
+  
+I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
+
+For this study, we are interested in learning about babies&#39; natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 3 hours, and you will receive a $50 Visa gift card at the end of the session.
+If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+
+Thank you, 
+[LAB]</code></pre>
+</div>
+<p><br></p>
 <p><br></p>
 </div>
 </div>
@@ -619,6 +722,13 @@ Thank you,
 <h2>3. Confirming a visit (day before the visit)</h2>
 <div id="confirmation-phone-call-option-12" class="section level3">
 <h3>3.1 Confirmation phone call (Option 1/2)</h3>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-english">
+English instructions
+</button>
+</div>
+<div id="collection-confirming-phone-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
 <p><say>Hi, may I speak with [MOM]? My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE]. Does this time and date still work for you?</say></p>
 <ul>
 <li>→ <em>If yes:</em>
@@ -637,11 +747,82 @@ Thank you,
 </ul></li>
 <li>→ <em>If no:</em> rechedule, make sure that child will still be within age range</li>
 </ul>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-evid">
+Video
+</button>
+</div>
+<div id="collection-confirming-phone-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42651425,42684492/asset/193895/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-spanish">
+Spanish instructions
+</button>
+</div>
+<div id="collection-confirming-phone-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
+<p>PLACE TEXT HERE</p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-svid">
+Video
+</button>
+</div>
+<div id="collection-confirming-phone-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42743034,42777602/asset/193901/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
 </div>
 <div id="confirmation-voicemail-option-22" class="section level3">
 <h3>3.2 Confirmation voicemail (option 2/2)</h3>
 <p>If you reach the family’s voicemail, please leave the following message:</p>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-english">
+English script
+</button>
+</div>
+<div id="collection-confirming-vm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
 <p>“Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling about the home study visit we have scheduled for you and [CHILD] on [DATE] at [TIME]. Please call us back and let us know if that time and date still you works for you. Our phone number is [XXX- XXX-XXXX]. Thank you and we hope to hear from you soon!”</p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-evid">
+Video
+</button>
+</div>
+<div id="collection-confirming-vm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42685304,42712365/asset/193897/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-spanish">
+Spanish script
+</button>
+</div>
+<div id="collection-confirming-vm-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
+<p>PLACE TEXT HERE</p>
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-svid">
+Video
+</button>
+</div>
+<div id="collection-confirming-vm-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
 </div>
 <div id="confirmation-email" class="section level3">
 <h3>3.3 Confirmation email</h3>
@@ -659,56 +840,6 @@ We look forward to seeing you tomorrow! Please let us know if this appointment s
 Thank you, 
 [LAB]</code></pre>
 <p><br></p>
-<!--
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mc">
-12m crawler
-</button>
-</div>
-<div id="collection-scheduling-confirmingvisit-12mc" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/0,440000/asset/174038/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-12mw">
-12m walker
-</button>
-</div>
-<div id="collection-scheduling-confirmingvisit-12mw" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/0,381000/asset/174038/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-18m">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;18m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</button>
-</div>
-<div id="collection-scheduling-confirmingvisit-18m" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/asset/174040/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-confirmingvisit-24m">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;24m&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-</button>
-</div>
-<div id="collection-scheduling-confirmingvisit-24m" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
--->
 </div>
 </div>
 <div id="preparing-for-visit" class="section level2">
@@ -841,16 +972,6 @@ Participant payment
 <li>Avoid strong perfumes and noisy jewelry. The idea is to blend into the background as much as possible.</li>
 <li>Be prepared to plan your bathroom breaks around the visit (it will be approx 2.5 hrs long).</li>
 </ol>
-<!--
-- Camera, SD card and extra battery <img src="img/camera-sdcard-battery.png">
-- Mic <img src="img/mic.png">
-- Laser Measure <img src="img/lasermeasure.png">
-- Dish set, doll, and tote bag <img src="img/dishset-doll-tote.png">
-- Yoga mat <img src="img/yogamat.png">
-- Tablet with app for questionnaires, study consent form, Databrary sharing release form, and decibel meter mic <img src="img/tablet-with-everything.png">
-- Participant payment 
-- Paper copies of all questionnaires, MCDI, and consent and Databrary forms in case of tablet failure
--->
 </div>
 </div>
 </div>

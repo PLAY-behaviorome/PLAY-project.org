@@ -1,0 +1,296 @@
+<!-- Indenting this code will mess up the output - markdown seems to want to read indented code as textboxes -->
+<!-- When knitting, make sure to "open in browswer" to see video - need to be logged into DB!! -->
+
+<!-- 
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-english">
+English instructions
+</button> 
+</div> 
+THE FOLLOWING WILL SHOW/HIDE WHEN THE ABOVE BUTTON IS CLICKED
+<div id="collection-scheduling-initialrecruitingvm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+PLACE TEXT HERE
+
+VIDEO COMES NEXT:
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+</div>
+-->
+
+## 1. Scheduling visit
+
+*To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [participant paperwork](link to questionnaires)*
+
+<!--
+List of videos in volume (protocol materials):
+https://nyu.databrary.org/volume/876/slot/35422/-
+-->
+
+### 1.1 Initial recruiting phone call (option 1/3)
+
+<!-- Start English instructions -->
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-english">
+English instructions
+</button> 
+</div> 
+
+<div id="collection-scheduling-initialrecruitingcall-english" class="collapse" aria-expanded="false" style="height: 0px;">
+(See video at the end of the script)
+
+<say>Hi, may I speak with [MOM]?
+My name is [CALLER NAME] and I’m calling from [LAB] about a home study where we're looking at how moms and children interact with each other. We'd be visitng your home and you'd receive $25 at the end of the visit for your participation. Can we tell you about it?
+First, I have some questions to see if you and [CHILD] qualify for the study. 
+
+<say> Does [CHILD]have any siblings?</say>
+
+- → *If yes: **end call**.* <say>In this study, we are currently looking for only-children. Would it be alright if we contacted you for other studies in the future?</say>
+- → *If no: continue*
+
+<say>What language(s) do you speak to [CHILD]?</say>
+
+- → *If not ENGLISH or SPANISH: **end call**.* <say>To control for differences in communication, we are looking for families who speak mainly English or Spanish. Would it be alright if we contacted you for other studies in the future?</say>
+- → *If mainly English/Spanish: continue*
+
+<say>Was [CHILD] born on his/her due date?</say> (If not: <say>How many weeks and days early/late was he/she?</say>)
+
+- → *If more than 4 weeks early: **end call**.* <say>In this study, we are currently looking for children born on term. Would it be alright if we contacted you for other studies in the future?<say>
+- → *If born on term (37-41 weeks): continue*
+
+<say>Has [CHILD] been diagnosed with any disability (cognitive, auditory, vision, motor)?</say> 
+
+- → *If yes: **end call**.* <say>In this study, we are looking for typically developing children. Would it be alright if we contacted you for other studies in the future?</say> 
+- → *If no: continue*
+
+<say>For this study, we are interested in learning about children’s natural, everyday experiences in their homes. A researcher will visit you and [CHILD] in your home for about 2.5 hours. You and [CHILD] will be video recorded for 1 hour as you go about your day, followed by questions on [CHILD]'s skills and routines. We will ask you to take us through your home as we record the environment. For your participation, we will compensate you with $25 at the end of the session.
+The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers. The purpose is to share the data with experts in the field so that scientists can learn more about infant development.
+Does this sound like something you would be interested in participating in with [CHILD]?</say>
+
+- → *If no to study or to sharing video on Databrary: **end call** * <say>Okay, thank you. May we call you for other studies?</say>
+- → *If yes: continue* 
+
+<say>Great! Because we are interested in mother-infant routines, we'd like to find a time and date when we can observe just <span style="text-decoration:underline">**you and [CHILD]**</span> at home. It would be great if we can schedule a time that is not during a typical mealtime and when [CHILD] is usually awake. Is there a convenient time and day that works best for you that would be within these criteria?</say>
+
+- → *If the date they are available puts child out of age range: **end call** * <say>For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then?</say>
+- → *If dates are available when child is still within eligible age range: continue*
+
+<say>Before the study, we have a few questions that we'd like to ask. It should only take about 5 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
+
+- → *If ready to answer now, continue*:
+    - On your tablet, open Kobo toolbox and start a new questionnaire set
+    - Fill out participant information at top of new session
+    - “Save as Draft” after Phone Questionnaire and home visit questionnaires
+    - Only hit “Submit” after filling out clean-up notes back in lab
+    - [List of questions on the Phone Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
+    - *Please note that presentation and format will differ in the app.*
+- → *If not available now* <say>When will be a good time to call back about the questions?</say>
+    - If another time work, schedule a 5-minute call to complete phone questionnaire
+    - If difficult to find a time up to 2 days before visit, complete phone questionnaire when confirming visit
+
+<say>So I have you and [CHILD] for our study on [DATE] at [TIME]. We'll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</say>  
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-evid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/14765/0,79273/asset/64898/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+</div>
+<!-- End English instructions -->
+
+<!-- Start Spanish instructions -->
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-spanish">
+Spanish instructions
+</button> 
+</div>
+
+<div id="collection-scheduling-initialrecruitingcall-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+(Ver video al final del guión)
+
+<say-es>Hola, ¿puedo hablar con [MAMÁ]? Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB] por un estudio en el cual estamos observando como madres e hijos interactúan en el hogar. Lo visitaríamos en su hogar y usted recibiría $25 por su participación. ¿Puedo contarle sobre el estudio? Primero tengo unas preguntas para ver si usted y [NIÑO] califican para participar en este estudio.</say-es> 
+
+<say-es>¿[NIÑO] tiene hermanos? </say-es> 
+
+- → En caso de si: finalice la llamada. <say-es>Actualmente para este estudio estamos sólo incluyendo a hijos únicos. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
+- → En caso de no: continúe 
+
+<say-es>¿En que idioma(s) le habla usted a [NIÑO]?</say-es>
+
+- → Si no es INGLES o ESPAÑOL finalice la llamada. <say-es>Para controlar diferencias de comunicación, estamos buscando familias que hablen primariamente inglés o español. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
+- → Si hablan principalmente  inglés/español : continúe
+
+
+<say-es>¿Nació [NIÑO] en su fecha de termino?</say-es> (En caso de no: <say-es>Cuántas semanas y/o días antes/después de su fecha de termino nació?</say-es>)
+
+- → Si nació más de 4 semanas antes: finalice la llamada. <say-es>Actualmente para este estudio estamos buscando a niños que hayan nacido de termino. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
+- → Si nació de termino (37-41 semanas): continúe
+
+<say-es>¿Ha sido [NIÑO] diagnosticado con alguna discapacidad (cognitiva, auditiva, visual, o motora)?</say-es>
+
+- → En caso de si: finalice la llamada. <say-es>Actualmente para este estudio estamos buscando a niños con desarrollo típico. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
+- → En caso de no: continúe
+
+<say-es>En este estudio estamos interesados en aprender sobre las experiencias rutinarias que los bebés tienen en sus hogares. Un investigador lo visitará a usted y a [NIÑO] en su hogar por aproximadamente 3 horas. Lo gravaremos en video a usted y [NIÑO] por 1 hora mientras ustedes continúan con sus actividades rutinarias. A continuación, le haremos preguntas de las habilidades y rutina de [NIÑO]. También le pediremos recorrer su hogar mientras grabamos el espacio. Por su participación los compensaremos con $25 al final de la sesión. Los datos recolectados en este estudio son valiosos y serán colocados en una biblioteca privada en internet a la cual sólo tienen acceso los investigadores autorizados. El propósito es compartir los datos con expertos en el área para que los científicos puedan aprender más sobre el desarrollo infantil. ¿Le interesaría participar en este estudio con [NIÑO]?</say-es>
+
+- → En caso de no querer participar en el estudio o estar dispuesto a compartir los videos en Databrary: finalice la llamada.  
+<say-es>Bueno, gracias. ¿Podemos contactarles para otros estudios?</say-es>
+- → En caso de si: continúe.
+
+<say-es>¡Genial! Debido a que estamos interesados en las rutinas de madres e hijos, nos gustaría encontrar un día y hora en el cual podamos observar sólo a usted y [NIÑO] en su hogar. Seria bueno si pudiéramos programar la visita a una hora que no sea durante el horario de comidas y cuando [NIÑO] esta generalmente despierto. ¿Hay algún día y hora que sea conveniente para usted donde se cumplan estos criterios?</say-es>
+
+- → Si en la fecha en la cual están disponibles el bebé ya esta fuera de el rango de edad: <say-es>Para este estudio estamos interesados en estudiar grupos de edad específicas: 12-, 18, y 23- meses. ¿Estaría bien si les contactamos en XX meses para ver si [NIÑO] puede participar entonces?</say-es>
+- → Si el niño esta en el rango de edad para la fecha en la cual están disponibles: continúe
+
+<say-es>Por ultimo, tenemos un cuestionario que solo tomará 5 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
+
+- → En caso de que madre pueda responder las preguntas ahora, continúe:
+    - Abra un nuevo cuestionario en Kobo toolbox en el Tablet.
+    - Rellene la información del participante en una nueva sesión.
+    - Luego de completar el cuestionario demográfico guarde como  “sabe as draft”. 
+    - Solo oprima “submit” al completar todas las notas luego de la visita.
+    - Lista de preguntas del cuestionario demográfico.
+    - Por favor tenga presente que el formato será distinto que en la aplicación.
+- → En caso de que madre no pueda responder las preguntas en este momento, <say-es>Cuando seria un buen momento para llamarla nuevamente cuando usted tenga tiempo para responder estas preguntas?</say-es>
+    - Si puede en otro momento, programe una llamada de 5-minutos para completar el cuestionario demográfico.
+    - Si es difícil coordinar una llamada, complete el cuestionario al llamar para confirmar la visita.
+
+<say-es> Entonces tenemos agendada la visita para el día [FECHA] a las [HORA]. La llamaremos el día anterior /el viernes anterior (si la visita es un lunes) para confirmar que aun están disponibles para a la visita. Excelente, que tenga un buen día!</say-es>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-svid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43822519/asset/193913/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+</div>
+<!-- End Spanish instructions -->
+<br>
+
+
+
+
+### 1.2 Initial recruiting voicemail (Option 2/3)
+
+If you reach the family's voicemail, please leave the following message:
+
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-english">
+English script
+</button> 
+</div> 
+
+<div id="collection-scheduling-initialrecruitingvm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+<say>Hi, this message is for [MOM]. My name is [NAME] and I’m calling from [LAB]. I’m calling because we have a fun study for [12 / 18 / 24]-month-olds and [CHILD] is the perfect age. You would receive $25 for participating in the study and if you are interested in hearing more, please give us a call back. Our phone number is [XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</say> 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Video
+</button>
+</div>
+
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+</div>
+
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-spanish">
+Spanish script
+</button> 
+</div> 
+
+<div id="collection-scheduling-initialrecruitingvm-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
+<say-es>Hola, este mensaje es para [MAMÁ]. Mi nombre es [NOMBRE] y estoy llamando de [LAB]. Estoy llamando porque tenemos un estudio para niños de [12 / 18 / 24]- meses y [NIÑO] tiene la edad perfecta. Usted recibiría $[AMOUNT] por participar en este estudio y si usted esta interesado en saber más sobre este estudio, por favor llámenos de vuelta. Nuestro número de teléfono es [XXX-XXX-XXXX]. ¡Gracias y esperamos su llamada!</say-es>
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-svid">
+Video
+</button>
+</div>
+
+<div id="collection-scheduling-initialrecruitingvm-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+</div>
+
+
+### 1.3 Initial recruiting email (Option 3/3)
+
+If you will be contacting the family over email, you may use the following template:
+
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingemail-english">
+English template
+</button> 
+</div> 
+
+<div id="collection-scheduling-initialrecruitingemail-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+~~~
+Dear [MOM],
+  
+I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
+
+For this study, we are interested in learning about babies' natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 3 hours, and you will receive a $50 Visa gift card at the end of the session.
+If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+
+Thank you, 
+[LAB]
+~~~
+
+</div>
+
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingemail-spanish">
+Spanish template
+</button> 
+</div> 
+
+<div id="collection-scheduling-initialrecruitingemail-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
+~~~
+Dear [MOM],
+  
+I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
+
+For this study, we are interested in learning about babies' natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 3 hours, and you will receive a $50 Visa gift card at the end of the session.
+If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+
+Thank you, 
+[LAB]
+~~~
+
+</div>
+<br>
