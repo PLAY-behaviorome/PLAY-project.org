@@ -12,15 +12,15 @@ English instructions
 <say>Hi, may I speak with [MOM]? My name is [NAME] and I’m calling from [LAB] to confirm our visit with you and [CHILD] on [DATE]. Does this time and date still work for you?</say>
 
 - → *If yes:* 
-    - → *If phone questionnaire was not completed during initial phone call:* <say>That's great! Before the visit, I’d like to ask you a few questions. It will only take 5 minutes of your time.</say> 
+    - → *If demographic questionnaire was not completed during initial phone call:* <say>That's great! Before the visit, I’d like to ask you a few questions. It will only take 5 minutes of your time.</say> 
         - On your tablet, open Kobo toolbox and start a new questionnaire set
         - Fill out participant information at top of new session
-        - “Save as Draft” after Phone Questionnaire and home visit questionnaires
+        - “Save as Draft” after demographic questionnaire and home visit questionnaires
         - Only hit “Submit” after filling out clean-up notes back in lab
-        - [List of questions on the Phone Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
+        - [List of questions on the demographic questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
         - *Please note that presentation and format will differ in the app.*
         - Wrap up the call - <say>I will see you [date/time]. Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</say>
-    - → *If phone questionnaire has been completed:* - <say>That's great! I will see you [date/time]. Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</say>
+    - → *If demographic questionnaire has been completed:* - <say>That's great! I will see you [date/time]. Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</say>
 - → *If no:* rechedule, make sure that child will still be within age range
 
 <div class="videobuttons">
@@ -44,7 +44,14 @@ Spanish instructions
 </div> 
 <div id="collection-confirming-phone-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
 
-PLACE TEXT HERE
+<say-es>Hola, ¿puedo hablar con [MAMÁ]? Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB] para confirmar nuestra visita que tenemos agendada con usted y [NIÑO] el día [FECHA] a las [HORA]. ¿Aun están disponibles este día y hora?</say-es>
+
+- → En caso de si:
+o   Si el cuestionario demográfico no fue completado en la llamada inicial: ¡Excelente! Antes de la visita nos gustaría hacerle algunas preguntas. Esto solo tomara 5 minutos.
+§  En el Tablet o computadora, abra un nuevo cuestionario demográfico en Kobo toolbox.
+§  Al finalizar – Entonces nos vemos el [FECHA] a las [HORA]. Solo como recordatorio, los datos recolectados en nuestra visita serán compartidos en una biblioteca on-line donde sólo tienen acceso los investigadores autorizados como el profesor que dirige este laboratorio.
+§  Si el cuestionario demográfico ha sido completado en la llamada inicial: ¡Excelente! Entonces nos vemos el [FECHA] a las [HORA]. Solo como recordatorio, los datos recolectados en nuestra visita serán compartidos en una biblioteca on-line donde solo tienen acceso los investigadores autorizados como el profesor que dirige este laboratorio.
+- → En caso de no: Re-agendar la visita para otro día. Asegúrese que el niño estará dentro de la edad de inclusión para el estudio.
 
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
@@ -116,6 +123,13 @@ Video
 
 If you have the family's email address, it is always advisable to send a confirmation email. You may use the following templates:
 
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-email-english">
+English script
+</button> 
+</div> 
+<div id="collection-confirming-email-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
 ~~~
 Dear [MOM],
 
@@ -131,6 +145,15 @@ Thank you,
 [LAB]
 ~~~
 
+</div>
+
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-email-spanish">
+Spanish script
+</button> 
+</div> 
+<div id="collection-confirming-email-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
+
 ~~~
 Estimada [MAMÁ],
 
@@ -140,9 +163,10 @@ Muchas gracias por acceder a participar en nuestro estudio con [NIÑO]. Por favo
 *Hora: [HORA DE COMIENZO] - [HORA DE TÉRMINO]
 Dirección: [DIRECCIÓN]
  
-¡Esperamos verlo mañana! Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
- 
+¡Esperamos verlo mañana! Por favor le solicitamos nos confirme si aun esta disponible para nuestra visita. Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
 
 Gracias,
 [LAB]
 ~~~
+
+</div>

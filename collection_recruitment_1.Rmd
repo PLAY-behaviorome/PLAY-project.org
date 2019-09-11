@@ -90,13 +90,13 @@ Does this sound like something you would be interested in participating in with 
 - → *If ready to answer now, continue*:
     - On your tablet, open Kobo toolbox and start a new questionnaire set
     - Fill out participant information at top of new session
-    - “Save as Draft” after Phone Questionnaire and home visit questionnaires
+    - “Save as Draft” after demographic questionnaire and home visit questionnaires
     - Only hit “Submit” after filling out clean-up notes back in lab
-    - [List of questions on the Phone Questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
+    - [List of questions on the demographic questionnaire](https://nyu.databrary.org/volume/254/slot/15048/-/asset/63741)
     - *Please note that presentation and format will differ in the app.*
 - → *If not available now* <say>When will be a good time to call back about the questions?</say>
-    - If another time work, schedule a 5-minute call to complete phone questionnaire
-    - If difficult to find a time up to 2 days before visit, complete phone questionnaire when confirming visit
+    - If another time work, schedule a 5-minute call to complete demographic questionnaire
+    - If difficult to find a time up to 2 days before visit, complete demographic questionnaire when confirming visit
 
 <say>So I have you and [CHILD] for our study on [DATE] at [TIME]. We'll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</say>  
 
@@ -281,14 +281,15 @@ Spanish template
 <div id="collection-scheduling-initialrecruitingemail-spanish" class="collapse" aria-expanded="false" style="height: 0px;">
 
 ~~~
-Dear [MOM],
-  
-I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
+Estimada [MAMÁ],
 
-For this study, we are interested in learning about babies' natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 3 hours, and you will receive a $50 Visa gift card at the end of the session.
-If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+Le estamos escribiendo desde [LAB] para contarle sobre un estudio de investigación que sería ideal para [NIÑO].
 
-Thank you, 
+Para este estudio, estamos interesados en conocer las experiencias cotidianas y naturales de los niños en sus hogares – los juguetes con los que juegan y los lugares a los que van en su hogar. Un investigador lo visitará a usted y a [NIÑO] en su hogar, y ustedes serán filmados mientras realizan sus actividades diarias. Cada visita dura aproximadamente 3 horas, y usted recibirá una [$XX] por su participación.
+
+Si usted está interesada en participar, desea más información o tiene alguna pregunta, no dude en contactarnos por correo electrónico o por teléfono. Nuestro número [XXX-XXX-XXXX]. ¡Esperamos tener noticias de usted pronto!
+
+Gracias,
 [LAB]
 ~~~
 
