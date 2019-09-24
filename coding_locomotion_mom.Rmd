@@ -66,7 +66,7 @@ If you feel that you have either jumped too far back or went too far forward, ho
 Hit ENTER to create a new cell at this Onset.
 <br><br>
 Now, watch in real time to see when the mom stops moving. 
-The Offset is when the mom stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don't simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the mom is about to take another step). 
+The Offset is when the mom stops moving for at least 1 sec (the pause has to look and feel like an actual pause when you are watching in real time; don't simply end a bout of locomotion because there was a 1 sec pause, especially if it looks like the mom is about to take another step). 
 The first frame when the foot/knee stops moving or when the foot settles into its final position is the offset. The same applies to sliding steps.
 <br><br>
 To set the Offset, use the same rules for mechanics as with the Onset. 

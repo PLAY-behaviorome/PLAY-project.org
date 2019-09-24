@@ -99,202 +99,34 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 
 
 ### 6.3 Permission to share - signing Databrary form  
-* Be sure to continue video recording while sigining the Databrary form.
-* Explain about Databrary and the Databrary Release Language form asking for consent to participate in the study.
+* Be sure to continue video recording while signing the Databrary form.
+* Say: <say>The data that we collected today is incredibly valuable for researchers. We are asking for your permission to upload the videos to a secure online data library where only authorized researchers have access. There are two levels of permission – the first level is if you allow us to share the video with other researchers and the second level is for researchers to be able to show excerpts and images in presentations and conferences.
+This is a form that explains everything I just said. Because both you and [CHILD] were on the video, Please check ‘yes’ or ‘no’ for each level for yourself and for [CHILD] and sign.</say>
 * When finished, give mom a moment to look over each form and sign them.
-* Databrary form asking for permission to share videos and metadata.
-* Here are videos that depict how to ask for permission to share and a sample script. 
 * Make sure to get mom’s signature on the appropriate fields of the Databrary release form
 
 
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12mc">
-Video - 12m crawler
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-en">
+Video - English
 </button>
 </div>
-<div id="collection-homevisit-questionnaire-12mc" class="collapse" aria-expanded="false" style="height: 0px;">
+<div id="collection-homevisit-permission-en" class="collapse" aria-expanded="false" style="height: 0px;">
 <video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/1861741,4402904/asset/174777/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+<source src="https://nyu.databrary.org/slot/35422/44159321,44193632/asset/193927/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
 </video>
 </div>
 
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12mw">
-Video - 12m walker
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-sp">
+Video - Spanish
 </button>
 </div>
-<div id="collection-homevisit-questionnaire-12mw" class="collapse" aria-expanded="false" style="height: 0px;">
+<div id="collection-homevisit-permission-sp" class="collapse" aria-expanded="false" style="height: 0px;">
 <video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/1861741,4402904/asset/174777/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+<source src="https://nyu.databrary.org/slot/35422/45541640,45590222/asset/194577/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
 </video>
 </div>
 
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-18m">
-Video - 18 month old
-</button>
-</div>
-<div id="collection-homevisit-questionnaire-18m" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/6586017,8124556/asset/174854/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-24m">
-Video - 24 month old
-</button>
-</div>
-<div id="collection-homevisit-questionnaire-24m" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/8125556,11138420/asset/174884/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-<!--
-
-#### Before Home Visit (Over the phone with mom)
-
-<table cellspacing="0" cellpadding="0" class="play-table">
-<col width="145">
-<col width="77">
-<col width="200">
-<tr>
-<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
-<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
-<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Preliminary</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-</table>
-
-<br><br>
-
-#### During Home Visit (In person with mom)
-
-<table cellspacing="0" cellpadding="0" class="play-table">
-<col width="145">
-<col width="77">
-<col width="200">
-<tr>
-<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
-<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
-<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" rowspan="6" width="145">Language<br>
-(MCDI) </td>
-<td style="border: solid #cccccc 1pt;" rowspan="3" width="77">12mo</td>
-<td style="border: solid #cccccc 1pt;" rowspan="3" width="225">
-<p-small><span style="color: #4a86e8; ">English only</span></p-small><br>
-<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small><br>
-<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small><br>
-</td>
-</tr>
-<tr> </tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" rowspan="3">18 &amp; 24mo</td>
-<td style="border: solid #cccccc 1pt;" rowspan="3" width="225">
-<p-small><span style="color: #4a86e8; ">English only</span></p-small><br>
-<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small><br>
-<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #ff7f40; ">(Espa&ntilde;ol instrucciones)</span></p-small><br>
-</td>
-</tr>
-<tr> </tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Health&nbsp;</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Temperament<br>(Rothbart)</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Locomotor Milestones</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Media Use</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Pets</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Division of labor</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small><span style="color: #4a86e8; ">English</span></p-small><br>
-<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
-</td>
-</tr>
-<tr> </tr>
-</table>
-
-<br><br>
-
-
-#### After Home Visit (Experimenter alone)
-
-<table cellspacing="0" cellpadding="0" class="play-table">
-<col width="145">
-<col width="77">
-<col width="200">
-<tr>
-<td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
-<td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
-<td style="border: solid #cccccc 1pt;" width="225"><b>Language</b></td>
-</tr>
-<tr> </tr>
-<tr>
-<td style="border: solid #cccccc 1pt;" >Lists</td>
-<td style="border: solid #cccccc 1pt;" >All ages</td>
-<td style="border: solid #cccccc 1pt;" width="225">
-<p-small>Clean-up notes</p-small><br>
-<p-small>Housing checklist</p-small>
-</td>
-</tr>
-<tr> </tr>
-</table>
--->
