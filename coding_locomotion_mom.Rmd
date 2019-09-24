@@ -1,0 +1,77 @@
+
+## 3. Datavyu - Mom locomotion pass  
+### 3.1 General orientation:
+<indent>Screenshot of template</indent><br>
+<indent>Column name: `momloc`</indent><br>
+<indent>Prompt: `<loc_l-f-.>`</indent><br>
+
+This code captures the times that mom is engaged in locomotion or fell.
+<br><br>
+Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary.
+<br><br>
+Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts.
+<br><br>
+Coders are watching for steps with the feet, the knees, or the bum.
+<br><br>
+Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion.
+<br><br>
+Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving
+
+### 3.2 List of values and definitions
+`l` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-l">
+Locomotion
+</button> 
+</div> 
+<div id="coding-locomotion-mom-l" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_mom_l.Rmd'}
+```
+</div>
+<br>
+`f` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-f">
+Fall
+</button> 
+</div> 
+<div id="coding-locomotion-mom-l" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_mom_f.Rmd'}
+```
+</div>
+<br>
+`.` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-null">
+Not codable
+</button> 
+</div> 
+<div id="coding-locomotion-mom-null" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_mom_null.Rmd'}
+```
+</div>
+<br>
+
+
+### 3.3 How to code
+
+Set “JUMP-BACK-BY” key to 1 s.
+<br><br>
+Enable cell highlighting on the controller.
+<br><br>
+Watch in real time for the mom's movement.
+<br><br>
+Watch for the feet and knees.
+<br><br>
+As soon as you see mom's foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. 
+Then JOG forward by hitting #3-JOGFORWARD until you reach the onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. 
+If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. 
+Hit ENTER to create a new cell at this Onset.
+<br><br>
+Now, watch in real time to see when the mom stops moving. 
+The Offset is when the mom stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don't simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the mom is about to take another step). 
+The first frame when the foot/knee stops moving or when the foot settles into its final position is the offset. The same applies to sliding steps.
+<br><br>
+To set the Offset, use the same rules for mechanics as with the Onset. 
+Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. 
+Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. 
+If you go too far, you can JOG backward by hitting #1-JOGBACK. 
+You will likely have to hit the JOG keys numerous times. 
+If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster.

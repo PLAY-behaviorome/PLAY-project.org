@@ -9,7 +9,7 @@ English template
 </div> 
 <div id="collection-establishing-english" class="collapse" aria-expanded="false" style="height: 0px;">
 
-~~~
+<pre>
 Dear [MOM],
 
 Thank you very much for agreeing to participate in our home visit study with [CHILD]. Here is a confirmation of the date and time of your appointment:
@@ -22,7 +22,7 @@ We look forward to seeing you on the day of your appointment! If the above addre
 
 Thank you, 
 [LAB]
-~~~
+</pre>
 
 </div>
 

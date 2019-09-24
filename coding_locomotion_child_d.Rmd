@@ -1,0 +1,19 @@
+<div style="white-space: pre-wrap;" class="box">
+
+<h5>General rules for coding "<b>d</b>"</h5>
+Code ‘<b>d</b>’ if the child is constrained (could be strapped or not) in a device that <b>restricts locomotion</b> (e.g., a highchair, stroller, car seat, etc.). The device could restrict locomotion by binding the child from the front or sides (bumbo seat), lifting them off the ground (high chair, changing table), constraining their freedom to move upright (car seat, stroller), or strapped in. Device can never be household furniture (e.g. couch, chair, or bed) not intended for children. Child-designed furniture (e.g. wooden or plastic child chair) is not a device unless the child is strapped into it and locomotion is restricted.
+<br>
+<indent>NOTE: Child walker is not a device. This would count as supported walking because that’s the whole point of a child walker. Jolly jumpers and exersaucers count as a device even though the child is moving or jumping around because this restricts locomotion.</indent>
+<br><b>For devices that always restricts locomotion (with or without straps):</b> if the device restricts locomotion regardless of whether the child is strapped in or not (e.g. highchair with bounded sides, tall stroller, bumbo seat) code as ‘d’ when child is on the device, not when straps are buckled. 
+<br><b>For child-designed furniture that restricts locomotion only when child is strapped in:</b> If child-designed furniture only restricts locomotion because the child is strapped in (e.g. child chair that the child could get on/off independently) then code as ‘d’ when and only when the child is strapped in. Onset is when the first strap is buckled and offset is when the last strap is unbuckled. Do not code the time when the child is stationary and free to initiate locomotion from the piece of furniture.
+<br><b>For ride toys that restricts locomotion when child is strapped in:</b> If ride toy only restricts locomotion because the child is strapped in (e.g. a toy like stroller), then code as ‘d’ when and only when the child is strapped in.
+<br><b>For changing tables:</b> If mom places the child on a changing table (off the ground), code as ‘d’ as long as the child is on the changing table. Only code mom-restrained when mom picks up child from floor and puts on the changing table, and when mom picks up child from changing table and puts him/her back on the floor. Do not code ‘d’ when mom is changing the child on a changing mat on the floor (follow rules for mom-restrained if mom picks child up or locomotion rules if child starts crawling or walking). 
+<br>
+<indent>NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’):
+<br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint.
+<br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device unless the straps are the only method of restricting locomotion, then treat unbuckled part as stationary.<indent>
+
+<h5>Setting the Onset & Offset of a device-constrained bout:</h5>
+<b>Onset</b> of device constrained is when the child's butt first touches the restrictive device. Do not wait until child is strapped to device.
+<br><b>Offset</b> of constrained is when the butt leaves the device as the parent starts to take the child out (usually by lifting them out). (See also mom-constrained section).
+</div>

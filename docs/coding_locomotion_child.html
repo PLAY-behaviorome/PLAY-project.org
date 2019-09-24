@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+
+<meta charset="utf-8" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="pandoc" />
+
+
+
+
+<title></title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+</head>
+
+<body>
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+  height: auto;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<div class="container-fluid main-container">
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="quality.html">quality</a>
+</li>
+<li>
+  <a href="rationale.html">rationale</a>
+</li>
+<li>
+  <a href="faq.html">faq</a>
+</li>
+<li>
+  <a href="newsletters.html">newsletters</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="locomotion-passes" class="section level1">
+<h1>Locomotion passes</h1>
+<div id="workflow" class="section level2">
+<h2>1. Workflow</h2>
+<ol style="list-style-type: decimal">
+<li>Choose whether to code child or mom first</li>
+<li>Score each pass according to definitions below</li>
+</ol>
+</div>
+<div id="datavyu---child-locomotion-pass" class="section level2">
+<h2>2. Datavyu - Child locomotion pass</h2>
+<div id="general-orientation" class="section level3">
+<h3>2.1 General orientation:</h3>
+<p><indent> Screenshot of template (coming soon!)<br> <indent> Column name: <code>childloc</code> </indent><br> <indent> Prompt: <code>&lt;loc_l-f-h-c&gt;</code> </indent><br></p>
+<p>This code captures the times that the child is engaged in salient self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).</p>
+<p>Coders score only instances of child-generated locomotion, and instances of falling, riding, or being constrained by mom or device. Coders do not score instances where child is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the child is stationary but not held and not constrained. <br><br></p>
+<p>Coders are watching/tagging the duration of each of these events (locomotion, falls, mom-constrained, device-constrained, riding a toy with wheels, not visible) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is likely a transition rather than salient locomotion.<br><br></p>
+</div>
+<div id="list-of-values-and-definitions" class="section level3">
+<h3>2.2 List of values and definitions</h3>
+<code>l</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-l">
+Locomotion
+</button>
+</div>
+<div id="coding-locomotion-child-l" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>l</b>”
+</h5>
+<p>Code <b>l</b> when the baby is engaged in self-generated locomotion in any form (i.e. bum shuffling, scooting, belly crawling, hands-knees crawling, hands-feet crawling, cruising, supported walking, independent walking, marching in place, jumping, hopping, etc.). <br> <br> <b>l</b> occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the baby is taking a “step”. A baby takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot/knee in the air to count as moving; if not, this is stationary). <br><br> This code counts locomotion regardless of whether the baby maintains balance independently or the baby’s balance is supported by a parent or external object/apparatus. This code also counts even if the child is taking uncontrolled steps while losing balance (i.e. stumbling steps before a fall). Any self-generated locomotion where the child is using a toy, baby walker, furniture, etc. for support and pushing or moving the object, counts as locomotion. (If child is on top and riding a toy with wheels, this does not count as locomotion. See rules for riding). <br></p>
+<p><br> <b>(a) If child is upright:</b><br> If child is upright on both feet without support, every step counts. NOTE: Do not include pivots. Be careful of bouts that start or end with “pivots” – part of baby’s foot moving but the entire foot is not displaced (e.g. toes move in air but heel rotates on floor, heel moves in air while toes rotate on floor). If a bout start or ends with one of these pivots, do not include pivot movements as part of the locomotion bout. <br> <br> <b>(b) If child is upright but using a surface for support:</b> <br>If child is upright on both feet while supported by furniture, toy, or mom, the duration of each step has be less than or equal to 1 sec. If the child is using hands for support while swinging one leg for more than 1 sec, do not code as locomotion. We want to exclude time when the child is not locomoting but one foot is in the air for an extended period of time (&gt;1s). <br><br> <b>(c) If child is NOT upright:</b> <br>If child is not upright on both feet (e.g., crawling on belly, hands knees crawling, bum shuffling, etc.) then a bout has to include 3 or more consecutive steps with foot, knee, or bum to count as locomotion. Do not try to code one bum shuffle (child scoots bum back once while sitting on the floor) or one crawl step (moves the knee one time when on the floor). Most likely that is just a shift of position or the beginning of a transition (which is not coded. See rules for transitions). <br><br> <u>NOTE for hands/feet crawling</u>: <br> For hands/feet crawling, both hands need to be on the floor. So if the first or last step only has one hand on the floor, consider this a transition. Crawling can be a mix between knee and foot crawling. Code onset based on which body part begins the movement (foot or knee). <br><br> <u>NOTE for belly crawling or bum shuffling</u>: <br> Only code locomotion if the baby makes at least 3 reliable belly-crawling movements (RARE). <br><br> <b>(d) Do not include any transitions</b> <br>Do not include any movement with foot/knee as part of a transition to another posture (e.g., sit to upright/walk, sit to crawl). The first walking/crawling step will be when the foot/knee moves forward in any direction. The final step in the bout has to be a real walking/crawling step (i.e., it is not the last half step or little attempt-step that looks like a transition into the sit). For example, if the baby transitions from sitting to crawling; the first step is after the transition ends and the last step is just before another transition begins. Do not include any time baby is rolling (either on furniture or floor). This is not a reliable source of locomotion and is often part of a transition. <br><br> <u>NOTE for climbing onto/down from furniture</u>: <br> - Getting down from furniture: If baby bum shuffles or slides to get off of furniture, consider this a transition and therefore do not code until both of baby’s feet have landed on floor. <br> - Climbing onto furniture: If child is locomoting and climbs onto furniture without stopping code this entire bout as locomoting. <br> If the child is locomoting on the floor and stops for more than 1 s before climbing onto the furniture (e.g. child walks up to the couch, lifts one leg and stops for more than 1s) then set the offset of the locomotion bout when child stops. After child climbs onto the furniture, the child could transition to stationary (don’t code this as locomotion) OR start a new bout of locomotion (remember only code crawling if 3 or more steps). <br><br> <u>NOTE for locomoting up/down stairs:</u> <br> If the child is going up/down stairs in any manner (walking, crawling, belly-crawling, bum shuffling), count all possible locomotion using regular locomotion codes. Stairs are different from climbing onto/down from furniture note above.</p>
+<h5>
+Setting the Onset &amp; Offset of a locomotion bout:
+</h5>
+<p><b>Onset</b> of an upright “locomotion bout” is the first frame when the whole foot is displaced. The foot doesn’t necessarily have to come off the ground, but the foot has to slide forward, backward or sideways. The onset for a non-upright “locomotion bout” is the first frame when the knee/foot or bum is displaced in space. <br> <b>Offset</b> is the frame when the baby takes the last step before a 1s pause.</p>
+</div>
+</div>
+<br> <code>f</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-f">
+Fall
+</button>
+</div>
+<div id="coding-locomotion-child-f" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>f</b>”
+</h5>
+<p>Code <b>f</b> if the baby loses control over his/her body (i.e., balance) and cannot recover on his/her own before his/her body hits the ground. If the baby loses balance, but catches him/herself before the above body parts hit the ground, do not count as a fall. <br><br> All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion (walking or crawling). Falls can happen while the mom is holding the baby’s hand or while the baby is holding onto furniture or another support. <br><br> A loss of balance must occur before any of the body parts hit the ground. The baby must be out of his/her own control. Sometimes babies will actively choose to drop to the floor (e.g., jumping and dropping, flopping down from a couch to the floor, plopping down into a sit, where they let themselves fall down into a sitting position) should NOT count as a fall. <br><br> Parent involved falls would only be coded as a fall if the parent catches the baby after the baby loses balance, effectively supporting the baby’s entire weight. In this scenario, the baby would have fallen if not for parent rescue (i.e., the body part would have hit the ground). Parents must catch after the baby has begun to lose balance. If the parent was already supporting the baby’s weight before a loss of balance, but baby’s body parts (e.g., hands, head, butt, etc.) do not touch the ground, then this is not a fall (it is supported walking). <br><br> Falling can occur immediately after mom-constrained if mom and child fell together. Falling can occur immediately after device-constrained if device tips over or the mechanism of constraint fails. Falling can occur immediately after riding if falls off of the riding device. <br></p>
+<h5>
+Setting the Onset &amp; Offset for falls:
+</h5>
+<p>Falls can be coded as separate events (child is standing stationary and then falls) or immediately following another code (child is locomoting and then falls). There should only be 1ms between the previous code and the onset of the falling event if the fall ends the previous code. <br> <indent><b>Onset</b> is the first frame when child begins to lose balance.</indent><br> <indent><b>Offset</b> when child’s body (as defined below) hits the floor.</indent> <br> <br> From an <b>upright or squatting</b> position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground; baby’s bum hitting the ground; or head hitting the ground. <br> From a <b>crawling</b> position: a loss of balance results in the face, head, chest, or side of torso hitting the ground. <br> From a <b>sitting</b> position: a loss of balance results in the head, chest, side of torso, or back hitting the ground.</p>
+</div>
+</div>
+<br> <code>m</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-m">
+Mom constrained
+</button>
+</div>
+<div id="coding-locomotion-child-m" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>m</b>”
+</h5>
+<p>Code <b>m</b> when the child is being constrained and supported by the mother. The child’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the child’s body. During a mother constraint, the mother can be moving (carrying) or stationary (holding). <br><br> NOTE: Code as ‘m’ if mother has placed the baby on a surface but is still supporting the child such that the child would not be able to locomote (e.g. child sitting on kitchen counter and mom holding. While the child’s full weight is not supported by mom, the baby is being constrained by mom and could not locomote. <br><br> NOTE: Do not count mother constraint when the child is just sitting on the mother’s lap or child is next to mom sitting on the couch — the child could get up and locomote if he/she wanted. However, if child is on the mom’s lap and their feet are hanging far of the floor (e.g. mom is sitting on a couch and child is on her lap, and child’s legs are dangling in front of the couch). <br></p>
+<h5>
+Setting the Onset &amp; Offset of a mom-constrained bout:
+</h5>
+<p><b>Onset</b> of “mom-constrained” is the first frame when mom lifts up the baby’s whole body off the current surface and up into the air in mom’s arms (as defined below). <br>From an <b>upright or squatting</b> position: when child’s second foot leaves the surface. <br>From <b>lying down on back</b>: when bum leaves the surface of support. <br>From <b>lying on tummy</b>: when tummy leaves the surface of support. <br>From a <b>crawling</b> position: second knee/foot leaves the surface of support. <br>From a <b>sitting</b> position: when bum leaves the surface of support. <br>NOTE: If child is sitting on mom’s lap and mom gets up holding child, the onset is when mom starts to get up (when mom’s bum leaves the surface). <br><br> <b>Offset</b> of “mom-constrained” is when mom places baby down and the baby starts supporting own weight in any posture (as defined below). <br>Mom places child in <b>upright</b> position: when both feet touch the ground. <br>Mom places child <b>lying down on back</b>: when bum touches the surface. This is usually the case when mom puts child on the changing table. <br>Mom places child <b>lying down on tummy</b>: when tummy touches the surface. <br>Mom places child in <b>crawling or kneeling</b> position: when both knees touch the ground. <br>Mom places child in <b>sitting</b> position: when child’s bum touches the surface of support. <br>This can be a chair, highchair, furniture, floor, or mother’s lap. For mom’s lap offset is when child’s bum touches the mom’s lap, not when the mom’s hands release the child (the mom could continue to hold the child after the bum touches the mom’s lap). <br><br> NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’): <br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint. <br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device (See onset codes above). <br><br> NOTE for when transitioning from “locomotion” to “mom-constrained” to “locomotion” (‘l’, ‘m’, ‘l’): <br><u>In cases of “locomotion” followed by “mom-constrained”</u> Offset for ‘l’ should be the last real step before mom lifts baby of the surface. Codes for ‘l’ and ‘m’ can be continuous but not always are. <br><br> <u>In cases of “mom-constrained” followed by “locomotion”</u> <br>If baby immediately starts locomoting when mom is putting the baby back down, the onset for ‘l’ is when the second foot, hand, or knee touches the floor.</p>
+</div>
+</div>
+<br> <code>d</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-d">
+Device constrained
+</button>
+</div>
+<div id="coding-locomotion-child-d" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>d</b>”
+</h5>
+<p>Code ‘<b>d</b>’ if the child is constrained (could be strapped or not) in a device that <b>restricts locomotion</b> (e.g., a highchair, stroller, car seat, etc.). The device could restrict locomotion by binding the child from the front or sides (bumbo seat), lifting them off the ground (high chair, changing table), constraining their freedom to move upright (car seat, stroller), or strapped in. Device can never be household furniture (e.g. couch, chair, or bed) not intended for children. Child-designed furniture (e.g. wooden or plastic child chair) is not a device unless the child is strapped into it and locomotion is restricted. <br> <indent>NOTE: Child walker is not a device. This would count as supported walking because that’s the whole point of a child walker. Jolly jumpers and exersaucers count as a device even though the child is moving or jumping around because this restricts locomotion.</indent> <br><b>For devices that always restricts locomotion (with or without straps):</b> if the device restricts locomotion regardless of whether the child is strapped in or not (e.g. highchair with bounded sides, tall stroller, bumbo seat) code as ‘d’ when child is on the device, not when straps are buckled. <br><b>For child-designed furniture that restricts locomotion only when child is strapped in:</b> If child-designed furniture only restricts locomotion because the child is strapped in (e.g. child chair that the child could get on/off independently) then code as ‘d’ when and only when the child is strapped in. Onset is when the first strap is buckled and offset is when the last strap is unbuckled. Do not code the time when the child is stationary and free to initiate locomotion from the piece of furniture. <br><b>For ride toys that restricts locomotion when child is strapped in:</b> If ride toy only restricts locomotion because the child is strapped in (e.g. a toy like stroller), then code as ‘d’ when and only when the child is strapped in. <br><b>For changing tables:</b> If mom places the child on a changing table (off the ground), code as ‘d’ as long as the child is on the changing table. Only code mom-restrained when mom picks up child from floor and puts on the changing table, and when mom picks up child from changing table and puts him/her back on the floor. Do not code ‘d’ when mom is changing the child on a changing mat on the floor (follow rules for mom-restrained if mom picks child up or locomotion rules if child starts crawling or walking). <br> <indent>NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’): <br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint. <br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device unless the straps are the only method of restricting locomotion, then treat unbuckled part as stationary.<indent></p>
+<h5>
+Setting the Onset &amp; Offset of a device-constrained bout:
+</h5>
+<p><b>Onset</b> of device constrained is when the child’s butt first touches the restrictive device. Do not wait until child is strapped to device. <br><b>Offset</b> of constrained is when the butt leaves the device as the parent starts to take the child out (usually by lifting them out). (See also mom-constrained section).</p>
+</div>
+</div>
+<br> <code>r</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-r">
+Riding
+</button>
+</div>
+<div id="coding-locomotion-child-r" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>r</b>”
+</h5>
+<p>Code <b>r</b> if the child is riding a locomotive device (e.g. child car, bike, scooter, etc.) with wheels. The child can be sitting (bum on the seat), kneeling with one knee, standing (on a scooter). The device does not necessarily need to be in motion for you to code this as <b>r</b>. If riding toy does not have wheels then it does not count as <b>r</b> and should be considered stationary (e.g. if a child is sitting on a rocking horse). <br>Do not code as <b>r</b> if child’s bum, knee, or feet is not on the riding device. Taking steps while pushing a riding toy or while walking around the toy count as locomotion. If steps occur as child is moving onto/off of device, follow codes for <b>l</b> (remember not to code transitions).</p>
+<h5>
+Setting the Onset &amp; Offset of a ride bout:
+</h5>
+<p><b>Onset</b> of ride is when the child’s bum or knee first touches the riding toy (if sitting in a bike or car) or the second foot is of the ground (if standing on a scooter). <br><b>Offset</b> of ride is when child’s bum, knee, or both feet leave the riding toy.</p>
+</div>
+</div>
+<br> <code>.</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-null">
+Not codable
+</button>
+</div>
+<div id="coding-locomotion-child-null" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>.</b>”
+</h5>
+Code <b>.</b> if child is not fully visible and you cannot reliably code <b>l</b>, <b>d</b>, <b>m</b>, or <b>r</b>. Child could be completely out of view or their lower body could be occluded and it is not clear based of the movement of the top half of the body if the child is locomoting. <b>A missing bout must last for last least 1 second</b>. <br><br><b>If child is missing for less than 1s</b>: <br>If missing time less than 1s occurs between 2 identical codes (e.g. ‘l’ and ‘l’) <b>do not split bout</b>; instead, continue locomotion bout from original cell until end of that locomotion bout. <br>If missing time (&lt;1s) occurs between 2 non-identical codes, (e.g. ‘l’ before missing, stationary after missing), code offset of locomotion cell as the first frame where you cannot see the child. <br><br><b>If child is missing for more than 1s</b>: Code CONTINUOUSLY so that the ‘.’ fills all of the time in the spreadsheet between the two events that are visible. For example, if child is locomoting, then feet aren’t visible, and the reapers constrained in a car seat, there should only be 1ms between the cells (press the ‘0’ key on the numpad to do this automatically). <br><br><b>Going around corners</b>: This should be coded according to above rules. After child is fully out of view (and this lasts for at least 1s), code as missing. Begin coding locomotion again when child is back in view. This is a continuous code (see above for when missing (&gt;1s) captures all time between two cells). <br><br><b>If child’s lower half is occluded by furniture or is outside of camera view:</b> <br>If this occurs BUT you can easily see that the child is locomoting over distance (e.g. by seeing top half of child moving in space), DO NOT code as ‘.’ because this is locomoting. If this occurs BUT you cannot determine if child is taking steps (e.g. could be taking small steps, rocking back and forth, or pivoting), locomotion status is unclear <b>so code as missing</b>. Do not make judgment calls if you cannot clearly determine if locomotion is taking place.
+<h5>
+Setting the Onset &amp; Offset of a missing bout:
+</h5>
+<p><b>Onset</b> of missing is first frame where child’s locomotion cannot be reliably coded (see above rules for specific instances). <br><b>Offset</b> of missing is first frame where child’s locomotion status can reliably be coded (see above rules for specific instances).</p>
+</div>
+</div>
+</div>
+<div id="how-to-code" class="section level3">
+<h3>2.3 How to code</h3>
+<p><br> <indent>Turn volume off file by clicking on the speaker icon on the video track on the data controller and dragging the bar all the way down.<indent> <br>Set “JUMP-BACK-BY” key to 1 s. <br>Watch in real time except when the child is restrained by a device. <br>Watch baby’s feet and knees. <br><br> As soon as you see baby’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Onset</b> of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this <b>Onset.</b> <br><br> Now, watch in real time to see when the baby stops moving. The <b>Offset</b> is when the baby stops moving for at least 1 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 1-s pause, especially if it looks like the baby is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position (sometimes infants stop their walking bout on their tip-toes) is the offset. The same applies to sliding steps. <br><br> To set the <b>Offset</b>, use the same rules for mechanics as with the onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Offset</b> of that cell. If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster. <br><br> If child begins engaging in a stationary activity that is likely to last more than a few seconds (e.g. watching tv, coloring, sitting on floor with a book, etc.), move to 2x or even 4x speed. When child begins moving, use jump-back button to go back to onset of locomotion. THIS WILL SAVE YOU TIME! Child may make small movements during this time to re-adjust body position, but if movements are less than 3 steps on bum or knees, do not slow down to code them as these would be ignored as per coding rules discussed above. <br></p>
+</div>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

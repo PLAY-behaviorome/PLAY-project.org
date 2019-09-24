@@ -10,10 +10,29 @@ output:
 
 # Locomotion passes
 
-### Workflow 
+## 1. Workflow 
 
 1. Choose whether to code child or mom first
 2. Score each pass according to definitions in [Locomotion Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual4)
+
+## 2. Datavyu Codes
+
+### 2.1. Child locomotion pass  
+#### 2.1.1 General orientation:
+    Screenshot of template
+    Column name: childloc, Prompt: <loc_l-f-h-c>
+#### 2.1.2 Value list (with operational definitions in clickable boxes)
+#### 2.1.3 How to code
+
+### 2.2. Child locomotion pass  
+#### 2.2.1 General orientation:
+    Screenshot of template
+    Column name: childloc, Prompt: <loc_l-f-h-c>
+#### 2.2.2 Value list (with operational definitions in clickable boxes)
+#### 2.2.3 How to code
+
+
+
 
 
 ### Coding [locomotion](locomotion.html)

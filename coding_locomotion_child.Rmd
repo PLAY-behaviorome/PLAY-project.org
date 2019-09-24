@@ -1,0 +1,105 @@
+---
+title: ""
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+# Locomotion passes
+
+## 1. Workflow 
+
+1. Choose whether to code child or mom first
+2. Score each pass according to definitions below
+
+## 2. Datavyu - Child locomotion pass  
+### 2.1 General orientation:
+<indent> Screenshot of template (coming soon!)<br>
+<indent> Column name: `childloc` </indent><br>
+<indent> Prompt: `<loc_l-f-h-c>` </indent><br>
+
+This code captures the times that the child is engaged in salient self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.). 
+
+Coders score only instances of child-generated locomotion, and instances of falling, riding, or being constrained by mom or device. Coders do not score instances where child is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the child is stationary but not held and not constrained. <br><br>
+
+Coders are watching/tagging the duration of each of these events (locomotion, falls, mom-constrained, device-constrained, riding a toy with wheels, not visible) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is likely a transition rather than salient locomotion.<br><br>
+
+
+### 2.2 List of values and definitions
+`l` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-l">
+Locomotion
+</button> 
+</div> 
+<div id="coding-locomotion-child-l" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_l.Rmd'}
+```
+</div>
+<br>
+`f` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-f">
+Fall
+</button> 
+</div> 
+<div id="coding-locomotion-child-f" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_f.Rmd'}
+```
+</div>
+<br>
+`m` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-m">
+Mom constrained
+</button> 
+</div> 
+<div id="coding-locomotion-child-m" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_m.Rmd'}
+```
+</div>
+<br>
+`d` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-d">
+Device constrained
+</button> 
+</div> 
+<div id="coding-locomotion-child-d" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_d.Rmd'}
+```
+</div>
+<br>
+`r` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-r">
+Riding
+</button> 
+</div> 
+<div id="coding-locomotion-child-r" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_r.Rmd'}
+```
+</div>
+<br>
+`.` = <div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-null">
+Not codable
+</button> 
+</div> 
+<div id="coding-locomotion-child-null" class="collapse" aria-expanded="false" style="height: 0px;">
+```{r child = 'coding_locomotion_child_null.Rmd'}
+```
+</div>
+
+### 2.3 How to code
+<br>
+<indent>Turn volume off file by clicking on the speaker icon on the video track on the data controller and dragging the bar all the way down.<indent>
+<br>Set “JUMP-BACK-BY” key to 1 s.
+<br>Watch in real time except when the child is restrained by a device.
+<br>Watch baby's feet and knees. 
+<br><br>
+As soon as you see baby's foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Onset</b> of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this <b>Onset.</b>
+<br><br>
+Now, watch in real time to see when the baby stops moving. The <b>Offset</b> is when the baby stops moving for at least 1 s (the pause has to look and feel like an actual pause when you are watching in real time; don't simply end a bout of locomotion because there was a 1-s pause, especially if it looks like the baby is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position (sometimes infants stop their walking bout on their tip-toes) is the offset. The same applies to sliding steps.
+<br><br>
+To set the <b>Offset</b>, use the same rules for mechanics as with the onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Offset</b> of that cell. If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster.
+<br><br>
+If child begins engaging in a stationary activity that is likely to last more than a few seconds (e.g. watching tv, coloring, sitting on floor with a book, etc.), move to 2x or even 4x speed. When child begins moving, use jump-back button to go back to onset of locomotion. THIS WILL SAVE YOU TIME! Child may make small movements during this time to re-adjust body position, but if movements are less than 3 steps on bum or knees, do not slow down to code them as these would be ignored as per coding rules discussed above.
+<br>

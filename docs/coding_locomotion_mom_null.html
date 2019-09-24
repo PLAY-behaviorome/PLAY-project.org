@@ -325,48 +325,15 @@ $(document).ready(function () {
 </div>
 
 
-<p><br></p>
-<p><img src="img/PLAY-logo.png" width="400" / hspace="5"></p>
-<p><img src="img/PLAY-momchild-long.png" / hspace="5"></p>
-<div id="the-play-learning-across-a-year-play-project" class="section level1">
-<h1>The Play &amp; Learning Across a Year (PLAY) project</h1>
-<p>The PLAY project is a collaborative research initiative by 65 researchers from 45 universities across the United States and Canada. It serves as a model system for doing development science from a “big data” approach. Natural free play represents the foundation of infant learning, but we know little about how infants play, how play unfolds in real time and across development, and how individual and group differences promote infant learning and development through play.</p>
-<p>PLAY focuses on recording and revealing the behaviors of infants and mothers during natural activity in their homes, providing an unprecedented corpus of data, and using an innovative, transparent approach to science. The data set will consist of fully transcribed and annotated videos, parent report questionnaires, video tours of the home, digital recordings of ambient noise, and detailed demographic information on 900+ infants and mothers from across the United States. This first-of-its-kind corpus will be shareable and searchable with data spanning domains from language to locomotion, gender to gesture, and object play to emotion.</p>
-<p>The aim of the project is to develop a new approach to developmental science that enables: (1) “big data“ science for researchers who would not otherwise have access; (2) a communal, low-cost means of collecting and coding data that retains the autonomy of individual labs; and (3) a plan for leveraging diverse expertise to address a common goal.</p>
-<div id="support" class="section level2">
-<h2>Support</h2>
-<p>PLAY is supported by grants from the Office of the Director, National Institutes of Health, (OD), Eunice Kennedy Shriver National Institute for Child Health and Human Development (NICHD), the National Institute of Mental Health (NIMH), and the National Institute on Drug Abuse (NIDA) under R01HD094830-01, the LEGO Foundation, and the Alfred P. Sloan Foundation.</p>
-</div>
-<div id="website-info" class="section level2">
-<h2>Website info</h2>
-<p>This site is hosted in <a href="http://github.com/PLAY-behaviorome/">GitHub</a> and is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>, version 1.1.456.</p>
-<p>For information about using R Markdown to generate websites, see <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html" class="uri">http://rmarkdown.rstudio.com/rmarkdown_websites.html</a>. For formatting information, see <a href="http://rmarkdown.rstudio.com/html_document_format.html" class="uri">http://rmarkdown.rstudio.com/html_document_format.html</a>.</p>
-<!-- ```{r child='_sessioninfo.Rmd'}``` -->
-<details> <summary>Information about this R session (click here)</summary>
-<p>
-<pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.5.1 (2018-07-02)
-## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.14.6
-## 
-## Matrix products: default
-## BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
-## 
-## locale:
-## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
-## 
-## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
-## 
-## loaded via a namespace (and not attached):
-##  [1] compiler_3.5.1  magrittr_1.5    htmltools_0.3.6 tools_3.5.1    
-##  [5] rstudioapi_0.10 yaml_2.2.0      Rcpp_0.12.18    stringi_1.2.4  
-##  [9] rmarkdown_1.11  knitr_1.21      stringr_1.3.1   xfun_0.4       
-## [13] digest_0.6.16   evaluate_0.13</code></pre>
-</p>
-<p></details></p>
-</div>
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>.</b>”
+</h5>
+Code <b>.</b> if child is not fully visible and you cannot reliably code <b>l</b>, <b>d</b>, <b>m</b>, or <b>r</b>. Child could be completely out of view or their lower body could be occluded and it is not clear based of the movement of the top half of the body if the child is locomoting. <b>A missing bout must last for last least 1 second</b>. <br><br><b>If child is missing for less than 1s</b>: <br>If missing time less than 1s occurs between 2 identical codes (e.g. ‘l’ and ‘l’) <b>do not split bout</b>; instead, continue locomotion bout from original cell until end of that locomotion bout. <br>If missing time (&lt;1s) occurs between 2 non-identical codes, (e.g. ‘l’ before missing, stationary after missing), code offset of locomotion cell as the first frame where you cannot see the child. <br><br><b>If child is missing for more than 1s</b>: Code CONTINUOUSLY so that the ‘.’ fills all of the time in the spreadsheet between the two events that are visible. For example, if child is locomoting, then feet aren’t visible, and the reapers constrained in a car seat, there should only be 1ms between the cells (press the ‘0’ key on the numpad to do this automatically). <br><br><b>Going around corners</b>: This should be coded according to above rules. After child is fully out of view (and this lasts for at least 1s), code as missing. Begin coding locomotion again when child is back in view. This is a continuous code (see above for when missing (&gt;1s) captures all time between two cells). <br><br><b>If child’s lower half is occluded by furniture or is outside of camera view:</b> <br>If this occurs BUT you can easily see that the child is locomoting over distance (e.g. by seeing top half of child moving in space), DO NOT code as ‘.’ because this is locomoting. If this occurs BUT you cannot determine if child is taking steps (e.g. could be taking small steps, rocking back and forth, or pivoting), locomotion status is unclear <b>so code as missing</b>. Do not make judgment calls if you cannot clearly determine if locomotion is taking place.
+<h5>
+Setting the Onset &amp; Offset of a missing bout:
+</h5>
+<p><b>Onset</b> of missing is first frame where child’s locomotion cannot be reliably coded (see above rules for specific instances). <br><b>Offset</b> of missing is first frame where child’s locomotion status can reliably be coded (see above rules for specific instances).</p>
 </div>
 
 <hr>

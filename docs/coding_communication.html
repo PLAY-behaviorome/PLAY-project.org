@@ -425,13 +425,40 @@ div.tocify {
 
 <div id="communication-passes" class="section level1">
 <h1>Communication passes</h1>
-<div id="workflow" class="section level3">
-<h3>Workflow</h3>
+<div id="workflow" class="section level2">
+<h2>1. Workflow</h2>
 <ol style="list-style-type: decimal">
 <li>You will receive video files that have been <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription">transcribed</a> by the PLAY team. Run two additional scripts that will prepare new <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication</a> columns for further coding.</li>
 <li><strong>Run</strong> <em>splitmomchild_transcribe.rb</em>. This script pulls out mom and child language from the <em><em>transcribe</em></em> column into two new columns: (1) <em><em>momspeech</em></em> and (2) <em><em>childvoc</em></em> . Each column is automatically populated with cells from the respectively tagged utterances from the <em><em>transcribe</em></em> column (e.g., the script ports all utterances coded as ‘m’ to the <em><em>momspeech</em></em> column and ‘b’ to the <em><em>childvoc</em></em> column). Each new cell in <em><em>momspeech</em></em> and <em><em>childvoc</em></em> is a point cell created at the onset of each cell from the transcription.</li>
 <li><strong>Run</strong> <em>create_momchild_utterancetype.rb</em>. This script also creates two new columns: (1) <em><em>momutterancetype</em></em> and (2) <em><em>childutterancetype</em></em> . For each cell in <em><em>momspeech</em></em> and <em><em>childvoc</em></em> , a new cell is created in <em><em>momutterancetype</em></em> and <em><em>childutterancetype</em></em> , respectively. The codes for these cells are blank, and the coder now scores mom and child communication according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication Codes</a>. <br><br></li>
 </ol>
+</div>
+<div id="datavyu---child-locomotion-pass" class="section level2">
+<h2>2. Datavyu - Child locomotion pass</h2>
+<div id="general-orientation" class="section level3">
+<h3>2.1 General orientation:</h3>
+<pre><code>Screenshot of template
+Column name: momloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
+</div>
+<div id="list-of-values-and-what-they-mean" class="section level3">
+<h3>2.2 List of values and what they mean</h3>
+</div>
+<div id="how-to-code" class="section level3">
+<h3>2.3 How to code</h3>
+</div>
+</div>
+<div id="datavyu---mom-locomotion-pass" class="section level2">
+<h2>3. Datavyu - Mom locomotion pass</h2>
+<div id="general-orientation-1" class="section level3">
+<h3>3.1 General orientation:</h3>
+<pre><code>Screenshot of template
+Column name: momloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
+</div>
+<div id="list-of-values-and-what-they-mean-1" class="section level3">
+<h3>3.2 List of values and what they mean</h3>
+<div id="how-to-code-1" class="section level4">
+<h4>3.2.3 How to code</h4>
+</div>
 </div>
 <div id="datavyu-communication-codes" class="section level3">
 <h3>Datavyu <a href="communication.html">Communication Codes</a></h3>
@@ -440,7 +467,7 @@ div.tocify {
 <div id="childvoc" class="section level4">
 <h4><code>1. childvoc</code></h4>
 <p><code>&lt;content&gt;</code></p>
-<div id="general-orientation" class="section level5">
+<div id="general-orientation-2" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains a transcript of all of the utterances/vocalizations of the child.</p>
 <p>This column is automatically populated after the <em>transcribe</em> pass is completed using a Ruby script. All of the utterances tagged with ‘b’ in <a href=""> <source> </a> in <em>transcribe</em> are transferred here. The onset and offset are equal, and set to the onset from the <em>transcribe</em> column, which reflects a time as close as possible to the onset of that utterance.</p>
@@ -449,7 +476,7 @@ div.tocify {
 <div id="childutterancetype" class="section level4">
 <h4><code>2. childutterancetype</code></h4>
 <p><code>&lt;language_s-w&gt;</code> <code>&lt;langlike-b-v&gt;</code> <code>&lt;crygrunt_c-g&gt;</code> <code>&lt;unintell-x&gt;</code></p>
-<div id="general-orientation-1" class="section level5">
+<div id="general-orientation-3" class="section level5">
 <h5>General Orientation</h5>
 <p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in childvoc column and categorize each utterance based on codes below.</p>
 <p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the child didn’t speak in full speech, or speech-like sound, but did cry/scream, then code &lt;.,.,c,.&gt;.</p>
@@ -486,7 +513,7 @@ div.tocify {
 <p><code>&lt;x&gt;</code></p>
 <p>Unintelligible = either what the child said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.</p>
 </div>
-<div id="how-to-code" class="section level5">
+<div id="how-to-code-2" class="section level5">
 <h5>How to Code</h5>
 <p>Set the “JUMP-BACK-BY” to 2 s.</p>
 <p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in childvoc column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
@@ -496,7 +523,7 @@ div.tocify {
 <div id="momspeech" class="section level4">
 <h4><code>3. momspeech</code></h4>
 <p><code>&lt;content&gt;</code></p>
-<div id="general-orientation-2" class="section level5">
+<div id="general-orientation-4" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains a transcript of all of the utterances of the mom.</p>
 <p>This column is automatically populated after the transcribe pass is completed using a Ruby script. All of the utterances tagged with ‘m’ in <source> in transcribe are transferred here. The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.</p>
@@ -505,7 +532,7 @@ div.tocify {
 <div id="momutterancetype" class="section level4">
 <h4><code>4. momutterancetype</code></h4>
 <p><code>&lt;imperative_l-a-p&gt;</code> <code>&lt;interrog-i_declar-d&gt;</code> <code>&lt;filler-f&gt;</code> <code>&lt;unintell-x&gt;</code></p>
-<div id="general-orientation-3" class="section level5">
+<div id="general-orientation-5" class="section level5">
 <h5>General Orientation</h5>
 <p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in <code>momspeech</code> column and categorize each utterance based on codes below.</p>
 <p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. For instance, if the mom didn’t do an imperative, sing/read, but did give a declarative, then code &lt;.,d,.,.&gt;.</p>
@@ -542,13 +569,14 @@ div.tocify {
 <p>Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker’s behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the child successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a></p>
 <p><code>&lt;x&gt;</code> Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both “xxx”) </a></p>
 </div>
-<div id="how-to-code-1" class="section level5">
+<div id="how-to-code-3" class="section level5">
 <h5>How to Code</h5>
 <p>Set the JUMP-BACK-BY key for 2 s.</p>
 <p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in <em><em>momspeech</em></em> column.</p>
 <p>JUMP-BACK-BY 2s so the utterance can be viewed in context.</p>
 <p>Play in real time to code each utterance, which is coded in mutually exclusive categories. <code>Tab</code> between each argument/prompt inserting period <code>.</code> until you reach the appropriate code. Then insert periods <code>.</code> to the end of the cell.</p>
 <hr />
+</div>
 </div>
 </div>
 </div>

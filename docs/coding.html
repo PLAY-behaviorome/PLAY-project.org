@@ -278,7 +278,7 @@ $(document).ready(function ()  {
 
     // establish options
     var options = {
-      selectors: "h1,h2",
+      selectors: "h1,h2,h3",
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
@@ -431,36 +431,6 @@ div.tocify {
 <div id="quality-assurance" class="section level3">
 <h3>Quality Assurance</h3>
 <p>All videos that are coded with go through a quality assurance process in which the PLAY team will ensure that the coded videos are eligible to be included in the final sample. Videos that pass QA will be checked for reliability, merged, and added to the final PLAY dataset. Coded videos that don’t pass QA will be sent back to the coding site for recoding. In some cases, the coding site might be provided additional training.</p>
-<!--
-<table>
-<col width="200">
-<col width="200">
-<tr>
-<td><b>Workflows</b>
-<td><b>Codes</b>
-</tr>
-<tr>
-<td>Gesture workflow
-<td>Gesture codes
-</tr>
-<tr>
-<td>Locomotion workflow
-<td>Locomotion codes
-</tr>
-<tr>
-<td>Emotion workflow
-<td>Emotion codes
-</tr>
-<tr>
-<td>Object workflow
-<td>Object codes
-</tr>
-<tr>
-<td>Communication workflow
-<td>Communication codes
-</tr>
-</table>
--->
 </div>
 <div id="getting-started" class="section level3">
 <h3>Getting Started</h3>
@@ -487,147 +457,45 @@ div.tocify {
 <li>A <em>pass</em> entails scoring the relevant codes for 1-hour of video.</li>
 </ul>
 <p>Please visit our <a href="https://github.com/databrary/PLAY-Project-Datavyu-scripts">GitHub Repository</a> for all of the scripts mentioned in this wiki. <br><br></p>
-<!--
-## Workflow for Inter-Observer Reliability on Communication, Gesture, Object, Locomotion, and Emotion Passes
-
-1. After the primary coder finishes a pass: _*childutterancetype*_, _*momutterancetype*_, _*gesture*_ (split into _*childgesture*_, _*momgesture*_), _*childobject*_, _*momobject*_, _*childloc*_, _*momloc*_, _*childemotion*_, or _*momemotion*_ run two scripts to set up the Datavyu spreadsheet for coding reliability.
-2. First, **run** a script called *insert-RelBlocks.rb*.
-    - This script randomly generates 3, 5-minute chunks within the first, second, and third 20-minute sections of the 1-hour video of free play. By quasi-randomly inserting reliability blocks from areas of the primary coder’s pass, this will ensure that the reliability coder sees each portion of the video for each child’s session. Thus, the idiosyncrasies of each child, fluctuations over the 1-hour session, and drift in the coder are spread over the session.
-    - Reliability on each coding pass is done on the same 3, 5-minute blocks for each pass.
-    - The scripting window in Datavyu will prompt when everything has been successfully completed. You should now have a brand new column in your spreadsheet named _*reliability_blocks*_.
-    - This script should only be run **once** so that reliability coding can be done within the same time frame for each coding domain for each session.
-3. Now, **run** another script appropriate for the pass reliability needs to be coded on: *CreateReliability-childUtterancetype.rb* or *CreateReliability-MomUtterancetype.rb* or *CreateReliability-Gesture.rb* or *CreateReliability-Momchild-Loc.rb* or *CreateReliability-Momchild-Object.rb* OR *CreateReliability-Momchild-Emotion.rb*
-    - This script inserts new coding columns where your reliability coder will score the video while they are locked into the script-generated, 5-minute chunks in the _*reliability_blocks*_ column.
-    -->
-<!--
-
-
-# Transcription passes
-
-### Coding transcription
-
-#### `transcribe`
-
-`<source_m-c>`, `<content>`.
-
-##### General Orientation
-
-The transcribe column is used to tag the onset of each utterance/vocalization by the mom and child in a single pass. 
-Then based on the `<source>` of the utterance/vocalization, the momspeech and childvoc columns are automatically populated by a script.
-
-Utterance = a unit of speech separated by silence/pause, which can be a natural “period” as in end of a complete thought or sentence or a long pause (i.e., taking a breath). 
-Utterances are coded as events (cells) separated by gray where no utterances are spoken. 
-These are coded as events, where there is only one time that is tagged (onset), which is any time during the utterance. 
-We do not code strict onsets and offset for the event; a single time during the utterance is the time coded.
-
-Transcribe all of mothers' utterances even if they are not child-directed. 
-But only transcribe communicative utterances; that is, there is no need to tag and transcribe non-speech, non-communicative sounds by the mother (e.g., making whistling noises, muttering to herself indistinguishably).
-
-Paralinguistic utterances/vocalizations (e.g., laughing, crying, sighing, screaming) by the mom should be typed out (e.g., “ah”). 
-Non-linguistic vocalizations by the child are coded as “c” (a catch all for crying, laughing, screaming, grunting). 
-Linguistic babbling, vowels, consonants, and combinations of the above by the child that are not words are coded as “b”.
-
-##### Value List
-
-`<source_m-c>`
-
-`m` = mom
-
-`c` = child
-
-`<content>`
-
-If the content of the utterance can be heard clearly by the coder, then type transcript of each utterance in the cell.
-
-`b` = babbling, or vowel/consonant sound by the child
-
-`c` = crying, screaming, grunting, laughing sound by the child
-
-##### Operational Definitions
-
-`<source_m-c>`
-
-`<m>`: Code 'm' if the mom is the source of the utterance. This code will be filled in automatically using quick keys.
-
-`<c>`: Code 'c' if the child is the source of the utterance. This code will be filled in automatically using quick keys.
-
-`<content>`
-
-transcribe utterance
-
-Type the complete utterance. Type everything in lower case, except for proper names (e.g., Mommy, I, Cheerios, Anna). Use apostrophes correctly for contractions and possessives (e.g., don't, where's, Daddy's, Lily's). Do not use “,” commas. <a href=""> (Inset video) </a> Put a question mark "?" at the end of any utterance that is a question. <a href=""> (Inset video)  </a>
-
-Individual letters (e.g., mom spells out zoo as “z” “o” “o”) need to be marked with an @ (at symbol) so that they're not confused with actual words, for example z@ o@ o@. Use existing rules for utterances to decide if each letter is it's own utterance.
-
-Any utterance that is unintelligible or hard to decipher, code as “xxx”. This could be the full utterance: for example, the mom says multiple words but they are all unintelligible, so the entire code is “xxx”. Or part of the utterance is intelligible, but part is not: for example, the mom says “give me” and what she says to give is unintelligible, so code “give me xxx”. <a href=""> (Inset video)  </a>
-
-In case of language-functioning sounds by the mom or child, these are typed out as words phonetically as specified below: Ahem (ready to speak), Ay (surprise), Huhuh (no), Hmm (thinking or questioning), Mmhm (yes), Sh (shush), Uhhuh (yes), Uhoh (blunder), uhuh (no), Yeah (yes), Whee (excitement), Whoah (surprise), Whoops (mistake)
-
-If you encounter a mouth sound that the mom makes, which is communicative but **cannot be transcribed phonetically** (e.g., lip sucking/kissing sound to call the child over), write out the sound of the vocalization in brackets (e.g. [lip sucking/kissing]). <a href=""> (Inset video)  </a>
-Only write out communicative sounds: for instance, if the mom whistles to get the child's attention write out [whistles], but if the mom is just whistling to herself as she cooks then do not tag as an utterance. 
-
-`<b>` : Code 'b' if the child is not saying a full language phrase or sentence. Could be babbling, by saying one or more consonant-vowel pairs. Or could be just a vowel <a href=""> (Inset video)  </a>. If you are unsure if it was a language phrase that you can transcribe or was just a babble, then mark as unintelligible “xxx” and make a comment. Either relisten or come back after getting more context later in the video. <a href=""> (Inset video)  </a>
-
-
-`<c>` : Code 'c' if the child is making a non-language-like vocalization. For instance, crying, screaming, laughing, grunting. Any vocalization that is not a consonant-vowel babble or vowel alone. These should be easy to distinguish from babbling, because they serve a different communicative function. <a href=""> (Inset video)  </a>
-
-
-##### How to Transcribe
-
-Set “Jump back by” on the Controller to **2 seconds**.
-
-Transcribing is done in two iterative passes through a small section of the video (roughly 1-2 minutes). The first part is **tagging utterances** for about 1-2 minutes (until a good break in activity is reached) and the second part is looping back over that same portion of the video to **transcribe utterances**.
-
-###### Tagging Utterances
-
-**Turn on Quick Keys** mode by hitting Shift-Cmnd-K (or selecting Spreadsheet>Enable Quick Keys from the menu bar). You will see *QUICK KEY MODE* in the spreadsheet window header. This will enable a function that every time an alphanumeric key is pressed, a new point cell (onset=offset) is inserted at the current time in the data controller, and the alphanumeric key pressed will be inserted as the code of the first argument.
-
-Place your left index finger on the “m” key and your left little finger on the “c” key. The right fingers should be on pause and shuttle forward and back. Play the video at **1/2 speed** (or 1/4 speed if a fast exchange of utterances is happening). Press the “m” or “c” key every time the **mom** or **child** has an utterance, while you play the video back. Insert cells **as soon as** you hear something. Be as alert and attentive as possible.
-
-If you think you hear an utterance, tag it. It's much better to be fast and insert extra cells, rather than judge yourself and have to go back later to fix the time or insert a cell for an utterance you missed. You can easily delete cells using shortcut keys. You can also fix the *source* code later if you hit the wrong key. Note, offsets are not coded. Onsets are as close to the utterance onset as you possibly can get. So optimize your attention and coding for speed of tagging.
-
-The best strategy is to have an unbroken playback session of 1-2 mins where you are just tagging utterances without stopping. Stop playback once you've tagged 30-40 cells, 1-2 mins have elapsed, or you hit a good breaking point in an activity (e.g. child moves onto playing with a new toy). Try to stop a tagging utterances past as soon as you tag a new utterance, rather than playing further into silence of the video; that way you can jump to and pick up right where you left off at an utterance for the next tagging pass, instead of potentially re-playing the same part of the video.
-
-Now, **turn off Quick Keys** (Shift-Cmnd-K). Run the **addtime_transcribe.rb script**. This will add 500 ms to the offset, which will help in highlighting in the next step.
-
-###### Transcribe Utterances
-
-**Turn on Highlight and Focus Mode** by hitting Shift-Cmnd-F (or selecting Spreadsheet>Enable Highlight and Focus Mode from the menu bar). This will highlight each cell as you loop back through the 1-2 mins you just tagged utterances in and put the focus of data entry (cursor) into the first uncoded argument in that cell (which will be *content*).
-
-SCROLL or ARROW up to the first cell from the most recent utterance tagging done. Jump to that first cell (+ key) and then JUMP-BACK-BY 2 s (- key). Playback the video at **1x speed**. Listen to each utterance within the context of the ongoing stream of speech. JUMP-BACK and re-listen as many times as needed until you are sure of the utterance. Once you are sure of the utterance, stop playback and transcribe the utterance or insert the appropriate code (for the child).
-
-If you go past an utterance and missed transcribing it, hit the jump back key until you are right before it. If you get lost in the transcription, JUMP BACK 2-3 cells (by arrowing or jump back key) before where you lost track of transcribing. It's much better to use the keyboard to navigate and loop back (jump back or arrow up or down) rather than mousing. (Note: you may need to mouse into the argument of the first cell in a section after tagging utterances). If you mouse and jump around, you will get lost; stay in “looping” mode throughout transcription even if it means listening multiple times to a single section.
-
-If you find a cell for an utterance that was tagged by mistake (you thought there was an utterance but there wasn't) then delete that cell. JUMP-BACK-BY 2 s before the cell you deleted and confirm there was no utterance and that the next utterance is tagged at the correct time. (Note: you may need to mouse into a cell after deleting).
-
-If you need to change the onset of an utterance, ARROW into it (or let auto focus move you into it) and hit the 7 key to set onset to the current time. Do not worry about setting or fixing the offset.
-
-If you missed tagging an utterance in the first part, find the time of the utterance onset while you are transcribing. Hit ENTER and set the offset (same time as onset) using the 9 key. Code “m” or “c” for *source*, then tab into *content* and transcribe.
-
-**Turn off Highlight and Focus Mode**. Save the file. Now **turn back on Quick Keys**, jump to the onset of the last cell transcribed, and revert back to the coding strategy for tagging utterances.
-
-
-###### Splitting Mom and Bhild Utterances
-
-It's easier and faster to tag and transcribe mom and child together in one pass. But for later coding, we want mom speech and child vocalizations to be in two separate columns.
-
-**Run the split*momchild*transcribe.rb script** to pull mom and child utterances into their appropriate columns.
-
-At this step, you can also **run the create*momchild*utterancetype.rb script** to insert the momutterancetype and childutterancetype columns and insert cells for every tagged utterance.
-
----
--->
+<hr class="play">
 </div>
 </div>
 <div id="communication-passes" class="section level1">
 <h1>Communication passes</h1>
-<div id="workflow" class="section level3">
-<h3>Workflow</h3>
+<div id="workflow" class="section level2">
+<h2>1. Workflow</h2>
 <ol style="list-style-type: decimal">
 <li>You will receive video files that have been <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription">transcribed</a> by the PLAY team. Run two additional scripts that will prepare new <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication</a> columns for further coding.</li>
 <li><strong>Run</strong> <em>splitmomchild_transcribe.rb</em>. This script pulls out mom and child language from the <em><em>transcribe</em></em> column into two new columns: (1) <em><em>momspeech</em></em> and (2) <em><em>childvoc</em></em> . Each column is automatically populated with cells from the respectively tagged utterances from the <em><em>transcribe</em></em> column (e.g., the script ports all utterances coded as ‘m’ to the <em><em>momspeech</em></em> column and ‘b’ to the <em><em>childvoc</em></em> column). Each new cell in <em><em>momspeech</em></em> and <em><em>childvoc</em></em> is a point cell created at the onset of each cell from the transcription.</li>
 <li><strong>Run</strong> <em>create_momchild_utterancetype.rb</em>. This script also creates two new columns: (1) <em><em>momutterancetype</em></em> and (2) <em><em>childutterancetype</em></em> . For each cell in <em><em>momspeech</em></em> and <em><em>childvoc</em></em> , a new cell is created in <em><em>momutterancetype</em></em> and <em><em>childutterancetype</em></em> , respectively. The codes for these cells are blank, and the coder now scores mom and child communication according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2">Communication Codes</a>. <br><br></li>
 </ol>
+</div>
+<div id="datavyu---child-locomotion-pass" class="section level2">
+<h2>2. Datavyu - Child locomotion pass</h2>
+<div id="general-orientation" class="section level3">
+<h3>2.1 General orientation:</h3>
+<pre><code>Screenshot of template
+Column name: momloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
+</div>
+<div id="list-of-values-and-what-they-mean" class="section level3">
+<h3>2.2 List of values and what they mean</h3>
+</div>
+<div id="how-to-code" class="section level3">
+<h3>2.3 How to code</h3>
+</div>
+</div>
+<div id="datavyu---mom-locomotion-pass" class="section level2">
+<h2>3. Datavyu - Mom locomotion pass</h2>
+<div id="general-orientation-1" class="section level3">
+<h3>3.1 General orientation:</h3>
+<pre><code>Screenshot of template
+Column name: momloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
+</div>
+<div id="list-of-values-and-what-they-mean-1" class="section level3">
+<h3>3.2 List of values and what they mean</h3>
+<div id="how-to-code-1" class="section level4">
+<h4>3.2.3 How to code</h4>
+</div>
 </div>
 <div id="datavyu-communication-codes" class="section level3">
 <h3>Datavyu <a href="communication.html">Communication Codes</a></h3>
@@ -636,7 +504,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="childvoc" class="section level4">
 <h4><code>1. childvoc</code></h4>
 <p><code>&lt;content&gt;</code></p>
-<div id="general-orientation" class="section level5">
+<div id="general-orientation-2" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains a transcript of all of the utterances/vocalizations of the child.</p>
 <p>This column is automatically populated after the <em>transcribe</em> pass is completed using a Ruby script. All of the utterances tagged with ‘b’ in <a href=""> <source> </a> in <em>transcribe</em> are transferred here. The onset and offset are equal, and set to the onset from the <em>transcribe</em> column, which reflects a time as close as possible to the onset of that utterance.</p>
@@ -645,7 +513,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="childutterancetype" class="section level4">
 <h4><code>2. childutterancetype</code></h4>
 <p><code>&lt;language_s-w&gt;</code> <code>&lt;langlike-b-v&gt;</code> <code>&lt;crygrunt_c-g&gt;</code> <code>&lt;unintell-x&gt;</code></p>
-<div id="general-orientation-1" class="section level5">
+<div id="general-orientation-3" class="section level5">
 <h5>General Orientation</h5>
 <p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in childvoc column and categorize each utterance based on codes below.</p>
 <p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the child didn’t speak in full speech, or speech-like sound, but did cry/scream, then code &lt;.,.,c,.&gt;.</p>
@@ -682,7 +550,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p><code>&lt;x&gt;</code></p>
 <p>Unintelligible = either what the child said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it.</p>
 </div>
-<div id="how-to-code" class="section level5">
+<div id="how-to-code-2" class="section level5">
 <h5>How to Code</h5>
 <p>Set the “JUMP-BACK-BY” to 2 s.</p>
 <p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in childvoc column. JUMP-BACK-BY 2 s so the utterance can be viewed in context.</p>
@@ -692,7 +560,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="momspeech" class="section level4">
 <h4><code>3. momspeech</code></h4>
 <p><code>&lt;content&gt;</code></p>
-<div id="general-orientation-2" class="section level5">
+<div id="general-orientation-4" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains a transcript of all of the utterances of the mom.</p>
 <p>This column is automatically populated after the transcribe pass is completed using a Ruby script. All of the utterances tagged with ‘m’ in <source> in transcribe are transferred here. The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.</p>
@@ -701,7 +569,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="momutterancetype" class="section level4">
 <h4><code>4. momutterancetype</code></h4>
 <p><code>&lt;imperative_l-a-p&gt;</code> <code>&lt;interrog-i_declar-d&gt;</code> <code>&lt;filler-f&gt;</code> <code>&lt;unintell-x&gt;</code></p>
-<div id="general-orientation-3" class="section level5">
+<div id="general-orientation-5" class="section level5">
 <h5>General Orientation</h5>
 <p>Utterance type = categorization of previously coded utterances as a specific type of speech form. Read the utterance transcribed in <code>momspeech</code> column and categorize each utterance based on codes below.</p>
 <p>Codes are mutually exclusive. The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. For instance, if the mom didn’t do an imperative, sing/read, but did give a declarative, then code &lt;.,d,.,.&gt;.</p>
@@ -738,14 +606,15 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker’s behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the child successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a></p>
 <p><code>&lt;x&gt;</code> Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both “xxx”) </a></p>
 </div>
-<div id="how-to-code-1" class="section level5">
+<div id="how-to-code-3" class="section level5">
 <h5>How to Code</h5>
 <p>Set the JUMP-BACK-BY key for 2 s.</p>
 <p>Hit “FIND” on the controller to go to the onset of each utterance, which was populated in <em><em>momspeech</em></em> column.</p>
 <p>JUMP-BACK-BY 2s so the utterance can be viewed in context.</p>
 <p>Play in real time to code each utterance, which is coded in mutually exclusive categories. <code>Tab</code> between each argument/prompt inserting period <code>.</code> until you reach the appropriate code. Then insert periods <code>.</code> to the end of the cell.</p>
 <hr />
-<hr />
+<hr class="play">
+</div>
 </div>
 </div>
 </div>
@@ -765,7 +634,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="gesture" class="section level4">
 <h4><code>gesture</code></h4>
 <p><code>&lt;source_m-b&gt;</code>, <code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation-4" class="section level5">
+<div id="general-orientation-6" class="section level5">
 <h5>General Orientation</h5>
 <p>Gestures are segmented, durative, event-based behaviors. Watch the video paying attention to the <strong>communicative gestures</strong> used by the parent and the child. When coding for gesture, focus on the mother’s or child’s <strong>hands</strong> and <strong>head</strong>.</p>
 <p>Code mother and child gesture simultaneously in <strong>one pass</strong>. Then based on the <code>&lt;source&gt;</code> of the gesture, a script breaks apart mom and child into separate <em>childgesture</em> and <em>momgesture</em> columns.</p>
@@ -804,7 +673,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>If a gesture is conventional, you should be able to understand its meaning just by seeing it in isolation, without knowing any of the context. Some additional examples of conventional gestures include: waving, clapping, flipping arms out to side to indicate “I don’t know’ or “where is it”, come here gesture (finger motions or palms), sit down gesture (pats ground), pickup gesture (child holds up arms to be picked up), thumbs up, shrugs, naughties (wag finger), hug me (hold arms out asking for hug), etc.</p>
 <p><strong>Onset</strong> is the frame when the child or mom has clearly begun the conventional gesture, and the coder can clearly identify this a gesture but does fall into the iconic gesture category (see <code>&lt;i&gt;</code>). Repetitive instances of a conventional gesture should be coded as separate gesture events.</p>
 </div>
-<div id="how-to-code-2" class="section level5">
+<div id="how-to-code-4" class="section level5">
 <h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 2 s.</p>
 <p>Gestures are best coded with the volume low or muted so that the language content does not confound the coding process.</p>
@@ -822,7 +691,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="childgesture" class="section level4">
 <h4><code>childgesture</code></h4>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation-5" class="section level5">
+<div id="general-orientation-7" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains gestures produced by the child.</p>
 <p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘b’ in <code>&lt;source&gt;</code> in the <em>gesture</em> column are transferred here. The onset and offset are equal, and set to the onset from the gesture column, which reflects the time when the coder was sure the gesture had begun.</p>
@@ -839,7 +708,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="momgesture" class="section level4">
 <h4><code>momgesture</code></h4>
 <p><code>&lt;gesture_p-s-i-c&gt;</code></p>
-<div id="general-orientation-6" class="section level5">
+<div id="general-orientation-8" class="section level5">
 <h5>General Orientation</h5>
 <p>Contains gestures produced by the mom.</p>
 <p>This column is automatically populated after the <em>gesture</em> pass is completed, using a Ruby script. All of the gestures tagged with ‘m’ in <code>&lt;source&gt;</code> in the gesture column are transferred here. The onset and offset are equal, and set to the onset from the <em>gesture</em> column, which reflects the time when the coder was sure the gesture had begun.</p>
@@ -851,144 +720,208 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p><code>s</code> = show/hold up</p>
 <p><code>i</code> = iconic gesture</p>
 <p><code>c</code> = conventional gesture</p>
+<hr />
+<hr class="play">
 </div>
 </div>
 </div>
 </div>
 <div id="locomotion-passes" class="section level1">
 <h1>Locomotion passes</h1>
-<div id="workflow-2" class="section level3">
-<h3>Workflow</h3>
+<div id="workflow-2" class="section level2">
+<h2>1. Workflow</h2>
 <ol style="list-style-type: decimal">
 <li>Choose whether to code child or mom first</li>
-<li>Score each pass according to definitions in <a href="https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual4">Locomotion Codes</a></li>
+<li>Score each pass according to definitions below</li>
 </ol>
 </div>
-<div id="coding-locomotion" class="section level3">
-<h3>Coding <a href="locomotion.html">locomotion</a></h3>
-<div id="childloc" class="section level4">
-<h4><code>childloc</code></h4>
-<p><code>&lt;loc_l-f-h-c&gt;</code></p>
-<div id="general-orientation-7" class="section level5">
-<h5>General Orientation</h5>
-<p>This code captures the times that the child is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true</a></p>
-<p>Also included in this pass are the times when locomotion cannot occur because the child is held,</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true</a></p>
-<p>and the times child is constrained in child furniture (e.g., a belted chair, highchair, or stroller).</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true</a></p>
-<p>Coders score only instances of child-generated locomotion, and instances of falling, being held, or being constrained. Coders do not score instances where child is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the child is stationary but not held and not constrained.</p>
-<p>Coders are watching/tagging the duration of each of these events (locomotion, falls, held, constrained) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is not locomotion.</p>
+<div id="datavyu---child-locomotion-pass-1" class="section level2">
+<h2>2. Datavyu - Child locomotion pass</h2>
+<div id="general-orientation-9" class="section level3">
+<h3>2.1 General orientation:</h3>
+<p><indent> Screenshot of template (coming soon!)<br> <indent> Column name: <code>childloc</code> </indent><br> <indent> Prompt: <code>&lt;loc_l-f-h-c&gt;</code> </indent><br></p>
+<p>This code captures the times that the child is engaged in salient self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).</p>
+<p>Coders score only instances of child-generated locomotion, and instances of falling, riding, or being constrained by mom or device. Coders do not score instances where child is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the child is stationary but not held and not constrained. <br><br></p>
+<p>Coders are watching/tagging the duration of each of these events (locomotion, falls, mom-constrained, device-constrained, riding a toy with wheels, not visible) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is likely a transition rather than salient locomotion.<br><br></p>
 </div>
-<div id="value-list-5" class="section level5">
-<h5>Value List</h5>
-<p><code>l</code> = locomotion</p>
-<p><code>f</code> = fall</p>
-<p><code>m</code> = mother constraining child locomotion</p>
-<p><code>d</code> = device constraining child locomotion (high chair, stroller, carseat, etc.)</p>
-<p><code>.</code> = when child is off camera or the child’s feet/knees/bum are off camera and coder cannot see or infer whether the child is locomoting.</p>
+<div id="list-of-values-and-definitions" class="section level3">
+<h3>2.2 List of values and definitions</h3>
+<code>l</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-l">
+Locomotion
+</button>
 </div>
-<div id="operational-definitions-3" class="section level5">
-<h5>Operational Definitions</h5>
-<p><code>&lt;l&gt;</code> Code “l” when the child is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, climbing, cruising, supported walking, independent walking, etc.)</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true</a></p>
-<p>This code counts locomotion regardless of whether the child maintains balance independently or the child’s balance is supported by a parent or external object/apparatus.</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true</a></p>
-<p>Any self-generated locomotion on a moving toy or child furniture (e.g., a bicycle or bottomless car that the child moves with their legs) counts as locomotion.</p>
-<p>Locomotion occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the child is taking a “step”.</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true</a></p>
-<p>A child takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot in the air to count as moving; if not, this is stationary).</p>
-<p>Onset of a “step” is when the whole foot/knee comes up off the ground. A step can also happen if the foot doesn’t come off the ground, but the foot has to slide forward, backward or sideways. Marching in place, jumping, and hopping also count as locomotion. Offset is the frame when the child takes the last step (with foot/knee) to pause in place (in the same posture such as walking to standing) or to transition to another stationary posture (e.g., upright walking to sitting). A pause must last at least 0.5 s.</p>
-<p>Do not include any movement with foot/knee as part of a transition to another posture (e.g., sit to upright/walk). The first walking/crawling step will be when the foot/knee moves forward in any direction. The final step in the bout has to be a real walking/crawling step (i.e., it is not the last half step or little attempt-step that looks like a transition into the sit). For example, if the child transitions from sitting to crawling; the first step is after the transition ends and the last step is just before another transition begins.</p>
-<p>If the feet/knees/bum are outside the camera view, code the locomotion bout if you can see the body moving and/or can infer that the child is moving. If you are unsure as to whether the child is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this bout should be coded as missing “.”, where the offset of the previous locomotion bout (just before the video occlusion or lack or view) should be set to the last frame where you can no longer see/infer the child’s movement.</p>
-<p><code>&lt;f&gt;</code></p>
-<p>Code ‘f’ if the child loses control over his/her body (i.e., balance) and cannot recover on his/her own before his/her body hits the ground.</p>
-<p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion. Falls can happen while the mom is holding the child’s hand or while the child is holding onto furniture or another support.</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true</a></p>
-<p>Onset is frame when child first begins to lose balance and Offset when child’s body (as defined below) hits the floor.</p>
-<p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground; child’s bum hitting the ground; or head hitting the ground.</p>
-<p>From a crawling position: a loss of balance results in the face, head, chest, or side of torso hitting the ground.</p>
-<p>From a sitting position: a loss of balance results in the head, chest, side of torso, or back hitting the ground.</p>
-<p>A loss of balance must occur before any of the body parts hit the ground. The child must be out of his/her own control. Sometimes babies will actively let themselves lose control (e.g., plopping down into a sit, where they let themselves fall down into a sitting position). That is not a loss of balance but IS a loss of control and should count as a fall.</p>
-<p>If the child loses balance, but catches him/herself before the above body parts hit the ground, do not count as a fall.</p>
-<p>Parent involved falls would only be coded as a fall if the parent catches the child after the child loses balance, effectively supporting the child’s entire weight. In this scenario, the child would have fallen if not for parent rescue (i.e., the body part would have hit the ground). Parents must catch after the child has begun to lose balance. If the parent was already supporting the child’s weight before a loss of balance, but child’s body parts (e.g., hands, head, butt, etc.) do not touch the ground, then this is not a fall (it is supported walking).</p>
-<p><code>&lt;m&gt;</code></p>
-<p>Code ‘m’ when the child is being constrained and supported by the mother. The child’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the child’s body by touching their torso. Do not count mother constraint when the child is just sitting on the mother’s lap. During a mother constraint, the parent can be moving (carrying) or stationary (holding).</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
-<p>Onset of hold is the last frame before the child’s second foot (or bum if child was sitting, torso if child was laying down, second knee if crawling or knee walking) lifts up off the current surface and up into the air in mom’s arms.</p>
-<p>Offset of hold is when both feet touch the ground (or bum if mom places child in sitting, torso if mom places child laying down, both knees if mom places child in crawling or knee walking), and the child starts supporting own weight in any posture.</p>
-<p>When mom is putting the child back down, the onset for the immediate subsequent locomotion bout (if it happens) is when the second foot, hand, or knee touches the floor.</p>
-<p><code>&lt;d&gt;</code></p>
-<p>Code ‘d’ if the child is constrained in a device that restricts movement (e.g., a highchair, stroller, carseat, etc.). Device is not a couch, bed, or changing table unless there’s a strap, belt, or cord holding child down. Device can never be household furniture not intended for children. Wooden or plastic child chair is not a device without straps.</p>
-<p>child walker is not a device. This would count as supported walking because that’s the whole point of a child walker. Jolly jumper counts as a constrained device even though the child is moving or jumping around.</p>
-<p>Mom-constraint and device-constraint are likely to be continuous. Mom-constraint ends as she puts child into device. Mom takes child out of device is device-constraint transitioning into mom-constraint.</p>
-<p>Onset of constrained is when the child’s butt first touches the restrictive device.</p>
-<p>Offset of constrained is when the butt leaves the device as the parent starts to take the child out (usually by lifting them out).</p>
-</div>
-<div id="how-to-code-3" class="section level5">
-<h5>How to Code</h5>
-<p>Set “JUMP-BACK-BY” key to 1 s.</p>
-<p>Enable cell highlighting.</p>
-<p>Watch in real time for the child’s movement.</p>
-<p>Watch child’s feet and knees.</p>
-<p>As soon as you see child’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this Onset.</p>
-<p>Now, watch in real time to see when the child stops moving. The Offset is when the child stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the child is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position (sometimes infants stop their walking bout on their tip-toes) is the offset. The same applies to sliding steps.</p>
-<p>To set the Offset, use the same rules for mechanics as with the onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster.</p>
+<div id="coding-locomotion-child-l" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>l</b>”
+</h5>
+<p>Code <b>l</b> when the baby is engaged in self-generated locomotion in any form (i.e. bum shuffling, scooting, belly crawling, hands-knees crawling, hands-feet crawling, cruising, supported walking, independent walking, marching in place, jumping, hopping, etc.). <br> <br> <b>l</b> occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the baby is taking a “step”. A baby takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot/knee in the air to count as moving; if not, this is stationary). <br><br> This code counts locomotion regardless of whether the baby maintains balance independently or the baby’s balance is supported by a parent or external object/apparatus. This code also counts even if the child is taking uncontrolled steps while losing balance (i.e. stumbling steps before a fall). Any self-generated locomotion where the child is using a toy, baby walker, furniture, etc. for support and pushing or moving the object, counts as locomotion. (If child is on top and riding a toy with wheels, this does not count as locomotion. See rules for riding). <br></p>
+<p><br> <b>(a) If child is upright:</b><br> If child is upright on both feet without support, every step counts. NOTE: Do not include pivots. Be careful of bouts that start or end with “pivots” – part of baby’s foot moving but the entire foot is not displaced (e.g. toes move in air but heel rotates on floor, heel moves in air while toes rotate on floor). If a bout start or ends with one of these pivots, do not include pivot movements as part of the locomotion bout. <br> <br> <b>(b) If child is upright but using a surface for support:</b> <br>If child is upright on both feet while supported by furniture, toy, or mom, the duration of each step has be less than or equal to 1 sec. If the child is using hands for support while swinging one leg for more than 1 sec, do not code as locomotion. We want to exclude time when the child is not locomoting but one foot is in the air for an extended period of time (&gt;1s). <br><br> <b>(c) If child is NOT upright:</b> <br>If child is not upright on both feet (e.g., crawling on belly, hands knees crawling, bum shuffling, etc.) then a bout has to include 3 or more consecutive steps with foot, knee, or bum to count as locomotion. Do not try to code one bum shuffle (child scoots bum back once while sitting on the floor) or one crawl step (moves the knee one time when on the floor). Most likely that is just a shift of position or the beginning of a transition (which is not coded. See rules for transitions). <br><br> <u>NOTE for hands/feet crawling</u>: <br> For hands/feet crawling, both hands need to be on the floor. So if the first or last step only has one hand on the floor, consider this a transition. Crawling can be a mix between knee and foot crawling. Code onset based on which body part begins the movement (foot or knee). <br><br> <u>NOTE for belly crawling or bum shuffling</u>: <br> Only code locomotion if the baby makes at least 3 reliable belly-crawling movements (RARE). <br><br> <b>(d) Do not include any transitions</b> <br>Do not include any movement with foot/knee as part of a transition to another posture (e.g., sit to upright/walk, sit to crawl). The first walking/crawling step will be when the foot/knee moves forward in any direction. The final step in the bout has to be a real walking/crawling step (i.e., it is not the last half step or little attempt-step that looks like a transition into the sit). For example, if the baby transitions from sitting to crawling; the first step is after the transition ends and the last step is just before another transition begins. Do not include any time baby is rolling (either on furniture or floor). This is not a reliable source of locomotion and is often part of a transition. <br><br> <u>NOTE for climbing onto/down from furniture</u>: <br> - Getting down from furniture: If baby bum shuffles or slides to get off of furniture, consider this a transition and therefore do not code until both of baby’s feet have landed on floor. <br> - Climbing onto furniture: If child is locomoting and climbs onto furniture without stopping code this entire bout as locomoting. <br> If the child is locomoting on the floor and stops for more than 1 s before climbing onto the furniture (e.g. child walks up to the couch, lifts one leg and stops for more than 1s) then set the offset of the locomotion bout when child stops. After child climbs onto the furniture, the child could transition to stationary (don’t code this as locomotion) OR start a new bout of locomotion (remember only code crawling if 3 or more steps). <br><br> <u>NOTE for locomoting up/down stairs:</u> <br> If the child is going up/down stairs in any manner (walking, crawling, belly-crawling, bum shuffling), count all possible locomotion using regular locomotion codes. Stairs are different from climbing onto/down from furniture note above.</p>
+<h5>
+Setting the Onset &amp; Offset of a locomotion bout:
+</h5>
+<p><b>Onset</b> of an upright “locomotion bout” is the first frame when the whole foot is displaced. The foot doesn’t necessarily have to come off the ground, but the foot has to slide forward, backward or sideways. The onset for a non-upright “locomotion bout” is the first frame when the knee/foot or bum is displaced in space. <br> <b>Offset</b> is the frame when the baby takes the last step before a 1s pause.</p>
 </div>
 </div>
-<div id="momloc" class="section level4">
-<h4><code>momloc</code></h4>
-<p><code>&lt;loc_l-f&gt;</code></p>
+<br> <code>f</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-f">
+Fall
+</button>
+</div>
+<div id="coding-locomotion-child-f" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>f</b>”
+</h5>
+<p>Code <b>f</b> if the baby loses control over his/her body (i.e., balance) and cannot recover on his/her own before his/her body hits the ground. If the baby loses balance, but catches him/herself before the above body parts hit the ground, do not count as a fall. <br><br> All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion (walking or crawling). Falls can happen while the mom is holding the baby’s hand or while the baby is holding onto furniture or another support. <br><br> A loss of balance must occur before any of the body parts hit the ground. The baby must be out of his/her own control. Sometimes babies will actively choose to drop to the floor (e.g., jumping and dropping, flopping down from a couch to the floor, plopping down into a sit, where they let themselves fall down into a sitting position) should NOT count as a fall. <br><br> Parent involved falls would only be coded as a fall if the parent catches the baby after the baby loses balance, effectively supporting the baby’s entire weight. In this scenario, the baby would have fallen if not for parent rescue (i.e., the body part would have hit the ground). Parents must catch after the baby has begun to lose balance. If the parent was already supporting the baby’s weight before a loss of balance, but baby’s body parts (e.g., hands, head, butt, etc.) do not touch the ground, then this is not a fall (it is supported walking). <br><br> Falling can occur immediately after mom-constrained if mom and child fell together. Falling can occur immediately after device-constrained if device tips over or the mechanism of constraint fails. Falling can occur immediately after riding if falls off of the riding device. <br></p>
+<h5>
+Setting the Onset &amp; Offset for falls:
+</h5>
+<p>Falls can be coded as separate events (child is standing stationary and then falls) or immediately following another code (child is locomoting and then falls). There should only be 1ms between the previous code and the onset of the falling event if the fall ends the previous code. <br> <indent><b>Onset</b> is the first frame when child begins to lose balance.</indent><br> <indent><b>Offset</b> when child’s body (as defined below) hits the floor.</indent> <br> <br> From an <b>upright or squatting</b> position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground; baby’s bum hitting the ground; or head hitting the ground. <br> From a <b>crawling</b> position: a loss of balance results in the face, head, chest, or side of torso hitting the ground. <br> From a <b>sitting</b> position: a loss of balance results in the head, chest, side of torso, or back hitting the ground.</p>
 </div>
 </div>
-<div id="general-orientation-8" class="section level3">
-<h3>General Orientation</h3>
-<p>This code captures the times that mom is engaged in locomotion or fell.</p>
-<p>Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary.</p>
-<p>Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts.</p>
-<p>Coders are watching for steps with the feet, the knees, or the bum.</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true</a></p>
-<p>Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion.</p>
-<p>Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving.</p>
-<div id="value-list-6" class="section level5">
-<h5>Value List</h5>
-<p><code>l</code> = locomotion</p>
-<p><code>f</code> = fall</p>
-<p><code>.</code> = when mother is off camera and coder cannot determine whether mom is moving or stationary</p>
+<br> <code>m</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-m">
+Mom constrained
+</button>
 </div>
-<div id="operational-definitions-4" class="section level5">
-<h5>Operational Definitions</h5>
-<p><code>&lt;l&gt;</code> Code ‘l’ when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling).</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true</a></p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
-<p>If you’re not sure whether the mom is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this is missing data and the offset of the locomotion bout should be set to the last frame where you can see mom.</p>
-<p>The subsequent cell (where you cannot see anything or make an inference about movement) should be coded as “.” until you can see mom again.</p>
-<p>However, if you can infer that mom is moving or stationary (i.e., head is bobbing, shadow of the leg moving is visible, etc.) then include it in the same bout of locomotion, following the rules for pauses above.</p>
-<p><code>&lt;f&gt;</code></p>
-<p>Code ‘f’ if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground.</p>
-<p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true</a></p>
-<p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion.</p>
-<p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground.</p>
+<div id="coding-locomotion-child-m" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>m</b>”
+</h5>
+<p>Code <b>m</b> when the child is being constrained and supported by the mother. The child’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the child’s body. During a mother constraint, the mother can be moving (carrying) or stationary (holding). <br><br> NOTE: Code as ‘m’ if mother has placed the baby on a surface but is still supporting the child such that the child would not be able to locomote (e.g. child sitting on kitchen counter and mom holding. While the child’s full weight is not supported by mom, the baby is being constrained by mom and could not locomote. <br><br> NOTE: Do not count mother constraint when the child is just sitting on the mother’s lap or child is next to mom sitting on the couch — the child could get up and locomote if he/she wanted. However, if child is on the mom’s lap and their feet are hanging far of the floor (e.g. mom is sitting on a couch and child is on her lap, and child’s legs are dangling in front of the couch). <br></p>
+<h5>
+Setting the Onset &amp; Offset of a mom-constrained bout:
+</h5>
+<p><b>Onset</b> of “mom-constrained” is the first frame when mom lifts up the baby’s whole body off the current surface and up into the air in mom’s arms (as defined below). <br>From an <b>upright or squatting</b> position: when child’s second foot leaves the surface. <br>From <b>lying down on back</b>: when bum leaves the surface of support. <br>From <b>lying on tummy</b>: when tummy leaves the surface of support. <br>From a <b>crawling</b> position: second knee/foot leaves the surface of support. <br>From a <b>sitting</b> position: when bum leaves the surface of support. <br>NOTE: If child is sitting on mom’s lap and mom gets up holding child, the onset is when mom starts to get up (when mom’s bum leaves the surface). <br><br> <b>Offset</b> of “mom-constrained” is when mom places baby down and the baby starts supporting own weight in any posture (as defined below). <br>Mom places child in <b>upright</b> position: when both feet touch the ground. <br>Mom places child <b>lying down on back</b>: when bum touches the surface. This is usually the case when mom puts child on the changing table. <br>Mom places child <b>lying down on tummy</b>: when tummy touches the surface. <br>Mom places child in <b>crawling or kneeling</b> position: when both knees touch the ground. <br>Mom places child in <b>sitting</b> position: when child’s bum touches the surface of support. <br>This can be a chair, highchair, furniture, floor, or mother’s lap. For mom’s lap offset is when child’s bum touches the mom’s lap, not when the mom’s hands release the child (the mom could continue to hold the child after the bum touches the mom’s lap). <br><br> NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’): <br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint. <br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device (See onset codes above). <br><br> NOTE for when transitioning from “locomotion” to “mom-constrained” to “locomotion” (‘l’, ‘m’, ‘l’): <br><u>In cases of “locomotion” followed by “mom-constrained”</u> Offset for ‘l’ should be the last real step before mom lifts baby of the surface. Codes for ‘l’ and ‘m’ can be continuous but not always are. <br><br> <u>In cases of “mom-constrained” followed by “locomotion”</u> <br>If baby immediately starts locomoting when mom is putting the baby back down, the onset for ‘l’ is when the second foot, hand, or knee touches the floor.</p>
 </div>
-<div id="how-to-code-4" class="section level5">
-<h5>How to Code</h5>
-<p>Set “JUMP-BACK-BY” key to 1 s.</p>
-<p>Enable cell highlighting on the controller.</p>
-<p>Watch in real time for the mom’s movement.</p>
-<p>Watch for the feet and knees.</p>
-<p>As soon as you see mom’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this Onset.</p>
-<p>Now, watch in real time to see when the mom stops moving. The Offset is when the mom stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the mom is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position is the offset. The same applies to sliding steps.</p>
-<p>To set the Offset, use the same rules for mechanics as with the Onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster.</p>
+</div>
+<br> <code>d</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-d">
+Device constrained
+</button>
+</div>
+<div id="coding-locomotion-child-d" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>d</b>”
+</h5>
+<p>Code ‘<b>d</b>’ if the child is constrained (could be strapped or not) in a device that <b>restricts locomotion</b> (e.g., a highchair, stroller, car seat, etc.). The device could restrict locomotion by binding the child from the front or sides (bumbo seat), lifting them off the ground (high chair, changing table), constraining their freedom to move upright (car seat, stroller), or strapped in. Device can never be household furniture (e.g. couch, chair, or bed) not intended for children. Child-designed furniture (e.g. wooden or plastic child chair) is not a device unless the child is strapped into it and locomotion is restricted. <br> <indent>NOTE: Child walker is not a device. This would count as supported walking because that’s the whole point of a child walker. Jolly jumpers and exersaucers count as a device even though the child is moving or jumping around because this restricts locomotion.</indent> <br><b>For devices that always restricts locomotion (with or without straps):</b> if the device restricts locomotion regardless of whether the child is strapped in or not (e.g. highchair with bounded sides, tall stroller, bumbo seat) code as ‘d’ when child is on the device, not when straps are buckled. <br><b>For child-designed furniture that restricts locomotion only when child is strapped in:</b> If child-designed furniture only restricts locomotion because the child is strapped in (e.g. child chair that the child could get on/off independently) then code as ‘d’ when and only when the child is strapped in. Onset is when the first strap is buckled and offset is when the last strap is unbuckled. Do not code the time when the child is stationary and free to initiate locomotion from the piece of furniture. <br><b>For ride toys that restricts locomotion when child is strapped in:</b> If ride toy only restricts locomotion because the child is strapped in (e.g. a toy like stroller), then code as ‘d’ when and only when the child is strapped in. <br><b>For changing tables:</b> If mom places the child on a changing table (off the ground), code as ‘d’ as long as the child is on the changing table. Only code mom-restrained when mom picks up child from floor and puts on the changing table, and when mom picks up child from changing table and puts him/her back on the floor. Do not code ‘d’ when mom is changing the child on a changing mat on the floor (follow rules for mom-restrained if mom picks child up or locomotion rules if child starts crawling or walking). <br> <indent>NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’): <br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint. <br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device unless the straps are the only method of restricting locomotion, then treat unbuckled part as stationary.<indent></p>
+<h5>
+Setting the Onset &amp; Offset of a device-constrained bout:
+</h5>
+<p><b>Onset</b> of device constrained is when the child’s butt first touches the restrictive device. Do not wait until child is strapped to device. <br><b>Offset</b> of constrained is when the butt leaves the device as the parent starts to take the child out (usually by lifting them out). (See also mom-constrained section).</p>
+</div>
+</div>
+<br> <code>r</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-r">
+Riding
+</button>
+</div>
+<div id="coding-locomotion-child-r" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>r</b>”
+</h5>
+<p>Code <b>r</b> if the child is riding a locomotive device (e.g. child car, bike, scooter, etc.) with wheels. The child can be sitting (bum on the seat), kneeling with one knee, standing (on a scooter). The device does not necessarily need to be in motion for you to code this as <b>r</b>. If riding toy does not have wheels then it does not count as <b>r</b> and should be considered stationary (e.g. if a child is sitting on a rocking horse). <br>Do not code as <b>r</b> if child’s bum, knee, or feet is not on the riding device. Taking steps while pushing a riding toy or while walking around the toy count as locomotion. If steps occur as child is moving onto/off of device, follow codes for <b>l</b> (remember not to code transitions).</p>
+<h5>
+Setting the Onset &amp; Offset of a ride bout:
+</h5>
+<p><b>Onset</b> of ride is when the child’s bum or knee first touches the riding toy (if sitting in a bike or car) or the second foot is of the ground (if standing on a scooter). <br><b>Offset</b> of ride is when child’s bum, knee, or both feet leave the riding toy.</p>
+</div>
+</div>
+<br> <code>.</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-null">
+Not codable
+</button>
+</div>
+<div id="coding-locomotion-child-null" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>.</b>”
+</h5>
+Code <b>.</b> if child is not fully visible and you cannot reliably code <b>l</b>, <b>d</b>, <b>m</b>, or <b>r</b>. Child could be completely out of view or their lower body could be occluded and it is not clear based of the movement of the top half of the body if the child is locomoting. <b>A missing bout must last for last least 1 second</b>. <br><br><b>If child is missing for less than 1s</b>: <br>If missing time less than 1s occurs between 2 identical codes (e.g. ‘l’ and ‘l’) <b>do not split bout</b>; instead, continue locomotion bout from original cell until end of that locomotion bout. <br>If missing time (&lt;1s) occurs between 2 non-identical codes, (e.g. ‘l’ before missing, stationary after missing), code offset of locomotion cell as the first frame where you cannot see the child. <br><br><b>If child is missing for more than 1s</b>: Code CONTINUOUSLY so that the ‘.’ fills all of the time in the spreadsheet between the two events that are visible. For example, if child is locomoting, then feet aren’t visible, and the reapers constrained in a car seat, there should only be 1ms between the cells (press the ‘0’ key on the numpad to do this automatically). <br><br><b>Going around corners</b>: This should be coded according to above rules. After child is fully out of view (and this lasts for at least 1s), code as missing. Begin coding locomotion again when child is back in view. This is a continuous code (see above for when missing (&gt;1s) captures all time between two cells). <br><br><b>If child’s lower half is occluded by furniture or is outside of camera view:</b> <br>If this occurs BUT you can easily see that the child is locomoting over distance (e.g. by seeing top half of child moving in space), DO NOT code as ‘.’ because this is locomoting. If this occurs BUT you cannot determine if child is taking steps (e.g. could be taking small steps, rocking back and forth, or pivoting), locomotion status is unclear <b>so code as missing</b>. Do not make judgment calls if you cannot clearly determine if locomotion is taking place.
+<h5>
+Setting the Onset &amp; Offset of a missing bout:
+</h5>
+<p><b>Onset</b> of missing is first frame where child’s locomotion cannot be reliably coded (see above rules for specific instances). <br><b>Offset</b> of missing is first frame where child’s locomotion status can reliably be coded (see above rules for specific instances).</p>
+</div>
+</div>
+</div>
+<div id="how-to-code-5" class="section level3">
+<h3>2.3 How to code</h3>
+<p><br> <indent>Turn volume off file by clicking on the speaker icon on the video track on the data controller and dragging the bar all the way down.<indent> <br>Set “JUMP-BACK-BY” key to 1 s. <br>Watch in real time except when the child is restrained by a device. <br>Watch baby’s feet and knees. <br><br> As soon as you see baby’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Onset</b> of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this <b>Onset.</b> <br><br> Now, watch in real time to see when the baby stops moving. The <b>Offset</b> is when the baby stops moving for at least 1 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 1-s pause, especially if it looks like the baby is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position (sometimes infants stop their walking bout on their tip-toes) is the offset. The same applies to sliding steps. <br><br> To set the <b>Offset</b>, use the same rules for mechanics as with the onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the <b>Offset</b> of that cell. If you go to far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG buttons to move in either direction a bit faster. <br><br> If child begins engaging in a stationary activity that is likely to last more than a few seconds (e.g. watching tv, coloring, sitting on floor with a book, etc.), move to 2x or even 4x speed. When child begins moving, use jump-back button to go back to onset of locomotion. THIS WILL SAVE YOU TIME! Child may make small movements during this time to re-adjust body position, but if movements are less than 3 steps on bum or knees, do not slow down to code them as these would be ignored as per coding rules discussed above. <br></p>
+</div>
+</div>
+<div id="datavyu---mom-locomotion-pass-1" class="section level2">
+<h2>3. Datavyu - Mom locomotion pass</h2>
+<div id="general-orientation-10" class="section level3">
+<h3>3.1 General orientation:</h3>
+<p><indent>Screenshot of template</indent><br> <indent>Column name: <code>momloc</code></indent><br> <indent>Prompt: <code>&lt;loc_l-f-.&gt;</code></indent><br></p>
+<p>This code captures the times that mom is engaged in locomotion or fell. <br><br> Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary. <br><br> Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts. <br><br> Coders are watching for steps with the feet, the knees, or the bum. <br><br> Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion. <br><br> Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving</p>
+</div>
+<div id="list-of-values-and-definitions-1" class="section level3">
+<h3>3.2 List of values and definitions</h3>
+<code>l</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-l">
+Locomotion
+</button>
+</div>
+<div id="coding-locomotion-mom-l" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>l</b>” for mom
+</h5>
+<p>Code ‘l’ when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling). <br><br> If you’re not sure whether the mom is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this is missing data and the offset of the locomotion bout should be set to the last frame where you can see mom. <br><br> The subsequent cell (where you cannot see anything or make an inference about movement) should be coded as “.” until you can see mom again. <br><br> However, if you can infer that mom is moving or stationary (i.e., head is bobbing, shadow of the leg moving is visible, etc.) then include it in the same bout of locomotion, following the rules for pauses above.</p>
+</div>
+</div>
+<br> <code>f</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-f">
+Fall
+</button>
+</div>
+<div id="coding-locomotion-mom-l" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>f</b>” for mom
+</h5>
+<p>Code ‘f’ if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground. <br><br> All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion. <br><br> From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground.</p>
+</div>
+</div>
+<br> <code>.</code> =
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-null">
+Not codable
+</button>
+</div>
+<div id="coding-locomotion-mom-null" class="collapse" aria-expanded="false" style="height: 0px;">
+<div class="box" style="white-space: pre-wrap;">
+<h5>
+General rules for coding “<b>.</b>”
+</h5>
+Code <b>.</b> if child is not fully visible and you cannot reliably code <b>l</b>, <b>d</b>, <b>m</b>, or <b>r</b>. Child could be completely out of view or their lower body could be occluded and it is not clear based of the movement of the top half of the body if the child is locomoting. <b>A missing bout must last for last least 1 second</b>. <br><br><b>If child is missing for less than 1s</b>: <br>If missing time less than 1s occurs between 2 identical codes (e.g. ‘l’ and ‘l’) <b>do not split bout</b>; instead, continue locomotion bout from original cell until end of that locomotion bout. <br>If missing time (&lt;1s) occurs between 2 non-identical codes, (e.g. ‘l’ before missing, stationary after missing), code offset of locomotion cell as the first frame where you cannot see the child. <br><br><b>If child is missing for more than 1s</b>: Code CONTINUOUSLY so that the ‘.’ fills all of the time in the spreadsheet between the two events that are visible. For example, if child is locomoting, then feet aren’t visible, and the reapers constrained in a car seat, there should only be 1ms between the cells (press the ‘0’ key on the numpad to do this automatically). <br><br><b>Going around corners</b>: This should be coded according to above rules. After child is fully out of view (and this lasts for at least 1s), code as missing. Begin coding locomotion again when child is back in view. This is a continuous code (see above for when missing (&gt;1s) captures all time between two cells). <br><br><b>If child’s lower half is occluded by furniture or is outside of camera view:</b> <br>If this occurs BUT you can easily see that the child is locomoting over distance (e.g. by seeing top half of child moving in space), DO NOT code as ‘.’ because this is locomoting. If this occurs BUT you cannot determine if child is taking steps (e.g. could be taking small steps, rocking back and forth, or pivoting), locomotion status is unclear <b>so code as missing</b>. Do not make judgment calls if you cannot clearly determine if locomotion is taking place.
+<h5>
+Setting the Onset &amp; Offset of a missing bout:
+</h5>
+<p><b>Onset</b> of missing is first frame where child’s locomotion cannot be reliably coded (see above rules for specific instances). <br><b>Offset</b> of missing is first frame where child’s locomotion status can reliably be coded (see above rules for specific instances).</p>
+</div>
+</div>
+<p><br></p>
+</div>
+<div id="how-to-code-6" class="section level3">
+<h3>3.3 How to code</h3>
+<p>Set “JUMP-BACK-BY” key to 1 s. <br><br> Enable cell highlighting on the controller. <br><br> Watch in real time for the mom’s movement. <br><br> Watch for the feet and knees. <br><br> As soon as you see mom’s foot/knee lift up off of the ground; hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the onset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster. Hit ENTER to create a new cell at this Onset. <br><br> Now, watch in real time to see when the mom stops moving. The Offset is when the mom stops moving for at least 0.5 s (the pause has to look and feel like an actual pause when you are watching in real time; don’t simply end a bout of locomotion because there was a 0.5-s pause, especially if it looks like the mom is about to take another step). The first frame when the foot/knee stops moving or when the foot settles into its final position is the offset. The same applies to sliding steps. <br><br> To set the Offset, use the same rules for mechanics as with the Onset. Hit #5-STOP and then hit “JUMP-BACK-BY” to go back to the timestamp that is just before the lift. Then JOG forward by hitting #3-JOGFORWARD until you reach the Offset of that cell. If you go too far, you can JOG backward by hitting #1-JOGBACK. You will likely have to hit the JOG keys numerous times. If you feel that you have either jumped too far back or went too far forward, hold the JOG keys to move in either direction a bit faster.</p>
+<hr class="play">
 </div>
 </div>
 </div>
@@ -1007,16 +940,16 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="childobject" class="section level4">
 <h4><code>childobject</code></h4>
 <p><code>&lt;obj&gt;</code></p>
-<div id="general-orientation-9" class="section level5">
+<div id="general-orientation-11" class="section level5">
 <h5>General Orientation</h5>
 <p>This code captures the times that the child is manually engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray spaces between cells mean that the child is not engaged with an object. <a href=""> (2 videos) </a></p>
 </div>
-<div id="value-list-7" class="section level5">
+<div id="value-list-5" class="section level5">
 <h5>Value List</h5>
 <p><code>o</code> = object</p>
 <p><code>.</code> = when child is off camera and coder cannot determine whether child has an object in hand.</p>
 </div>
-<div id="operational-definitions-5" class="section level5">
+<div id="operational-definitions-3" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;obj&gt;</code></p>
 <p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items, and smaller moveable elements of larger objects like beads on busy box, doorknob) <a href=""> (2 videos) </a>. Objects may include large objects (i.e., a stroller, adult furniture, door, etc.) when child moves them, thus, manually engaging with them. If the object never moves (e.g., the child has a hand on the stroller but does not displace it), then this is not coded as ‘o.’ <a href=""> (1 video) </a> The displacement rule is so that we can differentiate object engagement episodes from instances where child is exploring a surface or resting hands on a surface for support. <a href=""> (1 video) </a> The infant does not have to be looking at the object for the event to count as an object engagement (e.g., child is carrying object) <a href=""> (1 video) </a>.</p>
@@ -1024,7 +957,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Code ‘<strong>o</strong>’ if the child is engaged with an object by making contact with the item with hand(s) and/or moving the item in space (e.g., carrying, pushing on the floor, etc.) <a href=""> (1 video) </a></p>
 <p><strong>Onset</strong> is the frame when child first causes the object to move while making contact with any part of the hand(s), not feet. Contact could be from any part of the hand (fingers, palm, side of hand). Movement could including lifting, holding, pressing, grasping, shaking, banging, or any other type of displacement event. DO NOT code onset, just when the hand touches the object if the object is not displaced (e.g., if they child touches a pillow but then 1 minute later actually grasps and moves it, code onset at the movement not when the hand touches the object). <strong>Offset</strong> is the frame when child is no longer in manual contact with an object for at least 3 s. OR when the child is in manual contact but the object is no longer being displaced (displacement includes holding, lifting) for at least 3 s. There is no minimum duration for child to touch an object to be scored as ‘o,’ but if infant is touching multiple objects, the offset of ‘o’ object cell is when child is no longer in manual contact with the last object contacted for 3+ s. If the child is in manual contact with an object in one hand and makes contact with another object with their second hand, count this as the same bout. <a href=""> (1 video) </a></p>
 </div>
-<div id="how-to-code-5" class="section level5">
+<div id="how-to-code-7" class="section level5">
 <h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
@@ -1038,15 +971,15 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p><code>&lt;obj&gt;</code></p>
 </div>
 </div>
-<div id="general-orientation-10" class="section level3">
+<div id="general-orientation-12" class="section level3">
 <h3>General Orientation</h3>
 <p>This code captures the times that the mom is engaged with an object. Coders score only when object events occur, not when they don’t occur. This is an event code, where gray space in between cells means that the mom is not engaged with an object.</p>
-<div id="value-list-8" class="section level5">
+<div id="value-list-6" class="section level5">
 <h5>Value List</h5>
 <p><code>o</code> = object.</p>
 <p><code>.</code> = when mother is off camera and coder cannot determine whether she has an object in hand.</p>
 </div>
-<div id="operational-definitions-6" class="section level5">
+<div id="operational-definitions-4" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;obj&gt;</code></p>
 <p><strong>Object</strong> = is defined as any manipulable, moveable item that may be detached and moved through space (e.g., toys, household items). Object can include parts of a stationary object (e.g., doorknob on door, clasp on drawer) that can be moved or manipulated <a href=""> (5 videos) </a>. Object can include large objects that mom may move (chairs).</p>
@@ -1055,7 +988,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Your browser does not support html5 video.</p>
 <p>If the mom is not in the camera view, code this with a ‘.’ as missing data.</p>
 </div>
-<div id="how-to-code-6" class="section level5">
+<div id="how-to-code-8" class="section level5">
 <h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 3 s.</p>
 <p>Enable cell highlighting.</p>
@@ -1066,6 +999,8 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Do not agonize. If the mom goes in and out of the camera view, but you know she is still holding the same object and has not put it down, code it in the same bout of ‘<strong>o</strong>’. Do not mark the “.” for every few seconds she is out of frame.</p>
 <p>Code as Object event if mom’s back is to the camera, but you see her arms moving and she overtly appears to be manipulating something—even if you can’t see exactly what it is.</p>
 <p>Many times, onsets and offsets are coded when mom goes in and out of frame. In these instances, hit the <em>0</em> key to set a continuous cell, whose onset is 1-ms after the previous cell.</p>
+<hr />
+<hr class="play">
 </div>
 </div>
 </div>
@@ -1083,18 +1018,18 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="childemotion" class="section level4">
 <h4><code>childemotion</code></h4>
 <p><code>&lt;emotion_p-n&gt;</code></p>
-<div id="general-orientation-11" class="section level5">
+<div id="general-orientation-13" class="section level5">
 <h5>General Orientation</h5>
 <p>This code captures the times that the child is clearly displaying positive or negative emotion through facial expressions. Times when the child is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the child is neutral or emotion is unclear. Coders also mark times as “missing” when the child’s face could not possibly be coded for emotion (e.g., face completely turned away from camera, child’s head out of the video). When the child’s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., child is screaming and crying).</p>
 <p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. To determine emotion, coders are watching the child’s face, not vocal affect. To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
 </div>
-<div id="value-list-9" class="section level5">
+<div id="value-list-7" class="section level5">
 <h5>Value List</h5>
 <p><code>p</code> = positive emotion</p>
 <p><code>n</code> = negative emotion</p>
 <p><code>.</code> = child’s face is completely not visible</p>
 </div>
-<div id="operational-definitions-7" class="section level5">
+<div id="operational-definitions-5" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;p&gt;</code></p>
 <p>Code ‘p’ when the child is clearly displaying positive emotion (e.g., smiling). Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. If there is any doubt that the child is showing positive emotion, then do not begin the code.</p>
@@ -1116,7 +1051,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again. The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
 <p>If the child’s face was ‘missing’ and then reappeared for less than 5 frames, don’t stop the ‘.’ code to mark those few frames.</p>
 </div>
-<div id="how-to-code-7" class="section level5">
+<div id="how-to-code-9" class="section level5">
 <h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 1 s.</p>
 <p>Play with #8-PLAY in real time (1x speed) until the child changes to clear positive or clear negative emotion or the face is clearly not visible. Focus on the child’s face and do not be distracted by what the child is saying or doing.</p>
@@ -1129,18 +1064,18 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <div id="momemotion" class="section level4">
 <h4><code>momemotion</code></h4>
 <p><code>&lt;emotion_p-n&gt;</code></p>
-<div id="general-orientation-12" class="section level5">
+<div id="general-orientation-14" class="section level5">
 <h5>General Orientation</h5>
 <p>This code captures the times that the mom is clearly displaying positive or negative emotion through facial expressions. Times when the mom is in neutral emotion are not marked. Bouts of emotion as scored as events, where the grey spaces between emotion events mean the mom is neutral or emotion is unclear. Coders also mark times as “missing” when the mom’s face could not possibly be coded for emotion (e.g., face completely turned away from camera, mom’s head out of the video). When the mom’s face is clearly not visible, negative emotion may be coded only if there is absolute clear vocal affect (e.g., mom is yelling).</p>
 <p>Coders are watching/tagging the duration of each positive or negative emotion event by marking onset/offset times. To determine emotion, coders are watching the mom’s face, not vocal affect. To determine if emotion is not codeable/missing, coders are watching for when the face fully moves out of the camera view.</p>
 </div>
-<div id="value-list-10" class="section level5">
+<div id="value-list-8" class="section level5">
 <h5>Value List</h5>
 <p><code>p</code> = positive emotion</p>
 <p><code>n</code> = negative emotion</p>
 <p><code>.</code> = mom’s face is completely not visible</p>
 </div>
-<div id="operational-definitions-8" class="section level5">
+<div id="operational-definitions-6" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;p&gt;</code></p>
 <p>Code ‘p’ when the mom is clearly displaying positive emotion (e.g., smiling). Code based off of the face and not off of the voice. Look for raising of the corners of the mouth, grinning and showing the teeth, along with closing of the eyes because of the raised cheeks. If there is any doubt that the mom is showing positive emotion, then do not begin the code.</p>
@@ -1162,7 +1097,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Onset is the first frame in which the coder clearly cannot see the face. Offset is the first frame in which the coder can clearly see the face again. The onset and offset do not need to be completely frame accurate, since reliability does not need to be exact from accurate.</p>
 <p>If the mom’s face was ‘missing’ and then reappeared for less than 5 frames, don’t stop the ‘.’ code to mark those few frames.</p>
 </div>
-<div id="how-to-code-8" class="section level5">
+<div id="how-to-code-10" class="section level5">
 <h5>How to Code</h5>
 <p>Set “JUMP-BACK-BY” key to 1 s.</p>
 <p>Play with #8-PLAY in real time (1x speed) until the mom changes to clear positive or clear negative emotion or the face is clearly not visible. Focus on the mom’s face and do not be distracted by what the mom is saying or doing.</p>
@@ -1170,6 +1105,7 @@ At this step, you can also **run the create*momchild*utterancetype.rb script** t
 <p>Then hit #8-PLAY then #4-SHUTTLEBACK once to watch at 1/2x and look for the offset of that emotion or when the face comes completely back into view. For missing, if it seems like there may be a long stretch of missing (e.g. mom is on a different side of the room from the child) then watch at 1x or 2x speed—but be listening in case there is negative emotion in the voice. Pause when you identify the offset.</p>
 <p>Hit #1-JOGBACK and #3-JOGFORWARD to tag the frame the mom’s face is clearly not positive or not negative (returned to neutral) or the face is visible again to code emotion from.</p>
 <p>Then return to real time (1x speed) with #8-PLAY to watch for the next event.</p>
+<hr />
 </div>
 </div>
 </div>
