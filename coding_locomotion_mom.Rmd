@@ -1,6 +1,6 @@
 
-## 3. Datavyu - Mom locomotion pass  
-### 3.1 General orientation:
+## 2. Datavyu - Mom locomotion pass  
+### 2.1 General orientation:
 <indent>Screenshot of template</indent><br>
 <indent>Column name: `momloc`</indent><br>
 <indent>Prompt: `<loc_l-f-.>`</indent><br>
@@ -17,7 +17,7 @@ Any other movements that are not initiated from these three body locations is co
 <br><br>
 Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving
 
-### 3.2 List of values and definitions
+### 2.2 List of values and definitions
 `l` = <div class="videobuttons">
 <button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-mom-l">
 Locomotion
@@ -50,7 +50,7 @@ Not codable
 <br>
 
 
-### 3.3 How to code
+### 2.3 How to code
 
 Set “JUMP-BACK-BY” key to 1 s.
 <br><br>

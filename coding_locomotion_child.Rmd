@@ -9,13 +9,12 @@ output:
 
 # Locomotion passes
 
-## 1. Workflow 
-
+#### Workflow
 1. Choose whether to code child or mom first
 2. Score each pass according to definitions below
 
-## 2. Datavyu - Child locomotion pass  
-### 2.1 General orientation:
+## 1. Datavyu - Child locomotion pass  
+### 1.1 General orientation:
 <indent> Screenshot of template (coming soon!)<br>
 <indent> Column name: `childloc` </indent><br>
 <indent> Prompt: `<loc_l-f-h-c>` </indent><br>
@@ -27,7 +26,7 @@ Coders score only instances of child-generated locomotion, and instances of fall
 Coders are watching/tagging the duration of each of these events (locomotion, falls, mom-constrained, device-constrained, riding a toy with wheels, not visible) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is likely a transition rather than salient locomotion.<br><br>
 
 
-### 2.2 List of values and definitions
+### 1.2 List of values and definitions
 `l` = <div class="videobuttons">
 <button size="xs" type="button" data-toggle="collapse" data-target="#coding-locomotion-child-l">
 Locomotion
@@ -88,7 +87,7 @@ Not codable
 ```
 </div>
 
-### 2.3 How to code
+### 1.3 How to code
 <br>
 <indent>Turn volume off file by clicking on the speaker icon on the video track on the data controller and dragging the bar all the way down.<indent>
 <br>Set “JUMP-BACK-BY” key to 1 s.
