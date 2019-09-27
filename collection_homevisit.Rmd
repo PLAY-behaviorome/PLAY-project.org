@@ -53,6 +53,7 @@ Say: <say>We would like to measure the environmental noise levels. Is there a go
 ### 3.2 One-Hour Natural Play Video
 
 General Recording Guidelines
+
 -	Aim to get 60 minutes of uninterrupted natural play recoding, in addition to the time you take to give instructions, record the decibel meter and shoes. 
 - Keep camera on the child at all times. Specifically, ensure that the child’s whole body is visible on camera. If mom is in frame, capture as much of her body as possible without compromising the view of the child.
 - Record in front or to the side of the child as much as possible.
@@ -76,7 +77,7 @@ With camera in hand (and still recording), walk over to where the tablet was pla
 
 ##### Shoes
 
-* If child was wearing shoes during the recording, say “Could I get a close-up of the shoes [CHILD] has been wearing?”. Ask mom to remove the shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views. Focus the camera on the shoes and comment on shoe type, sole (hard, soft), heel (if any), and other observations.
+* If child was wearing shoes during the recording, say <say>Could I get a close-up of the shoes [CHILD] has been wearing?</say>. Ask mom to remove the shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views. Focus the camera on the shoes and comment on shoe type, sole (hard, soft), heel (if any), and other observations.
 * If the child was _not_ wearing shoes during the one-hour natural play video, record the shoes during the house walk-through.  
 
 
@@ -126,6 +127,7 @@ Steps:
 11. Film the **Location** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the **Contents** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)
 12. Do ** *NOT* ** turn off the camera when walking to next room.
 13. Walk SLOWLY.
+14. When all rooms are recorded, walk back to the entrance of the home and then stop recording.
 <br><br>
 
 [FAQs about House Walk-through](faq-collection.html)
@@ -140,15 +142,15 @@ Video
 </div>
 <div id="collection-homevisit-structuredplay-pview" class="collapse" aria-expanded="false" style="height: 0px;">
 <video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/42651425,42955319/asset/189087/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+<source src="https://nyu.databrary.org/slot/35422/43858268,44158568/asset/193925/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
 </video>
 </div>
 
-Start recording and say: <say>Now I would like you to play with your child for about 5 minutes with these toys. We always clean these toys before and after each visit. I have a mat that I’m going to ask you to sit on. Where’s a good place for me to put it?</say>
+Say: <say>Now I would like you to play with your child for about 5 minutes with these toys. We always clean these toys before and after each visit. I have a mat that I’m going to ask you to sit on. Where’s a good place for me to put it?</say>
 
 Place the mat on a clearing on the floor.
 
-Say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys. Please play with [CHILD] however you like for 5 minutes.</say>
+Start recording and say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys. Please play with [CHILD] however you like for 5 minutes.</say>
 
 * If the child is playing with a different toy before the recording, ask mom if she can put the toy away.
 * Hand tote bag with toys to mom. Quickly point the camera at the child and mom and note the time on the viewfinder. Record for an additional 5 minutes.
@@ -174,12 +176,3 @@ Say: <say>Please sit next to [CHILD] on this mat. I’ll give you a set of toys.
 * Ensure that mom has copies of the consent and Databrary forms
 * Collect and pack all equipment and paperwork from the house
 * Thank mom for letting us come to her home!
-
-##### Clean up and Upload
-When you arrive back at the lab, please complete these steps on the day you collected data or on the very next day:
-
-- Wash all toys and equipment thoroughly. 
-- Wipe down yoga mat. 
--  Submit home questionnaires.
--  Complete and submit housing checklist and cleanup notes.
--  Upload videos and decibel data to Databrary.

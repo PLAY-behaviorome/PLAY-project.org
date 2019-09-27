@@ -46,13 +46,8 @@ All videos that are collected with go through a quality assurance process in whi
 
 When you arrive back at the lab, please complete these steps on the day you collected data or on the very next day:
 
-Clean up: 
-* Wash all toys and equipment thoroughly. 
-  * Wipe down yoga mat. 
-  * Rinse dish set in bleach-water.
-
-Upload:
-* Complete housing checklist and clean-up notes sections of the questionnaire battery.
-* Check through all questionnaire responses and hit Submit.
-* Upload videos and decibel data to Databrary. (Uploading manual coming soon)
-
+- Wash all toys and equipment thoroughly. 
+- Wipe down yoga mat. 
+- Submit home questionnaires.
+- Complete and submit housing checklist and cleanup notes.
+- Upload videos and decibel data to Databrary.
