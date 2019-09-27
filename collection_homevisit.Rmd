@@ -43,7 +43,20 @@ Say: <say>We would like to measure the environmental noise levels. Is there a go
 
 - Set up tablet, put in microphone.
 - Ensure that “Audio Tool” is force closed.
-- *Turn on “Keep Screen On”.*
+- *Turn on “Keep Screen On”.* 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibelon">
+Video
+</button>
+</div>
+<div id="collection-homevisit-decibelon" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45591222,45599073/asset/194583/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
 - Point the video camera at the tablet
 - Open the decibel meter application (the application immediately starts recording noise levels upon startup).
 - Place device in the most central place in the home (e.g., living room).
@@ -73,7 +86,21 @@ Point camera at the tablet while opening “Audio Tool” (the application immed
 
 At the end of the one-hour recording, say: <say>Great, we are done with the one-hour recording!</say>
 
-With camera in hand (and still recording), walk over to where the tablet was placed, and hit the “save” button on “Audio Tool”. Then stop video recording on the camera. Name the audio file with the participant ID and close the “Audio Tool” app.
+With camera in hand (and still recording), walk over to where the tablet was placed, and hit the “save” button on “Audio Tool”. 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibeloff">
+Video
+</button>
+</div>
+<div id="collection-homevisit-decibeloff" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45600001,45613749/asset/194585/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+Then stop video recording on the camera. Name the audio file with the participant ID and close the “Audio Tool” app.
 
 ##### Shoes
 
