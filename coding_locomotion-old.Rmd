@@ -7,6 +7,10 @@ output:
     toc_float: true
 ---
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+source("R/write_video_clip_html.R")
+```
 
 # Locomotion passes
 
