@@ -215,7 +215,6 @@ Video - Demographics questionnaire
 <br><br>
 
 </div>
-</div>
 <!-- End Spanish instructions -->
 <br>
 
@@ -323,4 +322,4 @@ Gracias,
 ~~~
 
 </div>
-<br>
+

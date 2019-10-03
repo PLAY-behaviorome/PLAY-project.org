@@ -3,20 +3,14 @@ title: ""
 output:
   html_document:
     toc: true
-    toc_depth: 3
+    toc_depth: 4
     toc_float: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-source("R/write_video_clip_html.R")
+source("R/write_video_clip_html_SJ.R")
 ```
-
-<!-- Todo:
-Embed videos from here: https://nyu.databrary.org/volume/876/slot/35422/-?asset=174039
-In this format: 
-https://nyu.databrary.org/slot/35422/asset/174041/download?inline=true
--->
 
 <br>
 
@@ -30,10 +24,15 @@ The collaborating sites in PLAY perform a variety of roles (see [people](people.
 All videos that are collected with go through a quality assurance process in which the PLAY team will ensure that the videos are eligible to be included in the final sample. Videos that pass QA will then be passed on for coding. Videos that don't pass QA will be (depending on why they didn't) reused for other purposes or will be sent back to the collection site for modification. In some cases, the collection site might be provided additional training.  
 <br><br>
 
+<hr class="play">
+
+
 # Participant Recruitment
 
 ```{r child = 'collection_recruitment.Rmd'}
 ```
+
+<hr class="play">
 
 
 # Home Visit
@@ -41,6 +40,7 @@ All videos that are collected with go through a quality assurance process in whi
 ```{r child = 'collection_homevisit.Rmd'}
 ```
 
+<hr class="play">
 
 # Clean up and Upload 
 
