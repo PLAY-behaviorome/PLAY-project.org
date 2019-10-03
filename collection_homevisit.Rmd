@@ -48,7 +48,7 @@ Say: <say>We would like to measure the environmental noise levels. Is there a go
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibelon">
-Video
+Turn ON decibel meter
 </button>
 </div>
 <div id="collection-homevisit-decibelon" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -78,6 +78,31 @@ General Recording Guidelines
 
 Say: <say>So I’m going to start recording now.</say>
 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-c">
+One hour natural play - view of child
+</button>
+</div>
+<div id="collection-homevisit-onehour-c" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/38973985,42642785/asset/174895/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+&emsp;
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-e">
+One hour natural play - view of experimenter
+</button>
+</div>
+<div id="collection-homevisit-onehour-e" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/35257145,38972985/asset/174894/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
 Begin recording and say: <say>For the next hour, do anything you would typically do as if I weren’t here. Try to ignore me as much as possible and I will stay out of the way. I will also try not to respond to you and [CHILD] so that he/she is not distracted. You can go anywhere in your home but we just ask you to remain indoors. You can play together or not, you can do chores, watch TV, talk on the phone, give him/her a bath or snack.  The idea is to capture what your typical day is like. And as a reminder, I’m just here to record so you will be in charge of [CHILD]’s safety.</say>
 
 Point camera at the tablet while opening “Audio Tool” (the application immediately starts recording noise levels upon startup). After opening the app, quickly point the camera at the child and start timing for the one-hour natural play video. Note the time on the viewfinder of the camera and record for an additional 60 minutes.
@@ -91,7 +116,7 @@ With camera in hand (and still recording), walk over to where the tablet was pla
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibeloff">
-Video
+Turn OFF decibel meter
 </button>
 </div>
 <div id="collection-homevisit-decibeloff" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -106,6 +131,19 @@ Then stop video recording on the camera. Name the audio file with the participan
 
 * If child was wearing shoes during the recording, say <say>Could I get a close-up of the shoes [CHILD] has been wearing?</say>. Ask mom to remove the shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views. Focus the camera on the shoes and comment on shoe type, sole (hard, soft), heel (if any), and other observations.
 * If the child was _not_ wearing shoes during the one-hour natural play video, record the shoes during the house walk-through.  
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-shoes">
+Shoes
+</button>
+</div>
+<div id="collection-homevisit-shoes" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/46910977,46917617/asset/204081/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
 
 
 ## 4. Video House Walk-through while measuring rooms
@@ -164,7 +202,7 @@ Steps:
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-structuredplay-pview">
-Video
+Structured Play
 </button>
 </div>
 <div id="collection-homevisit-structuredplay-pview" class="collapse" aria-expanded="false" style="height: 0px;">
