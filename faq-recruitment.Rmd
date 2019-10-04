@@ -9,7 +9,7 @@ output:
 
 ## FAQ about scheduling and recruitment
 
-##### If mom asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
+##### If mother asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
 <say>For the first 90 minutes of this study, we are interested in how mothers and children interact. It should only be you and your child during the first half of our visit. If father/aunt/nanny/etc isn’t able to stay out of the home for the full time that we’re there, they can come back for the last hour.</say> 
 
 
