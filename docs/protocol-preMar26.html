@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>protocol-preMar26.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,9 +74,7 @@ h6 {
 
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +88,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -194,8 +192,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -252,48 +248,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -342,8 +299,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -352,6 +307,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -574,7 +539,7 @@ div.tocify {
 <p>24-mo participant view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61052/download?inline=true</a></p>
 <p>24-mo experimenter view </br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true" class="uri">https://nyu.databrary.org/slot/14514/-/asset/61060/download?inline=true</a></p>
 <p>Interviewer:</p>
-<p>*For the next few minutes, we want to see how [CHILD] plays by him/herself. We ask you not to distract him/her or tell him/her how to play. If [CHILD] tries to get your attention or wants to play with you, you can say, “Go play. It’s perfectly fine if he/she doesn’t play with the toy. Say to child: Here [CHILD], play with this!*</p>
+<p><em>For the next few minutes, we want to see how [CHILD] plays by him/herself. We ask you not to distract him/her or tell him/her how to play. If [CHILD] tries to get your attention or wants to play with you, you can say, “Go play. It’s perfectly fine if he/she doesn’t play with the toy. Say to child: Here [CHILD], play with this!</em></p>
 <p>Camera:</p>
 <p>Record solitary toy play so that view is on baby’s body entirely and hands on object. If child moves around, follow child and keep face in frontal view. Procedure: Set yoga mat down on the floor. Un-stack cups and arrange randomly, standing upright (out of child’s view). Place child in a sitting position on yoga mat and start timing after you present the toy. Use timer on the camera (let the timer run for a bit longer than 2 min to avoid cutting the play time short. Later we code only 2 min of engagement). After 2 minutes, say: <em>“Great job!”</em></p>
 </div>
@@ -713,6 +678,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

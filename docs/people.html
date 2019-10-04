@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>people.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,9 +74,7 @@ h6 {
 
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +88,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -194,8 +192,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -252,48 +248,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -342,8 +299,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -352,6 +307,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -495,83 +460,22 @@ div.tocify {
 </div>
 <div id="collaborating-investigators" class="section level2">
 <h2>Collaborating Investigators</h2>
-<!-- Tabling this cool script for now, in favor of new name assignments
-
-Last            First        Institution                                  Collection_role 
---------------  -----------  -------------------------------------------  ----------------
-Adolph          Karen        New York University                          Collecting      
-Amso            Dima         Brown University                             Not collecting  
-Barr            Rachel       Georgetown University                        Collecting      
-Berenbaum       Sheri        Penn State University                        Not collecting  
-Bornstein       Marc         SRCD                                         Not collecting  
-Boudreau        Jean-Paul    Mount Alison University                      Not collecting  
-Bradley         Bob          Arizona State University                     Not collecting  
-Brandone        Amanda       Lehigh University                            Not collecting  
-Brooker         Rebecca      Texas A&M                                    Not collecting  
-Buss            Kristin      Penn State University                        Not collecting  
-Casasola        Marianella   Cornell University                           Collecting      
-Chi             Guangqing    Penn State University                        Not collecting  
-Claxton         Laura        Purdue University                            Collecting      
-Davis           Elizabeth    University of California at Riverside        Not collecting  
-de Barbaro      Kaya         University of Texas at Austin                Not collecting  
-Dusing          Stacey       Virginia Commonwealth University             Collecting      
-Evans           Gary         Cornell University                           Not collecting  
-Fausey          Caitlin      University of Oregon                         Collecting      
-Franchack       John         University of California at Riverside        Collecting      
-Frank           Mike         Stanford University                          Collecting      
-Frick           Janet        University of Georgia                        Collecting      
-Gill            Simone       Boston University                            Collecting      
-Gilmore         Rick         Penn State University                        Collecting      
-Goldin-Meadow   Susan        University of Chicago                        Not collecting  
-Goldstein       Mike         Cornell University                           Not collecting  
-Haddad          Jeff         Purdue University                            Not collecting  
-Halim           May Ling     California State University at Long Beach    Collecting      
-Hane            Amie         Williams College                             Not collecting  
-Hauck           Janet        Michigan State University                    Not collecting  
-Heathcock       Jill         Ohio State University                        Collecting      
-Henderson       Heather      University of Waterloo                       Not collecting  
-Hirsh-Pasek     Kathy        Temple University                            Not collecting  
-Iverson         Jana         University of Pittsburgh                     Collecting      
-Karasik         Lana         CUNY -- College of Staten Island             Collecting      
-Lee             Do Kyeong    California State University at Fullerton     Collecting      
-Lee             Mei-Hua      Michigan State University                    Collecting      
-Legare          Cristine     University of Texas at Austin                Collecting      
-Lew-Williams    Casey        Princeton University                         Collecting      
-Libertus        Klaus        University of Pittsburgh                     Not collecting  
-LoBue           Vanessa      Rutgers University                           Collecting      
-Lockman         Jeff         Tulane University                            Collecting      
-MacWhinney      Brian        Carnegie Mellon University                   Not collecting  
-Messinger       Dan          University of Miami                          Collecting      
-Naigles         Letitia      University of Connecticut                    Not collecting  
-Namy            Laura        Society for Research In Child Development    Not collecting  
-Needham         Amy          Vanderbilt University                        Collecting      
-Newcombe        Nora         Temple University                            Not collecting  
-Oakes           Lisa         University of California at Davis            Collecting      
-Olson           Kristina     University of Washington                     Not collecting  
-Perez-Edgar     Koraly       Penn State University                        Not collecting  
-Pomerantz       Eva          University of Illinois at Urbana-Champagne   Not collecting  
-Prosser         Laura        Children's Hospital of Philadelphia          Collecting      
-Rowe            Meredith     Harvard University                           Not collecting  
-Schmuckler      Mark         University of Toronto Scarborough            Not collecting  
-Sheya           Adam         University of Connecticut                    Not collecting  
-Soderstrom      Melanie      University of Manitoba                       Not collecting  
-Song            Lulu         Brooklyn College                             Not collecting  
-Tamis-LeMonda   Catherine    New York University                          Not collecting  
-Vishton         Peter        College of William & Mary                    Collecting      
-Walle           Eric         University of California at Merced           Not collecting  
-Wang            Su-hua       University of California at Santa Cruz       Collecting      
-Warlaumont      Anne         University of California at Los Angeles      Collecting      
-Yoshida         Hanako       University of Houston                        Collecting      
-Yu              Chen         Indiana University                           Collecting      
-Yurovsky        Dan          University of Chicago                        Collecting      
--->
+<!-- Tabling this cool script for now, in favor of new name assignments -->
+<!-- ```{r, echo=FALSE, message=FALSE, warning=FALSE} -->
+<!-- library(tidyverse) -->
+<!-- roster_df <- readr::read_csv("csv/roster.csv") -->
+<!-- roster <- roster_df %>% -->
+<!--   dplyr::select(., Last, First, Institution, Collection_role) %>% -->
+<!--   dplyr::arrange(., Last) -->
+<!-- knitr::kable(roster) -->
+<!-- ``` -->
 <!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
 <table>
 <colgroup>
 <col width="22%" />
 <col width="39%" />
-<col width="19%" />
-<col width="19%" />
+<col width="18%" />
+<col width="18%" />
 </colgroup>
 <thead>
 <tr class="header">
@@ -1049,6 +953,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->

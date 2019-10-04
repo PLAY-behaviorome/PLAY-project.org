@@ -7,11 +7,12 @@
 <meta charset="utf-8" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>coding_locomotion-old.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -73,9 +74,7 @@ h6 {
 
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +88,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -194,8 +192,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -252,48 +248,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -342,8 +299,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -352,6 +307,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -470,15 +435,11 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <div id="general-orientation-2" class="section level5">
 <h5>General Orientation</h5>
 <p>This code captures the times that the child is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, cruising, supported walking, independent walking, etc.).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62749/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62785/download?inline=true</a></p>
 <p>Also included in this pass are the times when locomotion cannot occur because the child is held,</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62751/download?inline=true</a></p>
 <p>and the times child is constrained in child furniture (e.g., a belted chair, highchair, or stroller).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62753/download?inline=true</a></p>
 <p>Coders score only instances of child-generated locomotion, and instances of falling, being held, or being constrained. Coders do not score instances where child is stationary but could have locomoted. Bouts of locomotion are scored as events, where the gray spaces between cells mean the child is stationary but not held and not constrained.</p>
 <p>Coders are watching/tagging the duration of each of these events (locomotion, falls, held, constrained) by marking onset/offset times. To determine locomotion, coders are watching for steps with the feet, the knees, or the bum. Any other movements that are not initiated from these three body locations are considered to be a transition between postures and are subsumed by stationary, because it is not locomotion.</p>
@@ -494,22 +455,15 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <div id="operational-definitions" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;l&gt;</code> Code “l” when the child is engaged in self-generated locomotion in any form (i.e., bum shuffling, scooting, belly crawling, hands-knees crawling, climbing, cruising, supported walking, independent walking, etc.)</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62761/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62769/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62771/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62773/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62783/download?inline=true</a></p>
 <p>This code counts locomotion regardless of whether the child maintains balance independently or the child’s balance is supported by a parent or external object/apparatus.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62787/download?inline=true</a></p>
 <p>Any self-generated locomotion on a moving toy or child furniture (e.g., a bicycle or bottomless car that the child moves with their legs) counts as locomotion.</p>
 <p>Locomotion occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the child is taking a “step”.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62775/download?inline=true</a></p>
 <p>A child takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot in the air to count as moving; if not, this is stationary).</p>
 <p>Onset of a “step” is when the whole foot/knee comes up off the ground. A step can also happen if the foot doesn’t come off the ground, but the foot has to slide forward, backward or sideways. Marching in place, jumping, and hopping also count as locomotion. Offset is the frame when the child takes the last step (with foot/knee) to pause in place (in the same posture such as walking to standing) or to transition to another stationary posture (e.g., upright walking to sitting). A pause must last at least 0.5 s.</p>
@@ -518,11 +472,8 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <p><code>&lt;f&gt;</code></p>
 <p>Code ‘f’ if the child loses control over his/her body (i.e., balance) and cannot recover on his/her own before his/her body hits the ground.</p>
 <p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion. Falls can happen while the mom is holding the child’s hand or while the child is holding onto furniture or another support.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62747/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63330/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63336/download?inline=true</a></p>
 <p>Onset is frame when child first begins to lose balance and Offset when child’s body (as defined below) hits the floor.</p>
 <p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground; child’s bum hitting the ground; or head hitting the ground.</p>
@@ -533,9 +484,7 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <p>Parent involved falls would only be coded as a fall if the parent catches the child after the child loses balance, effectively supporting the child’s entire weight. In this scenario, the child would have fallen if not for parent rescue (i.e., the body part would have hit the ground). Parents must catch after the child has begun to lose balance. If the parent was already supporting the child’s weight before a loss of balance, but child’s body parts (e.g., hands, head, butt, etc.) do not touch the ground, then this is not a fall (it is supported walking).</p>
 <p><code>&lt;m&gt;</code></p>
 <p>Code ‘m’ when the child is being constrained and supported by the mother. The child’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the child’s body by touching their torso. Do not count mother constraint when the child is just sitting on the mother’s lap. During a mother constraint, the parent can be moving (carrying) or stationary (holding).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62759/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
 <p>Onset of hold is the last frame before the child’s second foot (or bum if child was sitting, torso if child was laying down, second knee if crawling or knee walking) lifts up off the current surface and up into the air in mom’s arms.</p>
 <p>Offset of hold is when both feet touch the ground (or bum if mom places child in sitting, torso if mom places child laying down, both knees if mom places child in crawling or knee walking), and the child starts supporting own weight in any posture.</p>
@@ -569,9 +518,7 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <p>Bouts of locomotion are scored as events, where the gray spaces between cells mean the mom is stationary.</p>
 <p>Coders are watching/tagging each of these events by marking onset/offset times for the duration of locomotion bouts.</p>
 <p>Coders are watching for steps with the feet, the knees, or the bum.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62765/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62757/download?inline=true</a></p>
 <p>Any other movements that are not initiated from these three body locations is considered to be a transition between postures and is subsumed by stationary, as it is not locomotion.</p>
 <p>Bouts that are coded as “.” means that mom is off camera or her legs are off camera, and coder cannot see or infer whether mom is stationary or moving.</p>
@@ -584,18 +531,14 @@ Column name: childloc, Prompt: &lt;loc_l-f-h-c&gt;</code></pre>
 <div id="operational-definitions-1" class="section level5">
 <h5>Operational Definitions</h5>
 <p><code>&lt;l&gt;</code> Code ‘l’ when the mom is engaged in locomotion of any form (i.e., walking, scooting, knee-walking, crawling).</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62779/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62795/download?inline=true</a></p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/62797/download?inline=true</a></p>
 <p>If you’re not sure whether the mom is moving or stationary (e.g., occlusion behind furniture or unclear video footage), then this is missing data and the offset of the locomotion bout should be set to the last frame where you can see mom.</p>
 <p>The subsequent cell (where you cannot see anything or make an inference about movement) should be coded as “.” until you can see mom again.</p>
 <p>However, if you can infer that mom is moving or stationary (i.e., head is bobbing, shadow of the leg moving is visible, etc.) then include it in the same bout of locomotion, following the rules for pauses above.</p>
 <p><code>&lt;f&gt;</code></p>
 <p>Code ‘f’ if the mom loses control over her body (i.e., balance) and cannot recover on her own before the body (bum, hands, torso) hits the ground.</p>
-<pre class="r"><code>write_video_clip_html(&quot;https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true&quot;)</code></pre>
 <p></br> <video width="320" height="240" controls> <source src="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" type="video/mp4"> </video> </br> <a href="https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true" class="uri">https://nyu.databrary.org/slot/14765/-/asset/63360/download?inline=true</a></p>
 <p>All falls count. They can happen while upright, on/off furniture or other elevation, while sitting, or while engaged in locomotion.</p>
 <p>From an upright or squatting position: a loss of balance results in the hands, knees, or a toy in the hands hitting the ground.</p>
@@ -635,6 +578,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
