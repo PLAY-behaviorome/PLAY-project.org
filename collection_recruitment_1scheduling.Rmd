@@ -103,7 +103,7 @@ Does this sound like something you would be interested in participating in with 
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-evid">
-Video - Scheduling
+Initial recruiting phone call
 </button>
 </div>
 <div id="collection-scheduling-initialrecruitingcall-evid" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -115,7 +115,7 @@ Video - Scheduling
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-edemographics">
-Video - Demographics questionnaire
+Demographics questionnaire
 </button>
 </div>
 <div id="collection-scheduling-initialrecruitingcall-edemographics" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -191,7 +191,7 @@ Spanish instructions
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-svid">
-Video - Scheduling
+Initial recruiting phone call
 </button>
 </div>
 <div id="collection-scheduling-initialrecruitingcall-svid" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -203,7 +203,7 @@ Video - Scheduling
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-sdemographics">
-Video - Demographics questionnaire
+Demographics questionnaire
 </button>
 </div>
 <div id="collection-scheduling-initialrecruitingcall-sdemographics" class="collapse" aria-expanded="false" style="height: 0px;">
@@ -238,7 +238,7 @@ English script
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
-Video
+Initial recruiting voicemail
 </button>
 </div>
 
@@ -262,7 +262,7 @@ Spanish script
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-svid">
-Video
+Initial recruiting voicemail
 </button>
 </div>
 
