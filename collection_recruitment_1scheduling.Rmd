@@ -82,12 +82,14 @@ Does this sound like something you would be interested in participating in with 
 
 <say>Great! Because we are interested in mother-infant routines, we'd like to find a time and date when we can observe just <span style="text-decoration:underline">**you and [CHILD]**</span> at home. It would be great if we can schedule a time that is not during a typical mealtime and when [CHILD] is usually awake. Is there a convenient time and day that works best for you that would be within these criteria?</say>
 
-- → *If the date they are available puts child out of age range: **end call** * <say>For this study, we are interested in studying specific age groups: 12-, 18-, and 23-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then?</say>
+- → *If the date they are available puts child out of age range: **end call** * <say>For this study, we are interested in studying specific age groups: 12-, 18-, and 24-month olds. Would it be possible for us to contact you in XX months to see if [CHILD] can participate then?</say>
 - → *If dates are available when child is still within eligible age range: continue*
+
+<say> So I have you and [CHILD] for our study on [DATE] at [TIME]. </say>
 
 <say>Before the study, we have a few questions that we'd like to ask. It should only take about 5 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
 
-- → *If ready to answer now, continue*:
+- → *If ready to answer now, continue (see video for Demographics Questionnaire below this list)*:
     - On your tablet, open Kobo toolbox and start a new questionnaire set
     - Fill out participant information at top of new session
     - “Save as Draft” after demographic questionnaire and home visit questionnaires
@@ -175,7 +177,7 @@ Spanish instructions
 
 <say-es>Por ultimo, tenemos un cuestionario que solo tomará 5 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
 
-- → En caso de que madre pueda responder las preguntas ahora, continúe:
+- → En caso de que madre pueda responder las preguntas ahora, continúe (see video for Demographics Questionnaire below this list):
     - Abra un nuevo cuestionario en Kobo toolbox en el Tablet.
     - Rellene la información del participante en una nueva sesión.
     - Luego de completar el cuestionario demográfico guarde como  “sabe as draft”. 

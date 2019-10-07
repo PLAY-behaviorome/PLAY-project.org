@@ -3,8 +3,6 @@
 
 Now that you have set your target participant sample and completed all the steps listed in the [recruitment](collection_recruitment.html) process, these instructions will help you prepare for your participant home visit. <br><br>
 
-https://www.play-project.org/collection.html#participant_recruitment
-
 <div class = "bluebg">
 Please ensure that you are  [**currently logged in at Databrary**](https://nyu.databrary.org/user/login) to view protected content in this webpage. <i> For confidentiality reasons, access to video exemplars is restricted to researchers with authorized access to [Databrary](http://databrary.org). To register for access, visit <http://databrary.org/register>. </i>  
 </div>
@@ -78,7 +76,6 @@ General Recording Guidelines
 
 Say: <say>So I’m going to start recording now.</say>
 
-
 <div class="videobuttons">
 <img src="img/icon-video.png" width="25">
 <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-c">
@@ -125,8 +122,6 @@ Turn OFF decibel meter
 </video>
 </div>
 
-Then stop video recording on the camera. Name the audio file with the participant ID and close the “Audio Tool” app.
-
 ##### Shoes
 
 * If child was wearing shoes during the recording, say <say>Could I get a close-up of the shoes [CHILD] has been wearing?</say>. Ask mom to remove the shoes, video-record the shoes after the session; take them off child and video the bottom, side, and top views. Focus the camera on the shoes and comment on shoe type, sole (hard, soft), heel (if any), and other observations.
@@ -144,7 +139,7 @@ Shoes
 </video>
 </div>
 
-
+Then stop video recording on the camera. Now that the camera is off, name the audio file with the site name and subject number (e.g. NYU_001) and close the “Audio Tool” app.
 
 ## 4. Video House Walk-through while measuring rooms
 
