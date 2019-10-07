@@ -104,19 +104,6 @@ Co-Principal Investigator
 
 ## Collaborating Investigators
 
-
-<!-- Tabling this cool script for now, in favor of new name assignments
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyverse)
-roster_df <- readr::read_csv("csv/roster.csv")
-roster <- roster_df %>%
-  dplyr::select(., Last, First, Institution, Collection_role) %>%
-  dplyr::arrange(., Last)
-knitr::kable(roster)
-```
--->
-<!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
-
 | Full name               | Institution                                | Location            | Role                |
 |-------------------------|--------------------------------------------|---------------------|---------------------|
 | Karen Adolph            | New York University                        | New York, NY        | Collecting & Coding |
