@@ -104,13 +104,15 @@ Co-Principal Investigator
 
 ## Collaborating Investigators
 
+<!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
+
 | Full name               | Institution                                | Location            | Role                |
 |-------------------------|--------------------------------------------|---------------------|---------------------|
 | Karen Adolph            | New York University                        | New York, NY        | Collecting & Coding |
 | Dima Amso               | Brown University                           | Providence, RI      | Contributor         |
 | Rachel Barr             | Georgetown University                      | Washington, DC      | Collecting & Coding |
 | Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
-| Marc Bornstein          | NICHD                                      | Bethesda, MD        | Contributor         |
+| Marc Bornstein          | NICHD                                      | Rockville, MD       | Contributor         |
 | Jean-Paul Boudreau      | Mount Allison University                   | Sackville, NB       | Coding              |
 | Bob Bradley             | Arizona State University                   | Tempe, AZ           | Contributor         |
 | Amanda Brandone         | Lehigh University                          | Lehigh, PA          | Coding              |
