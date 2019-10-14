@@ -105,16 +105,6 @@ Co-Principal Investigator
 ## Collaborating Investigators
 
 
-<!-- Tabling this cool script for now, in favor of new name assignments
-```{r, echo=FALSE, message=FALSE, warning=FALSE}
-library(tidyverse)
-roster_df <- readr::read_csv("csv/roster.csv")
-roster <- roster_df %>%
-  dplyr::select(., Last, First, Institution, Collection_role) %>%
-  dplyr::arrange(., Last)
-knitr::kable(roster)
-```
--->
 <!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
 
 | Full name               | Institution                                | Location            | Role                |
@@ -123,7 +113,7 @@ knitr::kable(roster)
 | Dima Amso               | Brown University                           | Providence, RI      | Contributor         |
 | Rachel Barr             | Georgetown University                      | Washington, DC      | Collecting & Coding |
 | Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
-| Marc Bornstein          | NICHD                                      | Bethesda, MD        | Contributor         |
+| Marc Bornstein          | NICHD                                      | Rockville, MD       | Contributor         |
 | Jean-Paul Boudreau      | Mount Allison University                   | Sackville, NB       | Coding              |
 | Bob Bradley             | Arizona State University                   | Tempe, AZ           | Contributor         |
 | Amanda Brandone         | Lehigh University                          | Lehigh, PA          | Coding              |
