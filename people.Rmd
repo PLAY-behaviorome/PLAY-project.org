@@ -104,7 +104,6 @@ Co-Principal Investigator
 
 ## Collaborating Investigators
 
-
 <!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
 
 | Full name               | Institution                                | Location            | Role                |
