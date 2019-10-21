@@ -120,10 +120,5 @@ When that permission is granted the videos and related data will be shared with 
 
 ## Parent-report (questionnaire) data
 
-PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data.
-
-The full set of self-report questions can be found [here](questionnaires.html).
-A database/code book of the questionnaire items useful for item-level queries can be found in a Googlesheet [here](https://docs.google.com/spreadsheets/d/1pVOM2naRS_STCXx4nkaRDLO6_V5kGhFaduRfwsv7cnI/edit?usp=sharing).
-The [`googlesheets`](https://github.com/jennybc/googlesheets) R package makes it easy to interact with data in this format.
-We expect to migrate to successors to this package.  
+PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data. The full set of self-report questions can be found [here](collection_homevisit_questionnaires.html).
 
