@@ -49,14 +49,15 @@ Temperament (Rothbart)  <br>
 Locomotor Milestones  <br>
 Media Use  <br>
 Pets  <br>
-Division of labor  
+Division of labor  <br>
+Typical Day
 </td>
 <td style="border: solid #cccccc 1pt;"><span style="color: #bbbbbb;">During Home Visit <br> (In person with mom)</span></p-small></td>
 </tr>
 
 <tr> </tr>
 <tr>
-<td style="border: solid #cccccc 1pt;"> Checklist (not a questionnaire) </td>
+<td style="border: solid #cccccc 1pt;"> Post-visit notes </td>
 <td style="border: solid #cccccc 1pt;"> <span style="color: #bbbbbb;"> After Home Visit <br> (Experimenter alone)</span></p-small></td>
 </tr>
 <tr> </tr>

@@ -63,21 +63,6 @@ Say: <say>We would like to measure the environmental noise levels. Is there a go
 - Set up tablet, put in microphone.
 - Ensure that “Audio Tool” is force closed.
 - *Turn on “Keep Screen On”.* 
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibelon">
-Turn ON decibel meter
-</button>
-</div>
-<div id="collection-homevisit-decibelon" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/slot/35422/45591222,45599073/asset/194583/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
-
-- Point the video camera at the tablet
-- Open the decibel meter application (the application immediately starts recording noise levels upon startup).
 - Place device in the most central place in the home (e.g., living room).
 - The microphone should be facing towards the room (e.g., away from walls) and propped up on the microphone stand so that it is **not** lying flat against the surface of the space.
 <br><br>
@@ -153,7 +138,21 @@ One hour natural play - view of experimenter - Spanish
 -->
 
 
-Point camera at the tablet while opening “Audio Tool” (the application immediately starts recording noise levels upon startup). After opening the app, quickly point the camera at the child and start timing for the one-hour natural play video. Note the time on the viewfinder of the camera and record for an additional 60 minutes.
+Point camera at the tablet while opening “Audio Tool” (the application immediately starts recording noise levels upon startup). 
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibelon">
+Turn ON decibel meter
+</button>
+</div>
+<div id="collection-homevisit-decibelon" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45591222,45599073/asset/194583/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+After opening the app, quickly point the camera at the child and start timing for the one-hour natural play video. Note the time on the viewfinder of the camera and record for an additional 60 minutes.
 
 *Note: The instructions and tablet set up should take no longer than 5-minutes.*
 
@@ -245,22 +244,22 @@ Steps:
 4. First, get as much of the **Entire Room** in frame as possible. Keep the camera zoomed out and make sure to capture the ceiling and the floor of the room.
 5. Next, pan the camera SLOWLY from **Left to Right**.
 6. Then, pan the camera to **Floor**, name the different types of surfaces in the space (hardwood, plush carpet, thin rug, linoleum, tile, etc.), and then pan to the **Ceiling**.
-7. Hold the camera in one hand while you take measurements of the room using the other. <br>
+7. Ask parent if child spends time in each room: <say>Does [CHILD] spend any time in this room?</say> <say-es>¿[CHILD] pasa algo de tiempo en este cuarto?</say-es>
+8. Ask parent about child’s objects in the room: <say>Do you keep anything for [CHILD] in this room? (If yes) Would you mind showing me?</say> <say-es>¿Guarda algo para [CHILD] en este cuarto? (If yes) ¿Me lo puede mostarar por favor?</say-es>
+9. **Ensure during the house walkthrough that the parent provides information on all of the following:**
+    - *Children's Sleeping Arrangements.* <say>Please show me where [CHILD] typically sleeps.</say> <say-es>Por favor muéstreme donde [CHILD] duerme típicamente.</say-es>
+    - *Child’s Clothes.* <say>Please show me where you keep [CHILD]’s clothes.</say> <say-es>Por favor muéstreme donde guarda la ropa de [CHILD].</say-es>
+    - *Child’s Shoes.* <say>Please show me where you keep [CHILD]’s shoes.</say> <say-es>Por favor muéstreme donde guarda los zapatos de [CHILD].</say-es>
+    - *Child’s Books.* <say>Please show me where you keep [CHILD]’s books.</say> <say-es>Por favor muéstreme donde guarda los libros de [CHILD].</say-es>
+    - *Child’s Toys.* <say>Please show me where you keep [CHILD]’s toys.</say> <say-es>Por favor muéstreme donde guarda los juguetes de [CHILD].</say-es>
+10. Film the **Location** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the **Contents** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)
+11. Hold the camera in one hand while you take measurements of the room using the other. <br>
     - Turn measure on by pressing ON/DIST button. Make sure the laser beam is visible. <br> 
     - Measure wall to wall, lengthwise and widthwise. <br>
     - If a room has an odd or asymmetrical shape (i.e., any shape other than a rectangle or a square), measure the largest rectangle or square area of the room. <br>
     - Place the base of the laser flat on the wall, push ON/DIST againt to send the beam across the room (avoid moldings, door castings, reflective surfaces) <br>
     - Repeat the above for the second dimension (length or width) <br>
     - Focus camera on laser measure for each measure and read numbers out loud with units (e.g. <say>eight point five feet</say>) <br>
-8. Ask parent if child spends time in each room: <say>Does [CHILD] spend any time in this room?</say> <say-es>¿[CHILD] pasa algo de tiempo en este cuarto?</say-es>
-9. Ask parent about child’s objects in the room: <say>Do you keep anything for [CHILD] in this room? (If yes) Would you mind showing me?</say> <say-es>¿Guarda algo para [CHILD] en este cuarto? (If yes) ¿Me lo puede mostarar por favor?</say-es>
-10. **Ensure during the house walkthrough that the parent provides information on all of the following:**
-    - *Children's Sleeping Arrangements.* <say>Please show me where [CHILD] typically sleeps.</say> <say-es>Por favor muéstreme donde [CHILD] duerme típicamente.</say-es>
-    - *Child’s Clothes.* <say>Please show me where you keep [CHILD]’s clothes.</say> <say-es>Por favor muéstreme donde guarda la ropa de [CHILD].</say-es>
-    - *Child’s Shoes.* <say>Please show me where you keep [CHILD]’s shoes.</say> <say-es>Por favor muéstreme donde guarda los zapatos de [CHILD].</say-es>
-    - *Child’s Books.* <say>Please show me where you keep [CHILD]’s books.</say> <say-es>Por favor muéstreme donde guarda los libros de [CHILD].</say-es>
-    - *Child’s Toys.* <say>Please show me where you keep [CHILD]’s toys.</say> <say-es>Por favor muéstreme donde guarda los juguetes de [CHILD].</say-es>
-11. Film the **Location** of the storage space (drawer, toy chest, cabinet) in clear context of the rest of the room. Then, SLOWLY and CLEARLY film the **Contents** of the storage space to show what is inside of it, zooming in if needed. (Overhead view for bed, crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet, bookshelf, etc.)
 12. Do ** *NOT* ** turn off the camera when walking to next room.
 13. Walk SLOWLY.
 14. When all rooms are recorded, walk back to the entrance of the home and then stop recording.
