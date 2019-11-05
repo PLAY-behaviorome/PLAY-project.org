@@ -3,14 +3,14 @@ title: ""
 output:
   html_document:
     toc: true
-    toc_depth: 3
+    toc_depth: 5
     toc_float: true
 ---
 
 ## FAQ about data collection
 
 
-### Home Visit
+### Arrival
 
 ##### What if father/partner/aunt/nanny/etc. is there when experimenter gets there?  
 - Usually mom says <person> is going to leave.  
@@ -64,7 +64,7 @@ Say <say>You can go anywhere inside your home. We just ask that you not go outsi
 
 
 
-### Natural Interaction (1 Hour)
+### One-hour natural play
 
 ##### What if the mom wants to go outside?
 Say <say>As a reminder, we ask that you stay inside during our visit. If you have to go outside, we can stop the recording and resume whenever you’re ready.</say>
@@ -108,7 +108,7 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 - If mom says no, then turn off camera. Record extra time to still reach 60 minutes. 
 
 
-### Structured Play
+### Five-minute Structured Play
 
 ##### What if child doesn’t want to play but stays on the mat?
 -	Continue recording for 5 minutes.
