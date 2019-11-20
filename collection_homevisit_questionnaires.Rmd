@@ -77,7 +77,7 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 <tr>
 <td style="border: solid #cccccc 1pt;" >12 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189909"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> <a href=""><img src="img/icon-pdf.jpg" width="15"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189909"><p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small></a> 
 <br>
 &emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189908"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
 <br>
