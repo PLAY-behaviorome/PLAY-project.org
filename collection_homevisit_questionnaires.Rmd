@@ -27,7 +27,7 @@ All questionnaires should be administered in the primary language of the mom.
 
 You will fill out all questionnaires on your computer or your tablet using the Kobotoolbox app. Here are the 8 questionnaires you will use, in the following order:
 
-<table cellspacing="0" cellpadding="0" class="play-table" width="50%">
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
 <tr>
 <td style="border: solid #cccccc 1pt;" ><b>Questionnaire</b></td>
 <td style="border: solid #cccccc 1pt;" ><p-small><span style="color: #bbbbbb;"><b>When to use</b></span></p-small></td>
@@ -35,7 +35,7 @@ You will fill out all questionnaires on your computer or your tablet using the K
 
 <tr> </tr>
 <tr>
-<td style="border: solid #cccccc 1pt;" >Demographics</td>
+<td style="border: solid #cccccc 1pt;" >Demographic Questionnaire</td>
 <td style="border: solid #cccccc 1pt;" ><p-small><span style="color: #bbbbbb; ">Before Home Visit <br>(Over the phone with mom)</span></p-small></td>
 </td>
 </tr>
@@ -43,14 +43,15 @@ You will fill out all questionnaires on your computer or your tablet using the K
 <tr> </tr>
 <tr>
 <td style="border: solid #cccccc 1pt;">
-Language (MCDI) <br>
-Health  <br>
-Temperament (Rothbart)  <br>
-Locomotor Milestones  <br>
-Media Use  <br>
-Pets  <br>
-Division of labor  <br>
-Typical Day
+Home questions: <br>
+- Language (MCDI) <br>
+- Health  <br>
+- Temperament (Rothbart)  <br>
+- Locomotor Milestones  <br>
+- Media Use  <br>
+- Pets  <br>
+- Division of labor  <br>
+- Typical Day
 </td>
 <td style="border: solid #cccccc 1pt;"><span style="color: #bbbbbb;">During Home Visit <br> (In person with mom)</span></p-small></td>
 </tr>
@@ -65,9 +66,9 @@ Typical Day
 
 <br>
 
-In case of technical issues (and to have a paper copy of all questionnaires during home visits), please download and use the questionnaires from below. For printing, each of the above forms are bundled into sets for different age and language combinations. (Please note that presentation and format will differ from the Kobotoolbox app.) 
+You will administer all the questionnaires online using the KoBo Toolbox application. Links to all the questionnaires can be found in the tables below (please click on the <img src="img/icon-link.jpg" width="20"> icon to go to the live KoBo Toolbox questionnaires online). In case of technical issues (and to have a paper copy of all questionnaires during home visits), please download the pdf version (<img src="img/icon-pdf.jpg" width="15">) of the questionnaires from below. For printing, each of the above forms are bundled into sets for different age and language combinations. (Please note that presentation and format will differ from the Kobotoolbox app.) 
 
-<table cellspacing="0" cellpadding="0" class="play-table" width="50%">
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
 <tr>
 <td style="border: solid #cccccc 1pt;" ><b>Age</b></td>
 <td style="border: solid #cccccc 1pt;" >&emsp; <b>Language</b></td>
@@ -75,37 +76,83 @@ In case of technical issues (and to have a paper copy of all questionnaires duri
 
 <tr> </tr>
 <tr>
-<td style="border: solid #cccccc 1pt;" >12 months</td>
+<td style="border: solid #cccccc 1pt;" >Demographic questionnaire <br>(all ages)</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> <a href=""><img src="img/icon-pdf.jpg" width="15"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189909"><p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212428"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">English </span></p-small>
 <br>
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189908"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
-<br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212429"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
 <br>
 </td>
 </tr>
 
 <tr> </tr>
 <tr>
-<td style="border: solid #cccccc 1pt;" >18 months</td>
+<td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>12 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189911"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189910"><p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
+&emsp; <a href="https://ee.kobotoolbox.org/x/#mxVxgGtb"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194061"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small>
+<br>
+&emsp; <a href="https://ee.kobotoolbox.org/x/#xjJFf70Q"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194060"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small>
+<br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212431"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small>
+<br>
 </td>
 </tr>
 
 <tr> </tr>
 <tr>
-<td style="border: solid #cccccc 1pt;" >24 months</td>
+<td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>18 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189912"><p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
-&emsp; <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/189913"><p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
+&emsp; <a href="https://ee.kobotoolbox.org/x/#CHCkxRp3"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194063"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+&emsp; <a href="https://ee.kobotoolbox.org/x/#RvBwgZfz"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194062"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212432"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
+</td>
+</tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>24 months</td>
+<td style="border: solid #cccccc 1pt;">
+&emsp; <a href="https://ee.kobotoolbox.org/x/#hlD3vE3R"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194064"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+&emsp; <a href="https://ee.kobotoolbox.org/x/#gwg2us1i"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194065"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212433"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
 </td>
 </tr>
 <tr> </tr>
+
+<tr> </tr>
+<tr>
+<td style="border: solid #cccccc 1pt;" > Post-Visit Notes <br>(all ages)</td>
+<td style="border: solid #cccccc 1pt;">
+&emsp; <a href="https://ee.kobotoolbox.org/x/#2cAYQt3z"><img src="img/icon-link.jpg" width="20"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212430"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">English </span></p-small>
+<br>
+</td>
+</tr>
+
+
 </table>
 
 <br>
