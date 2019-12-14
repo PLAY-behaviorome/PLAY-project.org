@@ -85,7 +85,7 @@ Co-Principal Investigator
   </div>
   <div class="column-right">
   <img src="img/people-sandy.png" width="150"></br>
-  **Sandy Gonzalez, A.B.D**</br>
+  **Sandy Gonzalez, Ph.D.**</br>
   Research Scientist
   <br><a href="mailto:sgonz219@fiu.edu">email</a>
   </div>
