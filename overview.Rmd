@@ -65,8 +65,6 @@ Please ensure that you are  [**currently logged in at Databrary**](https://nyu.d
 
 <br>
 
-sample change
-
 # Participant Sampling
 
 PLAY will produce a widely varied and rich set of data, most of which will be openly shared with the research community at the end of the five-year NIH grant period in late 2023. Infants' natural play in the home is characterized by tremendous variability including variations in: geographic location, climate, SES, maternal/paternal employment, childcare experiences, infants’ and mothers’ ages, language environment, physical layout and characteristics of the home, availability of media, toys for play, and so on. Researchers will be able to explore the effects of any/all such factors.  
