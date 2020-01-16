@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>coding_transcription_old.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="quality.html">quality</a>
+</li>
+<li>
+  <a href="rationale.html">rationale</a>
+</li>
+<li>
+  <a href="faq.html">faq</a>
+</li>
+<li>
+  <a href="newsletters.html">newsletters</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="transcription-passes" class="section level1">
+<h1>Transcription passes</h1>
+<div id="coding-transcription" class="section level3">
+<h3>Coding transcription</h3>
+<div id="transcribe" class="section level4">
+<h4><code>transcribe</code></h4>
+<p><code>&lt;source_m-c&gt;</code>, <code>&lt;content&gt;</code>.</p>
+<div id="general-orientation" class="section level5">
+<h5>General Orientation</h5>
+<p>The transcribe column is used to tag the onset of each utterance/vocalization by the mom and child in a single pass. Then based on the <code>&lt;source&gt;</code> of the utterance/vocalization, the momspeech and childvoc columns are automatically populated by a script.</p>
+<p>Utterance = a unit of speech separated by silence/pause, which can be a natural “period” as in end of a complete thought or sentence or a long pause (i.e., taking a breath). Utterances are coded as events (cells) separated by gray where no utterances are spoken. These are coded as events, where there is only one time that is tagged (onset), which is any time during the utterance. We do not code strict onsets and offset for the event; a single time during the utterance is the time coded.</p>
+<p>Transcribe all of mothers’ utterances even if they are not child-directed. But only transcribe communicative utterances; that is, there is no need to tag and transcribe non-speech, non-communicative sounds by the mother (e.g., making whistling noises, muttering to herself indistinguishably).</p>
+<p>Paralinguistic utterances/vocalizations (e.g., laughing, crying, sighing, screaming) by the mom should be typed out (e.g., “ah”). Non-linguistic vocalizations by the child are coded as “c” (a catch all for crying, laughing, screaming, grunting). Linguistic babbling, vowels, consonants, and combinations of the above by the child that are not words are coded as “b”.</p>
+</div>
+<div id="value-list" class="section level5">
+<h5>Value List</h5>
+<p><code>&lt;source_m-c&gt;</code></p>
+<p><code>m</code> = mom</p>
+<p><code>c</code> = child</p>
+<p><code>&lt;content&gt;</code></p>
+<p>If the content of the utterance can be heard clearly by the coder, then type transcript of each utterance in the cell.</p>
+<p><code>b</code> = babbling, or vowel/consonant sound by the child</p>
+<p><code>c</code> = crying, screaming, grunting, laughing sound by the child</p>
+</div>
+<div id="operational-definitions" class="section level5">
+<h5>Operational Definitions</h5>
+<p><code>&lt;source_m-c&gt;</code></p>
+<p><code>&lt;m&gt;</code>: Code ‘m’ if the mom is the source of the utterance. This code will be filled in automatically using quick keys.</p>
+<p><code>&lt;c&gt;</code>: Code ‘c’ if the child is the source of the utterance. This code will be filled in automatically using quick keys.</p>
+<p><code>&lt;content&gt;</code></p>
+<p>transcribe utterance</p>
+<p>Type the complete utterance. Type everything in lower case, except for proper names (e.g., Mommy, I, Cheerios, Anna). Use apostrophes correctly for contractions and possessives (e.g., don’t, where’s, Daddy’s, Lily’s). Do not use “,” commas. <a href=""> (Inset video) </a> Put a question mark “?” at the end of any utterance that is a question. <a href=""> (Inset video) </a></p>
+<p>Individual letters (e.g., mom spells out zoo as “z” “o” “o”) need to be marked with an @ (at symbol) so that they’re not confused with actual words, for example z@ o@ o@. Use existing rules for utterances to decide if each letter is it’s own utterance.</p>
+<p>Any utterance that is unintelligible or hard to decipher, code as “xxx”. This could be the full utterance: for example, the mom says multiple words but they are all unintelligible, so the entire code is “xxx”. Or part of the utterance is intelligible, but part is not: for example, the mom says “give me” and what she says to give is unintelligible, so code “give me xxx”. <a href=""> (Inset video) </a></p>
+<p>In case of language-functioning sounds by the mom or child, these are typed out as words phonetically as specified below: Ahem (ready to speak), Ay (surprise), Huhuh (no), Hmm (thinking or questioning), Mmhm (yes), Sh (shush), Uhhuh (yes), Uhoh (blunder), uhuh (no), Yeah (yes), Whee (excitement), Whoah (surprise), Whoops (mistake)</p>
+<p>If you encounter a mouth sound that the mom makes, which is communicative but <strong>cannot be transcribed phonetically</strong> (e.g., lip sucking/kissing sound to call the child over), write out the sound of the vocalization in brackets (e.g. [lip sucking/kissing]). <a href=""> (Inset video) </a> Only write out communicative sounds: for instance, if the mom whistles to get the child’s attention write out [whistles], but if the mom is just whistling to herself as she cooks then do not tag as an utterance.</p>
+<p><code>&lt;b&gt;</code> : Code ‘b’ if the child is not saying a full language phrase or sentence. Could be babbling, by saying one or more consonant-vowel pairs. Or could be just a vowel <a href=""> (Inset video) </a>. If you are unsure if it was a language phrase that you can transcribe or was just a babble, then mark as unintelligible “xxx” and make a comment. Either relisten or come back after getting more context later in the video. <a href=""> (Inset video) </a></p>
+<p><code>&lt;c&gt;</code> : Code ‘c’ if the child is making a non-language-like vocalization. For instance, crying, screaming, laughing, grunting. Any vocalization that is not a consonant-vowel babble or vowel alone. These should be easy to distinguish from babbling, because they serve a different communicative function. <a href=""> (Inset video) </a></p>
+</div>
+<div id="how-to-transcribe" class="section level5">
+<h5>How to Transcribe</h5>
+<p>Set “Jump back by” on the Controller to <strong>2 seconds</strong>.</p>
+<p>Transcribing is done in two iterative passes through a small section of the video (roughly 1-2 minutes). The first part is <strong>tagging utterances</strong> for about 1-2 minutes (until a good break in activity is reached) and the second part is looping back over that same portion of the video to <strong>transcribe utterances</strong>.</p>
+<div id="tagging-utterances" class="section level6">
+<h6>Tagging Utterances</h6>
+<p><strong>Turn on Quick Keys</strong> mode by hitting Shift-Cmnd-K (or selecting Spreadsheet&gt;Enable Quick Keys from the menu bar). You will see <em>QUICK KEY MODE</em> in the spreadsheet window header. This will enable a function that every time an alphanumeric key is pressed, a new point cell (onset=offset) is inserted at the current time in the data controller, and the alphanumeric key pressed will be inserted as the code of the first argument.</p>
+<p>Place your left index finger on the “m” key and your left little finger on the “c” key. The right fingers should be on pause and shuttle forward and back. Play the video at <strong>1/2 speed</strong> (or 1/4 speed if a fast exchange of utterances is happening). Press the “m” or “c” key every time the <strong>mom</strong> or <strong>child</strong> has an utterance, while you play the video back. Insert cells <strong>as soon as</strong> you hear something. Be as alert and attentive as possible.</p>
+<p>If you think you hear an utterance, tag it. It’s much better to be fast and insert extra cells, rather than judge yourself and have to go back later to fix the time or insert a cell for an utterance you missed. You can easily delete cells using shortcut keys. You can also fix the <em>source</em> code later if you hit the wrong key. Note, offsets are not coded. Onsets are as close to the utterance onset as you possibly can get. So optimize your attention and coding for speed of tagging.</p>
+<p>The best strategy is to have an unbroken playback session of 1-2 mins where you are just tagging utterances without stopping. Stop playback once you’ve tagged 30-40 cells, 1-2 mins have elapsed, or you hit a good breaking point in an activity (e.g. child moves onto playing with a new toy). Try to stop a tagging utterances past as soon as you tag a new utterance, rather than playing further into silence of the video; that way you can jump to and pick up right where you left off at an utterance for the next tagging pass, instead of potentially re-playing the same part of the video.</p>
+<p>Now, <strong>turn off Quick Keys</strong> (Shift-Cmnd-K). Run the <strong>addtime_transcribe.rb script</strong>. This will add 500 ms to the offset, which will help in highlighting in the next step.</p>
+</div>
+<div id="transcribe-utterances" class="section level6">
+<h6>Transcribe Utterances</h6>
+<p><strong>Turn on Highlight and Focus Mode</strong> by hitting Shift-Cmnd-F (or selecting Spreadsheet&gt;Enable Highlight and Focus Mode from the menu bar). This will highlight each cell as you loop back through the 1-2 mins you just tagged utterances in and put the focus of data entry (cursor) into the first uncoded argument in that cell (which will be <em>content</em>).</p>
+<p>SCROLL or ARROW up to the first cell from the most recent utterance tagging done. Jump to that first cell (+ key) and then JUMP-BACK-BY 2 s (- key). Playback the video at <strong>1x speed</strong>. Listen to each utterance within the context of the ongoing stream of speech. JUMP-BACK and re-listen as many times as needed until you are sure of the utterance. Once you are sure of the utterance, stop playback and transcribe the utterance or insert the appropriate code (for the child).</p>
+<p>If you go past an utterance and missed transcribing it, hit the jump back key until you are right before it. If you get lost in the transcription, JUMP BACK 2-3 cells (by arrowing or jump back key) before where you lost track of transcribing. It’s much better to use the keyboard to navigate and loop back (jump back or arrow up or down) rather than mousing. (Note: you may need to mouse into the argument of the first cell in a section after tagging utterances). If you mouse and jump around, you will get lost; stay in “looping” mode throughout transcription even if it means listening multiple times to a single section.</p>
+<p>If you find a cell for an utterance that was tagged by mistake (you thought there was an utterance but there wasn’t) then delete that cell. JUMP-BACK-BY 2 s before the cell you deleted and confirm there was no utterance and that the next utterance is tagged at the correct time. (Note: you may need to mouse into a cell after deleting).</p>
+<p>If you need to change the onset of an utterance, ARROW into it (or let auto focus move you into it) and hit the 7 key to set onset to the current time. Do not worry about setting or fixing the offset.</p>
+<p>If you missed tagging an utterance in the first part, find the time of the utterance onset while you are transcribing. Hit ENTER and set the offset (same time as onset) using the 9 key. Code “m” or “c” for <em>source</em>, then tab into <em>content</em> and transcribe.</p>
+<p><strong>Turn off Highlight and Focus Mode</strong>. Save the file. Now <strong>turn back on Quick Keys</strong>, jump to the onset of the last cell transcribed, and revert back to the coding strategy for tagging utterances.</p>
+</div>
+<div id="splitting-mom-and-bhild-utterances" class="section level6">
+<h6>Splitting Mom and Bhild Utterances</h6>
+<p>It’s easier and faster to tag and transcribe mom and child together in one pass. But for later coding, we want mom speech and child vocalizations to be in two separate columns.</p>
+<p><strong>Run the split<em>momchild</em>transcribe.rb script</strong> to pull mom and child utterances into their appropriate columns.</p>
+<p>At this step, you can also <strong>run the create<em>momchild</em>utterancetype.rb script</strong> to insert the momutterancetype and childutterancetype columns and insert cells for every tagged utterance.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

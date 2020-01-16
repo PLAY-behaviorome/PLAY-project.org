@@ -76,4 +76,8 @@ Please visit our [GitHub Repository](https://github.com/databrary/PLAY-Project-D
 ```{r child = 'coding_emotion.Rmd'}
 ```
 
+<hr class="play">
+
+```{r child = 'coding_transcription.Rmd'}
+```
 
