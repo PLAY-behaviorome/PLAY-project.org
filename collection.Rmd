@@ -44,8 +44,6 @@ All videos that are collected with go through a quality assurance process in whi
 
 # Post Visit notes, Clean up, and Upload 
 
-
-
 After each visit, when you arrive back at your lab, complete all the following steps on the day you collected the data or on the very next day.
 
 1. Submit home questionnaires.
