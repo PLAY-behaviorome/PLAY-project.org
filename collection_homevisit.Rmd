@@ -62,9 +62,8 @@ Say: <say>We would like to measure the environmental noise levels. Is there a go
 
 - Set up tablet, put in microphone.
 - Ensure that “Audio Tool” is force closed.
-- *Turn on “Keep Screen On”.* 
 - Place device in the most central place in the home (e.g., living room).
-- The microphone should be facing towards the room (e.g., away from walls) and propped up on the microphone stand so that it is **not** lying flat against the surface of the space.
+- The microphone should be facing towards the room (e.g., away from walls) and propped up on the tablet case so that it is **not** lying flat against the surface of the space.
 <br><br>
 
 ### 3.2 One-Hour Natural Play Video
@@ -319,9 +318,40 @@ Start recording and say: <say>Please sit next to [CHILD] on this mat. I’ll giv
 
 [FAQs about Questionnaires](faq-collection.html)
 
-## 7. Visit wrap-up
+## 7. Post-visit notes, clean up, and upload
 
-* Give mom the payment
-* Ensure that mom has copies of the consent and Databrary forms
-* Collect and pack all equipment and paperwork from the house
-* Thank mom for letting us come to her home!
+After each visit, when you arrive back at your lab, complete all the following steps on the day you collected the data or on the very next day.
+
+1. Submit home questionnaires.
+    - Open the completed questionnaire on the tablet and hit the submit button. Tablet must be connected to wifi.   
+2. Complete and submit PLAY Post-Visit Notes   
+    - https://ee.kobotoolbox.org/x/#2cAYQt3z   
+3. Upload all videos from the visit to Databrary onto your university's PLAY volume. <br>
+Use the naming convention for each of the four videos. Use your 5 letter code for SITE. Use 3 digits for subject number (###).
+    - Name the session as: **PLAY_SITE_###**
+    - Name the Natural Play video as: **PLAY_SITE_###_NaturalPlay**
+    - Name the House Walkthrough video as: **PLAY_SITE_###_HouseWalkthrough**
+    - Name the Structured Play video as: **PLAY_SITE_###_StructuredPlay**
+    - Name the Questionnaires video as: **PLAY_SITE_###_Questionnaires**
+4. Select appropriate release level for session in Databrary.
+    - https://www.databrary.org/resources/guide/investigators/release/release-levels.html
+5. Make sure that all fields on Databrary are filled out. <br>
+If visit is excluded mark as:
+    - Pilot
+    - Atypical
+    - Out of age range
+    - Cancelled (if visit was cancelled)
+    - Experimental error (equipment malfunction)
+    - Incomplete
+6. Submit decibel data.
+    - Please access the decibel app file on your tablet (located in the "AudioTool" folder in the File Manager). Email the file to Orit Herzberg at (ohk2@nyu.edu).
+    - The subject of the email should be: **PLAY_SITE_###**
+    - In the email body, please include the following information — **Child’s birth date** and **Study test date**.
+7. Fill out form to submit session for quality assurance. https://forms.gle/dyqtsAxx3D8LJuTr8.
+8. Clean equipment.
+    - Wash all toys and equipment thoroughly.
+    - Wipe down yoga mat.
+    - Once videos have been uploaded, delete all videos from SD card.
+    - Make sure to put away all equipment to have ready for a next visit.
+
+
