@@ -7,22 +7,6 @@ output:
     toc_float: true
 ---
 
-```{r setup, include=FALSE}
-source("R/site_data.R")
-install.packages("googlesheets4")
-install.packages("googledrive")
-library(googlesheets4)
-library(googledrive)
-
-id_trackingsheet <- as_sheets_id("1V9RuZJNRN4lehLzRSWO0MqVclsXPw7Z-Lxq-VQOvM-A")
-DataCollectionTraining <- read_sheet(ss = id_trackingsheet, sheet = "DataCollectionTraining")
-
-```
-
-library(googlesheets)
-suppressMessages(library(dplyr))
-
-
 <br>
 
 # Site-specific information for NYUNI
@@ -31,8 +15,6 @@ suppressMessages(library(dplyr))
 DataCollectionTraining
 
 #### Researchers
-
-
 
 Master checklist: 
 * BRANY reliance 
@@ -53,7 +35,6 @@ Master checklist:
    * Heavy 3-4 QA pass 
    * Light QA for rest (except two more HQAs at midpoint and towards the end)
    * Collection complete
-
 
 
 ## Participant recruitment targets

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -70,9 +70,7 @@ h6 {
 
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -191,8 +188,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -237,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -249,20 +245,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -339,20 +332,20 @@ $(document).ready(function () {
 </div>
 <div id="website-info" class="section level2">
 <h2>Website info</h2>
-<p>This site is hosted in <a href="http://github.com/PLAY-behaviorome/">GitHub</a> and is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>, version 1.2.5019.</p>
+<p>This site is hosted in <a href="http://github.com/PLAY-behaviorome/">GitHub</a> and is generated in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a href="http://rstudio.com">RStudio</a>, version 1.2.5033.</p>
 <p>For information about using R Markdown to generate websites, see <a href="http://rmarkdown.rstudio.com/rmarkdown_websites.html" class="uri">http://rmarkdown.rstudio.com/rmarkdown_websites.html</a>. For formatting information, see <a href="http://rmarkdown.rstudio.com/html_document_format.html" class="uri">http://rmarkdown.rstudio.com/html_document_format.html</a>.</p>
 <!-- ```{r child='_sessioninfo.Rmd'}``` -->
 <details>
 <summary>Information about this R session (click here)</summary>
 <p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 3.5.1 (2018-07-02)
+<pre><code>## R version 3.6.2 (2019-12-12)
 ## Platform: x86_64-apple-darwin15.6.0 (64-bit)
-## Running under: macOS  10.15.1
+## Running under: macOS Catalina 10.15.1
 ## 
 ## Matrix products: default
-## BLAS: /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
-## LAPACK: /Library/Frameworks/R.framework/Versions/3.5/Resources/lib/libRlapack.dylib
+## BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
@@ -361,10 +354,9 @@ $(document).ready(function () {
 ## [1] stats     graphics  grDevices utils     datasets  methods   base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] compiler_3.5.1  magrittr_1.5    htmltools_0.3.6 tools_3.5.1    
-##  [5] rstudioapi_0.10 yaml_2.2.0      Rcpp_0.12.18    stringi_1.2.4  
-##  [9] rmarkdown_1.11  knitr_1.21      stringr_1.3.1   xfun_0.4       
-## [13] digest_0.6.16   evaluate_0.13</code></pre>
+##  [1] compiler_3.6.2  magrittr_1.5    htmltools_0.4.0 tools_3.6.2     rstudioapi_0.10 yaml_2.2.0      Rcpp_1.0.3     
+##  [8] stringi_1.4.5   rmarkdown_2.0   knitr_1.26      stringr_1.4.0   xfun_0.12       digest_0.6.23   rlang_0.4.2    
+## [15] evaluate_0.14</code></pre>
 </p>
 </details>
 </div>
@@ -389,6 +381,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
