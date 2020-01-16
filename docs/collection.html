@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
@@ -73,9 +73,7 @@ h6 {
 
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -89,7 +87,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -194,8 +191,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -240,6 +235,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -252,48 +248,9 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
 
-
-<script>
-$(document).ready(function ()  {
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3,h4",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <style type="text/css">
 
@@ -307,6 +264,12 @@ $(document).ready(function ()  {
 }
 }
 
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
 
 .toc-content {
   padding-left: 30px;
@@ -342,8 +305,6 @@ div.tocify {
 
 .tocify-subheader .tocify-item {
   font-size: 0.90em;
-  padding-left: 25px;
-  text-indent: 0;
 }
 
 .tocify .list-group-item {
@@ -352,6 +313,16 @@ div.tocify {
 
 
 </style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
 
 <!-- setup 3col/9col grid for toc_float and main content  -->
 <div class="row-fluid">
@@ -1100,9 +1071,8 @@ Your browser does not support html5 video. </video>
 <ul>
 <li>Set up tablet, put in microphone.</li>
 <li>Ensure that “Audio Tool” is force closed.</li>
-<li><em>Turn on “Keep Screen On”.</em></li>
 <li>Place device in the most central place in the home (e.g., living room).</li>
-<li>The microphone should be facing towards the room (e.g., away from walls) and propped up on the microphone stand so that it is <strong>not</strong> lying flat against the surface of the space. <br><br></li>
+<li>The microphone should be facing towards the room (e.g., away from walls) and propped up on the tablet case so that it is <strong>not</strong> lying flat against the surface of the space. <br><br></li>
 </ul>
 </div>
 <div id="one-hour-natural-play-video" class="section level3">
@@ -1469,8 +1439,8 @@ Your browser does not support html5 video. </video>
 <p><a href="faq-collection.html">FAQs about Questionnaires</a></p>
 </div>
 </div>
-<div id="visit-wrap-up" class="section level2">
-<h2>7. Visit wrap-up</h2>
+<div id="post-visit-notes-clean-up-and-upload" class="section level2">
+<h2>7. Post-visit notes, clean up, and upload</h2>
 <ul>
 <li>Give mom the payment</li>
 <li>Ensure that mom has copies of the consent and Databrary forms</li>
@@ -1480,16 +1450,56 @@ Your browser does not support html5 video. </video>
 <hr class="play">
 </div>
 </div>
-<div id="clean-up-and-upload" class="section level1">
-<h1>Clean up and Upload</h1>
-<p>When you arrive back at the lab, please complete these steps on the day you collected data or on the very next day:</p>
+<div id="post-visit-notes-clean-up-and-upload-1" class="section level1">
+<h1>Post Visit notes, Clean up, and Upload</h1>
+<p>After each visit, when you arrive back at your lab, complete all the following steps on the day you collected the data or on the very next day.</p>
+<ol style="list-style-type: decimal">
+<li>Submit home questionnaires.
+<ul>
+<li>Open the completed questionnaire on the tablet and hit the submit button. Tablet must be connected to wifi.<br />
+</li>
+</ul></li>
+<li>Complete and submit PLAY Post-Visit Notes
+<ul>
+<li><a href="https://ee.kobotoolbox.org/x/#2cAYQt3z" class="uri">https://ee.kobotoolbox.org/x/#2cAYQt3z</a><br />
+</li>
+</ul></li>
+<li>Upload all videos from the visit to Databrary onto your university’s PLAY volume. <br> Use the naming convention for each of the four videos. Use your 5 letter code for SITE. Use 3 digits for subject number (###).
+<ul>
+<li>Name the session as: <strong>PLAY_SITE_###</strong></li>
+<li>Name the Natural Play video as: **PLAY_SITE_###_NaturalPlay**</li>
+<li>Name the House Walkthrough video as: **PLAY_SITE_###_HouseWalkthrough**</li>
+<li>Name the Structured Play video as: **PLAY_SITE_###_StructuredPlay**</li>
+<li>Name the Questionnaires video as: **PLAY_SITE_###_Questionnaires**</li>
+</ul></li>
+<li>Select appropriate release level for session in Databrary.
+<ul>
+<li><a href="https://www.databrary.org/resources/guide/investigators/release/release-levels.html" class="uri">https://www.databrary.org/resources/guide/investigators/release/release-levels.html</a></li>
+</ul></li>
+<li>Make sure that all fields on Databrary are filled out. <br> If visit is excluded mark as:
+<ul>
+<li>Pilot</li>
+<li>Atypical</li>
+<li>Out of age range</li>
+<li>Cancelled (if visit was cancelled)</li>
+<li>Experimental error (equipment malfunction)</li>
+<li>Incomplete</li>
+</ul></li>
+<li>Submit decibel data.
+<ul>
+<li>Please access the decibel app file on your tablet (located in the “AudioTool” folder in the File Manager). Email the file to Orit Herzberg at (<a href="mailto:ohk2@nyu.edu" class="email">ohk2@nyu.edu</a>).</li>
+<li>The subject of the email should be: <strong>PLAY_SITE_###</strong></li>
+<li>In the email body, please include the following information — <strong>Child’s birth date</strong> and <strong>Study test date</strong>.</li>
+</ul></li>
+<li>Fill out form to submit session for quality assurance. <a href="https://forms.gle/dyqtsAxx3D8LJuTr8" class="uri">https://forms.gle/dyqtsAxx3D8LJuTr8</a>.</li>
+<li>Clean equipment.
 <ul>
 <li>Wash all toys and equipment thoroughly.</li>
 <li>Wipe down yoga mat.</li>
-<li>Submit home questionnaires.</li>
-<li>Complete and submit housing checklist and cleanup notes.</li>
-<li>Upload videos and decibel data to Databrary.</li>
-</ul>
+<li>Once videos have been uploaded, delete all videos from SD card.</li>
+<li>Make sure to put away all equipment to have ready for a next visit.</li>
+</ul></li>
+</ol>
 </div>
 
 <hr>
@@ -1512,6 +1522,49 @@ $(document).ready(function () {
 });
 
 
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
 </script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
