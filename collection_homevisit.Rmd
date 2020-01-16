@@ -318,7 +318,7 @@ Start recording and say: <say>Please sit next to [CHILD] on this mat. I’ll giv
 
 [FAQs about Questionnaires](faq-collection.html)
 
-## 7. Post-visit notes, clean up, and upload
+## 7. Visit wrap-up
 
  - Give mom the payment
  - Ensure that mom has copies of the consent and Databrary forms
