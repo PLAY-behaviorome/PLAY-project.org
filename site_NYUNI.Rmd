@@ -1,21 +1,37 @@
 ---
-title: ""
+title: "site_NYINI"
 output:
   html_document:
     toc: true
     toc_depth: 4
     toc_float: true
 ---
+
+```{r setup, include=FALSE}
+source("R/site_data.R")
+install.packages("googlesheets4")
+install.packages("googledrive")
+library(googlesheets4)
+library(googledrive)
+
+id_trackingsheet <- as_sheets_id("1V9RuZJNRN4lehLzRSWO0MqVclsXPw7Z-Lxq-VQOvM-A")
+DataCollectionTraining <- read_sheet(ss = id_trackingsheet, sheet = "DataCollectionTraining")
+
+```
+
 library(googlesheets)
 suppressMessages(library(dplyr))
 
 
 <br>
 
-# Site-specific information for NYU
+# Site-specific information for NYUNI
 
-Site PI: 
-Researchers: 
+#### Site PI
+DataCollectionTraining
+
+#### Researchers
+
 
 
 Master checklist: 
