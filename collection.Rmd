@@ -68,9 +68,9 @@ If visit is excluded mark as:
     - Experimental error (equipment malfunction)
     - Incomplete
 6. Submit decibel data.
-    - Please access the decibel app file on your tablet (located in the "AudioTool" folder in the File Manager). Email the file to Orit Herzberg at (ohk2@nyu.edu).
-    - The subject of the email should be: <b>PLAY_SITE_###</b>
-    - In the email body, please include the following information — <b>Child’s birth date</b> and <b>Study test date</b>.
+    - Please access the decibel app file on your tablet (located in the "AudioTool" folder in the File Manager). Select the decibel file from this home visit session. 
+    - Select "Share with Save to Drive", navigate to the audio file folder for your site (e.g., ‘audio_NYUNI’) and drop your file in that location.
+    - Name the file as follows: <b>PLAY_SITE_###</b>
 7. Fill out form to submit session for quality assurance. https://forms.gle/dyqtsAxx3D8LJuTr8.
 8. Clean equipment.
     - Wash all toys and equipment thoroughly.
