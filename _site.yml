@@ -32,6 +32,7 @@ navbar:
 output_dir: "docs"
 output:
   html_document:
+    title: "PLAY & Learning Across a Year"
     theme: lumen
     highlight: textmate
     css: css/play.css
