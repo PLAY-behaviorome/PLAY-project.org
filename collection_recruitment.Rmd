@@ -56,18 +56,18 @@
 <td width="25%" style="padding-right: 40px;"> <img src="img/dog.png"> </td>
 </tr>
 <tr>
+<td width="20%"> Participant payment  </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/payment.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> Flash cards </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/flashcards.jpg"> </td>
+</tr>
+<tr>
 <td width="20%"> Binder with answer scales  </td>
 <td width="25%" style="padding-right: 40px;"> <img src="img/binder.png"> </td>
 <td width="10%"> </td>
 <td width="20%"> Paper backups of all questionnaires and forms </td>
 <td width="25%"> <img src="img/questionnaires.png"> </td>
-</tr>
-<tr>
-<td width="20%"> Participant payment  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/payment.png"> </td>
-<td width="10%"> </td>
-<td width="20%">  </td>
-<td width="25%">  </td>
 </tr>
 </table>
 </div>

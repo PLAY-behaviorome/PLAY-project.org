@@ -79,11 +79,11 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <td style="border: solid #cccccc 1pt;" >Demographic questionnaire <br>(all ages)</td>
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212428"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #4a86e8; ">English </span></p-small>
 <br>
 &emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212429"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #ff7f40; ">Espa&ntilde;ol</span></p-small>
 <br>
 </td>
