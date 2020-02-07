@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "PLAY & Learning Across a Year"
 ---
 
 <img src="img/PLAY-logo.png" height=150px/>
