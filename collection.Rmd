@@ -29,6 +29,8 @@ All videos that are collected with go through a quality assurance process in whi
 
 # Participant Recruitment
 
+There is a parent-oriented website at [anhourinthelife.org](anhourinthelife.org) ([also see Spanish version](https://www.anhourinthelife.org/index-spanish.html)) where parents can find more information about the project and sign up to participate. PLAY staff will transmit interested parents' information to the appropriate site.
+
 ```{r child = 'collection_recruitment.Rmd'}
 ```
 
