@@ -19,9 +19,9 @@
 ### 4.1 Pack
 
 <div>
-<table width="70%">
+<table width="80%">
 <tr>
-<td width="20%">
+<td width="25%">
 <!--Start info button-->
 <a href="https://shop.panasonic.com/cameras-and-camcorders/camcorders/HC-V770K.html">
 <div class="popup" onclick="myFunctioncam()">Camera </a> &#9432;
