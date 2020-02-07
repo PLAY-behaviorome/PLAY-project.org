@@ -71,6 +71,9 @@ If visit is excluded mark as:
     - Please access the decibel app file on your tablet (located in the "AudioTool" folder in the File Manager). Select the decibel file from this home visit session. 
     - Select "Share with Save to Drive", navigate to the audio file folder for your site (e.g., ‘audio_NYUNI’) and drop your file in that location.
     - Name the file as follows: <b>PLAY_SITE_###</b>
+    - <img src="img/audiotool.png" width="600px">
+
+
 7. Fill out form to submit session for quality assurance. https://forms.gle/dyqtsAxx3D8LJuTr8.
 8. Clean equipment.
     - Wash all toys and equipment thoroughly.

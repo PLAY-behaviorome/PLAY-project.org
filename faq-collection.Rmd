@@ -135,6 +135,9 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 ##### What if mom says that she doesn’t have enough time to go over questionnaires?
 -	You must set up a time to call them to do so on the phone. 
 
+##### Mom says the child knows some words in sign language - does that count?
+-	No, sign language words do not count as spoken words. 
+
 ### House Walkthrough
 
 ##### The laser isn't working
