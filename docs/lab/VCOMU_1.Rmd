@@ -1,0 +1,92 @@
+---
+title: "Hey VCOMU_1, this is your own PLAY page!"
+output:
+  html_document:
+    toc: true
+    toc_depth: 4
+    toc_float: true
+---
+
+`This page was last updated on <date>`
+
+In this page, you will find all information that is specific to Virginia Commonewealth University. For information that's common to all sites, please explore play-project.org. If you have any questions, always feel free to [contact us](info@play-project.org).  
+
+<!-- Data Collection Site Trainings -->
+<!-- https://docs.google.com/document/d/1l0ylO88SUmzIpuyfcQ0vSyow8icqUZ8jd5OG06kcdA0/edit -->
+
+<hr>
+
+### About your institution
+Site: Virginia Commonewealth University  
+Site code: `VCOMU`  
+Lab code: `VCOMU_1`  
+Role in PLAY: `Collecting and Coding`  
+Principal investigators: `fillIn`  
+Lab personnell: `fillIn` 
+
+<hr>
+
+### Authorization and materials
+BRANY (PLAY-IRB) status: `Approved`  
+
+ - BRANY reliance  
+ - BRANY subcontract  
+ - BRANY subaward Consent forms CITI for all researchers  
+ 
+Subcontract/subaward status: `Received`  
+Materials status: `Shipped on Aug 29, 2019`   
+Materials list: `1 laptop and 1 full set of collection materials` 
+
+<hr>
+
+### Training status 
+Collection IRB status: `approved`  
+Collection training 1: `people and dates`  
+Collection training 2: `people and dates`   
+Collection training 3: `people and dates`   
+Training video status: `Orit's table`  
+
+Coding IRB status: `approved`  
+Coding training 1: `people and dates`  
+Coding training 2: `people and dates`   
+Coding training 3: `people and dates`   
+Training video status: `Orit's table`  
+
+<hr>
+
+### Recruitment materials 
+Website for parents: [www.anhourinthelife.org](www.anhourinthelife.org)  
+BRANY-approved flyer:   
+Participant recruitment targets  
+
+- Age target:  
+     - 12-month olds: 10  
+     - 18-month olds: 10   
+     - 24-month olds: 10  
+- Language target  
+(languages spoken in the home OR to the child )
+     - `x` Spanish  
+     - `y` English   
+- Education target (highest achievement)
+     - did we 
+     - decide on this? 
+     
+<hr>
+
+### Your Data Collection status 
+Collection QA status: `table`  
+Collection links:  
+ - Google form (checklist)  
+ - Kobotoolbox (link)  
+
+<hr>
+
+### Your Data Coding status 
+Coding folder location: `box folder`
+Coding QA status: `table`  
+
+<hr>
+
+### End of demo text
+
+<hr>
