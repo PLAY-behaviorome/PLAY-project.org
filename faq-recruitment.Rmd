@@ -9,6 +9,12 @@ output:
 
 ## FAQ about scheduling and recruitment
 
+##### How far can we go to visit a family for a home visit?
+ - The only restriction is that the family must live in the same state as the site. It is up to the PI and research team what the maximum distance they want to travel is. Depending on the location, some sites may have longer commute times than others.   
+
+##### Are travel expenses (i.e. public transportation or gas) reimbursed?
+ - Please speak with your site PI about what travel expenses can be covered and how to obtain reimbursements.   
+
 ##### If mom asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
 <say>For the first 90 minutes of this study, we are interested in how mothers and children interact. It should only be you and your child during the first half of our visit. If father/aunt/nanny/etc isn’t able to stay out of the home for the full time that we’re there, they can come back for the last hour.</say> 
 

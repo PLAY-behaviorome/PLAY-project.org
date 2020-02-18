@@ -9,15 +9,6 @@ output:
 
 ## FAQ about data collection
 
-
-### Recruitment
-
-##### How far can we go to visit a family for a home visit?
- - The only restriction is that the family must live in the same state as the site. It is up to the PI and research team what the maximum distance they want to travel is. Depending on the location, some sites may have longer commute times than others.   
-
-##### Are travel expenses (i.e. public transportation or gas) reimbursed?
- - Please talk with your site PI about what travel expenses can be covered and how to obtain reimbursements.   
-
 ### Arrival
 
 ##### What if father/partner/aunt/nanny/etc. is there when experimenter gets there?  
