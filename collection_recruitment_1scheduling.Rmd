@@ -183,7 +183,7 @@ Spanish instructions
     - Rellene la información del participante en una nueva sesión.
     - Luego de completar el cuestionario demográfico guarde como  “sabe as draft”. 
     - Solo oprima “submit” al completar todas las notas luego de la visita.
-    - Lista de preguntas del cuestionario demográfico &emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+    - Lista de preguntas del cuestionario demográfico &emsp; <a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
     - Por favor tenga presente que el formato será distinto que en la aplicación.
 - → En caso de que madre no pueda responder las preguntas en este momento, <say-es>Cuando seria un buen momento para llamarla nuevamente cuando usted tenga tiempo para responder estas preguntas?</say-es>
