@@ -26,6 +26,8 @@ At the end of every home visit (for each participant), you will upload the follo
 
 ## 1. Arrival introduction
 
+_**Note**: Experimenters should always act in a professional and respectful manner when interacting with the participants and while in the home. Do not make comments or react to anything in front of the mom to make her feel uncomfortable. All families should feel that their participation in the study is meaningful._
+
 Say: <say>Hi, my name is [NAME] and I’m visiting from [INSTITUTION]. Thanks for letting us come to your home today!</say>
 <br> &emsp; &emsp; <say-es>Hola, mi nombre es [NAME] y vengo de [INSTITUTION]. ¡Gracias por recibirnos hoy en su hogar!</say-es>
 

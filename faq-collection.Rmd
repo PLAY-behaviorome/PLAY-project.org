@@ -10,6 +10,14 @@ output:
 ## FAQ about data collection
 
 
+### Recruitment
+
+##### How far can we go to visit a family for a home visit?
+ - The only restriction is that the family must live in the same state as the site. It is up to the PI and research team what the maximum distance they want to travel is. Depending on the location, some sites may have longer commute times than others.   
+
+##### Are travel expenses (i.e. public transportation or gas) reimbursed?
+ - Please talk with your site PI about what travel expenses can be covered and how to obtain reimbursements.   
+
 ### Arrival
 
 ##### What if father/partner/aunt/nanny/etc. is there when experimenter gets there?  
@@ -24,11 +32,22 @@ output:
 
 Conduct the study as usual, complete all steps in procedure. The participant won’t count toward the 30 good participants but parts of the video and questionnaires will be usable to someone.
 
+##### At any point during the visit, what if there are technical issues with the equipment?
+- If it occurs within approximately the first 15 minutes of the study, ask the mom if it would be possible to reschedule. Remember to be apologetic and professional.   
+- If it occurs in the middle of the session, continue with the rest of the visit to the best of your ability and if necessary, “fake” the recording. Experimenter should make note of what happened in the post-visit notes.   
+
+##### At any point during the visit, what if the experimenter feels unsafe or uncomfortable?
+ - Experimenter’s safety should be considered above the completion of the home visit.   
+ - Explain to mom that you are feeling unwell and cannot complete the visit. Remember to be apologetic and professional while doing so (For example, <say> I’m not feeling great right now. I’m so sorry but I don’t think that I will be able to finish the rest of the visit. I’m really sorry for the inconvenience. </say>)   
+- If mom has already signed the study permission form, experimenter should still provide subject payment (if possible) before leaving. (For example, <say> Again, I’m really sorry about this. We will definitely still pay you for this visit though. Can you please sign this form?</say>)   
+- Experimenter should make a note of what happened in the post-visit notes.   
+
+##### At any point during the visit, what if the experimenter feels concerned for the safety of the participants?
+- Experimenters should follow the mandated reporting guidelines provided by their institutions.   
 
 ##### What if the mom feeds the child during the one-hour natural play?  
 * That’s fine, just continue recording. 
 * No need to add time, i.e., record more than one hour. 
-
 
 ##### What if child is sleeping when I get there?
 * Do the questionnaire first. 
@@ -38,9 +57,21 @@ Conduct the study as usual, complete all steps in procedure. The participant won
 ##### What if mom asks where she can go during recording?
 Say <say>You can go anywhere inside your home. We just ask that you not go outside, to the backyard, porch, balcony, or building hallways. Not every family will have an outside space and we want to try to keep it consistent for everyone.</say>
 
-##### What if mom is breastfeeding during the recording or child gets naked?
--	If mom is comfortable, just continue recording.  
--	If she is uncomfortable, ask if she is okay with you turning your camera away to look at something else but continue recording to capture the language.  
+##### What if child gets naked or gets a diaper change?
+-	If mom is comfortable, continue recording, shifting position if necessary to avoid getting a direct shot of the pelvic area.
+-	If she is uncomfortable, ask if she is okay with you turning your camera away to look at something else but continue recording to capture the language.
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#faq-diaper">
+Example
+</button>
+</div>
+<div id="faq-diaper" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/volume/876/slot/35422/edit?asset=219699" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
 
 ##### What if mom is concerned about parts of video when signing the Databrary release form? Like breastfeeding or child is naked?
 - Remind her: <say>Your video will only be shared with other scientists if you mark Authorized Investigators. It won’t be shown to anyone other than those researchers.</say>
@@ -98,6 +129,31 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 -	If mom just starts doing it: Record from a discrete angle (from the mom’s back) so you know where the child and mom are and roughly what they are doing.
 -	If mom asks “Is it okay to breastfeed [CHILD]?”, say <say>Sure, is it ok that I keep recording from behind you?</say>
 
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#faq-breastfeeding-1">
+Example 1
+</button>
+</div>
+<div id="faq-breastfeeding-1" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/volume/876/slot/35422/edit?asset=219707" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+&emsp;
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#faq-breastfeeding-2">
+Example 2
+</button>
+</div>
+<div id="faq-breastfeeding-2" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/volume/876/slot/35422/edit?asset=219703" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+
 ##### What if mom changes the baby?
 -	If mom just starts: Record as clearly as possible but try to get face and hands rather than genitalia. 
 -	If mom asks “Is it ok if I change [CHILD]?”, say <say>Is it ok if record from behind you just to get their face?</say>
@@ -136,7 +192,7 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 -	You must set up a time to call them to do so on the phone. 
 
 ##### Mom says the child knows some words in sign language - does that count?
--	No, sign language words do not count as spoken words. 
+ - No, for the purposes of PLAY, sign language words do not count as spoken words.
 
 ### House Walkthrough
 
@@ -153,5 +209,7 @@ Say <say>As a reminder, we ask that you stay inside during our visit. If you hav
 ##### What if they refuse to let you in a specific room?  
 -	Ask if child have access to and goes into the room.
 -	Make notes in Clean Up.
+
+
 
 ---
