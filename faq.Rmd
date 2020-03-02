@@ -9,6 +9,12 @@ output:
 
 <br>
 
+<div class = "bluebg">
+**Pro tip:** The easiest way to find answers to your question is to "Find" (`Cmd+F` on a Mac or `Ctrl+F` on Windows) and type the simplest form of the word you're looking for. For example, searching for the word `dog` will bring up the FAQ "What if doorbell rings for the dog walker, delivery, etc.?"
+</div>
+
+<br>
+
 ```{r child = 'faq-recruitment.Rmd'}
 ```
 ---
