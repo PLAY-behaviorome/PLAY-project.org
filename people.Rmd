@@ -98,8 +98,15 @@ Co-Principal Investigator
   Program Coordinator
   <br><a href="mailto:melodyxu@nyu.edu">email</a>
   </div>
+  <div class="column-right">
+  <img src="img/people-tiger.png" width="150"></br>
+  **Tiger Teng, B.A.**</br>
+  Research Associate
+  <br><a href="mailto:tyt228@nyu.edu">email</a>
+  </div>
 </div>
 <br><br>
+
 
 
 ## Collaborating Investigators
