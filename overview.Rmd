@@ -118,6 +118,25 @@ When that permission is granted the videos and related data will be shared with 
 - Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 23, 2018 from https://nyu.databrary.org/volume/444.
 - Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2018). Play & Learning Across a Year (PLAY) Project Summit (2018-06-29 Philadelphia). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.724
 
+
+##### Full PLAY home visit protocol - example
+
+This is a video of the full PLAY home visit protocol that is available to authorized Databrary users, who may use clips or images from it in presentations for informational or educational purposes. You must be logged in to [Databrary](http://databrary.org) to view it. 
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#fullvideohomevisit">
+Full-length video of home visit
+  </button>
+</div>
+<div id="fullvideohomevisit" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/volume/444/slot/43224/7821438,11460201/asset/223780" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+ 
+_NOTE: This participant was not the only child in the home, so would not meet inclusion criteria for PLAY._
+
 ## Parent-report (questionnaire) data
 
 PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data. The full set of self-report questions can be found [here](collection_homevisit_questionnaires.html).
