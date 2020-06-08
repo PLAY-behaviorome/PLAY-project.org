@@ -16,20 +16,21 @@ output:
 3. **Run** *create_momchild_utterancetype.rb*. This script also creates two new columns: (1) _*momutterancetype*_ and (2) _*childutterancetype*_ . For each cell in _*momspeech*_  and _*childvoc*_ , a new cell is created in _*momutterancetype*_  and _*childutterancetype*_ , respectively. The codes for these cells are blank, and the coder now scores mom and child communication according to definitions in [Communication Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2).
 <br><br>
 
-## 2. Datavyu - Child locomotion pass  
+## 2. Datavyu - Child communication pass
+
+**UNDER CONSTRUCTION**
+
 ### 2.1 General orientation:
-    Screenshot of template
-    Column name: momloc, Prompt: <loc_l-f-h-c>
 ### 2.2 List of values and what they mean
 ### 2.3 How to code
 
-## 3. Datavyu - Mom locomotion pass  
+## 3. Datavyu - Mom communication pass  
+
+**UNDER CONSTRUCTION**
+
 ### 3.1 General orientation:
-    Screenshot of template
-    Column name: momloc, Prompt: <loc_l-f-h-c>
 ### 3.2 List of values and what they mean
 #### 3.2.3 How to code
-
 
 ### Datavyu [Communication Codes](communication.html) 
 
