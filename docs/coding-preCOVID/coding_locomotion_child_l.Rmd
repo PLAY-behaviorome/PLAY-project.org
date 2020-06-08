@@ -1,0 +1,54 @@
+<div style="white-space: pre-wrap;" class="box">
+
+<h5>General rules for coding "<b>l</b>"</h5>
+
+Code <b>l</b> when the baby is engaged in self-generated locomotion in any form (i.e. bum shuffling, scooting, belly crawling, hands-knees crawling, hands-feet crawling, cruising, supported walking, independent walking, marching in place, jumping, hopping, etc.).
+<br>
+<br>
+<b>l</b> occurs when the entire body is displaced in any direction—forward, sideways, backward, in-place—space because the baby is taking a “step”. A baby takes a “step” by shifting weight from one foot/knee onto the other (i.e., weight must be shifting onto a swinging foot/knee in the air to count as moving; if not, this is stationary).
+<br><br>
+This code counts locomotion regardless of whether the baby maintains balance independently or the baby's balance is supported by a parent or external object/apparatus. This code also counts even if the child is taking uncontrolled steps while losing balance (i.e. stumbling steps before a fall). Any self-generated locomotion where the child is using a toy, baby walker, furniture, etc. for support and pushing or moving the object, counts as locomotion. (If child is on top and riding a toy with wheels, this does not count as locomotion. See rules for riding).
+<br>
+
+<br>
+<b>(a) If child is upright:</b><br>
+If child is upright on both feet without support, every step counts.
+NOTE: Do not include pivots. Be careful of bouts that start or end with “pivots” – part of baby’s foot moving but the entire foot is not displaced (e.g. toes move in air but heel rotates on floor, heel moves in air while toes rotate on floor). If a bout start or ends with one of these pivots, do not include pivot movements as part of the locomotion bout.
+<br>
+<br>
+<b>(b) If child is upright but using a surface for support:</b>
+<br>If child is upright on both feet while supported by furniture, toy, or mom, the duration of each step has be less than or equal to 1 sec. If the child is using hands for support while swinging one leg for more than 1 sec, do not code as locomotion. We want to exclude time when the child is not locomoting but one foot is in the air for an extended period of time (>1s). 
+<br><br>
+<b>(c) If child is NOT upright:</b>
+<br>If child is not upright on both feet (e.g., crawling on belly, hands knees crawling, bum shuffling, etc.) then a bout has to include 3 or more consecutive steps with foot, knee, or bum to count as locomotion. Do not try to code one bum shuffle (child scoots bum back once while sitting on the floor) or one crawl step (moves the knee one time when on the floor). Most likely that is just a shift of position or the beginning of a transition (which is not coded. See rules for transitions).
+<br><br>
+<u>NOTE for hands/feet crawling</u>:
+<br>
+For hands/feet crawling, both hands need to be on the floor. So if the first or last step only has one hand on the floor, consider this a transition.
+Crawling can be a mix between knee and foot crawling. Code onset based on which body part begins the movement (foot or knee).
+<br><br>
+<u>NOTE for belly crawling or bum shuffling</u>:
+<br>
+Only code locomotion if the baby makes at least 3 reliable belly-crawling movements (RARE).
+<br><br>
+<b>(d) Do not include any transitions</b>
+<br>Do not include any movement with foot/knee as part of a transition to another posture (e.g., sit to upright/walk, sit to crawl). The first walking/crawling step will be when the foot/knee moves forward in any direction. The final step in the bout has to be a real walking/crawling step (i.e., it is not the last half step or little attempt-step that looks like a transition into the sit). For example, if the baby transitions from sitting to crawling; the first step is after the transition ends and the last step is just before another transition begins.
+Do not include any time baby is rolling (either on furniture or floor). This is not a reliable source of locomotion and is often part of a transition.
+<br><br>
+<u>NOTE for climbing onto/down from furniture</u>:
+<br>
+- Getting down from furniture: If baby bum shuffles or slides to get off of furniture, consider this a transition and therefore do not code until both of baby’s feet have landed on floor.
+<br>
+- Climbing onto furniture: If child is locomoting and climbs onto furniture without stopping code this entire bout as locomoting.
+<br>
+If the child is locomoting on the floor and stops for more than 1 s before climbing onto the furniture (e.g. child walks up to the couch, lifts one leg and stops for more than 1s) then set the offset of the locomotion bout when child stops. After child climbs onto the furniture, the child could transition to stationary (don’t code this as locomotion) OR start a new bout of locomotion (remember only code crawling if 3 or more steps).
+<br><br>
+<u>NOTE for locomoting up/down stairs:</u>
+<br>
+If the child is going up/down stairs in any manner (walking, crawling, belly-crawling, bum shuffling), count all possible locomotion using regular locomotion codes. Stairs are different from climbing onto/down from furniture note above.
+
+<h5>Setting the Onset & Offset of a locomotion bout:</h5>
+<b>Onset</b> of an upright “locomotion bout” is the first frame when the whole foot is displaced. The foot doesn't necessarily have to come off the ground, but the foot has to slide forward, backward or sideways. The onset for a non-upright “locomotion bout” is the first frame when the knee/foot or bum is displaced in space.
+<br>
+<b>Offset</b> is the frame when the baby takes the last step before a 1s pause.
+</div>

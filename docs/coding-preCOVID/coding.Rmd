@@ -50,7 +50,7 @@ Please visit our [GitHub Repository](https://github.com/databrary/PLAY-Project-D
 
 ### Filling out the id Column
 
-<p><iframe src="https://docs.google.com/document/d/e/2PACX-1vQHPKKHbNyKPBBC6MiiWBkcEQ-2_qo-uHl_927O_x6aJJJnyYgDNitkRMkS-oDoNx-FNOtt64ASyxCc/pub?embedded=true"frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
+<p><iframe src="https://docs.google.com/document/d/155o75l_YanQKeRc4_kUyRuOR5oX-GX96huOKIz0s_eo/edit?usp=sharing/pub?embedded=true"frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
 
 
 <hr class="play">
@@ -65,7 +65,10 @@ Please visit our [GitHub Repository](https://github.com/databrary/PLAY-Project-D
 
 <hr class="play">
 
-```{r child = 'coding_locomotion.Rmd'}
+```{r child = 'coding_locomotion_child.Rmd'}
+```
+
+```{r child = 'coding_locomotion_mom.Rmd'}
 ```
 
 <hr class="play">

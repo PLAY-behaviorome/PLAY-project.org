@@ -1,0 +1,11 @@
+<div style="white-space: pre-wrap;" class="box">
+
+<h5>General rules for coding "<b>r</b>"</h5>
+Code <b>r</b> if the child is riding a locomotive device (e.g. child car, bike, scooter, etc.) with wheels. The child can be sitting (bum on the seat), kneeling with one knee, standing (on a scooter). The device does not necessarily need to be in motion for you to code this as <b>r</b>. If riding toy does not have wheels then it does not count as <b>r</b> and should be considered stationary (e.g. if a child is sitting on a rocking horse). 
+<br>Do not code as <b>r</b> if child’s bum, knee, or feet is not on the riding device. Taking steps while pushing a riding toy or while walking around the toy count as locomotion.  If steps occur as child is moving onto/off of device, follow codes for <b>l</b> (remember not to code transitions).
+
+<h5>Setting the Onset & Offset of a ride bout:</h5>
+<b>Onset</b> of ride is when the child's bum or knee first touches the riding toy (if sitting in a bike or car) or the second foot is of the ground (if standing on a scooter).
+<br><b>Offset</b> of ride is when child’s bum, knee, or both feet leave the riding toy.
+
+</div>

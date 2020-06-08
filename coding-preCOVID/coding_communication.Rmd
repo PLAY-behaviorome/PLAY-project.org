@@ -1,0 +1,230 @@
+---
+title: "PLAY & Learning Across a Year"
+output:
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+---
+
+# Communication passes
+
+## 1. Workflow
+
+1. You will receive video files that have been [transcribed](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/transcription) by the PLAY team. Run two additional scripts that will prepare new [Communication](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2) columns for further coding.
+2. **Run** *splitmomchild_transcribe.rb*. This script pulls out mom and child language from the _*transcribe*_ column into two new columns: (1) _*momspeech*_  and (2) _*childvoc*_ . Each column is automatically populated with cells from the respectively tagged utterances from the _*transcribe*_  column (e.g., the script ports all utterances coded as ‘m’ to the _*momspeech*_  column and 'b' to the _*childvoc*_  column). Each new cell in _*momspeech*_  and _*childvoc*_  is a point cell created at the onset of each cell from the transcription.
+3. **Run** *create_momchild_utterancetype.rb*. This script also creates two new columns: (1) _*momutterancetype*_ and (2) _*childutterancetype*_ . For each cell in _*momspeech*_  and _*childvoc*_ , a new cell is created in _*momutterancetype*_  and _*childutterancetype*_ , respectively. The codes for these cells are blank, and the coder now scores mom and child communication according to definitions in [Communication Codes](https://dev1.ed-projects.nyu.edu/wikis/docuwiki/doku.php/manual2).
+<br><br>
+
+## 2. Datavyu - Child communication pass
+
+**UNDER CONSTRUCTION**
+
+### 2.1 General orientation:
+### 2.2 List of values and what they mean
+### 2.3 How to code
+
+## 3. Datavyu - Mom communication pass  
+
+**UNDER CONSTRUCTION**
+
+### 3.1 General orientation:
+### 3.2 List of values and what they mean
+#### 3.2.3 How to code
+
+### Datavyu [Communication Codes](communication.html) 
+
+Make sure you are [currently logged in at Databrary](https://nyu.databrary.org/user/login) to view embedded video examples in this wiki. 
+
+This section covers these 4 main codes: childvoc, childutterancetype, momspeech, and momutterancetype
+
+#### `1. childvoc`
+
+`<content>`
+  
+##### General Orientation
+
+Contains a transcript of all of the utterances/vocalizations of the child.
+
+This column is automatically populated after the *transcribe* pass is completed using a Ruby script. All of the utterances tagged with 'b' in <a href=""> <source> </a> in *transcribe* are transferred here. The onset and offset are equal, and set to the onset from the *transcribe* column, which reflects a time as close as possible to the onset of that utterance.
+
+#### `2. childutterancetype`
+
+`<language_s-w>` `<langlike-b-v>` `<crygrunt_c-g>` `<unintell-x>`
+  
+##### General Orientation
+
+Utterance type = categorization of previously coded utterances as a specific type of speech form. 
+Read the utterance transcribed in childvoc column and categorize each utterance based on codes below.
+
+Codes are mutually exclusive. 
+The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (language, language-like sounds, etc.) down through the more nuanced and time-consuming codes. 
+Once the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods ”.”. For instance, if the child didn't speak in full speech, or speech-like sound, but did cry/scream, then code <.,.,c,.>.
+
+The transcript will expedite this process. Double check and listen again as you read the transcript. Comment any disagreements.
+
+##### Value List
+
+`<language_s-w>`
+
+`s` = sentence
+
+`w` = word
+
+`<langlike_b-v>`
+
+`b` = babble
+
+`v` = vowel
+
+`<crygrunt_c-g>`
+
+`c` = cry
+
+`g` = grunt
+
+`<unintell-x>`
+
+`x` = unintelligible
+
+##### Operational Definitions
+
+`<s>`
+
+Sentence = an utterance in which the speaker utters more than one word, producing a sentence or phrase (e.g., “Daddy's shoe” or “Go to the park”). <a href=""> 3 videos ("ooh gimme that", "i take this", "goodbye sad face?") </a>
+
+`<w>`
+
+Word = an utterance in which the speaker utters a single word, such as “dolly” or “ball.” <a href=""> 3 videos ("car", "basketball", "truck") </a>
+
+
+`<b>`
+
+Babble = an utterance in which the speaker utters a series of repeated canonical syllables, such as ba-ba-ba, or ga-ga-ga. <a href=""> 3 videos (all "b") </a>
+
+`<v>`
+
+Vowel = an utterance in which the speaker utters a vowel sound (e.g, /a/, /i:/). <a href=""> 3 videos (all "v") </a>
+
+`<c>`
+
+Cry= an utterance in which the speaker is experiencing a period of prolonged distress. <a href=""> 3 videos (all "c") </a>
+
+`<g>`
+
+Grunt= an utterance in which the speaker produces a low, short, inarticulate, guttural sound often used to express effort or exertion. Vegetative sounds, such as coughing and sneezing, should be captured using this code. <a href=""> 2 videos (both "g")  </a>
+
+`<x>`
+
+Unintelligible = either what the child said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. 
+
+            
+##### How to Code
+
+Set the “JUMP-BACK-BY” to 2 s.
+            
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in childvoc column. 
+JUMP-BACK-BY 2 s so the utterance can be viewed in context.
+            
+Play in real time to code each utterance, which is coded in mutually exclusive categories. TAB to between each argument/prompt inserting period “.” until you reach the appropriate code. 
+Then insert periods to the end of the cell.
+            
+#### `3. momspeech`
+            
+`<content>`
+              
+##### General Orientation
+            
+Contains a transcript of all of the utterances of the mom.
+            
+This column is automatically populated after the transcribe pass is completed using a Ruby script. 
+All of the utterances tagged with 'm' in <source> in transcribe are transferred here. 
+The onset and offset are equal, and set to the onset from the transcribe column, which reflects a time as close as possible to the onset of that utterance.
+            
+#### `4. momutterancetype`
+
+`<imperative_l-a-p>` `<interrog-i_declar-d>` `<filler-f>` `<unintell-x>`
+              
+##### General Orientation
+            
+Utterance type = categorization of previously coded utterances as a specific type of speech form. 
+Read the utterance transcribed in `momspeech` column and categorize each utterance based on codes below.
+            
+Codes are mutually exclusive. 
+The prompts/arguments in the code are designed to speed the coder through the easiest to detect and easiest to code categories (imperatives, then interrogatives, declaratives, etc.) down through the more nuanced and time-consuming codes. 
+After the proper code has been found, enter it into the prompt you are at, then code all of the rest as periods “.”. 
+For instance, if the mom didn't do an imperative, sing/read, but did give a declarative, then code <.,d,.,.>.
+            
+What is coded is not solely based on the transcript. Listen to the audio, watch the video, and read the transcript so you are sure of the intent behind the mom's speech.
+            
+##### Value List
+            
+`<imperative_l-a-p>`
+
+`l` = imperative look
+            
+`a` = imperative act
+            
+`p` = imperative prohibit
+            
+
+`<interrog-i_declar-d>`
+              
+`i` = interrogative`
+            
+`d` = declarative
+            
+`<filler-f>`
+              
+`f` = filler/affirmation
+            
+`<unintell-x>`
+              
+`x` = unintelligible
+            
+##### Operational Definitions
+
+`<l>` 
+
+Imperative Look = an utterance in which the speaker directs a child's attention (e.g., “Look here”, “See?”, or calls child's name to alert attention). <a href=""> 2 videos ("evelyn", "look") </a>
+
+`<a>`
+
+Imperative Act = an utterance in which the speaker directs a child's action, such as asking child to do something, or to play with an object. An example would be if a mother tells her child “let's play with the ball”. <a href=""> 3 videos ("turn the page", "come here please", "go get the basketball") </a>
+
+**NOTE**: The imperative look and imperative act can be collapsed if the breakdown takes too long to code/specify (although we don't think it will save time).
+
+`<p>`
+
+Imperative Prohibit = an utterance in which the speaker prohibits a child's behavior, such as asking child to stop what they're doing. <a href=""> 3 videos (“dont knock it over”, “dont be so rough”, “no no tv”) </a>
+
+`<i>`
+
+Interrogative = an utterance in which the speaker asks for information about objects or ongoing activities (e.g., “What is this called?”, “What color is this?).
+                                                                    Questions that start with “Can you” or “Would you” (e.g., “Can you put that down”) should not be considered for interrogatives. Their function is to regulate the child's behavior and should be coded as imperatives. Tag questions, in which the speaker adds a question at the end of a statement (“That's a blue truck, right?”) are not considered questions. These should be coded as declaratives. <a href=""> 2 videos (“what does the pig say?”, “what is this?”) </a>
+
+`<d>`
+
+Declarative= an utterance in which the speaker provides information about objects, events or ongoing activities (e.g., “This is a fun toy”; “Red truck”; “You are stirring in the cup”. <a href=""> 2 videos (“child's clothes”, “that's a lemonade”) </a>
+
+`<f>`
+
+Affirmations/Fillers = an utterance in which the speaker is recognizing another speaker's behavior and agreeing with it, or using words as conversational fillers. For instance, when the mother says “There you go” when the child successfully completes a puzzle, or when she says “yeah”, or “uhuh”. <a href=""> 2 videos (“wow”, “there you go”) </a>
+
+`<x>`
+Unintelligible = either what the mom said was not intelligible to the transcriber, or after listening you are not able to understand well enough what they say even with the transcript to properly code it. <a href=""> 2 videos (both "xxx") </a>
+
+
+##### How to Code
+
+Set the JUMP-BACK-BY key for 2 s. 
+
+Hit “FIND” on the controller to go to the onset of each utterance, which was populated in _*momspeech*_ column. 
+
+JUMP-BACK-BY 2s so the utterance can be viewed in context. 
+
+Play in real time to code each utterance, which is coded in mutually exclusive categories. `Tab` between each argument/prompt inserting period `.` until you reach the appropriate code. Then insert periods `.` to the end of the cell.
+
+---
+
+

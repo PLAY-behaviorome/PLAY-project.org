@@ -1,0 +1,277 @@
+
+```{r child = 'collection_recruitment_1scheduling.Rmd'}
+```
+
+<br>
+
+```{r child = 'collection_recruitment_2establishing.Rmd'}
+```
+
+<br>
+
+```{r child = 'collection_recruitment_3confirming.Rmd'}
+```
+
+<br>
+
+## 4. Preparing for Visit
+
+### 4.1 Pack
+
+<div>
+<table width="80%">
+<tr>
+<td width="25%">
+<!--Start info button-->
+<a href="https://shop.panasonic.com/cameras-and-camcorders/camcorders/HC-V770K.html">
+<div class="popup" onclick="myFunctioncam()">Camera </a> &#9432;
+  <span class="popuptext" id="myPopupcam"> Panasonic HC-V770 Full HD Video Camera Camcorder </span>
+</div>
+<script>
+function myFunctioncam() {
+  var popup = document.getElementById("myPopupcam");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctionsdc()">SD Card &#9432;
+  <span class="popuptext" id="myPopupsdc">SanDisk 64GB Extreme PRO UHS-I SDXC Memory Card</span>
+</div>
+<script>
+function myFunctionsdc() {
+  var popup = document.getElementById("myPopupsdc");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctionbat()"> Extra battery &#9432;
+  <span class="popuptext" id="myPopupbat">Panasonic Battery and Charger Kit (for HC-V77 Camcorders)</span>
+</div>
+<script>
+function myFunctionbat() {
+  var popup = document.getElementById("myPopupbat");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/camera-sdcard-battery.png"> </td>
+<td width="10%"> </td>
+<td width="20%">   
+<!--Start info button-->
+<div class="popup" onclick="myFunctionmic()"> Microphone with sponge cover &#9432;
+  <span class="popuptext" id="myPopupmic"> Veksun camera microphone </span>
+</div>
+<script>
+function myFunctionmic() {
+  var popup = document.getElementById("myPopupmic");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%"> <img src="img/mic.png"> </td>
+</tr>
+<tr>
+<td width="20%"> 
+<!--Start info button-->
+<div class="popup" onclick="myFunction()"> Fully loaded and charged tablet &#9432;
+  <span class="popuptext" id="myPopup"> Lenovo 8 Tab 4 8 16GB Tablet (Wi-Fi Only)</span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup"); popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctiontab()"> Tablet case &#9432;
+  <span class="popuptext" id="myPopuptab"> MoKo Lenovo Tab 4 8" Case </span>
+</div>
+<script>
+function myFunctiontab() {
+  var popup = document.getElementById("myPopuptab");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%"> <img src="img/tablet.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> 
+<!--Start info button-->
+<div class="popup" onclick="myFunctionlas()"> Laser Measure &#9432;
+  <span class="popuptext" id="myPopuplas"> Tacklilfe S2 Advanced Laser Measure  </span>
+</div>
+<script>
+function myFunctionlas() {
+  var popup = document.getElementById("myPopuplas");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/laser.png"> </td>
+</tr>
+<tr>
+<td width="20%"> 
+<!--Start info button-->
+<div class="popup" onclick="myFunctiondec()"> Decibel meter mic &#9432;
+  <span class="popuptext" id="myPopupdec"> Dayton Audio iMM-6 Microphone </span>
+</div>
+<script>
+function myFunctiondec() {
+  var popup = document.getElementById("myPopupdec");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->  
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/dm-mic.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> 
+<!--Start info button-->
+<a href="https://www.bhphotovideo.com/c/product/1429467-REG/magnus_pv_3330g_3_section_photo_video_tripod.html">
+<div class="popup" onclick="myFunctiontri()"> Tripod </a> &#9432;
+  <span class="popuptext" id="myPopuptri"> Magnus PV-3330G Photo/Video Tripod </span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiontri() {
+  var popup = document.getElementById("myPopuptri"); popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%"> <img src="img/tripod.png"> </td>
+</tr>
+<tr>
+<td width="20%">   
+<!--Start info button-->
+<div class="popup" onclick="myFunctiontot()"> Tote bag &#9432;
+  <span class="popuptext" id="myPopuptot"> Clear Tote Bag (12"X 12"X 6") </span>
+</div>
+<script>
+function myFunctiontot() {
+  var popup = document.getElementById("myPopuptot");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->  
+</td>
+<td width="25%"> <img src="img/tote.png"> </td>
+<td width="10%"> </td>
+<td width="20%">  
+<!--Start info button-->
+<div class="popup" onclick="myFunctionyog()"> Yoga mat &#9432;
+  <span class="popuptext" id="myPopupyog"> Gaiam Essentials Thick Yoga Mat </span>
+</div>
+<script>
+function myFunctionyog() {
+  var popup = document.getElementById("myPopupyog");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->  
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/yoga-mat.png"> </td>
+</tr>
+<tr>
+<td width="20%"> 
+<!--Start info button-->
+<a href="https://www.greentoys.com/products/green-toys-dish-set-24-piece-set">
+<div class="popup" onclick="myFunctiondis()">Dish set </a> &#9432;
+  <span class="popuptext" id="myPopupdis"> Green Toys Dish Set </span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiondis() {
+  var popup = document.getElementById("myPopupdis");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%"> <img src="img/dish-sets.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> 
+<!--Start info button-->
+<a href="https://www.munchkin.com/bath-bobbers.html">
+<div class="popup" onclick="myFunctiontoy()"> Toy </a> &#9432;
+  <span class="popuptext" id="myPopuptoy"> Munchkin Bath Bobbers </span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiontoy() {
+  var popup = document.getElementById("myPopuptoy");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/dog.png"> </td>
+</tr>
+<tr>
+<td width="20%"> Participant payment  </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/payment.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204156"> Flash cards </a> </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/flashcards.jpg"> </td>
+</tr>
+<tr>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionform()"> 2 copies of study consent forms - one for parent, one signed copy for lab records</a> &#9432;
+  <span class="popuptext" id="myPopupform"> Please contact lab PI to get your lab-specific copy of this form </span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctionform() {
+  var popup = document.getElementById("myPopupform");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/binder.png"> </td>
+<td width="10%"> </td>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionform()"> 2 copies of Databrary permission forms - one for parent, one signed copy for lab records</a> &#9432;
+  <span class="popuptext" id="myPopupform"> Please contact lab PI to get your lab-specific copy of this form </span>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctionform() {
+  var popup = document.getElementById("myPopupform");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/binder.png"> </td>
+<td width="10%"> </td>
+</tr>
+<tr>
+<td width="20%"> Answer scales in <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=191468"> English </a> & <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157"> Spanish </a> </td>
+<td width="25%" style="padding-right: 40px;"> <img src="img/scales.png"> </td>
+<td width="10%"> </td>
+<td width="20%"> Paper backups of <a href="https://www.play-project.org/collection.html#6_questionnaires"> all questionnaires and forms </a> </td>
+<td width="25%"> <img src="img/questionnaires.png"> </td>
+</tr>
+</table>
+</div>
+
+<br>
+
+### 4.2 Prepare
+
+1. Take your own water with you. For the duration of the visit, you will decline any offerings of food or drink.
+2. Take your university ID with you, be prepared to show it if asked.  
+3. Dress plainly, modestly, neutrally. Nothing too bright and attractive to children. Try not to wear all black either :) 
+4. Avoid strong perfumes and noisy jewelry. The idea is to blend into the background as much as possible.
+5. Be prepared to plan your bathroom breaks around the visit (it will be approx 2.5 hrs long).
+
