@@ -90,7 +90,7 @@ The aim is to collect data that approximate county-level demographic characteris
 
 ### Map
 
-<img src="img/PLAY-site-map-1.png"/>
+<img src="img/PLAY-collection-sites-labeled.png"/>
 
 ### Racial composition
 

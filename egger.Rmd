@@ -2,9 +2,6 @@
 title: "Egger Suggestions"
 ---
 
-```{r child = 'copenhagen.Rmd'}
-```
-
 ```{r child = 'phq-9.Rmd'}
 ```
 
