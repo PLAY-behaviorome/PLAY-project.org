@@ -11,15 +11,17 @@
 
 
 
-<title>coding_locomotion_child_m.utf8</title>
+<title>PLAY &amp; Learning Across a Year</title>
 
-<script src="site_libs/header-attrs-2.1/header-attrs.js"></script>
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -250,6 +252,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -257,6 +322,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -315,25 +390,25 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">PLAY &amp; Learning Across a Year</h1>
 
 </div>
 
 
-<div class="box" style="white-space: pre-wrap;">
-<h5>
-General rules for coding “<b>m</b>”
-</h5>
-<p>Code <b>m</b> when the child is being constrained and supported by the mother. The child’s feet are not on the ground and is being held in the air by the mother. The mother’s arms are supplying support to the child’s body. During a mother constraint, the mother can be moving (carrying) or stationary (holding). <br><br> NOTE: Code as ‘m’ if mother has placed the baby on a surface but is still supporting the child such that the child would not be able to locomote (e.g. child sitting on kitchen counter and mom holding. While the child’s full weight is not supported by mom, the baby is being constrained by mom and could not locomote. <br><br> NOTE: Do not count mother constraint when the child is just sitting on the mother’s lap or child is next to mom sitting on the couch — the child could get up and locomote if he/she wanted. However, if child is on the mom’s lap and their feet are hanging far of the floor (e.g. mom is sitting on a couch and child is on her lap, and child’s legs are dangling in front of the couch). <br></p>
-<h5>
-Setting the Onset &amp; Offset of a mom-constrained bout:
-</h5>
-<p><b>Onset</b> of “mom-constrained” is the first frame when mom lifts up the baby’s whole body off the current surface and up into the air in mom’s arms (as defined below). <br>From an <b>upright or squatting</b> position: when child’s second foot leaves the surface. <br>From <b>lying down on back</b>: when bum leaves the surface of support. <br>From <b>lying on tummy</b>: when tummy leaves the surface of support. <br>From a <b>crawling</b> position: second knee/foot leaves the surface of support. <br>From a <b>sitting</b> position: when bum leaves the surface of support. <br>NOTE: If child is sitting on mom’s lap and mom gets up holding child, the onset is when mom starts to get up (when mom’s bum leaves the surface). <br><br> <b>Offset</b> of “mom-constrained” is when mom places baby down and the baby starts supporting own weight in any posture (as defined below). <br>Mom places child in <b>upright</b> position: when both feet touch the ground. <br>Mom places child <b>lying down on back</b>: when bum touches the surface. This is usually the case when mom puts child on the changing table. <br>Mom places child <b>lying down on tummy</b>: when tummy touches the surface. <br>Mom places child in <b>crawling or kneeling</b> position: when both knees touch the ground. <br>Mom places child in <b>sitting</b> position: when child’s bum touches the surface of support. <br>This can be a chair, highchair, furniture, floor, or mother’s lap. For mom’s lap offset is when child’s bum touches the mom’s lap, not when the mom’s hands release the child (the mom could continue to hold the child after the bum touches the mom’s lap). <br><br> NOTE for when transitioning from “mom-constrained” to “device-constraint” to “mom-constrained” (‘m’, ‘d’, ‘m’): <br>“Mom held” and “device-constraint” are likely to be continuous. Mom-constraint ends as she puts baby into device. Mom takes baby out of device is device-constraint transitioning into mom-constraint. <br>These should be continuous coding with 1ms between each code. Do not wait until baby is fully strapped and buckled on device (See onset codes above). <br><br> NOTE for when transitioning from “locomotion” to “mom-constrained” to “locomotion” (‘l’, ‘m’, ‘l’): <br><u>In cases of “locomotion” followed by “mom-constrained”</u> Offset for ‘l’ should be the last real step before mom lifts baby of the surface. Codes for ‘l’ and ‘m’ can be continuous but not always are. <br><br> <u>In cases of “mom-constrained” followed by “locomotion”</u> <br>If baby immediately starts locomoting when mom is putting the baby back down, the onset for ‘l’ is when the second foot, hand, or knee touches the floor.</p>
+<div id="locomotion-pass" class="section level1">
+<h1>Locomotion pass</h1>
+<p>
+<iframe src="https://docs.google.com/document/d/e/2PACX-1vSnCDBN9ZfxqmCPmWM6OCnwNULgDgRjJUQoJePw-C6YqnOvsfVYSVk6en1ksp2ezHRZ7E1OsmUR3LVy/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
+</p>
 </div>
 
 <hr>
 <p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
 
 
+</div>
+</div>
 
 </div>
 
@@ -366,6 +441,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
