@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>collection_homevisit_questionnaires.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 54px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h2 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h3 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h4 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h5 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.section h6 {
+  padding-top: 59px;
+  margin-top: -59px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">collection</a>
+</li>
+<li>
+  <a href="coding.html">coding</a>
+</li>
+<li>
+  <a href="quality.html">quality</a>
+</li>
+<li>
+  <a href="rationale.html">rationale</a>
+</li>
+<li>
+  <a href="faq.html">faq</a>
+</li>
+<li>
+  <a href="newsletters.html">newsletters</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<div id="setting-up-for-questionnaires" class="section level3">
+<h3>6.1 Setting up for Questionnaires</h3>
+<ul>
+<li>Position yourself in front of mom, with the paperwork between you.<br />
+</li>
+<li>Set up the tripod to capture both you and mom. You will need to change the battery on the camera to ensure sufficient power.</li>
+<li>Give mom a copy of the <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/191468">colored answer scales</a>.<br />
+</li>
+<li>Give mom a copy of MCDI and Rothbart so that she can follow along when needed.</li>
+</ul>
+</div>
+<div id="questionnaires" class="section level3">
+<h3>6.2 Questionnaires</h3>
+<div class="bluebg">
+<p>All questionnaires should be administered in the primary language of the mom.</p>
+</div>
+<p><br></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25"> <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12bi-es"> 12-month bilingual (Spanish instructions) </button></p>
+</div>
+<div id="collection-homevisit-questionnaire-12bi-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/48206462,48514409/asset/204225/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>You will fill out all questionnaires on your computer or your tablet using the Kobotoolbox app. Here are the 8 questionnaires you will use, in the following order:</p>
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
+<tr>
+<td style="border: solid #cccccc 1pt;">
+<b>Questionnaire</b>
+</td>
+<td style="border: solid #cccccc 1pt;">
+<p-small><span style="color: #bbbbbb;"><b>When to use</b></span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Demographic Questionnaire
+</td>
+<td style="border: solid #cccccc 1pt;">
+<p-small><span style="color: #bbbbbb; ">Before Home Visit <br>(Over the phone with mom)</span></p-small>
+</td>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questions: <br> - Language (MCDI) <br> - Health <br> - Temperament (Rothbart) <br> - Locomotor Milestones <br> - Media Use <br> - Pets <br> - Division of labor <br> - Typical Day
+</td>
+<td style="border: solid #cccccc 1pt;">
+<span style="color: #bbbbbb;">During Home Visit <br> (In person with mom)</span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Post-visit notes
+</td>
+<td style="border: solid #cccccc 1pt;">
+<span style="color: #bbbbbb;"> After Home Visit <br> (Experimenter alone)</span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+</table>
+<p><br></p>
+<p>You will administer all the questionnaires online using the KoBo Toolbox application. Links to all the questionnaires can be found in the tables below (please click on the <img src="img/icon-link.jpg" width="20"> icon to go to the live KoBo Toolbox questionnaires online). In case of technical issues (and to have a paper copy of all questionnaires during home visits), please download the pdf version (<img src="img/icon-pdf.jpg" width="15">) of the questionnaires from below. For printing, each of the above forms are bundled into sets for different age and language combinations. (Please note that presentation and format will differ from the Kobotoolbox app.)</p>
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
+<tr>
+<td style="border: solid #cccccc 1pt;">
+<b>Age</b>
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <b>Language</b>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Demographic questionnaire <br>(all ages)
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #4a86e8; ">English </span></p-small> <br>   <a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #ff7f40; ">Español</span></p-small> <br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>12 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <a href="https://ee.kobotoolbox.org/x/#mxVxgGtb"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194061"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small> <br>   <a href="https://ee.kobotoolbox.org/x/#xjJFf70Q"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194060"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingual </span><span style="color: #4a86e8; ">(English instructions)</span></p-small> <br>   <a href=""><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212431"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingüe </span><span style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small> <br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>18 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <a href="https://ee.kobotoolbox.org/x/#CHCkxRp3"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194063"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>   <a href="https://ee.kobotoolbox.org/x/#RvBwgZfz"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194062"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingual  </span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>   <a href=""><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212432"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingüe </span><span style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small></a><br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>24 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <a href="https://ee.kobotoolbox.org/x/#hlD3vE3R"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194064"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>   <a href="https://ee.kobotoolbox.org/x/#gwg2us1i"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194065"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingual </span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>   <a href=""><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212433"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #6aa84f; ">Bilingüe </span><span style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small></a><br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Post-Visit Notes <br>(all ages)
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <a href="https://ee.kobotoolbox.org/x/#2cAYQt3z"><img src="img/icon-link.jpg" width="20"></a> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212430"><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span style="color: #4a86e8; ">English </span></p-small> <br>
+</td>
+</tr>
+</table>
+<p><br></p>
+</div>
+<div id="permission-to-share---signing-databrary-form" class="section level3">
+<h3>6.3 Permission to share - signing Databrary form</h3>
+<ul>
+<li>Be sure to continue video recording while signing the Databrary form.</li>
+<li>Say: <say>The data that we collected today is incredibly valuable for researchers. We are asking for your permission to upload the videos to a secure online data library where only authorized researchers have access. There are two levels of permission – the first level is if you allow us to share the video with other researchers and the second level is for researchers to be able to show excerpts and images in presentations and conferences. This is a form that explains everything I just said. Because both you and [CHILD] were on the video, Please check ‘yes’ or ‘no’ for each level for yourself and for [CHILD] and sign.</say> <br>     <say-es>Datos como estos son increíblemente valiosos para investigadores. Le estamos pidiendo permiso para subir los videos a una biblioteca segura de datos en línea a la cual solo tienen acceso investigadores autorizados. Hay dos niveles de permisos – el primer nivel es para darnos permiso para compartir los videos con otros investigadores y el segundo nivel es para dar permiso para que investigadores puedan usar porciones o imágenes en presentaciones y conferencias. Este formulario explica todo lo que le he dicho. Ya que usted y [CHILD] están en el video, por favor marque ‘si’ o ‘no’ para cada nivel para usted y para [CHILD] y luego firme.</say-es></li>
+<li>When finished, give mom a moment to look over each form and sign them.</li>
+<li>Make sure to get mom’s signature on the appropriate fields of the Databrary release form</li>
+</ul>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25"> <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-en"> Video - English </button></p>
+</div>
+<div id="collection-homevisit-permission-en" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42777596,42811907/asset/193903/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p><br><br></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25"> <button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-sp"> Video - Spanish </button></p>
+</div>
+<div id="collection-homevisit-permission-sp" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45541640,45590222/asset/194577/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+
+<hr>
+<p>Except where otherwise noted, content on this site is licensed under a <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a> license.</p>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
