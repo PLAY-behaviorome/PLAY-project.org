@@ -364,13 +364,7 @@ div.tocify {
   <a href="quality.html">quality</a>
 </li>
 <li>
-  <a href="rationale.html">rationale</a>
-</li>
-<li>
   <a href="faq.html">faq</a>
-</li>
-<li>
-  <a href="newsletters.html">newsletters</a>
 </li>
 <li>
   <a href="https://www.databrary.org">databrary</a>
@@ -464,7 +458,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0
