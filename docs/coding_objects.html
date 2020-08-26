@@ -364,13 +364,7 @@ div.tocify {
   <a href="quality.html">quality</a>
 </li>
 <li>
-  <a href="rationale.html">rationale</a>
-</li>
-<li>
   <a href="faq.html">faq</a>
-</li>
-<li>
-  <a href="newsletters.html">newsletters</a>
 </li>
 <li>
   <a href="https://www.databrary.org">databrary</a>
@@ -395,8 +389,8 @@ div.tocify {
 </div>
 
 
-<div id="object-interaction-passes" class="section level1">
-<h1>Object Interaction passes</h1>
+<div id="object-interaction-coding" class="section level1">
+<h1>Object Interaction coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSmKAnUZhRHtTg-a_WC4wt5Lwgc4LXxDT1zhiex-obnIWifBwNFdENdyyDkzl0xvz0zF245Z8Ii_DBk/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
@@ -455,7 +449,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

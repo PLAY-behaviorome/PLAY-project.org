@@ -14,16 +14,16 @@ navbar:
       href: coding.html
     - text: "quality"
       href: quality.html
-    - text: "rationale"
-      href: rationale.html
+#    - text: "rationale"
+#      href: rationale.html
     - text: "faq"
       href: faq.html
 #    - text: "news"
 #      href: news.html
 #    - text: "website info"
 #      href: website-info.html
-    - text: "newsletters"
-      href: newsletters.html
+#    - text: "newsletters"
+#      href: newsletters.html
     - text: "databrary"
       href: https://www.databrary.org
     - text: "datavyu"

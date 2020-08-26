@@ -364,13 +364,7 @@ div.tocify {
   <a href="quality.html">quality</a>
 </li>
 <li>
-  <a href="rationale.html">rationale</a>
-</li>
-<li>
   <a href="faq.html">faq</a>
-</li>
-<li>
-  <a href="newsletters.html">newsletters</a>
 </li>
 <li>
   <a href="https://www.databrary.org">databrary</a>
@@ -439,40 +433,40 @@ div.tocify {
 <hr class="play">
 </div>
 </div>
-<div id="communication-passes" class="section level1">
-<h1>Communication passes</h1>
+<div id="communication-coding" class="section level1">
+<h1>Communication coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vTt3iKIxuSYElq_XB-gWt_hhqUlITMLI6uYk-hft7lrN07C4ud6Urqq2fvYDaRtTQZcHSXPekvbI4qv/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 </p>
 <hr class="play">
 </div>
-<div id="gesture-pass" class="section level1">
-<h1>Gesture pass</h1>
+<div id="gesture-coding" class="section level1">
+<h1>Gesture coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSYyj4uL6gO52EGH4Yclk7gMAK-rrcXOLR3TPDi8CI7XUKBF9zzZjgQ-h0YlOnVBwr0xc8kFvVySTl3/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 </p>
 <hr class="play">
 </div>
-<div id="locomotion-pass" class="section level1">
-<h1>Locomotion pass</h1>
+<div id="locomotion-coding" class="section level1">
+<h1>Locomotion coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSnCDBN9ZfxqmCPmWM6OCnwNULgDgRjJUQoJePw-C6YqnOvsfVYSVk6en1ksp2ezHRZ7E1OsmUR3LVy/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 </p>
 <hr class="play">
 </div>
-<div id="object-interaction-passes" class="section level1">
-<h1>Object Interaction passes</h1>
+<div id="object-interaction-coding" class="section level1">
+<h1>Object Interaction coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vSmKAnUZhRHtTg-a_WC4wt5Lwgc4LXxDT1zhiex-obnIWifBwNFdENdyyDkzl0xvz0zF245Z8Ii_DBk/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 </p>
 <hr class="play">
 </div>
-<div id="emotion-passes" class="section level1">
-<h1>Emotion passes</h1>
+<div id="emotion-coding" class="section level1">
+<h1>Emotion coding</h1>
 <p>
 <iframe src="https://docs.google.com/document/d/e/2PACX-1vQp5PspRzVQeOpIDVVfH2PILheayc7G5iERwfX0d90-cVfnnHt4HlVvRteVejO7DpFGeIn7Q47j_HFc/pub?embedded=true" frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
@@ -539,7 +533,7 @@ $(document).ready(function ()  {
       theme: "bootstrap3",
       context: '.toc-content',
       hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
       },
       ignoreSelector: ".toc-ignore",
       scrollTo: 0

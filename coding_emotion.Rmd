@@ -7,6 +7,6 @@ output:
     toc_float: true
 ---
 
-# Emotion passes
+# Emotion coding
 
 <p><iframe src="https://docs.google.com/document/d/e/2PACX-1vQp5PspRzVQeOpIDVVfH2PILheayc7G5iERwfX0d90-cVfnnHt4HlVvRteVejO7DpFGeIn7Q47j_HFc/pub?embedded=true"frameborder="0" width="800" height="600" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></p>
