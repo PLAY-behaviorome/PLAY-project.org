@@ -8,15 +8,15 @@ navbar:
       href: overview.html
 #    - text: "recruitment"
 #      href: recruitment.html
-    - text: "collection"
+    - text: "data collection"
       href: collection.html
-    - text: "coding"
+    - text: "video coding"
       href: coding.html
-    - text: "quality"
+    - text: "quality assurance"
       href: quality.html
 #    - text: "rationale"
 #      href: rationale.html
-    - text: "faq"
+    - text: "protocol faqs"
       href: faq.html
 #    - text: "news"
 #      href: news.html
