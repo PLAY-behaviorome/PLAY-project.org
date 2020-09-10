@@ -65,8 +65,8 @@ Co-Principal Investigator
   <div class="column-left">
   <img src="img/people-kasey.png" width="150"></br>
   **Kasey Soska, Ph.D.**</br>
-  Scientific Director
-  <br><a href="mailto:kasey.soska@databrary.org">email</a>
+  Science Director
+  <br><a href="mailto:kasey.soska@nyu.org">email</a>
   </div>
   <div class="column-right">
   <img src="img/people-swapnaa.png" width="150"></br>
@@ -130,7 +130,7 @@ Co-Principal Investigator
 | Laura Claxton           | Purdue University                          | W. Lafayette, IN    | Collecting & Coding |
 | Elizabeth Davis         | University of California at Riverside      | Riverside, CA       | Coding              |
 | Kaya de Barbaro         | University of Texas at Austin              | Austin, TX          | Coding              |
-| Stacey Dusing           | Virginia Commonwealth University           | Richmond, VA        | Collecting & Coding |
+| Stacey Dusing           | University of Southern California          | Los Angeles, CA     | Collecting & Coding |
 | Gary Evans              | Cornell University                         | Ithaca, NY          | Contributor         |
 | Caitlin Fausey          | University of Oregon                       | Eugene, OR          | Collecting & Coding |
 | John Franchak           | University of California at Riverside      | Riverside, CA       | Collecting & Coding |
@@ -139,8 +139,7 @@ Co-Principal Investigator
 | Simone Gill             | Boston University                          | Boston, MA          | Collecting & Coding |
 | Rick Gilmore            | Penn State University                      | State College, PA   | Collecting & Coding |
 | Susan Goldin-Meadow     | University of Chicago                      | Chicago, IL         | Contributor         |
-| Mike Goldstein          | Cornell University                         | Ithaca, NY          | Contributor         |
-| Julie Gros-Louis        | University of Iowa                         | Iowa City           | Collecting          |
+| Julie Gros-Louis        | University of Iowa                         | Iowa City, IA       | Collecting          |
 | Jeff Haddad             | Purdue University                          | W. Lafayette, IN    | Coding              |
 | May Ling Halim          | California State University at Long Beach  | Long Beach, CA      | Collecting          |
 | Amie Hane               | Williams College                           | Williamstown, MA    | Coding              |
@@ -149,6 +148,7 @@ Co-Principal Investigator
 | Heather Henderson       | University of Waterloo                     | Waterloo, ON        | Coding              |
 | Kathy Hirsh-Pasek       | Temple University                          | Philadelphia, PA    | Contributor         |
 | Jana Iverson            | University of Pittsburgh                   | Pittsburgh, PA      | Collecting & Coding |
+| Audrey Kane             | Virginia Commonwealth University           | Richmond, VA        | Collecting & Coding |
 | Lana Karasik            | CUNY -- College of Staten Island           | Staten Island, NY   | Collecting & Coding |
 | Do Kyeong Lee           | California State University at Fullerton   | Fullerton, CA       | Collecting & Coding |
 | Mei-Hua Lee             | Michigan State University                  | East Lansing, MI    | Collecting & Coding |
@@ -164,7 +164,7 @@ Co-Principal Investigator
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
 | Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
 | Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
-| Kristina Olson          | University of Washington                   | Seattle, WA         | Contributor         |
+| Kristina Olson          | Princeton University                       | Princeton, NJ       | Contributor         |
 | Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
 | Eva Pomerantz           | University of Illinois at Urbana-Champagne | Champaign, IL       | Contributor         |
 | Laura Prosser           | Children's Hospital of Philadelphia        | Philadelphia, PA    | Collecting & Coding |
@@ -179,7 +179,7 @@ Co-Principal Investigator
 | Su-hua Wang             | University of California at Santa Cruz     | Santa Cruz, CA      | Collecting & Coding |
 | Anne Warlaumont         | University of California at Los Angeles    | Los Angeles, CA     | Coding              |
 | Hanako Yoshida          | University of Houston                      | Houston, TX         | Collecting & Coding |
-| Chen Yu                 | Indiana University                         | Bloomington, IN     | Collecting & Coding |
+| Chen Yu                 | University of Texas at Austin              | Austin, TX          | Collecting & Coding |
 | Dan Yurovsky            | Carnegie Mellon University                 | Chicago, IL         | Coding              |
 
 
@@ -202,7 +202,7 @@ Kathy Hirsch-Pasek
 <br>
 
 Jeff Lockman
-: Tulane  
+: Tulane University  
 <br>
 
 Laura Prosser
@@ -210,11 +210,11 @@ Laura Prosser
 <br>
 
 Meredith Rowe
-: Harvard   
+: Harvard University   
 <br>
 
 Dan Yurovsky
-: CMU
+: Carnegie Mellon University
 <br>
 
 </td>
@@ -224,13 +224,13 @@ Dan Yurovsky
 <b> External advisors </b>
 
 Helen Egger
-: NYU  
+: New York University  
 <br>
 _Helen Egger is the Chair of NYU’s Department of Child and Adolescent Psychiatry and has expertise in social-emotional development, naturalistic home studies, and apps for collecting parent report and live data.  _
 <br><br>
 
 David Hunter
-: Penn State  
+: Penn State University  
 <br>
 _David Hunter is Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/).  _
 </td>
