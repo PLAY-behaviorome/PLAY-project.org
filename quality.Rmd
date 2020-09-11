@@ -3,29 +3,83 @@ title: "PLAY & Learning Across a Year"
 output:
   html_document:
     toc: true
-    toc_depth: 2
+    toc_depth: 3
     toc_float: true
 ---
 
+<style>
+.row:after { content: ""; display: table; clear: both; }
+.column-2thirds{
+  float: left;
+  width:80%;
+  text-align: left;
+}
+.column-1third{
+  float: right;
+  width: 20%;
+  text-align: left;
+}
+</style>
+
 <br>
 
-<img src="img/PLAY-logo.png" width="400" />
+# Quality Assurance for PLAY Project
+
+All data collected for PLAY by each of the data collection sites goes through a rigorous examination to review the video, questionnaire, decibel meter, and meta data for inclusion in the final PLAY corpus. Each site collects 30 videos that must pass the Quality Assurance (QA) process, with the goal of 900+ visits passing QA. Checks are performed on each session on several aspects of the data.   
+
+## Databrary and demographic information
+
+- Permission to share (private, authorized researchers, or learning audiences) is indicated
+- Videos for all parts of the protocol are uploaded and file names conform to standards
+- All demographic and metadata fields are filled out correctly
+- Inclusion criteria to enter the study is met (i.e., age, only English and/or Spanish spoken, first born, typical development)
+- Demographic questionnaire on KoboToolBox is completed
+
+## 1-hour natural play
+
+- Recording is 1 hour long
+- Quality of the recording is adequate (audio, lighting, and focus)
+- Child and relevant body parts for coding (face, hands, feet) minimally out of view
+- Only mother and child are present in the home
+- Mother and child do not interact or call attention to the researcher; researcher does not interact with mom or child
+
+## Decibel meter
+
+- Decibel meter recording is 1 hour long
+- Decibel data is in the correct setting and format
+- Positioning of the tablet to record decibel data is correct and captured on video
+
+## House walkthrough
+
+- All rooms in home are included in house walkthrough
+- Quality of the recording is adequate (audio, lighting, and focus)
+- Each room is recorded steadily and carefully to see full room and details
+- Researcher asks about and records child-designed objects in each room
+- Laser measure device is in the correct setting
+- Rooms are measured correctly and measurements are displayed and read on video
+
+## 5-min structured play
+
+- Recording is 5 minutes long
+- Quality of the recording is adequate (audio, lighting, and focus)
+- Child and mom are in view and positioning of the camera records their eyes and hands
+- Correct toys and mat are provided
+
+## Questionnaires
+
+- All questionnaires are recorded on video and mom is in view
+- Correct forms are used for the child's age group
+- Researcher provides correct instructions before each questionnaire
+- All questionnaires are administered correctly (fully completed, no deviations from questions or interference of the researcher)
+- All questionnaires are filled out correctly and submitted in KoboToolbox
+
+## Post-visit notes
+
+- Information about the home environment is completed
+- Researcher's post-visit notes are fully completed
+
+# Quality Assurance Feedback
+
+Sites receive feedback for each of their data collection sessions, with outcomes of whether the session passes QA and comments for improvement of future visits. Heavy Quality Assurance is performed on the first 3-4 visits that each researcher conducts. In Heavy QA, a member of PLAY staff watches videos to ensure foundational coding could be performed and every question was asked and scored correctly—detailed notes are provided. After passing Heavy QA the following visits will be reviewed with a Light Quality Assurance process. In Light QA, a member of PLAY staff watches videos more quickly and reviews questionnaires for completeness—outcome of QA is shared and brief notes are provided. Heavy QA is also randomly conducted to ensure adherence to the protocol.
 
 
-Coming soon!
-
-<!--
-
-```{r child = 'qa-data.Rmd'}
-```
----
-
-```{r child = 'qa-transcription.Rmd'}
-```
----
-
-```{r child = 'qa-final.Rmd'}
-```
----
-
--->
