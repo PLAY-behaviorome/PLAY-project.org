@@ -160,12 +160,13 @@ Co-Principal Investigator
 | Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
 | Dan Messinger           | University of Miami                        | Miami, FL           | Collecting & Coding |
 | Letitia Naigles         | University of Connecticut                  | Storrs, CT          | Coding              |
-| Laura Namy              | Society for Research In Child Development  | Washington, DC      | Contributor         |
+| Laura Namy              | Society for Research in Child Development  | Washington, DC      | Contributor         |
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
 | Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
 | Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
 | Kristina Olson          | Princeton University                       | Princeton, NJ       | Contributor         |
 | Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
+| Lynn Perry              | University of Miami                        | Miami, FL           | Collecting & Coding |
 | Eva Pomerantz           | University of Illinois at Urbana-Champagne | Champaign, IL       | Contributor         |
 | Laura Prosser           | Children's Hospital of Philadelphia        | Philadelphia, PA    | Collecting & Coding |
 | Meredith Rowe           | Harvard University                         | Cambridge, MA       | Coding              |
