@@ -84,10 +84,10 @@ Co-Principal Investigator
   <br><a href="mailto:ohk2@nyu.edu">email</a>
   </div>
   <div class="column-right">
-  <img src="img/people-sandy.png" width="150"></br>
+  <img src="img/people-sandy1.jpg" width="150"></br>
   **Sandy Gonzalez, Ph.D.**</br>
   Research Scientist
-  <br><a href="mailto:sgonz219@fiu.edu">email</a>
+  <br><a href="mailto:slg11@nyu.edu">email</a>
   </div>
 </div>
 <br><br>
