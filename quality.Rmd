@@ -39,7 +39,7 @@ All data collected for PLAY by each of the data collection sites goes through a 
 
 - Recording is 1 hour long
 - Quality of the recording is adequate (audio, lighting, and focus)
-- Child and relevant body parts for coding (face, hands, feet) minimally out of view
+- Child and relevant body parts for coding (face, hands, and feet) minimally out of view
 - Only mother and child are present in the home
 - Mother and child do not interact or call attention to the researcher; researcher does not interact with mom or child
 
@@ -71,14 +71,14 @@ All data collected for PLAY by each of the data collection sites goes through a 
 - Correct forms are used for the child's age group
 - Researcher provides correct instructions before each questionnaire
 - All questionnaires are administered correctly (fully completed, no deviations from questions or interference of the researcher)
-- All questionnaires are filled out correctly and submitted in KoboToolbox
+- All questionnaires are filled out correctly and submitted in KoBoToolBox
 
 ## Post-visit notes
 
 - Information about the home environment is completed
 - Researcher's post-visit notes are fully completed
 
-# Quality Assurance Feedback
+### Quality Assurance Feedback
 
 Sites receive feedback for each of their data collection sessions, with outcomes of whether the session passes QA and comments for improvement of future visits. Heavy Quality Assurance is performed on the first 3-4 visits that each researcher conducts. In Heavy QA, a member of PLAY staff watches videos to ensure foundational coding could be performed and every question was asked and scored correctly—detailed notes are provided. After passing Heavy QA the following visits will be reviewed with a Light Quality Assurance process. In Light QA, a member of PLAY staff watches videos more quickly and reviews questionnaires for completeness—outcome of QA is shared and brief notes are provided. Heavy QA is also randomly conducted to ensure adherence to the protocol.
 
