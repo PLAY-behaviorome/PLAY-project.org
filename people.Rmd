@@ -225,15 +225,15 @@ Dan Yurovsky
 <b> External advisors </b>
 
 Helen Egger
-: New York University  
+: Little Otter  
 <br>
-_Helen Egger is the Chair of NYU’s Department of Child and Adolescent Psychiatry and has expertise in social-emotional development, naturalistic home studies, and apps for collecting parent report and live data.  _
+_Helen Egger is the former chair of NYU’s Department of Child and Adolescent Psychiatry. Currently, she is the Chief Medical/Scientific Officer for the virtual childhood mental health company, Little Otter._
 <br><br>
 
 David Hunter
 : Penn State University  
 <br>
-_David Hunter is Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/).  _
+_David Hunter is Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/)._
 </td>
 </tr>
 </table>
