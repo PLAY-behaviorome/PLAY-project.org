@@ -69,17 +69,16 @@ Co-Principal Investigator
   <br><a href="mailto:kcs266@nyu.edu">email</a>
   </div>
   <div class="column-right">
-  <img src="img/people-swapnaa.png" width="150"></br>
-  **Swapnaa Jayaraman, Ph.D.**</br>
-  Research Scientist
-  <br><a href="mailto:swapnaa@databrary.org">email</a>
+  </br>
+  </br>
+  <br>
   </div>
 </div>
 <br><br>
 <div class="row">
   <div class="column-left">
   <img src="img/people-orit.jpg" width="150"></br>
-  **Orit Herzberg-Keller, D.P.T.**</br>
+  **Orit Herzberg, D.P.T.**</br>
   Research Scientist
   <br><a href="mailto:ohk2@nyu.edu">email</a>
   </div>
@@ -158,16 +157,17 @@ Co-Principal Investigator
 | Vanessa LoBue           | Rutgers University                         | Newark, NY          | Collecting & Coding |
 | Jeff Lockman            | Tulane University                          | New Orleans, LA     | Collecting & Coding |
 | Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
+| Virginia Marchman       | Stanford University                        | Palo Alto, CA       | Contributor         |
 | Dan Messinger           | University of Miami                        | Miami, FL           | Collecting & Coding |
 | Letitia Naigles         | University of Connecticut                  | Storrs, CT          | Coding              |
 | Laura Namy              | Society for Research in Child Development  | Washington, DC      | Contributor         |
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
 | Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
 | Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
-| Kristina Olson          | Princeton University                       | Princeton, NJ       | Contributor         |
+| Kristina Olson          | University of Washington                   | Seattle, WA         | Contributor         |
 | Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
 | Lynn Perry              | University of Miami                        | Miami, FL           | Collecting & Coding |
-| Eva Pomerantz           | University of Illinois at Urbana-Champagne | Champaign, IL       | Contributor         |
+| Eva Pomerantz           | University of Illinois at Urbana-Champaign | Champaign, IL       | Contributor         |
 | Laura Prosser           | Children's Hospital of Philadelphia        | Philadelphia, PA    | Collecting & Coding |
 | Meredith Rowe           | Harvard University                         | Cambridge, MA       | Coding              |
 | Mark Schmuckler         | University of Toronto Scarborough          | Toronto, ON         | Coding              |
@@ -181,7 +181,7 @@ Co-Principal Investigator
 | Anne Warlaumont         | University of California at Los Angeles    | Los Angeles, CA     | Coding              |
 | Hanako Yoshida          | University of Houston                      | Houston, TX         | Collecting & Coding |
 | Chen Yu                 | University of Texas at Austin              | Austin, TX          | Collecting & Coding |
-| Dan Yurovsky            | Carnegie Mellon University                 | Chicago, IL         | Coding              |
+| Dan Yurovsky            | Carnegie Mellon University                 | Pittsburgh, PA      | Coding              |
 
 
 ## Advisory Board
