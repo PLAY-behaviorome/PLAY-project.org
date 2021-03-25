@@ -164,7 +164,7 @@ Co-Principal Investigator
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
 | Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
 | Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
-| Kristina Olson          | University of Washington                   | Seattle, WA         | Contributor         |
+| Kristina Olson          | Princeton University                       | Princeton, NJ       | Contributor         |
 | Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
 | Lynn Perry              | University of Miami                        | Miami, FL           | Collecting & Coding |
 | Eva Pomerantz           | University of Illinois at Urbana-Champaign | Champaign, IL       | Contributor         |
