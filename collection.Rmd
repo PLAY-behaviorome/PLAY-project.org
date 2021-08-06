@@ -36,6 +36,12 @@ There is a parent-oriented website at [anhourinthelife.org](http://www.anhourint
 
 <hr class="play">
 
+# Preparing for Visit
+
+```{r child = 'collection_prepare.Rmd'}
+```
+
+<hr class="play">
 
 # Home Visit
 
