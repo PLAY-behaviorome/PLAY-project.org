@@ -1,13 +1,12 @@
 ---
 title: "PLAY & Learning Across a Year"
 ---
-
-<img src="img/PLAY-logo.png" width="400" />
-
 This site is hosted in [GitHub](http://github.com/PLAY-behaviorome/) and is generated in [R Markdown](http://rmarkdown.rstudio.com/) using [RStudio](http://rstudio.com), version `r rstudioapi::versionInfo()$version`.
 
 For information about using R Markdown to generate websites, see <http://rmarkdown.rstudio.com/rmarkdown_websites.html>.
 For formatting information, see <http://rmarkdown.rstudio.com/html_document_format.html>.
+
+Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International (CC BY 4.0)]( href="https://creativecommons.org/licenses/by/4.0/) license.
 
 ```{r, child="_sessioninfo.Rmd"}
 ```
