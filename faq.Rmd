@@ -23,8 +23,3 @@ output:
 ```
 ---
 
-```{r child = 'faq-coding.Rmd'}
-```
----
-
-
