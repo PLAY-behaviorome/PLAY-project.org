@@ -3,226 +3,206 @@ title: "PLAY & Learning Across a Year"
 output:
   html_document:
     toc: true
-    toc_depth: 2
+    toc_depth: 3
     toc_float: true
 ---
-
-<style>
-.row:after { content: ""; display: table; clear: both; }
-.column-left{
-  float: left;
-  width: 40%;
-  text-align: left;
-}
-.column-right{
-  float: right;
-  width: 60%;
-  text-align: left;
-}
-</style>
+# Principal Investigators
++:--------------------------------------+:--:+:--------------------------------------+:--:+:--------------------------------------+
+|![](img/people-karen.png){width=200}   |    |![](img/people-cathie.png){width=200}  |    |![](img/people-rick.png){width=200}    |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|**Karen E. Adolph, Ph.D.**             |    |**Catherine Tamis-LeMonda, Ph.D.**     |    |**Rick Gilmore, Ph.D.**                |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|New York University                    |    |New York University                    |    |Penn State University                  |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|Principal Investigator                 |    |Co-Principal Investigator              |    |Co-Principal Investigator              |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|[email](mailto:kea1@nyu.edu)           |    |[email](mailto:ct1@nyu.edu)            |    |[email](mailto:rog1@psu.edu)           |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
 
 <br>
 
-## Principal Investigators
+# Team
++:--------------------------------------+:--:+:--------------------------------------+:--:+:--------------------------------------+
+|![](img/people-kasey.png){width=150}   |    |![](img/people-orit.jpg){width=150}    |    |![](img/people-tiger.png){width=150}   |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|**Kasey Soska, Ph.D.**                 |    |**Orit Herzberg, D.P.T.**              |    |**Tiger Teng, B.A.**                   |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|Science Director                       |    |Research Scientist                     |    |Research Associate                     |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
+|[email](mailto:kcs266@nyu.edu)         |    |[email](mailto:ohk2@nyu.edu)           |    |[email](mailto:tyt228@nyu.edu)         |
++---------------------------------------+----+---------------------------------------+----+---------------------------------------+
 
+<br>
 
-<table>
-<tr>
-<td><img src="img/people-karen.png" width="150"><br><br><br></td>
-<td style="padding:10px">
-**Karen E. Adolph, Ph.D**.</br>
-New York University</br>
-Principal Investigator
-<br><a href="mailto:karen.adolph@nyu.edu">email</a>
-</td>
-</tr>
-
-<tr>
-<td><img src="img/people-cathie.png" width="150"><br><br><br></td>
-<td style="padding:10px">
-**Catherine Tamis-LeMonda, Ph.D.**</br>
-New York University</br>
-Co-Principal Investigator
-<br><a href="mailto:catherine.tamis-lemonda@nyu.edu">email</a>
-</td>
-</tr>
-
-<tr>
-<td><img src="img/people-rick.png" width="150"><br><br><br></td>
-<td style="padding:10px">
-**Rick O. Gilmore, Ph.D.**</br>
-The Pennsylvania State University</br>
-Co-Principal Investigator
-<br><a href="mailto:rog1@psu.edu">email</a>
-</td>
-</tr>
-</table>
-
-
-## Team
-
-<div class="row">
-  <div class="column-left">
-  <img src="img/people-kasey.png" width="150"></br>
-  **Kasey Soska, Ph.D.**</br>
-  Science Director
-  <br><a href="mailto:kcs266@nyu.edu">email</a>
-  </div>
-  <div class="column-right">
-   </br>
-   </br>
-   <br>
-  </div>
-</div>
-<br><br>
-<div class="row">
-  <div class="column-left">
-  <img src="img/people-orit.jpg" width="150"></br>
-  **Orit Herzberg, D.P.T.**</br>
-  Research Scientist
-  <br><a href="mailto:ohk2@nyu.edu">email</a>
-  </div>
-  <div class="column-right">
-  <img src="img/people-tiger.png" width="150"></br>
-  **Tiger Teng, B.A.**</br>
-  Research Associate
-  <br><a href="mailto:tyt228@nyu.edu">email</a>
-  </div>
-</div>
-</div>
-<br><br>
-
-
-
-## Collaborating Investigators
-
-<!-- Used this website to create table in markdown: https://thisdavej.com/copy-table-in-excel-and-paste-as-a-markdown-table/-->
-
-| Full name               | Institution                                | Location            | Role                |
-|-------------------------|--------------------------------------------|---------------------|---------------------|
+# Collaborating Investigators
++-------------------------+--------------------------------------------+---------------------+---------------------+
+| Name                    | Institution                                | Location            | Role                |
++=========================+============================================+=====================+=====================+
 | Karen Adolph            | New York University                        | New York, NY        | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Dima Amso               | Brown University                           | Providence, RI      | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Rachel Barr             | Georgetown University                      | Washington, DC      | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Marc Bornstein          | NICHD                                      | Rockville, MD       | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jean-Paul Boudreau      | Mount Allison University                   | Sackville, NB       | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Bob Bradley             | Arizona State University                   | Tempe, AZ           | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Amanda Brandone         | Lehigh University                          | Lehigh, PA          | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Rebecca Brooker         | Texas A&M                                  | College Station, TX | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Kristin Buss            | Penn State University                      | State College, PA   | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Marianella Casasola     | Cornell University                         | Ithaca, NY          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Guangqing Chi           | Penn State University                      | State College, PA   | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Laura Claxton           | Purdue University                          | W. Lafayette, IN    | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Elizabeth Davis         | University of California at Riverside      | Riverside, CA       | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Kaya de Barbaro         | University of Texas at Austin              | Austin, TX          | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Stacey Dusing           | University of Southern California          | Los Angeles, CA     | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Gary Evans              | Cornell University                         | Ithaca, NY          | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Caitlin Fausey          | University of Oregon                       | Eugene, OR          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | John Franchak           | University of California at Riverside      | Riverside, CA       | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Mike Frank              | Stanford University                        | Palo Alto, CA       | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Janet Frick             | University of Georgia                      | Athens, GA          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Simone Gill             | Boston University                          | Boston, MA          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Rick Gilmore            | Penn State University                      | State College, PA   | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Susan Goldin-Meadow     | University of Chicago                      | Chicago, IL         | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Julie Gros-Louis        | University of Iowa                         | Iowa City, IA       | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jeff Haddad             | Purdue University                          | W. Lafayette, IN    | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | May Ling Halim          | California State University at Long Beach  | Long Beach, CA      | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Amie Hane               | Williams College                           | Williamstown, MA    | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Janet Hauck             | Michigan State University                  | East Lansing, MI    | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jill Heathcock          | Ohio State University                      | Columbus, OH        | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Heather Henderson       | University of Waterloo                     | Waterloo, ON        | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Kathy Hirsh-Pasek       | Temple University                          | Philadelphia, PA    | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jana Iverson            | University of Pittsburgh                   | Pittsburgh, PA      | Collecting & Coding |
-| Audrey Kane             | Virginia Commonwealth University           | Richmond, VA        | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Lana Karasik            | CUNY -- College of Staten Island           | Staten Island, NY   | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Do Kyeong Lee           | California State University at Fullerton   | Fullerton, CA       | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Mei-Hua Lee             | Michigan State University                  | East Lansing, MI    | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Cristine Legare         | University of Texas at Austin              | Austin, TX          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Casey Lew-Williams      | Princeton University                       | Princeton, NJ       | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Klaus Libertus          | University of Pittsburgh                   | Pittsburgh, PA      | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Vanessa LoBue           | Rutgers University                         | Newark, NY          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jeff Lockman            | Tulane University                          | New Orleans, LA     | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Virginia Marchman       | Stanford University                        | Palo Alto, CA       | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Dan Messinger           | University of Miami                        | Miami, FL           | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Letitia Naigles         | University of Connecticut                  | Storrs, CT          | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Laura Namy              | Society for Research in Child Development  | Washington, DC      | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Nora Newcombe           | Temple University                          | Philadelphia, PA    | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Lisa Oakes              | University of California at Davis          | Davis, CA           | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Kristina Olson          | Princeton University                       | Princeton, NJ       | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Koraly Perez-Edgar      | Penn State University                      | State College, PA   | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Lynn Perry              | University of Miami                        | Miami, FL           | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Eva Pomerantz           | University of Illinois at Urbana-Champaign | Champaign, IL       | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Laura Prosser           | Children's Hospital of Philadelphia        | Philadelphia, PA    | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Meredith Rowe           | Harvard University                         | Cambridge, MA       | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Mark Schmuckler         | University of Toronto Scarborough          | Toronto, ON         | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Adam Sheya              | University of Connecticut                  | Storrs, CT          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Melanie Soderstrom      | University of Manitoba                     | Winnipeg, MB        | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Lulu Song               | Brooklyn College                           | Brooklyn, NY        | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Catherine Tamis-LeMonda | New York University                        | New York, NY        | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Peter Vishton           | College of William & Mary                  | Williamsburg, VA    | Contributor         |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Eric Walle              | University of California at Merced         | Merced, CA          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Su-hua Wang             | University of California at Santa Cruz     | Santa Cruz, CA      | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Anne Warlaumont         | University of California at Los Angeles    | Los Angeles, CA     | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Hanako Yoshida          | University of Houston                      | Houston, TX         | Collecting & Coding |
-| Chen Yu                 | University of Texas at Austin              | Austin, TX          | Collecting & Coding |
++-------------------------+--------------------------------------------+---------------------+---------------------+
+| Chen Yu                 | University of Texas at Austin\             | Austin, TX\         | Coding\             |
+|                         | Indiana University                         | Bloomington, IN     | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Dan Yurovsky            | Carnegie Mellon University                 | Pittsburgh, PA      | Coding              |
-
-
-## Advisory Board
++-------------------------+--------------------------------------------+---------------------+---------------------+
 
 <br>
 
-<div>
-<table width="100%">
-<tr>
-<td valign="top" width="45%">
-<b> Internal advisors </b>
+# Advisory Board
+## Internal Advisors
++:-------------------+:------------------------------------+
+| Rachel Barr        | Georgetown University               | 
++--------------------+-------------------------------------+
+| Kathy Hirsch-Pasek | Temple University                   | 
++--------------------+-------------------------------------+
+| Jeff Lockman       | Tulane University                   |
++--------------------+-------------------------------------+
+| Laura Prosser      | Children’s Hospital of Philadelphia | 
++--------------------+-------------------------------------+
+| Meredith Rowe      | Harvard University                  | 
++--------------------+-------------------------------------+
+| Dan Yurovsky       | Carnegie Mellon University          | 
++--------------------+-------------------------------------+
 
-Rachel Barr
-: Georgetown University  
 <br>
 
-Kathy Hirsch-Pasek
-: Temple University  
-<br>
-
-Jeff Lockman
-: Tulane University  
-<br>
-
-Laura Prosser
-: Children’s Hospital of Philadelphia   
-<br>
-
-Meredith Rowe
-: Harvard University   
-<br>
-
-Dan Yurovsky
-: Carnegie Mellon University
-<br>
-
-</td>
-<td width="10%">
-</td>
-<td valign="top" width="45%">
-<b> External advisors </b>
-
-Helen Egger
-: Little Otter  
-<br>
-_Helen Egger is the former chair of NYU’s Department of Child and Adolescent Psychiatry. Currently, she is the Chief Medical/Scientific Officer for the virtual childhood mental health company, Little Otter._
-<br><br>
-
-David Hunter
-: Penn State University  
-<br>
-_David Hunter is Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/)._
-</td>
-</tr>
-</table>
-</div>
-
-
+## External Advisors
++:-------------------+:--------------------------------------+
+| Helen Egger        | Little Otter                          | 
++--------------------+---------------------------------------+
+|                    | _Helen is the former chair of NYU’s Department of Child and Adolescent Psychiatry. Currently, she is the Chief Medical/Scientific Officer for the virtual childhood mental health company, Little Otter._|
++--------------------+---------------------------------------+
+| \                  |                                       |
++--------------------+---------------------------------------+
+| David Hunter       | Penn State University                 | 
++--------------------+---------------------------------------+
+|                    | _David is a Professor of Statistics at the Pennsylvania State University and leads the University’s data science initiative (https://datascience.psu.edu/)._|
++--------------------+---------------------------------------+
