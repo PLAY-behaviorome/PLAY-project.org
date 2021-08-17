@@ -11,7 +11,7 @@
 
 
 
-<title>collection_recruitment_2establishing.utf8</title>
+<title>PLAY &amp; Learning Across a Year</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -19,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -249,6 +252,69 @@ $(document).ready(function () {
 
 
 
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
 
 </head>
 
@@ -256,6 +322,16 @@ $(document).ready(function () {
 
 
 <div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -311,48 +387,22 @@ $(document).ready(function () {
 
 
 
+<h1 class="title toc-ignore">PLAY &amp; Learning Across a Year</h1>
 
 </div>
 
 
-<div id="establishing-visit-details" class="section level2 tabset">
-<h2>2. Establishing visit details</h2>
-<p>Once you have connected with the family and decided on a visit date, please send the following email to establish the visit details:</p>
-<div id="english-template" class="section level3">
-<h3>English template</h3>
-<pre><code>Dear [MOM],
-
-Thank you very much for agreeing to participate in our home visit study with [CHILD]. Here is a confirmation of the date and time of your appointment:
-
-*Date: [DAY OF WEEK], [DATE] 
-*Time: [START TIME] – [END TIME] 
-Your Home Address: [ADDRESS]
-
-We look forward to seeing you on the day of your appointment! If the above address is incorrect, please email back or call us right away. If you have any other questions about this appointment, feel free to contact us at [XXX-XXX-XXXX].
-
-Thank you, 
-[LAB]</code></pre>
-</div>
-<div id="spanish-template" class="section level3">
-<h3>Spanish template</h3>
-<pre><code>Estimada [MAMÁ],
-
-Muchas gracias por acceder a participar en nuestro estudio con [NIÑO]. Esta es la confirmación de fecha y hora de nuestra visita:
- 
-*Fecha: [DIA DE LA SEMANA], [FECHA]
-*Hora: [HORA DE COMIENZO] - [HORA DE TÉRMINO]
-Dirección: [DIRECCIÓN]
- 
-Esperamos verlo el día de su cita. Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
- 
-Gracias,
-[LAB]</code></pre>
-</div>
+<div id="quality-assurance---video-and-questionnaire-data" class="section level2">
+<h2>Quality Assurance - Video and questionnaire data</h2>
+<p><em>Coming soon!</em></p>
+<hr />
 </div>
 
 <hr>
 
 
+</div>
+</div>
 
 </div>
 
@@ -385,6 +435,32 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>
