@@ -7,8 +7,8 @@
 
 <say>Have you or anyone in your household had COVID or had physical interaction with someone who has tested positive for COVID in the last two weeks?</say> 
 
-- → *If no: **end call** * <say>Currently, we are only enrolling families who are symptom-free and had no interaction with anyone COVID positive. But is it okay, if we call you for this study again in a few months?</say>
-- → *If yes: continue* 
+- → *If yes: **end call** * <say>Currently, we are only enrolling families who are symptom-free and had no interaction with anyone COVID positive. But is it okay, if we call you for this study again in a few months?</say>
+- → *If no: continue* 
 
 <say>Does this time and date still work for you?</say>
 
