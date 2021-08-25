@@ -59,6 +59,88 @@ Below is the project-wide workflow. The PLAY team will provide training, quality
 <br>
 <br>
 
+## Video Data
+
+All data collections will be recorded on video.
+Parents will be asked for their permission to share the video recordings and other data with the research community.
+When that permission is granted the videos and related data will be shared with the research community via [Databrary](http://databrary.org):
+
+- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2016). PLAY Project: NICHD Workshop (2016-12-16). Databrary. http://doi.org/10.17910/B7.254.
+- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2018). Play & Learning Across a Year (PLAY) Project Summit (2018-06-29 Philadelphia). Databrary. http://doi.org/10.17910/B7.724
+- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2019). Play and Learning Across a Year (PLAY) Project - Protocols & Documentation. Databrary. http://doi.org/10.17910/b7.876. 
+
+#### Full PLAY home visit - example
+
+Videos of a full PLAY home visit protocol are available publicly on the PLAY protocol [Databrary Volume](https://nyu.databrary.org/volume/876) . 
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#fullvideohomevisit">
+Full-length video of home visit
+  </button>
+</div>
+<div id="fullvideohomevisit" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/slot/55651/0,7820438/asset/337402/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#onehournaturalplay">
+One-hour natural play
+  </button>
+</div>
+<div id="onehournaturalplay" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/slot/55651/7821438,11460201/asset/337405/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#housewalkthrough">
+House walkthrough
+  </button>
+</div>
+<div id="housewalkthrough" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/slot/55651/11461201,12477351/asset/337415/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#structuredplay">
+Five-minute structured play
+  </button>
+</div>
+<div id="structuredplay" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/slot/55651/12478351,12812325/asset/337416/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+
+<div class="videobuttons">
+  <img src="img/icon-video.png" width="25">
+  <button size="xs" type="button" data-toggle="collapse" data-target="#questionnaires">
+Parent-report questionnaires
+  </button>
+</div>
+<div id="questionnaires" class="collapse" aria-expanded="false" style="height: 0px;">
+  <video width="100%" controls="" preload="none">
+    <source src="https://nyu.databrary.org/slot/55651/12813325,14619256/asset/337417/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+  </video>
+</div>
+
+_NOTE: This participant was not the only child in the home, so would not meet inclusion criteria for PLAY._
+
+## Parent-report (questionnaire) data
+
+PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data. The full set of self-report questions can be found [here](collection_homevisit_questionnaires.html).
+
+<br>
+
 # Participant sampling
 The collaborating sites in PLAY perform a variety of roles (see [people](people.html) for details). Each site that performs a **collecting** role is pre-assigned to complete all of the collecting functions (see in blue below). This page contains detailed help for the recruitment of participants. Click here for information about the <a href="collection.html"><font color="#5B9BD5"><b> data collection </b></font></a> and <a href="collection.html#clean_up_and_upload"><font color="#5B9BD5"><b> data upload </b></font></a> processes.
 
@@ -66,15 +148,15 @@ PLAY will produce a widely varied and rich set of data, most of which will be op
 
 ## Inclusion/exclusion criteria
 
-Although PLAY endeavours to sample as much of the rich variations that the collection sites present, based on conversations with the launch group and to ensure a sufficient sample size, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must: 
+Although PLAY endeavors to sample as much of the rich variations that the collection sites present. Based on conversations with the launch group, and to ensure a sufficient sample size, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must: 
 
 - be 12, 18, or 24 months of age (+/- 1 week)
-- be a single child (i.e., no living siblings)
+- be a single child (i.e., no siblings living in the home)
 - come from English or Spanish monolingual or bilingual homes (i.e., no other language exposure in the home)
 - be born full-term (37-41 weeks), of normal birth weight (>= 5.5 lbs), without known disabilities
-- come from two-parent or single-parent households
+- be born to parents 21+ years of age (at the time of testing)
 
-Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and infant are present.
+Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and child are present.
 
 ## Collection sites {.tabset}
 
@@ -85,7 +167,7 @@ The aim is to collect data that approximate county-level demographic characteris
 
 ### Map
 
-<img src="img/PLAY-collection-sites-labeled.png"/>
+<img src="img/PLAY-collection-sites-_labeled_grey.png"/>
 
 ### Racial composition
 
@@ -102,37 +184,4 @@ The aim is to collect data that approximate county-level demographic characteris
 ### Languages spoken
 
 <img src="img/spanish-speaking-plot-1.png"/>
-
-## Video
-
-All data collections will be recorded on video.
-Parents will be asked for their permission to share the video recordings and other data with the research community.
-When that permission is granted the videos and related data will be shared with the research community via [Databrary](http://databrary.org):
-
-- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2016). PLAY Project: NICHD Workshop (2016-12-16). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.254.
-- Adolph, K., Tamis-LeMonda, C. & Gilmore, R.O. (2017). PLAY Project: Pilot Data Collections. Databrary. Retrieved August 23, 2018 from https://nyu.databrary.org/volume/444.
-- Adolph, K., Tamis-LeMonda, C., Gilmore, R.O. & Soska, K. (2018). Play & Learning Across a Year (PLAY) Project Summit (2018-06-29 Philadelphia). Databrary. Retrieved August 23, 2018 from http://doi.org/10.17910/B7.724
-
-
-##### Full PLAY home visit - example
-
-This is a video of the full PLAY home visit protocol that is available to authorized Databrary users, who may use clips or images from it in presentations for informational or educational purposes. You must be logged in to [Databrary](http://databrary.org) to view it. 
-
-<div class="videobuttons">
-  <img src="img/icon-video.png" width="25">
-  <button size="xs" type="button" data-toggle="collapse" data-target="#fullvideohomevisit">
-Full-length video of home visit
-  </button>
-</div>
-<div id="fullvideohomevisit" class="collapse" aria-expanded="false" style="height: 0px;">
-  <video width="100%" controls="" preload="none">
-    <source src="https://nyu.databrary.org/slot/43224/7821438,11460201/asset/223780/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
-  </video>
-</div>
-
-_NOTE: This participant was not the only child in the home, so would not meet inclusion criteria for PLAY._
-
-## Parent-report (questionnaire) data
-
-PLAY researchers will collect and share a substantial corpus of parent-report (questionnaire) data. The full set of self-report questions can be found [here](collection_homevisit_questionnaires.html).
 
