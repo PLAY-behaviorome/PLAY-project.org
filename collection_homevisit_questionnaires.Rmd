@@ -93,15 +93,15 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <tr>
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>12 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://ee.kobotoolbox.org/x/#mxVxgGtb"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/6nnRw3bi"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194061"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small>
 <br>
-&emsp; <a href="https://ee.kobotoolbox.org/x/#xjJFf70Q"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/4FE9VhAO"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194060"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small>
 <br>
-&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/x5oTIuJD"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212431"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small>
 <br>
@@ -112,13 +112,13 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <tr>
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>18 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://ee.kobotoolbox.org/x/#CHCkxRp3"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/eB1qpL0N"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194063"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
-&emsp; <a href="https://ee.kobotoolbox.org/x/#RvBwgZfz"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/5nU3O5ZL"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194062"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/l46pGPUN"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212432"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
 </td>
@@ -128,13 +128,13 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <tr>
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>24 months</td>
 <td style="border: solid #cccccc 1pt;">
-&emsp; <a href="https://ee.kobotoolbox.org/x/#hlD3vE3R"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/pzQOPxfI"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194064"><img src="img/icon-pdf.jpg" width="15"></a>
 <p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
-&emsp; <a href="https://ee.kobotoolbox.org/x/#gwg2us1i"><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/UuLqdPHo"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194065"><img src="img/icon-pdf.jpg" width="15"></a>
 <p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
-&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+&emsp; <a href="https://ee.kobotoolbox.org/x/iEkFJamf"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212433"><img src="img/icon-pdf.jpg" width="15"></a>
 <p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
 </td>
