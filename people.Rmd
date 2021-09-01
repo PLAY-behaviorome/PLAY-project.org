@@ -128,7 +128,7 @@ output:
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Letitia Naigles         | University of Connecticut                  | Storrs, CT          | Coding              |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
-| Laura Namy              | Society for Research in Child Development  | Washington, DC      | Contributor         |
+| Laura Namy              | Institute for Education Sciences           | Washington, DC      | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Amy Needham             | Vanderbilt University                      | Nashville, TN       | Collecting & Coding |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
