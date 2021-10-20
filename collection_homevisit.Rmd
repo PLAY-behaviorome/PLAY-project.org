@@ -329,7 +329,7 @@ Start recording and say: <say>Please sit next to [CHILD] on this mat. I’ll giv
  - Thank mom for letting us come to her home!
 
 ### 7.1 Submit for participant payment
- - *As soon as possible* afte the visit, submit a request for participant payment to the NYU team at: https://forms.gle/gJFBoC1bTjcLtoHR8
+ - *As soon as possible* after the visit, submit a request for participant payment to the NYU team at: https://forms.gle/gJFBoC1bTjcLtoHR8
 
 ## 8. Full PLAY home visit protocol - example
 
