@@ -322,10 +322,14 @@ Start recording and say: <say>Please sit next to [CHILD] on this mat. I’ll giv
 
 ## 7. Visit wrap-up
 
- - Give mom the payment
+ - Confirm the email address the mom would like to receive the gift card codes
+ - Let the mom know the gift card codes will arrive in an email from New York University, the lead university on the project, in 1-2 business days
  - Ensure that mom has copies of the consent and Databrary forms
  - Collect and pack all equipment and paperwork from the house
  - Thank mom for letting us come to her home!
+
+### 7.1 Submit for participant payment
+ - *As soon as possible* afte the visit, submit a request for participant payment to the NYU team at: https://forms.gle/gJFBoC1bTjcLtoHR8
 
 ## 8. Full PLAY home visit protocol - example
 
