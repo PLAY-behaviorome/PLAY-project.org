@@ -154,6 +154,9 @@ Example 2
 - Make sure mom sees you are doing this. That way we can account for the amount of time and language is being recorded.
 - If mom says no, then turn off camera. Record extra time to still reach 60 minutes. 
 
+##### The video of the natural play session is split into two files. What should I do?
+-	Label each recording as PLAY_SITE_###_NaturalPlay_part1 and PLAY_SITE_###_NaturalPlay_part2
+- Contact the PLAY team to troubleshoot a solution to the issue
 
 ### Five-minute Structured Play
 
@@ -164,7 +167,7 @@ Example 2
 -	Follow the child and record for 5 minutes.
 
 ##### What if child doesn’t want to play with the toys _and_ moves off the mat?
--	Let mom try to engage with child for 1 min or so. If child is clearly unhappy or uninterested after the minute, stop recording. 
+-	Follow the child and record for 5 minutes.
 
 ##### What if mom doesn’t want child to play with these toys? 
 -	Reassure mom that we wash and sanitize the toys before each visit. If mom is still uncomfortable with child playing with the toys, move onto next part of study.
