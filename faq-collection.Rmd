@@ -9,21 +9,26 @@ output:
 
 ## FAQ about data collection
 
-### Arrival
+### General
 
-##### What if father/partner/aunt/nanny/etc. is there when experimenter gets there?  
+##### What if father/partner/aunt/nanny/etc. is there?  
 - Usually mom says [PERSON] is going to leave.  
-- If mom doesn’t appear to send [PERSON] out, then say: <say>We just want to double check that you’re ok with being alone with the child for the first 90 minutes of this visit. As we mentioned earlier, we just want you and your child at home. If [PERSON] needs more time to leave, we could start with questionnaires. </say>
+- If mom doesn’t appear to send [PERSON] out, then say: <say>We just want to double check that you’re ok with being alone with the child for the first 90 minutes of this visit. As we mentioned earlier, we just want you and your child at home. Let us know when you're ready for it to just be you and your child. If [PERSON] needs more time to leave, we could start with questionnaires. </say>
+- If other person needs to be in another room in the home, we want to make sure they will not interrupt the mom and child or interact with them.
 
 ##### At any point during the visit, what if a major protocol violation occurs? E.g.,
--	Second person is there during the natural interaction
+-	Another person is there during the natural interaction
 -	Mom interacts with the experimenter repeatedly during the recording
--	You learn something about child’s or mom’s health that excludes them from the study
+-	You learn something about child’s disability status or language that excludes them from the study
 -	Mom or child engages in some other behavior that would invalidate the visit  
 
-Conduct the study as usual, complete all steps in procedure. The participant won’t count toward the 30 good participants but parts of the video and questionnaires will be usable to someone.
+Conduct the study as usual, complete all steps in procedure. The session won't pass quality assurance, but parts of the video and questionnaires will be usable to someone and shared on Databrary anyway.
 
-##### At any point during the visit, what if there are technical issues with the equipment?
+##### At any point during the visit, what if there are technical issues with the video camera?
+- If the camera won't turn on, there is no SD card, or something else that would stop recording at all. Try to reschedule the visit.
+- If the battery runs out in the middle of the house walkthrough, structured play, or questionnaires, replace the battery and resume recording.
+- If the battery runs out in the first 5-15 minutes of the natural play, replace the battery and start the 1 hour over. (Ensure you will have enough battery power to record the rest of the home visit, otherwise record what you can and reschedule for another time.)
+- If the battery runs out past 15 minutes of the natural play, reschedule the visit for another time to ensure you can record everything.
 - If it occurs within approximately the first 15 minutes of the study, ask the mom if it would be possible to reschedule. Remember to be apologetic and professional.   
 - If it occurs in the middle of the session, continue with the rest of the visit to the best of your ability and if necessary, “fake” the recording. Experimenter should make note of what happened in the post-visit notes.   
 
@@ -33,40 +38,20 @@ Conduct the study as usual, complete all steps in procedure. The participant won
 - If mom has already signed the study permission form, experimenter should still provide subject payment (if possible) before leaving. (For example, <say> Again, I’m really sorry about this. We will definitely still pay you for this visit though. Can you please sign this form?</say>)   
 - Experimenter should make a note of what happened in the post-visit notes.   
 
-##### At any point during the visit, what if the experimenter feels concerned for the safety of the participants?
-- Experimenters should follow the mandated reporting guidelines provided by their institutions.   
-
-##### What if the mom feeds the child during the one-hour natural play?  
-* That’s fine, just continue recording. 
-* No need to add time, i.e., record more than one hour. 
+##### What happens if I need to reschedule a visit while I'm on a home visit (because something happened with equipment or participants)
+- Try to reschedule for within the next 1-2 days if possible.
+- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date.
+- The Test Date on Databrary should be the date the 1-hour natural play was done (so updated it if needed). Keep the same subject number.
+- Give the mother participant payment in full amount on both visits.
 
 ##### What if child is sleeping when I get there?
-* Do the questionnaire first. 
-* Start one-hour natural play recording as soon as child wakes. 
-* It is alright to stop questionnaire and then resume later after recording interactions.
-
-##### What if mom asks where she can go during recording?
-Say <say>You can go anywhere inside your home. We just ask that you not go outside, to the backyard, porch, balcony, or building hallways. Not every family will have an outside space and we want to try to keep it consistent for everyone.</say>
-
-##### What if child gets naked or gets a diaper change?
--	If mom is comfortable, continue recording, shifting position if necessary to avoid getting a direct shot of the pelvic area.
--	If she is uncomfortable, ask if she is okay with you turning your camera away to look at something else but continue recording to capture the language.
-
-<div class="videobuttons">
-<img src="img/icon-video.png" width="25">
-<button size="xs" type="button" data-toggle="collapse" data-target="#faq-diaper">
-Example
-</button>
-</div>
-<div id="faq-diaper" class="collapse" aria-expanded="false" style="height: 0px;">
-<video width="100%" controls="" preload="none">
-<source src="https://nyu.databrary.org/volume/876/slot/35422/edit?asset=219699" type="video/mp4"> Your browser does not support html5 video.
-</video>
-</div>
+- Do the questionnaire first. 
+- Start one-hour natural play recording as soon as child wakes. 
+- It is alright to stop questionnaire and then resume later after recording interactions.
 
 ##### What if mom is concerned about parts of video when signing the Databrary release form? Like breastfeeding or child is naked?
 - Remind her: <say>Your video will only be shared with other scientists if you mark Authorized Investigators. It won’t be shown to anyone other than those researchers.</say>
--	If mom insists, then make notes in clean up sheet and assure mom that PLAY staff will obscure those parts of video. Include in your notes the approximate time of recording.
+-	If mom insists, then make notes in clean up sheet and mark session as 'Private' in Databrary.
 
 ##### What if mom offers you food or drink or anything else?
 -	Always decline. 
@@ -77,44 +62,53 @@ Example
 -	If it is an emergency, ask very politely to go in between the different portions of the visit. 
 
 ##### What if mom asks you to stay with her child to get the mail, go outside, bathroom, etc.?
--	Say <say>No worries. In that case, we can stop recording and you can take him/her with you. We can resume the recording whenever you’re ready.</say>
+-	Say <say>We can stop recording and you can take him/her with you. We can resume the recording whenever you’re ready.</say>
 -	If mom insists it’s okay, say: <say>Because of legal reasons, I cannot assume responsible for care of your child.</say>
 
 ##### What if mom ends the session early and you didn’t finish everything?
 -	Try to finish what you can. Do your best to record the house walkthrough if you can (especially main living space and child’s room or sleeping area, clothes, toys, etc.)
--	If you are unable to complete the questionnaires, you must set up a time to call mom to do so on the phone. 
+-	If you are unable to complete the questionnaires, you must set up a time to call mom to do so on a recorded video chat. 
 
+##### At any point during the visit, what if the experimenter feels concerned for the safety of the participants?
+- Experimenters should follow the mandated reporting guidelines provided by their institutions.   
 
 
 ### One-hour natural play
 
 ##### What if the mom wants to go outside?
-Say <say>As a reminder, we ask that you stay inside during our visit. If you have to go outside, we can stop the recording and resume whenever you’re ready.</say>
+Say <say>You can go anywhere inside your home. We  ask that you not go outside, because not every family will have an outside space and we want to try to keep it consistent for everyone.</say>
+
+##### What if the child (or mom with child) goes outside?
+- Continue recording the entryway from inside the home and wait for them to come back.
+- If they have been outside for longer than 30 seconds or the mom is not redirecting child inside, remind the mom that we want them to stay inside the home for the 1-hour natural play.
 
 ##### What if child falls asleep in middle of hour of recording?
-
 -	If child is noticeably sleepy: <say>It’s okay if he/she needs to take a nap. We can just complete the questionnaires now and see if he wakes up afterwards to do the one-hour natural recording. If not, can we reschedule our visit?”</say>
 -	You will need a full, uninterrupted one-hour recording of natural play.
 
-##### What if mom want to interact with you?
+##### What if mom interacts with you?
 -	Respond with very short but polite sentences. Quickly and quietly remind mom that you want them to go about day as if you’re not there.
 
 ##### What if mom is talking about or to me?
 -	Ignore it at first. If it continues for too long, quickly and quietly remind mom that you want them to go about day as if you’re not there.
 
-##### What if the baby keeps trying to interact with me?
+##### What if the child keeps trying to interact with me?
 -	Don’t look directly at the child. If you need to look at the child, look at them through video recording screen.
 -	Children will usually try to do this during the first 5-10 mins of your visit. Do not interact with them. 
 -	If child tries to hand you something, take a step back. If child is looking at you, do not move and look away. Try to move back and put space between you and child. If necessary, move behind furniture or record from another room.
 -	If child persists in interacting with you, keep recording. Be sure to make notes in Clean Up.
 
 ##### What if doorbell rings for the dog walker, delivery, etc.?
--	Do not record the person coming. Try to still record baby and mom from discrete angle. If unable to do so without also capturing other person, record the floor during that time so we can account for that time.
--	If mom asks to stop recording, then stop and add extra time.
+-	Do not record the person coming. Try to still record child and mom from discrete angle. If unable to do so without also capturing other person, record the floor during that time so we can account for that time.
+-	If mom asks to stop recording, then stop and resume when she returns
 
 ##### What if mom goes to the bathroom?
 -	The mom will usually take child in with her. Keep the camera recording from the outside. Record the closed door, or the floor (if the door isn’t completely closed). It is important to keep the camera running so we know how long they were in there.
 -	If mom asks you to watch child: <say>We are not allowed to watch him/her for you but can take him/her into the bathroom with you.</say>
+
+##### What if the mom feeds the child during the one-hour natural play?  
+- That’s fine, just continue recording. 
+- No need to add time, i.e., record more than one hour. 
 
 ##### What if the mom breastfeeds?
 -	If mom just starts doing it: Record from a discrete angle (from the mom’s back) so you know where the child and mom are and roughly what they are doing.
@@ -144,18 +138,31 @@ Example 2
 </video>
 </div>
 
-
-##### What if mom changes the baby?
--	If mom just starts: Record as clearly as possible but try to get face and hands rather than genitalia. 
+##### What if child gets naked or gets a diaper change?
+-	If mom does not make request to point camera elsewhere, continue recording, shifting position if necessary to record the face and hands, avoid getting a direct shot of the pelvic area.
 -	If mom asks “Is it ok if I change [CHILD]?”, say <say>Is it ok if record from behind you just to get their face?</say>
+-	If mom requests not to record while she changes the child, ask if she is okay with you turning your camera away to look at something else but continue recording to capture the language.
+
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#faq-diaper">
+Example
+</button>
+</div>
+<div id="faq-diaper" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/volume/876/slot/35422/edit?asset=219699" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
 
 ##### At any point, if mom asks “Do you mind not recording this?”
 - Say <say>Is it ok that I point camera somewhere else and continue recording?</say>  
 - Make sure mom sees you are doing this. That way we can account for the amount of time and language is being recorded.
-- If mom says no, then turn off camera. Record extra time to still reach 60 minutes. 
+- If mom says no, then turn off camera and resume recording when it's okay.
+- If it's only been a few minutes into the 1-hour natural play, try to restart a new hour or reschedule for another full hour.
 
 ##### The video of the natural play session is split into two files. What should I do?
--	Label each recording as PLAY_SITE_###_NaturalPlay_part1 and PLAY_SITE_###_NaturalPlay_part2
+-	Label each recording as <b>PLAY_SITE_###_NaturalPlay_part1</b> and <b>PLAY_SITE_###_NaturalPlay_part2</b>
 - Contact the PLAY team to troubleshoot a solution to the issue
 
 ### Five-minute Structured Play
@@ -176,7 +183,7 @@ Example 2
 ### Questionnaires
 
 ##### What if the father/partner/aunt/nanny/etc. is present during the questionnaires portion?
-- It is ok if the [PERSON] is at home. However, we don't want the [PERSON] to answer or comment during the questionnaires. The [PERSON] can interact with the child or be elsewhere in the home.
+- It is ok if the other person is at home. However, we don't want them to answer or comment during the questionnaires. They can interact with the child or be elsewhere in the home.
 - Say "For this part we are going ask some questions just to [CHILD'S] mom. For consistency, since sometimes other individuals aren't present or part of the family, we want just the mother to answer the questions."
 
 ##### What if mom wants to skip section of questionnaire?
@@ -193,7 +200,6 @@ Example 2
 
 ##### Mom says the child knows some words in sign language - does that count?
  - No, for the purposes of PLAY, sign language words do not count as spoken words.
-
 
 ### House Walkthrough
 

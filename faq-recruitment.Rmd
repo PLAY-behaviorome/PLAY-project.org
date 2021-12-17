@@ -40,5 +40,19 @@ To participate in this study, we would ask to be able to share the video with ot
 
 * If parent still does not want to share video, _**do not schedule them**_.
 
+##### What if I want to schedule someone as a "pilot" session who does not meet inclusion criteria?
+- It's okay to run a few practice sessions as a new experimenter. Treat everything from scheduling through data collection and clean up exactly as a normal session. Upload all videos to Databrary and mark the session as pilot in the post-visit notes. Quality assurance and feedback will still be given.
+- Give the mother the participant payment for a pilot visit exactly like a real visit.
+
+##### What happens if I need to reschedule a visit, but I haven't been to their home yet?
+- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date. Otherwise, you can keep their contact information to schedule them later for the next age window.
+- Update the Test Date on Databrary for that session. Keep the same subject number.
+- You DO NOT need to send participant payment for the rescheduled or canceled visit.
+
+##### What happens if I need to reschedule a visit while I'm on a home visit (because something happened with equipment or participants)
+- Try to reschedule for within the next 1-2 days if possible.
+- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date.
+- The Test Date on Databrary should be the date the 1-hour natural play was done (so updated it if needed). Keep the same subject number.
+- Give the mother participant payment in full amount on both visits.
 
 ---
