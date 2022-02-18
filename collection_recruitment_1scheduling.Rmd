@@ -49,7 +49,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. Like local businesses tha
 
 <say>Does [CHILD] have any siblings?</say>
 
-- → *If yes: **end call**.* <say>In this study, we are currently looking for only-children. Would it be alright if we contacted you for other studies in the future?</say>
+- → *If yes: **end call**.* <say>In this study, we want to observe you and [CHILD] when it's only the two of you in the home. Is it possible to arrange a time when only you and [CHILD] are home for two hours?</say>
 - → *If no: continue*
 
 <say>What language(s) do you speak to [CHILD]?</say>

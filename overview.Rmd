@@ -150,13 +150,12 @@ PLAY will produce a widely varied and rich set of data, most of which will be op
 
 Although PLAY endeavors to sample as much of the rich variations that the collection sites present. Based on conversations with the launch group, and to ensure a sufficient sample size, we will limit variability along several dimensions. To be included in the PLAY sample of 900 sessions, participants must: 
 
-- be 12, 18, or 24 months of age (+/- 1 week)
-- be a single child (i.e., no siblings living in the home)
+- be 12, 18, or 24 months of age (+/- 1 month)
 - come from English or Spanish monolingual or bilingual homes (i.e., no other language exposure in the home)
 - be born full-term (37-41 weeks), of normal birth weight (>= 5.5 lbs), without known disabilities
 - be born to parents 21+ years of age (at the time of testing)
 
-Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and child are present.
+Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and target child are present (i.e., no siblings or other caregivers are around).
 
 ## Collection sites {.tabset}
 
