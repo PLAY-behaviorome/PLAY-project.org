@@ -143,7 +143,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Al igual q
 
 <say-es>¿[NIÑO] tiene hermanos? </say-es> 
 
-- → En caso de si: finalice la llamada. <say-es>Actualmente para este estudio estamos sólo incluyendo a hijos únicos. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
+- → En caso de si: <say-es>En este estudio, queremos observar a usted y a [NIÑO] cuando sólo estén ustedes dos en casa. ¿Es posible agendar nuestra visita en un horario en el cual solo usted y [NIÑO] estén en casa durante dos horas?</say-es>
 - → En caso de no: continúe 
 
 <say-es>¿En que idioma(s) le habla usted a [NIÑO]?</say-es>
