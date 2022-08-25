@@ -1,4 +1,4 @@
-## 1. Pack
+## 1. Equipment & Materials
 
 <div>
 <table width="80%">
@@ -249,13 +249,20 @@ function myFunctionform() {
 
 <br>
 
-## 2. Prepare
+## 2. Prepare to be in the home
 
 1. Take your own water with you. For the duration of the visit, you will decline any offerings of food or drink.
 2. Take your university ID with you, be prepared to show it if asked.  
 3. Dress plainly, modestly, neutrally. Nothing too bright and attractive to children. Try not to wear all black either :) 
 4. Avoid strong perfumes and noisy jewelry. The idea is to blend into the background as much as possible.
 5. Be prepared to plan your bathroom breaks around the visit (it will be approx 2.5 hrs long).
+
+### 2.1 Setup for Home Questionnaires
+* Pack paper copies of
+<br>&nbsp;-Parent answer scales in <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=191468">English</a> and/or <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157">Spanish</a>
+<br>&nbsp;-Vocabulary list for parents, for the appropriate questionnaire version
+<br>&nbsp;-The appropriate home questionnaire as backup
+* While connected to internet in the lab, load the appropriate questionnare on the tablet in KoBoToolbox (see documentation PDF <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386147"><img src="img/icon-pdf.jpg" width="15"></a>)
 
 ## 3. COVID Considerations
 
