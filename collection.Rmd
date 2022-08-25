@@ -56,7 +56,7 @@ There is a parent-oriented website at [anhourinthelife.org](http://www.anhourint
 After each visit, when you arrive back at your lab, complete all the following steps on the day you collected the data or on the very next day.
 
 1. Submit home questionnaires.
-    - Open the completed questionnaire on the tablet and hit the submit button (see documentation PDF <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212430"><img src="img/icon-pdf.jpg" width="15"></a>). Tablet must be connected to wifi.   
+    - Open the completed questionnaire on the tablet and hit the submit button (see documentation PDF <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386149"><img src="img/icon-pdf.jpg" width="15"></a>). Tablet must be connected to wifi.   
 2. Complete and submit PLAY Post-Visit Notes   
     - https://ee.kobotoolbox.org/x/#2cAYQt3z   
 3. Upload all videos from the visit to Databrary onto your university's PLAY volume. <br>
