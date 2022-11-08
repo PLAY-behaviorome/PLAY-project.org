@@ -2,8 +2,26 @@
 ### 6.1 Setting up for Questionnaires 
 * Position yourself in front of mom, with the paperwork between you.  
 * Set up the tripod to capture both you and mom. You will need to change the battery on the camera to ensure sufficient power.
-* Give mom a copy of the [colored answer scales](https://nyu.databrary.org/volume/876/slot/39021/-/asset/191468).  
-* Give mom a copy of MCDI and Rothbart so that she can follow along when needed.  
+* Give mom a copy of the Colored Answer Scales:
+  + [English answer scale](https://nyu.databrary.org/volume/876/slot/39021/-/asset/191468)
+  + [Spanish answer scale](https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157)
+* Give mom a copy of the Vocabulary inventories so that she can follow along when needed:
+  + 12 months
+    - [12 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=385848)
+    - [12 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393405)
+    - [12 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393403)
+    - [12 mo Monolingual Spanish]
+  + 18 months
+    - [18 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393791)
+    - [18 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393677)
+    - [18 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393679)
+    - [18 mo Monolingual Spanish]
+  + 24 months
+    - [24 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393680)
+    - [24 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393676)
+    - [24 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=393678)
+    - [24 mo Monolingual Spanish]
+ 
  
 ### 6.2 Questionnaires
 
@@ -44,10 +62,10 @@ You will fill out all questionnaires on your computer or your tablet using the K
 <tr>
 <td style="border: solid #cccccc 1pt;">
 Home questions: <br>
-- Language (MCDI) <br>
-- Health  <br>
-- Temperament (Rothbart)  <br>
 - Locomotor Milestones  <br>
+- Vocabulary Inventories <br>
+- Health  <br>
+- Temperament  <br>
 - Media Use  <br>
 - Pets  <br>
 - Division of labor  <br>
@@ -94,16 +112,20 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>12 months</td>
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://ee.kobotoolbox.org/x/6nnRw3bi"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194061"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393410"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #4a86e8; ">Monolingual English </span></p-small>
 <br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/4FE9VhAO"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194060"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393406"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small>
 <br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/x5oTIuJD"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212431"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393407"><img src="img/icon-pdf.jpg" width="15"></a> 
 <p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small>
+<br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual Spanish </span></p-small>
 <br>
 </td>
 </tr>
@@ -113,14 +135,21 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>18 months</td>
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://ee.kobotoolbox.org/x/eB1qpL0N"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194063"><img src="img/icon-pdf.jpg" width="15"></a> 
-<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393681"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a>
+<br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/5nU3O5ZL"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194062"><img src="img/icon-pdf.jpg" width="15"></a> 
-<p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393682"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingual &nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
+<br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/l46pGPUN"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212432"><img src="img/icon-pdf.jpg" width="15"></a> 
-<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393785"><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a>
+<br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual Spanish </span></p-small>
+<br>
 </td>
 </tr>
 
@@ -129,14 +158,22 @@ You will administer all the questionnaires online using the KoBo Toolbox applica
 <td style="border: solid #cccccc 1pt;" >Home questionnaire: <br>24 months</td>
 <td style="border: solid #cccccc 1pt;">
 &emsp; <a href="https://ee.kobotoolbox.org/x/pzQOPxfI"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194064"><img src="img/icon-pdf.jpg" width="15"></a>
-<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393685"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">Monolingual English</span></p-small></a>
+<br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/UuLqdPHo"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=194065"><img src="img/icon-pdf.jpg" width="15"></a>
-<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393687"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingual&nbsp;</span><span style="color: #4a86e8; ">(English instructions)</span></p-small></a>
+<br>
 &emsp; <a href="https://ee.kobotoolbox.org/x/iEkFJamf"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212433"><img src="img/icon-pdf.jpg" width="15"></a>
-<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a><br>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393686"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingüe&nbsp;</span><span style="color: #ff7f40; ">(Instrucciones en Espa&ntilde;ol)</span></p-small></a>
+<br>
+&emsp; <a href=""><img src="img/icon-link.jpg" width="20"></a> 
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> 
+<p-small><span style="color: #4a86e8; ">Monolingual Spanish </span></p-small>
+<br>
+</td>
 </td>
 </tr>
 <tr> </tr>
