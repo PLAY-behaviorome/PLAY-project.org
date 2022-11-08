@@ -30,7 +30,7 @@ Video
 
 ## 1. Scheduling visit
 
-*To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [participant paperwork](link to questionnaires)*
+*To schedule a visit, you will be making two phone calls to each family: the initial recruiting call and the confirmation call (if the family agrees to participate). Depending on the availability of the mother, you will complete the [Demographic Questionnaire](https://www.play-project.org/collection.html#6_Questionnaires)*
 
 <!--
 List of videos in volume (protocol materials):
@@ -46,11 +46,6 @@ https://nyu.databrary.org/volume/876/slot/35422/-
 My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about a home study on how moms and children interact with each other. We’d be visiting your home, and for your participation, you’d receive a $50 gift card at the end of the session. Can I tell you more about the study and the safety precautions we have in place?
 
 <say>First, I have some questions to see if you and [CHILD] qualify for the study. 
-
-<say>Does [CHILD] have any siblings?</say>
-
-- → *If yes: **end call**.* <say>In this study, we want to observe you and [CHILD] when it's only the two of you in the home. Is it possible to arrange a time when only you and [CHILD] are home for two hours?</say>
-- → *If no: continue*
 
 <say>What language(s) do you speak to [CHILD]?</say>
 
@@ -93,7 +88,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 
 <say> So I have you and [CHILD] for our study on [DATE] at [TIME]. </say>
 
-<say>Before the study, we have a few questions that we'd like to ask. It should only take about 5 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
+<say>Before the study, we have a few questions that we'd like to ask. It should only take about 10 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
 
 - → *If ready to answer now, continue (see video for Demographics Questionnaire below this list)*:
     - On your tablet, open Kobo toolbox and start a new questionnaire set
@@ -104,7 +99,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a> 
     - *Please note that presentation and format will differ in the app.*
 - → *If not available now* <say>When will be a good time to call back about the questions?</say>
-    - If another time work, schedule a 5-minute call to complete demographic questionnaire
+    - If another time work, schedule a 10-minute call to complete demographic questionnaire
     - If difficult to find a time up to 2 days before visit, complete demographic questionnaire when confirming visit
 
 <say>So I have you and [CHILD] for our study on [DATE] at [TIME]. We'll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</say>  
@@ -137,14 +132,9 @@ Demographics questionnaire
 (Ver video al final del guión)
 
 <say-es>Hola, ¿puedo hablar con [MAMÁ]?
-Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Al igual que las empresas locales que están reabriendo, se están reiniciando las actividades de investigación de las universidades, siguiendo las pautas de seguridad locales. Estoy llamando hoy por un estudio de como madres e hijos interactúan en el hogar. Lo visitaríamos en su hogar y usted recibiría una tarjeta de regalo de $50 al final de la sesión por su participación. ¿Puedo contarle más sobre el estudio y las precauciones de seguridad que tenemos?
+Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llamando hoy por un estudio de como madres e hijos interactúan en el hogar. Lo visitaríamos en su hogar y usted recibiría una tarjeta de regalo de $50 al final de la sesión por su participación. ¿Puedo contarle más sobre el estudio y las precauciones de seguridad que tenemos?
 
 <say-es>Primero tengo unas preguntas para ver si usted y [NIÑO] califican para participar en este estudio. 
-
-<say-es>¿[NIÑO] tiene hermanos? </say-es> 
-
-- → En caso de si: <say-es>En este estudio, queremos observar a usted y a [NIÑO] cuando sólo estén ustedes dos en casa. ¿Es posible agendar nuestra visita en un horario en el cual solo usted y [NIÑO] estén en casa durante dos horas?</say-es>
-- → En caso de no: continúe 
 
 <say-es>¿En que idioma(s) le habla usted a [NIÑO]?</say-es>
 
@@ -187,7 +177,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Al igual q
 - → Si en la fecha en la cual están disponibles el bebé ya esta fuera de el rango de edad: <say-es>Para este estudio estamos interesados en estudiar grupos de edad específicas: 12-, 18, y 24- meses. ¿Estaría bien si les contactamos en XX meses para ver si [NIÑO] puede participar entonces?</say-es>
 - → Si el niño esta en el rango de edad para la fecha en la cual están disponibles: continúe
 
-<say-es>Por ultimo, tenemos un cuestionario que solo tomará 5 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
+<say-es>Por ultimo, tenemos un cuestionario que solo tomará 10 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
 
 - → En caso de que madre pueda responder las preguntas ahora, continúe (see video for Demographics Questionnaire below this list):
     - Abra un nuevo cuestionario en Kobo toolbox en el Tablet.
@@ -198,7 +188,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Al igual q
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
     - Por favor tenga presente que el formato será distinto que en la aplicación.
 - → En caso de que madre no pueda responder las preguntas en este momento, <say-es>Cuando seria un buen momento para llamarla nuevamente cuando usted tenga tiempo para responder estas preguntas?</say-es>
-    - Si puede en otro momento, programe una llamada de 5-minutos para completar el cuestionario demográfico.
+    - Si puede en otro momento, programe una llamada de 10-minutos para completar el cuestionario demográfico.
     - Si es difícil coordinar una llamada, complete el cuestionario al llamar para confirmar la visita.
 
 <say-es> Entonces tenemos agendada la visita para el día [FECHA] a las [HORA]. La llamaremos el día anterior /el viernes anterior (si la visita es un lunes) para confirmar que aun están disponibles para a la visita. Excelente, que tenga un buen día!</say-es>
