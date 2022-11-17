@@ -40,7 +40,7 @@ Conduct the study as usual, complete all steps in procedure. The session won't p
 
 ##### What happens if I need to reschedule a visit while I'm on a home visit (because something happened with equipment or participants)
 - Try to reschedule for within the next 1-2 days if possible.
-- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date.
+- Make sure the child still will be within the age window (within 1 month of 12, 18, or 24 months) on the new test date.
 - The Test Date on Databrary should be the date the 1-hour natural play was done (so updated it if needed). Keep the same subject number.
 - Give the mother participant payment in full amount on both visits.
 
@@ -196,6 +196,7 @@ Example
     +	Remind the mother of the agreement level she signed on the Databrary form and confirm that she agrees to share the video call with the rest of the data. Say <say>Just as a reminder, the videos collected today are part of the data we collected during our home visit. You agreed to share the data on Databrary, an online video library were only authorized users have access, with other RESEARCHERS (AND IMAGES FOR PRESENTATIONS [IF APPLIES]). Do you agree to share this video recording as part of the data?</say>
    +	Video call must be **recorded** with mom in view and uploaded with the rest of the data from the visit. Label the file as <b>PLAY\_SITE\_###\_Questionnaires\_remote</b> (e.g. PLAY_NYUNI_024_Questionnaires_remote)
     +	Share your screen so that the mother can see the questionnaires and scales when it applies.
+    + Setup the Zoom so you are the host. Click on the 3 dots (...) in the upper right hand corner on the mother's Zoom window. Select "Rename" and change her name to 'Participant'. (This will blind the participant's name from being shown on the recording.)
     +	The questionnaire must be completed on the same KoboToolBox session and form that was started in the home.
 
 ##### Mom says the child knows some words in sign language - does that count?

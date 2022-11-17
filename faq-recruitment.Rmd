@@ -45,13 +45,13 @@ To participate in this study, we would ask to be able to share the video with ot
 - Give the mother the participant payment for a pilot visit exactly like a real visit.
 
 ##### What happens if I need to reschedule a visit, but I haven't been to their home yet?
-- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date. Otherwise, you can keep their contact information to schedule them later for the next age window.
+- Make sure the child still will be within the age window (within 1 month of 12, 18, or 24 months) on the new test date. Otherwise, you can keep their contact information to schedule them later for the next age window.
 - Update the Test Date on Databrary for that session. Keep the same subject number.
 - You DO NOT need to send participant payment for the rescheduled or canceled visit.
 
 ##### What happens if I need to reschedule a visit while I'm on a home visit (because something happened with equipment or participants)
 - Try to reschedule for within the next 1-2 days if possible.
-- Make sure the child still will be within the age window (within 1 week of 12, 18, or 24 months) on the new test date.
+- Make sure the child still will be within the age window (within 1 month of 12, 18, or 24 months) on the new test date.
 - The Test Date on Databrary should be the date the 1-hour natural play was done (so updated it if needed). Keep the same subject number.
 - Give the mother participant payment in full amount on both visits.
 
