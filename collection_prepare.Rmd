@@ -42,19 +42,8 @@ function myFunctionbat() {
 <td width="25%" style="padding-right: 40px;"> <img src="img/camera-sdcard-battery.png"> </td>
 <td width="10%"> </td>
 <td width="20%">   
-<!--Start info button-->
-<div class="popup" onclick="myFunctionmic()"> Microphone with sponge cover &#9432;
-  <span class="popuptext" id="myPopupmic"> Veksun camera microphone </span>
-</div>
-<script>
-function myFunctionmic() {
-  var popup = document.getElementById("myPopupmic");
-  popup.classList.toggle("show");
-}
-</script>
-<!--End info button-->
 </td>
-<td width="25%"> <img src="img/mic.png"> </td>
+<td width="25%"></td>
 </tr>
 <tr>
 <td width="20%"> 
@@ -196,14 +185,6 @@ function myFunctiontoy() {
 </td>
 <td width="25%" style="padding-right: 40px;"> <img src="img/dog.png"> </td>
 </tr>
-<tr>
-<td width="20%"> Participant payment  </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/payment.png"> </td>
-<td width="10%"> </td>
-<td width="20%"> <a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204156"> Flash cards </a> </td>
-<td width="25%" style="padding-right: 40px;"> <img src="img/flashcards.jpg"> </td>
-</tr>
-<tr>
 <td width="20%">
 <!--Start info button-->
 <div class="popup" onclick="myFunctionform()"> 2 copies of study consent forms - one for parent, one signed copy for lab records</a> &#9432;
