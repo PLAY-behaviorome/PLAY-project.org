@@ -55,7 +55,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 <say>Was [CHILD] born on his/her due date?</say> (If not: <say>How many weeks and days early/late was he/she?</say>)
 
 - → *If more than 4 weeks early: **end call**.* <say>In this study, we are currently looking for children born on term. Would it be alright if we contacted you for other studies in the future?<say>
-- → *If born on term (37-41 weeks): continue*
+- → *If born on term (36-41 weeks): continue*
 
 <say>Has [CHILD] been diagnosed with any disability (cognitive, auditory, vision, motor)?</say> 
 
@@ -75,11 +75,6 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 
 - → *If no: **end call** * <say>Currently, we are only enrolling families who are okay with not wearing a mask. But is it okay, if we call you for other studies?</say>
 - → *If yes: continue* 
-
-<say>Have you or anyone in your household had COVID or had physical interaction with someone who has tested positive for COVID in the last two weeks?</say> 
-
-- → *If yes: **end call** * <say>Currently, we are only enrolling families who are symptom-free and had no interaction with anyone COVID positive. But is it okay, if we call you for this study again in a few months?</say>
-- → *If no: continue* 
 
 <say>Great! Because we are interested in mother-infant routines, we'd like to find a time and date when we can observe just <span style="text-decoration:underline">**you and [CHILD]**</span> at home. It would be great if we can schedule a time that is not during a typical mealtime and when [CHILD] is usually awake. Is there a convenient time and day that works best for you that would be within these criteria?</say>
 
@@ -165,11 +160,6 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 <say-es>El investigador usará una mascarilla mientras lo visite en su hogar, pero le solicitamos que usted y su hijo/a no usen. Es importante ver y registrar sus expresiones faciales y una mascarilla las bloquearía. ¿Estaría de acuerdo con no usar una mascarilla?</say-es>
 
 - → En caso de si: finalice la llamada. <say-es>Actualmente, solo estamos reclutando familias que están de acuerdo con no usar una mascarilla. Pero, ¿está bien si lo llamamos para otros estudios?</say-es>
-- → En caso de no: continúe
-
-<say-es>¿Usted o alguien en su hogar ha tenido COVID o ha interactuado físicamente con alguien que haya salido positivo por COVID en las últimas dos semanas?</say-es>
-
-- → En caso de si: finalice la llamada. <say-es>Actualmente, solo estamos inscribiendo familias que no tienen síntomas y no han tenido interacción con nadie con COVID positivo. Pero, ¿está bien si lo volvemos a llamar para este estudio en unos meses más?</say-es>
 - → En caso de no: continúe
 
 <say-es>¡Genial! Debido a que estamos interesados en las rutinas de madres e hijos, nos gustaría encontrar un día y hora en el cual podamos observar sólo a usted y [NIÑO] en su hogar. Seria bueno si pudiéramos programar la visita a una hora que no sea durante el horario de comidas y cuando [NIÑO] esta generalmente despierto. ¿Hay algún día y hora que sea conveniente para usted donde se cumplan estos criterios?</say-es>

@@ -13,7 +13,7 @@
 <say>Does this time and date still work for you?</say>
 
 - → *If yes:* 
-    - → *If demographic questionnaire was not completed during initial phone call:* <say>That's great! Before the visit, I’d like to ask you a few questions. It will only take 5 minutes of your time.</say> 
+    - → *If demographic questionnaire was not completed during initial phone call:* <say>That's great! Before the visit, I’d like to ask you a few questions. It will only take 10 minutes of your time.</say> 
         - On your tablet, open Kobo toolbox and start a new questionnaire set
         - Fill out participant information at top of new session
         - “Save as Draft” after demographic questionnaire and home visit questionnaires
@@ -60,7 +60,7 @@ Demographics questionnaire
 <say-es>¿Aun están disponibles este día y hora?</say-es>
 
 - → En caso de si:
-    - → Si el cuestionario demográfico no fue completado en la llamada inicial: <say-es>¡Excelente! Antes de la visita nos gustaría hacerle algunas preguntas. Esto solo tomara 5 minutos.</say-es>
+    - → Si el cuestionario demográfico no fue completado en la llamada inicial: <say-es>¡Excelente! Antes de la visita nos gustaría hacerle algunas preguntas. Esto solo tomara 10 minutos.</say-es>
         - En el Tablet o computadora, abra un nuevo cuestionario demográfico en Kobo toolbox.
         - Lista de preguntas del cuestionario demográfico &emsp; <a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a> 
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
