@@ -155,7 +155,7 @@ Although PLAY endeavors to sample as much of the rich variations that the collec
 - be born full-term (at last 36 weeks), of normal birth weight (>= 5.5 lbs), without known disabilities
 - be born to parents 18+ years of age (at the time of target child's birth)
 
-Additionally, the mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and target child are present (i.e., no siblings or other caregivers are around).
+The mother must act as the caregiver during the one-hour natural interaction, which will be scheduled at a time when _only_ the mother and target child are present (i.e., no siblings or other caregivers are around). Only one experimenter should be present in the home during the 1-hour natural interaction.
 
 ## Collection sites {.tabset}
 

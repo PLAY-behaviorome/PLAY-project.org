@@ -11,6 +11,13 @@ output:
 
 ### General
 
+##### What if two experimenters want to go on the visit for safety reasons?  
+- The protocol and funding model was designed for one experimenter to complete a visit. However, if the site investigator can afford and organize having two experimenters on a visit, two people may go.
+- Both experimenters should go to the family's home and be present during consenting.
+- The second experimenter should wait outside the home (in the car, coffee shop, library, etc.) while the primary experimenter records the 1-hour natural interaction.
+- A second person in the home can distract the child, obstruct movement, block off access to a space or room, or affect the naturalness of the interaction. Therefore, visits with another experimenter in the home during that time will not pass quality assurance.
+- After the 1-hour interaction, the second experimenter can return to the home to assist in the rest of the visit.
+
 ##### What if father/partner/aunt/nanny/etc. is there?  
 - Usually mom says [PERSON] is going to leave.  
 - If mom doesn’t appear to send [PERSON] out, then say: <say>We just want to double check that you’re ok with being alone with the child for the first 90 minutes of this visit. As we mentioned earlier, we just want you and your child at home. Let us know when you're ready for it to just be you and your child. If [PERSON] needs more time to leave, we could start with questionnaires. </say>
