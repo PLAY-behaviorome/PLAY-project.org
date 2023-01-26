@@ -1,0 +1,485 @@
+# Questionnaires
+
+## Demographic (screening) questionnaire (English) {#quest_demo_english}
+
+This document may be found on Databrary at <https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498>
+
+**Demographic Questionnaire**
+
+Note: The demographic questionnaire should be completed by the experimenter (who will be going on the home visit) with the parent over the phone. The parent should be the mom who will be participating in the study with the child.
+
+What is the full name of the person completing the demographic questionnaire with the mother? _________________
+
+### A. CONTACT INFORMATION
+
+Experimenter: “First, we have a few questions about your contact information.”
+(NOTE: If you already have this information, ask to confirm. Prompt: “We have that your preferred [______] is [_____]. Is this correct?”)
+
+#### A1. “What is your preferred contact phone number?” (NOTE: If parent refuses to provide/does not have a phone number, enter “N/A”.) _________________
+
+#### A2. “What is your preferred contact email address?” (NOTE: If parent refuses to provide/does not have an email address, enter “N/A”.) _________________
+
+#### A3. “What is your home address?” (NOTE: This should be the address that the experimenter is going to for the home visit.)
+
+Street Address (street and number) Street Address (apartment, suite, etc.) 
+
+City:
+
+State:
+
+### B. PARTICIPANT ID INFORMATION
+
+Experimenter: “For every family, we are generating an anonymous, unique ID so that your contact information and name does not have to be associated with your videos/data. In order to do that, we just need some information.”
+
+#### B1. “What is your child’s first name?” _________________ 
+#### B2. “What is your child’s middle name?” _________________ 
+#### B3. “What is your child’s last name?” _________________
+#### B4. “What is [CHILD]’s date of birth?” Month Day Year ___
+#### B5. “What is [CHILD]’s sex?” Male Female
+#### B6. “What is [CHILD]’s city/municipality of birth?” _________________
+
+### C. DATA COLLECTION SITE INFORMATION 
+
+#### C1. Site ID:
+
+- Boston University</br>
+- California State University – Fullerton California State University – Long Beach</br> 
+- Children’s Hospital of Philadelphia</br> 
+- Cornell University</br>
+- CUNY – College of Staten Island</br> 
+- Georgetown University</br>
+- Indiana University</br>
+- Michigan State University</br>
+- New York University</br>
+- Ohio State University</br>
+- Penn State</br>
+- Princeton University</br>
+- Purdue University</br>
+- Rutgers University – Newark</br>
+- Stanford University</br>
+- Tulane University</br>
+- University of California – Davis</br> 
+- University of California – Merced</br>
+- University of California – Riverside</br>
+- University of California – Santa Cruz</br> 
+- University of Chicago</br>
+- University of Connecticut</br>
+- University of Georgia</br>
+- University of Houston</br>
+- University of Miami</br>
+- University of Oregon</br>
+- University of Pittsburgh</br>
+- University of Texas – Austin</br>
+- Vanderbilt University</br>
+- Virginia Commonwealth University
+
+#### C2. Subject number: _________________
+
+#### C3. Participant ID (i.e. GUID): _________________
+
+Experimenter: "Great, thank you so much! Now, I have some questions about the languages spoken in your home."
+
+#### C4. “What language(s) are spoken in your home?”
+
+- Spanish 
+- English 
+- Other
+
+##### C4a. If other: “Please specify if there are any other language(s) you speak at home.” _________________
+
+#### C5. “What language(s) do you speak to your child?”
+
+- Spanish 
+- English 
+- Other
+
+##### C5a. If other: “Please specify if there are any other language(s) you speak to your child.” _________________
+
+(NOTE: END screener if language(s) spoken to target child are not English and/or Spanish.)
+
+#### C6. “What language(s) do other household members speak to your child at home?”
+
+- Spanish 
+- English 
+- Other
+
+##### C6a. If other: “Please specify if there are any other language(s) other household members speak to your child.” _________________
+
+(NOTE: END screener if language(s) spoken to target child are not English and/or Spanish.)
+
+### D. CHILD INFORMATION
+        
+#### D1. “Just to confirm one more time, what is [CHILD’s] birth date?” Month Day ____Year ________
+
+#### D2. “Do you know his/her due date?” Yes No
+
+##### D2a. If yes: “What is [CHILD]’s due date?” (Prompt: “If you are unsure what the due date is, please give us your best estimate for his/her due date.”) Month   Day   Year
+
+##### D2b. If refused: “Was child born on term?” Yes No
+
+(NOTE: END screener if child was born preterm, i.e. 37 weeks of gestation or less.)
+
+#### D3. “How much did your baby weigh at birth?” 
+
+- Pounds:   
+- Ounces: 
+
+(NOTE: END screener if child was less than 5 pounds and 8 ounces when born.)
+
+#### D4. “Were there any birth or newborn complications?” Yes No
+
+(NOTE: Examples of complications that COUNT include cerebral palsy, asphyxiation, any surgery at birth. Examples that DO NOT count as complications include long birth, birth by C-section, and trauma to the mother.)
+
+If yes, please specify:
+
+(NOTE: END screener ONLY if the complication(s) resulted in a hearing, vision, or motor disability.)
+
+##### D5a. “Has your child been diagnosed with any hearing disabilities, such as hearing loss?”
+
+- Yes
+- No 
+
+If yes, please specify:
+          
+(NOTE: END screener if child has been diagnosed with any hearing disability. Experimenter still needs to specify.)
+
+##### D5b. “Has your child been diagnosed with any vision disabilities, such as vision loss?”
+
+- Yes
+- No 
+
+If yes, please specify:
+
+(NOTE: END screener if child has been diagnosed with any vision disability that is NOT corrected with glasses. Experimenter still needs to specify.)
+
+##### D5c. “Has your child had any major illnesses or injury (e.g., such as respiratory/cardiac illnesses or injuries due to major falls)?”
+
+- Yes
+- No 
+
+If yes, please specify:
+
+(NOTE: END screener ONLY if the illness or injury resulted in a hearing, vision, or motor disability.)
+
+#### D6. “Would you describe [CHILD]’s race and ethnicity as...”
+
+Race:</br>
+- 1- American Indian or Alaskan Native</br>
+- 2- Asian</br>
+- 3- Native Hawaiian or other Pacific Islander</br>
+- 4- Black or African American</br>
+- 5- White</br>
+- 6- More than one</br>
+- 7- Other</br>
+- 8- Refused</br>
+
+Ethnicity:</br>
+- Hispanic or Latino</br>
+- Not Hispanic or Latino 
+- Refused</br>
+
+Experimenter: “Okay, great! Thank you so much. Now we are going to ask you some questions about [CHILD] sleeping habits.”
+
+#### D7. “At what time does your child typically...”
+
+##### D7a. “Fall asleep at night?”
+##### D7b. “Wake up in the morning?”
+
+#### D8. “How many hours of nap time does your child have during the day?”
+
+#### D9. “Where does [CHILD] usually sleep?”
+
+- Infant crib in a separate room
+- Infant crib in parents’ room In parents’ bed
+- Infant crib in room with sibling Other
+
+#### D9a. If other, please specify: ____
+
+Experimenter: “Now, we have some questions about your family.” 
+
+### E. FAMILY STRUCTURE
+
+#### E1. “Does anyone else live with you and [CHILD]? And if so, what is their relationship to your child?”
+
+(NOTE: END screener if any other child resides in the home.)
+
+(NOTE: If mother mentions a partner without specifying gender, ask to clarify.)
+
+- Father (Biological)
+- Male partner/husband/boyfriend of child’s parent or guardian (Non-biological) 
+- Mother (Biological)
+- Female partner/wife/girlfriend of child’s parent or guardian (Non-biological) 
+- Partner of child’s parent or guardian (other gender-identifying) (Non- biological)
+- Grandmother
+- Grandfather
+- Great-grandmother
+- Great-grandfather
+- Aunt
+- Uncle
+- Cousin
+- Other relative(s): _______________________
+- Other non-relative(s): ____________________
+
+##### E1a. If “Other relative(s) was selected: “What is the relationship of the other relative(s) who live you and [CHILD] to [CHILD]?”
+
+##### E2a. If “Other non-relative(s) was selected: “What is the relationship of the other non-relative(s) who live you and [CHILD] to [CHILD]?”
+
+Experimenter: “Great, thank you so much! The next few questions are about you.”
+
+### F. MOTHER INFORMATION
+
+#### F1. “What is your birth date?” Month Day Year
+
+#### F2. “Are you [CHILD]’s biological mother?” Yes No
+
+(NOTE: END screener if biological mother was younger than 20-yo when [CHILD] was
+born.)
+
+##### F2a. If no: “What is your relationship to [CHILD]?”
+
+- Adoptive mother 
+- Foster mother
+- Relative
+- Child is partner’s child 
+- Other
+
+##### F2b. “When did [CHILD] enter your care?” Month
+
+(Probe: “If you are unsure of the exact date, please give us your best
+estimate for the date he/she entered your care.") 
+
+Month Day Year</br>
+
+### F3. “Would you describe your race and ethnicity as...”
+
+Race:</br>
+- 1- American Indian or Alaskan Native</br>
+- 2- Asian</br>
+- 3- Native Hawaiian or other Pacific Islander</br>
+- 4- Black or African American</br>
+- 5- White</br>
+- 6- More than one</br>
+- 7- Other</br>
+- 8- Refused</br>
+
+Ethnicity:</br>
+- Hispanic or Latino</br>
+- Not Hispanic or Latino 
+- Refused</br>
+
+#### F4. “In what country were you born?”
+
+- United States
+- Puerto Rico
+- Other US territory Other country (specify)
+
+##### F4a. If not born in the US: “When did you come to live in the U.S.?” (year of entry)
+
+#### F5. “What is the highest grade or year of school that you have completed?”
+
+- 0 No formal schooling
+- 1 1st grade
+- 2 2nd grade
+- 3 3rd grade
+- 4 4th grade
+- 5 5th grade
+- 6 6th grade
+- 7 7th grade
+- 8 8th grade
+- 9 9th grade
+- 10 10th grade
+- 11 11th grade
+- 12 12th grade but no diploma
+- 13 GED certificate
+- 14 High school diploma/equivalent
+- 15 Voc/tech program after high school but no voc/tech diploma
+- 16 Voc/tech diploma after high school
+- 17 Some college but no degree
+- 18 Associate’s degree/other 2-year program degree
+- 19 Bachelor’s degree/other 4- or 5- year program degree
+- 20 Graduate or professional school but no degree
+- 21 Master’s degree (MA, MS)
+- 22 Doctorate degree (PhD, EDd)
+- 23 Professional degree after bachelor’s (MD; DDS; JD, LLB; etc.)
+- Refused
+
+#### F6. “Do you currently work for paid employment?”
+
+- Full-time 
+- Part-time
+- No 
+- Refused
+
+##### F6a. If Full-time or Part-time: “What is your occupation?” 
+
+#### F7. “How many jobs do you have now?”
+
+- Number of jobs: ____ 
+- Refused
+- Don’t Know
+
+#### F8. “Are you currently participating in a job-training or on-the-job training program?”
+
+- Yes 
+- No 
+- Refused
+
+### G. BIOLOGICAL FATHER INFORMATION
+
+(Note: This section should only be completed if [CHILD]’s biological father is not the in- home partner of the mother participating in the study with [CHILD].)
+
+#### G1. “Do you know [CHILD]’s biological father’s date of birth?” Yes No Refused
+
+H1a. If yes: “What is his date of birth?” Month ____Day Year (NOTE: END screener if biological father was younger than 20-yo when [CHILD] was
+born.)
+
+#### G2. “Would you describe his race/ethnicity as...”
+
+Race:</br>
+- 1- American Indian or Alaskan Native</br>
+- 2- Asian</br>
+- 3- Native Hawaiian or other Pacific Islander</br>
+- 4- Black or African American</br>
+- 5- White</br>
+- 6- More than one</br>
+- 7- Other</br>
+- 8- Refused</br>
+
+Ethnicity:</br>
+- Hispanic or Latino</br>
+- Not Hispanic or Latino 
+- Refused</br>
+  
+### H. BIOLOGICAL MOTHER INFORMATION
+
+(Note: This section should only be completed if the mother completing the demographic questionnaire with the experimenter is not [CHILD]’s biological mother.)
+
+#### H1. “Do you know [CHILD]’s biological mother’s date of birth?”
+
+- Yes 
+- No 
+- Refused 
+- Don't Know
+
+##### H1a. If yes, “What is [CHILD]’s biological mother’s date of birth?” Month _____ Day ____Year ________
+
+#### H2. “Would you describe her race/ethnicity as...”
+
+Race:</br>
+- 1- American Indian or Alaskan Native</br>
+- 2- Asian</br>
+- 3- Native Hawaiian or other Pacific Islander</br>
+- 4- Black or African American</br>
+- 5- White</br>
+- 6- More than one</br>
+- 7- Other</br>
+- 8- Refused</br>
+
+Ethnicity:</br>
+- Hispanic or Latino</br>
+- Not Hispanic or Latino 
+- Refused</br>
+
+### I. NON-BIOLOGICAL PARENT PARTNER INFORMATION
+
+ (Note: Skip to question I3 if the biological father OR biological mother is the in-home partner of the mother participating in the study with [CHILD].)
+
+#### 11. “Do you know your partner’s date of birth?”
+
+##### I1a. “What is your partner’s date of birth?” Month ____Day Year
+
+#### I2. “Would you describe your partner’s race/ethnicity as...”
+
+Race:</br>
+- 1- American Indian or Alaskan Native</br>
+- 2- Asian</br>
+- 3- Native Hawaiian or other Pacific Islander</br>
+- 4- Black or African American</br>
+- 5- White</br>
+- 6- More than one</br>
+- 7- Other</br>
+- 8- Refused</br>
+
+Ethnicity:</br>
+- Hispanic or Latino</br>
+- Not Hispanic or Latino 
+- Refused</br>
+
+### J. GENERALPARTNERINFORMATION
+
+(Note: These questions apply to the in-home partner of the mother completing the demographic questionnaire with the experimenter. This could be the biological father or mother of the child, or a non-biological parent of the child who lives in the home with them and is the mother’s partner.)
+
+#### J1. “What is the highest grade or year of school that he/she has completed?”
+
+- 0 No formal schooling
+- 1 1st grade
+- 2 2nd grade
+- 3 3rd grade
+- 4 4th grade
+- 5 5th grade
+- 6 6th grade
+- 7 7th grade
+- 8 8th grade
+- 9 9th grade
+- 10 10th grade
+- 11 11th grade
+- 12 12th grade but no diploma
+- 13 GED certificate
+- 14 High school diploma/equivalent
+- 15 Voc/tech program after high school but no voc/tech diploma
+- 16 Voc/tech diploma after high school
+- 17 Some college but no degree
+- 18 Associate’s degree/other 2-year program degree
+- 19 Bachelor’s degree/other 4- or 5- year program degree
+- 20 Graduate or professional school but no degree
+- 21 Master’s degree (MA, MS)
+- 22 Doctorate degree (PhD, EDd)
+- 23 Professional degree after bachelor’s (MD; DDS; JD, LLB; etc.)
+- Refused
+
+#### J2. “Does he/she currently work for paid employment?”
+
+- Full-time 
+- Part-time
+- No Refused
+
+##### J2a. If Full-time or Part-time: “What is his/her occupation?” J3. “How many jobs does he/she have now?”
+
+- Number of jobs: 
+- Refused
+- Don’t know
+
+#### J4. “Is he/she currently participating in a job-training or on-the-job-training program?” 
+
+- Yes 
+- No 
+- Refused 
+- Don’t Know
+ 
+### K. CHILD CARE ARRANGEMENTS
+
+Experimenter: “Next, I'd like to talk to you about all child care arrangements you have for [CHILD].”
+
+#### K1. “Does [CHILD] receive care on a regular basis from someone other than [his/her] parents/you or [his/her] parents or guardians? This includes regular care and early childhood programs, whether or not there is a charge or fee, but not occasional babysitting.” (Note: Select all that apply.)
+
+- Nanny/babysitter/friend in the home 
+- Nanny/babysitter/friend not in the home 
+- Relative (grandmother, aunt, etc.) 
+- Childcare center
+- None
+
+##### K1a. If not cared for in the mother/child’s home, please specify where: _________
+
+#### K2. “How many hours per week does [CHILD] spend in the care of someone else?”
+
+- Hours/Week:
+
+#### K3. “How many children are usually cared for together, in the same group at the same time, including [CHILD]?”
+
+- Number of Children:
+
+#### K4. “How old was [CHILD] in months when [he/she] first attended the child carecenter or received care from a nanny on a regular basis?”
+
+- Number of Months:
+
+#### K5. “What language does [CHILD]'s care provider speak most when caring for [CHILD]?”

@@ -1,0 +1,1025 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>17-questionnaires.knit</title>
+
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">data collection</a>
+</li>
+<li>
+  <a href="coding.html">video coding</a>
+</li>
+<li>
+  <a href="quality.html">quality assurance</a>
+</li>
+<li>
+  <a href="faq.html">protocol faqs</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+<li>
+  <a href="http://www.anhourinthelife.org/">for parents</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+
+</div>
+
+
+<div id="questionnaires" class="section level1">
+<h1>Questionnaires</h1>
+<div id="quest_demo_english" class="section level2">
+<h2>Demographic (screening) questionnaire (English)</h2>
+<p>This document may be found on Databrary at <a
+href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"
+class="uri">https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498</a></p>
+<p><strong>Demographic Questionnaire</strong></p>
+<p>Note: The demographic questionnaire should be completed by the
+experimenter (who will be going on the home visit) with the parent over
+the phone. The parent should be the mom who will be participating in the
+study with the child.</p>
+<p>What is the full name of the person completing the demographic
+questionnaire with the mother? _________________</p>
+<div id="a.-contact-information" class="section level3">
+<h3>A. CONTACT INFORMATION</h3>
+<p>Experimenter: “First, we have a few questions about your contact
+information.” (NOTE: If you already have this information, ask to
+confirm. Prompt: “We have that your preferred [______] is [_____]. Is
+this correct?”)</p>
+<div
+id="a1.-what-is-your-preferred-contact-phone-number-note-if-parent-refuses-to-providedoes-not-have-a-phone-number-enter-na.-_________________"
+class="section level4">
+<h4>A1. “What is your preferred contact phone number?” (NOTE: If parent
+refuses to provide/does not have a phone number, enter “N/A”.)
+_________________</h4>
+</div>
+<div
+id="a2.-what-is-your-preferred-contact-email-address-note-if-parent-refuses-to-providedoes-not-have-an-email-address-enter-na.-_________________"
+class="section level4">
+<h4>A2. “What is your preferred contact email address?” (NOTE: If parent
+refuses to provide/does not have an email address, enter “N/A”.)
+_________________</h4>
+</div>
+<div
+id="a3.-what-is-your-home-address-note-this-should-be-the-address-that-the-experimenter-is-going-to-for-the-home-visit."
+class="section level4">
+<h4>A3. “What is your home address?” (NOTE: This should be the address
+that the experimenter is going to for the home visit.)</h4>
+<p>Street Address (street and number) Street Address (apartment, suite,
+etc.)</p>
+<p>City:</p>
+<p>State:</p>
+</div>
+</div>
+<div id="b.-participant-id-information" class="section level3">
+<h3>B. PARTICIPANT ID INFORMATION</h3>
+<p>Experimenter: “For every family, we are generating an anonymous,
+unique ID so that your contact information and name does not have to be
+associated with your videos/data. In order to do that, we just need some
+information.”</p>
+<div id="b1.-what-is-your-childs-first-name-_________________"
+class="section level4">
+<h4>B1. “What is your child’s first name?” _________________</h4>
+</div>
+<div id="b2.-what-is-your-childs-middle-name-_________________"
+class="section level4">
+<h4>B2. “What is your child’s middle name?” _________________</h4>
+</div>
+<div id="b3.-what-is-your-childs-last-name-_________________"
+class="section level4">
+<h4>B3. “What is your child’s last name?” _________________</h4>
+</div>
+<div id="b4.-what-is-childs-date-of-birth-month-day-year-___"
+class="section level4">
+<h4>B4. “What is [CHILD]’s date of birth?” Month Day Year ___</h4>
+</div>
+<div id="b5.-what-is-childs-sex-male-female" class="section level4">
+<h4>B5. “What is [CHILD]’s sex?” Male Female</h4>
+</div>
+<div id="b6.-what-is-childs-citymunicipality-of-birth-_________________"
+class="section level4">
+<h4>B6. “What is [CHILD]’s city/municipality of birth?”
+_________________</h4>
+</div>
+</div>
+<div id="c.-data-collection-site-information" class="section level3">
+<h3>C. DATA COLLECTION SITE INFORMATION</h3>
+<div id="c1.-site-id" class="section level4">
+<h4>C1. Site ID:</h4>
+<ul>
+<li>Boston University</br></li>
+<li>California State University – Fullerton California State University
+– Long Beach</br></li>
+<li>Children’s Hospital of Philadelphia</br></li>
+<li>Cornell University</br></li>
+<li>CUNY – College of Staten Island</br></li>
+<li>Georgetown University</br></li>
+<li>Indiana University</br></li>
+<li>Michigan State University</br></li>
+<li>New York University</br></li>
+<li>Ohio State University</br></li>
+<li>Penn State</br></li>
+<li>Princeton University</br></li>
+<li>Purdue University</br></li>
+<li>Rutgers University – Newark</br></li>
+<li>Stanford University</br></li>
+<li>Tulane University</br></li>
+<li>University of California – Davis</br></li>
+<li>University of California – Merced</br></li>
+<li>University of California – Riverside</br></li>
+<li>University of California – Santa Cruz</br></li>
+<li>University of Chicago</br></li>
+<li>University of Connecticut</br></li>
+<li>University of Georgia</br></li>
+<li>University of Houston</br></li>
+<li>University of Miami</br></li>
+<li>University of Oregon</br></li>
+<li>University of Pittsburgh</br></li>
+<li>University of Texas – Austin</br></li>
+<li>Vanderbilt University</br></li>
+<li>Virginia Commonwealth University</li>
+</ul>
+</div>
+<div id="c2.-subject-number-_________________" class="section level4">
+<h4>C2. Subject number: _________________</h4>
+</div>
+<div id="c3.-participant-id-i.e.-guid-_________________"
+class="section level4">
+<h4>C3. Participant ID (i.e. GUID): _________________</h4>
+<p>Experimenter: “Great, thank you so much! Now, I have some questions
+about the languages spoken in your home.”</p>
+</div>
+<div id="c4.-what-languages-are-spoken-in-your-home"
+class="section level4">
+<h4>C4. “What language(s) are spoken in your home?”</h4>
+<ul>
+<li>Spanish</li>
+<li>English</li>
+<li>Other</li>
+</ul>
+<div
+id="c4a.-if-other-please-specify-if-there-are-any-other-languages-you-speak-at-home.-_________________"
+class="section level5">
+<h5>C4a. If other: “Please specify if there are any other language(s)
+you speak at home.” _________________</h5>
+</div>
+</div>
+<div id="c5.-what-languages-do-you-speak-to-your-child"
+class="section level4">
+<h4>C5. “What language(s) do you speak to your child?”</h4>
+<ul>
+<li>Spanish</li>
+<li>English</li>
+<li>Other</li>
+</ul>
+<div
+id="c5a.-if-other-please-specify-if-there-are-any-other-languages-you-speak-to-your-child.-_________________"
+class="section level5">
+<h5>C5a. If other: “Please specify if there are any other language(s)
+you speak to your child.” _________________</h5>
+<p>(NOTE: END screener if language(s) spoken to target child are not
+English and/or Spanish.)</p>
+</div>
+</div>
+<div
+id="c6.-what-languages-do-other-household-members-speak-to-your-child-at-home"
+class="section level4">
+<h4>C6. “What language(s) do other household members speak to your child
+at home?”</h4>
+<ul>
+<li>Spanish</li>
+<li>English</li>
+<li>Other</li>
+</ul>
+<div
+id="c6a.-if-other-please-specify-if-there-are-any-other-languages-other-household-members-speak-to-your-child.-_________________"
+class="section level5">
+<h5>C6a. If other: “Please specify if there are any other language(s)
+other household members speak to your child.” _________________</h5>
+<p>(NOTE: END screener if language(s) spoken to target child are not
+English and/or Spanish.)</p>
+</div>
+</div>
+</div>
+<div id="d.-child-information" class="section level3">
+<h3>D. CHILD INFORMATION</h3>
+<div
+id="d1.-just-to-confirm-one-more-time-what-is-childs-birth-date-month-day-____year-________"
+class="section level4">
+<h4>D1. “Just to confirm one more time, what is [CHILD’s] birth date?”
+Month Day ____Year ________</h4>
+</div>
+<div id="d2.-do-you-know-hisher-due-date-yes-no" class="section level4">
+<h4>D2. “Do you know his/her due date?” Yes No</h4>
+<div
+id="d2a.-if-yes-what-is-childs-due-date-prompt-if-you-are-unsure-what-the-due-date-is-please-give-us-your-best-estimate-for-hisher-due-date.-month-day-year"
+class="section level5">
+<h5>D2a. If yes: “What is [CHILD]’s due date?” (Prompt: “If you are
+unsure what the due date is, please give us your best estimate for
+his/her due date.”) Month Day Year</h5>
+</div>
+<div id="d2b.-if-refused-was-child-born-on-term-yes-no"
+class="section level5">
+<h5>D2b. If refused: “Was child born on term?” Yes No</h5>
+<p>(NOTE: END screener if child was born preterm, i.e. 37 weeks of
+gestation or less.)</p>
+</div>
+</div>
+<div id="d3.-how-much-did-your-baby-weigh-at-birth"
+class="section level4">
+<h4>D3. “How much did your baby weigh at birth?”</h4>
+<ul>
+<li>Pounds:<br />
+</li>
+<li>Ounces:</li>
+</ul>
+<p>(NOTE: END screener if child was less than 5 pounds and 8 ounces when
+born.)</p>
+</div>
+<div id="d4.-were-there-any-birth-or-newborn-complications-yes-no"
+class="section level4">
+<h4>D4. “Were there any birth or newborn complications?” Yes No</h4>
+<p>(NOTE: Examples of complications that COUNT include cerebral palsy,
+asphyxiation, any surgery at birth. Examples that DO NOT count as
+complications include long birth, birth by C-section, and trauma to the
+mother.)</p>
+<p>If yes, please specify:</p>
+<p>(NOTE: END screener ONLY if the complication(s) resulted in a
+hearing, vision, or motor disability.)</p>
+<div
+id="d5a.-has-your-child-been-diagnosed-with-any-hearing-disabilities-such-as-hearing-loss"
+class="section level5">
+<h5>D5a. “Has your child been diagnosed with any hearing disabilities,
+such as hearing loss?”</h5>
+<ul>
+<li>Yes</li>
+<li>No</li>
+</ul>
+<p>If yes, please specify:</p>
+<p>(NOTE: END screener if child has been diagnosed with any hearing
+disability. Experimenter still needs to specify.)</p>
+</div>
+<div
+id="d5b.-has-your-child-been-diagnosed-with-any-vision-disabilities-such-as-vision-loss"
+class="section level5">
+<h5>D5b. “Has your child been diagnosed with any vision disabilities,
+such as vision loss?”</h5>
+<ul>
+<li>Yes</li>
+<li>No</li>
+</ul>
+<p>If yes, please specify:</p>
+<p>(NOTE: END screener if child has been diagnosed with any vision
+disability that is NOT corrected with glasses. Experimenter still needs
+to specify.)</p>
+</div>
+<div
+id="d5c.-has-your-child-had-any-major-illnesses-or-injury-e.g.-such-as-respiratorycardiac-illnesses-or-injuries-due-to-major-falls"
+class="section level5">
+<h5>D5c. “Has your child had any major illnesses or injury (e.g., such
+as respiratory/cardiac illnesses or injuries due to major falls)?”</h5>
+<ul>
+<li>Yes</li>
+<li>No</li>
+</ul>
+<p>If yes, please specify:</p>
+<p>(NOTE: END screener ONLY if the illness or injury resulted in a
+hearing, vision, or motor disability.)</p>
+</div>
+</div>
+<div id="d6.-would-you-describe-childs-race-and-ethnicity-as"
+class="section level4">
+<h4>D6. “Would you describe [CHILD]’s race and ethnicity as…”</h4>
+<p>Race:</br> - 1- American Indian or Alaskan Native</br> - 2-
+Asian</br> - 3- Native Hawaiian or other Pacific Islander</br> - 4-
+Black or African American</br> - 5- White</br> - 6- More than one</br> -
+7- Other</br> - 8- Refused</br></p>
+<p>Ethnicity:</br> - Hispanic or Latino</br> - Not Hispanic or Latino -
+Refused</br></p>
+<p>Experimenter: “Okay, great! Thank you so much. Now we are going to
+ask you some questions about [CHILD] sleeping habits.”</p>
+</div>
+<div id="d7.-at-what-time-does-your-child-typically"
+class="section level4">
+<h4>D7. “At what time does your child typically…”</h4>
+<div id="d7a.-fall-asleep-at-night" class="section level5">
+<h5>D7a. “Fall asleep at night?”</h5>
+</div>
+<div id="d7b.-wake-up-in-the-morning" class="section level5">
+<h5>D7b. “Wake up in the morning?”</h5>
+</div>
+</div>
+<div
+id="d8.-how-many-hours-of-nap-time-does-your-child-have-during-the-day"
+class="section level4">
+<h4>D8. “How many hours of nap time does your child have during the
+day?”</h4>
+</div>
+<div id="d9.-where-does-child-usually-sleep" class="section level4">
+<h4>D9. “Where does [CHILD] usually sleep?”</h4>
+<ul>
+<li>Infant crib in a separate room</li>
+<li>Infant crib in parents’ room In parents’ bed</li>
+<li>Infant crib in room with sibling Other</li>
+</ul>
+</div>
+<div id="d9a.-if-other-please-specify-____" class="section level4">
+<h4>D9a. If other, please specify: ____</h4>
+<p>Experimenter: “Now, we have some questions about your family.”</p>
+</div>
+</div>
+<div id="e.-family-structure" class="section level3">
+<h3>E. FAMILY STRUCTURE</h3>
+<div
+id="e1.-does-anyone-else-live-with-you-and-child-and-if-so-what-is-their-relationship-to-your-child"
+class="section level4">
+<h4>E1. “Does anyone else live with you and [CHILD]? And if so, what is
+their relationship to your child?”</h4>
+<p>(NOTE: END screener if any other child resides in the home.)</p>
+<p>(NOTE: If mother mentions a partner without specifying gender, ask to
+clarify.)</p>
+<ul>
+<li>Father (Biological)</li>
+<li>Male partner/husband/boyfriend of child’s parent or guardian
+(Non-biological)</li>
+<li>Mother (Biological)</li>
+<li>Female partner/wife/girlfriend of child’s parent or guardian
+(Non-biological)</li>
+<li>Partner of child’s parent or guardian (other gender-identifying)
+(Non- biological)</li>
+<li>Grandmother</li>
+<li>Grandfather</li>
+<li>Great-grandmother</li>
+<li>Great-grandfather</li>
+<li>Aunt</li>
+<li>Uncle</li>
+<li>Cousin</li>
+<li>Other relative(s): _______________________</li>
+<li>Other non-relative(s): ____________________</li>
+</ul>
+<div
+id="e1a.-if-other-relatives-was-selected-what-is-the-relationship-of-the-other-relatives-who-live-you-and-child-to-child"
+class="section level5">
+<h5>E1a. If “Other relative(s) was selected: “What is the relationship
+of the other relative(s) who live you and [CHILD] to [CHILD]?”</h5>
+</div>
+<div
+id="e2a.-if-other-non-relatives-was-selected-what-is-the-relationship-of-the-other-non-relatives-who-live-you-and-child-to-child"
+class="section level5">
+<h5>E2a. If “Other non-relative(s) was selected: “What is the
+relationship of the other non-relative(s) who live you and [CHILD] to
+[CHILD]?”</h5>
+<p>Experimenter: “Great, thank you so much! The next few questions are
+about you.”</p>
+</div>
+</div>
+</div>
+<div id="f.-mother-information" class="section level3">
+<h3>F. MOTHER INFORMATION</h3>
+<div id="f1.-what-is-your-birth-date-month-day-year"
+class="section level4">
+<h4>F1. “What is your birth date?” Month Day Year</h4>
+</div>
+<div id="f2.-are-you-childs-biological-mother-yes-no"
+class="section level4">
+<h4>F2. “Are you [CHILD]’s biological mother?” Yes No</h4>
+<p>(NOTE: END screener if biological mother was younger than 20-yo when
+[CHILD] was born.)</p>
+<div id="f2a.-if-no-what-is-your-relationship-to-child"
+class="section level5">
+<h5>F2a. If no: “What is your relationship to [CHILD]?”</h5>
+<ul>
+<li>Adoptive mother</li>
+<li>Foster mother</li>
+<li>Relative</li>
+<li>Child is partner’s child</li>
+<li>Other</li>
+</ul>
+</div>
+<div id="f2b.-when-did-child-enter-your-care-month"
+class="section level5">
+<h5>F2b. “When did [CHILD] enter your care?” Month</h5>
+<p>(Probe: “If you are unsure of the exact date, please give us your
+best estimate for the date he/she entered your care.”)</p>
+<p>Month Day Year</br></p>
+</div>
+</div>
+</div>
+<div id="f3.-would-you-describe-your-race-and-ethnicity-as"
+class="section level3">
+<h3>F3. “Would you describe your race and ethnicity as…”</h3>
+<p>Race:</br> - 1- American Indian or Alaskan Native</br> - 2-
+Asian</br> - 3- Native Hawaiian or other Pacific Islander</br> - 4-
+Black or African American</br> - 5- White</br> - 6- More than one</br> -
+7- Other</br> - 8- Refused</br></p>
+<p>Ethnicity:</br> - Hispanic or Latino</br> - Not Hispanic or Latino -
+Refused</br></p>
+<div id="f4.-in-what-country-were-you-born" class="section level4">
+<h4>F4. “In what country were you born?”</h4>
+<ul>
+<li>United States</li>
+<li>Puerto Rico</li>
+<li>Other US territory Other country (specify)</li>
+</ul>
+<div
+id="f4a.-if-not-born-in-the-us-when-did-you-come-to-live-in-the-u.s.-year-of-entry"
+class="section level5">
+<h5>F4a. If not born in the US: “When did you come to live in the U.S.?”
+(year of entry)</h5>
+</div>
+</div>
+<div
+id="f5.-what-is-the-highest-grade-or-year-of-school-that-you-have-completed"
+class="section level4">
+<h4>F5. “What is the highest grade or year of school that you have
+completed?”</h4>
+<ul>
+<li>0 No formal schooling</li>
+<li>1 1st grade</li>
+<li>2 2nd grade</li>
+<li>3 3rd grade</li>
+<li>4 4th grade</li>
+<li>5 5th grade</li>
+<li>6 6th grade</li>
+<li>7 7th grade</li>
+<li>8 8th grade</li>
+<li>9 9th grade</li>
+<li>10 10th grade</li>
+<li>11 11th grade</li>
+<li>12 12th grade but no diploma</li>
+<li>13 GED certificate</li>
+<li>14 High school diploma/equivalent</li>
+<li>15 Voc/tech program after high school but no voc/tech diploma</li>
+<li>16 Voc/tech diploma after high school</li>
+<li>17 Some college but no degree</li>
+<li>18 Associate’s degree/other 2-year program degree</li>
+<li>19 Bachelor’s degree/other 4- or 5- year program degree</li>
+<li>20 Graduate or professional school but no degree</li>
+<li>21 Master’s degree (MA, MS)</li>
+<li>22 Doctorate degree (PhD, EDd)</li>
+<li>23 Professional degree after bachelor’s (MD; DDS; JD, LLB;
+etc.)</li>
+<li>Refused</li>
+</ul>
+</div>
+<div id="f6.-do-you-currently-work-for-paid-employment"
+class="section level4">
+<h4>F6. “Do you currently work for paid employment?”</h4>
+<ul>
+<li>Full-time</li>
+<li>Part-time</li>
+<li>No</li>
+<li>Refused</li>
+</ul>
+<div id="f6a.-if-full-time-or-part-time-what-is-your-occupation"
+class="section level5">
+<h5>F6a. If Full-time or Part-time: “What is your occupation?”</h5>
+</div>
+</div>
+<div id="f7.-how-many-jobs-do-you-have-now" class="section level4">
+<h4>F7. “How many jobs do you have now?”</h4>
+<ul>
+<li>Number of jobs: ____</li>
+<li>Refused</li>
+<li>Don’t Know</li>
+</ul>
+</div>
+<div
+id="f8.-are-you-currently-participating-in-a-job-training-or-on-the-job-training-program"
+class="section level4">
+<h4>F8. “Are you currently participating in a job-training or on-the-job
+training program?”</h4>
+<ul>
+<li>Yes</li>
+<li>No</li>
+<li>Refused</li>
+</ul>
+</div>
+</div>
+<div id="g.-biological-father-information" class="section level3">
+<h3>G. BIOLOGICAL FATHER INFORMATION</h3>
+<p>(Note: This section should only be completed if [CHILD]’s biological
+father is not the in- home partner of the mother participating in the
+study with [CHILD].)</p>
+<div
+id="g1.-do-you-know-childs-biological-fathers-date-of-birth-yes-no-refused"
+class="section level4">
+<h4>G1. “Do you know [CHILD]’s biological father’s date of birth?” Yes
+No Refused</h4>
+<p>H1a. If yes: “What is his date of birth?” Month ____Day Year (NOTE:
+END screener if biological father was younger than 20-yo when [CHILD]
+was born.)</p>
+</div>
+<div id="g2.-would-you-describe-his-raceethnicity-as"
+class="section level4">
+<h4>G2. “Would you describe his race/ethnicity as…”</h4>
+<p>Race:</br> - 1- American Indian or Alaskan Native</br> - 2-
+Asian</br> - 3- Native Hawaiian or other Pacific Islander</br> - 4-
+Black or African American</br> - 5- White</br> - 6- More than one</br> -
+7- Other</br> - 8- Refused</br></p>
+<p>Ethnicity:</br> - Hispanic or Latino</br> - Not Hispanic or Latino -
+Refused</br></p>
+</div>
+</div>
+<div id="h.-biological-mother-information" class="section level3">
+<h3>H. BIOLOGICAL MOTHER INFORMATION</h3>
+<p>(Note: This section should only be completed if the mother completing
+the demographic questionnaire with the experimenter is not [CHILD]’s
+biological mother.)</p>
+<div id="h1.-do-you-know-childs-biological-mothers-date-of-birth"
+class="section level4">
+<h4>H1. “Do you know [CHILD]’s biological mother’s date of birth?”</h4>
+<ul>
+<li>Yes</li>
+<li>No</li>
+<li>Refused</li>
+<li>Don’t Know</li>
+</ul>
+<div
+id="h1a.-if-yes-what-is-childs-biological-mothers-date-of-birth-month-_____-day-____year-________"
+class="section level5">
+<h5>H1a. If yes, “What is [CHILD]’s biological mother’s date of birth?”
+Month _____ Day ____Year ________</h5>
+</div>
+</div>
+<div id="h2.-would-you-describe-her-raceethnicity-as"
+class="section level4">
+<h4>H2. “Would you describe her race/ethnicity as…”</h4>
+<p>Race:</br> - 1- American Indian or Alaskan Native</br> - 2-
+Asian</br> - 3- Native Hawaiian or other Pacific Islander</br> - 4-
+Black or African American</br> - 5- White</br> - 6- More than one</br> -
+7- Other</br> - 8- Refused</br></p>
+<p>Ethnicity:</br> - Hispanic or Latino</br> - Not Hispanic or Latino -
+Refused</br></p>
+</div>
+</div>
+<div id="i.-non-biological-parent-partner-information"
+class="section level3">
+<h3>I. NON-BIOLOGICAL PARENT PARTNER INFORMATION</h3>
+<p>(Note: Skip to question I3 if the biological father OR biological
+mother is the in-home partner of the mother participating in the study
+with [CHILD].)</p>
+<div id="do-you-know-your-partners-date-of-birth"
+class="section level4">
+<h4>11. “Do you know your partner’s date of birth?”</h4>
+<div id="i1a.-what-is-your-partners-date-of-birth-month-____day-year"
+class="section level5">
+<h5>I1a. “What is your partner’s date of birth?” Month ____Day Year</h5>
+</div>
+</div>
+<div id="i2.-would-you-describe-your-partners-raceethnicity-as"
+class="section level4">
+<h4>I2. “Would you describe your partner’s race/ethnicity as…”</h4>
+<p>Race:</br> - 1- American Indian or Alaskan Native</br> - 2-
+Asian</br> - 3- Native Hawaiian or other Pacific Islander</br> - 4-
+Black or African American</br> - 5- White</br> - 6- More than one</br> -
+7- Other</br> - 8- Refused</br></p>
+<p>Ethnicity:</br> - Hispanic or Latino</br> - Not Hispanic or Latino -
+Refused</br></p>
+</div>
+</div>
+<div id="j.-generalpartnerinformation" class="section level3">
+<h3>J. GENERALPARTNERINFORMATION</h3>
+<p>(Note: These questions apply to the in-home partner of the mother
+completing the demographic questionnaire with the experimenter. This
+could be the biological father or mother of the child, or a
+non-biological parent of the child who lives in the home with them and
+is the mother’s partner.)</p>
+<div
+id="j1.-what-is-the-highest-grade-or-year-of-school-that-heshe-has-completed"
+class="section level4">
+<h4>J1. “What is the highest grade or year of school that he/she has
+completed?”</h4>
+<ul>
+<li>0 No formal schooling</li>
+<li>1 1st grade</li>
+<li>2 2nd grade</li>
+<li>3 3rd grade</li>
+<li>4 4th grade</li>
+<li>5 5th grade</li>
+<li>6 6th grade</li>
+<li>7 7th grade</li>
+<li>8 8th grade</li>
+<li>9 9th grade</li>
+<li>10 10th grade</li>
+<li>11 11th grade</li>
+<li>12 12th grade but no diploma</li>
+<li>13 GED certificate</li>
+<li>14 High school diploma/equivalent</li>
+<li>15 Voc/tech program after high school but no voc/tech diploma</li>
+<li>16 Voc/tech diploma after high school</li>
+<li>17 Some college but no degree</li>
+<li>18 Associate’s degree/other 2-year program degree</li>
+<li>19 Bachelor’s degree/other 4- or 5- year program degree</li>
+<li>20 Graduate or professional school but no degree</li>
+<li>21 Master’s degree (MA, MS)</li>
+<li>22 Doctorate degree (PhD, EDd)</li>
+<li>23 Professional degree after bachelor’s (MD; DDS; JD, LLB;
+etc.)</li>
+<li>Refused</li>
+</ul>
+</div>
+<div id="j2.-does-heshe-currently-work-for-paid-employment"
+class="section level4">
+<h4>J2. “Does he/she currently work for paid employment?”</h4>
+<ul>
+<li>Full-time</li>
+<li>Part-time</li>
+<li>No Refused</li>
+</ul>
+<div
+id="j2a.-if-full-time-or-part-time-what-is-hisher-occupation-j3.-how-many-jobs-does-heshe-have-now"
+class="section level5">
+<h5>J2a. If Full-time or Part-time: “What is his/her occupation?” J3.
+“How many jobs does he/she have now?”</h5>
+<ul>
+<li>Number of jobs:</li>
+<li>Refused</li>
+<li>Don’t know</li>
+</ul>
+</div>
+</div>
+<div
+id="j4.-is-heshe-currently-participating-in-a-job-training-or-on-the-job-training-program"
+class="section level4">
+<h4>J4. “Is he/she currently participating in a job-training or
+on-the-job-training program?”</h4>
+<ul>
+<li>Yes</li>
+<li>No</li>
+<li>Refused</li>
+<li>Don’t Know</li>
+</ul>
+</div>
+</div>
+<div id="k.-child-care-arrangements" class="section level3">
+<h3>K. CHILD CARE ARRANGEMENTS</h3>
+<p>Experimenter: “Next, I’d like to talk to you about all child care
+arrangements you have for [CHILD].”</p>
+<div
+id="k1.-does-child-receive-care-on-a-regular-basis-from-someone-other-than-hisher-parentsyou-or-hisher-parents-or-guardians-this-includes-regular-care-and-early-childhood-programs-whether-or-not-there-is-a-charge-or-fee-but-not-occasional-babysitting.-note-select-all-that-apply."
+class="section level4">
+<h4>K1. “Does [CHILD] receive care on a regular basis from someone other
+than [his/her] parents/you or [his/her] parents or guardians? This
+includes regular care and early childhood programs, whether or not there
+is a charge or fee, but not occasional babysitting.” (Note: Select all
+that apply.)</h4>
+<ul>
+<li>Nanny/babysitter/friend in the home</li>
+<li>Nanny/babysitter/friend not in the home</li>
+<li>Relative (grandmother, aunt, etc.)</li>
+<li>Childcare center</li>
+<li>None</li>
+</ul>
+<div
+id="k1a.-if-not-cared-for-in-the-motherchilds-home-please-specify-where-_________"
+class="section level5">
+<h5>K1a. If not cared for in the mother/child’s home, please specify
+where: _________</h5>
+</div>
+</div>
+<div
+id="k2.-how-many-hours-per-week-does-child-spend-in-the-care-of-someone-else"
+class="section level4">
+<h4>K2. “How many hours per week does [CHILD] spend in the care of
+someone else?”</h4>
+<ul>
+<li>Hours/Week:</li>
+</ul>
+</div>
+<div
+id="k3.-how-many-children-are-usually-cared-for-together-in-the-same-group-at-the-same-time-including-child"
+class="section level4">
+<h4>K3. “How many children are usually cared for together, in the same
+group at the same time, including [CHILD]?”</h4>
+<ul>
+<li>Number of Children:</li>
+</ul>
+</div>
+<div
+id="k4.-how-old-was-child-in-months-when-heshe-first-attended-the-child-carecenter-or-received-care-from-a-nanny-on-a-regular-basis"
+class="section level4">
+<h4>K4. “How old was [CHILD] in months when [he/she] first attended the
+child carecenter or received care from a nanny on a regular basis?”</h4>
+<ul>
+<li>Number of Months:</li>
+</ul>
+</div>
+<div
+id="k5.-what-language-does-childs-care-provider-speak-most-when-caring-for-child"
+class="section level4">
+<h4>K5. “What language does [CHILD]’s care provider speak most when
+caring for [CHILD]?”</h4>
+</div>
+</div>
+</div>
+</div>
+
+<hr>
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>

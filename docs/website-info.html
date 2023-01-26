@@ -13,7 +13,7 @@
 
 <title>PLAY &amp; Learning Across a Year</title>
 
-<script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.17/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
@@ -57,6 +57,7 @@ if (window.hljs) {
 
 
 
+
 <link rel="stylesheet" href="css/play.css" type="text/css" />
 
 
@@ -81,6 +82,9 @@ button.code-folding-btn:focus {
 }
 summary {
   display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
 }
 pre code {
   padding: 0;
@@ -138,11 +142,15 @@ $(document).ready(function () {
     href = "index.html";
   var menuAnchor = $('a[href="' + href + '"]');
 
-  // mark it active
-  menuAnchor.tab('show');
-
-  // if it's got a parent navbar menu mark it active as well
-  menuAnchor.closest('li.dropdown').addClass('active');
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
 
   // Navbar adjustments
   var navHeight = $(".navbar").first().height() + 15;
@@ -171,8 +179,8 @@ $(document).ready(function () {
   border-radius: 4px;
 }
 
-.tabset-dropdown > .nav-tabs > li.active:before {
-  content: "";
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
   font-family: 'Glyphicons Halflings';
   display: inline-block;
   padding: 10px;
@@ -180,16 +188,9 @@ $(document).ready(function () {
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
-  content: "&#xe258;";
-  border: none;
-}
-
-.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
-  content: "";
+  content: "\e258";
   font-family: 'Glyphicons Halflings';
-  display: inline-block;
-  padding: 10px;
-  border-right: 1px solid #ddd;
+  border: none;
 }
 
 .tabset-dropdown > .nav-tabs > li.active {
@@ -233,7 +234,7 @@ $(document).ready(function () {
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
@@ -289,7 +290,7 @@ $(document).ready(function () {
 <p>This site is hosted in <a
 href="http://github.com/PLAY-behaviorome/">GitHub</a> and is generated
 in <a href="http://rmarkdown.rstudio.com/">R Markdown</a> using <a
-href="http://rstudio.com">RStudio</a>, version 2022.7.2.576.</p>
+href="http://rstudio.com">RStudio</a>, version 2022.12.0.353.</p>
 <p>For information about using R Markdown to generate websites, see <a
 href="http://rmarkdown.rstudio.com/rmarkdown_websites.html"
 class="uri">http://rmarkdown.rstudio.com/rmarkdown_websites.html</a>.
@@ -306,22 +307,30 @@ Information about this R session (click here)
 </summary>
 <p>
 <pre class="r"><code>sessionInfo()</code></pre>
-<pre><code>## R version 4.0.1 (2020-06-06)
+<pre><code>## R version 4.2.1 (2022-06-23)
 ## Platform: x86_64-apple-darwin17.0 (64-bit)
-## Running under: OS X Snow Leopard 12.6
+## Running under: macOS Monterey 12.6.2
 ## 
 ## Matrix products: default
-## LAPACK: /Library/Frameworks/R.framework/Versions/4.0/Resources/lib/libRlapack.dylib
+## LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
 ## 
 ## locale:
 ## [1] en_US.UTF-8/en_US.UTF-8/en_US.UTF-8/C/en_US.UTF-8/en_US.UTF-8
 ## 
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## [1] stats     graphics  grDevices utils     datasets  methods  
+## [7] base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] compiler_4.0.1   magrittr_2.0.1   fastmap_1.1.0    rsconnect_0.8.24 htmltools_0.5.2  tools_4.0.1      rstudioapi_0.13  yaml_2.2.1       jquerylib_0.1.4 
-## [10] stringi_1.7.4    rmarkdown_2.11   knitr_1.36       stringr_1.4.0    xfun_0.26        digest_0.6.28    rlang_0.4.11     evaluate_0.14</code></pre>
+##  [1] digest_0.6.31   R6_2.5.1        lifecycle_1.0.3
+##  [4] jsonlite_1.8.4  magrittr_2.0.3  evaluate_0.17  
+##  [7] stringi_1.7.12  cachem_1.0.6    rlang_1.0.6    
+## [10] cli_3.6.0       rstudioapi_0.14 jquerylib_0.1.4
+## [13] bslib_0.4.2     vctrs_0.5.2     rmarkdown_2.17 
+## [16] tools_4.2.1     stringr_1.5.0   glue_1.6.2     
+## [19] xfun_0.34       yaml_2.3.6      fastmap_1.1.0  
+## [22] compiler_4.2.1  htmltools_0.5.4 knitr_1.40     
+## [25] sass_0.4.4</code></pre>
 </p>
 </details>
 
