@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b07e113f-efc0-4b74-813c-20f484647db2/deploy-status)](https://app.netlify.com/sites/quizzical-wright-7ac645/deploys)
+
 # PLAY-behaviorome.github.io
 Web site for the PLAY project.
 
