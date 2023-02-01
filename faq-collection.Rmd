@@ -70,7 +70,7 @@ Conduct the study as usual, complete all steps in procedure. The session won't p
 
 ##### What if mom asks you to stay with her child to get the mail, go outside, bathroom, etc.?
 -	Say <say>We can stop recording and you can take him/her with you. We can resume the recording whenever you’re ready.</say>
--	If mom insists it’s okay, say: <say>Because of legal reasons, I cannot assume responsible for care of your child.</say>
+-	If mom insists it’s okay, say: <say>Because of legal reasons, I cannot assume responsibility for care of your child.</say>
 
 ##### What if mom ends the session early and you didn’t finish everything?
 -	Try to finish what you can. Do your best to record the house walkthrough if you can (especially main living space and child’s room or sleeping area, clothes, toys, etc.)
