@@ -1,0 +1,2501 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>PLAY &amp; Learning Across a Year</title>
+
+<script src="site_libs/header-attrs-2.20/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/lumen.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/textmate.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="css/play.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">PLAY</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="people.html">people</a>
+</li>
+<li>
+  <a href="overview.html">overview</a>
+</li>
+<li>
+  <a href="collection.html">data collection</a>
+</li>
+<li>
+  <a href="coding.html">video coding</a>
+</li>
+<li>
+  <a href="quality.html">quality assurance</a>
+</li>
+<li>
+  <a href="faq.html">protocol faqs</a>
+</li>
+<li>
+  <a href="https://www.databrary.org">databrary</a>
+</li>
+<li>
+  <a href="http://www.datavyu.org/">datavyu</a>
+</li>
+<li>
+  <a href="http://www.anhourinthelife.org/">for parents</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">PLAY &amp; Learning Across a Year</h1>
+
+</div>
+
+
+<p><br></p>
+<div id="collection-overview" class="section level1">
+<h1>Collection overview</h1>
+<p>The collaborating sites in PLAY perform a variety of roles (see <a
+href="people.html">people</a> for details). Each site that performs a
+<strong>collecting</strong> role is pre-assigned to complete all of the
+collecting functions (see in blue below). This page contains detailed
+help for the data collection and upload process. Click here for
+information about <a href="participants.html"><font color="#5B9BD5"><b>
+participant recruitment </b></font></a> .</p>
+<p><img src="img/overview-collecting.png" width="600"></p>
+<p>All videos that are collected with go through a quality assurance
+process in which the PLAY team will ensure that the videos are eligible
+to be included in the final sample. Videos that pass QA will then be
+passed on for coding. Videos that don’t pass QA will be (depending on
+why they didn’t) reused for other purposes or will be sent back to the
+collection site for modification. In some cases, the collection site
+might be provided additional training.<br />
+<br><br></p>
+<hr class="play">
+</div>
+<div id="participant-recruitment" class="section level1">
+<h1>Participant Recruitment</h1>
+<p>There is a parent-oriented website at <a
+href="http://www.anhourinthelife.org">anhourinthelife.org</a> (<a
+href="https://www.anhourinthelife.org/index-spanish.html">also see
+Spanish version</a>) where parents can find more information about the
+project and sign up to participate. PLAY staff will transmit interested
+parents’ information to the appropriate site.</p>
+<!-- Indenting this code will mess up the output - markdown seems to want to read indented code as textboxes -->
+<!-- When knitting, make sure to "open in browswer" to see video - need to be logged into DB!! -->
+<!-- 
+<div class="videobuttons">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-english">
+English instructions
+</button> 
+</div> 
+THE FOLLOWING WILL SHOW/HIDE WHEN THE ABOVE BUTTON IS CLICKED
+<div id="collection-scheduling-initialrecruitingvm-english" class="collapse" aria-expanded="false" style="height: 0px;">
+
+PLACE TEXT HERE
+
+VIDEO COMES NEXT:
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Video
+</button>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+
+</div>
+-->
+<div id="scheduling-visit" class="section level2">
+<h2>1. Scheduling visit</h2>
+<p><em>To schedule a visit, you will be making two phone calls to each
+family: the initial recruiting call and the confirmation call (if the
+family agrees to participate). Depending on the availability of the
+mother, you will complete the <a
+href="https://www.play-project.org/collection.html#6_Questionnaires">Demographic
+Questionnaire</a></em></p>
+<!--
+List of videos in volume (protocol materials):
+https://nyu.databrary.org/volume/876/slot/35422/-
+-->
+<div id="initial-recruiting-phone-call" class="section level3 tabset">
+<h3 class="tabset">1.1 Initial recruiting phone call</h3>
+<div id="english-instructions" class="section level4">
+<h4>English instructions</h4>
+<p>(See video at the end of the script)</p>
+<p><say>Hi, may I speak with [MOM]? My name is [CALLER NAME] and I’m
+calling from [LAB]. I’m calling today about a home study on how moms and
+children interact with each other. We’d be visiting your home, and for
+your participation, you’d receive a $50 gift card at the end of the
+session. Can I tell you more about the study and the safety precautions
+we have in place?</p>
+<p><say>First, I have some questions to see if you and [CHILD] qualify
+for the study.</p>
+<p><say>What language(s) do you speak to [CHILD]?</say></p>
+<ul>
+<li>→ <em>If not ENGLISH or SPANISH: <strong>end call</strong>.</em>
+<say>To control for differences in communication, we are looking for
+families who speak mainly English or Spanish. Would it be alright if we
+contacted you for other studies in the future?</say></li>
+<li>→ <em>If mainly English/Spanish: continue</em></li>
+</ul>
+<p><say>Was [CHILD] born on his/her due date?</say> (If not: <say>How
+many weeks and days early/late was he/she?</say>)</p>
+<ul>
+<li>→ <em>If more than 4 weeks early: <strong>end call</strong>.</em>
+<say>In this study, we are currently looking for children born on term.
+Would it be alright if we contacted you for other studies in the
+future?<say></li>
+<li>→ <em>If born on term (36-41 weeks): continue</em></li>
+</ul>
+<p><say>Has [CHILD] been diagnosed with any disability (cognitive,
+auditory, vision, motor)?</say></p>
+<ul>
+<li>→ <em>If yes: <strong>end call</strong>.</em> <say>In this study, we
+are looking for typically developing children. Would it be alright if we
+contacted you for other studies in the future?</say></li>
+<li>→ <em>If no: continue</em></li>
+</ul>
+<p><say>For this study, we are interested in learning about children’s
+natural, everyday experiences in their homes. A researcher will visit
+you and [CHILD] in your home for about 2-3 hours. In the main part of
+the study, the researcher will video record you and [CHILD] for 1 hour
+as you go about your normal day. Then, we will ask you to take us
+through your home as we record the environment. Finally, we will ask you
+questions about your family and [CHILD]’s skills and routines. The data
+collected in this study are valuable and will be placed in a secure
+web-based library available only to researchers. The purpose is to share
+the data with experts in the field so that scientists can learn more
+about infant development.</p>
+<p><say>To protect you and your family, the researcher is fully
+vaccinated and will wear a mask. We will not physically interact with
+you or your child, this study is just observational. Anything we bring
+into your home will be sanitized.</p>
+<p><say>Does this sound like something you would be interested in
+participating in with [CHILD]?</say></p>
+<ul>
+<li>→ <em>If no to study or to sharing video on Databrary: <strong>end
+call</strong> </em> <say>Okay, thank you. May we call you for other
+studies?</say></li>
+<li>→ <em>If yes: continue</em></li>
+</ul>
+<p><say>The researcher in your home will wear a mask, but we’d ask that
+you and your child do not. It’s important to see and record your facial
+expressions and a mask would block those. Would you be ok to not wear a
+mask?</say></p>
+<ul>
+<li>→ <em>If no: <strong>end call</strong> </em> <say>Currently, we are
+only enrolling families who are okay with not wearing a mask. But is it
+okay, if we call you for other studies?</say></li>
+<li>→ <em>If yes: continue</em></li>
+</ul>
+<p><say>Great! Because we are interested in mother-infant routines, we’d
+like to find a time and date when we can observe just <span
+style="text-decoration:underline"><strong>you and
+[CHILD]</strong></span> at home. It would be great if we can schedule a
+time that is not during a typical mealtime and when [CHILD] is usually
+awake. Is there a convenient time and day that works best for you that
+would be within these criteria?</say></p>
+<ul>
+<li>→ <em>If the date they are available puts child out of age range:
+<strong>end call</strong> </em> <say>For this study, we are interested
+in studying specific age groups: 12-, 18-, and 24-month olds. Would it
+be possible for us to contact you in XX months to see if [CHILD] can
+participate then?</say></li>
+<li>→ <em>If dates are available when child is still within eligible age
+range: continue</em></li>
+</ul>
+<p><say> So I have you and [CHILD] for our study on [DATE] at [TIME].
+</say></p>
+<p><say>Before the study, we have a few questions that we’d like to ask.
+It should only take about 10 minutes. We can either ask you now or when
+we call to confirm the study. What would you prefer?</say></p>
+<ul>
+<li>→ <em>If ready to answer now, continue (see video for Demographics
+Questionnaire below this list)</em>:
+<ul>
+<li>On your tablet, open Kobo toolbox and start a new questionnaire
+set</li>
+<li>Fill out participant information at top of new session</li>
+<li>“Save as Draft” after demographic questionnaire and home visit
+questionnaires</li>
+<li>Only hit “Submit” after filling out clean-up notes back in lab</li>
+<li>Here are links to view the demographic questionnaire  
+<a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a></li>
+<li><em>Please note that presentation and format will differ in the
+app.</em></li>
+</ul></li>
+<li>→ <em>If not available now</em> <say>When will be a good time to
+call back about the questions?</say>
+<ul>
+<li>If another time work, schedule a 10-minute call to complete
+demographic questionnaire</li>
+<li>If difficult to find a time up to 2 days before visit, complete
+demographic questionnaire when confirming visit</li>
+</ul></li>
+</ul>
+<p><say>So I have you and [CHILD] for our study on [DATE] at [TIME].
+We’ll be calling you the day before (if study is on Monday: the Friday
+before) your appointment to confirm that that time still works for you.
+Have a great day!</say></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-evid">
+Initial recruiting phone call </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43512069,43648839/asset/193909/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-edemographics">
+Demographics questionnaire </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-edemographics" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42812863,43219036/asset/193905/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div id="spanish-instructions" class="section level4">
+<h4>Spanish instructions</h4>
+<p>(Ver video al final del guión)</p>
+<p><say-es>Hola, ¿puedo hablar con [MAMÁ]? Mi nombre es [NOMBRE DE
+PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llamando hoy por un
+estudio de como madres e hijos interactúan en el hogar. Lo visitaríamos
+en su hogar y usted recibiría una tarjeta de regalo de $50 al final de
+la sesión por su participación. ¿Puedo contarle más sobre el estudio y
+las precauciones de seguridad que tenemos?</p>
+<p><say-es>Primero tengo unas preguntas para ver si usted y [NIÑO]
+califican para participar en este estudio.</p>
+<p><say-es>¿En que idioma(s) le habla usted a [NIÑO]?</say-es></p>
+<ul>
+<li>→ Si no es INGLES o ESPAÑOL finalice la llamada. <say-es>Para
+controlar diferencias de comunicación, estamos buscando familias que
+hablen primariamente inglés o español. ¿Estaría bien si les contactamos
+para otros estudios más adelante?</say-es></li>
+<li>→ Si hablan principalmente inglés/español : continúe</li>
+</ul>
+<p><say-es>¿Nació [NIÑO] en su fecha de termino?</say-es> (En caso de
+no: <say-es>Cuántas semanas y/o días antes/después de su fecha de
+termino nació?</say-es>)</p>
+<ul>
+<li>→ Si nació más de 4 semanas antes: finalice la llamada.
+<say-es>Actualmente para este estudio estamos buscando a niños que hayan
+nacido de termino. ¿Estaría bien si les contactamos para otros estudios
+más adelante?</say-es></li>
+<li>→ Si nació de termino (37-41 semanas): continúe</li>
+</ul>
+<p><say-es>¿Ha sido [NIÑO] diagnosticado con alguna discapacidad
+(cognitiva, auditiva, visual, o motora)?</say-es></p>
+<ul>
+<li>→ En caso de si: finalice la llamada. <say-es>Actualmente para este
+estudio estamos buscando a niños con desarrollo típico. ¿Estaría bien si
+les contactamos para otros estudios más adelante?</say-es></li>
+<li>→ En caso de no: continúe</li>
+</ul>
+<p><say-es>En este estudio estamos interesados en aprender sobre las
+experiencias rutinarias que los bebés tienen en sus hogares. Un
+investigador lo visitará a usted y a [NIÑO] en su hogar por
+aproximadamente 2-3 horas. En la parte principal del estudio, un
+investigador grabará en vídeo a usted y [NIÑO] por 1 hora mientras
+ustedes continúan con sus actividades rutinarias. A continuación, le
+pediremos recorrer su hogar mientras grabamos el espacio. Finalmente le
+haremos preguntas sobre su familia y las habilidades y rutinas de
+[NIÑO]. Los datos recolectados en este estudio son valiosos y serán
+colocados en una biblioteca privada en internet a la cual sólo tienen
+acceso los investigadores autorizados. El propósito es compartir los
+datos con expertos en el área para que los científicos puedan aprender
+más sobre el desarrollo infantil.</p>
+<p><say-es>Para protegerlo a usted y a su familia, el investigador está
+completamente vacunado y usará una mascarilla. No interactuaremos
+físicamente con usted o con su hijo/a, este estudio es solo
+observacional. Todo lo que llevemos a su hogar será desinfectado.</p>
+<p><say-es>¿Le interesaría participar en este estudio con
+[NIÑO]?</say-es></p>
+<ul>
+<li>→ En caso de no querer participar en el estudio o estar dispuesto a
+compartir los videos en Databrary: finalice la llamada.<br />
+<say-es>Bueno, gracias. ¿Podemos contactarles para otros
+estudios?</say-es></li>
+<li>→ En caso de si: continúe.</li>
+</ul>
+<p><say-es>El investigador usará una mascarilla mientras lo visite en su
+hogar, pero le solicitamos que usted y su hijo/a no usen. Es importante
+ver y registrar sus expresiones faciales y una mascarilla las
+bloquearía. ¿Estaría de acuerdo con no usar una mascarilla?</say-es></p>
+<ul>
+<li>→ En caso de si: finalice la llamada. <say-es>Actualmente, solo
+estamos reclutando familias que están de acuerdo con no usar una
+mascarilla. Pero, ¿está bien si lo llamamos para otros
+estudios?</say-es></li>
+<li>→ En caso de no: continúe</li>
+</ul>
+<p><say-es>¡Genial! Debido a que estamos interesados en las rutinas de
+madres e hijos, nos gustaría encontrar un día y hora en el cual podamos
+observar sólo a usted y [NIÑO] en su hogar. Seria bueno si pudiéramos
+programar la visita a una hora que no sea durante el horario de comidas
+y cuando [NIÑO] esta generalmente despierto. ¿Hay algún día y hora que
+sea conveniente para usted donde se cumplan estos
+criterios?</say-es></p>
+<ul>
+<li>→ Si en la fecha en la cual están disponibles el bebé ya esta fuera
+de el rango de edad: <say-es>Para este estudio estamos interesados en
+estudiar grupos de edad específicas: 12-, 18, y 24- meses. ¿Estaría bien
+si les contactamos en XX meses para ver si [NIÑO] puede participar
+entonces?</say-es></li>
+<li>→ Si el niño esta en el rango de edad para la fecha en la cual están
+disponibles: continúe</li>
+</ul>
+<p><say-es>Por ultimo, tenemos un cuestionario que solo tomará 10
+minutos necesitamos completar antes de nuestra visita. Podemos
+preguntarle las preguntas ahora o cuando llamemos para confirmar el
+estudio. ¿Qué prefiere usted?</say-es></p>
+<ul>
+<li>→ En caso de que madre pueda responder las preguntas ahora, continúe
+(see video for Demographics Questionnaire below this list):
+<ul>
+<li>Abra un nuevo cuestionario en Kobo toolbox en el Tablet.</li>
+<li>Rellene la información del participante en una nueva sesión.</li>
+<li>Luego de completar el cuestionario demográfico guarde como “sabe as
+draft”.</li>
+<li>Solo oprima “submit” al completar todas las notas luego de la
+visita.</li>
+<li>Lista de preguntas del cuestionario demográfico  
+<a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a></li>
+<li>Por favor tenga presente que el formato será distinto que en la
+aplicación.</li>
+</ul></li>
+<li>→ En caso de que madre no pueda responder las preguntas en este
+momento, <say-es>Cuando seria un buen momento para llamarla nuevamente
+cuando usted tenga tiempo para responder estas preguntas?</say-es>
+<ul>
+<li>Si puede en otro momento, programe una llamada de 10-minutos para
+completar el cuestionario demográfico.</li>
+<li>Si es difícil coordinar una llamada, complete el cuestionario al
+llamar para confirmar la visita.</li>
+</ul></li>
+</ul>
+<p><say-es> Entonces tenemos agendada la visita para el día [FECHA] a
+las [HORA]. La llamaremos el día anterior /el viernes anterior (si la
+visita es un lunes) para confirmar que aun están disponibles para a la
+visita. Excelente, que tenga un buen día!</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-svid">
+Initial recruiting phone call </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43822993,43857862/asset/193915/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-sdemographics">
+Demographics questionnaire </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-sdemographics" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43219665,43511490/asset/193907/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+</div>
+<div id="initial-recruiting-voicemail" class="section level3 tabset">
+<h3 class="tabset">1.2 Initial recruiting voicemail</h3>
+<p>If you reach the family’s voicemail, please leave the following
+message:</p>
+<div id="english-script" class="section level4">
+<h4>English script</h4>
+<p><say>Hi, this message is for [MOM]. My name is [NAME] and I’m calling
+from [LAB]. I’m calling because we have a fun study for [12 / 18 /
+24]-month-olds and [CHILD] is the perfect age. You would receive a $50
+gift card for participating in the study and if you are interested in
+hearing more, please give us a call back. Our phone number is
+[XXX-XXX-XXXX]. Thank you and we hope to hear from you soon!</say></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-evid">
+Initial recruiting voicemail </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43649412,43676879/asset/193912/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div id="spanish-script" class="section level4">
+<h4>Spanish script</h4>
+<p><say-es>Hola, este mensaje es para [MAMÁ]. Mi nombre es [NOMBRE] y
+estoy llamando de [LAB]. Estoy llamando porque tenemos un estudio para
+niños de [12 / 18 / 24]- meses y [NIÑO] tiene la edad perfecta. Usted
+recibiría una tarjeta de regalo de $50 por participar en este estudio y
+si usted esta interesado en saber más sobre este estudio, por favor
+llámenos de vuelta. Nuestro número de teléfono es [XXX-XXX-XXXX].
+¡Gracias y esperamos su llamada!</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingvm-svid">
+Initial recruiting voicemail </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingvm-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43822993,43857862/asset/193915/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+</div>
+<div id="initial-recruiting-email" class="section level3 tabset">
+<h3 class="tabset">1.3 Initial recruiting email</h3>
+<p>If you will be contacting the family over email, you may use the
+following template:</p>
+<div id="english-template" class="section level4">
+<h4>English template</h4>
+<pre><code>Dear [MOM],
+  
+I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
+
+For this study, we are interested in learning about babies&#39; natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 2-3 hours, and you will receive a $50 gift card at the end of the session.
+To protect you and your family, the researcher is fully vaccinated and will wear a mask. We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized.
+If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+
+Thank you, 
+[LAB]</code></pre>
+</div>
+<div id="spanish-template" class="section level4">
+<h4>Spanish template</h4>
+<pre><code>Estimada [MAMÁ],
+
+Le estamos escribiendo desde [LAB] para contarle sobre un estudio de investigación que sería ideal para [NIÑO].
+
+Para este estudio, estamos interesados en conocer las experiencias cotidianas y naturales de los niños en sus hogares – los juguetes con los que juegan y los lugares a los que van en su hogar. Un investigador lo visitará a usted y a [NIÑO] en su hogar, y ustedes serán filmados mientras realizan sus actividades diarias. Cada visita dura aproximadamente 2-3 horas, y usted recibirá una tarjeta de regalo de $50 por su participación.
+Para protegerlo a usted y a su familia, el investigador está completamente vacunado y usará una mascarilla. No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
+Si usted está interesada en participar, desea más información o tiene alguna pregunta, no dude en contactarnos por correo electrónico o por teléfono. Nuestro número [XXX-XXX-XXXX]. ¡Esperamos tener noticias de usted pronto!
+
+Gracias,
+[LAB]</code></pre>
+<p><br></p>
+</div>
+</div>
+</div>
+<div id="establishing-visit-details" class="section level2 tabset">
+<h2 class="tabset">2. Establishing visit details</h2>
+<p>Once you have connected with the family and decided on a visit date,
+please send the following email to establish the visit details:</p>
+<div id="english-template-1" class="section level3">
+<h3>English template</h3>
+<pre><code>Dear [MOM],
+
+Thank you very much for agreeing to participate in our home visit study with [CHILD]. Here is a confirmation of the date and time of your appointment:
+
+*Date: [DAY OF WEEK], [DATE] 
+*Time: [START TIME] – [END TIME] 
+Your Home Address: [ADDRESS]
+
+We look forward to seeing you on the day of your appointment! If the above address is incorrect, please email back or call us right away. If you have any other questions about this appointment, feel free to contact us at [XXX-XXX-XXXX].
+
+Thank you, 
+[LAB]</code></pre>
+</div>
+<div id="spanish-template-1" class="section level3">
+<h3>Spanish template</h3>
+<pre><code>Estimada [MAMÁ],
+
+Muchas gracias por acceder a participar en nuestro estudio con [NIÑO]. Esta es la confirmación de fecha y hora de nuestra visita:
+ 
+*Fecha: [DIA DE LA SEMANA], [FECHA]
+*Hora: [HORA DE COMIENZO] - [HORA DE TÉRMINO]
+Dirección: [DIRECCIÓN]
+ 
+Esperamos verlo el día de su cita. Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
+ 
+Gracias,
+[LAB]</code></pre>
+<p><br></p>
+</div>
+</div>
+<div id="confirming-a-visit-day-before-the-visit"
+class="section level2">
+<h2>3. Confirming a visit (day before the visit)</h2>
+<div id="confirmation-phone-call" class="section level3 tabset">
+<h3 class="tabset">3.1 Confirmation phone call</h3>
+<div id="english-instructions-1" class="section level4">
+<h4>English instructions</h4>
+<p><say>Hi, may I speak with [MOM]? My name is [NAME] and I’m calling
+from [LAB] to confirm our visit with you and [CHILD] on [DATE].</p>
+<p><say>Have you or anyone in your household had COVID or had physical
+interaction with someone who has tested positive for COVID in the last
+two weeks?</say></p>
+<ul>
+<li>→ <em>If yes: <strong>end call</strong> </em> <say>Currently, we are
+only enrolling families who are symptom-free and had no interaction with
+anyone COVID positive. But is it okay, if we call you for this study
+again in a few months?</say></li>
+<li>→ <em>If no: continue</em></li>
+</ul>
+<p><say>Does this time and date still work for you?</say></p>
+<ul>
+<li>→ <em>If yes:</em>
+<ul>
+<li>→ <em>If demographic questionnaire was not completed during initial
+phone call:</em> <say>That’s great! Before the visit, I’d like to ask
+you a few questions. It will only take 10 minutes of your time.</say>
+<ul>
+<li>On your tablet, open Kobo toolbox and start a new questionnaire
+set</li>
+<li>Fill out participant information at top of new session</li>
+<li>“Save as Draft” after demographic questionnaire and home visit
+questionnaires</li>
+<li>Only hit “Submit” after filling out clean-up notes back in lab</li>
+<li>Here are links to view the demographic questionnaire  
+<a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a></li>
+<li><em>Please note that presentation and format will differ in the
+app.</em></li>
+<li>Wrap up the call - <say>I will see you [date/time]. Just as a
+reminder, the data we collect from you now and during the visit, will be
+shared on a web-based library only available to researchers like the
+professor who runs this lab.</say></li>
+</ul></li>
+<li>→ <em>If demographic questionnaire has been completed:</em> -
+<say>That’s great! I will see you [date/time]. Just as a reminder, the
+data we collect from you now and during the visit, will be shared on a
+web-based library only available to researchers like the professor who
+runs this lab.</say></li>
+</ul></li>
+<li>→ <em>If no:</em> reschedule, make sure that child will still be
+within age range</li>
+</ul>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-evid">
+Confirming visit </button></p>
+</div>
+<div id="collection-confirming-phone-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42651425,42684492/asset/193895/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-edemographics">
+Demographics questionnaire </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-edemographics" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42812863,43219036/asset/193905/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div id="spanish-instructions-1" class="section level4">
+<h4>Spanish instructions</h4>
+<p><say-es>Hola, ¿puedo hablar con [MAMÁ]? Mi nombre es [NOMBRE DE
+PERSONA QUE LLAMA] y estoy llamando de [LAB] para confirmar nuestra
+visita que tenemos agendada con usted y [NIÑO] el día [FECHA] a las
+[HORA].</p>
+<p><say-es>¿Usted o alguien en su hogar ha tenido COVID o ha
+interactuado físicamente con alguien que haya salido positivo por COVID
+en las últimas dos semanas?</say-es></p>
+<ul>
+<li>→ En caso de si: finalice la llamada. <say-es>Actualmente, solo
+estamos inscribiendo familias que no tienen síntomas y no han tenido
+interacción con nadie con COVID positivo. Pero, ¿está bien si lo
+volvemos a llamar para este estudio en unos meses más?</say-es></li>
+<li>→ En caso de no: continúe</li>
+</ul>
+<p><say-es>¿Aun están disponibles este día y hora?</say-es></p>
+<ul>
+<li>→ En caso de si:
+<ul>
+<li>→ Si el cuestionario demográfico no fue completado en la llamada
+inicial: <say-es>¡Excelente! Antes de la visita nos gustaría hacerle
+algunas preguntas. Esto solo tomara 10 minutos.</say-es>
+<ul>
+<li>En el Tablet o computadora, abra un nuevo cuestionario demográfico
+en Kobo toolbox.</li>
+<li>Lista de preguntas del cuestionario demográfico  
+<a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a></li>
+<li>Al finalizar – <say-es> Entonces nos vemos el [FECHA] a las [HORA].
+Solo como recordatorio, los datos recolectados en nuestra visita serán
+compartidos en una biblioteca on-line donde sólo tienen acceso los
+investigadores autorizados como el profesor que dirige este
+laboratorio.</say-es></li>
+</ul></li>
+<li>→ Si el cuestionario demográfico ha sido completado en la llamada
+inicial: <say-es> ¡Excelente! Entonces nos vemos el [FECHA] a las
+[HORA]. Solo como recordatorio, los datos recolectados en nuestra visita
+serán compartidos en una biblioteca on-line donde solo tienen acceso los
+investigadores autorizados como el profesor que dirige este laboratorio.
+</say-es></li>
+</ul></li>
+<li>→ En caso de no: Re-agendar la visita para otro día. Asegúrese que
+el niño estará dentro de la edad de inclusión para el estudio.</li>
+</ul>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-phone-svid">
+Confirming visit </button></p>
+</div>
+<div id="collection-confirming-phone-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42743034,42777602/asset/193901/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-scheduling-initialrecruitingcall-sdemographics">
+Demographics questionnaire </button></p>
+</div>
+<div id="collection-scheduling-initialrecruitingcall-sdemographics" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43219665,43511490/asset/193907/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+</div>
+<div id="confirmation-voicemail" class="section level3 tabset">
+<h3 class="tabset">3.2 Confirmation voicemail</h3>
+<p>If you reach the family’s voicemail, please leave the following
+message:</p>
+<div id="english-script-1" class="section level4">
+<h4>English script</h4>
+<p><say>Hi, this message is for [MOM]. My name is [NAME] and I’m calling
+from [LAB]. I’m calling about the home study visit we have scheduled for
+you and [CHILD] on [DATE] at [TIME]. Please call us back and let us know
+if that time and date still you works for you. Our phone number is [XXX-
+XXX-XXXX]. Thank you and we hope to hear from you soon!</say></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-evid">
+Confirming visit - voicemail </button></p>
+</div>
+<div id="collection-confirming-vm-evid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42685304,42712365/asset/193897/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div id="spanish-script-1" class="section level4">
+<h4>Spanish script</h4>
+<p><say-es>Hola, este mensaje es para [MAMÁ]. Mi nombre es [NOMBRE] y
+estoy llamando de [LAB]. Estoy llamando para confirmar nuestra visita
+que tenemos agendada con usted y [NIÑO] el día [FECHA] a las [HORA]. Por
+favor llámenos de vuelta para confirmar que aun esta disponible para
+esta cita. Nuestro número de teléfono es [XXX-XXX-XXXX]. ¡Muchas gracias
+y esperamos su llamada!</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-confirming-vm-svid">
+Confirming visit - voicemail </button></p>
+</div>
+<div id="collection-confirming-vm-svid" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42712971,42742434/asset/193899/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+</div>
+<div id="confirmation-email" class="section level3 tabset">
+<h3 class="tabset">3.3 Confirmation email</h3>
+<p>If you have the family’s email address, it is always advisable to
+send a confirmation email. You may use the following templates:</p>
+<div id="english-template-2" class="section level4">
+<h4>English template</h4>
+<pre><code>Dear [MOM],
+
+Thank you very much for agreeing to participate in our home study with [CHILD]. Please let us know if this appointment still works for you! Here is a confirmation of the time and date of your appointment:
+
+Date: [DAY OF WEEK], [DATE] 
+Time: [START TIME] – [END TIME]
+Your Home Address: [ADDRESS]
+
+We look forward to seeing you tomorrow! Please let us know if this appointment still works for you. If the above address is incorrect, please email or call us back right away. If you have any other questions about this appointment, feel free to contact us at [XXX-XXX-XXXX].
+
+Thank you, 
+[LAB]</code></pre>
+</div>
+<div id="spanish-template-2" class="section level4">
+<h4>Spanish template</h4>
+<pre><code>Estimada [MAMÁ],
+
+Muchas gracias por acceder a participar en nuestro estudio con [NIÑO]. Por favor le solicitamos nos confirme si aun esta disponible para nuestra visita. Esta es la confirmación de fecha y hora de nuestra visita:
+ 
+*Fecha: [DIA DE LA SEMANA], [FECHA]
+*Hora: [HORA DE COMIENZO] - [HORA DE TÉRMINO]
+Dirección: [DIRECCIÓN]
+ 
+¡Esperamos verlo mañana! Por favor le solicitamos nos confirme si aun esta disponible para nuestra visita. Si la dirección anterior es incorrecta, por favor envíe un correo electrónico o llámenos de inmediato. Si tiene alguna otra pregunta sobre esta cita, no dude en comunicarse con nosotros al [XXX-XXX-XXX].
+
+Gracias,
+[LAB]</code></pre>
+<hr class="play">
+</div>
+</div>
+</div>
+</div>
+<div id="preparing-for-visit" class="section level1">
+<h1>Preparing for Visit</h1>
+<div id="equipment-materials" class="section level2">
+<h2>1. Equipment &amp; Materials</h2>
+<div>
+<table width="80%">
+<tr>
+<td width="25%">
+<!--Start info button-->
+<a href="https://shop.panasonic.com/cameras-and-camcorders/camcorders/HC-V770K.html">
+<div class="popup" onclick="myFunctioncam()">
+<p>Camera </a> ⓘ <span id="myPopupcam" class="popuptext"> Panasonic
+HC-V770 Full HD Video Camera Camcorder </span></p>
+</div>
+<script>
+function myFunctioncam() {
+  var popup = document.getElementById("myPopupcam");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctionsdc()">
+<p>SD Card ⓘ <span id="myPopupsdc" class="popuptext">SanDisk 64GB
+Extreme PRO UHS-I SDXC Memory Card</span></p>
+</div>
+<script>
+function myFunctionsdc() {
+  var popup = document.getElementById("myPopupsdc");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctionbat()">
+<p>Extra battery ⓘ <span id="myPopupbat" class="popuptext">Panasonic
+Battery and Charger Kit (for HC-V77 Camcorders)</span></p>
+</div>
+<script>
+function myFunctionbat() {
+  var popup = document.getElementById("myPopupbat");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/camera-sdcard-battery.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+</td>
+<td width="25%">
+</td>
+</tr>
+<tr>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunction()">
+<p>Fully loaded and charged tablet ⓘ <span id="myPopup"
+class="popuptext"> Lenovo 8 Tab 4 8 16GB Tablet (Wi-Fi Only)</span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup"); popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+<!--Start info button-->
+<div class="popup" onclick="myFunctiontab()">
+<p>Tablet case ⓘ <span id="myPopuptab" class="popuptext"> MoKo Lenovo
+Tab 4 8” Case </span></p>
+</div>
+<script>
+function myFunctiontab() {
+  var popup = document.getElementById("myPopuptab");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%">
+<img src="img/tablet.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionlas()">
+<p>Laser Measure ⓘ <span id="myPopuplas" class="popuptext"> Tacklilfe S2
+Advanced Laser Measure </span></p>
+</div>
+<script>
+function myFunctionlas() {
+  var popup = document.getElementById("myPopuplas");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/laser.png">
+</td>
+</tr>
+<tr>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctiondec()">
+<p>Decibel meter mic ⓘ <span id="myPopupdec" class="popuptext"> Dayton
+Audio iMM-6 Microphone </span></p>
+</div>
+<script>
+function myFunctiondec() {
+  var popup = document.getElementById("myPopupdec");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/dm-mic.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+<!--Start info button-->
+<a href="https://www.bhphotovideo.com/c/product/1429467-REG/magnus_pv_3330g_3_section_photo_video_tripod.html">
+<div class="popup" onclick="myFunctiontri()">
+<p>Tripod </a> ⓘ <span id="myPopuptri" class="popuptext"> Magnus
+PV-3330G Photo/Video Tripod </span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiontri() {
+  var popup = document.getElementById("myPopuptri"); popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%">
+<img src="img/tripod.png">
+</td>
+</tr>
+<tr>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctiontot()">
+<p>Tote bag ⓘ <span id="myPopuptot" class="popuptext"> Clear Tote Bag
+(12”X 12”X 6”) </span></p>
+</div>
+<script>
+function myFunctiontot() {
+  var popup = document.getElementById("myPopuptot");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%">
+<img src="img/tote.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionyog()">
+<p>Yoga mat ⓘ <span id="myPopupyog" class="popuptext"> Gaiam Essentials
+Thick Yoga Mat </span></p>
+</div>
+<script>
+function myFunctionyog() {
+  var popup = document.getElementById("myPopupyog");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/yoga-mat.png">
+</td>
+</tr>
+<tr>
+<td width="20%">
+<!--Start info button-->
+<a href="https://www.greentoys.com/products/green-toys-dish-set-24-piece-set">
+<div class="popup" onclick="myFunctiondis()">
+<p>Dish set </a> ⓘ <span id="myPopupdis" class="popuptext"> Green Toys
+Dish Set </span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiondis() {
+  var popup = document.getElementById("myPopupdis");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%">
+<img src="img/dish-sets.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+<!--Start info button-->
+<a href="https://www.munchkin.com/bath-bobbers.html">
+<div class="popup" onclick="myFunctiontoy()">
+<p>Toy </a> ⓘ <span id="myPopuptoy" class="popuptext"> Munchkin Bath
+Bobbers </span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctiontoy() {
+  var popup = document.getElementById("myPopuptoy");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/dog.png">
+</td>
+</tr>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionform()">
+<p>2 copies of study consent forms - one for parent, one signed copy for
+lab records</a> ⓘ <span id="myPopupform" class="popuptext"> Please
+contact lab PI to get your lab-specific copy of this form </span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctionform() {
+  var popup = document.getElementById("myPopupform");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/binder.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+<!--Start info button-->
+<div class="popup" onclick="myFunctionform()">
+<p>2 copies of Databrary permission forms - one for parent, one signed
+copy for lab records</a> ⓘ <span id="myPopupform" class="popuptext">
+Please contact lab PI to get your lab-specific copy of this form
+</span></p>
+</div>
+<script>
+// When the user clicks on div, open the popup
+function myFunctionform() {
+  var popup = document.getElementById("myPopupform");
+  popup.classList.toggle("show");
+}
+</script>
+<!--End info button-->
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/binder.png">
+</td>
+<td width="10%">
+</td>
+</tr>
+<tr>
+<td width="20%">
+Answer scales in
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=191468">
+English </a> &amp;
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157">
+Spanish </a>
+</td>
+<td width="25%" style="padding-right: 40px;">
+<img src="img/scales.png">
+</td>
+<td width="10%">
+</td>
+<td width="20%">
+Paper backups of
+<a href="https://www.play-project.org/collection.html#6_questionnaires">
+all questionnaires and forms </a>
+</td>
+<td width="25%">
+<img src="img/questionnaires.png">
+</td>
+</tr>
+</table>
+</div>
+<p><br></p>
+</div>
+<div id="prepare-to-be-in-the-home" class="section level2">
+<h2>2. Prepare to be in the home</h2>
+<ol style="list-style-type: decimal">
+<li>Take your own water with you. For the duration of the visit, you
+will decline any offerings of food or drink.</li>
+<li>Take your university ID with you, be prepared to show it if
+asked.<br />
+</li>
+<li>Dress plainly, modestly, neutrally. Nothing too bright and
+attractive to children. Try not to wear all black either :)</li>
+<li>Avoid strong perfumes and noisy jewelry. The idea is to blend into
+the background as much as possible.</li>
+<li>Be prepared to plan your bathroom breaks around the visit (it will
+be approx 2.5 hrs long).</li>
+</ol>
+<div id="setup-for-home-questionnaires" class="section level3">
+<h3>2.1 Setup for Home Questionnaires</h3>
+<ul>
+<li>Pack paper copies of <br> -Parent answer scales in
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=191468">English</a>
+and/or
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157">Spanish</a>
+<br> -Vocabulary list for parents, for the appropriate questionnaire
+version <br> -The appropriate home questionnaire as backup</li>
+<li>While connected to internet in the lab, load the appropriate
+questionnare on the tablet in KoBoToolbox (see documentation PDF
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386147"><img src="img/icon-pdf.jpg" width="15"></a>)</li>
+</ul>
+</div>
+</div>
+<div id="covid-considerations" class="section level2">
+<h2>3. COVID Considerations</h2>
+<p>At each home visit, researchers abide by the following
+protections:</p>
+<ul>
+<li>Wear a <em>mask</em> at all times</li>
+<li>Clean any equipment that is placed on a home surface (decibel meter,
+tablet) with a sanitizing wipe.</li>
+<li>Have only mothers open closets, cabinets, and doors during the house
+walk-through</li>
+<li>Hand toys for structured play to parents in a sanitized plastic tote
+bag</li>
+<li>Explain to mothers the research importance of not wearing a mask——to
+allow observation and coding of facial expressions</li>
+</ul>
+<p>After each home visit, researchers will sanitize all toys, the
+camera, tripod, microphones, tablet, and all bags.</p>
+<hr class="play">
+</div>
+</div>
+<div id="home-visit" class="section level1">
+<h1>Home Visit</h1>
+<!-- *(Please ensure that you have read through the [participants](participants.html) page before you continue)* -->
+<p>Now that you have set your target participant sample and completed
+all the steps listed in the <a
+href="collection_recruitment.html">recruitment</a> process, these
+instructions will help you prepare for your participant home visit.
+<br><br></p>
+<div class="bluebg">
+<p>Please ensure that you are <a
+href="https://nyu.databrary.org/user/login"><strong>currently logged in
+at Databrary</strong></a> to view protected content in this webpage. <i>
+For confidentiality reasons, access to video exemplars is restricted to
+researchers with authorized access to <a
+href="http://databrary.org">Databrary</a>. To register for access, visit
+<a href="http://databrary.org/register"
+class="uri">http://databrary.org/register</a>. </i></p>
+</div>
+<p><br></p>
+<p>At the end of every home visit (for each participant), you will
+upload the following:</p>
+<ol style="list-style-type: decimal">
+<li><strong>exactly 4 videos</strong> (to your Databrary repository)
+<br>  - One-hour naturalistic play (include: decibel measure, shoes if
+child is wearing them in the house) <br>  - House walk-through (include:
+measurements of each room, sleeping arrangements, clothing, books, toys,
+shoes if child is barefoot) <br>  - 5-min structured play (focus on
+child and mom, even if they leave mat area) <br>  - Questionnaires (set
+up camera on tripod, focus on mom)</li>
+<li><strong>exactly 1 decibel meter file</strong> (to your Databrary
+repository)</li>
+<li><strong>exactly 3 questionnaire files</strong> (through the KoBo
+Toolbox app) <br>  - demographics questionnaire <br>  - home visit
+questionnaire <br>  - post-visit notes <br></li>
+</ol>
+<div id="arrival-introduction" class="section level2">
+<h2>1. Arrival introduction</h2>
+<p><em><strong>Note</strong>: Experimenters should always act in a
+professional and respectful manner when interacting with the
+participants and while in the home. Do not make comments or react to
+anything in front of the mom to make her feel uncomfortable. All
+families should feel that their participation in the study is
+meaningful.</em></p>
+<p>Say: <say>Hi, my name is [NAME] and I’m visiting from [INSTITUTION].
+Thanks for letting us come to your home today!</say> <br>    
+<say-es>Hola, mi nombre es [NAME] y vengo de [INSTITUTION]. ¡Gracias por
+recibirnos hoy en su hogar!</say-es></p>
+<ul>
+<li>Ask if you should take your shoes off.</li>
+<li>Ask for good place (i.e. out of child’s reach) to put backpack and
+coat.</li>
+<li>Do not leave the tripod and other equipment lying around.</li>
+<li>Do not engage or warm up to the baby. Just need to make mom feel
+comfortable.</li>
+</ul>
+</div>
+<div id="consent-to-participate" class="section level2">
+<h2>2. Consent to participate</h2>
+<p>Experimenter should explain the study and ask mom to sign the
+consent.</p>
+<p>Say: <say>The visit has a few parts. I’ll begin by video-recording
+you and [CHILD] as you go about your day. I will video-record you both
+for one hour. Afterwards, I’ll ask you to give me a walk-through of your
+home that I will record on video to get a sense of the places [CHILD]
+goes and things that he/she plays with. I’ll also be measuring the
+dimensions of each room. Then, I will ask you and [CHILD] to play with
+some toys that I brought with me. Finally, I will ask you some general
+questions about your family and home, and about [CHILD]’s skills and
+routines. Everything will be video-recorded and the visit will last for
+no more than three hours. You will receive $50 for your participation at
+the end. Do you have any questions? Okay, great. Here is the consent
+form that explains everything I just said. Please read it through and
+then print and sign your name on the back.</say> <br>     <say-es>Esta
+visita tiene varias partes. Comenzaré grabándolos a usted y [CHILD] por
+una hora, mientras realizan sus actividades cotidianas. Después, le
+pediré que me dé un recorrido por su hogar mientras grabo los espacios,
+para tener una idea de los lugares donde él/ella va y las cosas con las
+que juega. También mediré las dimensiones de cada cuarto. Luego, les
+pediré a usted y a [CHILD] que jueguen con unos juguetes que traje
+conmigo. Finalmente, le haré algunas preguntas generales acerca de su
+familia y su hogar, y sobre las habilidades y rutinas de [CHILD]. Todo
+será grabado en video y la visita no durará más de 3 horas. Por
+participar usted recibirá $50 al final de la visita. ¿Tiene alguna
+pregunta? ¡Muy bien! Aquí tiene el formulario de consentimiento que
+explica todo lo que le he dicho. Por favor léalo y luego en el reverso
+escriba su nombre y firme.</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-consent-es">
+Obtain consent - Spanish </button></p>
+</div>
+<div id="collection-homevisit-consent-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/54951795,55051017/asset/204282/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+</div>
+<div id="one-hour-natural-play-video-noise-measurement"
+class="section level2">
+<h2>3. One-hour natural play video &amp; noise measurement</h2>
+<div id="decibel-meter" class="section level3">
+<h3>3.1 Decibel Meter</h3>
+<p>Say: <say>We would like to measure the environmental noise levels. Is
+there a good place where I can put this measuring device where your
+child cannot reach? The tablet only measures the environmental noise
+levels and not what you’re actually saying.</say> <br>    
+<say-es>Queremos medir los niveles de ruido ambiental. ¿Hay algún lugar
+donde pueda colocar este dispositivo donde su hijo/a no lo pueda
+alcanzar? La tableta solo mide el ruido ambiental y no lo que usted está
+diciendo.</say-es></p>
+<ul>
+<li>Set up tablet, put in microphone.</li>
+<li>Ensure that “Audio Tool” is force closed.</li>
+<li>Place device in the most central place in the home (e.g., living
+room).</li>
+<li>The microphone should be facing towards the room (e.g., away from
+walls) and propped up on the tablet case so that it is
+<strong>not</strong> lying flat against the surface of the space.
+<br><br></li>
+</ul>
+</div>
+<div id="one-hour-natural-play-video" class="section level3">
+<h3>3.2 One-Hour Natural Play Video</h3>
+<p>General Recording Guidelines</p>
+<ul>
+<li>Aim to get 60 minutes of uninterrupted natural play recoding, in
+addition to the time you take to give instructions, record the decibel
+meter and shoes.</li>
+<li>Keep camera on the child at all times. Specifically, ensure that the
+child’s whole body is visible on camera. If mom is in frame, capture as
+much of her body as possible without compromising the view of the
+child.</li>
+<li>Record in front or to the side of the child as much as
+possible.</li>
+<li>Do not zoom in.</li>
+<li>Always try to stay toward the edge of rooms and doorways. You do not
+want to influence child to interact with you, or get in child’s
+way.</li>
+<li>Remain at as far a distance as possible (~3 to 5 m, hugging the
+wall) so that the child is not distracted by your presence.</li>
+<li>Try not to interact with the child or make eye contact with the
+child. Just watch through the viewfinder of the camera.</li>
+<li>If mom asks to pause the camera, ask for permission to point the
+camera away so you can continue recording audio.</li>
+</ul>
+<p>Say: <say>So I’m going to start recording now.</say> <br>    
+<say-es>Voy a empezar a grabar ahora.</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-c">
+One hour natural play - view of child </button></p>
+</div>
+<div id="collection-homevisit-onehour-c" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/38973985,42642785/asset/174895/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-e">
+One hour natural play - view of experimenter </button></p>
+</div>
+<div id="collection-homevisit-onehour-e" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/35257145,38972985/asset/174894/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>Begin recording and say: <say>For the next hour, do anything you
+would typically do as if I weren’t here. Try to ignore me as much as
+possible and I will stay out of the way. I will also try not to respond
+to you and [CHILD] so that he/she is not distracted. You can go anywhere
+in your home but we just ask you to remain indoors. You can play
+together or not, you can do chores, watch TV, talk on the phone, give
+him/her a bath or snack. The idea is to capture what your typical day is
+like. And as a reminder, I’m just here to record so you will be in
+charge of [CHILD]’s safety.</say> <br>     <say-es>En la próxima hora,
+haga cualquier cosa que usted haría típicamente si yo no estuviera aquí.
+Intente ignorarme lo más posible y yo me mantendré fuera de su camino.
+También intentaré no responderle a usted o a [CHILD] para no
+distraerlo/la. Puede ir a cualquier lugar en su hogar, solo pedimos que
+se mantenga adentro. Pueden jugar juntos o no, puede hacer los
+quehaceres, ver televisión, hablar por teléfono, darle un baño o una
+merienda a [CHILD]. La idea es capturar su día típico. Le recuerdo que
+solo estoy aquí para grabar y usted está a cargo de la seguridad de
+[CHILD].</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-c-es">
+One hour natural play - view of child - Spanish </button></p>
+</div>
+<div id="collection-homevisit-onehour-c-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/51320636,54950887/asset/204232/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p> </p>
+<!--
+<div class="videobuttons">
+<img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-onehour-e-es">
+One hour natural play - view of experimenter - Spanish
+</button>
+</div>
+<div id="collection-homevisit-onehour-e-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="" type="video/mp4"> Your browser does not support html5 video.
+</video>
+</div>
+-->
+<p>Point camera at the tablet while opening “Audio Tool” (the
+application immediately starts recording noise levels upon startup).</p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibelon">
+Turn ON decibel meter </button></p>
+</div>
+<div id="collection-homevisit-decibelon" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45591222,45599073/asset/194583/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>After opening the app, quickly point the camera at the child and
+start timing for the one-hour natural play video. Note the time on the
+viewfinder of the camera and record for an additional 60 minutes.</p>
+<p><em>Note: The instructions and tablet set up should take no longer
+than 5-minutes.</em></p>
+<p>At the end of the one-hour recording, say: <say>Great, we are done
+with the one-hour recording!</say> <say-es>¡Excelente, hemos terminado
+la grabación de una hora!</say-es></p>
+<p>With camera in hand (and still recording), walk over to where the
+tablet was placed, and hit the “save” button on “Audio Tool”.</p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-decibeloff">
+Turn OFF decibel meter </button></p>
+</div>
+<div id="collection-homevisit-decibeloff" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45600001,45613749/asset/194585/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<div id="shoes" class="section level5">
+<h5>Shoes</h5>
+<ul>
+<li>If child was wearing shoes during the recording, say <say>Could I
+get a close-up of the shoes [CHILD] has been wearing?</say>
+<say-es>¿Puedo grabar más de cerca los zapatos que [CHILD] tiene
+puestos? </say-es>. Ask mom to remove the shoes, video-record the shoes
+after the session; take them off child and video the bottom, side, and
+top views. Focus the camera on the shoes and comment on shoe type, sole
+(hard, soft), heel (if any), and other observations.</li>
+<li>If the child was <em>not</em> wearing shoes during the one-hour
+natural play video, record the shoes during the house walk-through.</li>
+</ul>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-shoes">
+Shoes </button></p>
+</div>
+<div id="collection-homevisit-shoes" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/46910977,46917617/asset/204081/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>Then stop video recording on the camera. Now that the camera is off,
+name the audio file with the site name and subject number (e.g. NYU_001)
+and close the “Audio Tool” app.</p>
+</div>
+</div>
+</div>
+<div id="video-house-walk-through-while-measuring-rooms"
+class="section level2">
+<h2>4. Video House Walk-through while measuring rooms</h2>
+<p>Start recording and say: <say>Now, we would like to see the space
+that [CHILD] gets to explore throughout the day. Please walk me through
+your home as I follow with a camera, and take measurements of the
+spaces. As we walk around, please show me where you keep any objects —
+toys, books, sippy cups, anything like that — that [CHILD] might
+interact with regularly. Please show me where you keep his/her clothes
+and shoes to give us an idea of the kinds of things he/she wears.</say>
+<br>     <say-es>Ahora nos gustaría ver el espacio que [CHILD] tiene
+para explorar durante el día. Por favor guíeme por su hogar mientras la
+sigo con una cámara y tomo medidas de los espacios. Mientras recorremos
+su hogar, por favor muéstreme donde guarda cualquier objeto- juguetes,
+libros, vasitos, cualquiera de las cosas con que [CHILD] interactúa
+regularmente. Por favor muéstreme donde guarda la ropa y los zapatos de
+él/ella para tener una idea de las cosas que él/ella viste.</say-es></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-house-walkthrough">
+House walkthrough - English </button></p>
+</div>
+<div id="collection-homevisit-house-walkthrough" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/46918617,47654286/asset/204090/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-house-walkthrough-es">
+House walkthrough - Spanish </button></p>
+</div>
+<div id="collection-homevisit-house-walkthrough-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/47654784,48205462/asset/204092/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>Ensure that all of experimenter’s personal items, recording
+equipment, yoga mat and toys for structured play are stored out of
+sight.</p>
+<p>Video capture tips:</p>
+<ul>
+<li>Watch recording through viewfinder to ensure that the view is not
+blurry or shaky<br />
+</li>
+<li>Move the camera slowly and walk slowly<br />
+</li>
+<li>A clear and steady view, free of blurriness and shakiness, is
+necessary for detailed coding of the home environment</li>
+<li>The laser measure device does not work against reflective surfaces
+(mirrors, glass walls, etc), so point to a non-reflective surface or
+measure from the reflective surface towards the opposite direction.</li>
+</ul>
+<p>About room measurements:</p>
+<ul>
+<li>You will measure all rooms in the house while you do the video
+walkthrough<br />
+</li>
+<li>A room is any space used by someone on a regular basis - bedrooms,
+kitchens, bathrooms, basements - they don’t need to have windows<br />
+</li>
+<li>A room has to have a clear demarcation (e.g., a wall or an entry). A
+space is considered to be a room if it has a minimum of 3 walls.</li>
+<li>If the room has a short divider (e.g., when a kitchen and a living
+room are divided by a counter), count as one big room and measure
+accordingly.</li>
+</ul>
+<p>Steps:</p>
+<ol style="list-style-type: decimal">
+<li>Start at the entrance of the home.</li>
+<li>Pause at the entrance of each room.</li>
+<li>Audibly name the room by its function (e.g., <say>This is where
+[CHILD] sleeps</say>).</li>
+<li>First, get as much of the <strong>Entire Room</strong> in frame as
+possible. Keep the camera zoomed out and make sure to capture the
+ceiling and the floor of the room.</li>
+<li>Next, pan the camera SLOWLY from <strong>Left to
+Right</strong>.</li>
+<li>Then, pan the camera to <strong>Floor</strong>, name the different
+types of surfaces in the space (hardwood, plush carpet, thin rug,
+linoleum, tile, etc.), and then pan to the
+<strong>Ceiling</strong>.</li>
+<li>Ask parent if child spends time in each room: <say>Does [CHILD]
+spend any time in this room?</say> <say-es>¿[CHILD] pasa algo de tiempo
+en este cuarto?</say-es></li>
+<li>Ask parent about child’s objects in the room: <say>Do you keep
+anything for [CHILD] in this room? (If yes) Would you mind showing
+me?</say> <say-es>¿Guarda algo para [CHILD] en este cuarto? (If yes) ¿Me
+lo puede mostarar por favor?</say-es></li>
+<li><strong>Ensure during the house walkthrough that the parent provides
+information on all of the following:</strong>
+<ul>
+<li><em>Children’s Sleeping Arrangements.</em> <say>Please show me where
+[CHILD] typically sleeps.</say> <say-es>Por favor muéstreme donde
+[CHILD] duerme típicamente.</say-es></li>
+<li><em>Child’s Clothes.</em> <say>Please show me where you keep
+[CHILD]’s clothes.</say> <say-es>Por favor muéstreme donde guarda la
+ropa de [CHILD].</say-es></li>
+<li><em>Child’s Shoes.</em> <say>Please show me where you keep [CHILD]’s
+shoes.</say> <say-es>Por favor muéstreme donde guarda los zapatos de
+[CHILD].</say-es></li>
+<li><em>Child’s Books.</em> <say>Please show me where you keep [CHILD]’s
+books.</say> <say-es>Por favor muéstreme donde guarda los libros de
+[CHILD].</say-es></li>
+<li><em>Child’s Toys.</em> <say>Please show me where you keep [CHILD]’s
+toys.</say> <say-es>Por favor muéstreme donde guarda los juguetes de
+[CHILD].</say-es></li>
+</ul></li>
+<li>Film the <strong>Location</strong> of the storage space (drawer, toy
+chest, cabinet) in clear context of the rest of the room. Then, SLOWLY
+and CLEARLY film the <strong>Contents</strong> of the storage space to
+show what is inside of it, zooming in if needed. (Overhead view for bed,
+crib, drawers, toy chest, etc.; Zoomed in side view for cabinet, closet,
+bookshelf, etc.)</li>
+<li>Hold the camera in one hand while you take measurements of the room
+using the other. <br>
+<ul>
+<li>Turn measure on by pressing ON/DIST button. Make sure the laser beam
+is visible. <br></li>
+<li>Measure wall to wall, lengthwise and widthwise. <br></li>
+<li>If a room has an odd or asymmetrical shape (i.e., any shape other
+than a rectangle or a square), measure the largest rectangle or square
+area of the room. <br></li>
+<li>Place the base of the laser flat on the wall, push ON/DIST againt to
+send the beam across the room (avoid moldings, door castings, reflective
+surfaces) <br></li>
+<li>Repeat the above for the second dimension (length or width)
+<br></li>
+<li>Focus camera on laser measure for each measure and read numbers out
+loud with units (e.g. <say>eight point five feet</say>) <br></li>
+</ul></li>
+<li>Do ** <em>NOT</em> ** turn off the camera when walking to next
+room.</li>
+<li>Walk SLOWLY.</li>
+<li>When all rooms are recorded, walk back to the entrance of the home
+and then stop recording. <br><br></li>
+</ol>
+<p><a href="faq-collection.html">FAQs about House Walk-through</a></p>
+</div>
+<div id="five-minute-structured-mother-child-play"
+class="section level2">
+<h2>5. Five-minute Structured Mother-Child Play</h2>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-structuredplay-pview">
+Structured Play - English </button></p>
+</div>
+<div id="collection-homevisit-structuredplay-pview" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/43858268,44158568/asset/193925/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+ 
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-structuredplay-pview-es">
+Structured Play - Spanish </button></p>
+</div>
+<div id="collection-homevisit-structuredplay-pview-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/48206462,48514409/asset/204225/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>Say: <say>Now I would like you to play with your child for about 5
+minutes with these toys. We always clean these toys before and after
+each visit. I have a mat that I’m going to ask you to sit on. Where’s a
+good place for me to put it?</say> <br>     <say-es>Ahora le pediré que
+por favor juegue con su hijo/a durante unos 5 minutos con estos
+juguetes. Siempre limpiamos los juguetes antes y después de cada visita.
+Tengo una estera/alfombra en la cual le voy a pedir que se siente.
+¿Dónde es un buen lugar para ponerla?</say-es></p>
+<p>Place the mat on a clearing on the floor.</p>
+<p>Start recording and say: <say>Please sit next to [CHILD] on this mat.
+I’ll give you a set of toys. Please play with [CHILD] however you like
+for 5 minutes.</say> <br>     <say-es>Por favor siéntese al lado de
+[CHILD] en esta estera/alfombra. Le daré unos juguetes. Por favor juegue
+con [CHILD] por 5 minutos como usted quiera.</say-es></p>
+<ul>
+<li>If the child is playing with a different toy before the recording,
+ask mom if she can put the toy away.</li>
+<li>Hand tote bag with toys to mom. Quickly point the camera at the
+child and mom and note the time on the viewfinder. Record for an
+additional 5 minutes.</li>
+<li>Record so that the child and mother’s entire bodies - faces, eyes,
+and hands - are captured. If child stands up, make sure to capture the
+feet. If you are in a position from which you cannot capture the full
+face and both eyes, position yourself to capture a profile view.</li>
+<li>If child and mom are separated at any point, focus camera on
+child.</li>
+<li>Use timer on camera to time engagement.</li>
+<li>After 5 minutes, say “Great job! We can now move on to the
+questionnaires.”</li>
+<li>If the child is still playing with the toys after 5 minutes, let the
+child play and continue on to the questionnaires.</li>
+</ul>
+<p><a href="faq-collection.html">FAQs about House Structured
+Play</a></p>
+</div>
+<div id="questionnaires" class="section level2">
+<h2>6. Questionnaires</h2>
+<div id="setting-up-for-questionnaires" class="section level3">
+<h3>6.1 Setting up for Questionnaires</h3>
+<ul>
+<li>Position yourself in front of mom, with the paperwork between
+you.<br />
+</li>
+<li>Set up the tripod to capture both you and mom. You will need to
+change the battery on the camera to ensure sufficient power.</li>
+<li>Give mom a copy of the Colored Answer Scales:
+<ul>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/191468">English
+answer scale</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=204157">Spanish
+answer scale</a></li>
+</ul></li>
+<li>Give mom a copy of the Vocabulary inventories so that she can follow
+along when needed:
+<ul>
+<li>12 months
+<ul>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=385848">12
+mo Monolingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393405">12
+mo Bilingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393403">12
+mo Bilingual Spanish</a></li>
+<li>[12 mo Monolingual Spanish]</li>
+</ul></li>
+<li>18 months
+<ul>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393791">18
+mo Monolingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393677">18
+mo Bilingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393679">18
+mo Bilingual Spanish</a></li>
+<li>[18 mo Monolingual Spanish]</li>
+</ul></li>
+<li>24 months
+<ul>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393680">24
+mo Monolingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393676">24
+mo Bilingual English</a></li>
+<li><a
+href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393678">24
+mo Bilingual Spanish</a></li>
+<li>[24 mo Monolingual Spanish]</li>
+</ul></li>
+</ul></li>
+</ul>
+</div>
+<div id="questionnaires-1" class="section level3">
+<h3>6.2 Questionnaires</h3>
+<div class="bluebg">
+<p>All questionnaires should be administered in the primary language of
+the mom.</p>
+</div>
+<p><br></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-questionnaire-12bi-es">
+12-month bilingual (Spanish instructions) </button></p>
+</div>
+<div id="collection-homevisit-questionnaire-12bi-es" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/48206462,48514409/asset/204225/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p>You will fill out all questionnaires on your computer or your tablet
+using the Kobotoolbox app. Here are the 8 questionnaires you will use,
+in the following order:</p>
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
+<tr>
+<td style="border: solid #cccccc 1pt;">
+<b>Questionnaire</b>
+</td>
+<td style="border: solid #cccccc 1pt;">
+<p-small><span style="color: #bbbbbb;"><b>When to
+use</b></span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Demographic Questionnaire
+</td>
+<td style="border: solid #cccccc 1pt;">
+<p-small><span style="color: #bbbbbb; ">Before Home Visit <br>(Over the
+phone with mom)</span></p-small>
+</td>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questions: <br> - Locomotor Milestones <br> - Vocabulary
+Inventories <br> - Health <br> - Temperament <br> - Media Use <br> -
+Pets <br> - Division of labor <br> - Typical Day
+</td>
+<td style="border: solid #cccccc 1pt;">
+<span style="color: #bbbbbb;">During Home Visit <br> (In person with
+mom)</span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Post-visit notes
+</td>
+<td style="border: solid #cccccc 1pt;">
+<span style="color: #bbbbbb;"> After Home Visit <br> (Experimenter
+alone)</span></p-small>
+</td>
+</tr>
+<tr>
+</tr>
+</table>
+<p><br></p>
+<p>You will administer all the questionnaires online using the KoBo
+Toolbox application. Links to all the questionnaires can be found in the
+tables below (please click on the
+<img src="img/icon-link.jpg" width="20"> icon to go to the live KoBo
+Toolbox questionnaires online). In case of technical issues (and to have
+a paper copy of all questionnaires during home visits), please download
+the pdf version (<img src="img/icon-pdf.jpg" width="15">) of the
+questionnaires from below. For printing, each of the above forms are
+bundled into sets for different age and language combinations. (Please
+note that presentation and format will differ from the Kobotoolbox
+app.)</p>
+<table cellspacing="0" cellpadding="0" class="play-table" width="60%">
+<tr>
+<td style="border: solid #cccccc 1pt;">
+<b>Age</b>
+</td>
+<td style="border: solid #cccccc 1pt;">
+  <b>Language</b>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Demographic questionnaire <br>(all ages)
+</td>
+<td style="border: solid #cccccc 1pt;">
+ 
+<a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">English </span></p-small> <br>  
+<a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #ff7f40; ">Español</span></p-small> <br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>12 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+ 
+<a href="https://ee.kobotoolbox.org/x/6nnRw3bi"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393410"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">Monolingual English
+</span></p-small> <br>  
+<a href="https://ee.kobotoolbox.org/x/4FE9VhAO"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393406"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingual </span><span
+style="color: #4a86e8; ">(English instructions)</span></p-small> <br>  
+<a href="https://ee.kobotoolbox.org/x/x5oTIuJD"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393407"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingüe </span><span
+style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small>
+<br>   <a href=""><img src="img/icon-link.jpg" width="20"></a>
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span
+style="color: #4a86e8; ">Monolingual Spanish </span></p-small> <br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>18 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+ 
+<a href="https://ee.kobotoolbox.org/x/eB1qpL0N"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393681"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">Monolingual
+English</span></p-small></a> <br>  
+<a href="https://ee.kobotoolbox.org/x/5nU3O5ZL"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393682"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingual  </span><span
+style="color: #4a86e8; ">(English instructions)</span></p-small></a>
+<br>  
+<a href="https://ee.kobotoolbox.org/x/l46pGPUN"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393785"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingüe </span><span
+style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small></a>
+<br>   <a href=""><img src="img/icon-link.jpg" width="20"></a>
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span
+style="color: #4a86e8; ">Monolingual Spanish </span></p-small> <br>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Home questionnaire: <br>24 months
+</td>
+<td style="border: solid #cccccc 1pt;">
+ 
+<a href="https://ee.kobotoolbox.org/x/pzQOPxfI"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393685"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">Monolingual
+English</span></p-small></a> <br>  
+<a href="https://ee.kobotoolbox.org/x/UuLqdPHo"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393687"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingual </span><span
+style="color: #4a86e8; ">(English instructions)</span></p-small></a>
+<br>  
+<a href="https://ee.kobotoolbox.org/x/iEkFJamf"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=393686"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #6aa84f; ">Bilingüe </span><span
+style="color: #ff7f40; ">(Instrucciones en Español)</span></p-small></a>
+<br>   <a href=""><img src="img/icon-link.jpg" width="20"></a>
+<a href=""><img src="img/icon-pdf.jpg" width="15"></a> <p-small><span
+style="color: #4a86e8; ">Monolingual Spanish </span></p-small> <br>
+</td>
+</td>
+</tr>
+<tr>
+</tr>
+<tr>
+</tr>
+<tr>
+<td style="border: solid #cccccc 1pt;">
+Post-Visit Notes <br>(all ages)
+</td>
+<td style="border: solid #cccccc 1pt;">
+ 
+<a href="https://ee.kobotoolbox.org/x/#2cAYQt3z"><img src="img/icon-link.jpg" width="20"></a>
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=212430"><img src="img/icon-pdf.jpg" width="15"></a>
+<p-small><span style="color: #4a86e8; ">English </span></p-small> <br>
+</td>
+</tr>
+</table>
+<p><br></p>
+</div>
+<div id="locomotor-milestones" class="section level3">
+<h3>6.2.1 Locomotor Milestones</h3>
+<p>This part is a concentric, clinical interview and not a simple
+questionnaire. Parents will not always have our specific criteria in
+mind when remembering dates. And they may not accurately recall events.
+You want mom to “tell a story” with details about how the child
+progressed into each skill, where and when it happened, and information
+to anchor her memory, notes, or a calendar. Follow the CRAWL guidelines
+below to properly decide with the mom on an onset date for each
+criterion.</p>
+<p>Note: These are general rules and guidelines to follow. You will need
+to be flexible and adapt what you are saying, following up on, and
+probing depending on what the mom is saying, the age of the child, and
+other factors. There is no “one size fits all” procedure to obtaining
+valid locomotor milestones.</p>
+<p><strong>C= cross-check age and date</strong></p>
+<p>If mom gives you an age “around 8 months,” give the mom a date: “Ok,
+your child would have been 8 months around the first week of June. Did
+you see [child do skill to criterion] the first week of June?” If mom
+gives you a date “before Thanksgiving,” give the mom an age: “Ok, your
+child would have been a little over 13 months on Thanksgiving. Did you
+see [child do skill to criterion] when she was 13 months?”. Use the
+generated list of dates/ages.</p>
+<p>You can also use how many days/weeks from today as a cross-check (if
+it was recent). “Ok, so 12 months of age would be 3 weeks ago. Did you
+see [child do skill to criterion] 3 weeks ago?” Or you can use days/week
+before/after another skill as a cross-check: “Ok, so your child walked 5
+steps without stopping, falling, or holding on at the end of February,
+and you saw her walk 10 ft without stopping, falling, or holding on when
+she was 13 months. So that would mean it was about 2 weeks from when she
+was walking those 5 steps until you saw her walk 10 feet across the
+floor all on her own?”</p>
+<p><strong>R = reaffirm criteria with mother</strong></p>
+<p>Focus on when the mom “saw” the behavior (not just child “could” do
+it) and specifics of the criteria. The mom will not have in mind our
+exact criteria when thinking about “crawling” or “walking.” If mom does
+not affirm criteria in what she is saying, say it all again. Repeat the
+criteria in full as many times as you can, when cross-checking,
+anchoring, and finally setting on a date. If mom mentions a behavior
+that does not meet criteria (e.g., cruising), you can use that as a
+cross-check date, but affirm mom understands the criteria for that skill
+(e.g., not holding on to anything). You can even mimic or act out the
+behavior, gesture in the physical space to give a sense of distance, or
+mention specific landmarks (“from this couch to the bookshelf is about
+10 ft”).</p>
+<p><strong>A = anchor to an event</strong></p>
+<p>Use the generated list of holidays. The mother may also (and should)
+bring up other events of interest—for example, her birthday, family
+vacation. Knowing that the child did not do a skill to criteria on a
+certain event (“he was definitely not walking 5 steps when we went to
+the lake house in August”) is as useful as when a child did a
+behavior.</p>
+<p><strong>W = whittle down to a date</strong></p>
+<p>You want to get a specific date. “10 months” is not specific enough.
+You also want to “rule out” when the child definitely didn’t do it, but
+also when the mom definitely did see it. Guide mom to remember a
+specific day. If the best you can do is within a certain week, or a few
+days after an event, or some close range: pick a date and say it aloud
+to the mom “Ok, so a week after Mother’s Day would be May 16. Does May
+16th sound right to you?” You want to cross-check, reaffirm criteria,
+and anchor; so once you have agreed on a rough date (within 2-7 days)
+with the mom it’s ok to verify and move on.</p>
+<p><strong>L = look at videos to verify out of ordinary
+cases</strong></p>
+<p>Any time mom reports an onset earlier than the skill should appear
+(see notes below each skill for age that is too early; &lt;12mos for
+walking, &lt;8mos for crawling), ask mom if she has videos from around
+that time of child doing that skill. “Ok, so mid August would make her 6
+months. Do you have a video of her crawling at around 6 months?” Watch
+the video with the mom to verify, or reaffirm and correct to criteria if
+video does not show skill that matches criteria. “Oh, I see he’s
+<em>crawling with his belly touching the floor</em> and really getting
+around! How long after this was it until you saw him crawl all the way
+across the floor <em>without</em> his belly touching the floor?”</p>
+<p>If the mom does not remember a date, age, or time frame at all
+(especially for 24-month-olds about crawling), try to get her to think
+about when the child was definitely doing the skill OR definitely not
+doing the skill and work forward/backward in time. You might only get a
+rough range. It’s fine to just note in the comment field that the mom
+does not remember at all and move on if your probing is not going to
+yield a valid date.</p>
+<p><strong>Enter comments about:</strong> Things mom says to help anchor
+the event, for example, if she said an event mom definitely did not see
+child doing skill or definitely did see child doing skill. If mom gives
+too early of an age, write notes about how you verified the skill was
+done early. If mom detailed a behavior that does not meet criteria
+(belly crawling), note when that happened as a cross-check date for the
+behavior does meet criteria (crawling without belly touching).</p>
+</div>
+<div id="permission-to-share---signing-databrary-form"
+class="section level3">
+<h3>6.3 Permission to share - signing Databrary form</h3>
+<ul>
+<li>After completing the home questionnaires, the KoBoToolbox form will
+generate scripts for asking Databrary permission (see documentation PDF
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386148"><img src="img/icon-pdf.jpg" width="15"></a>)</li>
+<li>Be sure to continue video recording while signing the Databrary
+form.</li>
+<li>Say: <say>The data that we collected today is incredibly valuable
+for researchers. We are asking for your permission to upload the videos
+to a secure online data library where only authorized researchers have
+access. There are two levels of permission – the first level is if you
+allow us to share the video with other researchers and the second level
+is for researchers to be able to show excerpts and images in
+presentations and conferences. This is a form that explains everything I
+just said. Because both you and [CHILD] were on the video, Please check
+‘yes’ or ‘no’ for each level for yourself and for [CHILD] and
+sign.</say> <br>     <say-es>Datos como estos son increíblemente
+valiosos para investigadores. Le estamos pidiendo permiso para subir los
+videos a una biblioteca segura de datos en línea a la cual solo tienen
+acceso investigadores autorizados. Hay dos niveles de permisos – el
+primer nivel es para darnos permiso para compartir los videos con otros
+investigadores y el segundo nivel es para dar permiso para que
+investigadores puedan usar porciones o imágenes en presentaciones y
+conferencias. Este formulario explica todo lo que le he dicho. Ya que
+usted y [CHILD] están en el video, por favor marque ‘si’ o ‘no’ para
+cada nivel para usted y para [CHILD] y luego firme.</say-es></li>
+<li>When finished, give mom a moment to look over each form and sign
+them.</li>
+<li>Make sure to get mom’s signature on the appropriate fields of the
+Databrary permission form.</li>
+<li>Anyone else in the home who appeared on video for any part of the
+study (i.e. a sibling or another parent during the house walkthrough)
+must also sign the Databrary permission form or have the mom sign on
+their behalf as their guardian.</li>
+<li>Say aloud to the camera the level of sharing the mom agreed to, for
+instance “Okay, so we have you down as agreeing to share with authorized
+researchers (/and also sharing excerpts). Thanks so much!” This will
+allow a double check on the sharing permission for the session.</li>
+<li>Select “Save Draft” on KoBoToolbox (see documentation PDF
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386148"><img src="img/icon-pdf.jpg" width="15"></a>)</li>
+</ul>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-en">
+Video - English </button></p>
+</div>
+<div id="collection-homevisit-permission-en" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/42777596,42811907/asset/193903/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p><br><br></p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#collection-homevisit-permission-sp">
+Video - Spanish </button></p>
+</div>
+<div id="collection-homevisit-permission-sp" class="collapse" aria-expanded="false" style="height: 0px;">
+<video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/35422/45541640,45590222/asset/194577/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video>
+</div>
+<p><br><br></p>
+<p><a href="faq-collection.html">FAQs about Questionnaires</a></p>
+</div>
+</div>
+<div id="visit-wrap-up" class="section level2">
+<h2>7. Visit wrap-up</h2>
+<ul>
+<li>Confirm the email address the mom would like to receive the gift
+card codes</li>
+<li>Let the mom know the gift card codes will arrive in an email from
+New York University, the lead university on the project, in 1-2 business
+days</li>
+<li>Ensure that mom has copies of the consent and Databrary forms</li>
+<li>Collect and pack all equipment and paperwork from the house</li>
+<li>Thank mom for letting us come to her home!</li>
+</ul>
+<div id="submit-for-participant-payment" class="section level3">
+<h3>7.1 Submit for participant payment</h3>
+<ul>
+<li><em>As soon as possible</em> after the visit, submit a request for
+participant payment to the NYU team at: <a
+href="https://forms.gle/gJFBoC1bTjcLtoHR8"
+class="uri">https://forms.gle/gJFBoC1bTjcLtoHR8</a></li>
+</ul>
+</div>
+</div>
+<div id="full-play-home-visit-protocol---example"
+class="section level2">
+<h2>8. Full PLAY home visit protocol - example</h2>
+<p>Here is a video of the full PLAY home visit protocol.</p>
+<div class="videobuttons">
+<p><img src="img/icon-video.png" width="25">
+<button size="xs" type="button" data-toggle="collapse" data-target="#fullvideohomevisit">
+Full-length video of home visit </button></p>
+</div>
+<div id="fullvideohomevisit" class="collapse" aria-expanded="false"
+style="height: 0px;">
+<p><video width="100%" controls="" preload="none">
+<source src="https://nyu.databrary.org/slot/55651/0,7820438/asset/337402/download?inline=true" type="video/mp4">
+Your browser does not support html5 video. </video></p>
+</div>
+<p><em>NOTE: This participant was not the only child in the home, so
+would not meet inclusion criteria for PLAY.</em></p>
+<hr class="play">
+</div>
+</div>
+<div id="post-visit-notes-clean-up-and-upload" class="section level1">
+<h1>Post Visit notes, Clean up, and Upload</h1>
+<p><em>As soon as possible</em> after the visit, submit a request for
+participant payment to the NYU team at: <a
+href="https://forms.gle/gJFBoC1bTjcLtoHR8"
+class="uri">https://forms.gle/gJFBoC1bTjcLtoHR8</a></p>
+<p>After each visit, when you arrive back at your lab, complete all the
+following steps on the day you collected the data or on the very next
+day.</p>
+<ol style="list-style-type: decimal">
+<li>Submit home questionnaires.
+<ul>
+<li>Open the completed questionnaire on the tablet and hit the submit
+button (see documentation PDF
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=386149"><img src="img/icon-pdf.jpg" width="15"></a>).
+Tablet must be connected to wifi.<br />
+</li>
+</ul></li>
+<li>Complete and submit PLAY Post-Visit Notes
+<ul>
+<li><a href="https://ee.kobotoolbox.org/x/#2cAYQt3z"
+class="uri">https://ee.kobotoolbox.org/x/#2cAYQt3z</a><br />
+</li>
+</ul></li>
+<li>Upload all videos from the visit to Databrary onto your university’s
+PLAY volume. <br> Use the naming convention for each of the four videos.
+Use your 5 letter code for SITE. Use 3 digits for subject number (###).
+<ul>
+<li>Name the session as: <b>PLAY_SITE_###</b><br />
+</li>
+<li>Name the Natural Play video as:
+<b>PLAY_SITE_###_NaturalPlay</b><br />
+</li>
+<li>Name the House Walkthrough video as:
+<b>PLAY_SITE_###_HouseWalkthrough</b><br />
+</li>
+<li>Name the Structured Play video as:
+<b>PLAY_SITE_###_StructuredPlay</b><br />
+</li>
+<li>Name the Questionnaires video as:
+<b>PLAY_SITE_###_Questionnaires</b><br />
+</li>
+</ul></li>
+<li>Select appropriate release level for session in Databrary.
+<ul>
+<li><a
+href="https://www.databrary.org/resources/guide/investigators/release/release-levels.html"
+class="uri">https://www.databrary.org/resources/guide/investigators/release/release-levels.html</a></li>
+</ul></li>
+<li>Make sure that all fields on Databrary are filled out. <br> If visit
+is excluded mark as:
+<ul>
+<li>Pilot</li>
+<li>Atypical</li>
+<li>Out of age range</li>
+<li>Cancelled (if visit was cancelled)</li>
+<li>Experimental error (equipment malfunction)</li>
+<li>Incomplete</li>
+</ul></li>
+<li>Submit decibel data.
+<ul>
+<li>Please access the decibel app file on your tablet (located in the
+“AudioTool” folder in the File Manager). Select the decibel file from
+this home visit session.</li>
+<li>Select “Share with Save to Drive”, navigate to the audio file folder
+for your site (e.g., ‘audio_NYUNI’) and drop your file in that
+location.</li>
+<li>Name the file as follows: <b>PLAY_SITE_###</b></li>
+<li><img src="img/audiotool.png" width="600px"></li>
+</ul></li>
+<li>Fill out form to submit session for quality assurance. <a
+href="https://forms.gle/dyqtsAxx3D8LJuTr8"
+class="uri">https://forms.gle/dyqtsAxx3D8LJuTr8</a>.</li>
+<li>Clean equipment.
+<ul>
+<li>Wash all toys and equipment thoroughly.</li>
+<li>Wipe down yoga mat.</li>
+<li>Once videos have been uploaded, delete all videos from SD card.</li>
+<li>Make sure to put away all equipment to have ready for a next
+visit.</li>
+</ul></li>
+</ol>
+</div>
+
+<hr>
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3,h4",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
