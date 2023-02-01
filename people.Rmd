@@ -193,7 +193,7 @@ output:
 +--------------------+-------------------------------------+
 | Kathy Hirsch-Pasek | Temple University                   | 
 +--------------------+-------------------------------------+
-| Jeff Lockman       | Tulane University                   |
+| Jeff Lockman       | University of Texas at Austin       |
 +--------------------+-------------------------------------+
 | Laura Prosser      | Children’s Hospital of Philadelphia | 
 +--------------------+-------------------------------------+
