@@ -48,6 +48,8 @@ output:
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
+| Rachel Bican.           | Ohio University                            | Athens, OH.         | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Marc Bornstein          | NICHD                                      | Rockville, MD       | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Jean-Paul Boudreau      | Mount Allison University                   | Sackville, NB       | Contributor         |
@@ -119,6 +121,8 @@ output:
 | Casey Lew-Williams      | Princeton University                       | Princeton, NJ       | Collecting & Coding |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Klaus Libertus          | University of Pittsburgh                   | Pittsburgh, PA      | Coding              |
++-------------------------+--------------------------------------------+---------------------+---------------------+
+| Melissa Libertus        | University of Pittsburgh                   | Pittsburgh, PA      | Collecting          |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Vanessa LoBue           | Rutgers University                         | Newark, NY          | Collecting & Coding |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
