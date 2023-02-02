@@ -57,7 +57,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 - → *If more than 4 weeks early: **end call**.* <say>In this study, we are currently looking for children born on term. Would it be alright if we contacted you for other studies in the future?<say>
 - → *If born on term (36-41 weeks): continue*
 
-<say>Has [CHILD] been diagnosed with any disability (cognitive, auditory, vision, motor)?</say> 
+<say>Has [CHILD] been diagnosed with any disability, such as a cognitive, auditory, vision, motor impairment or delay?</say> 
 
 - → *If yes: **end call**.* <say>In this study, we are looking for typically developing children. Would it be alright if we contacted you for other studies in the future?</say> 
 - → *If no: continue*
@@ -83,7 +83,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 
 <say> So I have you and [CHILD] for our study on [DATE] at [TIME]. </say>
 
-<say>Before the study, we have a few questions that we'd like to ask. It should only take about 10 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
+<say>Before the study, we have a few questions that we'd like to ask. It should only take about 10-15 minutes. We can either ask you now or when we call to confirm the study. What would you prefer?</say>
 
 - → *If ready to answer now, continue (see video for Demographics Questionnaire below this list)*:
     - On your tablet, open Kobo toolbox and start a new questionnaire set
@@ -94,7 +94,7 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a> 
     - *Please note that presentation and format will differ in the app.*
 - → *If not available now* <say>When will be a good time to call back about the questions?</say>
-    - If another time work, schedule a 10-minute call to complete demographic questionnaire
+    - If another time work, schedule a 10- to 15-minute call to complete demographic questionnaire
     - If difficult to find a time up to 2 days before visit, complete demographic questionnaire when confirming visit
 
 <say>So I have you and [CHILD] for our study on [DATE] at [TIME]. We'll be calling you the day before (if study is on Monday: the Friday before) your appointment to confirm that that time still works for you. Have a great day!</say>  
@@ -142,7 +142,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 - → Si nació más de 4 semanas antes: finalice la llamada. <say-es>Actualmente para este estudio estamos buscando a niños que hayan nacido de termino. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
 - → Si nació de termino (37-41 semanas): continúe
 
-<say-es>¿Ha sido [NIÑO] diagnosticado con alguna discapacidad (cognitiva, auditiva, visual, o motora)?</say-es>
+<say-es>¿Ha sido [NIÑO] diagnosticado con alguna discapacidad o retraso cognitivo, auditivo, visual, o motor?</say-es>
 
 - → En caso de si: finalice la llamada. <say-es>Actualmente para este estudio estamos buscando a niños con desarrollo típico. ¿Estaría bien si les contactamos para otros estudios más adelante?</say-es>
 - → En caso de no: continúe
@@ -167,7 +167,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 - → Si en la fecha en la cual están disponibles el bebé ya esta fuera de el rango de edad: <say-es>Para este estudio estamos interesados en estudiar grupos de edad específicas: 12-, 18, y 24- meses. ¿Estaría bien si les contactamos en XX meses para ver si [NIÑO] puede participar entonces?</say-es>
 - → Si el niño esta en el rango de edad para la fecha en la cual están disponibles: continúe
 
-<say-es>Por ultimo, tenemos un cuestionario que solo tomará 10 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
+<say-es>Por ultimo, tenemos un cuestionario que solo tomará 10-15 minutos necesitamos completar antes de nuestra visita. Podemos preguntarle las preguntas ahora o cuando llamemos para confirmar el estudio. ¿Qué prefiere usted?</say-es>
 
 - → En caso de que madre pueda responder las preguntas ahora, continúe (see video for Demographics Questionnaire below this list):
     - Abra un nuevo cuestionario en Kobo toolbox en el Tablet.
@@ -178,7 +178,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 <a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
     - Por favor tenga presente que el formato será distinto que en la aplicación.
 - → En caso de que madre no pueda responder las preguntas en este momento, <say-es>Cuando seria un buen momento para llamarla nuevamente cuando usted tenga tiempo para responder estas preguntas?</say-es>
-    - Si puede en otro momento, programe una llamada de 10-minutos para completar el cuestionario demográfico.
+    - Si puede en otro momento, programe una llamada de 10- a 15-minutos para completar el cuestionario demográfico.
     - Si es difícil coordinar una llamada, complete el cuestionario al llamar para confirmar la visita.
 
 <say-es> Entonces tenemos agendada la visita para el día [FECHA] a las [HORA]. La llamaremos el día anterior /el viernes anterior (si la visita es un lunes) para confirmar que aun están disponibles para a la visita. Excelente, que tenga un buen día!</say-es>
@@ -255,7 +255,7 @@ I am writing from the [LAB] to tell you about a fun study that [CHILD] would be 
 
 For this study, we are interested in learning about babies' natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 2-3 hours, and you will receive a $50 gift card at the end of the session.
 To protect you and your family, the researcher is fully vaccinated and will wear a mask. We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized.
-If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. We look forward to hearing from you soon!
+If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. You can learn more about the study at anhourinthelife.org. We look forward to hearing from you soon!
 
 Thank you, 
 [LAB]
@@ -269,7 +269,7 @@ Le estamos escribiendo desde [LAB] para contarle sobre un estudio de investigaci
 
 Para este estudio, estamos interesados en conocer las experiencias cotidianas y naturales de los niños en sus hogares – los juguetes con los que juegan y los lugares a los que van en su hogar. Un investigador lo visitará a usted y a [NIÑO] en su hogar, y ustedes serán filmados mientras realizan sus actividades diarias. Cada visita dura aproximadamente 2-3 horas, y usted recibirá una tarjeta de regalo de $50 por su participación.
 Para protegerlo a usted y a su familia, el investigador está completamente vacunado y usará una mascarilla. No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
-Si usted está interesada en participar, desea más información o tiene alguna pregunta, no dude en contactarnos por correo electrónico o por teléfono. Nuestro número [XXX-XXX-XXXX]. ¡Esperamos tener noticias de usted pronto!
+Si usted está interesada en participar, desea más información o tiene alguna pregunta, no dude en contactarnos por correo electrónico o por teléfono. Nuestro número [XXX-XXX-XXXX]. ou can learn more about the study at anhourinthelife.org/index-spanish.html. ¡Esperamos tener noticias de usted pronto!
 
 Gracias,
 [LAB]
