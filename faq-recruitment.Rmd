@@ -11,16 +11,23 @@ output:
 
 ##### Mom says the child hears other languages. What factors decide if the child can participate?
 - The main consideration is what language(s) are spoken to the child in the home, and what language(s) does the mom ever speak to the child (at home, while shopping, elsewhere, etc.). If the child is spoken to at home or by the mom in anything other than English and/or Spanish they are not eligible.
-- Sign language (as it is not a verbal language) is permissible for the child to hear.
-- Learning a handful of words, conventional phrases, or expressions (e.g., "good morning," "thank you," "hello," religious terms, food) in another language is allowed. There is no hard cap, but 10 or fewer words is probably fine.
-- If the child hears languages other than English/Spanish **outside the home** (at daycare, visiting family, etc.; not from the mom), that is allowed.
-- If the child occasionally hears other languages while at home, **from someone who does not live there or infrequently visits (e.g., aunt visits once a week or so)**, that is allowed.
 
-- If the child hears other languages while at home, **from someone who lives there (e.g., grandma lives with them) or visits frequently (e.g., nanny comes 3-4 days a week, cousin comes after school every day)**, that would make them ineligible. That is, they are experiencing regular input (3-4 days) and would not qualify.
-- Even if the mom or household member is just "exposing" them to the language (letting them hear it as an experience, familiarizing them to it, etc.), that would make them ineligible. The child can't distinguish "exposure" from actually learning it.
-- If the child (because of any language experiences) speaks a language other than English/Spanish, they cannot participate. That is, even if mom doesn't speak that language and no one at home speaks that language, the child may naturally speak it during the home visit, so they are ineligible.
+- Allowable exceptions:
+  * Sign language (as it is not a verbal language) is permissible for the child to hear.
+  * Learning a handful of words, conventional phrases, or expressions (e.g., "good morning," "thank you," "hello," religious terms, food) in another language is allowed. There is no hard cap, but 10 or fewer words is probably fine.
+  * If the child hears languages other than English/Spanish **outside the home** (at daycare, visiting family, etc.; not from the mom), that is allowed.
+  * If the child occasionally hears other languages while at home, **from someone who does not live there or infrequently visits** (e.g., aunt visits once a week or so), that is allowed.
+
+- Disqualifications:
+  * If the child hears other languages while at home, **from someone who lives there** (e.g., grandma lives with them) or **visits frequently** (e.g., nanny comes 3-4 days a week, cousin comes after school every day), that would make them ineligible. That is, they are experiencing regular input (3-4 days) and would not qualify.
+  * Even if the mom or household member is just "exposing" them to the language (letting them hear it as an experience, familiarizing them to it, etc.), that would make them ineligible. The child can't distinguish "exposure" from actually learning it.
+  * If the child (because of any language experiences) speaks a language other than English/Spanish, they cannot participate. That is, even if mom doesn't speak that language and no one at home speaks that language, the child may naturally speak it during the home visit, so they are ineligible.
 
 The scientific rationale is that all sessions will be transcribed, and PLAY only has English and Spanish transcribers. The mom or child cannot be artificially asked to speak in only some languages; we want their natural speech. The above rules are complicated, but were designed to allow more families to participate, instead of excluding them with simpler rules.
+
+#### What if during the recruitment call, the mom mentions a child disability (cognitive, motor, language, visual)—referral, diagnosis, concern, etc?
+If the mom mentions anything about a child disability, ask for clarification about the current status during the recruitment call. If the child is currently seeing or was referred to a specialist or a medical professional is concerned about their development in relation to a cognitive, motor, speech, learning, visual, behavioral, hearing delay or condition, then the child is not eligible for PLAY. It is critical to ask for clarification prior to enrolling them and doing the Demographic Questionnaire.
+
 
 ##### If mom asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
 <say>For the first 90 minutes of this study, we are interested in how mothers and children interact. It should only be you and your child during the first half of our visit. If father/aunt/nanny/etc isn’t able to stay out of the home for the full time that we’re there, they can come back for the last hour. But we want you to be the one that answers the questionnaires.</say> 
