@@ -25,8 +25,8 @@ output:
 
 The scientific rationale is that all sessions will be transcribed, and PLAY only has English and Spanish transcribers. The mom or child cannot be artificially asked to speak in only some languages; we want their natural speech. The above rules are complicated, but were designed to allow more families to participate, instead of excluding them with simpler rules.
 
-#### What if during the recruitment call, the mom mentions a child disability (cognitive, motor, language, visual)—referral, diagnosis, concern, etc?
-If the mom mentions anything about a child disability, ask for clarification about the current status during the recruitment call. If the child is currently seeing or was referred to a specialist or a medical professional is concerned about their development in relation to a cognitive, motor, speech, learning, visual, behavioral, hearing delay or condition, then the child is not eligible for PLAY. It is critical to ask for clarification prior to enrolling them and doing the Demographic Questionnaire.
+#### What if during the recruitment call, the mom mentions a child impairment (cognitive, motor, language, visual)—referral, diagnosis, concern, etc?
+If the mom mentions anything about a child impairment, ask for clarification about the current status during the recruitment call. If the child is currently seeing or was referred to a specialist or a medical professional is concerned about their development in relation to a cognitive, motor, speech, learning, visual, behavioral, hearing delay or condition, then the child is not eligible for PLAY. It is critical to ask for clarification prior to enrolling them and doing the Demographic Questionnaire.
 
 
 ##### If mom asks if she needs to be alone during the study, and if father/aunt/nanny/etc. can be anywhere at home during the study  
