@@ -249,7 +249,6 @@ function myFunctionform() {
 
 At each home visit, researchers abide by the following protections:
 
-* Wear a _mask_ at all times
 * Clean any equipment that is placed on a home surface (decibel meter, tablet) with a sanitizing wipe.
 * Have only mothers open closets, cabinets, and doors during the house walk-through
 * Hand toys for structured play to parents in a sanitized plastic tote bag
