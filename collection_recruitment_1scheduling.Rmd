@@ -64,15 +64,14 @@ My name is [CALLER NAME] and I’m calling from [LAB]. I’m calling today about
 
 <say>For this study, we are interested in learning about children’s natural, everyday experiences in their homes. A researcher will visit you and [CHILD] in your home for about 2-3 hours. In the main part of the study, the researcher will video record you and [CHILD] for 1 hour as you go about your normal day. Then, we will ask you to take us through your home as we record the environment. Finally, we will ask you questions about your family and [CHILD]’s skills and routines. The data collected in this study are valuable and will be placed in a secure web-based library available only to researchers. The purpose is to share the data with experts in the field so that scientists can learn more about infant development.
 
-<say>To protect you and your family, the researcher is fully vaccinated and will wear a mask. We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized. 
+<say>We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized. 
 
 <say>Does this sound like something you would be interested in participating in with [CHILD]?</say>
 
 - → *If no to study or to sharing video on Databrary: **end call** * <say>Okay, thank you. May we call you for other studies?</say>
 - → *If yes: continue* 
 
-<say>The researcher in your home will wear a mask, but we’d ask that you and your child do not. It’s important to see and record your facial expressions and a mask would block those. Would you be ok to not wear a mask?</say> 
-
+<say>Would you be ok to not wear a mask? It’s important to see and record your facial expressions and a mask would block those. </say> 
 - → *If no: **end call** * <say>Currently, we are only enrolling families who are okay with not wearing a mask. But is it okay, if we call you for other studies?</say>
 - → *If yes: continue* 
 
@@ -149,7 +148,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 
 <say-es>En este estudio estamos interesados en aprender sobre las experiencias rutinarias que los bebés tienen en sus hogares. Un investigador lo visitará a usted y a [NIÑO] en su hogar por aproximadamente 2-3 horas. En la parte principal del estudio, un investigador grabará en vídeo a usted y [NIÑO] por 1 hora mientras ustedes continúan con sus actividades rutinarias. A continuación, le pediremos recorrer su hogar mientras grabamos el espacio. Finalmente le haremos preguntas sobre su familia y las habilidades y rutinas de [NIÑO]. Los datos recolectados en este estudio son valiosos y serán colocados en una biblioteca privada en internet a la cual sólo tienen acceso los investigadores autorizados. El propósito es compartir los datos con expertos en el área para que los científicos puedan aprender más sobre el desarrollo infantil.
 
-<say-es>Para protegerlo a usted y a su familia, el investigador está completamente vacunado y usará una mascarilla. No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
+<say-es>No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
 
 <say-es>¿Le interesaría participar en este estudio con [NIÑO]?</say-es>
 
@@ -157,7 +156,7 @@ Mi nombre es [NOMBRE DE PERSONA QUE LLAMA] y estoy llamando de [LAB]. Estoy llam
 <say-es>Bueno, gracias. ¿Podemos contactarles para otros estudios?</say-es>
 - → En caso de si: continúe.
 
-<say-es>El investigador usará una mascarilla mientras lo visite en su hogar, pero le solicitamos que usted y su hijo/a no usen. Es importante ver y registrar sus expresiones faciales y una mascarilla las bloquearía. ¿Estaría de acuerdo con no usar una mascarilla?</say-es>
+<say-es>¿Estaría de acuerdo con no usar una mascarilla? Es importante ver y registrar sus expresiones faciales y una mascarilla las bloquearía. </say-es>
 
 - → En caso de si: finalice la llamada. <say-es>Actualmente, solo estamos reclutando familias que están de acuerdo con no usar una mascarilla. Pero, ¿está bien si lo llamamos para otros estudios?</say-es>
 - → En caso de no: continúe
@@ -254,7 +253,7 @@ Dear [MOM],
 I am writing from the [LAB] to tell you about a fun study that [CHILD] would be perfect for!
 
 For this study, we are interested in learning about babies' natural, everyday experiences in their homes — such as the toys they play with and the places they go. A researcher will visit you and [CHILD] in your home, and the two of you will be video recorded as you go about your day. The visit lasts about 2-3 hours, and you will receive a $50 gift card at the end of the session.
-To protect you and your family, the researcher is fully vaccinated and will wear a mask. We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized.
+We will not physically interact with you or your child, this study is just observational. Anything we bring into your home will be sanitized.
 If you are interested in participating, would like more information, or have any questions, feel free to contact us by email or phone. Our phone number is [XXX-XXX-XXXX]. You can learn more about the study at anhourinthelife.org. We look forward to hearing from you soon!
 
 Thank you, 
@@ -268,7 +267,7 @@ Estimada [MAMÁ],
 Le estamos escribiendo desde [LAB] para contarle sobre un estudio de investigación que sería ideal para [NIÑO].
 
 Para este estudio, estamos interesados en conocer las experiencias cotidianas y naturales de los niños en sus hogares – los juguetes con los que juegan y los lugares a los que van en su hogar. Un investigador lo visitará a usted y a [NIÑO] en su hogar, y ustedes serán filmados mientras realizan sus actividades diarias. Cada visita dura aproximadamente 2-3 horas, y usted recibirá una tarjeta de regalo de $50 por su participación.
-Para protegerlo a usted y a su familia, el investigador está completamente vacunado y usará una mascarilla. No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
+No interactuaremos físicamente con usted o con su hijo/a, este estudio es solo observacional. Todo lo que llevemos a su hogar será desinfectado.
 Si usted está interesada en participar, desea más información o tiene alguna pregunta, no dude en contactarnos por correo electrónico o por teléfono. Nuestro número [XXX-XXX-XXXX]. ou can learn more about the study at anhourinthelife.org/index-spanish.html. ¡Esperamos tener noticias de usted pronto!
 
 Gracias,
