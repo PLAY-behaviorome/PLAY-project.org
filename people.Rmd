@@ -124,9 +124,10 @@ output:
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Melissa Libertus        | University of Pittsburgh                   | Pittsburgh, PA      | Collecting          |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
-| Vanessa LoBue           | Rutgers University                         | Newark, NY          | Collecting & Coding |
+| Vanessa LoBue           | Rutgers University                         | Newark, NY          | Coding              |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
-| Jeff Lockman            | Tulane University                          | New Orleans, LA     | Collecting & Coding |
+| Jeff Lockman            | University of Texas at Austin\             | Austin, TX\         | Coding\             |
+|                         | Tulane University                          | New Orleans, LA     | Collecting          |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
