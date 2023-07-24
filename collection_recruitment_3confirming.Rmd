@@ -19,7 +19,7 @@
         - “Save as Draft” after demographic questionnaire and home visit questionnaires
         - Only hit “Submit” after filling out clean-up notes back in lab
         - Here are links to view the demographic questionnaire &emsp; <a href="https://ee.kobotoolbox.org/x/#ko4f0b5J"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214498"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=427640"><img src="img/icon-pdf.jpg" width="15"></a> 
         - *Please note that presentation and format will differ in the app.*
         - Wrap up the call - <say>I will see you [date/time]. Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</say>
     - → *If demographic questionnaire has been completed:* - <say>That's great! I will see you [date/time]. Just as a reminder, the data we collect from you now and during the visit, will be shared on a web-based library only available to researchers like the professor who runs this lab.</say>
@@ -63,7 +63,7 @@ Demographics questionnaire
     - → Si el cuestionario demográfico no fue completado en la llamada inicial: <say-es>¡Excelente! Antes de la visita nos gustaría hacerle algunas preguntas. Esto solo tomara 10-15 minutos.</say-es>
         - En el Tablet o computadora, abra un nuevo cuestionario demográfico en Kobo toolbox.
         - Lista de preguntas del cuestionario demográfico &emsp; <a href="https://ee.kobotoolbox.org/x/#97tKqodw"><img src="img/icon-link.jpg" width="20"></a> 
-<a href="https://nyu.databrary.org/volume/876/slot/39021/-/asset/214499"><img src="img/icon-pdf.jpg" width="15"></a> 
+<a href="https://nyu.databrary.org/volume/876/slot/39021/-?asset=427641"><img src="img/icon-pdf.jpg" width="15"></a> 
         - Al finalizar – <say-es> Entonces nos vemos el [FECHA] a las [HORA]. Solo como recordatorio, los datos recolectados en nuestra visita serán compartidos en una biblioteca on-line donde sólo tienen acceso los investigadores autorizados como el profesor que dirige este laboratorio.</say-es>
     - → Si el cuestionario demográfico ha sido completado en la llamada inicial: <say-es> ¡Excelente! Entonces nos vemos el [FECHA] a las [HORA]. Solo como recordatorio, los datos recolectados en nuestra visita serán compartidos en una biblioteca on-line donde solo tienen acceso los investigadores autorizados como el profesor que dirige este laboratorio. </say-es>
 - → En caso de no: Re-agendar la visita para otro día. Asegúrese que el niño estará dentro de la edad de inclusión para el estudio.
