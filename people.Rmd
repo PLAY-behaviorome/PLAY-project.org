@@ -129,6 +129,8 @@ output:
 | Jeff Lockman            | University of Texas at Austin\             | Austin, TX\         | Coding\             |
 |                         | Tulane University                          | New Orleans, LA     | Collecting          |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
+| Kelsey Lucca            | Arizona State University                   | Tempe, AZ           | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Brian MacWhinney        | Carnegie Mellon University                 | Pittsburgh, PA      | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Virginia Marchman       | Stanford University                        | Palo Alto, CA       | Contributor         |
