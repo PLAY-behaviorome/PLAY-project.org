@@ -46,6 +46,8 @@ output:
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Rachel Barr             | Georgetown University                      | Washington, DC      | Collecting & Coding |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
+| Viridinia Benitez       | Arizona State University                   | Tempe, AZ           | Collecting          |
++-------------------------+--------------------------------------------+---------------------+---------------------+
 | Sheri Berenbaum         | Penn State University                      | State College, PA   | Contributor         |
 +-------------------------+--------------------------------------------+---------------------+---------------------+
 | Rachel Bican            | Ohio University                            | Athens, OH          | Collecting          |
