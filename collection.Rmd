@@ -77,7 +77,7 @@ If visit is excluded mark as:
     - Experimental error (equipment malfunction)
     - Incomplete
 6. Submit decibel data.
-    - Please access the decibel app file on your tablet (located in the "AudioTool" folder in the File Manager). Select the decibel file from this home visit session. 
+    - Please access the decibel app file on your tablet (see notes at https://docs.google.com/document/d/1NwsvgmI8k6mRFYFwv-y8NSv86h1WRTV0E7KcbU8beas/edit?usp=sharing). Select the decibel file from this home visit session. 
     - Select "Share with Save to Drive", navigate to the audio file folder for your site (e.g., ‘audio_NYUNI’) and drop your file in that location.
     - Name the file as follows: <b>PLAY_SITE_###</b>
     - <img src="img/audiotool.png" width="600px">
