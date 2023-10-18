@@ -17,7 +17,7 @@ At the end of every home visit (for each participant), you will upload the follo
 <br>&nbsp; - House walk-through (include: measurements of each room, sleeping arrangements, clothing, books, toys, shoes if child is barefoot)
 <br>&nbsp; - 5-min structured play (focus on child and mom, even if they leave mat area)
 <br>&nbsp; - Questionnaires (set up camera on tripod, focus on mom)
-2. **exactly 1 decibel meter file** (to your Databrary repository)
+2. **exactly 1 decibel meter file** (to a Google Drive folder from the tablet)
 3. **exactly 3 questionnaire files** (through the KoBo Toolbox app)
 <br>&nbsp; - demographics questionnaire
 <br>&nbsp; - home visit questionnaire
@@ -346,5 +346,4 @@ Full-length video of home visit
     <source src="https://nyu.databrary.org/slot/55651/0,7820438/asset/337402/download?inline=true" type="video/mp4"> Your browser does not support html5 video.
   </video>
 </div>
- 
-_NOTE: This participant was not the only child in the home, so would not meet inclusion criteria for PLAY._
+
