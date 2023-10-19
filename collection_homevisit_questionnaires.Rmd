@@ -11,13 +11,13 @@
     - [12 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442824)
     - [12 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442825)
   + 18 months
-    - [18 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442828)
-    - [18 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442827)
-    - [18 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442832)
+    - [18 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442991)
+    - [18 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442983)
+    - [18 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442984)
   + 24 months
-    - [24 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442835)
-    - [24 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442833)
-    - [24 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442834)
+    - [24 mo Monolingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442992)
+    - [24 mo Bilingual English](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442986)
+    - [24 mo Bilingual Spanish](https://nyu.databrary.org/volume/876/slot/39021/-?asset=442987)
  
 ### 6.2 Questionnaires
 
