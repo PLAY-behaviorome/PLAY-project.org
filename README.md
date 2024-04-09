@@ -29,6 +29,5 @@ We acknowledge extensive use of this resource: Xie, Y., Allaire, J. J., & Grolem
 ## Deploying the site
 
 From RStudio, commit the relevant changes, then push the changes to GitHub.
-We use [Netlify](netlify.com) to serve the files pushed to the `docs/` folder.
-At the moment, the `play-project.org` domain is not live, but it will go live soon.
+We use GitHub pages to serve the files pushed to the `docs/` folder.
 There is a short delay between pushing the new files to GitHub and having them appear live on the site.
